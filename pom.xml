@@ -43,7 +43,7 @@
         <!-- BioPax paxtools lib -->
         <dependency>
             <groupId>org.biopax.paxtools</groupId>
-            <artifactId>paxtools-archetype</artifactId>
+            <artifactId>paxtools-core</artifactId>
             <version>${paxtools.version}</version>
         </dependency>
 
