@@ -17,28 +17,28 @@ import org.reactome.server.tools.config.GraphQANeo4jConfig;
 
 //@Suite.SuiteClasses(value={WriteSBMLCatalystTest.class})
 
-@Suite.SuiteClasses(value={
-                            WriteSBMLNoEventsTest.class, WriteSBMLNoEventsAnnotTest.class,
-                            WriteSBMLNoPathwayTest.class, WriteSBMLNoPathwayAnnotTest.class,
-                            WriteSBMLSingleReactionTest.class, WriteSBMLSingleAnnotatedReactionTest.class,
-                            WriteSBMLCatalystTest.class, WriteSBMLFailedReaction.class,
-                            WriteSBMLReactionTest.class, WriteSBMLPathwayTest.class,
-                            WriteSBMLTopLevelPathTest.class, WriteSBMLBlackBoxTest.class,
-                            WriteSBMLEntityTest.class, WriteSBMLGenomeEncodedEntityTest.class,
-                            WriteSBMLOtherEntityTest.class, WriteSBMLCandidateSetEntityTest.class,
-                            WriteSBMLPolymerEntityTest.class, WriteSBMLPolymerisationTest.class,
-                            WriteSBMLDepolymerisationTest.class, WriteSBMLNegativeRegulatorTest.class,
-                            WriteSBMLPositiveRegulatorTest.class, WriteSBMLGeneRegulationTest.class,
-                            WriteSBMLConstructorTest.class, WriteSBMLListEventsTest.class,
-                            WriteSBMLMissingPubTest.class, WriteSBMLNotTranslationalModTest.class,
-                            WriteSBMLCatalystNoPETest.class, WriteSBMLListEventsNoParentTest.class,
-                            WriteSBMLBadNotesTest.class})
+//@Suite.SuiteClasses(value={
+//                            WriteSBMLNoEventsTest.class, WriteSBMLNoEventsAnnotTest.class,
+//                            WriteSBMLNoPathwayTest.class, WriteSBMLNoPathwayAnnotTest.class,
+//                            WriteSBMLSingleReactionTest.class, WriteSBMLSingleAnnotatedReactionTest.class,
+//                            WriteSBMLCatalystTest.class, WriteSBMLFailedReaction.class,
+//                            WriteSBMLReactionTest.class, WriteSBMLPathwayTest.class,
+//                            WriteSBMLTopLevelPathTest.class, WriteSBMLBlackBoxTest.class,
+//                            WriteSBMLEntityTest.class, WriteSBMLGenomeEncodedEntityTest.class,
+//                            WriteSBMLOtherEntityTest.class, WriteSBMLCandidateSetEntityTest.class,
+//                            WriteSBMLPolymerEntityTest.class, WriteSBMLPolymerisationTest.class,
+//                            WriteSBMLDepolymerisationTest.class, WriteSBMLNegativeRegulatorTest.class,
+//                            WriteSBMLPositiveRegulatorTest.class, WriteSBMLGeneRegulationTest.class,
+//                            WriteSBMLConstructorTest.class, WriteSBMLListEventsTest.class,
+//                            WriteSBMLMissingPubTest.class, WriteSBMLNotTranslationalModTest.class,
+//                            WriteSBMLCatalystNoPETest.class, WriteSBMLListEventsNoParentTest.class,
+//                            WriteSBMLBadNotesTest.class})
 
 public class Test {
 
     @BeforeClass
     public static void setup()  throws JSAPException {
-        SimpleJSAP jsap = new SimpleJSAP(SBMLExporterLauncher.class.getName(), "A tool for generating SBML files",
+        SimpleJSAP jsap = new SimpleJSAP(BioPAX3ExporterLauncher.class.getName(), "A tool for generating SBML files",
                 new Parameter[]{
                         new FlaggedOption("host", JSAP.STRING_PARSER, "localhost", JSAP.REQUIRED, 'h', "host", "The neo4j host"),
                         new FlaggedOption("port", JSAP.STRING_PARSER, "7474", JSAP.REQUIRED, 'b', "port", "The neo4j port"),

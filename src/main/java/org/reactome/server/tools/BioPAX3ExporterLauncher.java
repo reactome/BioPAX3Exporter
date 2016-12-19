@@ -2,7 +2,6 @@
 package org.reactome.server.tools;
 
 import com.martiansoftware.jsap.*;
-import com.sun.org.apache.xpath.internal.operations.Neg;
 import org.reactome.server.graph.domain.model.*;
 import org.reactome.server.graph.service.DatabaseObjectService;
 import org.reactome.server.graph.service.GeneralService;
@@ -39,7 +38,7 @@ public class BioPAX3ExporterLauncher {
 
     public static void main(String[] args) throws JSAPException {
 
-        SimpleJSAP jsap = new SimpleJSAP(SBMLExporterLauncher.class.getName(), "A tool for generating SBML files",
+        SimpleJSAP jsap = new SimpleJSAP(BioPAX3ExporterLauncher.class.getName(), "A tool for generating SBML files",
                 new Parameter[]{
                         new FlaggedOption("host", JSAP.STRING_PARSER, "localhost", JSAP.REQUIRED, 'h', "host", "The neo4j host"),
                         new FlaggedOption("port", JSAP.STRING_PARSER, "7474", JSAP.NOT_REQUIRED, 'b', "port", "The neo4j port"),
@@ -233,21 +232,21 @@ public class BioPAX3ExporterLauncher {
     private static void outputPath(Pathway path) {
         String filename = path.getDbId() + ".xml";
         File out = new File(outputdir, filename);
-        WriteSBML sbml = new WriteSBML(path, dbVersion);
-        sbml.setAnnotationFlag(true);
-        sbml.createModel();
+//        WriteSBML sbml = new WriteSBML(path, dbVersion);
+//        sbml.setAnnotationFlag(true);
+//        sbml.createModel();
 //        sbml.toStdOut();
-        sbml.toFile(out.getPath());
+//        sbml.toFile(out.getPath());
     }
 
     private static void outputEvents(List<Event> loe){
-        WriteSBML sbml = new WriteSBML(loe, dbVersion);
-        sbml.setAnnotationFlag(true);
-        sbml.createModel();
+//        WriteSBML sbml = new WriteSBML(loe, dbVersion);
+//        sbml.setAnnotationFlag(true);
+//        sbml.createModel();
 //        sbml.toStdOut();
-        String filename = sbml.getModelId() + ".xml";
-        File out = new File(outputdir, filename);
-        sbml.toFile(out.getPath());
+//        String filename = sbml.getModelId() + ".xml";
+//        File out = new File(outputdir, filename);
+//        sbml.toFile(out.getPath());
 
     }
 }
