@@ -230,13 +230,17 @@ public class BioPAX3ExporterLauncher {
      * @param path ReactomeDB Pathway to output
      */
     private static void outputPath(Pathway path) {
-        String filename = path.getDbId() + ".xml";
+        String filename = path.getDbId() + ".owl";
+        System.out.println("St id = " + path.getStId());
         File out = new File(outputdir, filename);
+        WriteBioPAX3 bp = new WriteBioPAX3(path, dbVersion);
+        bp.createModel();
+        bp.toStdOut();
 //        WriteSBML sbml = new WriteSBML(path, dbVersion);
 //        sbml.setAnnotationFlag(true);
 //        sbml.createModel();
 //        sbml.toStdOut();
-//        sbml.toFile(out.getPath());
+        bp.toFile(out);
     }
 
     private static void outputEvents(List<Event> loe){
