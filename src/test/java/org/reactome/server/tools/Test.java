@@ -15,24 +15,12 @@ import org.reactome.server.tools.config.GraphQANeo4jConfig;
  */
 @RunWith(value=Suite.class)
 
-@Suite.SuiteClasses(value={WriteBioPAX3SingleReactionTest.class})
+//@Suite.SuiteClasses(value={WriteBioPAX3SingleReactionTest.class})
 
-//@Suite.SuiteClasses(value={
-//                            WriteSBMLNoEventsTest.class, WriteSBMLNoEventsAnnotTest.class,
-//                            WriteSBMLNoPathwayTest.class, WriteSBMLNoPathwayAnnotTest.class,
-//                            WriteSBMLSingleReactionTest.class, WriteSBMLSingleAnnotatedReactionTest.class,
-//                            WriteSBMLCatalystTest.class, WriteSBMLFailedReaction.class,
-//                            WriteSBMLReactionTest.class, WriteSBMLPathwayTest.class,
-//                            WriteSBMLTopLevelPathTest.class, WriteSBMLBlackBoxTest.class,
-//                            WriteSBMLEntityTest.class, WriteSBMLGenomeEncodedEntityTest.class,
-//                            WriteSBMLOtherEntityTest.class, WriteSBMLCandidateSetEntityTest.class,
-//                            WriteSBMLPolymerEntityTest.class, WriteSBMLPolymerisationTest.class,
-//                            WriteSBMLDepolymerisationTest.class, WriteSBMLNegativeRegulatorTest.class,
-//                            WriteSBMLPositiveRegulatorTest.class, WriteSBMLGeneRegulationTest.class,
-//                            WriteSBMLConstructorTest.class, WriteSBMLListEventsTest.class,
-//                            WriteSBMLMissingPubTest.class, WriteSBMLNotTranslationalModTest.class,
-//                            WriteSBMLCatalystNoPETest.class, WriteSBMLListEventsNoParentTest.class,
-//                            WriteSBMLBadNotesTest.class})
+@Suite.SuiteClasses(value={
+                            TestNullConstructors.class, WriteBioPAX3SingleReactionTest.class,
+                            TestBioPAX3Utils.class
+                            })
 
 public class Test {
 

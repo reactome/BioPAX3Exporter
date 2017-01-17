@@ -2,6 +2,7 @@ package org.reactome.server.tools;
 
 import com.martiansoftware.jsap.*;
 import org.biopax.paxtools.model.BioPAXLevel;
+import org.biopax.paxtools.model.level3.BioSource;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.reactome.server.graph.domain.model.Pathway;
@@ -11,6 +12,7 @@ import org.reactome.server.tools.config.GraphQANeo4jConfig;
 
 import java.util.Iterator;
 import java.util.Set;
+import java.util.TreeSet;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -21,219 +23,293 @@ import static org.junit.Assert.assertTrue;
 public class WriteBioPAX3SingleReactionTest
 
 {
-        private static WriteBioPAX3 testWrite;
+    private static WriteBioPAX3 testWrite;
 
 
-        @BeforeClass
-        public static void setup()  throws JSAPException {
-            DatabaseObjectService databaseObjectService = ReactomeGraphCore.getService(DatabaseObjectService.class);
-            String dbid = "R-SCE-1474244"; // pathway with a single child reaction
-            Pathway pathway = (Pathway) databaseObjectService.findById(dbid);
-            testWrite = new WriteBioPAX3(pathway, 99);
+    @BeforeClass
+    public static void setup()  throws JSAPException {
+        DatabaseObjectService databaseObjectService = ReactomeGraphCore.getService(DatabaseObjectService.class);
+        String dbid = "R-SCE-1474244"; // pathway with a single child reaction
+        Pathway pathway = (Pathway) databaseObjectService.findById(dbid);
+        testWrite = new WriteBioPAX3(pathway, 99);
+    }
+
+    @Test
+    public void testConstructor()
+    {
+        assertTrue( "WriteSBML constructor failed", testWrite != null );
+    }
+
+
+    @Test
+    public void testCreateModel() {
+        org.biopax.paxtools.model.Model model = testWrite.getModel();
+        if (model == null) {
+            testWrite.createModel();
+            model = testWrite.getModel();
         }
 
-        @Test
-        public void testConstructor()
-        {
-            assertTrue( "WriteSBML constructor failed", testWrite != null );
+        assertEquals("biopax level", model.getLevel(), BioPAXLevel.L3);
+
+        String thisXmlBase = "http://www.reactome.org/biopax/99/9010984#";
+
+        assertEquals("xmlbase", model.getXmlBase(), thisXmlBase);
+    }
+
+    @Test
+    public void testPathway1() {
+        org.biopax.paxtools.model.Model model = testWrite.getModel();
+        if (model == null) {
+            testWrite.createModel();
+            model = testWrite.getModel();
         }
 
+        Set<org.biopax.paxtools.model.level3.Pathway> pathways = model.getObjects(org.biopax.paxtools.model.level3.Pathway.class);
+        assertEquals("num pathways", pathways.size(), 3);
 
-        @Test
-        public void testCreateModel() {
-            org.biopax.paxtools.model.Model model = testWrite.getModel();
-            if (model == null) {
-                testWrite.createModel();
-                model = testWrite.getModel();
-            }
+        org.biopax.paxtools.model.level3.Pathway p = BioPAX3Utils.getObjectFromSet(pathways, "Pathway1");
 
-            assertEquals("biopax level", model.getLevel(), BioPAXLevel.L3);
+        assertTrue("path1", p != null);
 
-            String thisXmlBase = "http://www.reactome.org/biopax/99/9010984#";
+        assertEquals("display name", p.getDisplayName(), "Extracellular matrix organization");
 
-            assertEquals("xmlbase", model.getXmlBase(), thisXmlBase);
+        Set<org.biopax.paxtools.model.level3.Process> components = p.getPathwayComponent();
+        assertEquals("num components", components.size(), 1);
+        assertTrue("step process value", BioPAX3Utils.contains(components, "Pathway2"));
+
+        Set<org.biopax.paxtools.model.level3.PathwayStep> order = p.getPathwayOrder();
+        assertEquals("num orders", order.size(), 1);
+        assertTrue("order value", BioPAX3Utils.contains(order, "PathwayStep1"));
+    }
+
+    @Test
+    public void testPathway2() {
+        org.biopax.paxtools.model.Model model = testWrite.getModel();
+        if (model == null) {
+            testWrite.createModel();
+            model = testWrite.getModel();
         }
 
-        @Test
-        public void testPathway1() {
-            org.biopax.paxtools.model.Model model = testWrite.getModel();
-            if (model == null) {
-                testWrite.createModel();
-                model = testWrite.getModel();
-            }
+        Set<org.biopax.paxtools.model.level3.Pathway> pathways = model.getObjects(org.biopax.paxtools.model.level3.Pathway.class);
+        assertEquals("num pathways", pathways.size(), 3);
 
-            Set<org.biopax.paxtools.model.level3.Pathway> pathways = model.getObjects(org.biopax.paxtools.model.level3.Pathway.class);
-            assertEquals("num pathways", pathways.size(), 3);
+        org.biopax.paxtools.model.level3.Pathway p = BioPAX3Utils.getObjectFromSet(pathways, "Pathway2");
 
-            org.biopax.paxtools.model.level3.Pathway p = BioPAX3Utils.getObjectFromSet(pathways, "Pathway1");
+        assertTrue("path2", p != null);
 
-            assertTrue("path1", p != null);
+        assertEquals("display name", p.getDisplayName(), "Degradation of the extracellular matrix");
 
-            assertEquals("display name", p.getDisplayName(), "Extracellular matrix organization");
+        Set<org.biopax.paxtools.model.level3.Process> components = p.getPathwayComponent();
+        assertEquals("num components", components.size(), 1);
+        assertTrue("step process value", BioPAX3Utils.contains(components, "Pathway3"));
 
-            Set<org.biopax.paxtools.model.level3.Process> components = p.getPathwayComponent();
-            assertEquals("num components", components.size(), 1);
+        Set<org.biopax.paxtools.model.level3.PathwayStep> order = p.getPathwayOrder();
+        assertEquals("num orders", order.size(), 1);
+        assertTrue("order value", BioPAX3Utils.contains(order, "PathwayStep2"));
+    }
 
-            for (org.biopax.paxtools.model.level3.Process process: components) {
-                assertEquals("component value", process.getRDFId(), BioPAX3Utils.getID("Pathway2"));
-            }
-
-            Set<org.biopax.paxtools.model.level3.PathwayStep> order = p.getPathwayOrder();
-            assertEquals("num orders", order.size(), 1);
-
-            for (org.biopax.paxtools.model.level3.PathwayStep o: order) {
-                assertEquals("order value", o.getRDFId(), BioPAX3Utils.getID("PathwayStep1"));
-            }
+    @Test
+    public void testPathway3() {
+        org.biopax.paxtools.model.Model model = testWrite.getModel();
+        if (model == null) {
+            testWrite.createModel();
+            model = testWrite.getModel();
         }
 
-        @Test
-        public void testPathway2() {
-            org.biopax.paxtools.model.Model model = testWrite.getModel();
-            if (model == null) {
-                testWrite.createModel();
-                model = testWrite.getModel();
-            }
+        Set<org.biopax.paxtools.model.level3.Pathway> pathways = model.getObjects(org.biopax.paxtools.model.level3.Pathway.class);
+        assertEquals("num pathways", pathways.size(), 3);
 
-            Set<org.biopax.paxtools.model.level3.Pathway> pathways = model.getObjects(org.biopax.paxtools.model.level3.Pathway.class);
-            assertEquals("num pathways", pathways.size(), 3);
+        org.biopax.paxtools.model.level3.Pathway p = BioPAX3Utils.getObjectFromSet(pathways, "Pathway3");
 
-            org.biopax.paxtools.model.level3.Pathway p = BioPAX3Utils.getObjectFromSet(pathways, "Pathway2");
+        assertTrue("path2", p != null);
 
-            assertTrue("path2", p != null);
+        assertEquals("display name", p.getDisplayName(), "Collagen degradation");
 
-            assertEquals("display name", p.getDisplayName(), "Degradation of the extracellular matrix");
+        Set<org.biopax.paxtools.model.level3.Process> components = p.getPathwayComponent();
+        assertEquals("num components", components.size(), 1);
+        assertTrue("step process value", BioPAX3Utils.contains(components, "BiochemicalReaction1"));
 
-            Set<org.biopax.paxtools.model.level3.Process> components = p.getPathwayComponent();
-            assertEquals("num components", components.size(), 1);
+        Set<org.biopax.paxtools.model.level3.PathwayStep> order = p.getPathwayOrder();
+        assertEquals("num orders", order.size(), 1);
+        assertTrue("order value", BioPAX3Utils.contains(order, "PathwayStep3"));
+    }
 
-            for (org.biopax.paxtools.model.level3.Process process: components) {
-                assertEquals("component value", process.getRDFId(), BioPAX3Utils.getID("Pathway3"));
-            }
-
-            Set<org.biopax.paxtools.model.level3.PathwayStep> order = p.getPathwayOrder();
-            assertEquals("num orders", order.size(), 1);
-
-            for (org.biopax.paxtools.model.level3.PathwayStep o: order) {
-                assertEquals("order value", o.getRDFId(), BioPAX3Utils.getID("PathwayStep2"));
-            }
+    @Test
+    public void testBiochemicalReaction() {
+        org.biopax.paxtools.model.Model model = testWrite.getModel();
+        if (model == null) {
+            testWrite.createModel();
+            model = testWrite.getModel();
         }
 
-        @Test
-        public void testPathway3() {
-            org.biopax.paxtools.model.Model model = testWrite.getModel();
-            if (model == null) {
-                testWrite.createModel();
-                model = testWrite.getModel();
-            }
+        Set<org.biopax.paxtools.model.level3.BiochemicalReaction> reactions = model.getObjects(org.biopax.paxtools.model.level3.BiochemicalReaction.class);
+        assertEquals("num reactions", reactions.size(), 1);
 
-            Set<org.biopax.paxtools.model.level3.Pathway> pathways = model.getObjects(org.biopax.paxtools.model.level3.Pathway.class);
-            assertEquals("num pathways", pathways.size(), 3);
+        org.biopax.paxtools.model.level3.BiochemicalReaction p = BioPAX3Utils.getObjectFromSet(reactions, "BiochemicalReaction1");
 
-            org.biopax.paxtools.model.level3.Pathway p = BioPAX3Utils.getObjectFromSet(pathways, "Pathway3");
+        assertTrue("reaction", p != null);
 
-            assertTrue("path2", p != null);
+        assertEquals("display name", p.getDisplayName(), "PHYKPL tetramer hydrolyses 5PHL");
 
-            assertEquals("display name", p.getDisplayName(), "Collagen degradation");
+        org.biopax.paxtools.model.level3.BiochemicalReaction p1 = BioPAX3Utils.getObjectFromSet(reactions, "BiochemicalReaction2");
 
-            Set<org.biopax.paxtools.model.level3.Process> components = p.getPathwayComponent();
-            assertEquals("num components", components.size(), 1);
+        assertTrue("non existant reaction", p1 == null);
+    }
 
-            for (org.biopax.paxtools.model.level3.Process process: components) {
-                assertEquals("component value", process.getRDFId(), BioPAX3Utils.getID("BiochemicalReaction1"));
-            }
-
-            Set<org.biopax.paxtools.model.level3.PathwayStep> order = p.getPathwayOrder();
-            assertEquals("num orders", order.size(), 1);
-
-            for (org.biopax.paxtools.model.level3.PathwayStep o: order) {
-                assertEquals("order value", o.getRDFId(), BioPAX3Utils.getID("PathwayStep3"));
-            }
+    @Test
+    public void testCatalyst() {
+        org.biopax.paxtools.model.Model model = testWrite.getModel();
+        if (model == null) {
+            testWrite.createModel();
+            model = testWrite.getModel();
         }
 
-        @Test
-        public void testBiochemicalReaction() {
-            org.biopax.paxtools.model.Model model = testWrite.getModel();
-            if (model == null) {
-                testWrite.createModel();
-                model = testWrite.getModel();
-            }
+        Set<org.biopax.paxtools.model.level3.Catalysis> cats = model.getObjects(org.biopax.paxtools.model.level3.Catalysis.class);
+        assertEquals("num catalysts", cats.size(), 1);
 
-            Set<org.biopax.paxtools.model.level3.BiochemicalReaction> reactions = model.getObjects(org.biopax.paxtools.model.level3.BiochemicalReaction.class);
-            assertEquals("num reactions", reactions.size(), 1);
+        org.biopax.paxtools.model.level3.Catalysis p = BioPAX3Utils.getObjectFromSet(cats, "Catalysis1");
 
-            org.biopax.paxtools.model.level3.BiochemicalReaction p = BioPAX3Utils.getObjectFromSet(reactions, "BiochemicalReaction1");
+        assertTrue("catalyst", p != null);
 
-            assertTrue("reaction", p != null);
+        Set<org.biopax.paxtools.model.level3.Process> order = p.getControlled();
+        assertEquals("num orders", order.size(), 1);
 
-            assertEquals("display name", p.getDisplayName(), "PHYKPL tetramer hydrolyses 5PHL");
+        assertTrue("order value", BioPAX3Utils.contains(order, "BiochemicalReaction1"));
+    }
+
+@Test
+    public void testPathwayStep1() {
+        org.biopax.paxtools.model.Model model = testWrite.getModel();
+        if (model == null) {
+            testWrite.createModel();
+            model = testWrite.getModel();
         }
 
-        @Test
-        public void testPathwayStep1() {
-            org.biopax.paxtools.model.Model model = testWrite.getModel();
-            if (model == null) {
-                testWrite.createModel();
-                model = testWrite.getModel();
-            }
+        Set<org.biopax.paxtools.model.level3.PathwayStep> pathsteps = model.getObjects(org.biopax.paxtools.model.level3.PathwayStep.class);
+        assertEquals("num pathway steps", pathsteps.size(), 3);
 
-            Set<org.biopax.paxtools.model.level3.PathwayStep> pathsteps = model.getObjects(org.biopax.paxtools.model.level3.PathwayStep.class);
-            assertEquals("num pathway steps", pathsteps.size(), 3);
+        org.biopax.paxtools.model.level3.PathwayStep p = BioPAX3Utils.getObjectFromSet(pathsteps, "PathwayStep1");
 
-            org.biopax.paxtools.model.level3.PathwayStep p = BioPAX3Utils.getObjectFromSet(pathsteps, "PathwayStep1");
+        assertTrue("path step1", p != null);
 
-            assertTrue("path step1", p != null);
+        Set<org.biopax.paxtools.model.level3.Process> components = p.getStepProcess();
+        assertEquals("num step processes", components.size(), 1);
 
-            Set<org.biopax.paxtools.model.level3.Process> components = p.getStepProcess();
-            assertEquals("num step processes", components.size(), 1);
+        assertTrue("step process value", BioPAX3Utils.contains(components, "Pathway2"));
+    }
 
-            for (org.biopax.paxtools.model.level3.Process process: components) {
-                assertEquals("step process value", process.getRDFId(), BioPAX3Utils.getID("Pathway2"));
-            }
+    @Test
+    public void testPathwayStep2() {
+        org.biopax.paxtools.model.Model model = testWrite.getModel();
+        if (model == null) {
+            testWrite.createModel();
+            model = testWrite.getModel();
         }
 
-        @Test
-        public void testPathwayStep2() {
-            org.biopax.paxtools.model.Model model = testWrite.getModel();
-            if (model == null) {
-                testWrite.createModel();
-                model = testWrite.getModel();
-            }
+        Set<org.biopax.paxtools.model.level3.PathwayStep> pathsteps = model.getObjects(org.biopax.paxtools.model.level3.PathwayStep.class);
+        assertEquals("num pathway steps", pathsteps.size(), 3);
 
-            Set<org.biopax.paxtools.model.level3.PathwayStep> pathsteps = model.getObjects(org.biopax.paxtools.model.level3.PathwayStep.class);
-            assertEquals("num pathway steps", pathsteps.size(), 3);
+        org.biopax.paxtools.model.level3.PathwayStep p = BioPAX3Utils.getObjectFromSet(pathsteps, "PathwayStep2");
 
-            org.biopax.paxtools.model.level3.PathwayStep p = BioPAX3Utils.getObjectFromSet(pathsteps, "PathwayStep2");
+        assertTrue("path step1", p != null);
 
-            assertTrue("path step1", p != null);
+        Set<org.biopax.paxtools.model.level3.Process> components = p.getStepProcess();
+        assertEquals("num step processes", components.size(), 1);
 
-            Set<org.biopax.paxtools.model.level3.Process> components = p.getStepProcess();
-            assertEquals("num step processes", components.size(), 1);
+        assertTrue("step process value", BioPAX3Utils.contains(components, "Pathway3"));
+    }
 
-            for (org.biopax.paxtools.model.level3.Process process: components) {
-                assertEquals("step process value", process.getRDFId(), BioPAX3Utils.getID("Pathway3"));
-            }
+    @Test
+    public void testPathwayStep3() {
+        org.biopax.paxtools.model.Model model = testWrite.getModel();
+        if (model == null) {
+            testWrite.createModel();
+            model = testWrite.getModel();
         }
 
-        @Test
-        public void testPathwayStep3() {
-            org.biopax.paxtools.model.Model model = testWrite.getModel();
-            if (model == null) {
-                testWrite.createModel();
-                model = testWrite.getModel();
-            }
+        Set<org.biopax.paxtools.model.level3.PathwayStep> pathsteps = model.getObjects(org.biopax.paxtools.model.level3.PathwayStep.class);
+        assertEquals("num pathway steps", pathsteps.size(), 3);
 
-            Set<org.biopax.paxtools.model.level3.PathwayStep> pathsteps = model.getObjects(org.biopax.paxtools.model.level3.PathwayStep.class);
-            assertEquals("num pathway steps", pathsteps.size(), 3);
+        org.biopax.paxtools.model.level3.PathwayStep p = BioPAX3Utils.getObjectFromSet(pathsteps, "PathwayStep3");
 
-            org.biopax.paxtools.model.level3.PathwayStep p = BioPAX3Utils.getObjectFromSet(pathsteps, "PathwayStep3");
+        assertTrue("path step1", p != null);
 
-            assertTrue("path step1", p != null);
+        Set<org.biopax.paxtools.model.level3.Process> components = p.getStepProcess();
+        assertEquals("num step processes", components.size(), 2);
 
-            Set<org.biopax.paxtools.model.level3.Process> components = p.getStepProcess();
-            assertEquals("num step processes", components.size(), 1);
+        assertTrue("step process value", BioPAX3Utils.contains(components, "BiochemicalReaction1"));
+        assertTrue("step process value", BioPAX3Utils.contains(components, "Catalysis1"));
+    }
 
-            for (org.biopax.paxtools.model.level3.Process process: components) {
-                assertEquals("step process value", process.getRDFId(), BioPAX3Utils.getID("BiochemicalReaction1"));
-            }
+    @Test
+    public void testBiosource1() {
+        org.biopax.paxtools.model.Model model = testWrite.getModel();
+        if (model == null) {
+            testWrite.createModel();
+            model = testWrite.getModel();
         }
+
+        Set<String> name = new TreeSet<String>();
+        name.add("Saccharomyces cerevisiae");
+
+        Set<org.biopax.paxtools.model.level3.BioSource> sources = model.getObjects(org.biopax.paxtools.model.level3.BioSource.class);
+        assertTrue("num biosources", sources.size() == 1);
+
+        org.biopax.paxtools.model.level3.BioSource p = BioPAX3Utils.getObjectFromSet(sources, "BioSource1");
+        assertTrue("biosource1", p != null);
+        assertEquals("src name", p.getName(), name);
+
+    }
+
+    public void testBiosourceFromPathway1() {
+        org.biopax.paxtools.model.Model model = testWrite.getModel();
+        if (model == null) {
+            testWrite.createModel();
+            model = testWrite.getModel();
+        }
+
+        Set<String> name = new TreeSet<String>();
+        name.add("Saccharomyces cerevisiae");
+
+        Set<org.biopax.paxtools.model.level3.Pathway> pathways = model.getObjects(org.biopax.paxtools.model.level3.Pathway.class);
+        org.biopax.paxtools.model.level3.Pathway p = BioPAX3Utils.getObjectFromSet(pathways, "Pathway1");
+        BioSource src = p.getOrganism();
+        assertTrue("source", src != null);
+        assertEquals("src name", src.getName(), name);
+    }
+
+    public void testBiosourceFromPathway2() {
+        org.biopax.paxtools.model.Model model = testWrite.getModel();
+        if (model == null) {
+            testWrite.createModel();
+            model = testWrite.getModel();
+        }
+
+        Set<String> name = new TreeSet<String>();
+        name.add("Saccharomyces cerevisiae");
+
+        Set<org.biopax.paxtools.model.level3.Pathway> pathways = model.getObjects(org.biopax.paxtools.model.level3.Pathway.class);
+        org.biopax.paxtools.model.level3.Pathway p = BioPAX3Utils.getObjectFromSet(pathways, "Pathway2");
+        BioSource src = p.getOrganism();
+        assertTrue("source", src != null);
+        assertEquals("src name", src.getName(), name);
+    }
+
+    public void testBiosourceFromPathway3() {
+        org.biopax.paxtools.model.Model model = testWrite.getModel();
+        if (model == null) {
+            testWrite.createModel();
+            model = testWrite.getModel();
+        }
+
+        Set<String> name = new TreeSet<String>();
+        name.add("Saccharomyces cerevisiae");
+
+        Set<org.biopax.paxtools.model.level3.Pathway> pathways = model.getObjects(org.biopax.paxtools.model.level3.Pathway.class);
+        org.biopax.paxtools.model.level3.Pathway p = BioPAX3Utils.getObjectFromSet(pathways, "Pathway3");
+        BioSource src = p.getOrganism();
+        assertTrue("source", src != null);
+        assertEquals("src name", src.getName(), name);
+    }
+
 }

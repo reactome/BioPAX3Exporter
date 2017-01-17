@@ -3,8 +3,8 @@ package org.reactome.server.tools;
 import org.biopax.paxtools.controller.EditorMap;
 import org.biopax.paxtools.io.BioPAXIOHandler;
 import org.biopax.paxtools.io.SimpleIOHandler;
-import org.biopax.paxtools.model.level3.BiochemicalReaction;
-import org.biopax.paxtools.model.level3.PathwayStep;
+import org.biopax.paxtools.model.level3.*;
+import org.biopax.paxtools.model.level3.Process;
 import org.reactome.server.graph.domain.model.*;
 import org.reactome.server.graph.domain.model.Event;
 
@@ -13,13 +13,14 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import org.biopax.paxtools.model.*;
+import org.reactome.server.graph.domain.model.Pathway;
 
 /**
  * @author Sarah Keating <skeating@ebi.ac.uk>
  */
 class WriteBioPAX3 {
 
-    private final Pathway thisPathway;
+    private final org.reactome.server.graph.domain.model.Pathway thisPathway;
     private final List<Event> thisListEvents;
     private Pathway parentPathway;
 
@@ -28,16 +29,14 @@ class WriteBioPAX3 {
     private Integer stepNum = 0;
     private Integer pathwayNum = 0;
     private Integer biornNum = 0;
-
-    private boolean addAnnotations = true;
-    private boolean inTestMode = false;
+    private Integer catNum = 0;
 
     private boolean useEventOf = true;
 
     private BioPAXFactory bioPAXFactory = BioPAXLevel.L3.getDefaultFactory();
-    private Model thisModel = null;
+    private org.biopax.paxtools.model.Model thisModel = null;
 
-    public static String xmlBase;
+    static String xmlBase;
 
     /**
      * Construct an instance of the WriteBioPAX3
@@ -47,6 +46,7 @@ class WriteBioPAX3 {
         thisListEvents = null;
         parentPathway = null;
         xmlBase = "http://www.reactome.org/biopax/#";
+        BioPAX3Utils.clearCounterArray();
     }
 
     /**
@@ -60,6 +60,7 @@ class WriteBioPAX3 {
         thisListEvents = null;
         parentPathway = null;
         xmlBase = "http://www.reactome.org/biopax/" + dbVersion + "/" + thisPathway.getDbId() + "#";
+        BioPAX3Utils.clearCounterArray();
     }
 
     /**
@@ -75,6 +76,7 @@ class WriteBioPAX3 {
         parentPathway = null;
         dbVersion = version;
         xmlBase = "http://www.reactome.org/biopax/" + dbVersion + "/" + thisPathway.getDbId() + "#";
+        BioPAX3Utils.clearCounterArray();
     }
 
     /**
@@ -83,8 +85,9 @@ class WriteBioPAX3 {
     void createModel(){
         thisModel = bioPAXFactory.createModel();
         thisModel.setXmlBase(xmlBase);
+        BioPAXPathway thisBPPath = new BioPAXPathway(thisPathway, thisModel);
 
-        addAllPathways(thisPathway);
+        thisBPPath.addReactomePathway();
     }
 
     /**
@@ -94,114 +97,6 @@ class WriteBioPAX3 {
      */
     public void setDBVersion(Integer version) {
         dbVersion = version;
-    }
-
-    //////////////////////////////////////////////////////////////////////////////////
-
-    // Private functions
-
-
-
-    //////////////////////////////////////////////////////////////////////////////////
-
-    /**
-     * Add elements from the given Pathway. This will rescurse
-     * through child Events that represent Pathways.
-     *
-     * @param pathway  Pathway from ReactomeDB
-     */
-    private org.biopax.paxtools.model.level3.Pathway addAllPathways(Pathway pathway){
-        org.biopax.paxtools.model.level3.Pathway bpPath = addPathway(pathway);
-        PathwayStep step = addStep(bpPath);
-        bpPath.addPathwayOrder(step);
-        if (pathway.getHasEvent() != null) {
-            for (Event event : pathway.getHasEvent()) {
-                org.biopax.paxtools.model.level3.Pathway childPath = null;
-                org.biopax.paxtools.model.level3.BiochemicalReaction childRn;
-                childRn = addReaction(event);
-                if (event instanceof Pathway){
-                    Pathway path = ((Pathway)(event));
-                    childPath = addAllPathways(path);
-                }
-                if (childRn != null){
-                    addComponent(bpPath, childRn, step);
-                }
-                if (childPath != null) {
-                    addComponent(bpPath, childPath, step);
-                }
-            }
-        }
-        return bpPath;
-    }
-
-    private void addComponent(org.biopax.paxtools.model.level3.Pathway bpPath,
-                              org.biopax.paxtools.model.level3.Process childPath,
-                              PathwayStep step) {
-        bpPath.addPathwayComponent(childPath);
-        step.addStepProcess(childPath);
-
-    }
-    /**
-     * Overloaded addReaction function to cast an Event to a Reaction.
-     *
-     * @param event  Event from ReactomeDB
-     */
-    private org.biopax.paxtools.model.level3.BiochemicalReaction addReaction(org.reactome.server.graph.domain.model.Event event){
-        org.biopax.paxtools.model.level3.BiochemicalReaction rn = null;
-        if (event instanceof org.reactome.server.graph.domain.model.ReactionLikeEvent) {
-            rn = addReaction((org.reactome.server.graph.domain.model.ReactionLikeEvent ) (event));
-        }
-        return rn;
-    }
-
-    private org.biopax.paxtools.model.level3.Pathway addPathway(org.reactome.server.graph.domain.model.Pathway pathway) {
-        org.biopax.paxtools.model.level3.Pathway bpPath =
-                thisModel.addNew(org.biopax.paxtools.model.level3.Pathway.class, getPathNumber());
-
-//        bpPath.setOrganism();
-        bpPath.setDisplayName(pathway.getDisplayName());
-//        PathwayStep step = addStep(bpPath);
-//        bpPath.addPathwayOrder(step);
-
-        return bpPath;
-    }
-
-    private org.biopax.paxtools.model.level3.PathwayStep addStep(org.biopax.paxtools.model.level3.Pathway bpPath) {
-        return thisModel.addNew(org.biopax.paxtools.model.level3.PathwayStep.class, getStepNumber());
-    }
-
-//    private String getReactomeId(DatabaseObject object){
-//        String resource = "http://identifiers.org/reactome/REACTOME:" + object.getStId();
-//        return resource;
-//
-//    }
-    /**
-     * Adds the given Reactome Reaction to the SBML model as an SBML Reaction.
-     * This in turn adds SBML species and SBML compartments.
-     *
-     * @param event  Reaction from ReactomeDB
-     */
-    private org.biopax.paxtools.model.level3.BiochemicalReaction addReaction(org.reactome.server.graph.domain.model.ReactionLikeEvent event){
-        BiochemicalReaction bpReaction = thisModel.addNew(BiochemicalReaction.class, getBioReactionNumber());
-        bpReaction.setDisplayName(event.getDisplayName());
-        return bpReaction;
-
-
-    }
-
-    private String getStepNumber() {
-        stepNum++;
-        return xmlBase + "PathwayStep" + stepNum;
-    }
-
-    private String getPathNumber() {
-        pathwayNum++;
-        return xmlBase + "Pathway" + pathwayNum;
-    }
-
-    private String getBioReactionNumber() {
-        biornNum++;
-        return xmlBase + "BiochemicalReaction" + biornNum;
     }
 
     ///////////////////////////////////////////////////////////////////////////////////
@@ -272,28 +167,6 @@ class WriteBioPAX3 {
     //////////////////////////////////////////////////////////////////////////////////
 
     // functions to facilitate testing
-
-
-    /**
-     * Set the addAnnotation flag.
-     * This allows testing with and without annotations
-     *
-     * @param flag  Boolean indicating whether to write out annotations
-     */
-    void setAnnotationFlag(Boolean flag){
-        addAnnotations = flag;
-    }
-
-    /**
-     * Set the inTestMode flag.
-     * This allows testing with/without certain things
-     *
-     * @param flag  Boolean indicating whether tests are running
-     */
-    void setInTestModeFlag(Boolean flag){
-        inTestMode = flag;
-    }
-
 
     /**
      * Gets the BioPAX model created
