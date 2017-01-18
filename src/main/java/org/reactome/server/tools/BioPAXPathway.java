@@ -37,21 +37,34 @@ class BioPAXPathway {
 
     /**
      * Construct an instance of the BioPAXPathway for the specified
-     * Pathway.
+     * Pathway and Model.
      *
      * @param pathway Pathway from ReactomeDB
+     * @param model the BioPAX model being constructed from the Pathway
      */
     BioPAXPathway(org.reactome.server.graph.domain.model.Pathway pathway, org.biopax.paxtools.model.Model model) {
         thisPathway = pathway;
         thisModel = model;
     }
 
+    /**
+     * Function to add the Reactome Pathway to the BioPAX model
+     */
     void addReactomePathway() {
         addReactomePathway(thisPathway);
     }
     //////////////////////////////////////////////////////////////////////////////////
 
     // Private functions
+
+    /**
+     * Function to create a BioPAX pathway from the Reactome pathway given. This will recurse through
+     * any child elements.
+     *
+     * @param pathway the Reactome pathway to be created in BioPAX
+     *
+     * @return the created BioPAX pathway
+     */
     private org.biopax.paxtools.model.level3.Pathway addReactomePathway(org.reactome.server.graph.domain.model.Pathway pathway) {
         org.biopax.paxtools.model.level3.Pathway bpPath = addBPPathway(pathway);
         if (bpPath != null) {
@@ -61,6 +74,14 @@ class BioPAXPathway {
     }
 
 
+    /**
+     * Function to recurse through all the Reactome events associate with the given
+     * Reactome Pathway and add information about these to the BioPAX model and the corresponding
+     * BioPAX pathway
+     *
+     * @param pathway the Reactome pathway to be created in BioPAX
+     * @param bpPath the BioPAX pathway to which the information is added
+     */
     private void addChildPathways(org.reactome.server.graph.domain.model.Pathway pathway,
                                   org.biopax.paxtools.model.level3.Pathway bpPath) {
         if (pathway.getHasEvent() != null) {
@@ -70,6 +91,13 @@ class BioPAXPathway {
         }
     }
 
+    /**
+     * Function to add information from a Reactome Event to the BioPAX model and
+     * correponding BioPAX pathway
+     *
+     * @param event the Reactome event to be created in BioPAX
+     * @param bpPath the BioPAX pathway to which the information is added
+     */
     private void addReactomeEvent(Event event, org.biopax.paxtools.model.level3.Pathway bpPath) {
         PathwayStep step = addBPStep(bpPath);
         bpPath.addPathwayOrder(step);
@@ -86,6 +114,13 @@ class BioPAXPathway {
         }
     }
 
+    /**
+     * Function to create an individual BioPAX pathway
+     *
+     * @param pathway the Reactome pathway to be created in BioPAX
+     *
+     * @return the BioPAX pathway created
+     */
     private org.biopax.paxtools.model.level3.Pathway addBPPathway(org.reactome.server.graph.domain.model.Pathway pathway) {
         if (pathway == null) return null;
         org.biopax.paxtools.model.level3.Pathway bpPath =
@@ -97,9 +132,20 @@ class BioPAXPathway {
         return bpPath;
     }
 
+    /////////////////////////////////////////////////////////////////////////////////////////////////
+
     // add other information to Pathway
 
     // organism
+
+    /**
+     * Function to associate a BioPAX Pathway with its organism element
+     *
+     * @param bpPath the BioPAX pathway to which the organism should be added
+     *
+     * @param species String representing the Reactome Species - which will be used
+     *                as the BioSource
+     */
     private void addBioSourceInformation(org.biopax.paxtools.model.level3.Pathway bpPath, String species) {
         BioSource src = addBPBioSource(bpPath, species);
         bpPath.setOrganism(src);
@@ -108,6 +154,18 @@ class BioPAXPathway {
 
 
     // pathwayComponent
+
+    /**
+     * Function to associate a BioPAX Pathway with it's pathwayComponent elements
+     *
+     * BioPAX creates links between Pathways and the steps taken when the process
+     * is activated by adding pathwayComponent and pathwayOrder to the Pathway.
+     * The pathwayOrder referneces a PathwayStep which refers back to the pathwayComponent
+     *
+     * @param bpPath the parent BioPAX pathway to which the information should be added
+     * @param childPath teh child BioPAX Pathway that is the pathwayComponent
+     * @param step the BioPAX PathwayStep associated with this component
+     */
     private void addComponentInformation(org.biopax.paxtools.model.level3.Pathway bpPath,
                                          org.biopax.paxtools.model.level3.Process childPath,
                                          PathwayStep step) {
@@ -125,16 +183,40 @@ class BioPAXPathway {
     // this is added in the addReactomeEvent function as it needs to enter the PathwayStep information as well
 
 
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
     // add related Biopax classes
+
+    // these are small classes so do not need separate code files
 
     // PathwayStep
 
+    /**
+     * Function to create a PathwayStep to be associated with the BioPAX pathway
+     *
+     * @param bpPath the BioPAX pathway corresponding to the PathwayStep
+     *
+     * @return the PathwayStep created
+     *
+     * NOTE: The argument is unused but I suspect I will need it as in the BioSource creation below
+     */
     private org.biopax.paxtools.model.level3.PathwayStep addBPStep(org.biopax.paxtools.model.level3.Pathway bpPath) {
         if (bpPath == null) return null;
         return thisModel.addNew(org.biopax.paxtools.model.level3.PathwayStep.class, BioPAX3Utils.getTypeCount("PathwayStep"));
     }
 
     // Biosource
+
+    /**
+     * Function create if necessary or to return the BioSource associated with the given BioPAX
+     * pathway if it already exists
+     *
+     * @param bpPath the BioPAX Pathway to which teh BioSource is associated
+     *
+     * @param species String representing the Reactome Species which creates the BioSource
+     *
+     * @return the BioSource associated with this BioPAX pathway (newly created if necessary)
+     */
     private org.biopax.paxtools.model.level3.BioSource addBPBioSource(org.biopax.paxtools.model.level3.Pathway bpPath,
                                                                       String species) {
         if (bpPath == null) return null;
@@ -148,6 +230,13 @@ class BioPAXPathway {
         return src;
     }
 
+    /**
+     * Function to add a new BioSource element to the BioPAX model
+     *
+     * @param species String representing the Reactome Species which creates the BioSource
+     *
+     * @return the newly created BioSource
+     */
     private org.biopax.paxtools.model.level3.BioSource addBioSource(org.biopax.paxtools.model.level3.Pathway bpPath,
                                                                       String species) {
         BioSource src = thisModel.addNew(org.biopax.paxtools.model.level3.BioSource.class, BioPAX3Utils.getTypeCount("BioSource"));

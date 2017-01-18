@@ -225,7 +225,7 @@ public class BioPAX3ExporterLauncher {
     }
 
     /**
-     * Create the output file and write the SBML file for this path
+     * Create the output file and write the BioPAX3 file for this path
      *
      * @param path ReactomeDB Pathway to output
      */
