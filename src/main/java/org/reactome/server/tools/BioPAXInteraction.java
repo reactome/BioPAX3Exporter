@@ -76,6 +76,8 @@ class BioPAXInteraction {
             }
         }
 
+        BioPAX3BasicElements elements = new BioPAX3BasicElements(event, thisModel, bpReaction);
+        elements.addEvidence();
         return bpReaction;
     }
 

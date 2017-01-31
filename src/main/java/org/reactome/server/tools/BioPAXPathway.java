@@ -125,33 +125,18 @@ class BioPAXPathway {
         if (pathway == null) return null;
         org.biopax.paxtools.model.level3.Pathway bpPath =
                 thisModel.addNew(org.biopax.paxtools.model.level3.Pathway.class, BioPAX3Utils.getTypeCount("Pathway"));
-
-        addBioSourceInformation(bpPath, pathway.getSpeciesName());
+        BioPAX3BasicElements elements = new BioPAX3BasicElements(pathway, thisModel, bpPath);
+        elements.addBioSourceInformation();
+        elements.addReactomeDataSource();
+        elements.addEvidence();
         bpPath.setDisplayName(pathway.getDisplayName());
-
+        bpPath.addComment(BioPAX3ReferenceUtils.getComment(pathway.getSummation()));
         return bpPath;
     }
 
     /////////////////////////////////////////////////////////////////////////////////////////////////
 
     // add other information to Pathway
-
-    // organism
-
-    /**
-     * Function to associate a BioPAX Pathway with its organism element
-     *
-     * @param bpPath the BioPAX pathway to which the organism should be added
-     *
-     * @param species String representing the Reactome Species - which will be used
-     *                as the BioSource
-     */
-    private void addBioSourceInformation(org.biopax.paxtools.model.level3.Pathway bpPath, String species) {
-        BioSource src = addBPBioSource(bpPath, species);
-        bpPath.setOrganism(src);
-    }
-
-
 
     // pathwayComponent
 
@@ -182,7 +167,6 @@ class BioPAXPathway {
     // pathwayOrder
     // this is added in the addReactomeEvent function as it needs to enter the PathwayStep information as well
 
-
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     // add related Biopax classes
@@ -203,47 +187,6 @@ class BioPAXPathway {
     private org.biopax.paxtools.model.level3.PathwayStep addBPStep(org.biopax.paxtools.model.level3.Pathway bpPath) {
         if (bpPath == null) return null;
         return thisModel.addNew(org.biopax.paxtools.model.level3.PathwayStep.class, BioPAX3Utils.getTypeCount("PathwayStep"));
-    }
-
-    // Biosource
-
-    /**
-     * Function create if necessary or to return the BioSource associated with the given BioPAX
-     * pathway if it already exists
-     *
-     * @param bpPath the BioPAX Pathway to which teh BioSource is associated
-     *
-     * @param species String representing the Reactome Species which creates the BioSource
-     *
-     * @return the BioSource associated with this BioPAX pathway (newly created if necessary)
-     */
-    private org.biopax.paxtools.model.level3.BioSource addBPBioSource(org.biopax.paxtools.model.level3.Pathway bpPath,
-                                                                      String species) {
-        if (bpPath == null) return null;
-        // if the BioSource is already in the model we want to use that one
-        Set<BioSource> sources = thisModel.getObjects(org.biopax.paxtools.model.level3.BioSource.class);
-        BioSource src = BioPAX3Utils.getObjectFromSetByName(sources, species);
-        if (src == null) {
-            // we havent found it/ add a new one
-            src = addBioSource(bpPath, species);
-        }
-        return src;
-    }
-
-    /**
-     * Function to add a new BioSource element to the BioPAX model
-     *
-     * @param species String representing the Reactome Species which creates the BioSource
-     *
-     * @return the newly created BioSource
-     */
-    private org.biopax.paxtools.model.level3.BioSource addBioSource(org.biopax.paxtools.model.level3.Pathway bpPath,
-                                                                      String species) {
-        BioSource src = thisModel.addNew(org.biopax.paxtools.model.level3.BioSource.class, BioPAX3Utils.getTypeCount("BioSource"));
-        Set<String> name = new TreeSet<String>();
-        name.add(species);
-        src.setName(name);
-        return src;
     }
 }
 

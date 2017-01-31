@@ -48,7 +48,7 @@ class BioPAX3Utils {
      *
      * @param name the name of the BioPax class
      *
-     * @return teh full qualified ID of the next object of the given class
+     * @return the full qualified ID of the next object of the given class
      */
     static String getTypeCount(String name) {
         if (count.size() == 0) {
@@ -81,7 +81,7 @@ class BioPAX3Utils {
     }
 
     /**
-     * Function o return full ID based on the xml base registered
+     * Function to return full ID based on the xml base registered
      *
      * @param id the unique part of the ID to append
      *

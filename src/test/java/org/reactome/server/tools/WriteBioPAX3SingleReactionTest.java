@@ -132,6 +132,10 @@ public class WriteBioPAX3SingleReactionTest
         Set<org.biopax.paxtools.model.level3.PathwayStep> order = p.getPathwayOrder();
         assertEquals("num orders", order.size(), 1);
         assertTrue("order value", BioPAX3Utils.contains(order, "PathwayStep3"));
+
+        Set<org.biopax.paxtools.model.level3.Evidence> evidence = p.getEvidence();
+        assertEquals("num evidence", evidence.size(), 1);
+        assertTrue("order value", BioPAX3Utils.contains(evidence, "Evidence3"));
     }
 
     @Test
@@ -154,6 +158,10 @@ public class WriteBioPAX3SingleReactionTest
         org.biopax.paxtools.model.level3.BiochemicalReaction p1 = BioPAX3Utils.getObjectFromSet(reactions, "BiochemicalReaction2");
 
         assertTrue("non existant reaction", p1 == null);
+
+        Set<org.biopax.paxtools.model.level3.Evidence> evidence = p.getEvidence();
+        assertEquals("num evidence", evidence.size(), 1);
+        assertTrue("order value", BioPAX3Utils.contains(evidence, "Evidence4"));
     }
 
     @Test
@@ -261,6 +269,7 @@ public class WriteBioPAX3SingleReactionTest
 
     }
 
+    @Test
     public void testBiosourceFromPathway1() {
         org.biopax.paxtools.model.Model model = testWrite.getModel();
         if (model == null) {
@@ -278,6 +287,7 @@ public class WriteBioPAX3SingleReactionTest
         assertEquals("src name", src.getName(), name);
     }
 
+    @Test
     public void testBiosourceFromPathway2() {
         org.biopax.paxtools.model.Model model = testWrite.getModel();
         if (model == null) {
@@ -295,6 +305,7 @@ public class WriteBioPAX3SingleReactionTest
         assertEquals("src name", src.getName(), name);
     }
 
+    @Test
     public void testBiosourceFromPathway3() {
         org.biopax.paxtools.model.Model model = testWrite.getModel();
         if (model == null) {
@@ -312,4 +323,61 @@ public class WriteBioPAX3SingleReactionTest
         assertEquals("src name", src.getName(), name);
     }
 
+    @Test
+    public void testProvenance1() {
+        org.biopax.paxtools.model.Model model = testWrite.getModel();
+        if (model == null) {
+            testWrite.createModel();
+            model = testWrite.getModel();
+        }
+
+        Set<String> name = new TreeSet<String>();
+        name.add("Reactome");
+
+        Set<String> comment = new TreeSet<String>();
+        comment.add("http://www.reactome.org");
+
+        Set<org.biopax.paxtools.model.level3.Provenance> sources = model.getObjects(org.biopax.paxtools.model.level3.Provenance.class);
+        assertTrue("num Provenances", sources.size() == 1);
+
+        org.biopax.paxtools.model.level3.Provenance p = BioPAX3Utils.getObjectFromSet(sources, "Provenance1");
+        assertTrue("Provenance1", p != null);
+        assertEquals("src name", p.getName(), name);
+        assertEquals("prov comment", p.getComment(), comment);
+    }
+
+    @Test
+    public void testProvenanceFromPathway1() {
+        org.biopax.paxtools.model.Model model = testWrite.getModel();
+        if (model == null) {
+            testWrite.createModel();
+            model = testWrite.getModel();
+        }
+
+        Set<String> name = new TreeSet<String>();
+        name.add("Reactome");
+
+        Set<String> comment = new TreeSet<String>();
+        comment.add("http://www.reactome.org");
+
+        Set<org.biopax.paxtools.model.level3.Pathway> pathways = model.getObjects(org.biopax.paxtools.model.level3.Pathway.class);
+        org.biopax.paxtools.model.level3.Pathway p = BioPAX3Utils.getObjectFromSet(pathways, "Pathway1");
+        org.biopax.paxtools.model.level3.Provenance src = BioPAX3Utils.getObjectFromSet(p.getDataSource(), "Provenance1");
+        assertTrue("source", src != null);
+        assertEquals("src name", src.getName(), name);
+        assertEquals("prov comment", src.getComment(), comment);
+    }
+
+    @Test
+    public void testEvidence() {
+        org.biopax.paxtools.model.Model model = testWrite.getModel();
+        if (model == null) {
+            testWrite.createModel();
+            model = testWrite.getModel();
+        }
+
+        Set<org.biopax.paxtools.model.level3.Evidence> evid = model.getObjects(org.biopax.paxtools.model.level3.Evidence.class);
+        assertEquals("num evidences", evid.size(), 4);
+
+    }
 }
