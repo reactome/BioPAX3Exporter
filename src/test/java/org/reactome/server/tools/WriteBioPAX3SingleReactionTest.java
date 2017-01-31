@@ -8,9 +8,7 @@ import org.junit.Test;
 import org.reactome.server.graph.domain.model.Pathway;
 import org.reactome.server.graph.service.DatabaseObjectService;
 import org.reactome.server.graph.utils.ReactomeGraphCore;
-import org.reactome.server.tools.config.GraphQANeo4jConfig;
 
-import java.util.Iterator;
 import java.util.Set;
 import java.util.TreeSet;
 

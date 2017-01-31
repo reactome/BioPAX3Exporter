@@ -1,15 +1,7 @@
 package org.reactome.server.tools;
 
-import org.biopax.paxtools.controller.EditorMap;
-import org.biopax.paxtools.io.BioPAXIOHandler;
-import org.biopax.paxtools.io.SimpleIOHandler;
-import org.biopax.paxtools.model.level3.*;
-import org.biopax.paxtools.model.level3.Pathway;
-import org.reactome.server.graph.domain.model.*;
-import org.reactome.server.graph.domain.model.Event;
+import org.reactome.server.graph.domain.model.Summation;
 
-
-import java.io.*;
 import java.util.*;
 
 /**
@@ -18,6 +10,13 @@ import java.util.*;
 
 class BioPAX3ReferenceUtils {
 
+    /**
+     * Function to create a text comment from the Summation
+     *
+     * @param summations List of Reactome Summation
+     *
+     * @return text representation of the notes in the summations
+     */
     static String getComment(List <org.reactome.server.graph.domain.model.Summation> summations) {
         String comment = "";
         if (summations != null) {
@@ -33,6 +32,13 @@ class BioPAX3ReferenceUtils {
         return comment;
     }
 
+    /**
+     * Removes any xhtml mark-up from the text
+     *
+     * @param notes text to clean up
+     *
+     * @return the text with any xhtml mark up removed
+     */
     private static String removeTags(String notes) {
         notes = notes.replaceAll("\\p{Cntrl}+", " ");
         notes = notes.replaceAll("</*[a-zA-Z][^>]*>", " ");

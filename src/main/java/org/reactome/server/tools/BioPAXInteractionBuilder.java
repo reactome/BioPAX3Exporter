@@ -1,45 +1,33 @@
 package org.reactome.server.tools;
 
-import org.biopax.paxtools.controller.EditorMap;
-import org.biopax.paxtools.io.BioPAXIOHandler;
-import org.biopax.paxtools.io.SimpleIOHandler;
 import org.biopax.paxtools.model.level3.*;
-import org.biopax.paxtools.model.level3.Process;
 import org.reactome.server.graph.domain.model.*;
-import org.reactome.server.graph.domain.model.Event;
-
-
-import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
-import org.biopax.paxtools.model.*;
-import org.reactome.server.graph.domain.model.Pathway;
 
 /**
  * @author Sarah Keating <skeating@ebi.ac.uk>
  */
-class BioPAXInteraction {
+class BioPAXInteractionBuilder {
 
     private final org.reactome.server.graph.domain.model.ReactionLikeEvent thisRLEvent;
 
     private org.biopax.paxtools.model.Model thisModel;
 
     /**
-     * Construct an instance of the BioPAXInteraction
+     * Construct an instance of the BioPAXInteractionBuilder
      */
-    BioPAXInteraction() {
+    BioPAXInteractionBuilder() {
         thisModel = null;
         thisRLEvent = null;
     }
 
     /**
-     * Construct an instance of the BioPAXInteraction for the specified
+     * Construct an instance of the BioPAXInteractionBuilder for the specified
      * ReactionLikeEvent and Model.
      *
      * @param reaction ReactionLikeEvent from ReactomeDB
      * @param model the BioPAX model being constructed from the event
      */
-    BioPAXInteraction(org.reactome.server.graph.domain.model.ReactionLikeEvent reaction, org.biopax.paxtools.model.Model model) {
+    BioPAXInteractionBuilder(org.reactome.server.graph.domain.model.ReactionLikeEvent reaction, org.biopax.paxtools.model.Model model) {
         thisRLEvent = reaction;
         thisModel = model;
     }
@@ -76,7 +64,7 @@ class BioPAXInteraction {
             }
         }
 
-        BioPAX3BasicElements elements = new BioPAX3BasicElements(event, thisModel, bpReaction);
+        BioPAX3BasicElementsBuilder elements = new BioPAX3BasicElementsBuilder(event, thisModel, bpReaction);
         elements.addEvidence();
         return bpReaction;
     }

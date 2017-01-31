@@ -1,15 +1,6 @@
 package org.reactome.server.tools;
 
-import org.biopax.paxtools.controller.EditorMap;
-import org.biopax.paxtools.io.BioPAXIOHandler;
-import org.biopax.paxtools.io.SimpleIOHandler;
-import org.biopax.paxtools.model.level3.*;
-import org.biopax.paxtools.model.level3.Pathway;
-import org.reactome.server.graph.domain.model.*;
-import org.reactome.server.graph.domain.model.Event;
 
-
-import java.io.*;
 import java.util.*;
 
 /**
@@ -21,7 +12,7 @@ import java.util.*;
  * e.g. Pathway1 Publication1 etc.
  */
 class TypeCounter {
-    private String mName;
+    private final String mName;
     private Integer mCount;
 
     TypeCounter(String name) {

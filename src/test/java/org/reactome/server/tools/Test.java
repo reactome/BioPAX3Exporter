@@ -4,8 +4,6 @@ import com.martiansoftware.jsap.*;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import org.reactome.server.graph.domain.model.Pathway;
-import org.reactome.server.graph.service.DatabaseObjectService;
 import org.reactome.server.graph.utils.ReactomeGraphCore;
 import org.reactome.server.tools.config.GraphQANeo4jConfig;
 

@@ -1,16 +1,10 @@
 package org.reactome.server.tools;
 
-import org.biopax.paxtools.controller.EditorMap;
-import org.biopax.paxtools.io.BioPAXIOHandler;
 import org.biopax.paxtools.io.SimpleIOHandler;
-import org.biopax.paxtools.model.level3.*;
-import org.biopax.paxtools.model.level3.Process;
 import org.reactome.server.graph.domain.model.*;
-import org.reactome.server.graph.domain.model.Event;
 
 
 import java.io.*;
-import java.util.ArrayList;
 import java.util.List;
 import org.biopax.paxtools.model.*;
 import org.reactome.server.graph.domain.model.Pathway;
@@ -85,7 +79,7 @@ class WriteBioPAX3 {
     void createModel(){
         thisModel = bioPAXFactory.createModel();
         thisModel.setXmlBase(xmlBase);
-        BioPAXPathway thisBPPath = new BioPAXPathway(thisPathway, thisModel);
+        BioPAXPathwayBuilder thisBPPath = new BioPAXPathwayBuilder(thisPathway, thisModel);
 
         thisBPPath.addReactomePathway();
     }

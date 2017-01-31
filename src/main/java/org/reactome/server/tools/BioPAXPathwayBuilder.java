@@ -1,48 +1,37 @@
 package org.reactome.server.tools;
 
-import org.biopax.paxtools.controller.EditorMap;
-import org.biopax.paxtools.io.BioPAXIOHandler;
-import org.biopax.paxtools.io.SimpleIOHandler;
 import org.biopax.paxtools.model.level3.*;
 import org.biopax.paxtools.model.level3.Process;
 import org.reactome.server.graph.domain.model.*;
-import org.reactome.server.graph.domain.model.Event;
 
 
-import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
-import java.util.TreeSet;
-
-import org.biopax.paxtools.model.*;
 import org.reactome.server.graph.domain.model.Pathway;
 
 /**
  * @author Sarah Keating <skeating@ebi.ac.uk>
  */
-class BioPAXPathway {
+class BioPAXPathwayBuilder {
 
     private final org.reactome.server.graph.domain.model.Pathway thisPathway;
 
     private org.biopax.paxtools.model.Model thisModel;
 
     /**
-     * Construct an instance of the BioPAXPathway
+     * Construct an instance of the BioPAXPathwayBuilder
      */
-    BioPAXPathway() {
+    BioPAXPathwayBuilder() {
         thisPathway = null;
         thisModel = null;
     }
 
     /**
-     * Construct an instance of the BioPAXPathway for the specified
+     * Construct an instance of the BioPAXPathwayBuilder for the specified
      * Pathway and Model.
      *
      * @param pathway Pathway from ReactomeDB
      * @param model the BioPAX model being constructed from the Pathway
      */
-    BioPAXPathway(org.reactome.server.graph.domain.model.Pathway pathway, org.biopax.paxtools.model.Model model) {
+    BioPAXPathwayBuilder(org.reactome.server.graph.domain.model.Pathway pathway, org.biopax.paxtools.model.Model model) {
         thisPathway = pathway;
         thisModel = model;
     }
@@ -105,7 +94,7 @@ class BioPAXPathway {
         if (event instanceof Pathway) {
             childPath = addReactomePathway((Pathway) event);
         } else if (event instanceof org.reactome.server.graph.domain.model.ReactionLikeEvent) {
-            BioPAXInteraction thisBPInteract = new BioPAXInteraction((ReactionLikeEvent) event, thisModel);
+            BioPAXInteractionBuilder thisBPInteract = new BioPAXInteractionBuilder((ReactionLikeEvent) event, thisModel);
             childPath = thisBPInteract.addReactomeRLEvent();
         }
 
@@ -125,7 +114,7 @@ class BioPAXPathway {
         if (pathway == null) return null;
         org.biopax.paxtools.model.level3.Pathway bpPath =
                 thisModel.addNew(org.biopax.paxtools.model.level3.Pathway.class, BioPAX3Utils.getTypeCount("Pathway"));
-        BioPAX3BasicElements elements = new BioPAX3BasicElements(pathway, thisModel, bpPath);
+        BioPAX3BasicElementsBuilder elements = new BioPAX3BasicElementsBuilder(pathway, thisModel, bpPath);
         elements.addBioSourceInformation();
         elements.addReactomeDataSource();
         elements.addEvidence();
@@ -148,7 +137,7 @@ class BioPAXPathway {
      * The pathwayOrder referneces a PathwayStep which refers back to the pathwayComponent
      *
      * @param bpPath the parent BioPAX pathway to which the information should be added
-     * @param childPath teh child BioPAX Pathway that is the pathwayComponent
+     * @param childPath the child BioPAX Pathway that is the pathwayComponent
      * @param step the BioPAX PathwayStep associated with this component
      */
     private void addComponentInformation(org.biopax.paxtools.model.level3.Pathway bpPath,
