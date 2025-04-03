@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/9026286#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:Evidence rdf:ID="Evidence10">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep3">
+ <bp:stepProcess rdf:resource="#Catalysis3" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction3" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep4">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction4" />
+ <bp:stepProcess rdf:resource="#Catalysis4" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#Catalysis1" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep2">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction2" />
+ <bp:stepProcess rdf:resource="#Catalysis2" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep7">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction7" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep8">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction8" />
+ <bp:stepProcess rdf:resource="#Catalysis7" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep5">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction5" />
+ <bp:stepProcess rdf:resource="#Catalysis5" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep6">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction6" />
+ <bp:stepProcess rdf:resource="#Catalysis6" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis3">
+ <bp:controlled rdf:resource="#BiochemicalReaction3" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis2">
+ <bp:controlled rdf:resource="#BiochemicalReaction2" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis1">
+ <bp:controlled rdf:resource="#BiochemicalReaction1" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence3">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis7">
+ <bp:controlled rdf:resource="#BiochemicalReaction8" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis6">
+ <bp:controlled rdf:resource="#BiochemicalReaction6" />
+</bp:Catalysis>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis5">
+ <bp:controlled rdf:resource="#BiochemicalReaction5" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis4">
+ <bp:controlled rdf:resource="#BiochemicalReaction4" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence7">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence6">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence5">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence4">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence9">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence8">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep3" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep4" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep2" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep7" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep8" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep5" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep6" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep9" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction6" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction7" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction8" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction9" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction2" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction3" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction4" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction5" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Biosynthesis of DPAn-3-derived protectins and resolvins</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The polyunsaturated fatty acid (PUFA) &#969;-3 cis-7,10,13,16,19-docosapentaenoic acid (DPAn-3) is an intermediate in the biosynthesis of docosahexaenoic acid (DHA) from eicosapentaenoic acid (EPA) and is also a precursor for the production of novel bioactive mediators. The proposed biosynthesis of resolvins and protectins derived from DPAn-3 is described here (Dalli et al. 2013, Hansen et al. 2017, Vik et al. 2017). 15-lipoxygenase oxygenates DPAn-3 to its 17(S) hydroperoxy epimer from which resolvins and protectins are formed via a combination of oxygenation, reduction and hydrolysis reactions (Dalli et al. 2013). The products of the &#969;-3 isomer were characterised based on docosahexaenoic acid (DHA)-derived resolvins and protectins (Serhan et al. 2002) and were demonstrated to have similar potent systemic anti-inflammatory and tissue protective actions as DHA-derived specialised proresolving mediators (SPMs) (Dalli et al. 2013). The same biosynthetic route as DHA-derived SPMs is probably how DPAn-3 products are also formed (Dalli et al. 2013).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
+ <bp:evidence rdf:resource="#Evidence3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Epoxide hydrolase hydrolyses 16(S),17(S)-epoxy-DPAn-3 to PD1n-3DPA or PD2n-3DPA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction3">
+ <bp:evidence rdf:resource="#Evidence4" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Hydroperoxy reductase reduces 7,17-diHp-DPAn-3 to RvD5n-3DPA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction4">
+ <bp:evidence rdf:resource="#Evidence5" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ALOX5 dehydrogenates 17(S)-Hp-DPAn-3 to 16(S),17(S)-epoxy-DPAn-3</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep9">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction9" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction5">
+ <bp:evidence rdf:resource="#Evidence6" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ALOX5 oxidises 17(S)-Hp-DPAn-3 to 7,17-diHp-DPAn-3</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ALOX15 oxidises DPAn-3 to 17(S)-Hp-DPAn-3</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction6">
+ <bp:evidence rdf:resource="#Evidence7" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ALOX5 dehydrogenates 7,17-diHp-DPAn-3 to 7,8-epoxy,17-HDPAn-3</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction7">
+ <bp:evidence rdf:resource="#Evidence8" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PD1n-3, PD2n-3 translocate from cytosol to extracellular region</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction8">
+ <bp:evidence rdf:resource="#Evidence9" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Epoxide hydrolase hydrolyses 7,8-epoxy-HDPAn-3 to RvD1n-3DPA or RvD2n-3DPA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction9">
+ <bp:evidence rdf:resource="#Evidence10" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">DPAn-3 resolvins translocate from cytosol to extracellular region</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+</rdf:RDF>

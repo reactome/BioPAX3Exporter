@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/9912529#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">H139Hfs13* PPM1K causes a mild variant of  MSUD</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PPM1K is a mitochondrial protein phosphatase that removes the inhibitory phosphorylation from the E1 beta subunit of branched-chain ketoacid dehydrogenase (BCKDH) to restore BCKDH activity (Lu et al, 2007; Lu et al, 2009 a, b; Wynn et al, 2012; Zhou et al, 2012).  BCKDH is responsible for the oxidative decarboxylation of branched-chain amino acid (BCAA) derivatives of leucine, valine and isoleucine, providing acetyl CoA and succinyl CoA intermediates for the Krebs Cycle (reviewed in Strauss et al, 2020; Zhang et al, 2023). Loss-of-function mutations in subunits of BCKDH cause accumulation of toxic BCAAs in the urine, neurological defects and are the cause of Maple Syrup Urine disease (MSUD). More recently, a frameshift mutation in PPM1K was identified as the probable cause of a mild variant of MSUD (Oyarzabal et al, 2012). This frameshift introduces a stop codon at residue 151, destabilizing the protein, and transfection of PPM1K-deficient fibroblast lines with WT PPM1K restores BCKDH activity (Oyarzabal et al, 2012). </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">H139Hfs13* PPM1K does not dephosphorylate BCKDH</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+ <bp:stepProcess rdf:resource="#Catalysis1" />
+</bp:PathwayStep>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:Catalysis rdf:ID="Catalysis1">
+ <bp:controlled rdf:resource="#BiochemicalReaction1" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+</rdf:RDF>

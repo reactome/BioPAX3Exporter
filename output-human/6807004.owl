@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/6807004#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep12" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep13" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep6" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep5" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep4" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep9" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep8" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep7" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep10" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep11" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction8" />
+ <bp:pathwayComponent rdf:resource="#Pathway2" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction9" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction4" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction5" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction6" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction7" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction12" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction3" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction11" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction10" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Negative regulation of MET activity</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Signaling by MET receptor is negatively regulated mainly by MET receptor dephosphorylation or MET receptor degradation. Protein tyrosine phosphatase PTPRJ dephosphorylates MET tyrosine residue Y1349, thus removing the docking site for the GAB1 adapter (Palka et al. 2003). Protein tyrosine phosphatases PTPN1 and PTPN2 dephosphorylate MET tyrosines Y1234 and Y1235 in the kinase activation loop, thus attenuating catalytic activity of MET (Sangwan et al. 2008). The E3 ubiquitin ligase CBL promotes ubiquitination of the activated MET receptor and subsequent MET degradation. CBL contains a RING finger domain that engages E2 protein ubiquitin ligases to mediate ubiquitination of MET, which may occur at the cell membrane or in the early endocytic compartment. Ubiquitinated MET is degraded in a late endosomal or lysosomal compartment in a proteasome-dependent manner. The involvement of proteasome in MET degradation seems to be indirect, through an effect on MET endocytic trafficking (Jeffers et al. 1997, Peschard et al. 2001, Hammond et al. 2001, Petrelli et al. 2002). LRIG1 promotes lysosome-dependent degradation of MET in the absence of HGF-mediated activation (Lee et al. 2014, Oh et al. 2014). MET-mediated activation of RAS signaling is inhibited by MET receptor binding to MUC20 (Higuchi et al. 2004) or RANBP10 (Wang et al. 2004).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway2">
+ <bp:pathwayOrder rdf:resource="#PathwayStep2" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep3" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction2" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Drug-mediated inhibition of MET activation</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MET receptor tyrosine kinase (RTK) is a proto-oncogene that is frequently aberrantly activated in cancer through gene amplification and/or activating mutations that result in hypersensitivity to HGF stimulation or HGF-independent activation. Oncogenic MET activation can occur as a primary mechanism of malignant transformation or be selected secondarily, as a mechanism of resistance to therapeutics that target related RTKs, such as EGFR. MET targeted anti-cancer therapeutics, either recombinant monoclonal antibodies (MAbs) or small tyrosine kinase inhibitors (TKIs), have shown promise as a first-line agents for the treatment of solid tumors with primary MET activation or as second-line agents for the treatment of solid tumors with acquired MET-mediated resistance to other RTK-targeted therapies (reviewed in Comoglio et al. 2018).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction12">
+ <bp:evidence rdf:resource="#Evidence14" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LRIG1 undergoes ubiquitination</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction11">
+ <bp:evidence rdf:resource="#Evidence13" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PTPN1 and PTPN2 dephosphorylate MET</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction10">
+ <bp:evidence rdf:resource="#Evidence12" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">USP8 deubiquitinates LRIG1</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep2">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#Pathway2" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep6">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction5" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep5">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction4" />
+ <bp:stepProcess rdf:resource="#Catalysis1" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep4">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction3" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep3">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction2" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep9">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction8" />
+ <bp:stepProcess rdf:resource="#Catalysis3" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep8">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction7" />
+ <bp:stepProcess rdf:resource="#Catalysis2" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep7">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction6" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep10">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction9" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep11">
+ <bp:stepProcess rdf:resource="#Catalysis4" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction10" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence11">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence12">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep12">
+ <bp:stepProcess rdf:resource="#Catalysis5" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction11" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence10">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep13">
+ <bp:stepProcess rdf:resource="#Catalysis6" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction12" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis6">
+ <bp:controlled rdf:resource="#BiochemicalReaction12" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis3">
+ <bp:controlled rdf:resource="#BiochemicalReaction8" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis2">
+ <bp:controlled rdf:resource="#BiochemicalReaction7" />
+</bp:Catalysis>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:Catalysis rdf:ID="Catalysis5">
+ <bp:controlled rdf:resource="#BiochemicalReaction11" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis4">
+ <bp:controlled rdf:resource="#BiochemicalReaction10" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis1">
+ <bp:controlled rdf:resource="#BiochemicalReaction4" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction8">
+ <bp:evidence rdf:resource="#Evidence10" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PTPRJ dephosphorylates MET</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction9">
+ <bp:evidence rdf:resource="#Evidence11" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">EPS15 and HGS bind ubiquitinated MET</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction4">
+ <bp:evidence rdf:resource="#Evidence6" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MET phosphorylates CBL</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence9">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction5">
+ <bp:evidence rdf:resource="#Evidence7" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CBL binds MET</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence8">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence7">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction6">
+ <bp:evidence rdf:resource="#Evidence8" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MET binds LRIG1</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence6">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction7">
+ <bp:evidence rdf:resource="#Evidence9" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CBL monoubiquitinates activated MET</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence5">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Anti-MET small tyrosine kinase inhibitors bind MET</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence4">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence3">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
+ <bp:evidence rdf:resource="#Evidence4" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Anti-MET recombinant therapeutic antibodies bind MET</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction3">
+ <bp:evidence rdf:resource="#Evidence5" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CBL recruits CIN85:endophilin to ubiquitinated MET</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence13">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence14">
+</bp:Evidence>
+</rdf:RDF>

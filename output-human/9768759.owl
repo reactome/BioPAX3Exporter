@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/9768759#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:PathwayStep rdf:ID="PathwayStep12">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction10" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep13">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction11" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence13">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence14">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway3">
+ <bp:pathwayOrder rdf:resource="#PathwayStep12" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep13" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep9" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep7" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep8" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep5" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep6" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep10" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep11" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction3" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction8" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction9" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction11" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction6" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction10" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction7" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction4" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction5" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence5" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Regulation of NPAS4 gene transcription</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Transcription of the NPAS4 gene is positively regulated by neuronal stimulation-related increase in intracellular calcium levels (Lin et al. 2008; Zhang et al. 2009, Mellstr&#246;m et al. 2014; Lobos et al. 2021).  In the absence of neuronal activity induced calcium influx, KCNIP3 (DREAM) binds to the promoter of the NPAS4 gene and represses NPAS4 transcription (Mellstr&#246;m et al. 2014). In non-neuronal cells, REST protein represses transcription of the NPAS4 gene (Bersten et al. 2014). In neuronal cells, REST may have a dual effect on NPAS4 expression: acting as a positive regulator of NPAS4 transcription early upon neuronal excitation and as a negative regulator at later time points, allowing NPAS4 to return to basal levels (Prestigio et al. 2021). Binding of agonist activated glucocorticoid receptor NR3C1 (also known as GR) to evolutionarily conserved glucocorticoid response elements (GREs) upstream of the NPAS4 gene transcription start site is responsible for stress-induced repression of NPAS4 gene transcription (Furukawa Hibi et al. 2012). Chronic restraint stress as well as corticosterone injection also reduce Npas4 gene expression in the mouse hippocampus (Yun et al. 2010). Though mechanisms remain to be delineated, HDAC5 was reported by multiple studies to contribute to NPAS4 gene repression (Taniguchi et al. 2017, Hashikawa-Hobara et al. 2021; Lv et al. 2021; Rein et al. 2022). In addition, HDAC3 was reported as the NPAS4 gene repressor during neurodegeneration (Louis Sam Titus et al. 2019).  SRF (Serum response factor) stimulates NPAS4 gene transcription upon neuronal excitation (Kuzniewska et al. 2016, L&#246;sing et al. 2017, F&#246;rstner and Kn&#246;ll 2019). NPAS4 gene transcription is positively regulated by PI3K/AKT signaling (Ooe et al. 2009; Speckmann et al. 2016), and only partially dependent on ERK (MAPK) signaling (Bl&#252;thgen et al. 2017). NPAS4 may be one of the EGR1 target genes (Han et al. 2014). Neuronal activity stimulation may trigger the formation of DNA double strand breaks (DSBs) in the promoters of a subset of early-response genes, including FOS, NPAS4, and EGR1, which may contribute to their transcriptional activation (Madabushi et al. 2015). NPAS4 appears to be a downstream target involved in amyloid precursor protein (APP)-dependent regulation of inhibitory synaptic transmission (Opsomer et al. 2020). TET1, a methylcytosine dioxygenase that catalyzes oxidation of 5-methylcytosine (5mC) to 5-hydroxymethylcytosine (5hmC) and promotes DNA demethylation is implicated in transcriptional activation of NPAS4 gene through demethylation of hypermethylated CpG dinucleotides in the NPAS4 gene promoter region (Rudenko et al. 2013). Transcriptional activation of the NPAS4 gene is associated with the appearance of H3K4me3 mark and 5hmC mark at the NPAS4 gene promoter (Webb et al. 2017).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence10">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence11">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence12">
+</bp:Evidence>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
+ <bp:evidence rdf:resource="#Evidence4" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">miR-224 binds NPAS4 mRNA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction3">
+ <bp:evidence rdf:resource="#Evidence6" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NPAS4 gene transcription in non-neuronal cells is repressed by REST</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">miR-224 represses NPAS4 mRNA translation</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction8">
+ <bp:evidence rdf:resource="#Evidence11" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">SRF stimulates NPAS4 gene transcription</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction9">
+ <bp:evidence rdf:resource="#Evidence12" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Activated glucocorticoid receptor binds NPAS4 gene promoter</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction11">
+ <bp:evidence rdf:resource="#Evidence14" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Activated glucocorticoid receptor represses NPAS4 gene transcription</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction6">
+ <bp:evidence rdf:resource="#Evidence9" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Ca2+ binds KCNIP3</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction10">
+ <bp:evidence rdf:resource="#Evidence13" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">SRF binds NPAS4 gene promoter</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction7">
+ <bp:evidence rdf:resource="#Evidence10" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">REST binds promoter and the first intron of NPAS4 gene</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep4" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayComponent rdf:resource="#Pathway3" />
+ <bp:pathwayComponent rdf:resource="#Pathway2" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Regulation of NPAS4 gene expression</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NPAS4 is predominantly expressed in neuronal cells. In neurons, expression of NPAS4 is regulated by Ca2+, which ties NPAS4 level to neuronal activity (Lin et al. 2008; Zhang et al. 2009; Kim et al. 2010; Mellstr&#246;m et al. 2014; Lobos et al. 2021).  NPAS4 expression is regulated by signaling pathways activated downstream of the N-methyl-D-aspartate (NMDA) receptor and L-type Ca2+ channel (Coba et al. 2008; Lin et al. 2008; Horvath et al. 2021).  In vivo, NPAS4 expression is activated by visual stimulation (Lin et al. 2008), contextual learning (Ramamoorthi et al. 2011), as well as pharmacologically induced generalized seizure (Flood et al. 2004). Chronic stress induces downregulation of NPAS4 gene expression in the hippocampus (Furukawa-Hibi et al. 2015), so does social isolation (Ibi et al. 2008). Adult female mice who were exposed to early maternal separation (early life stress) show upregulation of NPAS4 in the prefrontal cortex later in life (Ryabushkina et al. 2020). NPAS4 is thought to have a neuroprotective effect and is downregulated during neurodegeneration (Ooe et al. 2009; Zhang et al. 2009; Louis Sam Titus et al 2019). NPAS4 level is reduced in the hippocampus of aged, memory-impaired mice (Qiu et al. 2016). Studies in mice indicate that NPAS4 affects synaptic connections in excitatory and inhibitory neurons, neural circuit plasticity, and memory formation (reviewed by Sun and Lin 2016). NPAS4 may be involved in the functioning of the circadian system (Unfried et al. 2010; West et al. 2013; Xu et al. 2021).  Npas4 mRNA levels are downregulated upon infection with Zika virus through an unknown mechanism (Alpuche-Lazcano et al. 2021).  Besides neuronal cells, NPAS4 is also expressed in pancreatic beta cells, where its levels are regulated by intracellular calcium, as in the nervous system (Speckmann et al. 2016).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction4">
+ <bp:evidence rdf:resource="#Evidence7" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">KCNIP3 binds NPAS4 gene promoter</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway2">
+ <bp:pathwayOrder rdf:resource="#PathwayStep3" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep2" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction2" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Regulation of NPAS4 mRNA translation</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The 3&apos;UTR of NPAS4 mRNA is highly conserved between mouse, rat and human (&gt;95% identity across ~700 bp of the 3&apos;UTR sequence). Of the three putative microRNAs, miR-224, miR-203 and miR-132/212, that were predicted to target the 3&apos;UTR of NPAS4 mRNA by multiple computational algorithms, miR-224 and miR-203 were able to significantly downregulate expression of the NPAS4 3&#8217;UTR reporter construct (Bersten et al. 2014). Downregulation of Npas4 expression by miR-224 was also shown in mouse (Choy et al. 2017). Npas4 was also reported as a target gene of miR-1 (Forget et al. 2021), miR-142 (Ji et al. 2019) and miR-744 (Choy et al. 2017). Only microRNAs that were reported to target Npas4 mRNA by at least two studies are shown in the diagram. The circulatory RNA circ_0003420 was also reported to target NPAS4 mRNA and contribute to its degradation (Xiong et al. 2021).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction5">
+ <bp:evidence rdf:resource="#Evidence8" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NPAS4 gene transcription is repressed by KCNIP3</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:Evidence rdf:ID="Evidence4">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep9">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction7" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence5">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep7">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction5" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence3">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep8">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction6" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep5">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction3" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence8">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep6">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction4" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence9">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep3">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction2" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence6">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep4">
+ <bp:stepProcess rdf:resource="#Pathway3" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence7">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#Pathway2" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep10">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction8" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep2">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep11">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction9" />
+</bp:PathwayStep>
+</rdf:RDF>

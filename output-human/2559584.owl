@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/2559584#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep2" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction2" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of Senescence-Associated Heterochromatin Foci (SAHF)</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The process of DNA damage/telomere stress induced senescence culminates in the formation of senescence associated heterochromatin foci (SAHF). These foci represent facultative heterochromatin that is formed in senescent cells. They contribute to the repression of proliferation promoting genes and play an important role in the permanent cell cycle exit that characterizes senescence (Narita et al. 2003 and 2006). SAHF appear as compacted, punctate DAPI stained foci of DNA. Each chromosome is condensed into a single SAH focus, with telomeric and centromeric chromatin located predominantly at its periphery (Funayama et al. 2006, Zhang et al. 2007). An evolutionarily conserved protein complex of HIRA, ASF1A, UBN1 and CABIN1 plays a crucial role in the SAHF formation. As cells approach senescence, HIRA, ASF1A, UBN1 and CABIN1 accumulate at the PML bodies (Zhang et al. 2005, Banumathy et al. 2009, Rai et al. 2011). PML bodies are punctate nuclear structures that contain PML protein and numerous other proteins and are proposed to be the sites of assembly of macromolecular regulatory complexes and protein modification (Fogal et al. 2000, Guo et al. 2000, Pearson et al. 2000). Recruitment of HIRA to PML bodies coincides with altered chromatin structure and deposition of macroH2A histone H2A variant onto chromatin. As cells become senescent, HIRA, ASF1A, UBN1 and CABIN1 relocate from PML bodies to SAHF. HIRA accumulation at PML bodies is RB1  and TP53  independent, but may require phosphorylation of HIRA serine S697 by GSK3B (Ye, Zerlanko, Kennedy et al. 2007). SAHF formation itself, however, requires functional RB1 and TP53 pathways (Ye, Zerlanko, Zhang et al. 2007). SAHF contain H3K9Me mark, characteristic of trancriptionally silent chromatin, and HP1, marcoH2A histone H2A variant and HMGA proteins are also components of SAHF (Narita et al. 2006), besides the HIRA:ASF1A:UBN1:CABIN1 complex. A yet unidentified H3K9Me histone methyltransferase may be recruited to SAHF by UBN1 (Banumathy et al. 2009). One of the functions of the HIRA:ASF1A:UBN1:CABIN1 complex is to deposit histone H3.3. variant to chromatin, which influences gene expression (Zhang et al. 2007, Rai et al. 2011). Further studies are needed to fully elucidate the mechanism of SAHF formation and mechanism by which SAHF promote cell senescence.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:Evidence rdf:ID="Evidence3">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep2">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction2" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
+ <bp:evidence rdf:resource="#Evidence3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Initiation of SAHF formation</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">SAHF formation</bp:displayName>
+</bp:BiochemicalReaction>
+</rdf:RDF>

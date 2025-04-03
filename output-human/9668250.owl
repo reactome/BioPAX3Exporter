@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/9668250#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#Pathway2" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GGCX does not gamma-carboxylate 3D-F9(29-461) (pro-factor IX)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis2">
+ <bp:controlled rdf:resource="#BiochemicalReaction2" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis1">
+ <bp:controlled rdf:resource="#BiochemicalReaction1" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
+ <bp:evidence rdf:resource="#Evidence5" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">FIX(29-461) variant is not activated (factor XIa catalyst)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis3">
+ <bp:controlled rdf:resource="#BiochemicalReaction3" />
+</bp:Catalysis>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction3">
+ <bp:evidence rdf:resource="#Evidence7" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">FIXa variant:FVIIIa does not convert FX to the active FXa</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction4">
+ <bp:evidence rdf:resource="#Evidence9" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">F9 variant is not secreted</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:Evidence rdf:ID="Evidence9">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence8">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence7">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence6">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence5">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence4">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence3">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway5">
+ <bp:pathwayOrder rdf:resource="#PathwayStep8" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction4" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence8" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective F9 secretion</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">A deficiency or dysfunction of factor IX (FIX) caused by mutations in the F9 gene is associated with a blood clotting disorder hemophilia B (HB). The FIX protein level may be decreased in the circulation by F9 mutations affecting FIX protein synthesis, stability, or secretion (Kurachi S et al. 1997; Enjolras N et al. 2004; Branchini A et al. 2013, 2017; Tajnik M et al. 2016; Odaira K et al. 2019). The Reactome event describes intracellular accumulation and/or decreased secretion of FIX due to different HB-related genetic alterations spread throughout the F9 gene.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway4">
+ <bp:pathwayOrder rdf:resource="#PathwayStep6" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction3" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence6" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective F9 variant does not activate FX</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Factor IX (FIX) deficiency is associated with mild to severe bleeding in hemophilia B (HB) patients (Rallapalli PM et al. 2013). HB is caused by a wide range of mutations that can include point mutations (nonsense and missense), insertions, deletions and other complex rearrangements of the F9 gene (Rallapalli PM et al. 2013). The Reactome event describes failed generation of FXa as the functional consequence of the defective serine protease activity of hemophilia B (HB)-associated FIX variants such as G363R    G363E (Lu Q et al. 2015), G357E (Miyata T et al. 1991), A436V (Usharani P et al. 1985), I443T (Hamaguchi N et al. 1991), G409V (Bajaj SP et al. 1990), D410H and S411G (Ludwig M et al. 1992).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway3">
+ <bp:pathwayOrder rdf:resource="#PathwayStep4" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction2" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence4" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective F9 activation</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Deficiency or dysfunction of FIX leads to hemophilia B (HB), an X-linked, recessive, bleeding disorder. On a molecular basis, HB is due to a heterogeneous spectrum of mutations spread throughout the F9 gene (Rallapalli PM et al. 2013). The Reactome event describes the defective proteolytic activation of FIX by factor XIa due to the presence of HB-associated point mutations R191C, R191H, R226Q and R226W in the cleavage sites of FIX (Liddell MB et al. 1989; Monroe DM et al. 1989; Suehiro K et al. 1989; Diuguid DL et al. 1989; Bertina RM et al.1990). In addition, naturally occurring point mutations in the FIX propeptide sequence such as N43Q, N43L or N46S are also annotated here. These FIX variants are secreted into the circulation with a mutant 18-amino acid propeptide still attached (Bentley AK et al. 1986; Galeffi P    Brownlee GG 1987). The unprocessed FIX variants were found to affect the function of the protein by destabilizing the calcium-induced conformation of FIX (Wojcik EG et al. 1997) and showed delayed activation by FXIa (Liddell MB et al. 1989; Ware J et al. 1989; de la Salle C et al. 1993; Wojcik EG et al. 1997; Bristol JA et al. 1993).   </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway2">
+ <bp:pathwayOrder rdf:resource="#PathwayStep2" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective gamma-carboxylation of F9</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Naturally occurring hemophilia B (HB)-associated point mutations in the FIX propeptide sequence reduce affinity to gamma-glutamyl carboxylase (GGCX) resulting in reduced &#947;-carboxylation and aberrant propeptide processing (Bentley AK et al. 1986; Rabiet MJ et al. 1987; Diuguid DL et al. 1986; Ware J et al. 1989; de la Salle C et al. 1993). Unprocessed FIX variants such as F9 N43Q/L or F9 N46S, circulate with the attached propeptide and show delayed FIX activation (Bentley AK et al. 1986; Diuguid DL et al. 1986; Ware J et al. 1989; de la Salle C et al. 1993).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep7" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep5" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep3" />
+ <bp:pathwayComponent rdf:resource="#Pathway5" />
+ <bp:pathwayComponent rdf:resource="#Pathway4" />
+ <bp:pathwayComponent rdf:resource="#Pathway3" />
+ <bp:pathwayComponent rdf:resource="#Pathway2" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective factor IX causes hemophilia B</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The F9 gene encodes coagulation factor IX (FIX), a vitamin K-dependent plasma protease that participates in the intrinsic blood coagulation pathway. FIX circulates as a zymogen, and is proteolytically activated to FIXa by activated FXIa or tissue factor-bound FVIIa. After being activated, FIXa forms a complex with Ca2+ ions, membrane phospholipids and coagulation factor VIIIa to activate coagulation factor X. Mutations within F9 gene that lead to quantitative and/or qualitative deficiencies in the circulating FIX protein are associated with hemophilia B (HB), a rare X-linked, recessively transmitted bleeding disorder (White GC et al. 2001; Rallapalli PM et al. 2013; Goodeve AC 2015). The disease severity in hemophilia is classified according to the plasma procoagulant levels of FIX activity. The severe form is defined as a factor level  1% of normal, the moderate form as a factor level of 1-5%, and the mild form with a factor level &gt;5 and  40%. Patients with severe hemophilia frequently develop hemorrhages into joints, muscles or soft tissues without any apparent cause. They can also suffer from life-threatening bleeding episodes such as intracranial hemorrhages. Persons with mild and moderate factor deficiency rarely experience spontaneous hemorrhages, and excessive bleeding mostly occurs only following trauma or in association with invasive procedures. A wide range of different genetic alterations are spread throughout the F9 gene, including single nucleotide substitutions, small and large deletions (Rallapalli PM et al. 2013). However functional consequences of most F9 mutations are poorly studied. The Reactome event describes altered functions of HB-associated FIX variants such as reduced FIX protein secretion due to defective expression and/or processing, failed proteolysis of factor X to Xa by defective FIX and failed formation of a membrane complex in the presence of Ca2+ ions, phospholipid, and cofactor VIIIa. The annotated HB-associated FIX variants are supported with data from functional studies (Usharani P et al. 1985; Spitzer SG et al. 1990; Ludwig M et a. 1992; Kurachi S et al. 1997; Branchini A et al. 2013).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep8">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction4" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep6">
+ <bp:stepProcess rdf:resource="#Catalysis3" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction3" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep7">
+ <bp:stepProcess rdf:resource="#Pathway5" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep4">
+ <bp:stepProcess rdf:resource="#Catalysis2" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction2" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep5">
+ <bp:stepProcess rdf:resource="#Pathway4" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep2">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+ <bp:stepProcess rdf:resource="#Catalysis1" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep3">
+ <bp:stepProcess rdf:resource="#Pathway3" />
+</bp:PathwayStep>
+</rdf:RDF>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/3371571#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction7">
+ <bp:evidence rdf:resource="#Evidence9" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HSP90:FKBP4:PTGES3 binds HSF1 trimer</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction6">
+ <bp:evidence rdf:resource="#Evidence8" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Acetylated HSF1 dissociates from DNA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction8">
+ <bp:evidence rdf:resource="#Evidence10" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HSF1 acetylation at Lys80</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep9">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction8" />
+ <bp:stepProcess rdf:resource="#Catalysis3" />
+</bp:PathwayStep>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:Evidence rdf:ID="Evidence6">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence7">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence4">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence5">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence8">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence9">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction3">
+ <bp:evidence rdf:resource="#Evidence4" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Phosphorylation of HSF1 at Ser326 induces transactivation</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
+ <bp:evidence rdf:resource="#Evidence3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HSF1-mediated gene expression</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction5">
+ <bp:evidence rdf:resource="#Evidence7" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HSP70:DNAJB1 binds HSF1</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction4">
+ <bp:evidence rdf:resource="#Evidence6" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HSBP1 binds HSF1 trimer</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Phosphorylation of HSF1 at Ser230 induces transactivation</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence10">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence3">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep4">
+ <bp:stepProcess rdf:resource="#Pathway2" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep3">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction3" />
+ <bp:stepProcess rdf:resource="#Catalysis2" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep2">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction2" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#Catalysis1" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep8">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction7" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep7">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction6" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep6">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction5" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep5">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction4" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis3">
+ <bp:controlled rdf:resource="#BiochemicalReaction8" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis2">
+ <bp:controlled rdf:resource="#BiochemicalReaction3" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis1">
+ <bp:controlled rdf:resource="#BiochemicalReaction1" />
+</bp:Catalysis>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep4" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep3" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep2" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction3" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction2" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:pathwayComponent rdf:resource="#Pathway2" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HSF1-dependent transactivation</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Acquisition of DNA binding activity by HSF1 is necessary but insufficient for transcriptional activation (Cotto JJ et al. 1996; Trinklein ND et al. 2004). In addition to having a sequence-specific DNA binding domain, HSF1 contains a C-terminal region which is involved in activating the transcription of the target genes (Green M et al. 1995). However, the transactivating ability of the transactivation domain itself is not stress sensitive. Rather, it&apos;s controled by a regulatory domain of HSF1 (amino acids 221-310), which represses the transactivating ability under normal physiological  conditions (Green M et al. 1995; Zuo J et al. 1995; Newton EM et al. 1996). The HSF1 transactivation domain can be divided into two distinct regions, activation domain 1 (AD1) and activation domain 2 (AD2) (Brown SA et al. 1998). AD1 and AD2 each contain residues that are important for both transcriptional initiation and elongation. Mutations in acidic residues in both AD1 and AD2 preferentially affect the ability of HSF1 to stimulate transcriptional initiation, while mutations in phenylalanine residues preferentially affect stimulation of elongation (Brown SA et al. 1998).  Activation of the DNA-bound but transcriptionally incompetent HSF1 is thought to occur upon stress induced HSF1 phosphorylation at several serine residues (Ding XZ et al. 1997; Holmberg CI et al. 2001; Guettouche T et al. 2005). In cells exposed to heat, acquisition of HSE DNA-binding activity was observed to precede phosphorylation of HSF1 (Cotto JJ et al. 1996; Kline MP    Morimoto RI 1997). While there is a sufficient evidence to suggest that phosphorylation of HSF1 is essential to modulate HSF1 transactiviting capacity, mechanisms behind stress stimuli and kinases/phosphatases involved have not been clearly established.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway2">
+ <bp:pathwayOrder rdf:resource="#PathwayStep8" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep7" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep6" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep5" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep9" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction7" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction6" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction8" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction5" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction4" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence5" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Attenuation phase</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Attenuation of the heat shock transcriptional response occurs during continuous exposure to intermediate heat shock conditions or upon recovery from stress (Abravaya et al. 1991). The attenuation phase of HSF1 cycle involves the transcriptional silencing of HSF1 bound to HSE, the release of HSF1 trimers from HSE and dissociation of HSF1 trimers to monomers. HSF1-driven heat stress associated transcription was shown to depend on inducible and reversible acetylation of HSF1 at Lys80, which negatively regulates DNA binding activity of HSF1 (Westerheide SD et al. 2009). In addition, the attenuation of HSF1 activation takes place when enough HSP70/HSP40 is produced to saturate exposed hydrophobic regions of proteins damaged as a result of heat exposure. The excess HSP70/HSP40 binds to HSF1 trimer, which leads to its dissociation from the promoter and conversion to the inactive monomeric form (Abravaya et al. 1991; Shi Y et al. 1998). Interaction of HSP70 with the transcriptional corepressor repressor element 1-silencing transcription factor corepressor (CoREST) assists in terminating heat-shock response (Gomez AV et al. 2008). HSF1 DNA-binding and transactivation activity were also inhibited upon interaction of HSF1-binding protein (HSBP1) with active trimeric HSF1(Satyal SH et al. 1998). </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+</rdf:RDF>

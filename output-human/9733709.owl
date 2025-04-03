@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/9733709#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:Evidence rdf:ID="Evidence9">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence7">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence8">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction3">
+ <bp:evidence rdf:resource="#Evidence4" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Expression of SRF in cardiogenesis</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction4">
+ <bp:evidence rdf:resource="#Evidence5" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">FOXO4, MEF2C, and NKX2-5 bind the MYOCD gene</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction5">
+ <bp:evidence rdf:resource="#Evidence6" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MEF2C binds the SMYD1 (BOP) gene</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction6">
+ <bp:evidence rdf:resource="#Evidence7" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MESP1 binds the GATA4 gene</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction7">
+ <bp:evidence rdf:resource="#Evidence8" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GATA4, GATA6, and ISL1:LDB1 bind the HAND2 gene</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction8">
+ <bp:evidence rdf:resource="#Evidence9" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Expression of TBX5 in cardiogenesis</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction9">
+ <bp:evidence rdf:resource="#Evidence10" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NKX2-5 binds the TBX5 gene</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction27">
+ <bp:evidence rdf:resource="#Evidence28" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Expression of SMYD1 (BOP) in cardiogenesis</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction25">
+ <bp:evidence rdf:resource="#Evidence26" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Expression of GATA6 in cardiogenesis</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction26">
+ <bp:evidence rdf:resource="#Evidence27" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Expression of ISL1 in cardiogenesis</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction23">
+ <bp:evidence rdf:resource="#Evidence24" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Expression of MEF2C in cardiogenesis</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction24">
+ <bp:evidence rdf:resource="#Evidence25" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Expression of HAND1 in cardiogenesis</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence5">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction21">
+ <bp:evidence rdf:resource="#Evidence22" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Expression of HAND2 in cardiogenesis</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence6">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction22">
+ <bp:evidence rdf:resource="#Evidence23" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HEY1,HEY2 bind GATA4,GATA6</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence3">
+</bp:Evidence>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:Evidence rdf:ID="Evidence4">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction20">
+ <bp:evidence rdf:resource="#Evidence21" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NKX2-5 binds the GATA4 gene</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep8">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction8" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep9">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction9" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep6">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction6" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep7">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction7" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep4">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction4" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep5">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction5" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep2">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction2" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep3">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction3" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep20">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction20" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep21">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction21" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep22">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction22" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep23">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction23" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep24">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction24" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep25">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction25" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep26">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction26" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep27">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction27" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence26">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence25">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence24">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence23">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence28">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence27">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence22">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence21">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence20">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep10">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction10" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep11">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction11" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep12">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction12" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep13">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction13" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep14">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction14" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep15">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction15" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep16">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction16" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep17">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction17" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep18">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction18" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep19">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction19" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence15">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence14">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence13">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence12">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence19">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence18">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence17">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep10" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep11" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep12" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep13" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep14" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep15" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep16" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep17" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep18" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep19" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep8" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep9" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep6" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep7" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep4" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep5" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep2" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep3" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep20" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep21" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep22" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep23" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep24" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep25" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep26" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep27" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction3" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction4" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction5" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction6" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction7" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction8" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction9" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction27" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction25" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction26" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction23" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction24" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction21" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction22" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction20" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction2" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction18" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction19" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction16" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction17" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction14" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction15" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction12" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction13" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction10" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction11" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Cardiogenesis</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Gradients of Bone Morphogenetic Protein (BMP), Wingless-related integration site (WNT), and NODAL promote the formation of cardiac progenitors anteriolateral to the primitive streak during gastrulation (reviewed in Munoz-Chapuli and Perez-Pomares 2010, Cui et al. 2018, Prummel et al. 2020, Witman et al. 2019, Miyamoto e al. 2021). Eomesodermin (EOMES) and TBXT (T, Brachyury) expressed in the cardiac mesoderm activate expression of MESP1, a master regulator of cardiogenesis and the first observed marker of cardiac progenitors. MESP1-expressing cells migrate anteriorly towards the midline to form the cardiac crescent posterior to the head folds at about 2 weeks of gestation in humans (E7.5 in mice).  Within the cardiac crescent, two populations of cells can be identified based on gene expression and timing of contribution to the developing heart: the first heart field (FHF) forms the initial heart tube and contributes to the systemic ventricle (the left ventricle in crocodilians, birds, and mammals), the septum, and, to a lesser extent, the atria; the second heart field (SHF) extends the poles of the heart and contributes to the atria, the outflow tract, the septum, and the right ventricle, which is responsible for pulmonary circulation and distinguishes crocodilians, birds, and mammals (reviewed in Meilhac and Buckingham 2018).  At about 3 weeks gestation in humans (E8 in mice), FHF cells migrate axially to the midline and fuse to form the heart tube. Elongation of the heart tube leads to rightward looping and eventual formation of atria and ventricles (reviewed in Desgrange et al. 2018). FHF cells do not proliferate as much as SHF cells and mostly differentiate into cardiomyocytes due to the actions of myocardial differentiation factors such as NKX2-5, GATA4, TBX5, and HAND1. SHF cells are initially located in the posterior region of the cardiac crescent then, during formation of the heart tube, become located at the arterial and venous poles of the heart tube. SHF cells proliferate more than FHF cells and can differentiate to form cardiomyocytes, endothelial cells, smooth muscle cells, and fibroblasts. A reservoir of SHF progenitors located at the core of the pharyngeal mesoderm continuously contributes to the developing heart. Proliferating SHF cells express FGF8 and FGF10 driven by ISL1 and TBX1.  Cardiac progenitors are regulated by a distinct set of transcription factors and mutations in these factors and other factors involved in gene expression are responsible for congenital heart defects (reviewed in Diab et al. 2021, Houyel and Meilhac 2021, Kodo et al. 2021, Miyamoto et al. 2021, Lescroart and Zaffran 2022, Wang et al. 2022). Additionally, combinations of these transcription factors are now being used to reprogram fibroblasts and other cell types into cardiomyocytes for repairing damaged hearts (reviewed in Adams et al. 2021, Garry et al. 2021, Kim et al. 2022, Thomas et al. 2022, Zhu et al. 2022). TBXT (T, Brachyury) is expressed early in developing mesoderm and is activated by WNT signaling, which maintains proliferation and is subsequently downregulated during differentiation. Activation of MESP1 expression by TBXT and EOMES occurs early in gastrulation. MESP1 is expressed in both the FHF and the SHF. MESP1, in turn, directly activates two key regulators of cardiac development: GATA4 and NKX2-5 (NKX2.5, the ortholog of Tinman in Drosophila). Bone Morphogenetic Protein (BMP) signaling originating from BMPs secreted by underlying endoderm also enhances expression of GATA4 and NKX2-5, apparently through binding of SMAD proteins to the promoters of GATA4 and NKX2-5. GATA4 and NKX2-5 proteins, in turn, regulate each other&apos;s expression and directly interact to regulate downstream target genes. NKX2-5 directly activates GATA6 throughout the cardiac mesoderm.  The FHF is characterized by expression of TBX5 and HCN4; the SHF is characterized by transient expression of TBX1, ISL1, FGF8, FGF10, and SIX2. In the FHF, NKX2-5 binds the promoter of the TBX5 gene and activates transcription. TBX5, in turn, directly activates expression of SRF. TBX5 protein interacts directly with NKX2-5 and GATA4 proteins to activate further downstream targets. Sonic hedgehog (SHH) from the pharyngeal endoderm and WNT signaling maintain proliferation of SHF cells, In the SHF, TBX1, GATA4 and LEF1:CTNN1 (LEF1:Beta-catenin from Wnt signaling) directly activate ISL1, characteristic of SHF cells, and ISL1 then activates expression of HAND2 (dHAND), also characteristic of SHF cells.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence16">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence11">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence10">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">EOMES, WDR5, KAT2A, and TBXT bind the MESP1 gene</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
+ <bp:evidence rdf:resource="#Evidence3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GATA4, SMAD1:SMAD4, MEF2C, TBX20, and NKX2-5 bind the NKX2-5 gene</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction18">
+ <bp:evidence rdf:resource="#Evidence19" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Expression of MESP1 in cardiogenesis</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction19">
+ <bp:evidence rdf:resource="#Evidence20" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GATA4 and NKX2-5 bind the HAND1 gene</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction16">
+ <bp:evidence rdf:resource="#Evidence17" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GATA4, ISL1:LDB1, TBX20, and NKX2-5 bind the MEF2C gene</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction17">
+ <bp:evidence rdf:resource="#Evidence18" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NKX2-5 binds the GATA6 gene</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction14">
+ <bp:evidence rdf:resource="#Evidence15" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GATA4 and LEF1:CTNNB1 bind the ISL1 gene</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction15">
+ <bp:evidence rdf:resource="#Evidence16" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MESP1 binds the NKX2-5 gene</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction12">
+ <bp:evidence rdf:resource="#Evidence13" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Expression of GATA4 in cardiogenesis</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction13">
+ <bp:evidence rdf:resource="#Evidence14" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">TBX5 and KAT5 bind the SRF gene</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction10">
+ <bp:evidence rdf:resource="#Evidence11" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Expression of NKX2-5 in cardiogenesis</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction11">
+ <bp:evidence rdf:resource="#Evidence12" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Expression of MYOCD in cardiogenesis</bp:displayName>
+</bp:BiochemicalReaction>
+</rdf:RDF>

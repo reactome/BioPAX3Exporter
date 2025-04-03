@@ -1,0 +1,1364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/442755#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:Evidence rdf:ID="Evidence29">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence28">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway10">
+ <bp:pathwayOrder rdf:resource="#PathwayStep49" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep47" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep48" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep50" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction39" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction38" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction41" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction40" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence47" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RSK activation</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Ribosomal S6 kinase (RSK) has four isoforms in humans, RPS6KA1 (RSK1), RPS6KA2 (RSK3), RPS6KA3 (RSK2) and RPS6KA6 (RSK4), and each of the isoforms have six conserved phosphorylation sites (in RPS6KA1, these are serine residues S221, S363 and S380 and threonine residues T359, T573 and T732). Phosphorylation at four of these residues appears to be critically important for the catalytic activity of RSKs: S221, S363, S380 and T573 (in RPS6KA1). Phosphorylation and activation of RSKs primarily occurs at the plasma membrane, but can occur in the cytoplasm and in the nucleus. ERKs (MAPK1 and MAPK3), activated downstream of RAS signaling, phosphorylate RSKs on threonine and serine residues T359, S363 and T573 (in RPS6KA1). Phosphorylation by ERKs enables autophosphorylation of RSKs on serine residue S380 and threonine residue T732 (in RPS6KA1). Phosphorylation of RSKs by PDPK1 (PDK1) at serine residue S221 (in RPS6KA1) is necessary for the full activation of RSKs and phosphorylation of RSK substrates (reviewed by Anjum and Blenis 2012). RSK4 differs from other RSKs because it shows high level of constitutive phosphorylation and activity in the absence of growth factors, although it is still responsive to growth factors and ERK activity (Dummler et al. 2005). RSKs, especially RSK2, are highly expressed in brain regions with high synaptic activity. RSK2 mutations are the underlying cause of Coffin-Lowry syndrome (CLS), which is characterized by cognitive impairment and skeletal anomalies (Zeniou et al. 2002).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway11">
+ <bp:pathwayOrder rdf:resource="#PathwayStep54" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep53" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction43" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction44" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence53" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Ras activation upon Ca2+ influx through NMDA receptor</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Ca2+ influx through the NMDA receptor triggers RAS signaling through the activation of RAS guanyl nucleotide exchange factor RasGRF (Krapivinsky et al. 2003).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence25">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway12">
+ <bp:pathwayOrder rdf:resource="#PathwayStep58" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep69" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep59" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep56" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep67" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep78" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep57" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep68" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep65" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep76" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep66" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep77" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep63" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep74" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep64" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep75" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep61" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep72" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep62" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep73" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep70" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep60" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep71" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction50" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction61" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction60" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction49" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction48" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction59" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction54" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction65" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction53" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction64" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction52" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction63" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction51" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction62" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction47" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction58" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction46" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction57" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction45" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction56" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction67" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction55" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction66" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence56" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Assembly and cell surface presentation of NMDA receptors</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">N-methyl-D-aspartate receptors (NMDARs) are tetramers that consist of two GluN1 (GRIN1) subunits and two subunits that belong to either the GluN2 (GRIN2) subfamily (GluN2A, GluN2B, GluN2C and GluN2D) or the GluN3 (GRIN3) subfamily (GluN3A and GluN3B). The GluN2/GluN3 subunits in the NMDA tetramer can either be identical, constituting an NMDA di-heteromer (di-heterotetramer), which consists of two subunit types, GluN1 and one of GluN2s/GluN3s, or they can be two different GluN2/GluN3 proteins, constituting an NMDA tri-heteromer (tri-heterotetramer), which consists of three subunit types, GluN1 and two of GluN2s/GluN3s (Monyer et al. 1992, Wafford et al. 1993, Sheng et al. 1994, Dunah et al. 1998, Perez-Otano et al. 2001, Chatterton et al. 2002, Matsuda et al. 2002, Yamakura et al. 2005, Nilsson et al. 2007, Hansen et al. 2014, Kaiser et al. 2018, Bhattacharya et al. 2018, Bhattacharya and Traynelis 2018). NMDA tetramers assemble in the endoplasmic reticulum and traffic to the plasma membrane as part of transport vesicles (McIlhinney et al. 1998, Perez-Otano et al. 2001). NMDA receptor subunits undergo N-glycosylation, which impacts their trafficking from the endoplasmic reticulum to the plasma membrane. Trafficking efficiency may vary among different subunits of NMDARs (Lichnereva et al. 2015). Mechanistic details, such as glycosyl transferases involved and the type of sugar side chains added, are not known. As there are eight splicing isoforms of GluN1, four different GluN2 and two different GluN3 proteins, many different combinations of NMDAR subunits are possible, but only a handful of distinct NMDAR receptors have been experimentally confirmed and functionally studied. The composition of NMDARs affects trafficking, spatial (including synaptic) localization, ligand preference, channel conductivity and downstream signal transmission. Prevalent NMDARs differ at different stages of neuronal development, in different regions of the central nervous system, and at different levels of neuronal activity. For review, please refer to Lau and Zukin 2007, Traynelis et al. 2010, Paoletti et al. 2013, P&#233;rez-Ota&#241;o et al. 2016, Iacobucci and Popescu 2017.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence24">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway13">
+ <bp:pathwayOrder rdf:resource="#PathwayStep80" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep83" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep81" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep82" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction71" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction70" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction69" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction68" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence80" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Negative regulation of NMDA receptor-mediated neuronal transmission</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The duration of NMDA receptor-mediated neuronal transmission can be limited by binding of the activated calmodulin to the activated NMDA receptor. In addition to shortening the NMDA channel pore open state, calmodulin interferes with ACTN2-mediated anchoring of NMDA receptors to the postsynaptic density (Ehlers et al. 1996, Wyszynski et al. 1997). Protein phosphatases PPM1E and PPM1F dephosphorylate activated calcium/calmodulin-dependent kinases (CaMKs), thus halting CaMK-mediated signaling (Ishida, Okuno et al. 1998, Ishida et al. 1998, Kitani et al. 2003).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence27">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence26">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence21">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence20">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence23">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence22">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction29">
+ <bp:evidence rdf:resource="#Evidence36" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PKA catalytic subunit translocates to the nucleus</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction28">
+ <bp:evidence rdf:resource="#Evidence35" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">cAMP binds PKA tetramer</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction27">
+ <bp:evidence rdf:resource="#Evidence34" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Activated calmodulin binds ADCY1,ADCY8</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction26">
+ <bp:evidence rdf:resource="#Evidence33" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Calmodulin-activated adenylate cyclases ADCY1 and ADCY8 generate cAMP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction21">
+ <bp:evidence rdf:resource="#Evidence26" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Activated calmodulin dissociates from CaMKII-gamma</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction20">
+ <bp:evidence rdf:resource="#Evidence25" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CAMK4 binds KPNA2</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction25">
+ <bp:evidence rdf:resource="#Evidence32" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PKA phosphorylates CREB1</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction24">
+ <bp:evidence rdf:resource="#Evidence30" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CAMKK2 phosphorylates AMPK</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction23">
+ <bp:evidence rdf:resource="#Evidence29" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">AMPK negatively regulates binding of MAPT to microtubules</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction22">
+ <bp:evidence rdf:resource="#Evidence28" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">AMPK phosphorylates MAPT</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence18">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence17">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence19">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence14">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence13">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence16">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence15">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence10">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence12">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence11">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction18">
+ <bp:evidence rdf:resource="#Evidence23" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Calmodulin binds CAMK4</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction17">
+ <bp:evidence rdf:resource="#Evidence22" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CaMK4 phosphorylates CREB1</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction16">
+ <bp:evidence rdf:resource="#Evidence21" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CAMK4 autophosphorylates</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction15">
+ <bp:evidence rdf:resource="#Evidence20" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CaMKK autophosphorylates in the nucleus</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction19">
+ <bp:evidence rdf:resource="#Evidence24" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CaMKK phosphorylates CAMK4</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction10">
+ <bp:evidence rdf:resource="#Evidence14" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CaMKKs phosphorylate CAMK1</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction14">
+ <bp:evidence rdf:resource="#Evidence19" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CAMK4 enters the nucleus</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction13">
+ <bp:evidence rdf:resource="#Evidence18" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CaMKK binds activated calmodulin in the nucleus</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction12">
+ <bp:evidence rdf:resource="#Evidence17" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Calmodulin-bound CaMKII-gamma enters the nucleus</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction11">
+ <bp:evidence rdf:resource="#Evidence15" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CAMK1 binds calmodulin</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence47">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence46">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence49">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence48">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence43">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence42">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence45">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence44">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence41">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence40">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction49">
+ <bp:evidence rdf:resource="#Evidence61" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of di-heterotetramers of GluN1 (GRIN1) and GluN2B (GRIN2B)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction48">
+ <bp:evidence rdf:resource="#Evidence60" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of tri-heterotetramers of GluN1 (GRIN1), GluN2A (GRIN2A) and GluN2D (GRIN2D)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction43">
+ <bp:evidence rdf:resource="#Evidence54" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Activation of RasGRF</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction42">
+ <bp:evidence rdf:resource="#Evidence52" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Phosphorylation of CREB1 by ribosomal protein S6 kinases (RSKs)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction41">
+ <bp:evidence rdf:resource="#Evidence51" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ERKs phosphorylate RSKs</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction40">
+ <bp:evidence rdf:resource="#Evidence50" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p-S363,S380,T573 RS6K translocates to the nucleus</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction47">
+ <bp:evidence rdf:resource="#Evidence59" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of di-heterotetramers of GluN1 (GRIN1) and GluN3A (GRIN3A)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction46">
+ <bp:evidence rdf:resource="#Evidence58" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GluN3A (GRIN3A), GluN3B (GRIN3B) NMDA receptors traffic to the plasma membrane</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction45">
+ <bp:evidence rdf:resource="#Evidence57" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of tri-heterotetramers of GluN1 (GRIN1), GluN2A (GRIN2A) and GluN2B (GRIN2B)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction44">
+ <bp:evidence rdf:resource="#Evidence55" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NMDA-activated RASGRF1 activates RAS</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence6">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence7">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence39">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence8">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence9">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence36">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence35">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence38">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence37">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence32">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence31">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence34">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence33">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence30">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction39">
+ <bp:evidence rdf:resource="#Evidence49" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PDPK1 phosphorylates RSKs</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction38">
+ <bp:evidence rdf:resource="#Evidence48" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RSKs autophosphorylate</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction37">
+ <bp:evidence rdf:resource="#Evidence45" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CaMKII binds activated NMDA receptor</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction32">
+ <bp:evidence rdf:resource="#Evidence40" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CaMKII phosphorylates AMPA receptor</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction31">
+ <bp:evidence rdf:resource="#Evidence39" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CaMKII autophosphorylates</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction30">
+ <bp:evidence rdf:resource="#Evidence37" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">cAMP induces dissociation of inactive PKA tetramers</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction36">
+ <bp:evidence rdf:resource="#Evidence44" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Calmodulin binds neurogranin</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence3">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction35">
+ <bp:evidence rdf:resource="#Evidence43" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CaMKII binds activated calmodulin</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence4">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction34">
+ <bp:evidence rdf:resource="#Evidence42" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">SRC phosphorylates GluN2 (GRIN2) subunits of NMDARs</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence5">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction33">
+ <bp:evidence rdf:resource="#Evidence41" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Calcium binds calmodulin at the synapse</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis23">
+ <bp:controlled rdf:resource="#BiochemicalReaction44" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis22">
+ <bp:controlled rdf:resource="#BiochemicalReaction42" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis21">
+ <bp:controlled rdf:resource="#BiochemicalReaction41" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis20">
+ <bp:controlled rdf:resource="#BiochemicalReaction39" />
+</bp:Catalysis>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:Catalysis rdf:ID="Catalysis27">
+ <bp:controlled rdf:resource="#BiochemicalReaction71" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis26">
+ <bp:controlled rdf:resource="#BiochemicalReaction70" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis25">
+ <bp:controlled rdf:resource="#BiochemicalReaction69" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis24">
+ <bp:controlled rdf:resource="#BiochemicalReaction57" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis12">
+ <bp:controlled rdf:resource="#BiochemicalReaction24" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis11">
+ <bp:controlled rdf:resource="#BiochemicalReaction22" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis10">
+ <bp:controlled rdf:resource="#BiochemicalReaction19" />
+</bp:Catalysis>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:Catalysis rdf:ID="Catalysis19">
+ <bp:controlled rdf:resource="#BiochemicalReaction38" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis18">
+ <bp:controlled rdf:resource="#BiochemicalReaction34" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis17">
+ <bp:controlled rdf:resource="#BiochemicalReaction32" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis16">
+ <bp:controlled rdf:resource="#BiochemicalReaction31" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis15">
+ <bp:controlled rdf:resource="#BiochemicalReaction30" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis14">
+ <bp:controlled rdf:resource="#BiochemicalReaction26" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis13">
+ <bp:controlled rdf:resource="#BiochemicalReaction25" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep7">
+ <bp:stepProcess rdf:resource="#Pathway3" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep8">
+ <bp:stepProcess rdf:resource="#Pathway4" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep9">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction6" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#Pathway2" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep2">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep3">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction2" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep4">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction3" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep5">
+ <bp:stepProcess rdf:resource="#Catalysis1" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction4" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep6">
+ <bp:stepProcess rdf:resource="#Catalysis2" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction5" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep49">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction40" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep47">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction38" />
+ <bp:stepProcess rdf:resource="#Catalysis19" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep48">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction39" />
+ <bp:stepProcess rdf:resource="#Catalysis20" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep45">
+ <bp:stepProcess rdf:resource="#Pathway9" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep46">
+ <bp:stepProcess rdf:resource="#Pathway10" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep43">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction36" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep44">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction37" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep41">
+ <bp:stepProcess rdf:resource="#Catalysis18" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction34" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep42">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction35" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep40">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction33" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep38">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction31" />
+ <bp:stepProcess rdf:resource="#Catalysis16" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep39">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction32" />
+ <bp:stepProcess rdf:resource="#Catalysis17" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep36">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction30" />
+ <bp:stepProcess rdf:resource="#Catalysis15" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep37">
+ <bp:stepProcess rdf:resource="#Pathway8" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep34">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction28" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep35">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction29" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep32">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction26" />
+ <bp:stepProcess rdf:resource="#Catalysis14" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep33">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction27" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep30">
+ <bp:stepProcess rdf:resource="#Pathway7" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep31">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction25" />
+ <bp:stepProcess rdf:resource="#Catalysis13" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep29">
+ <bp:stepProcess rdf:resource="#Catalysis12" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction24" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep27">
+ <bp:stepProcess rdf:resource="#Catalysis11" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction22" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep28">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction23" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep25">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction21" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep26">
+ <bp:stepProcess rdf:resource="#Pathway6" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep23">
+ <bp:stepProcess rdf:resource="#Catalysis10" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction19" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep24">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction20" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep21">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction17" />
+ <bp:stepProcess rdf:resource="#Catalysis9" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep22">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction18" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep20">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction16" />
+ <bp:stepProcess rdf:resource="#Catalysis8" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep18">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction14" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep19">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction15" />
+ <bp:stepProcess rdf:resource="#Catalysis7" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep16">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction12" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep17">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction13" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep14">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction11" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep15">
+ <bp:stepProcess rdf:resource="#Pathway5" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep12">
+ <bp:stepProcess rdf:resource="#Catalysis5" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction9" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep13">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction10" />
+ <bp:stepProcess rdf:resource="#Catalysis6" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep10">
+ <bp:stepProcess rdf:resource="#Catalysis3" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction7" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep11">
+ <bp:stepProcess rdf:resource="#Catalysis4" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction8" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence69">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction61">
+ <bp:evidence rdf:resource="#Evidence73" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GluN1:GluN2B (GRIN1:GRIN2B) di-heterotetramers bind LIN7:CASK:APBA1, DLG1 and KIF17</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence68">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction60">
+ <bp:evidence rdf:resource="#Evidence72" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of di-heterotetramers of GluN1 (GRIN1) and GluN2C (GRIN2C)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence65">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence64">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence67">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence66">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence61">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep83">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction71" />
+ <bp:stepProcess rdf:resource="#Catalysis27" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence60">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence63">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep81">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction69" />
+ <bp:stepProcess rdf:resource="#Catalysis25" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence62">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep82">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction70" />
+ <bp:stepProcess rdf:resource="#Catalysis26" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence70">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction65">
+ <bp:evidence rdf:resource="#Evidence77" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of tri-heterotetramers of GluN1 (GRIN1), GluN2B (GRIN2B) and GluN3A (GRIN3A)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction64">
+ <bp:evidence rdf:resource="#Evidence76" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of di-heterotetramers of GluN1 (GRIN1) and GluN2A (GRIN2A)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction63">
+ <bp:evidence rdf:resource="#Evidence75" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of tri-heterotetramers of GluN1 (GRIN1), GluN2B (GRIN2B) and GluN2D (GRIN2D)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction62">
+ <bp:evidence rdf:resource="#Evidence74" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CaMKII and LRRC7 bind to NMDA receptors at postsynaptic density</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction69">
+ <bp:evidence rdf:resource="#Evidence82" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PPM1F dephosphorylates p-T286-CaMKII</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction68">
+ <bp:evidence rdf:resource="#Evidence81" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CALM1:4xCa2+ binds GluN1:GluN2 (GRIN1:GRIN2) NMDA receptors and displaces ACTN2</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction67">
+ <bp:evidence rdf:resource="#Evidence79" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of di-heterotetramers of GluN1 (GRIN1) and GluN2D (GRIN2D)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction66">
+ <bp:evidence rdf:resource="#Evidence78" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of tri-heterotetramers of GluN1 (GRIN1), GluN2B (GRIN2B) and GluN3B (GRIN3B)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep79" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep7" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep55" />
+ <bp:pathwayComponent rdf:resource="#Pathway2" />
+ <bp:pathwayComponent rdf:resource="#Pathway12" />
+ <bp:pathwayComponent rdf:resource="#Pathway13" />
+ <bp:pathwayComponent rdf:resource="#Pathway3" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Activation of NMDA receptors and postsynaptic events</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NMDA receptors are a subtype of ionotropic glutamate receptors that are specifically activated by a glutamate agonist N-methyl-D-aspartate (NMDA). Activation of NMDA receptors involves opening of the ion channel that allows the influx of Ca2+. NMDA receptors are central to activity dependent changes in synaptic strength and are predominantly involved in the synaptic plasticity that pertains to learning and memory. A unique feature of NMDA receptors, unlike other glutamate receptors, is the requirement for dual activation, both voltage-dependent and ligand-dependent activation. The ligand-dependent activation of NMDA receptors requires co-activation by two ligands, glutamate and glycine. However, at resting membrane potential, the pore of ligand-bound NMDA receptors is blocked by Mg2+. The voltage dependent Mg2+ block is relieved upon depolarization of the post-synaptic membrane. NMDA receptors are coincidence detectors, and are activated only if there is a simultaneous activation of both pre- and post-synaptic cell. Upon activation, NMDA receptors allow the influx of Ca2+ that initiates various molecular signaling cascades involved in the processes of learning and memory. For review, please refer to Cohen and Greenberg 2008, Hardingham and Bading 2010, Traynelis et al. 2010, and Paoletti et al. 2013.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway2">
+ <bp:pathwayOrder rdf:resource="#PathwayStep2" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep3" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep4" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep5" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep6" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction3" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction2" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction5" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction4" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Unblocking of NMDA receptors, glutamate binding and activation</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">At resting membrane potential, the NMDA receptor ion channel is blocked by extracellular Mg2+ ions and is unable to mediate ion permeation upon binding of ligands (glutamate, glycine, D-serine, NMDA). The voltage block is removed upon depolarization of the post-synaptic cell membrane and Mg2+ is expelled from the NMDA receptor pore (channel), resulting in activated ligand-bound NMDA receptors. The depolarization of the membrane may happen in response to activation of Ca2+ impermeable AMPA receptors, which facilitates Na+ influx, contributing to the unblocking of NMDA receptors. For review, please refer to Traynelis et al. 2010, Paoletti et al. 2013, and Iacobucci and Popescu 2017.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence58">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction50">
+ <bp:evidence rdf:resource="#Evidence62" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GluN1 (GRIN1) binds to ACTN2 at postsynaptic density</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence57">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep78">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction67" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence59">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep79">
+ <bp:stepProcess rdf:resource="#Pathway13" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway7">
+ <bp:pathwayOrder rdf:resource="#PathwayStep36" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep34" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep35" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep32" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep33" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep31" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction29" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction28" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction27" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction26" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction30" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction25" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence31" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CREB1 phosphorylation through the activation of Adenylate Cyclase</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Ca2+ influx through activated NMDA receptors in the post synaptic neurons activates adenylate cyclase-mediated signal transduction, leading to the activation of PKA and phosphorylation and activation of CREB1 induced transcription (Masada et al. 2012, Chetkovich et al. 1991, Chetkovich and Sweatt 1993</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence54">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep76">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction65" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway8">
+ <bp:pathwayOrder rdf:resource="#PathwayStep38" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep39" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep43" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep44" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep41" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep42" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep40" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction37" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction32" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction31" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction36" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction35" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction34" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction33" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence38" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Long-term potentiation</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">In long-term potentiation (LTP), involved in learning and memory, a brief period of synaptic activity induces a lasting increase in the strength of the synapse. LTP is initiated by NMDA receptor-mediated activation of calcium/calmodulin-dependent protein kinase II (CaMKII), followed by binding of CaMKII to the NMDA receptor and CaMKII-mediated phosphorylation of AMPA receptor subunits (reviewed by Lisman et al. 2012 and Luscher and Malenka 2012).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence53">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep77">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction66" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway9">
+ <bp:pathwayOrder rdf:resource="#PathwayStep46" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep52" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep51" />
+ <bp:pathwayComponent rdf:resource="#Pathway10" />
+ <bp:pathwayComponent rdf:resource="#Pathway11" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction42" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence46" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CREB1 phosphorylation through NMDA receptor-mediated activation of RAS signaling</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Ca2+ influx through the NMDA receptor activates RAS guanyl nucleotide exchange factor RasGRF, which promotes formation of active RAS:GTP complexes (Anborgh et al. 1999, Krapivinsky et al. 2003). CaMKII, also activated by NMDA receptor-mediated Ca2+ influx, can contribute to activation of RAS/RAF/MAPK signaling by phosphorylation of RAF1 (Salzano et al. 2012). ERKs (MAPK1 and MAPK3), activated downstream of RAS signaling, phosphorylate ribosomal protein S6 kinases (RSKs), initiating activation of RSKs (reviewed by Anjum and Blenis 2012). Activated RSKs phosphorylate the transcription factor CREB1 at serine residue S133, thus stimulating CREB1-mediated transcription (De Cesare et al. 1998, Harum et al. 2001, Schinelli et al. 2001, Song et al. 2003).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence56">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep74">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction63" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence55">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep75">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction64" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway3">
+ <bp:pathwayOrder rdf:resource="#PathwayStep15" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep26" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep37" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep45" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep8" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep30" />
+ <bp:pathwayComponent rdf:resource="#Pathway7" />
+ <bp:pathwayComponent rdf:resource="#Pathway8" />
+ <bp:pathwayComponent rdf:resource="#Pathway9" />
+ <bp:pathwayComponent rdf:resource="#Pathway4" />
+ <bp:pathwayComponent rdf:resource="#Pathway5" />
+ <bp:pathwayComponent rdf:resource="#Pathway6" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence8" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Post NMDA receptor activation events</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Ca2+ influx through the NMDA receptor initiates subsequent molecular pathways that have a defined role in establishing long-lasting synaptic changes. The molecular signaling initiated by a rise in Ca2+ within the spine leads to phosphorylation of Cyclic AMP Response Element binding protein (CREB1) at serine S133, leading to transcription of genes involved in long lasting changes at the synapse. The phosphorylation of CREB1 triggered by increased Ca2+ can be brought about by distinct molecular pathways that may involve MAP kinase, activation of adenylate cyclase and activation of CaMKIV (reviewed by Cohen and Greenberg 2008 and Hunt and Castillo 2012).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence50">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep72">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction61" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway4">
+ <bp:pathwayOrder rdf:resource="#PathwayStep14" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep12" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep13" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep10" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep11" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep9" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction9" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction10" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction8" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction7" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction6" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction11" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence9" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Activation of RAC1 downstream of NMDARs</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Activation of calcium/calmodulin-dependent kinase kinases, CaMKKs (CAMKK1 and CAMKK2), upon calcium influx through activated NMDA receptors, leads to activation of the cytosolic calcium/calmodulin kinase CaMKI (CAMK1). One of the CAMK1 targets is the RAC1 guanine nucleotide exchange factor ARHGEF7 (beta-Pix). Activation of RAC1 is involved in NMDA-receptor triggered synaptogenesis (Saneyoshi et al. 2008).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep73">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction62" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway5">
+ <bp:pathwayOrder rdf:resource="#PathwayStep18" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep19" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep16" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep17" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep25" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep23" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep24" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep21" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep22" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep20" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction18" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction17" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction16" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction15" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction19" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction21" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction20" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction14" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction13" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction12" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence16" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CREB1 phosphorylation through the activation of CaMKII/CaMKK/CaMKIV cascasde</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">In addition to inducing long-term potentiation (LTP), NMDA receptor-mediated activation of CaMKII leads to transcriptional changes that are implicated in LTP maintenance (reviewed by Miyamoto 2006). CaMKII-gamma (CAMK2G) isoform is involved in nuclear shuttling of the calcium/calmodulin complex (CALM1:4xCa2+), which enables CaMKK-mediated activation of the nuclear calcium/calmodulin dependent kinase CaMKIV (CAMK4). Activated CaMKIV phosphorylates the transcription factor CREB1 and activates CREB1-mediated transcription (Ma et al. 2014, Cohen et al. 2018).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence52">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep70">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction59" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway6">
+ <bp:pathwayOrder rdf:resource="#PathwayStep29" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep27" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep28" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction24" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction23" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction22" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence27" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Activation of AMPK downstream of NMDARs</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Activation of NMDA receptors (NMDARs) leads to activation of AMP-activated kinase (AMPK) in a CAMKK2-dependent manner. Overactivation of CAMKK2 or AMPK in neurons can lead to dendritic spine loss and is implicated in synaptotoxicity of beta-amyloids in Alzheimer&apos;s disease (Mairet-Coello et al. 2013).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence51">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep71">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction60" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep80">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction68" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction59">
+ <bp:evidence rdf:resource="#Evidence71" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of tri-heterotetramers of GluN1 (GRIN1), GluN2A (GRIN2A) and GluN2C (GRIN2C)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction9">
+ <bp:evidence rdf:resource="#Evidence13" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CAMK1 phosphorylates ARHGEF7-1</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction54">
+ <bp:evidence rdf:resource="#Evidence66" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GluN1:GluN2 (GRIN1:GRIN2) NMDA receptors traffic to the plasma membrane</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction8">
+ <bp:evidence rdf:resource="#Evidence12" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CaMKK autophosphorylates in the cytosol</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction53">
+ <bp:evidence rdf:resource="#Evidence65" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of tri-heterotetramers of GluN1 (GRIN1), GluN2A (GRIN2A) and GluN3A (GRIN3A)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction52">
+ <bp:evidence rdf:resource="#Evidence64" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NBEA binds DLG3</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction51">
+ <bp:evidence rdf:resource="#Evidence63" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of tri-heterotetramers of GluN1 (GRIN1), GluN2A (GRIN2A) and GluN3B (GRIN3B)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction5">
+ <bp:evidence rdf:resource="#Evidence7" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Ca2+ influx into the post-synaptic cell</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction58">
+ <bp:evidence rdf:resource="#Evidence70" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of di-heterotetramers of GluN1 (GRIN1) and GluN3B (GRIN3B)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction4">
+ <bp:evidence rdf:resource="#Evidence6" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Membrane depolarization upon activation of Ca impermeable AMPA receptors</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction57">
+ <bp:evidence rdf:resource="#Evidence69" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">KIF17 transports GluN1:GluN2B (GRIN1:GRIN2B) NMDA receptors to the plasma membrane</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction7">
+ <bp:evidence rdf:resource="#Evidence11" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p-S516-ARHGEF7 activates RAC1</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction56">
+ <bp:evidence rdf:resource="#Evidence68" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GluN1:GluN2 (GRIN1:GRIN2) NMDA receptors bind to postsynaptic density proteins</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction6">
+ <bp:evidence rdf:resource="#Evidence10" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CaMKK binds activated calmodulin in the cytosol</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction55">
+ <bp:evidence rdf:resource="#Evidence67" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GluN1 (GRIN1) binds to NEFL at postsynaptic density</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Mg2+ binds GRIN1:GRIN2 NMDA receptors</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction3">
+ <bp:evidence rdf:resource="#Evidence5" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Unblocking of GRIN1:GRIN2 NMDA receptors</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
+ <bp:evidence rdf:resource="#Evidence4" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Glycine and glutamate ligands bind GRIN1:GRIN2 NMDA receptor</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep69">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction58" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep67">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction56" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep68">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction57" />
+ <bp:stepProcess rdf:resource="#Catalysis24" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep65">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction54" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep66">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction55" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep63">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction52" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep64">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction53" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep61">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction50" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence83">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep62">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction51" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence82">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep60">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction49" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence84">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis1">
+ <bp:controlled rdf:resource="#BiochemicalReaction4" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis5">
+ <bp:controlled rdf:resource="#BiochemicalReaction9" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis4">
+ <bp:controlled rdf:resource="#BiochemicalReaction8" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis3">
+ <bp:controlled rdf:resource="#BiochemicalReaction7" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis2">
+ <bp:controlled rdf:resource="#BiochemicalReaction5" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep58">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction47" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep59">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction48" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence79">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction71">
+ <bp:evidence rdf:resource="#Evidence84" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PPM1E dephosphorylates CAMK4</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep56">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction45" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction70">
+ <bp:evidence rdf:resource="#Evidence83" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PPM1F dephosphorylates CAMK1</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep57">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction46" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis9">
+ <bp:controlled rdf:resource="#BiochemicalReaction17" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep54">
+ <bp:stepProcess rdf:resource="#Catalysis23" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction44" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence76">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis8">
+ <bp:controlled rdf:resource="#BiochemicalReaction16" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep55">
+ <bp:stepProcess rdf:resource="#Pathway12" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence75">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis7">
+ <bp:controlled rdf:resource="#BiochemicalReaction15" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep52">
+ <bp:stepProcess rdf:resource="#Pathway11" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence78">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis6">
+ <bp:controlled rdf:resource="#BiochemicalReaction10" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep53">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction43" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence77">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep50">
+ <bp:stepProcess rdf:resource="#Catalysis21" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction41" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence72">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep51">
+ <bp:stepProcess rdf:resource="#Catalysis22" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction42" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence71">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence74">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence73">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence81">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence80">
+</bp:Evidence>
+</rdf:RDF>

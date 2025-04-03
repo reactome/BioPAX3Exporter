@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/9629232#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective Base Excision Repair Associated with NEIL3</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NEIL3 is a DNA N-glycosylase involved in base excision repair (BER), the primary repair pathway for oxidative DNA damage. NEIL3 can detect and remove oxidized guanine, in the form of 5-guanidinohydatoin and spiroiminodihydantoin, and oxidized thymine, in the form of thymine glycol. NEIL3 has a preference for single strand DNA (ssDNA) and is implicated in repair of oxidative DNA damage at telomeres (Zhou et al. 2013). A NEIL3 disease variant NEIL3 D132 is unable to cleave 5 guanidinohydantoin (Gh) from oxidatively damaged DNA. Individuals harboring a NEIL3 D132V homozygous mutation are predisposed to development of autoimmune diseases (Massaad et al. 2016) and NEIL3 depletion is also associated with an increase in telomere damage and loss (Zhou et al. 2017). NEIL3 unhooks DNA interstrand cross-links (ICLs) during DNA replication. NEIL3 resolves psoralen- and abasic site-induced ICLs in a Fanconi anemia (FA) pathway-independent manner (Semlow et al. 2016, Martin et al. 2017). A polymorphism in one of the NEIL3 gene splice sites may increase the risk of myocardial infarction (Skarpengland et al. 2015). NEIL3 expression in the heart increases after heart failure in humans and after myocardial infarction in mouse disease models. Neil3 knockout mice show increased mortality after myocardial infarction, but there is no increase in the amount of DNA damage in Neil3 knockout hearts. In the heart, NEIL3 may function in the epigenetic regulation of gene expression and facilitate transcriptional response to myocardial infarction (Olsen et al. 2017). NEIL3 mRNA expression is increased in human carotid plaques and Neil3 deficiency accelerates plaque formation in Apoe knockout mice, but it appears that this is not correlated with oxidative DNA damage (Skarpengland et al. 2016). The function of NEIL3 in removal of hydantoins from single strand DNA may be important for removal of replication blocks in proliferating cells. Mouse embryonic fibroblasts and neuronal stem cell derived from Neil3 knockout mouse embryos show decreased proliferation capacity and increased sensitivity to DNA damaging agents (Rolseth et al. 2013). NEIL3 may be required for maintenance of adult neurogenesis, as Neil3 knockout mice exhibit learning and memory deficits and synaptic irregularities in the hippocampus (Regnell et al. 2012). In addition, NEIL3 deficient neuronal stem cells exhibits signs of premature senescence (Reis and Hermanson 2012) and Neil3 knockout mice show reduced ability to augment neurogenesis to repair damage induced hypoxia ischemia (Sejersted et al. 2011). Mice that are triple knockout for Neil1, Neil2 and Neil3 do not show a predisposition to tumour formation or changes in telomere length (Rolseth et al. 2017). </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NEIL3 D132V does not cleave 5-guanidinohydantoin (Gh)</bp:displayName>
+</bp:BiochemicalReaction>
+</rdf:RDF>

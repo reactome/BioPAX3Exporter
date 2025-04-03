@@ -1,0 +1,1049 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/193704#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:Catalysis rdf:ID="Catalysis2">
+ <bp:controlled rdf:resource="#BiochemicalReaction5" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis1">
+ <bp:controlled rdf:resource="#BiochemicalReaction2" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis4">
+ <bp:controlled rdf:resource="#BiochemicalReaction10" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis3">
+ <bp:controlled rdf:resource="#BiochemicalReaction8" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis6">
+ <bp:controlled rdf:resource="#BiochemicalReaction21" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis5">
+ <bp:controlled rdf:resource="#BiochemicalReaction14" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis8">
+ <bp:controlled rdf:resource="#BiochemicalReaction26" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis7">
+ <bp:controlled rdf:resource="#BiochemicalReaction24" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence11">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis15">
+ <bp:controlled rdf:resource="#BiochemicalReaction49" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence10">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis9">
+ <bp:controlled rdf:resource="#BiochemicalReaction30" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis14">
+ <bp:controlled rdf:resource="#BiochemicalReaction46" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis16">
+ <bp:controlled rdf:resource="#BiochemicalReaction50" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence15">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis11">
+ <bp:controlled rdf:resource="#BiochemicalReaction33" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence14">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis10">
+ <bp:controlled rdf:resource="#BiochemicalReaction32" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence13">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis13">
+ <bp:controlled rdf:resource="#BiochemicalReaction36" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence12">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis12">
+ <bp:controlled rdf:resource="#BiochemicalReaction35" />
+</bp:Catalysis>
+
+<bp:Pathway rdf:ID="Pathway7">
+ <bp:pathwayOrder rdf:resource="#PathwayStep39" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep31" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep27" />
+ <bp:pathwayComponent rdf:resource="#Pathway10" />
+ <bp:pathwayComponent rdf:resource="#Pathway9" />
+ <bp:pathwayComponent rdf:resource="#Pathway8" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence27" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Cell death signalling via NRAGE, NRIF and NADE</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p75NTR is a key regulator of neuronal apoptosis, both during development and after injury. Apoptosis is triggered  by binding of either mature neurotrophin or proneurotrophin (proNGF, proBDNF). ProNGF is at least 10 times more potent than mature NGF in inducing apoptosis. TRKA signalling protects neurons from apoptosis. The molecular mechanisms involved in p75NTR-apoptosis are not well understood. The death signalling requires activation of c-JUN N-terminal Kinase (JNK), as well as transcriptional events. JNK activation appears to involve the receptor interacting proteins TRAF6, NRAGE, and Rac. The transcription events are thought to be regulated by another p75-interacting protein, NRIF. Two other p75-interacting proteins, NADE and Necdin, have been implicated in apoptosis, but their role is less clear.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway6">
+ <bp:pathwayOrder rdf:resource="#PathwayStep18" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep17" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep19" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep21" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep20" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep23" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep22" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep25" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep24" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction20" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction17" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction16" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction19" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction18" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction13" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction12" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction15" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction14" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence17" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p75NTR recruits signalling complexes</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NF-kB activation involves recruitment at the cell membrane of several proteins such as RIP2, MYD88, IRAK1, TRAF6, p62 and atypical PKC by the NGF:p75NTR complex.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway9">
+ <bp:pathwayOrder rdf:resource="#PathwayStep32" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep34" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep33" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep36" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep35" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep38" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep37" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction30" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction28" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction27" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction29" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction24" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction26" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction25" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence32" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NRAGE signals death through JNK</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Once bound by either NGF or proNGF, p75NTR interacts with NRAGE, thus leading to phosphorylation and activation of JUN Kinase (JNK). JNK controls apoptosis in two ways: it induces transcription of pro-apoptotic genes, and directly activates the cell death machinery. Only NGF-bound p75NTR is shown here.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway8">
+ <bp:pathwayOrder rdf:resource="#PathwayStep29" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep28" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep30" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction22" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction21" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction23" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence28" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NADE modulates death signalling</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NADE protein (p75NTR-associated cell death executor) may induce cell death upon NGF binding, but not BDNF, NT3, or NT4/5 binding, to p75NTR. The NADE-dependent apoptosis is modulated by the 14-3-3-epsilon protein (Kimura MT et al, 2001).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep7" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep51" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep62" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep10" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep47" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep26" />
+ <bp:pathwayComponent rdf:resource="#Pathway3" />
+ <bp:pathwayComponent rdf:resource="#Pathway2" />
+ <bp:pathwayComponent rdf:resource="#Pathway4" />
+ <bp:pathwayComponent rdf:resource="#Pathway15" />
+ <bp:pathwayComponent rdf:resource="#Pathway7" />
+ <bp:pathwayComponent rdf:resource="#Pathway12" />
+ <bp:pathwayComponent rdf:resource="#Pathway11" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p75 NTR receptor-mediated signalling</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Besides signalling through the tyrosine kinase receptors TRK A, B, and C, the mature neurotrophins NGF, BDNF, and NT3/4 signal through their common receptor p75NTR. NGF binding to p75NTR activates a number of downstream signalling events controlling survival, death, proliferation, and axonogenesis, according to the cellular context. p75NTR is devoid of enzymatic activity, and signals by recruiting other proteins to its own intracellular domain. p75 interacting proteins include NRIF, TRAF2, 4, and 6, NRAGE, necdin, SC1, NADE, RhoA, Rac, ARMS, RIP2, FAP and PLAIDD. Here we annotate only the proteins for which a clear involvement in p75NTR signalling was demonstrated. A peculiarity of p75NTR is the ability to bind the pro-neurotrophins proNGF and proBDNF. Proneurotrophins do not associate with TRK receptors, whereas they efficiently signal cell death by apoptosis through p75NTR. The biological action of neurotrophins is thus regulated by proteolytic cleavage, with proforms preferentially activating p75NTR, mediating apoptosis, and mature forms activating TRK receptors, to promote survival. Moreover, the two receptors are utilised to differentially modulate neuronal plasticity. For instance, proBDNF-p75NTR signalling  facilitates LTD, long term depression, in the hippocampus (Woo NH, et al, 2005), while BDNF-TRKB signalling promotes LTP (long term potentiation). Many biological observations indicate  a functional interaction between p75NTR and TRKA signaling pathways.  </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway3">
+ <bp:pathwayOrder rdf:resource="#PathwayStep9" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep8" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction7" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction6" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence8" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NFG and proNGF binds to p75NTR</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">When the co-receptor sortilin is present at the cell surface, proNGF preferentially interacts with a p75NTR:sortilin complex. Thus, proNGF, which does not bind TRKA, discriminates between TRKA and p75NTR, in cells that express both receptors. The same is true for proBDNF. Pro-neurotrophin binding to p75NTR:sortilin activates an apoptotic cascade, which may be involved in cell death after injury, and in neurodegenerative diseases such as Alzheimer&apos;s dementia.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway2">
+ <bp:pathwayOrder rdf:resource="#PathwayStep6" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep3" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep2" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep5" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep4" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction2" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction5" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction4" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction3" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Regulated proteolysis of p75NTR</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p75NTR undergoes a process of regulated intramembrane proteolysis (RIP) similar to other transmembrane proteins such as NOTCH, beta-amyloid precursor protein (APP), and ERBB4. Each of these proteins is subjected  to two sequential cleavages. The first one occurs in the extracellular part of the protein and is mediated by the metalloproteinase alpha-secretase which causes shedding of the extracellular domain. The second cleavage occurs in the intramembrane region and is mediated by gamma-secretase and causes release of the intracellular domain, ICD, and of a small peptide. The ICD often traffics to the nucleus and, in some instances (e.g. NOTCH), was found to act as  transcriptional regulator. Whether the p75NTR ICD does translocate to the nucleus to regulate gene expression in a way similar to the NOTCH receptor remains to be seen. The alpha- and gamma-secretase mediated cleavage of p75 appears to be regulated by neurotrophin (NGF, BDNF) binding to TRKA or TRKB. p75NTR processing also occurs in response to MAG in cerebellar granule neurons.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway5">
+ <bp:pathwayOrder rdf:resource="#PathwayStep12" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep14" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep13" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep15" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction9" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction8" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction11" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction10" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence12" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NF-kB is activated and signals survival</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Upon activation in response to NGF, NF-kB moves to the nucleus, where it turns on genes that promote survival, and triggers the expression of HES1/5 to modulate dendritic growth.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway4">
+ <bp:pathwayOrder rdf:resource="#PathwayStep11" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep16" />
+ <bp:pathwayComponent rdf:resource="#Pathway5" />
+ <bp:pathwayComponent rdf:resource="#Pathway6" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence11" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p75NTR signals via NF-kB</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The NF-kB pathway is an important pro-survival signalling pathway activated by mature NGF, but not BDNF or NT-3, through p75NTR. It is unclear whether TRKA activity also affects NF-kB activation.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence8">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence7">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence9">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence4">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence3">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence6">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence5">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction9">
+ <bp:evidence rdf:resource="#Evidence14" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NF-kB migrates to the nucleus and turns on transcription</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence29">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction8">
+ <bp:evidence rdf:resource="#Evidence13" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">IKKbeta phosphorylates IkB causing NF-kB to dissociate</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence28">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction7">
+ <bp:evidence rdf:resource="#Evidence10" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NGF homodimer binds to p75NTR</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence27">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
+ <bp:evidence rdf:resource="#Evidence4" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">alpha-secretase cleaves the p75NTR extracellular domain</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The p75NTR C-terminal fragment enters endosomes</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction49">
+ <bp:evidence rdf:resource="#Evidence64" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Sphingomyelinase is activated by the NGF:p75NTR complex</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction6">
+ <bp:evidence rdf:resource="#Evidence9" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Binding of pro-NGF to p75NTR:sortilin</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction46">
+ <bp:evidence rdf:resource="#Evidence60" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RhoA is activated by nucleotide exchange and inhibits axonal growth</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction5">
+ <bp:evidence rdf:resource="#Evidence7" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">gamma-secretase cleaves the p75NTR transmembrane domain</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction45">
+ <bp:evidence rdf:resource="#Evidence59" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Myelin components can interact with p75NTR:NgR:LINGO1</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction4">
+ <bp:evidence rdf:resource="#Evidence6" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Part of the ICD migrates to the nucleus</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction48">
+ <bp:evidence rdf:resource="#Evidence62" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The p75NTR:NgR:MDGI binds RHOA-GDI</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction3">
+ <bp:evidence rdf:resource="#Evidence5" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p75NTR ICD signals to NF-kB</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction47">
+ <bp:evidence rdf:resource="#Evidence61" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The p75NTR:NgR:MDGI complex reduces RHOA-GDI activity, displacing RHOA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction50">
+ <bp:evidence rdf:resource="#Evidence65" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Production of ceramide which can activate JNK and other targets</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence33">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence32">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence31">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence30">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence37">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence36">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence35">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence34">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence19">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence18">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence17">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence16">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction39">
+ <bp:evidence rdf:resource="#Evidence50" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PRDM4 (SC1) binds to p75NTR</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction38">
+ <bp:evidence rdf:resource="#Evidence49" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PRDM4 translocates to the nucleus</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction35">
+ <bp:evidence rdf:resource="#Evidence45" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NRIF and TRAF6 may activate JNK</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction34">
+ <bp:evidence rdf:resource="#Evidence44" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">TRAF6 binds to p75NTR:NRIF</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction37">
+ <bp:evidence rdf:resource="#Evidence47" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Polyubiquitinated NRIF migrates to the nucleus</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction36">
+ <bp:evidence rdf:resource="#Evidence46" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Polyubiquitinated NRIF binds to p62 (Sequestosome)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction42">
+ <bp:evidence rdf:resource="#Evidence55" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p75NTR and RHOA-GDI interact</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction41">
+ <bp:evidence rdf:resource="#Evidence54" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NGF binding to p75NTR inactivates RHOA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction44">
+ <bp:evidence rdf:resource="#Evidence58" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p75NTR interacts with the NOGO receptor</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction43">
+ <bp:evidence rdf:resource="#Evidence57" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p75NTR:NgR complex interacts with the axonal inhibitor LINGO1</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction40">
+ <bp:evidence rdf:resource="#Evidence51" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PRDM4 inhibits cyclin E transcription</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence22">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence21">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence20">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence26">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence25">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence24">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence23">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence49">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence51">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence50">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence55">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence54">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence53">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence52">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence59">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence58">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence57">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence56">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence39">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence38">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence40">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence44">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence43">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence42">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence41">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence48">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence47">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence46">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence45">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence62">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence61">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence60">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence65">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence64">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence63">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep54">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction42" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep53">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction41" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep56">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction43" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep55">
+ <bp:stepProcess rdf:resource="#Pathway14" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep58">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction45" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep57">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction44" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep59">
+ <bp:stepProcess rdf:resource="#Catalysis14" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction46" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep7">
+ <bp:stepProcess rdf:resource="#Pathway3" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep6">
+ <bp:stepProcess rdf:resource="#Catalysis2" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction5" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep9">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction7" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep8">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction6" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep3">
+ <bp:stepProcess rdf:resource="#Catalysis1" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction2" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep50">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction40" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep2">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep5">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction4" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep52">
+ <bp:stepProcess rdf:resource="#Pathway13" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep4">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction3" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep51">
+ <bp:stepProcess rdf:resource="#Pathway12" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep43">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction34" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep42">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction33" />
+ <bp:stepProcess rdf:resource="#Catalysis11" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#Pathway2" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep45">
+ <bp:stepProcess rdf:resource="#Catalysis13" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction36" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep44">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction35" />
+ <bp:stepProcess rdf:resource="#Catalysis12" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep47">
+ <bp:stepProcess rdf:resource="#Pathway11" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep46">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction37" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep49">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction39" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep48">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction38" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep41">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction32" />
+ <bp:stepProcess rdf:resource="#Catalysis10" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep40">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction31" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep64">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction50" />
+ <bp:stepProcess rdf:resource="#Catalysis16" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep61">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction48" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep60">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction47" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep63">
+ <bp:stepProcess rdf:resource="#Catalysis15" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction49" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep62">
+ <bp:stepProcess rdf:resource="#Pathway15" />
+</bp:PathwayStep>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:PathwayStep rdf:ID="PathwayStep18">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction13" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep17">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction12" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep19">
+ <bp:stepProcess rdf:resource="#Catalysis5" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction14" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep10">
+ <bp:stepProcess rdf:resource="#Pathway4" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction28">
+ <bp:evidence rdf:resource="#Evidence37" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GTP-bound RAC contributes to JNK activation</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction27">
+ <bp:evidence rdf:resource="#Evidence36" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NGF:p75NTR complex binds to NRAGE</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep12">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction8" />
+ <bp:stepProcess rdf:resource="#Catalysis3" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep11">
+ <bp:stepProcess rdf:resource="#Pathway5" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction29">
+ <bp:evidence rdf:resource="#Evidence38" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Active JNK moves to the nucleus and phosphorylates different transcription factors</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep14">
+ <bp:stepProcess rdf:resource="#Catalysis4" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction10" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction24">
+ <bp:evidence rdf:resource="#Evidence33" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NRAGE activates JNK</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep13">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction9" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction23">
+ <bp:evidence rdf:resource="#Evidence31" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p75NTR binds to NADE</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep16">
+ <bp:stepProcess rdf:resource="#Pathway6" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction26">
+ <bp:evidence rdf:resource="#Evidence35" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p75NTR indirectly activates RAC and Cdc42 via a guanyl-nucleotide exchange factor</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep15">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction11" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction25">
+ <bp:evidence rdf:resource="#Evidence34" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NRAGE sequesters CHE1 in the cytoplasm</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction31">
+ <bp:evidence rdf:resource="#Evidence41" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NRIF binds to p75NTR</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction30">
+ <bp:evidence rdf:resource="#Evidence39" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">JNK phosphorylates BIM, BAD and other targets</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction33">
+ <bp:evidence rdf:resource="#Evidence43" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">gamma-secretase cleaves p75NTR, releasing NRIF and TRAF6</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction32">
+ <bp:evidence rdf:resource="#Evidence42" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">TRAF6 polyubiquitinates NRIF</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction17">
+ <bp:evidence rdf:resource="#Evidence23" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p75NTR interacts with RIP2</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction16">
+ <bp:evidence rdf:resource="#Evidence22" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">IKK-beta is recruited</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction19">
+ <bp:evidence rdf:resource="#Evidence25" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p75NTR interacts with IRAK:MYD88</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction18">
+ <bp:evidence rdf:resource="#Evidence24" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p62 recruits an atypical PKC</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction13">
+ <bp:evidence rdf:resource="#Evidence19" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">IRAK interacts with TRAF6</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction12">
+ <bp:evidence rdf:resource="#Evidence18" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">TRAF6 is auto-ubiquitinated</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction15">
+ <bp:evidence rdf:resource="#Evidence21" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p62 is recruited and forms a complex with TRAF6</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction14">
+ <bp:evidence rdf:resource="#Evidence20" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">IRAK is activated</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction20">
+ <bp:evidence rdf:resource="#Evidence26" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MYD88 dissociates</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction22">
+ <bp:evidence rdf:resource="#Evidence30" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">14-3-3epsilon attentuates NADE-related apoptosis</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction21">
+ <bp:evidence rdf:resource="#Evidence29" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p75NTR:NADE promotes caspase2/3 activation</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep39">
+ <bp:stepProcess rdf:resource="#Pathway10" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep32">
+ <bp:stepProcess rdf:resource="#Catalysis7" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction24" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep31">
+ <bp:stepProcess rdf:resource="#Pathway9" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep34">
+ <bp:stepProcess rdf:resource="#Catalysis8" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction26" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep33">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction25" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep36">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction28" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep35">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction27" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep38">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction30" />
+ <bp:stepProcess rdf:resource="#Catalysis9" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep37">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction29" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction11">
+ <bp:evidence rdf:resource="#Evidence16" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">IkB is ubiquitinated and degraded</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction10">
+ <bp:evidence rdf:resource="#Evidence15" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">IKKbeta is activated</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep30">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction23" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep29">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction22" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep28">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction21" />
+ <bp:stepProcess rdf:resource="#Catalysis6" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway14">
+ <bp:pathwayOrder rdf:resource="#PathwayStep61" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep60" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep56" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep58" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep57" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep59" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction44" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction43" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction46" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction45" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction48" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction47" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence56" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Axonal growth inhibition (RHOA activation)</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p75NTR can also form a receptor complex with the Nogo receptor (NgR). Such complexes mediates axonal outgrowth inhibitory signals of MDGIs (myelin-derived growth-inhibitors), such as Nogo66, myelin-associated glycoprotein (MAG), and oligodendrocyte myelin glycoprotein (OMGP).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway13">
+ <bp:pathwayOrder rdf:resource="#PathwayStep54" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep53" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction42" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction41" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence53" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Axonal growth stimulation</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Complex formation between p75NTR and RHOA can leads to inhibition of RHOA activity and axonal growth.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway15">
+ <bp:pathwayOrder rdf:resource="#PathwayStep63" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep64" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction50" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction49" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence63" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Ceramide signalling</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">In certain cell types, ligand binding to p75NTR leads to ceramide production, which can mediate either cell survival (e.g. in noecotical subplate neurons) or apoptosis (e.g. in oligodendrocytes). Low levels of ceramide are also able to stimulate axonal outgrowth in hippocampal neurons.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep21">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction16" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway10">
+ <bp:pathwayOrder rdf:resource="#PathwayStep41" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep40" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep43" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep42" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep45" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep44" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep46" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction31" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction33" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction32" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction35" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction34" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction37" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction36" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence40" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NRIF signals cell death from the nucleus</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NRIF (nuclear receptor-interacting factor) is a DNA binding protein that is essential for p75-mediated apoptosis in retina and sympathetic neurons. Neurotrophin or proneurotrophin binding to p75TR induces nuclear translocation of NRIF, which involves gamma-secretase cleavage of p75NTR ICD (Intra Cellular Domain). Once in the nucleus, NRIF mediates apoptosis, probably by acting as transcription factor.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep20">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction15" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep23">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction18" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway12">
+ <bp:pathwayOrder rdf:resource="#PathwayStep52" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep55" />
+ <bp:pathwayComponent rdf:resource="#Pathway14" />
+ <bp:pathwayComponent rdf:resource="#Pathway13" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence52" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p75NTR regulates axonogenesis</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p75NTR modulates axonal growth by regulating the activity of small GTPases like RHOA and RHOB, that control the state of actin polymerization. The best studied is RHOA. In its active, GTP-bound form, RHOA rigidifies the actin cytoskeleton, thereby inhibiting axonal elongation and causing growth cone collapse. Depending on the ligand that binds to it, p75NTR can either promote or inhibit axonal growth, Neurotrophin binding leads to inhibition of RHOA activity and  axonal growth. Axonal growth inhibition is caused by myelin molecules named MDGIs (myelin-derived growth inhibitors), such as NOGO, MAG, OMGP. MDGIs bind to a complex made up of p75NTR and the NOGO receptor, causing RHOA activation and axonal growth inhibition.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep22">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction17" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway11">
+ <bp:pathwayOrder rdf:resource="#PathwayStep50" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep49" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep48" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction40" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction39" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction38" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence48" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p75NTR negatively regulates cell cycle via SC1</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">SC1 (Schwann Cell factor 1; also called PR domain zinc finger protein 4, PRDM4) interacts with an NGF:p75NTR complex and signals cell cycle arrest by regulating the levels of cyclin E.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep25">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction20" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep24">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction19" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep27">
+ <bp:stepProcess rdf:resource="#Pathway8" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep26">
+ <bp:stepProcess rdf:resource="#Pathway7" />
+</bp:PathwayStep>
+</rdf:RDF>

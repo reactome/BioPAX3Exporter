@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/187577#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction4">
+ <bp:evidence rdf:resource="#Evidence5" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Degradation of ubiquitinated p27/p21 by the 26S proteasome</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction5">
+ <bp:evidence rdf:resource="#Evidence6" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PTK6 phosphorylates CDKN1B</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction6">
+ <bp:evidence rdf:resource="#Evidence7" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Binding of phospho-p27/p21:Cdk2:Cyclin E/A to the SCF(Skp2):Cks1 complex</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction7">
+ <bp:evidence rdf:resource="#Evidence8" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Cyclin E/A:Cdk2-mediated  phosphorylation of p27/p21</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:Catalysis rdf:ID="Catalysis2">
+ <bp:controlled rdf:resource="#BiochemicalReaction4" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis3">
+ <bp:controlled rdf:resource="#BiochemicalReaction5" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis4">
+ <bp:controlled rdf:resource="#BiochemicalReaction7" />
+</bp:Catalysis>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:Catalysis rdf:ID="Catalysis1">
+ <bp:controlled rdf:resource="#BiochemicalReaction3" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence3">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence4">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep2">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction2" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence5">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep3">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction3" />
+ <bp:stepProcess rdf:resource="#Catalysis1" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep4">
+ <bp:stepProcess rdf:resource="#Catalysis2" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction4" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep5">
+ <bp:stepProcess rdf:resource="#Catalysis3" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction5" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep6">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction6" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep7">
+ <bp:stepProcess rdf:resource="#Catalysis4" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction7" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Association of Cks1 with SCF(Skp2) complex</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
+ <bp:evidence rdf:resource="#Evidence3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Activated PTK6 binds CDKN1B</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction3">
+ <bp:evidence rdf:resource="#Evidence4" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Ubiquitination of phospho-p27/p21</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence6">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence7">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence8">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep7" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep2" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep3" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep4" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep5" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep6" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction2" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction3" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction4" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction5" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction6" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction7" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">SCF(Skp2)-mediated degradation of p27/p21</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">During G1, the activity of cyclin-dependent kinases (CDKs) is kept in check by the CDK inhibitors (CKIs) p27 and p21, thereby preventing premature entry into S phase (see Guardavaccaro and Pagano, 2006). These two CKIs are degraded in late G1 phase by the ubiquitin pathway (Pagano et al., 1995; Bloom et al., 2003) involving the ubiquitin ligase SCF(Skp2) (Tsvetkov et al., 1999; Carrano et al., 1999; Sutterluty et al., 1999, Bornstein et al., 2003) and the cell-cycle regulatory protein Cks1 (Ganoth et al., 2001; Spruck et al 2001; Bornstein et al., 2003). Recognition of p27 by SCF(Skp2) and its subsequent ubiquitination is dependent upon Cyclin E/A:Cdk2- mediated phosphorylation at Thr 187 of p27 (Montagnoli et al., 1999). There is evidence that Cyclin A/B:Cdk1 complexes can also bind and phosphorylate p27 on Th187 (Nakayama et al., 2004). Degradation of polyubiquitinated p27 by the 26S proteasome promotes the activity of CDKs in driving cells into S phase. (Montagnoli et al., 1999; Tsvetkov et al., 1999, Carrano et al 1999). The mechanism of SCF(Skp2)-mediated degradation of p21 is similar to that of p27 in terms of its requirements for the presence of Cks1 and of Cdk2/cyclin E/A (Bornstein et al.,2003; Wang et al., 2005). In addition, as observed for p27, p21 phosphorylation at a specific site (Ser130) stimulates its ubiquitination. In contrast to p27, however, ubiquitination of p21 can take place in the absence of phosphorylation, although with less efficiency (Bornstein et al.,2003).  SCF(Skp2)-mediated degradation of p27/p21 continues from late G1  through M-phase. During G0 and from early G1 to G1/S, Skp2 is degraded by the anaphase promoting complex/Cyclosome and its activator Cdh1 [APC/C(Cdh1)] (Bashir et al, 2004; Wei et al, 2004).  The tight regulation of APC/C(Cdh1) activity ensures the timely  elimination Skp2 and, thus, plays a critical role in controlling the  G1/S transition. APC/C(Cdh1) becomes active in late M-phase by the  association of unphosphorylated Cdh1 with the APC/C. APC/C(Cdh1) remains active until the G1/S phase at which time it interacts with the  inhibitory protein, Emi1 (Hsu et al., 2002).  Inhibition of APC/C(Cdh1) activity results in an accumulation of cyclins, which leads to the  phosphorylation and consequently to a further inactivation of Cdh1 at G1/S (Lukas et al., 1999).  Finally, to make the inactivation of APC/C(Cdh1) permanent, Cdh1 and its E2, namely Ubc10, are eliminated in an auto-ubiquitination event (Listovsky  et al., 2004; Rape and Kirschner,  2004). At G1/S, Skp2 reaccumulates as Cdh1 is inactivated, thus allowing the ubiquitination of p21 and p27 and resulting in a further increase in CDK activity.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+</rdf:RDF>

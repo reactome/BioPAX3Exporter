@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/5619067#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective SLC1A1 is implicated in schizophrenia 18 (SCZD18) and dicarboxylic aminoaciduria (DCBXA)</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">There are two classes of glutamate transporters; the excitatory amino acid transporters (EAATs) which depend on an electrochemical gradient of Na+ ions and vesicular glutamate transporters (VGLUTs) which are proton-dependent. Together, these transporters uptake and release glutamate to mediate this neurotransmitter&apos;s excitatory signal and are part of the glutamate-glutamine cycle.  The SLC1 gene family includes five high-affinity glutamate transporters encoded by SLC1, 2, 3, 6 and 7. These transporters can mediate transport of L-Glutamate (L-Glu), L-Aspartate (L-Asp) and D-Aspartate (D-Asp) with cotransport of 3 Na+ ions and H+ and antiport of a K+ ion. This mechanism allows glutamate into cells against a concentration gradient. This is a crucial factor in the protection of neurons against glutamate excitotoxicity (the excitation of nerve cells to their death) in the CNS (Zhou    Danbolt 2014).  SLC1A1 encodes an excitatory amino-acid carrier 1 (EAAC1, also called EAAT3) and is abundant particularly in brain but also in kidney, liver, muscle, ovary, testis and in retinoblastoma cell lines. In the kidney, SLC1A1 is present at apical membranes of proximal tubes where it serves as a major route of glutamate and aspartate reuptake from urine. Defects in SLC1A1 are the cause of dicarboxylic aminoaciduria (DCBXA; MIM:222730), an autosomal recessive  glutamate-aspartate transport defect in the kidney and intestine (Bailey et al. 2011). Mutations that can cause DCBXA are R445W and I395del (Bailey et al. 2011).  A defect in SLC1A1 is also implicated in schizophrenia 18 (SCZD18; MIM:615232). Schizophrenia (SCZD; MIM:181500) is a complex, multifactorial psychotic disorder characterised by disturbances in the form and content of thought, in mood, in sense of self and relationship to the external world and in behaviour. It ranks amongst the world&apos;s top 10 causes of long-term disability. At the neuropathological level, SCZD appears to be characterised by synaptic deficits, alterations in glutamate and dopamine neurotransmission and hypofrontality (a state of decreased cerebral blood flow (CBF) in the prefrontal cortex of the brain). Variations in the SLC1A1 gene can confer susceptibility to SCZD18 (Harris et al. 2013). In the remote Pacific island of Palau, the risk of SCZD is 2-3 times the worldwide rate. In a 5-generation Palauan family, an 84kb deletion was carried by psychosis patients and proposed to increase the disease risk more than 18-fold for family members (Myles-Worsley et al. 2013).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:Catalysis rdf:ID="Catalysis1">
+ <bp:controlled rdf:resource="#BiochemicalReaction1" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#Catalysis1" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">SLC1A1 does not cotransport L-Glu,L-Asp,D-Asp,H+,3Na+ from extracellular region to cytosol</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+</rdf:RDF>

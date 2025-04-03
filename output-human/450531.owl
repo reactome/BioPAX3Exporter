@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/450531#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:PathwayStep rdf:ID="PathwayStep31">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction26" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep30">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction25" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis3">
+ <bp:controlled rdf:resource="#BiochemicalReaction8" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis4">
+ <bp:controlled rdf:resource="#BiochemicalReaction13" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis1">
+ <bp:controlled rdf:resource="#BiochemicalReaction6" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis2">
+ <bp:controlled rdf:resource="#BiochemicalReaction7" />
+</bp:Catalysis>
+
+<bp:Pathway rdf:ID="Pathway3">
+ <bp:pathwayOrder rdf:resource="#PathwayStep13" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep12" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep11" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep10" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction11" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction8" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction10" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction9" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence10" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">AUF1 (hnRNP D0) binds and destabilizes mRNA</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">AUF1 (hnRNP D0) dimers bind U-rich regions of AU-rich elements (AREs) in the 3&apos; untranslated regions of mRNAs. The binding causes AUF1 dimers to assemble into higher order tetrameric complexes. Diphosphorylated AUF1 bound to RNA recruits additional proteins, including eIF4G, polyA-binding protein, Hsp, Hsc70, Hsp27, NSEP-1, NSAP-1, and IMP-2 which target the mRNA and AUF1 for degradation. Unphosphorylated AUF1 is thought to be less able to recruit additional proteins. AUF1 also interacts directly or indirectly with HuR and the RNA-induced silencing complex (RISC). AUF1 complexed with RNA and other proteins is ubiquitinated and targeted for destruction by the proteasome while the bound mRNA is degraded. Inhibition of ubiquitin addition to AUF1 blocks mRNA degradation. The mechanism by which ubiquitin-dependent proteolysis is coupled to mRNA degradation is unknown. At least 4 isoforms of AUF1 exist: p45 (45 kDa) contains all exons, p42 lacks exon 2, p40 lacks exon 7, and p37 lacks exons 2 and 7. The presence of exon 7 in p42 and p45 seems to block ubiquitination while the absence of exon 7 (p37 and p40) targets AUF1 for ubiquitination and destabilizes bound RNAs. Lack of exon 2 (p37 and p42) is associated with higher affinity for RNA and 14-3-3sigma (SFN). AUF1 binds and destabilizes mRNAs encoding Interleukin-1 beta (IL1B), Tumor Necrosis Factor alpha (TNFA), Cyclin-dependent kinase inhibitor 1 (CDNK1A, p21), Cyclin-D1 (CCND1), Granulocyte-macrophage colony stimulating factor (GM-CSF, CSF2), inducible Nitric oxide synthase (iNOS, NOS2), Proto-oncogene cFos (FOS), Myc proto-oncogene (MYC), Apoptosis regulator Bcl-2 (BCL2). </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway2">
+ <bp:pathwayOrder rdf:resource="#PathwayStep6" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep7" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep8" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep2" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep3" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep4" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep5" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction2" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction3" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction4" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction5" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction6" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction7" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HuR (ELAVL1) binds and stabilizes mRNA</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HuR (ELAVL1) is a ubiquitous protein that binds AU-rich elements in mRNAs and acts to stabilize the mRNAs. HuR activity is controlled by phosphorylation, with PKC alpha and PCK delta enhancing the ability of HuR to bind and stabilize mRNAs. Binding of mRNAs occurs in the nucleus and HuR then interacts with the CRM1 export pathway to transfer the mRNA to the cytoplasm. The mechanism by which HuR shields the mRNA from degradation is unknown. HuR also regulates translation of some mRNAs, in some cases repressing translation and in some cases enhancing translation of bound mRNAs by recruiting them to polysomes. HuR binds and regulates mRNAs encoding Cyclooxygenase-2 (COX2, PTGS2), Cyclin A (CCNA, CCNA2), Cyclin D1 (CCND1), Cyclin B1 (CCNB1), CD83 antigen (CD83), and proto-oncogene c-Fos (FOS). HuR is a member of a family of proteins that also contains HuD (ELAVL4), HuB (ELAVL2), and HuC (ELAVL3). HuB, HuC, and HuD are specifically expressed in neural tissue. HuR participates in apoptosis. During lethal stress HuR becomes mostly cytoplasmic and is a target of Caspase-3 and Caspase-7. The cleavage products of HuR in turn promote apoptosis.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway5">
+ <bp:pathwayOrder rdf:resource="#PathwayStep24" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep23" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep22" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep21" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction19" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction18" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction17" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction20" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence21" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Tristetraprolin (TTP, ZFP36) binds and destabilizes mRNA</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Tristetraproline (TTP) binds RNAs that contain AU-rich elements and recruits enzymes that degrade RNA. TTP interacts with the exosome (3&apos; to 5&apos; exonuclease), XRN1 (5&apos; to 3&apos; exonuclease), and the decapping enzymes DCP1 and DCP2a. The activity of TTP is regulated by phosphorylation. MK2 phosphorylates TTP, which then binds 14-3-3.The interaction with 14-3-3 prevents phosphorylated TTP from entering stress granules and stabilizes mRNA bound by phosphorylated TTP. Tristetraproline is known to bind AU-rich elements in the following mRNAs: Tumor necrosis factor alpha (TNFA), Granulocyte-macrophage colony stimulating factor (CSF2, GM-CSF), Interleukin-2 (IL-2), and Proto-oncogene C-FOS (FOS, c-fos). Mice deficient in TTP exhibit arthritis, weight loss, skin lesions, autoimmunity, and myeloid hyperplasia.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway4">
+ <bp:pathwayOrder rdf:resource="#PathwayStep19" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep18" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep17" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep16" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep15" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction16" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction15" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction14" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction13" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction12" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence15" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">KSRP (KHSRP) binds and destabilizes mRNA</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">KSRP binds to AU-rich sequences in the 3&apos; untranslated regions of mRNAs. KSRP causes the bound mRNA to be targeted for hydrolysis by recruiting exonucleases and decapping enzymes. The activity of KSRP is regulated by phosphorylation. Protein kinase B/Akt phosphorylates KSRP at serine193. The phosphorylation inhibits the ability of KSRP to destabilize mRNA. KSRP phosphorylated at serine193 binds 14-3-3zeta (YWHAZ) which causes KSRP to be retained in the nucleus.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction19">
+ <bp:evidence rdf:resource="#Evidence24" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ZFP36 (TTP) recruits RNA degradation activities</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction18">
+ <bp:evidence rdf:resource="#Evidence23" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MK2 phosphorylates ZFP36 (Tristetraproline, TTP)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway6">
+ <bp:pathwayOrder rdf:resource="#PathwayStep29" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep28" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep27" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep26" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep31" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep30" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction26" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction25" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction24" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction23" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction22" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction21" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence26" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Butyrate Response Factor 1 (BRF1) binds and destabilizes mRNA</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Butyrate Response Factor 1 (BRF1, ZFP36L1, not to be confused with transcription factor IIIB) binds AU-rich elements in the 3&apos; region of mRNAs. After binding, BRF1 recruits exonucleases (XRN1 and the exosome) and decapping enzymes (DCP1a and DCP2) to hydrolyze the RNA. The ability of BRF1 to direct RNA degradation is controlled by phosphorylation of BRF1. Protein kinase B/AKT1 phosphorylates BRF1 at serines 92 and 203. Phosphorylated BRF1 can still bind RNA but is sequestered by binding 14-3-3 protein, preventing BRF1 from destabilizing RNA. BRF1 is also phosphorylated by MK2 at serines 54, 92, 203, and at an unknown site in the C-terminus. It is unknown if this particular phosphorylated form of BRF1 binds 14-3-3.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction17">
+ <bp:evidence rdf:resource="#Evidence22" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p-S60,S186-ZFP36 (Tristetraproline, TTP) binds 14-3-3beta</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction16">
+ <bp:evidence rdf:resource="#Evidence20" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">KSRP recruits RNA degradation activities</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep2">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction15">
+ <bp:evidence rdf:resource="#Evidence19" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Protein Kinase B (AKT) phosphorylates KSRP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep3">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction2" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction14">
+ <bp:evidence rdf:resource="#Evidence18" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">KSRP binds AU-rich element in 3&apos; UTR of mRNA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep4">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction3" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction13">
+ <bp:evidence rdf:resource="#Evidence17" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MAP kinase p38 phosphorylates KSRP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep5">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction4" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction12">
+ <bp:evidence rdf:resource="#Evidence16" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p-S193-KSRP binds 14-3-3zeta in the nucleus</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction11">
+ <bp:evidence rdf:resource="#Evidence14" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">AUF1 binds translation and heat shock proteins</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction10">
+ <bp:evidence rdf:resource="#Evidence13" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">AUF1 (hnRNP D0) is ubiquitinylated</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep14" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep25" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep9" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep20" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayComponent rdf:resource="#Pathway3" />
+ <bp:pathwayComponent rdf:resource="#Pathway2" />
+ <bp:pathwayComponent rdf:resource="#Pathway5" />
+ <bp:pathwayComponent rdf:resource="#Pathway4" />
+ <bp:pathwayComponent rdf:resource="#Pathway6" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Regulation of mRNA stability by proteins that bind AU-rich elements</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RNA elements rich in adenine and uracil residues (AU-rich elements) bind specific proteins which either target the RNA for degradation or, more rarely, stabilize the RNA. The activity of the AU-element binding proteins is regulated, usually by phosphorylation but also by subcellular localization.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#Pathway2" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep6">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction5" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep7">
+ <bp:stepProcess rdf:resource="#Catalysis1" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction6" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep8">
+ <bp:stepProcess rdf:resource="#Catalysis2" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction7" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep9">
+ <bp:stepProcess rdf:resource="#Pathway3" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction3">
+ <bp:evidence rdf:resource="#Evidence5" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HuR binds mRNAs in the nucleus</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction4">
+ <bp:evidence rdf:resource="#Evidence6" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HuR:mRNA complex translocates from the nucleus to the cytosol</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction5">
+ <bp:evidence rdf:resource="#Evidence7" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HuR binds the CRM1 nuclear export machinery</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction6">
+ <bp:evidence rdf:resource="#Evidence8" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PKCdelta phosphorylates HuR</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction7">
+ <bp:evidence rdf:resource="#Evidence9" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PKCalpha phosphorylates HuR</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction8">
+ <bp:evidence rdf:resource="#Evidence11" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">AUF1:mRNA complex is destroyed</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction9">
+ <bp:evidence rdf:resource="#Evidence12" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">AUF1(hnRNP D0) dimers bind AU-rich element in 3&apos; UTR of mRNA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p-S318,221-HuR binds mRNA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
+ <bp:evidence rdf:resource="#Evidence4" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p-S158,221-HuR binds mRNA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction26">
+ <bp:evidence rdf:resource="#Evidence32" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p-S92,203-BRF1 binds 14-3-3</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction25">
+ <bp:evidence rdf:resource="#Evidence31" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Butyrate Response Factor1 (BRF1) binds AU-rich element in 3&apos; UTR of mRNA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction24">
+ <bp:evidence rdf:resource="#Evidence30" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p-S54,92,203-BRF1 binds 14-3-3</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction23">
+ <bp:evidence rdf:resource="#Evidence29" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Protein Kinase B/Akt phosphorylates BRF1</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction22">
+ <bp:evidence rdf:resource="#Evidence28" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MK2 phosphorylates BRF1</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction21">
+ <bp:evidence rdf:resource="#Evidence27" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">BRF1 Complex recruits RNA degradation activities</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction20">
+ <bp:evidence rdf:resource="#Evidence25" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ZFP36 (Tristetraproline, TTP) binds AU-rich elements in 3&apos; UTR of target mRNAs</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence32">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence31">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence30">
+</bp:Evidence>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:Evidence rdf:ID="Evidence29">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence28">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence27">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence26">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence25">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence24">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence23">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence22">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence21">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence20">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep19">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction16" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep18">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction15" />
+ <bp:stepProcess rdf:resource="#Catalysis5" />
+</bp:PathwayStep>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:PathwayStep rdf:ID="PathwayStep17">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction14" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence7">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep16">
+ <bp:stepProcess rdf:resource="#Catalysis4" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction13" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence8">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep15">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction12" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence9">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep14">
+ <bp:stepProcess rdf:resource="#Pathway4" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep13">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction11" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep12">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction10" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep11">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction9" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep10">
+ <bp:stepProcess rdf:resource="#Catalysis3" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction8" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence19">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence18">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence17">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence16">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence15">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence14">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence13">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence12">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence3">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence11">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence4">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence10">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence5">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence6">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis7">
+ <bp:controlled rdf:resource="#BiochemicalReaction22" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis8">
+ <bp:controlled rdf:resource="#BiochemicalReaction23" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis5">
+ <bp:controlled rdf:resource="#BiochemicalReaction15" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis6">
+ <bp:controlled rdf:resource="#BiochemicalReaction18" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep29">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction24" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep28">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction23" />
+ <bp:stepProcess rdf:resource="#Catalysis8" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep27">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction22" />
+ <bp:stepProcess rdf:resource="#Catalysis7" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep26">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction21" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep25">
+ <bp:stepProcess rdf:resource="#Pathway6" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep24">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction20" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep23">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction19" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep22">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction18" />
+ <bp:stepProcess rdf:resource="#Catalysis6" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep21">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction17" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep20">
+ <bp:stepProcess rdf:resource="#Pathway5" />
+</bp:PathwayStep>
+</rdf:RDF>

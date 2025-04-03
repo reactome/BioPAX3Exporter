@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/9630747#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#Pathway2" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep2">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep3">
+ <bp:stepProcess rdf:resource="#Pathway3" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep10">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction4" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep12">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction5" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep11">
+ <bp:stepProcess rdf:resource="#Pathway8" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep14">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction6" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep13">
+ <bp:stepProcess rdf:resource="#Pathway9" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway3">
+ <bp:pathwayOrder rdf:resource="#PathwayStep4" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep6" />
+ <bp:pathwayComponent rdf:resource="#Pathway5" />
+ <bp:pathwayComponent rdf:resource="#Pathway4" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence4" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Evasion of Oncogene Induced Senescence Due to p16INK4A Defects</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The CDKN2A gene consists of four exons, exon 1beta, exon 1alpha, exon 2 and exon 3, going from the proximal to the distal gene end. There are two promoters in the CDKN2A gene locus. The promoter located between exons 1beta and 1alpha regulates transcription of the p16INK4A mRNA, which consists of exon 1alpha, exon 2 and exon 3 (only partially translated), and encodes a cyclin-dependent kinase inhibitor p16INK4A (also known as CDKN2A isoform 1, p16, INK4A, CDKN2A, CDK4I or MTS-1). The promoter located upstream of exon 1beta regulates transcription of the p14-ARF mRNA, which consists of exon 1beta, exon 2 (partially translated) and exon 3 (untranslated). The p14ARF mRNA is translated in a different reading frame from the p16INK4A mRNA and produces the tumor suppressor ARF (also known as p14ARF or CDKN2A isoform 4), an inhibitor of MDM2 E3 ubiquitin ligase-mediated degradation of TP53 (p53). Wild type p16INK4A is able to form a complex with either CDK4 or CDK6 and prevent formation of catalytically active CDK complexes consisting of CDK4 or CDK6 and D-type cyclins (CCND). Thus, p16INK4A prevents hyperphosphorylation of RB-family proteins, required for initiation of DNA replication in RB1-competent cells. Expression of p16INK4A increases in response to strong oncogenic signaling, leading to accelerated cellular senescence (programmed cell cycle arrest). Expression of p16INK4A also increases after excessive proliferation, including that following oncogene activation by mutation in vivo. Loss-of-function of p16INK4A frequently occurs in cancer, usually through loss of p16INK4A protein expression due to promoter hypermethylation or CDKN2A gene deletion (Merlo et al. 1995, Herman et al. 1995, Gonzalez-Zulueta et al. 1995, Wong et al. 1997, Witkiewicz et al. 2011, Shima et al. 2011, Tamayo-Orrego et al. 2016). Missense, nonsense and frameshift mutations in the CDKN2A locus can also impair p16INK4A function through expression of non-functional substitution mutants or truncated proteins (Kamb et al. 1994, Bartsch et al. 1995, Castellano et al. 1997). Germline intronic CDKN2A mutations that create aberrant splicing sites and result in expression of non-functional splicing variants of p16INK4A have been reported in familial melanoma (Harland et al. 2001, Harland et al. 2005). A CDKN2A gene mutation in the region encoding the 5&apos;UTR of p16INK4A, reported in familial melanoma, creates a novel translation start codon and diminishes translation from the wild type start codon (Liu et al. 1999). However, mutations in the non-coding regions of the CDKN2A gene are rare (Pollock et al. 2001). Based on cell culture studies, p16INK4A defects enable precancerous and cancerous cells to delay or evade senescence under oncogenic signaling stress (Ruas et al. 1999, Haferkamp et al. 2008, Rayess et al. 2012, Jeanblanc et al. 2012, LaPak and Burd 2014, Sharpless and Sherr 2015). Establishment of an in vivo role of oncogene induced senescence, and thus an in vivo role of p16INK4A in this context, have been difficult owing to lack of specific biomarkers and interconnectedness of various senescence triggers (Baek and Ryeom 2017, reviewed in Sharpless and Sherr 2015). Genomic deletions in the CDKN2A locus affect p14ARF, unless they are limited to exon 1alpha. The p14ARF promoter can also be hypermethylated in cancer, leading to loss of p14ARF expression. Some missense mutations occurring in exon 2 of the CDKN2A gene affect the p14ARF protein sequence. However, p14ARF mutants usually appear to be less functionally compromised than their p16INK4A counterparts. Most functional tests on p14ARF mutants examine the effect of mutations on MDM2 binding and TP53-mediated transcription of CDKN1A (p21), as well as sub-nuclear localization of p14ARF (Zhang and Xiong 1999, Schmitt et al. 1999, Eischen et al. 1999, Pinyol et al. 2000, Bostrom et al. 2001, Laud et al. 2006). Still, there are poorly explored functions of p14ARF that may be significantly affected in mutant p14ARF proteins detected in cancer (Itahana and Zhang 2008, Dominguez-Brauer et al. 2010). </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway2">
+ <bp:pathwayOrder rdf:resource="#PathwayStep2" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Evasion of Oncogene Induced Senescence Due to p14ARF Defects</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">In cell culture, p14ARF (CDKN2A transcript 4, CDKN2A-4, ARF), one of the two main protein products of the CDKN2A gene, contributes to oncogene induced senescence by stabilizing TP53 (p53). The function of p14ARF in p53 stabilization through sequestration of MDM2, a p53 ubiquitin ligase, depends on the nuclear localization of p14ARF and its ability to interact with MDM2. The nuclear localization signal and the MDM2 interaction domain map to the first 15 amino acids of the N-terminus of p14ARF. This region is encoded by the p14ARF-specific exon 1beta of CDKN2A. An independent MDM2-binding domain localized to the C-terminus of p14ARF (Lohrum et al. 2000). Insertion of 16 nucleotides in exon 1beta results in a frameshift truncation of p14ARF, responsible for a familial melanoma syndrome in which the p16INK4A product of the CDKN2A gene is unaffected. This mutation is rare and has so far been reported in one family only. The mutant protein, p14ARF V22Pfs*46 has the nucleotide localization signal and the N-terminal MDM2 interaction region preserved, but is unable to translocate from the cytosol to the nucleus, possibly due to aberrant conformation (Rizos, Puig et al. 2001), and also lacks the C-terminal MDM2 interaction region. Relocation of wild type p14ARF to the cytosol has been observed in melanoma (Rizos, Darmanian et al. 2001) and aggressive thyroid papillary carcinoma (Ferru et al. 2006). Genomic deletion of exon 1beta, with exons 1alpha, 2 and 3 intact, has been reported in about 30% of melanoma cases with genomic deletions involving the CDKN2A locus (Freedberg et al. 2008). Several different familial melanoma germline mutations map to the exon 1beta splice donor site (Harland et al. 2005). The ability of p14ARF to localize to the nucleolus also plays a role in p14ARF-mediated stabilization of p53. Mutations in exon 2 of the CDKN2A gene can lead to missense mutations in p14ARF that affect its nucleolar localization and p53 stabilization, but the exact mechanism has not been fully elucidated (Zhang and Xiong 1999, reviewed by Fontana et al. 2019).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep3" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep8" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep13" />
+ <bp:pathwayComponent rdf:resource="#Pathway3" />
+ <bp:pathwayComponent rdf:resource="#Pathway2" />
+ <bp:pathwayComponent rdf:resource="#Pathway6" />
+ <bp:pathwayComponent rdf:resource="#Pathway9" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Diseases of Cellular Senescence</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Cellular senescence plays an important role in normal aging, as well as in age-related diseases. Impaired cellular senescence contributes to malignant transformation and cancer development. Presence of an excessive number of senescent cells that are not cleared by the immune system, however, promotes tissue inflammation and creates a microenvironment suitable for growth of neighboring malignant cells. Besides cancer, senescence is also involved in atherosclerosis, osteoarthritis and diabetes (Childs et al. 2015, He and Sharpless 2017).  Evasion of oncogene-induced senescence, at least in cell culture, can occur due to loss-of-function (LOF) mutation in the CDKN2A gene product p16INK4A that acts as a cyclin-dependent kinase inhibitor (reviewed in Sharpless and Sherr 2015). LOF mutations in the CDKN2A gene that affect its other protein product, p14ARF, involved in stabilization of TP53 protein (p53), can contribute to evasion of oncogene-induced senescence (reviewed in Fontana et al. 2019).  LOF mutations in p16INK4A and p14ARF also contribute to evasion of oxidative stress-induced senescence (reviewed in Sharpless and Sherr 2015, and Fontana et al. 2019, respectively). </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway7">
+ <bp:pathwayOrder rdf:resource="#PathwayStep10" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction4" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence10" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Evasion of Oxidative Stress Induced Senescence Due to Defective p16INK4A binding to CDK4 and CDK6</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Missense and nonsense mutations in the CDKN2A gene that result in amino acid substitutions in p16INK4A or p16INK4A truncations, respectively, impairing its ability to bind to CDK4 and CDK6, interfere with p16INK4A-mediated induction of cellular senescence in response to oxidative stress (Chen 2000, Vurusaner et al. 2012). Loss-of-function mutations in p16INK4A can also contribute to cancer by interfering with p16INK4A-mediated inhibition of NFKB signaling (Becker et al. 2005).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway6">
+ <bp:pathwayOrder rdf:resource="#PathwayStep9" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep11" />
+ <bp:pathwayComponent rdf:resource="#Pathway7" />
+ <bp:pathwayComponent rdf:resource="#Pathway8" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence9" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Evasion of Oxidative Stress Induced Senescence Due to p16INK4A Defects</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The CDKN2A gene consists of four exons, exon 1beta, exon 1alpha, exon 2 and exon 3, going from the proximal to the distal gene end. There are two promoters in the CDKN2A gene locus. The promoter located between exons 1beta and 1alpha regulates transcription of the p16INK4A mRNA, which consists of exon 1alpha, exon 2 and exon 3 (only partially translated), and encodes a cyclin-dependent kinase inhibitor p16INK4A (also known as CDKN2A isoform 1, p16, INK4A, CDKN2A, CDK4I or MTS-1). The promoter located upstream of exon 1beta regulates transcription of the p14ARF mRNA, which consists of exon 1beta, exon 2 (partially translated) and exon 3 (untranslated). The p14ARF mRNA is translated in a different reading frame from the p16INK4A mRNA and produces the tumor suppressor ARF (also known as p14ARF or CDKN2A isoform 4), an inhibitor of MDM2 E3 ubiquitin ligase-mediated degradation of TP53 (p53). Wild type p16INK4A is able to form a complex with either CDK4 or CDK6 and prevent formation of catalytically active CDK complexes consisting of CDK4 or CDK6 and D-type cyclins (CCND). Thus, p16INK4A prevents hyperphosphorylation of RB-family proteins, required for initiation of DNA replication in RB1-competent cells. Expression of p16INK4A increases in response to oxidative stress, leading to cellular senescence (programmed cell cycle arrest) under conditions of prolonged oxidative stress. Loss-of-function of p16INK4A frequently occurs in cancer, usually through loss of p16INK4A protein expression due to promoter hypermethylation or CDKN2A gene deletion (Merlo et al. 1995, Herman et al. 1995, Gonzalez-Zulueta et al. 1995, Wong et al. 1997, Witkiewicz et al. 2011, Shima et al. 2011, Tamayo-Orrego et al. 2016). Missense, nonsense and frameshift mutations in the CDKN2A locus can also impair p16INK4A function through expression of non-functional substitution mutants or truncated proteins (Kamb et al. 1994, Bartsch et al. 1995, Castellano et al. 1997). Germline intronic CDKN2A mutations that create aberrant splicing sites and result in expression of non-functional splicing variants of p16INK4A have been reported in familial melanoma (Harland et al. 2001, Harland et al. 2005). A CDKN2A gene mutation in the region encoding the 5&apos;UTR of p16INK4A, reported in familial melanoma, creates a novel translation start codon and diminishes translation from the wild type start codon (Liu et al. 1999). However, mutations in the non coding regions of the CDKN2A gene are rare (Pollock et al. 2001). p16INK4A defects enable cancerous cells to evade cell cycle arrest and senescence under prolonged oxidative stress (Tanaka et al. 1999, Chen 2000, Chen et al. 2004, Vurusaner et al. 2012, Rayess et al. 2012, LaPak and Burd 2014, Sharpless and Sherr 2015, Zhang et al. 2017). A cell cycle-independent role of p16INK4A in regulation of intracellular oxidative stress has been reported (Jenkins et al. 2011, Vurusaner et al. 2012, Jenkins et al. 2013). Genomic deletions in the CDKN2A locus affect p14ARF, unless they are limited to exon 1alpha. The p14ARF promoter can also be hypermethylated in cancer, leading to loss of p14ARF expression. Some missense mutations occurring in exon 2 of the CDKN2A gene affect the p14ARF protein sequence. However, p14ARF mutants usually appear to be less functionally compromised than their p16INK4A counterparts. Most functional tests on p14ARF mutants examine the effect of mutations on MDM2 binding and TP53-mediated transcription of CDKN1A (p21), as well as sub-nuclear localization of p14ARF (Zhang and Xiong 1999, Schmitt et al. 1999, Eischen et al. 1999, Pinyol et al. 2000, Bostrom et al. 2001, Laud et al. 2006). Still, there are poorly explored functions of p14ARF that may be significantly affected in mutant p14ARF proteins detected in cancer (Itahana and Zhang 2008, Dominguez-Brauer et al. 2010). </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway5">
+ <bp:pathwayOrder rdf:resource="#PathwayStep7" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction3" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence7" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Evasion of Oncogene Induced Senescence Due to Defective p16INK4A binding to CDK4</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Missense mutations and small indels in the CDKN2A gene, which result in amino acid changes in p16INK4A that impair its ability to bind to CDK4, interfere with p16INK4A-mediated induction of cellular senescence in response to oncogenic signaling (Jones et al. 2007). Loss-of-function mutations in p16INK4A can also contribute to cancer by interfering with p16INK4A-mediated inhibition of NFKB signaling (Becker et al. 2005).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway4">
+ <bp:pathwayOrder rdf:resource="#PathwayStep5" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction2" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence5" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Evasion of Oncogene Induced Senescence Due to Defective p16INK4A binding to CDK4 and CDK6</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Missense and nonsense mutations in the CDKN2A gene that result in amino acid substitutions in p16INK4A or p16INK4A truncations, impairing its ability to bind to CDK4 and CDK6, interfere with p16INK4A-mediated induction of cellular senescence in response to oncogenic signaling (Haferkamp et al. 2008). Loss-of-function mutations in p16INK4A can also contribute to cancer by interfering with p16INK4A-mediated inhibition of NFKB signaling (Becker et al. 2005).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:PathwayStep rdf:ID="PathwayStep4">
+ <bp:stepProcess rdf:resource="#Pathway4" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep5">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction2" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep6">
+ <bp:stepProcess rdf:resource="#Pathway5" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence15">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep7">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction3" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence14">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep8">
+ <bp:stepProcess rdf:resource="#Pathway6" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence13">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep9">
+ <bp:stepProcess rdf:resource="#Pathway7" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence12">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence11">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence10">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence5">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
+ <bp:evidence rdf:resource="#Evidence6" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p16INK4A mutants do not bind CDK4,CDK6</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p14ARF mutant does not translocate to the nucleus</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence6">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence7">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction4">
+ <bp:evidence rdf:resource="#Evidence11" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p16INK4A mutants do not bind CDK4,CDK6</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway9">
+ <bp:pathwayOrder rdf:resource="#PathwayStep14" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction6" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence14" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Evasion of Oxidative Stress Induced Senescence Due to p14ARF Defects</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">One of the two main protein products of the CDKN2A gene, p14ARF (CDKN2A transcript 4, CDKN2A-4, ARF), contributes to oxidative stress induced cellular senescence by stabilizing TP53 (p53). The function of p14ARF in p53 stabilization through sequestration of MDM2, a p53 ubiquitin ligase, depends on the nuclear localization of p14ARF and its ability to interact with MDM2. The nuclear localization signal and the MDM2 interaction domain map to the first 15 amino acids of the N-terminus of p14ARF. This region is encoded by the p14ARF-specific exon 1beta of CDKN2A. An independent MDM2-binding domain is localized at the C-terminus of p14ARF (Lohrum et al. 2000). Insertion of 16 nucleotides in exon 1beta results in a frameshift truncation of p14ARF, responsible for a familial melanoma syndrome in which the p16INK4A product of the CDKN2A gene is unaffected. This mutation is rare and has so far been reported in one family only. The mutant protein, p14ARF V22Pfs*46 has the nucleotide localization signal and the N-terminal MDM2 interaction region preserved, but is unable to translocate from the cytosol to the nucleus, possibly due to aberrant conformation (Rizos, Puig et al. 2001), and also lacks the C-terminal MDM2 interaction region. Relocation of wild type p14ARF to the cytosol has been observed in melanoma (Rizos, Darmanian et al. 2001) and aggressive thyroid papillary carcinoma (Ferru et al. 2006). Genomic deletion of exon 1beta, with exons 1alpha, 2 and 3 intact, has been reported in about 30% of melanoma cases with genomic deletions involving the CDKN2A locus (Freedberg et al. 2008). Several different familial melanoma germline mutations map to the exon 1beta splice donor site (Harland et al. 2005). The ability of p14ARF to localize to the nucleolus also plays a role in p14ARF-mediated stabilization of p53. Mutations in exon 2 of the CDKN2A gene can lead to missense mutations in p14ARF that affect its nucleolar localization and p53 stabilization, but the exact mechanism has not been fully elucidated (Zhang and Xiong 1999, reviewed by Fontana et al. 2019).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction3">
+ <bp:evidence rdf:resource="#Evidence8" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p16INK4A mutants do not bind CDK4</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence8">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway8">
+ <bp:pathwayOrder rdf:resource="#PathwayStep12" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction5" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence12" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Evasion of Oxidative Stress Induced Senescence Due to Defective p16INK4A binding to CDK4</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Missense mutations and small indels in the CDKN2A gene, which result in amino acid changes in p16INK4A that impair its ability to bind to CDK4, interfere with p16INK4A-mediated, oxidative stress-induced, cellular senescence (Chen 2000, Vurusaner et al. 2012). Loss-of-function mutations in p16INK4A can also contribute to cancer by interfering with p16INK4A-mediated inhibition of NFKB signaling (Becker et al. 2005).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction6">
+ <bp:evidence rdf:resource="#Evidence15" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p14ARF mutant does not translocate to the nucleus</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction5">
+ <bp:evidence rdf:resource="#Evidence13" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p16INK4A mutants do not bind CDK4</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence3">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence4">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence9">
+</bp:Evidence>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+</rdf:RDF>

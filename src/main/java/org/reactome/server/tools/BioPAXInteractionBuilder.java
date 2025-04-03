@@ -1,5 +1,8 @@
 package org.reactome.server.tools;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import org.biopax.paxtools.model.level3.*;
 import org.reactome.server.graph.domain.model.*;
 
@@ -11,6 +14,11 @@ class BioPAXInteractionBuilder {
     private final org.reactome.server.graph.domain.model.ReactionLikeEvent thisRLEvent;
 
     private org.biopax.paxtools.model.Model thisModel;
+
+    // A cache to store already-created BiochemicalReactions keyed by the Reactome dbId.
+    private static Map<Long, BiochemicalReaction> visitedReactions = new HashMap<>();
+
+
 
     /**
      * Construct an instance of the BioPAXInteractionBuilder
@@ -55,18 +63,43 @@ class BioPAXInteractionBuilder {
      */
     private org.biopax.paxtools.model.level3.BiochemicalReaction addBPReaction(org.reactome.server.graph.domain.model.ReactionLikeEvent event) {
         if (event == null) return null;
-        BiochemicalReaction bpReaction = thisModel.addNew(BiochemicalReaction.class, BioPAX3Utils.getTypeCount("BiochemicalReaction"));
+
+        // 1) Check if we've already created a BiochemicalReaction for this DB ID
+        Long dbId = event.getDbId();
+        if (visitedReactions.containsKey(dbId)) {
+            // Already processed => re-use the existing BiochemicalReaction
+            return visitedReactions.get(dbId);
+        }
+
+        // 2) Otherwise, create a NEW BiochemicalReaction
+        BiochemicalReaction bpReaction = thisModel.addNew(
+                BiochemicalReaction.class, 
+                BioPAX3Utils.getTypeCount("BiochemicalReaction")
+        );
+
+        // 3) Save to the cache so we never build another for this same event
+        visitedReactions.put(dbId, bpReaction);
+
+        // 4) Set the display name (so we only call getDisplayName() this once)
         bpReaction.setDisplayName(event.getDisplayName());
+
+        // 5) Process Catalyst Activity or other properties
         if (event.getCatalystActivity() != null) {
-            for (CatalystActivity cat : event.getCatalystActivity()) {
+            for (org.reactome.server.graph.domain.model.CatalystActivity cat : event.getCatalystActivity()) {
+                // Create a Catalysis object
                 org.biopax.paxtools.model.level3.Catalysis bpCatalysis = addBPCatalyst();
+                // Link it to this BiochemicalReaction
                 bpCatalysis.addControlled(bpReaction);
             }
         }
 
+        // 6) Possibly add references, evidence, etc.
         BioPAX3BasicElementsBuilder elements = new BioPAX3BasicElementsBuilder(event, thisModel, bpReaction);
         elements.addEvidence();
+
+        // 7) Return newly built reaction
         return bpReaction;
+
     }
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////

@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/8978934#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:Catalysis rdf:ID="Catalysis3">
+ <bp:controlled rdf:resource="#BiochemicalReaction3" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction29">
+ <bp:evidence rdf:resource="#Evidence33" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Ferrous iron reduces the BH3 radical back to BH4</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis4">
+ <bp:controlled rdf:resource="#BiochemicalReaction4" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis5">
+ <bp:controlled rdf:resource="#BiochemicalReaction5" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis6">
+ <bp:controlled rdf:resource="#BiochemicalReaction6" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis7">
+ <bp:controlled rdf:resource="#BiochemicalReaction7" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis8">
+ <bp:controlled rdf:resource="#BiochemicalReaction8" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis9">
+ <bp:controlled rdf:resource="#BiochemicalReaction9" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis26">
+ <bp:controlled rdf:resource="#BiochemicalReaction33" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis25">
+ <bp:controlled rdf:resource="#BiochemicalReaction32" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis24">
+ <bp:controlled rdf:resource="#BiochemicalReaction30" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis23">
+ <bp:controlled rdf:resource="#BiochemicalReaction28" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis22">
+ <bp:controlled rdf:resource="#BiochemicalReaction26" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis21">
+ <bp:controlled rdf:resource="#BiochemicalReaction25" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis1">
+ <bp:controlled rdf:resource="#BiochemicalReaction1" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis20">
+ <bp:controlled rdf:resource="#BiochemicalReaction24" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis2">
+ <bp:controlled rdf:resource="#BiochemicalReaction2" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence19">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence18">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction20">
+ <bp:evidence rdf:resource="#Evidence24" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Peroxynitrite can oxidise BH4 to the BH3 radical</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis27">
+ <bp:controlled rdf:resource="#BiochemicalReaction34" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence11">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction21">
+ <bp:evidence rdf:resource="#Evidence25" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Salvage - Sepiapterin is reduced to q-BH2</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence10">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction22">
+ <bp:evidence rdf:resource="#Evidence26" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GCHFR binds to GCH1 and negatively regulates its activity</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence13">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction23">
+ <bp:evidence rdf:resource="#Evidence27" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">BH4 is oxidised to the BH3 radical during the eNOS catalytic cycle</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence12">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction24">
+ <bp:evidence rdf:resource="#Evidence28" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Salvage - BH2 is reduced to BH4 by DHFR</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence15">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction25">
+ <bp:evidence rdf:resource="#Evidence29" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GCH1 reduces GTP to dihydroneopterin triphosphate</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence14">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction26">
+ <bp:evidence rdf:resource="#Evidence30" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">BH2 binding can lead to eNOS uncoupling</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence17">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction27">
+ <bp:evidence rdf:resource="#Evidence31" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The BH3 radical can decay to dihydrobiopterin (BH2)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence16">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction28">
+ <bp:evidence rdf:resource="#Evidence32" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The cofactor BH4 is required for electron transfer in the eNOS catalytic cycle</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction9">
+ <bp:evidence rdf:resource="#Evidence11" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">COQ2 ligates all-E-10PrP2 to PHB</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence20">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis15">
+ <bp:controlled rdf:resource="#BiochemicalReaction16" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis14">
+ <bp:controlled rdf:resource="#BiochemicalReaction15" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis13">
+ <bp:controlled rdf:resource="#BiochemicalReaction14" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis12">
+ <bp:controlled rdf:resource="#BiochemicalReaction12" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis11">
+ <bp:controlled rdf:resource="#BiochemicalReaction11" />
+</bp:Catalysis>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:Catalysis rdf:ID="Catalysis10">
+ <bp:controlled rdf:resource="#BiochemicalReaction10" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence29">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis19">
+ <bp:controlled rdf:resource="#BiochemicalReaction21" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis18">
+ <bp:controlled rdf:resource="#BiochemicalReaction19" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis17">
+ <bp:controlled rdf:resource="#BiochemicalReaction18" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction30">
+ <bp:evidence rdf:resource="#Evidence34" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Sepiapterin reductase (SPR) is phosphorylated by Ca2+/calmodulin-dependent protein kinase II</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis16">
+ <bp:controlled rdf:resource="#BiochemicalReaction17" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction31">
+ <bp:evidence rdf:resource="#Evidence35" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Ascorbate can reduce the BH3 radical back to BH4</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction5">
+ <bp:evidence rdf:resource="#Evidence7" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Unknown dehydrogenase oxidizes 4-HBz</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence22">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction32">
+ <bp:evidence rdf:resource="#Evidence36" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Unknown sepiapterin synthase transforms PTHP to sepiapterin</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction6">
+ <bp:evidence rdf:resource="#Evidence8" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">COQ5 methylates MDMQ10H2</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence21">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction33">
+ <bp:evidence rdf:resource="#Evidence37" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PTPS is phosphorylated by cGMP-dependant protein kinase II</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction7">
+ <bp:evidence rdf:resource="#Evidence9" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PDSS1,2 ligates FPP to IPPP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence24">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction34">
+ <bp:evidence rdf:resource="#Evidence38" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PTHP is reduced to BH4 by sepiapterin reductase (SPR)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction8">
+ <bp:evidence rdf:resource="#Evidence10" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Unknown enzyme hydroxylates DMPhOH</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence23">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">mito-STARD7 transports Q10 to outer mitochondrial membrane</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence26">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
+ <bp:evidence rdf:resource="#Evidence4" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">STARD7 transports Q10 to plasma membrane</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence25">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction3">
+ <bp:evidence rdf:resource="#Evidence5" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">COQ3 methylates DeMQ10H2</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence28">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction4">
+ <bp:evidence rdf:resource="#Evidence6" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">COQ6 hydroxylates DHB</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence27">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep35">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction32" />
+ <bp:stepProcess rdf:resource="#Catalysis25" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep36">
+ <bp:stepProcess rdf:resource="#Catalysis26" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction33" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep33">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction30" />
+ <bp:stepProcess rdf:resource="#Catalysis24" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep34">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction31" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep31">
+ <bp:stepProcess rdf:resource="#Catalysis23" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction28" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep32">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction29" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep30">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction27" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep28">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction25" />
+ <bp:stepProcess rdf:resource="#Catalysis21" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep29">
+ <bp:stepProcess rdf:resource="#Catalysis22" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction26" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep26">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction23" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep27">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction24" />
+ <bp:stepProcess rdf:resource="#Catalysis20" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep37">
+ <bp:stepProcess rdf:resource="#Catalysis27" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction34" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep13">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction12" />
+ <bp:stepProcess rdf:resource="#Catalysis12" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep14">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction13" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep11">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction10" />
+ <bp:stepProcess rdf:resource="#Catalysis10" />
+</bp:PathwayStep>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:PathwayStep rdf:ID="PathwayStep12">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction11" />
+ <bp:stepProcess rdf:resource="#Catalysis11" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep10">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction9" />
+ <bp:stepProcess rdf:resource="#Catalysis9" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway4">
+ <bp:pathwayOrder rdf:resource="#PathwayStep24" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep35" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep25" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep36" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep22" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep33" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep23" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep34" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep31" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep32" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep30" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep28" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep29" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep26" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep37" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep27" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction29" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction19" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction30" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction20" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction31" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction21" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction32" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction22" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction33" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction23" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction34" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction24" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction25" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction26" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction27" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction28" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence22" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Tetrahydrobiopterin (BH4) synthesis, recycling, salvage and regulation</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Tetrahydrobiopterin (BH4) is an essential co-factor for the aromatic amino acid hydroxylases and glycerol ether monooxygenase and it regulates nitric oxide synthase (NOS) activity. Inherited BH4 deficiency leads to hyperphenylalaninemia, and dopamine and neurotransmitter deficiency in the brain. BH4 maintains enzymatic coupling to L-arginine oxidation to produce NO. Oxidation of BH4 to BH2 results in NOS uncoupling, resulting in superoxide (O2.-) formation rather than NO. Superoxide rapidly reacts with NO to produce peroxynitrite which can further uncouple NOS. These reactive oxygen species (superoxide and peroxynitrite) can contribute to increased oxidative stress in the endothelium leading to atherosclerosis and hypertension (Thony et al. 2000, Crabtree and Channon 2011,Schulz et al. 2008, Schmidt and Alp 2007).  The synthesis, recycling and effects of BH4 are shown here. Three enzymes are required for the de novo biosynthesis of BH4 and two enzymes for the recycling of BH4.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep21" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep16" />
+ <bp:pathwayComponent rdf:resource="#Pathway4" />
+ <bp:pathwayComponent rdf:resource="#Pathway3" />
+ <bp:pathwayComponent rdf:resource="#Pathway2" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Metabolism of cofactors</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Many proteins depend for their activity on cofactors, associated ions and small molecules. This module contains annotations of processes involved in the synthesis of cofactors, either de novo or from essential molecules consumed in the diet (vitamins), as well as regeneration of active forms of cofactors (Lipmann 1984).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway3">
+ <bp:pathwayOrder rdf:resource="#PathwayStep20" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep19" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep17" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep18" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction18" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction15" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction16" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction17" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence17" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NADPH regeneration</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The conversion of isocitrate to 2-oxoglutarate (alpha-ketoglutarate) with the concomitant synthesis of NADPH from NADP+ is thought to play a significant role in supplying NADPH for other reactions in both the cytosol and the peroxisome (Geisbrecht and Gould 1999). The activity of H6PD (Hexose-6-phosphate dehydrogenase) is thought to play a role in maintaining NADP+ : NADPH balance within the endoplasmic reticulum (Zielinska et al. 2011).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway2">
+ <bp:pathwayOrder rdf:resource="#PathwayStep13" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep14" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep11" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep12" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep10" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep7" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep6" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep5" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep4" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep9" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep8" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep3" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep2" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep15" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction9" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction5" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction10" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction6" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction11" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction7" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction12" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction8" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction13" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction14" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction2" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction3" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction4" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Ubiquinol biosynthesis</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The length of the polyisoprenoid chain of ubiquinone, aka coenzyme Q (CoQ), varies depending on the species involved: it is 6 in budding yeast, Saccharomyces cerevisiae, (CoQ6) and 10 in humans (CoQ10). Most ubiquinone is naturally reduced to ubiquinol (CoQ10H2 in humans), and this form dominates in human tissues. It functions as a ubiquitous coenzyme in redox reactions, and has a central role in the electron transport chain of the inner mitochondrial membrane.to shuttle electrons from complexes I and II to complex III. It also acts as a cofactor for biosynthetic and catabolic reactions, detoxifies damaging lipid species, and engages in cellular signaling and oxygen sensing. In eukaryotes, ubiquinones/ubiquinols are also found in other membranes such as the endoplasmic reticulum, Golgi vesicles, lysosomes, peroxisomes and the plasma membrane (reviewed in Guerra    Pagliarini, 2023).  Ubiquinol/ubiquinone is synthesized in the following way. Initially, mitochondrial 4-hydroxyphenylpyruvate dioxygenase-like protein (HPDL) processes 4-hydroxphenylpyruvate (HPP, HPPA) to (S)-4-hydroxymandelate (4-HMA). HPDL defects lead to CoQ10 deficiency. The HPDL product 4-HMA is a precursor for the synthesis of 4-hydroxybenzoate (PHB), from which the CoQ10 head group is derived (Banh et al., 2021). Because HPDL is a mitochondrial protein, cytosolic HPP from tyrosine catabolism must either be imported by a yet unknown transport mechanism or mitochondrial HPP could be the product of an unknown mitochondrial reaction (Husain et al., 2020; reviewed in Staiano et al., 2023). A polyprenyl diphosphate synthase (PDSS1-2) assembles the polyisoprenoid tail. Next, 4-hydroxybenzoate polyprenyltransferase (COQ2) catalyzes the formation of the covalent linkage between PHB and the polyisoprenoid tail to produce 4-hydroxy-3-polyprenyl benzoic acid intermediate (DHB, 3-decaprenyl-4-hydroxybenzoic acid in humans). Modifications of the aromatic ring follow and involve an oxidative decarboxylation, two hydroxylations, two O-methylations, one C-methylation. This series of reactions, which precise order is not fully established, especially regarding the oxidative decarboxylation step (Pelosi et al., 2024; Nicoll et al., 2024), yield the fully substituted hydroquinone, ubiquinol (reviewed in Guerra    Pagliarini, 2023).   Homologs of the core enzymes COQ3, COQ4, COQ5, COQ6, COQ7, and COQ9 have been shown to form a membrane-localized multienzyme complex (&quot;COQ synthome&quot;) in yeast (He et al., 2014). There is some evidence of such a complex, called complex Q, in humans (Floyd et al., 2016). A complex was reconstituted in vitro with ancestral versions of COQ3-7 and COQ9, and was able to convert a short chain analog of DHB (4-Hydroxy-3-(3-methylbut-2-en-1-yl)benzoic acid) into CoQ1 (Nicoll et al., 2024). COQ8A and COQ8B proteins may contribute to the formation and functionality of this complex, as they can bind to most core enzymes (Floyd et al., 2016), and as COQ8B increased the in vitro activity of COQ6 via phosphorylation of COQ3 (Nicoll et al., 2024)..  Parts of CoQ10 synthesis may also occur in the Golgi and endoplasmic reticulum membranes, adding to the cellular membrane CoQ10 pool. The relevance of such processes seems minor (Kal&#233;n et al., 1990; Staiano et al., 2023).The precise function of two other genes, COQ10A and COQ10B, which appear to be quinone-binding proteins, is still under investigation. Most of the time, CoQ10 is transported out of the mitochondrion and to the plasma membrane by isoforms of the STARD7 lipid carrier (reviewed in Guile et al., 2023).  CoQ10 deficiency, which can result from reduced activity of any biosynthesis core enzymes or the COQ8A, and COQ8B proteins, has significant implications. It is associated with several inherited metabolic disorders, the phenotypes of which are extremely heterogeneous. These disorders range from fatal neonatal presentations with multisystem involvement to adult-onset isolated myopathy. However, in many cases, the symptoms can be ameliorated by nutritional supplementation with CoQ10 (reviewed in Quinzii et al., 2017; Staiano et al., 2023).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep24">
+ <bp:stepProcess rdf:resource="#Catalysis19" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction21" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep25">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction22" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep22">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction19" />
+ <bp:stepProcess rdf:resource="#Catalysis18" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep23">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction20" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep20">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction18" />
+ <bp:stepProcess rdf:resource="#Catalysis17" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep21">
+ <bp:stepProcess rdf:resource="#Pathway4" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep19">
+ <bp:stepProcess rdf:resource="#Catalysis16" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction17" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep17">
+ <bp:stepProcess rdf:resource="#Catalysis14" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction15" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep18">
+ <bp:stepProcess rdf:resource="#Catalysis15" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction16" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep15">
+ <bp:stepProcess rdf:resource="#Catalysis13" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction14" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep16">
+ <bp:stepProcess rdf:resource="#Pathway3" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence31">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence30">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence33">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence32">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence35">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence34">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence37">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence36">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence38">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction18">
+ <bp:evidence rdf:resource="#Evidence21" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">isocitrate + NADP+ =&gt; 2-oxoglutarate + CO2 + NADPH + H+</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction19">
+ <bp:evidence rdf:resource="#Evidence23" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">DHNTP is dephosphorylated by PTPS to PTHP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence3">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep7">
+ <bp:stepProcess rdf:resource="#Catalysis6" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction6" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence4">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep6">
+ <bp:stepProcess rdf:resource="#Catalysis5" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction5" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep5">
+ <bp:stepProcess rdf:resource="#Catalysis4" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction4" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep4">
+ <bp:stepProcess rdf:resource="#Catalysis3" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction3" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence7">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence8">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence5">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep9">
+ <bp:stepProcess rdf:resource="#Catalysis8" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction8" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence6">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep8">
+ <bp:stepProcess rdf:resource="#Catalysis7" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction7" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction10">
+ <bp:evidence rdf:resource="#Evidence12" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">COQ3 methylates DHDB</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction11">
+ <bp:evidence rdf:resource="#Evidence13" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">COQ7:COQ9 octamer hydroxylates DMQ10H2</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence9">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction12">
+ <bp:evidence rdf:resource="#Evidence14" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">COQ4 decarboxylates MHDB</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction13">
+ <bp:evidence rdf:resource="#Evidence15" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Unknown enzyme(s) process 4-HMA to 4-Hbz</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep3">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction2" />
+ <bp:stepProcess rdf:resource="#Catalysis2" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction14">
+ <bp:evidence rdf:resource="#Evidence16" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HPDL dioxygenates HPPA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep2">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+ <bp:stepProcess rdf:resource="#Catalysis1" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction15">
+ <bp:evidence rdf:resource="#Evidence18" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Exchange of isocitrate and 2-oxoglutarate across the peroxisomal membrane</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#Pathway2" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction16">
+ <bp:evidence rdf:resource="#Evidence19" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">isocitrate + NADP+ =&gt; 2-oxoglutarate + CO2 + NADPH + H+</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction17">
+ <bp:evidence rdf:resource="#Evidence20" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ACO1:4Fe-4S isomerises CIT to ISCIT</bp:displayName>
+</bp:BiochemicalReaction>
+</rdf:RDF>

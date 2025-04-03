@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/9694786#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:PathwayStep rdf:ID="PathwayStep4">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction4" />
+ <bp:stepProcess rdf:resource="#Catalysis3" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep3">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction3" />
+ <bp:stepProcess rdf:resource="#Catalysis2" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep2">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction2" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+ <bp:stepProcess rdf:resource="#Catalysis1" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep6">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction6" />
+ <bp:stepProcess rdf:resource="#Catalysis5" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep5">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction5" />
+ <bp:stepProcess rdf:resource="#Catalysis4" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">nsp14 acts as a cap N7 methyltransferase to modify SARS-CoV-2 mRNAs</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction5">
+ <bp:evidence rdf:resource="#Evidence6" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Synthesis of SARS-CoV-2 plus strand subgenomic mRNAs</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence3">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction4">
+ <bp:evidence rdf:resource="#Evidence5" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Synthesis of SARS-CoV-2 minus strand subgenomic mRNAs by template switching</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction3">
+ <bp:evidence rdf:resource="#Evidence4" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">nsp12 transfers guanylyl onto SARS-CoV-2 plus strand subgenomic RNAs</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
+ <bp:evidence rdf:resource="#Evidence3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Polyadenylation of SARS-CoV-2 subgenomic mRNAs (plus strand)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis1">
+ <bp:controlled rdf:resource="#BiochemicalReaction1" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence6">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence7">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence4">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis3">
+ <bp:controlled rdf:resource="#BiochemicalReaction4" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis2">
+ <bp:controlled rdf:resource="#BiochemicalReaction3" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence5">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction6">
+ <bp:evidence rdf:resource="#Evidence7" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">nsp16 acts as a cap 2&apos;-O-methyltransferase to modify SARS-CoV-2 mRNAs</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis5">
+ <bp:controlled rdf:resource="#BiochemicalReaction6" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis4">
+ <bp:controlled rdf:resource="#BiochemicalReaction5" />
+</bp:Catalysis>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep4" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep3" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep2" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep6" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep5" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction5" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction4" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction3" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction2" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction6" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Transcription of SARS-CoV-2 sgRNAs</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This COVID&#8209;19 pathway has been created by a combination of computational inference from SARS-CoV-1 data (https://reactome.org/documentation/inferred-events) and manual curation, as described in the summation for the overall SARS-CoV-2 infection pathway. Steps of SARS&#8209;CoV&#8209;2 transcription that have been studied directly include binding of the replication&#8209;transcription complex (RTC) to the RNA template and the polymerase activity of nsp12 (Hillen et al. 2020, Wang et al. 2020, Yin et al. 2020), helicase activity of nsp13 (Chen et al. 2020, Ji et al. 2020, Shu et al. 2020), capping activity of nsp16 (Viswanathan et al. 2020), and polyadenylation of SARS&#8209;CoV&#8209;2 transcripts (Kim et al. 2020, Ravindra et al. 2020). Remaining steps have been inferred from previous studies in SARS&#8209;CoV&#8209;1 and related coronaviruses.  SARS-CoV-1 encodes eight subgenomic RNAs, mRNA2 to mRNA9. mRNA1 corresponds to the genomic RNA. The 5&apos; and 3&apos; ends of subgenomic RNAs are identical, in accordance with the template switch model of coronavirus RNA transcription (Snijder et al. 2003, Thiel et al. 2003, Yount et al. 2003). Genomic positive strand RNA is first transcribed into negative sense (minus strand) subgenomic mRNAs by template switching. Negative sense mRNAs subsequently serve as templates for the synthesis of positive strand subgenomic mRNAs. As shown in murine hepatitis virus (MHV), which is closely related to SARS-CoV-1, negative-sense viral RNAs are present in much smaller amounts than positive-sense RNAs (Irigoyen et al. 2016). Of the eight subgenomic mRNAs of SARS-CoV-1, mRNA2 encodes the S protein, mRNA3 is bicistronic and encodes proteins 3a and 3b, mRNA4 encodes the E protein, mRNA5 encodes the M protein, mRNA6 encodes protein 6, and bicistronic mRNA7, mRNA8 and mRNA9 encode proteins 7a and 7b (mRNA7), 8a and 8b (mRNA8), and 9a and N (mRNA9), respectively (Snijder et al. 2003, Thiel et al. 2003, Yount et al. 2003). The template switch model of coronavirus involves discontinuous transcription of subgenomic RNA, with the leader body joining occurring during the synthesis of minus strand RNAs. Each subgenomic RNA contains a leader transcription regulatory sequence (leader TRS) that is identical to the leader of the genome, appended via polymerase &#8220;jumping&#8221; during negative strand synthesis to the body transcription regulatory sequence (body TRS), a short, AU-rich motif of about 10 nucleotides found upstream of each ORF that is destined to become 5&apos; proximal in one of the subgenomic mRNAs. The 3&apos; and 5&apos;UTRs may interact through RNA&#8211;RNA and/or RNA&#8211;protein plus protein&#8211;protein interactions to promote circularization of the coronavirus genome, placing the elongating minus strand in a favorable topology for leader-body joining. The host protein PABP was found to bind to the coronavirus 3&apos; poly(A) tail and to interact with the host protein eIF-4G, a component of the three-subunit complex that binds to mRNA cap structures, which may promote the circularization of the coronavirus genome. Two viral proteins that bind to the coronavirus 5&apos;UTR, the N protein and nsp1, may play a role in template switching. The poly(A) tail is necessary for the initiation of minus-strand RNA synthesis at the 3&apos; end of genomic RNA.  Elongation of nascent minus strand RNA continues until the first functional body TRS motif is encountered. A fixed proportion of replication-transcription complexes (RTCs) will either disregard the TRS motif and continue to elongate the nascent strand or stop synthesis of the nascent minus strand and relocate to the leader TRS, extending the minus strand by copying the 5&apos; end of the genome. The completed minus-strand RNAs then serve as templates for positive strand mRNA synthesis (reviewed by Sawicki et al. 2007, Yang and Leibowitz 2015).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+</rdf:RDF>

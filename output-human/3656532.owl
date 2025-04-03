@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/3656532#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">An anchoring protein ZFYVE9 (SARA) does not recruit SMAD2/3 to TGFB1:TGFBR2:p-TGFBR1 KD Mutants</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">TGFBR1 KD Mutants in Cancer</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Mutations in the kinase domain (KD) of TGF-beta receptor 1 (TGFBR1) have been found in Ferguson-Smith tumor i.e. multiple self-healing squamous epithelioma - MSSE (Goudie et al. 2011), breast cancer (Chen et al. 1998), ovarian cancer (Chen et al. 2001) and head-and-neck cancer (Chen et al. 2001). KD mutations reported in MSSE are nonsense and frameshift mutations that cause premature termination of TGFBR1 translation, resulting in truncated receptors that lack substantial portions of the kinase domain, or cause nonsense-mediated decay of mutant transcripts. A splice site KD mutation c.806-2A&gt;C is predicted to result in the skipping of exon 5 and the absence of KD amino acid residues 269-324 from the mutant receptor. The splice site mutant is expressed at the cell surface but unresponsive to TGF-beta stimulation (Goudie et al. 2004).   TGFBR1 KD mutations reported in breast, ovarian and head-and-neck cancer are missense mutations, and it appears that these mutant proteins are partially functional but that their catalytic activity or protein stability is decreased (Chen et al. 1998, Chen et al. 2001a and b). These mutants are not shown.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+</rdf:RDF>

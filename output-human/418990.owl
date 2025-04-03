@@ -1,0 +1,875 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/418990#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:PathwayStep rdf:ID="PathwayStep56">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction47" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep57">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction48" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep58">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction49" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep52">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction44" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep53">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction45" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep54">
+ <bp:stepProcess rdf:resource="#Pathway10" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep55">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction46" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep50">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction42" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep51">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction43" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction9">
+ <bp:evidence rdf:resource="#Evidence11" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Necl-1:Necl-2 trans heterodimer interaction</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction8">
+ <bp:evidence rdf:resource="#Evidence10" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Necl-1:Nectin 3 trans heterodimer interaction</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction7">
+ <bp:evidence rdf:resource="#Evidence8" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Transhomodimerization of Nectins</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction6">
+ <bp:evidence rdf:resource="#Evidence7" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Transhomodimerization of Nectin-like (Necl) proteins</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction5">
+ <bp:evidence rdf:resource="#Evidence6" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Cis-homodimerization of nectins</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction4">
+ <bp:evidence rdf:resource="#Evidence5" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Interaction of Afadin with F-actin</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction3">
+ <bp:evidence rdf:resource="#Evidence4" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Interaction of cadherin with Beta/gamma catenin, alpha catenin and p120 catenin</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep49">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction41" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
+ <bp:evidence rdf:resource="#Evidence3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Interaction of Nectins with Afadin</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence59">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Connection of adjacent cells through calcium-dependent trans-dimerization of cadherin</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence58">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence57">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep45">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction37" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep46">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction38" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep47">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction39" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep48">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction40" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep41">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction33" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence52">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep42">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction34" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence51">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep43">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction35" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence50">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep44">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction36" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence56">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence55">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence54">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep40">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction32" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence53">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence49">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence48">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep2" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep17" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep18" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep5" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep6" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep3" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep4" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep7" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep8" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction3" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction2" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:pathwayComponent rdf:resource="#Pathway2" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction16" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction7" />
+ <bp:pathwayComponent rdf:resource="#Pathway3" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction6" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction5" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction4" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Adherens junctions interactions</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The adherens junctions (AJ) are multiprotein complexes that promote homotypic cell adhesion in nearly all types of tissue by linking membrane and cytoskeletal components at discrete contact regions (reviewed in Hartsock    Nelson 2008; Gumbiner 2005; Ebnet, 2008). The molecular constituents of adherens junctions form adhesive units which are organized into higher order junctional adhesions that create a zipper-like seal between adjacent cells. Junctional adhesions function in epithelial cell polarization and in the coupling of cytoskeletons in adjacent cells that allow coordinated movements. During embryonic development, AJs function in specifying adhesion between cells and contribute in the sorting of different cell types. AJs also regulate cell polarity and shape, promote cell-cell communication and help mediate contact inhibition of cell growth. This module  covers transdimerization events involving AJ transmembrane proteins (cadherins and nectins)  (Gumbiner 2005; Ebnet 2008; Hartsock    Nelson 2008).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence47">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway2">
+ <bp:pathwayOrder rdf:resource="#PathwayStep16" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep12" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep13" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep14" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep15" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep9" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep10" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep11" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction15" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction13" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction14" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction9" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction11" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction8" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction12" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction10" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence9" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Nectin/Necl  trans heterodimerization</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Nectins and Nectin-like molecules (Necls) also undergo trans-heterophilic interactions to interact with other nectin or Necl family members. Besides these trans interactions among nectins and nectin-like family members, trans-homophilic interactions have also been described between nectins or Necls with other immunoglobulin-superfamily members like CD96, CD226 and CRTAM (Sakisaka et al., 2007; Takai et al., 2008). It should be noted that some of these interactions might not exist in epithelial cell-cell contacts but may occur in other cell-cell adhesion systems.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence46">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction28">
+ <bp:evidence rdf:resource="#Evidence36" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CTNNA1 binds to CDH11-bound CTNNB1</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction29">
+ <bp:evidence rdf:resource="#Evidence37" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">AMOT-2 binds CDH11</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction26">
+ <bp:evidence rdf:resource="#Evidence34" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ANGPTL4 binds to CDH11v</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction27">
+ <bp:evidence rdf:resource="#Evidence35" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CDH11 associates with catenins</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway7">
+ <bp:pathwayOrder rdf:resource="#PathwayStep38" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep28" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep34" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep35" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep36" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep37" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep32" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep33" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction28" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction29" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction26" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction27" />
+ <bp:pathwayComponent rdf:resource="#Pathway8" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction25" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction31" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction30" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence28" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Regulation of CDH11 function</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Like other classical cadherins, CDH11 associates with several catenin proteins through its intracellular domain, which is thought to play a role in the establishment and regulation of adherens junctions. These catenin proteins include CTNND1 (also known as p120 catenin or delta-catenin), CTNNB1 (beta-catenin), JUP (Junction Plakoglobin, also known as gamma-catenin), and CTNNA1 (alpha-catenin) (Straub et al. 2003; Kiener et al. 2006; Ortiz et al. 2015; Lee et al. 2018).  CDH11, through its C terminus, also forms a complex with angiomotin (AMOT) isoform p80 (AMOT-2), which is implicated in CDH11-mediated cell migration and tumor cell invasiveness (Levchenko et al. 2004; Jiang et al. 2006; Yi et al. 2011; Ortiz et al. 2015; Lee et al. 2018).  Through its extracellular region, CDH11 binds to the C terminal fragment of ANGPTL4 (Angiopoietin-like-4), commonly known as cANGPTL4, which is implicated in the regulation of wound healing. The variant isoform of CDH11 (CDH11v), an 85 kDa membrane-bound  protein produced as a result of alternative splicing (Kawaguchi et al. 1999), can compete with the canonical CDH11 for cANGPTL4 binding (Teo et al. 2017).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction24">
+ <bp:evidence rdf:resource="#Evidence32" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CDH11 forms heterotypic trans dimer with CDH24</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence41">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway8">
+ <bp:pathwayOrder rdf:resource="#PathwayStep29" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep30" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep31" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction24" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction22" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction23" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence29" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CDH11 homotypic and heterotypic interactions</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Based on surface plasmon resonance experiments, CDH11 forms a specificity subgroup with CDH8 and, probably, CDH24. CDH11 forms homotypic trans dimers (Patel et al. 2006, Brasch et al. 2018), and heterotypic trans dimers with CDH8 (Brasch et al. 2018) and, based on sequence similarity, probably with CDH24 (Brasch et al. 2018). </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction25">
+ <bp:evidence rdf:resource="#Evidence33" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CTNNB1 dissociates from CDH11 upon ANGPTL4 binding</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence40">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction22">
+ <bp:evidence rdf:resource="#Evidence30" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CDH11 forms heterotypic trans dimer with CDH8</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway9">
+ <bp:pathwayOrder rdf:resource="#PathwayStep49" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep45" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep46" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep47" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep48" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep41" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep52" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep42" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep53" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep43" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep44" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep50" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep40" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep51" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction39" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction37" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction38" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction35" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction36" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction33" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction44" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction34" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction45" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction42" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction32" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction43" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction40" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction41" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence40" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Regulation of CDH11 gene transcription</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The CDH11 gene consists of 14 exons, which encode two splice isoforms. Both splicing isoforms are expressed in the heart, brain, placenta, lung and bone, but not in the kidney, skeletal muscle, pancreas and liver (Okazaki et al. 1994; Kawaguchi et al. 1999). Several transcription factors have been shown to directly regulate CDH11 gene transcription, including HOXC8 (Lei et al. 2005; Lei et al. 2006; Li et al. 2014), ILF3 (Zhang et al. 2017), ZEB2 (Nam et al. 2012; Nam et al. 2014), HEYL (Liu et al. 2020), FOXF1 (Black et al. 2018), and BHLHE22 (Ross et al. 2012), and the transcription of CDH11 has also been shown to be influenced by a number of growth factors and hormones, such as FGF2 (Strutz et al. 2002; James et al. 2008), TNF (Wu et al. 2013), TGFB1 (Schneider et al. 2012; Schulte et al. 2013; Hahn et al. 2016; Cheng et al. 2018; Ruan et al. 2019; Doolin et al. 2021; Wilson et al. 2022), TGFB2 (Wecker et al. 2013; Theodossiou et al. 2019), GNRH1 (Peng et al. 2015), PTH (Yao et al. 2014), dexamethasone (Lecanda et al. 2000), progesterone (Chen et al. 1999). CDH11 can also affect TGFB1 signaling, thereby possibly creating a feedback loop (Passanha et al. 2022). Expression of mouse Cdh11 in mouse osteoblast-like cell line (MC3T3-E1) is not affected by osteogenic hormones triiodothyronine (T3) and 1,25-dihydroxyvitamin D3 at either mRNA or protein levels (Leugmayr et al. 2000).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction23">
+ <bp:evidence rdf:resource="#Evidence31" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CDH11 forms homotypic trans dimer</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway3">
+ <bp:pathwayOrder rdf:resource="#PathwayStep19" />
+ <bp:pathwayComponent rdf:resource="#Pathway4" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence19" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Regulation of Homotypic Cell-Cell Adhesion</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Adherens junctions depend on formation of dimers between extracellular domains of cadherins presented on the surface of neighboring apposed cells, bridging the intermembrane space. The cadherin dimers are stabilized by interaction of intracellular domains of cadherins with cytoplasmic catenins that further associate with cytoskeletal proteins, such as actin and microtubules. The dimers are largely homotypic (homophilic), involving identical cadherin proteins, but heterotypic (heterophilic) interactions, involving different cadherin proteins, also occur. Heterotypic cadherin interactions contribute to formation of asymmetric adherens junctions which may serve to sense differences in cytoskeletal geometry between neighboring cells during development. One mechanism for regulation of homotypic cell-cell adhesion is the regulation of expression of cadherin genes. For review, refer to Yap et al. 1997, Meng and Takeichi 2009, Brasch et al. 2012, Malinova and Huveneers 2018).  Cadherins are a family of evolutionarily conserved calcium-dependent single-pass transmembrane proteins characterized by the presence of an N-terminal ectodomain composed of tandem extracellular cadherin (EC) repeats that engage in extracellular interactions mediating cell-cell adhesion through dimerization, and a C-terminal cytoplasmic tail that interacts with catenins and links extracellular adhesion to the cytoskeleton. Based on their sequence similarity, cadherins can be grouped into type I classical cadherins, type II classical cadherins, clustered and non-clustered protocadherins, 7D cadherins, and CELSR cadherins; CDH13 and CDH26 have not been grouped so far. Type I and II classical cadherins are comprised of five extracellular cadherin (EC) repeats in their ectodomains. The first, membrane distal cadherin repeat (EC1) of type I classical cadherins possesses a conserved tryptophan residue at position 2, while the EC1 of type II classical cadherins has two conserved tryptophan residues, at positions 2 and 4. The conserved tryptophan residues are involved in dimerization. 7D cadherins have 7 cadherin repeats in their ectodomains and a conserved tryptophan residue in the third cadherin repeat. CELSR cadherins possess 6-9 cadherin repeats in their ectodomains and no conserved tryptophan residues. Calcium ions bind to cadherins at conserved sites in between consecutive EC repeats, commonly each site binding three calcium ions (Ca2+), and plays an important role in formation of strand-swapped trans dimers in classical cadherins, and protein rigidity in others. For review, refer to Brasch et al. 2012, Gul et al. 2017.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction20">
+ <bp:evidence rdf:resource="#Evidence25" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CDH19 associates with catenins</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence45">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway4">
+ <bp:pathwayOrder rdf:resource="#PathwayStep26" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep20" />
+ <bp:pathwayComponent rdf:resource="#Pathway5" />
+ <bp:pathwayComponent rdf:resource="#Pathway6" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence20" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Regulation of Expression and Function of Type II Classical Cadherins</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Type II classical cadherins are comprised of five extracellular cadherin (EC) repeats in their ectodomain. The first cadherin repeat (EC1) of type II classical cadherins has two conserved tryptophan residues, at positions 2 and 4. The conserved tryptophan residues are critical for dimerization. Trans dimerization of classical cadherins occurs through a unique mechanism, called &apos;strand swapping&apos;, where one set of interactions in two monomers is replaced with an equivalent set of interactions in a dimer, through exchange of an N-terminal beta-strand facilitating docking of the Trp residues into a hydrophobic receptor pocket of the binding partner. This strand-swapping mechanism is aided by an intermediate non-swapped dimer, called X dimer, in accordance with the induced fit model. Type II classical cadherins include CDH5 (cadherin-5, also known as VE-cadherin, an atypical type II cadherin), CDH6 (cadherin-6, also known as K-cadherin), CDH7 (cadherin-7), CDH8 (cadherin-8), CDH9 (cadherin-9, also known as T1-cadherin), CDH10 (cadherin-10, also known as T2-cadherin), CDH11 (cadherin-11, also known as OB-cadherin), CDH12 (cadherin-12, also known as N-cadherin 2), CDH18 (cadherin-18), CDH19 (cadherin-19), CDH20 (cadherin-20), CDH22 (cadherin-22), and CDH24 (cadherin-24). For review, refer to Brasch et al. 2012, Gul et al. 2017.  Type II classical cadherins are predominantly expressed in the nervous system where they govern formation of neuronal circuits (e.g. cold perception, motor neuron bundling). In addition to homotypic dimer formation, type II classical cadherins form heterotypic dimers with other type II classical cadherins and can be divided into three specificity subgroups based on their binding preferences. The specificity subgroups correspond to the branches of the phylogenetic tree where binding between members has been retained. The first specificity subgroup includes CDH8 and CDH11, and likely CDH24, the second specificity subgroup includes CDH6, CDH9 and CDH10, and the third specificity subgroup includes CDH7, CDH12, CDH18, CDH20 and CDH22. The CDH8, CDH11, and CDH24 group does not bind to the others, while binding interactions are found within the other branches of the phylogenetic tree. Divergent type II cadherin CDH5 and CDH19 could not be placed in these specificity subgroups (Brasch et al. 2018). </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction21">
+ <bp:evidence rdf:resource="#Evidence26" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ZC3H12A binds CDH19 gene promoter</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence44">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway5">
+ <bp:pathwayOrder rdf:resource="#PathwayStep23" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep24" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep25" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep21" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep22" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction19" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction17" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction18" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction20" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction21" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence21" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Regulation of CDH19 Expression and Function</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Cadherin-19 (CDH19, also known as CDH7L2) is a classical type II cadherin. The human CDH19 gene is a part of the cadherin gene cluster at the chromosomal bands 18q22-q23, together with CDH7 and CDH20 (Kools et al. 2000). At the plasma membrane, CDH19 associates with alpha-catenin (CTNNA1), beta-catenin (CTNNB1), gamma-catenin (JUP) and delta catenin (CTNND1) (Huang et al. 2022), like other classical type I and type II cadherins. CDH19 possesses five extracellular cadherin domains and, like other classical cadherins, is thought to play a role in the establishment of homotypic cell-cell adhesions during formation of adherens junctions.  In rat, the expression of Cdh19 overlaps with the expression of the neural crest cell marker Sox10 (Takahashi and Osumi 2005). In mouse, it was shown that Sox10 transcription factor, essential for migration of neural crest cells during formation of the enteric nervous system, binds to the Cdh19 gene promoter and stimulates Cdh19 transcription. Cdh19 knockdown results in retarded sacral migration of neural crest cells, while re-expression of Cdh19 partially rescues retarded migration of Sox10-null neural crest cells (Huang et al. 2022). CDH19 is a specific marker of Schwann cell precursors (Takahashi and Osumi 2005, Iribar et al. 2016, Stratton et al. 2017, George et al. 2018, Woods et al. 2021).  During angiogenesis, in response to monocyte chemotactic protein 1 (MCP-1, also known as CCL2 or C-C motif chemokine 2), CDH19 transcription is directly stimulated by ZC3H12A (MCPIP, for MCP-1 induced protein) (Niu et al. 2008, Niu et al. 2013). CDH19 was found to be a target of microRNA miR-197-5p. The circular RNA hsa_circ_006220 was shown to sponge miR-197-5p and lead to upregulation of CDH19 mRNA and protein levels (Shi et al. 2021). Circular RNAs that possess multiple microRNA binding sites act as sponges that, by binding to microRNAs, prevent these microRNAs from associating with their target mRNAs.  Both upregulation and downregulation of CDH19 have been reported in cancer and it has been proposed to play both oncogenic and tumor-suppressive roles, depending on the cancer type. CDH19 mRNA is upregulated in clear-cell sarcoma and correlates with a hypomethylated profile (Dermawan et al. 2022). In glioblastoma, CDH19 is upregulated in cancer stem-like cells (Zorniak et al. 2015). In colorectal tumors, CDH19 is upregulated compared to normal tissue (Bujko et al. 2015). Downregulation of CDH19 is an independent prognostic biomarker of the outcome of lung adenocarcinoma (Li et al. 2022). In triple negative breast cancer, CDH19 was proposed to play a tumor suppressor role (Shi et al. 2021). A homozygous deletion of the CDH19 gene was reported in a portion of chondrosarcoma tumor samples (Niini et al. 2012).  </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence43">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway6">
+ <bp:pathwayOrder rdf:resource="#PathwayStep27" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep39" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep54" />
+ <bp:pathwayComponent rdf:resource="#Pathway10" />
+ <bp:pathwayComponent rdf:resource="#Pathway7" />
+ <bp:pathwayComponent rdf:resource="#Pathway9" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence27" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Regulation of CDH11 Expression and Function</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CDH11 gene encodes Cadherin-11, also known as osteoblast cadherin (OB-cadherin). The CDH11 gene maps to chromosome 16, chromosomal band 16q22, which is a subject to recurrent genomic loss in some types of cancer. The CDH11 gene consists of 14 exons, which are known to encode two splicing isoforms. Both splicing isoforms are expressed in the heart, brain, placenta, lung and bone, but not in the kidney, skeletal muscle, pancreas and liver (Okazaki et al. 1994; Kawaguchi et al. 1999). Several transcription factors have been shown to directly regulate CDH11 gene transcription, including HOXC8 (Lei et al. 2005; Lei et al. 2006; Li et al. 2014), ILF3 (Zhang et al. 2017), ZEB2 (Nam et al. 2012; Nam et al. 2014), HEYL (Liu et al. 2020), FOXF1 (Black et al. 2018), and BHLHE22 (Ross et al. 2012), and the transcription of CDH11 has also been shown to be influenced by a number of growth factors and hormones, such as FGF2 (Strutz et al. 2002; James et al. 2008), TNF (Wu et al. 2013), TGFB1 (Schneider et al. 2012; Schulte et al. 2013; Hahn et al. 2016; Cheng et al. 2018; Ruan et al. 2019; Doolin et al. 2021; Wilson et al. 2022), TGFB2 (Wecker et al. 2013; Theodossiou et al. 2019), GNRH1 (Peng et al. 2015), PTH (Yao et al. 2014), dexamethasone (Lecanda et al. 2000), and progesterone (Chen et al. 1999). CDH11 can also affect TGFB1 signaling, thereby possibly creating a feedback loop (Passanha et al. 2022). Expression of mouse Cdh11 in mouse osteoblast-like cell line (MC3T3-E1) is not affected by osteogenic hormones triiodothyronine (T3) and 1,25-dihydroxyvitamin D3 at either mRNA or protein levels (Leugmayr et al. 2000). CDH11 mRNA has been identified as the target of several microRNAs, such as miR-200c-3p (Luo et al. 2013; Van der Goten et al. 2014) and miR-451a (Yamada et al. 2018; Wang et al. 2020; Wang et al. 2021).  Like other classical cadherins, CDH11 associates with several catenin proteins through its intracellular domain, which is thought to play a role in the establishment and regulation of adherens junctions: CTNND1 (also known as p120 catenin or delta-catenin), CTNNB1 (beta-catenin), JUP (Junction Plakoglobin, also known as gamma-catenin), and CTNNA1 (alpha-catenin) (Straub et al. 2003; Kiener et al. 2006; Ortiz et al. 2015; Lee et al. 2018).  CDH11, through its C-terminus, also forms a complex with angiomotin (AMOT) isoform p80 (AMOT-2), which is implicated in CDH11-mediated cell migration and tumor cell invasiveness (Levchenko et al. 2004; Jiang et al. 2006; Yi et al. 2011; Oritz et al. 2015; Lee et al. 2018).  Through its extracellular region, CDH11 binds to the C-terminal fragment of ANGPTL4 (Angiopoietin-like-4), commonly known as cANGPTL4, which is implicated in the regulation of wound healing. The variant isoform of CDH11 (CDH11v), an 85 kDa membrane-bound fragment produced as a consequence of alternative splicing (Kawaguchi et al. 1999), can compete with the canonical CDH11 for cANGPTL4 binding, leading to diminished CTNNB1 release (Teo et al. 2017).  During normal development, CDH11 is implicated as a regulator of stem cell fate decisions, especially in mesodermal cell lineages (reviewed in Alimperti and Andreadis 2015), being particularly important for skeleton formation (reviewed in Marie et al. 2014).  Besides cancer (reviewed in Blaschuk and Devemy 2009, Niit et al. 2015, Chen et al. 2021), CDH11 has been implicated in several other diseases, such as rheumatoid arthritis (reviewed in Chang et al. 2010, Dou et al. 2013, Sfikakis et al. 2017, Senolt et al. 2019, Nygaard and Firestein 2020), fibrosis (reviewed in Agarwal 2014), cardiovascular diseases (reviewed in Boda-Heggemann et al. 2009, Huynh 2017, Du et al. 2021), and neuropsychiatric disorders (reviewed in Redies et al. 2012).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence42">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence38">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence37">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction19">
+ <bp:evidence rdf:resource="#Evidence24" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">SOX10 binds CDH19 gene promoter</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence36">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence35">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction17">
+ <bp:evidence rdf:resource="#Evidence22" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CDH19 gene expression is stimulated by ZC3H12A</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction18">
+ <bp:evidence rdf:resource="#Evidence23" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CDH19 gene expression is stimulated by SOX10</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction15">
+ <bp:evidence rdf:resource="#Evidence17" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Nectin-1:Nectin-4 trans heterodimer formation</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction16">
+ <bp:evidence rdf:resource="#Evidence18" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ANG binds F-actin</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence39">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction13">
+ <bp:evidence rdf:resource="#Evidence15" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Nectin-1:PVRL3 trans heterodimer formation</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence30">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction14">
+ <bp:evidence rdf:resource="#Evidence16" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Necl-1:Nectin-1 trans heterodimer interaction</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction11">
+ <bp:evidence rdf:resource="#Evidence13" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PVR:PVRL3 trans heterodimer interaction</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction12">
+ <bp:evidence rdf:resource="#Evidence14" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Necl-2:Nectin 3 trans heterodimer interaction</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence34">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction10">
+ <bp:evidence rdf:resource="#Evidence12" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Nectin-2:Nectin 3 trans heterodimer interaction</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence33">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence32">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence31">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep16">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction15" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence27">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep17">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction16" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence26">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep18">
+ <bp:stepProcess rdf:resource="#Pathway3" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence25">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep19">
+ <bp:stepProcess rdf:resource="#Pathway4" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence24">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep12">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction11" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep13">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction12" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep14">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction13" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence29">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction48">
+ <bp:evidence rdf:resource="#Evidence58" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CDH11 variant mRNA is translated to CDH11 variant protein isoform</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep15">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction14" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence28">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction49">
+ <bp:evidence rdf:resource="#Evidence59" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">miR-451a binds CDH11 mRNA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction46">
+ <bp:evidence rdf:resource="#Evidence56" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CDH11 canonical mRNA is translated into CDH11 canonical protein isoform</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction47">
+ <bp:evidence rdf:resource="#Evidence57" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">miR-200c-3p binds CDH11 mRNA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep10">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction9" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction44">
+ <bp:evidence rdf:resource="#Evidence53" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CDH11 nascent mRNA is spliced into the canonical splicing isoform</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep11">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction10" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction45">
+ <bp:evidence rdf:resource="#Evidence54" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">FOXF1 binds CDH11 gene promoter</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence23">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction42">
+ <bp:evidence rdf:resource="#Evidence51" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CDH11 nascent mRNA is spliced into the variant splicing isoform</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence22">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction43">
+ <bp:evidence rdf:resource="#Evidence52" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ILF3 and HOXC8 bind CDH11 gene promoter</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence21">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction40">
+ <bp:evidence rdf:resource="#Evidence49" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ZEB2 binds SP1</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence20">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction41">
+ <bp:evidence rdf:resource="#Evidence50" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ILF3 binds CDH11 gene promoter</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep2">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction2" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep5">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction5" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence8">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep6">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction6" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence9">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep3">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction3" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence6">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep4">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction4" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence7">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence16">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence15">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence14">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence13">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction39">
+ <bp:evidence rdf:resource="#Evidence48" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ZEB2 and SP1 bind CDH11 gene promoter</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence19">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence18">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction37">
+ <bp:evidence rdf:resource="#Evidence46" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">BHLHE22 recruits PRDM8 to intron 1 of CDH11 gene</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence17">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction38">
+ <bp:evidence rdf:resource="#Evidence47" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HOXC8 binds CDH11 gene promoter</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction35">
+ <bp:evidence rdf:resource="#Evidence44" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CDH11 gene is transcribed into nascent CDH11 mRNA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction36">
+ <bp:evidence rdf:resource="#Evidence45" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">BHLHE22 homodimerizes</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction33">
+ <bp:evidence rdf:resource="#Evidence42" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HEYL binds CDH11 gene promoter</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction34">
+ <bp:evidence rdf:resource="#Evidence43" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ILF3 binds HOXC8</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence12">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction31">
+ <bp:evidence rdf:resource="#Evidence39" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ANGPTL4 binds CDH11</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence11">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction32">
+ <bp:evidence rdf:resource="#Evidence41" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">BHLHE22 homodimer binds intron 1 of CDH11 gene</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence10">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction30">
+ <bp:evidence rdf:resource="#Evidence38" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Membrane-bound CDH11 is cleaved to produce secreted CDH11 isoform</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway10">
+ <bp:pathwayOrder rdf:resource="#PathwayStep56" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep57" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep58" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep55" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction48" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction49" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction46" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction47" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence55" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Regulation of CDH11 mRNA translation by microRNAs</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Several microRNAs are implicated in posttranscriptional regulation of CDH11 gene expression. The diagram only shows microRNAs reported to downregulate CDH11 mRNA and/or protein levels by at least 2 studies, with at least one study providing human evidence, and at least one study providing mechanistic evidence in the form of luciferase reporter assay and/or formation of the microRNA-mRNA complex. For a more detailed description of criteria for microRNA annotation please refer to Huntely et al. 2016.  The following CDH11-targeting microRNAs are strongly supported by experimental evidence and directly shown in the diagram: miR-200c-3p (Luo et al. 2013; Van der Goten et al. 2014) miR-451a (Yamada et al. 2018; Wang et al. 2020; Wang et al. 2021)  The following microRNAs probably target CDH11, but additional evidence is needed to directly represent them in the diagram: miR-103-2-5p (Gao et al. 2020) miR-127-3p (Dong et al. 2021) miR-148-5p (Kawagoe et al. 2020)</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep38">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction31" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep39">
+ <bp:stepProcess rdf:resource="#Pathway9" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep34">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction27" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep35">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction28" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep36">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction29" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep37">
+ <bp:stepProcess rdf:resource="#Catalysis1" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction30" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence4">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep9">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction8" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep30">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction23" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence5">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep31">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction24" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep7">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction7" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep32">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction25" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence3">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep8">
+ <bp:stepProcess rdf:resource="#Pathway2" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep33">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction26" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:Catalysis rdf:ID="Catalysis1">
+ <bp:controlled rdf:resource="#BiochemicalReaction30" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep27">
+ <bp:stepProcess rdf:resource="#Pathway7" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep28">
+ <bp:stepProcess rdf:resource="#Pathway8" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep29">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction22" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep23">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction19" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep24">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction20" />
+</bp:PathwayStep>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:PathwayStep rdf:ID="PathwayStep25">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction21" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep26">
+ <bp:stepProcess rdf:resource="#Pathway6" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep20">
+ <bp:stepProcess rdf:resource="#Pathway5" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep21">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction17" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep22">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction18" />
+</bp:PathwayStep>
+</rdf:RDF>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/9843743#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction14">
+ <bp:evidence rdf:resource="#Evidence16" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ZNF423 recruits NuRD to EBF2 target genes</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction10">
+ <bp:evidence rdf:resource="#Evidence12" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">COX7A1 gene expression is stimulated by EBF2</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction11">
+ <bp:evidence rdf:resource="#Evidence13" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ZNF423 binds EBF2 at EBF2-target gene loci</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction12">
+ <bp:evidence rdf:resource="#Evidence14" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PPARGC1A  gene expression is stimulated by EBF2</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction13">
+ <bp:evidence rdf:resource="#Evidence15" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">DIO2 gene expression is stimulated by EBF2 and repressed by ZNF423</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep15">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction14" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence11">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence10">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence13">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence12">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence15">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence14">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence16">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#Pathway2" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway2">
+ <bp:pathwayOrder rdf:resource="#PathwayStep15" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep3" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep2" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep9" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep8" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep5" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep4" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep7" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep6" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep10" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep11" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep12" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep13" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep14" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction14" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction10" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction11" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction12" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction13" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction9" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction8" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction7" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction6" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction5" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction4" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction3" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction2" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Transcriptional regulation of brown and beige adipocyte differentiation by EBF2</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">EBF2 (Early B-cell factor 2) is a transcription factor that marks committed brown and beige preadipocytes. EBF2 cooperates with PPARG, a master regulator of adipogenesis, to activate the brown/beige adipocyte thermogenic program (inferred from mouse homologs in Rajakumari et al. 2013). In white adipocytes, the activity of EBF2 is negatively regulated by binding of the transcription factor ZNF423, a key transcription factor for white adipocyte differentiation. In brown/beige fate-committed cells, the interaction between ZNF423 and EBF2 is impeded by BMP7, which acts as a positive regulator of brown/beige adipogenesis (inferred from mouse homologs in Shao et al. 2016; Shao et al. 2021). Direct transcriptional targets of EBF2 include PRDM16, UCP1, and PPARA genes. Other marker genes of brown/beige adipocytes, such as CIDEA, PPARGC1A, COX7A, and DIO2 are positively regulated by EBF2 and probably also direct targets of EBF2 (inferred from mouse homologs in Rajakumari et al. 2013; Wang et al. 2014; Stine et al. 2016; Shapira et al. 2017; Lai et al. 2017; Angueira et al. 2020). Based on mouse studies, EBF1 may function partially redundantly with EBF2 in regulation of thermogenesis genes (Angueira et al. 2020). Transcriptional activity of EBF2 is positively regulated by binding of the long noncoding RNA (lncRNA) Blnc1 (inferred from mouse homologs in Zhao et al. 2014; Mi et al. 2017). Based on mouse studies, EBF2 was reported to recruit the BAF chromatin remodeling complex to activate the transcription of target genes (Shapira et al. 2017; Liu et al. 2020). In addition to PPARG, based on mouse studies, EBF2 was reported to cooperate with other transcription factors such as SIX1 during brown/beige adipogenesis (Brunmeir et al. 2016). Besides ZNF423, based on mouse studies, other transcription factors, such as ID1 (Patil et al. 2017) and TLE3 (Pearson et al. 2019), have been reported to act as inhibitors of EBF2-mediated transcription. The transcription factor GATA6 was reported to directly stimulate EBF2 transcription during mouse beige/brown thermogenesis (Jun et al. 2023). Besides BPM7, BPM9-mediated upregulation of FGFR3 (Yamamoto et al. 2022), and FGF11 (Jiang et al. 2023) have been reported as indirect activators of EBF2 transcriptional activity in mouse and goat, respectively. ZAG (Zinc-alpha2-glycoprotein), a tumor secretory factor, has been reported to stimulate EBF2 expression, which contributes to white adipose tissue browning and energy wasting in cancer-related cachexia (Elattar et al. 2018). In the single cell atlas of human white adipose tissue (Emont et al. 2022) it was reported that the EBF2-positive hAd6 white adipocyte subpopulation with UCP1 expression, consistent with the beige profile, shows an association with increased BMI and visceral adiposity. For review, please refer to Wang and Seale 2016.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayComponent rdf:resource="#Pathway2" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Transcriptional regulation of brown and beige adipocyte differentiation</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Brown and beige adipocytes convert chemical energy produced by the oxidation of fatty acids and glucose into heat, which is important for thermoregulation and control of body weight. Brown and beige adipocytes largely share the transcription program involved in adaptive non-shivering thermogenesis but develop from different lineages (reviewed in Wang and Seale 2016, Ghaben and Scherer 2019). Brown adipocytes share their precursor cells with skeletal muscle cells and develop in discrete, homogeneous brown adipose tissue depots. Beige adipocytes share their precursor cells with white adipocytes and develop in white adipose tissue in response to environmental stimuli, mainly exposure to cold, with an ability to revert to a white adipocyte-like phenotype. Development of beige adipocytes in white adipose tissue is known as white adipose tissue browning (reviewed in Wang and Seale 2016).  Brown and beige adipocytes have been characterized in most detail in rodents. In humans, brown adipose tissue was thought to regress after infancy, but was shown by multiple studies published after 2007 to persist in substantial deposits into adulthood adulthood (reviewed in Bartlet and Heeren 2014, Wang and Seale 2016, Ghaben and Scherer 2019, and Cannon et al. 2020). Molecular profiles that correspond to both brown and beige rodent adipocytes have been identified in human brown-designated adipose tissue, and therefore both brown and beige adipocytes are now thought to be conserved in humans (Nedergaard et al. 2007; Virtanen et al. 2009; Cypess et al. 2009; Sharp et al. 2012; Wu et al. 2012; Nedergaard and Cannon 2013; de Jong et al. 2019; reviewed in Bartlet and Heereb 2014, Wang and Seale 2016, and Cannon et al. 2020).  The major protein marker of brown and beige adipocytes is Uncoupling protein 1 (UCP1). UCP1 resides at the inner mitochondrial membrane where it translocates protons (H+) from the intermembrane space into the mitochondrial matrix. UCP1 thus dissipates the proton-motive force to be used by ATP synthase, converting the energy released by the respiratory chain into heat (reviewed in Bartlet and Heereb 2014, Wang and Seale 2016). Brown adipose tissue is innervated by the sympathetic nervous system. Noradrenaline is secreted by sympathetic neurons when the central nervous system senses cold. Brown adipocytes possess adrenergic receptors on their surface that are activated by noradrenaline. Activated adrenergic receptors trigger a signaling cascade that induces lipolysis and activates UCP1 (reviewed in Wang and Seale 2016).  Multiple transcription factors that regulate the thermogenic molecular signature are shared between brown and beige adipocytes, such as EBF2, PRDM16, ZNF516, and PPARGC1A. Master regulators of adipogenesis, such as PPARG and CEBPB, are shared between white, brown, and beige adipocytes (reviewed in Wang and Seale 2016).  Besides its role in thermoregulation, white adipose tissue browning is implicated in cancer-associated cachexia, a complex tissue-wasting syndrome characterized by inflammation, hypermetabolism, increased energy expenditure, and anorexia (reviewed in Weber et al. 2022).  For review, please refer to Bartelt and Heeren 2014, Wang and Seale 2016, Ghaben and Scherer 2019, Cannon et al. 2020, Weber et al. 2022. </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep3">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction2" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence9">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep2">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence3">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep9">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction8" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence4">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep8">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction7" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep5">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction4" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence7">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep4">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction3" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence8">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence5">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep7">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction6" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence6">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep6">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction5" />
+</bp:PathwayStep>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:PathwayStep rdf:ID="PathwayStep10">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction9" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep11">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction10" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep12">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction11" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep13">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction12" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep14">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction13" />
+</bp:PathwayStep>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction9">
+ <bp:evidence rdf:resource="#Evidence11" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ELOVL3 gene expression is stimulated by EBF2 and negatively regulated by ZNF423</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction8">
+ <bp:evidence rdf:resource="#Evidence10" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PRDM16 gene expression is stimulated by EBF2 and PPARG and repressed by ZNF423</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction7">
+ <bp:evidence rdf:resource="#Evidence9" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PPARG binds EBF2-bound gene loci</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction6">
+ <bp:evidence rdf:resource="#Evidence8" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PPARA gene expression is stimulated by EBF2 and PPARG and repressed by ZNF423 and NuRD</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction5">
+ <bp:evidence rdf:resource="#Evidence7" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CIDEA gene expression is stimulated by EBF2 and PPARG and repressed by ZNF423 and NuRD</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction4">
+ <bp:evidence rdf:resource="#Evidence6" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">UCP1 gene expression is stimulated by EBF2 and PPARG and repressed by ZNF423 and NuRD</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction3">
+ <bp:evidence rdf:resource="#Evidence5" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">EBF2 binds target gene loci</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
+ <bp:evidence rdf:resource="#Evidence4" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">EBF2 binds Blnc1 lncRNA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">SMAD1:SMAD4 trimer binds ZNF423</bp:displayName>
+</bp:BiochemicalReaction>
+</rdf:RDF>

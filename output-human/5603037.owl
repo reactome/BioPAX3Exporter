@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/5603037#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">IRAK4 deficiency (TLR5)</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Toll like receptor 5 (TLR5) specifically recognizes bacterial infection through binding of flagellin from pathogenic bacteria. Upon ligand binding, TLR5 dimers recruit MyD88 through their TIR domains. Then, MyD88 oligomerizes via its death domain (DD) and TIR domain and interacts with the interleukin-1 receptor-associated kinases (IRAKs) to form the Myddosome complex (MyD88:IRAK4:IRAK1/2) (Motshwene PG et al. 2009; Lin SC et al. 2010). The Myddosome complex transmits the signal leading to activation of transcription factors such as nuclear factor-kappaB (NFkB) and activator protein 1 (AP1). Studies have identified patients with autosomal recessive (AR) form of IRAK4 deficiency, a health condition with clinical manifestation in infancy or early childhood, that predisposes affected patients to recurrent pyogenic bacterial infection (e.g., Streptococcus pneumoniae and Staphylococcus aureus) (Picard C et al. 2003; Ku CL et al. 2007; Picard C et al. 2010; Picard C et al. 2011). Leukocytes derived from IRAK4-deficient patients display a lack of production of inflammatory cytokines such as TNF alpha, IL-6 and IL-1beta or a lack of CD62 ligand (CD62L) shedding from granulocytes following activation with flagellin, the TLR5 agonist (Picard C et al. 2003; McDonald DR et al. 2006; Ku CL et al. 2007). Patients with AR IRAK4 deficiency were found to bear homozygous or compound heterozygous mutations in the IRAK4 gene (Picard C et al. 2003; Ku CL et al. 2007; McDonald DR et al. 2006). Here we describe selective mutations, that have been functionally characterized. Cell-based assays as well as in vitro protein-interaction analyses with IRAK4 variants showed that the loss-of-function of defective IRAK4 can be caused by either an abolished protein production as a result of nonsense mutations (e.g.,Q293* and E402*)  or an impaired interaction with MyD88 due to missense mutations (e.g., R12C) (Ku CL et al. 2007; Yamamoto T et al. 2014). IRAK4 mediates immune responses downstream of all TLRs except for TLR3. Besides defective TLR5 signaling, the Reactome module describes the impact of functional deficiency of IRAK4 on TLR2/4 signaling pathways. We did not include defective TLR7, TLR8 and TLR9 signaling events, which are stimulated by nucleic acids upon viral infections, although studies using patients-derived blood cells have showed abolished cytokines production by peripheral blood mononuclear cells (PBMCs) and lack of CD62 ligand (CD62L) shedding from granulocytes in response to TLR7-9 agonists, i.e.,3M-13 (TLR7), 3M-2 (TLR8), R848 (TLR7 and 8) and CpG (TLR9) (McDonald DR et al. 2006; von Bernuth H et al. 2006; Ku CL et al. 2007). In addition to TLR-NFkB signaling axis the endosomic TLR7-9 activate IFN-alpha/beta and IFN-gamma responses, which have been also impaired in IRAK4-deficient PBMC (Yang K et al. 2005). However, IFN-alpha/beta and IFN-gamma production in response to 9 of 11 viruses tested was normal or weakly affected in IRAK-4-deficient blood cells, suggesting that IRAK-4-deficient patients may control viral infections by TLR7-9-independent production of IFNs (Yang K et al. 2005). So it is not yet possible to annotate a definitive molecular pathway between IRAK-4 deficiency and changes in TLR7-9 signaling.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">IRAK4 deficiency blocks formation of the MyD88-IRAK4 Myddosome in the TLR5 pathway</bp:displayName>
+</bp:BiochemicalReaction>
+</rdf:RDF>

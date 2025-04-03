@@ -1,0 +1,3494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/162906#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction58">
+ <bp:evidence rdf:resource="#Evidence80" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Protease binds protease inhibitors</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction59">
+ <bp:evidence rdf:resource="#Evidence81" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Recruitment Of HIV Virion Budding Machinery</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence40">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction54">
+ <bp:evidence rdf:resource="#Evidence73" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of the P-TEFb(Cyclin T1:Cdk9) complex</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction55">
+ <bp:evidence rdf:resource="#Evidence74" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Association of Tat with P-TEFb(Cyclin T1:Cdk9)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence42">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction56">
+ <bp:evidence rdf:resource="#Evidence78" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Maturation of HIV Virion</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence41">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction57">
+ <bp:evidence rdf:resource="#Evidence79" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HIV Virion Budding</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence44">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence43">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence46">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence45">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence48">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence47">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence49">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction61">
+ <bp:evidence rdf:resource="#Evidence84" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Conversion of Ran-GDP to Ran-GTP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction62">
+ <bp:evidence rdf:resource="#Evidence85" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Multimerization of Rev</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction63">
+ <bp:evidence rdf:resource="#Evidence86" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Rev multimer-bound  HIV mRNA:CRM1 complex associates with Ran:GTP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction64">
+ <bp:evidence rdf:resource="#Evidence87" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Rev multimer-bound HIV mRNA associates with Crm1</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction60">
+ <bp:evidence rdf:resource="#Evidence83" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Hydrolysis of Ran:GTP to Ran:GDP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction47">
+ <bp:evidence rdf:resource="#Evidence62" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Deamination of C residues during synthesis of HIV-1 reverse transcript minus-strand</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction48">
+ <bp:evidence rdf:resource="#Evidence63" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Association of APOBEC3G with single-stranded region of forming HIV-1 minus strand</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction49">
+ <bp:evidence rdf:resource="#Evidence64" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Association of APOBEC3G with Gag</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction43">
+ <bp:evidence rdf:resource="#Evidence57" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Vpu:CD4 associates with beta-TrCP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction44">
+ <bp:evidence rdf:resource="#Evidence58" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Association of Vpu with CD4</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence31">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction45">
+ <bp:evidence rdf:resource="#Evidence59" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Ubiquitination of CD4 by Vpu:CD4:beta-TrCP:SKP1 complex</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence30">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction46">
+ <bp:evidence rdf:resource="#Evidence60" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The Vpu:CD4:beta-TrCP complex recruits SKP1</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence33">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence32">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence35">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence34">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence37">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence36">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence39">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence38">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence29">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction50">
+ <bp:evidence rdf:resource="#Evidence67" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Vpr binds nucleoporins</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction51">
+ <bp:evidence rdf:resource="#Evidence68" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Interaction of Vpr with importin alpha</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction52">
+ <bp:evidence rdf:resource="#Evidence70" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Association of Vpr with ANT1</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction53">
+ <bp:evidence rdf:resource="#Evidence71" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Translocation of Vpr to the mitochondria</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction36">
+ <bp:evidence rdf:resource="#Evidence49" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Conversion of Ran-GDP to Ran-GTP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction37">
+ <bp:evidence rdf:resource="#Evidence50" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Association of Ran-GTP with importin-beta</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction110">
+ <bp:evidence rdf:resource="#Evidence146" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of DSIF:NELF:HIV-1 early elongation complex</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction38">
+ <bp:evidence rdf:resource="#Evidence51" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Rev associates with B23</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence60">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction39">
+ <bp:evidence rdf:resource="#Evidence52" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Association of multimerized Rev with beta-importin</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction32">
+ <bp:evidence rdf:resource="#Evidence44" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Association of RanBP1 with Ran-GTP:CRM1:Rev:mRNA complex</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence62">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction33">
+ <bp:evidence rdf:resource="#Evidence45" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Rev multimer-bound HIV mRNA:Crm1:Ran:GTP complex associates with the NPC</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence61">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction34">
+ <bp:evidence rdf:resource="#Evidence46" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Rev molecules assemble onto the RRE RNA sequence through their ARM sequence</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence64">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction35">
+ <bp:evidence rdf:resource="#Evidence48" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Translocation of Rev:importin-beta:B23 to the nucleus</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence63">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence66">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence65">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence68">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence67">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence69">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction119">
+ <bp:evidence rdf:resource="#Evidence159" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Monoubiquitinated N-myristoyl GAG polyprotein is targeted to the late endosomal vesicle membrane by the ESCRT-I complex</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction117">
+ <bp:evidence rdf:resource="#Evidence155" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Packaging of HIV virion on the host cell plasma membrane</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction40">
+ <bp:evidence rdf:resource="#Evidence53" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Rev:importin beta:B23 recruited to the nuclear pore</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction118">
+ <bp:evidence rdf:resource="#Evidence157" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Synthesis of GAG polyprotein</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction41">
+ <bp:evidence rdf:resource="#Evidence54" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Disassembly of the Rev-importin beta-B23:Ran-GTP complex</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction115">
+ <bp:evidence rdf:resource="#Evidence152" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Hyperphosphorylation (Ser2) of RNA Pol II CTD by P-TEFb complex</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction42">
+ <bp:evidence rdf:resource="#Evidence56" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Degradation of ubiquitinated CD4</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction116">
+ <bp:evidence rdf:resource="#Evidence153" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Recruitment of elongation factors to form HIV-1 elongation complex</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction113">
+ <bp:evidence rdf:resource="#Evidence149" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Recognition and binding of the HIV-1 mRNA cap by the cap-binding complex</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction114">
+ <bp:evidence rdf:resource="#Evidence150" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Hypophosphorylation of RNA Pol II CTD by FCP1P protein</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction111">
+ <bp:evidence rdf:resource="#Evidence147" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">DSIF complex binds to RNA Pol II (hypophosphorylated)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction112">
+ <bp:evidence rdf:resource="#Evidence148" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Abortive termination of HIV-1 early transcription elongation by DSIF:NELF</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction25">
+ <bp:evidence rdf:resource="#Evidence37" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Hydrolysis of Ran:GTP to Ran:GDP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction26">
+ <bp:evidence rdf:resource="#Evidence38" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Conversion of Ran-GDP to Ran-GTP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction27">
+ <bp:evidence rdf:resource="#Evidence39" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Multimerization of Rev</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction28">
+ <bp:evidence rdf:resource="#Evidence40" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Rev multimer-bound  HIV mRNA:CRM1 complex associates with Ran:GTP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction21">
+ <bp:evidence rdf:resource="#Evidence31" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Nef mediated activation of the T-cell receptor</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence51">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction22">
+ <bp:evidence rdf:resource="#Evidence32" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Nef binds a ternary complex comprising DOCK2 guanine nucleotide exchange factor for small Rho-family GTPase Rac, its cofactor ELMO1, and Rac, and activates Rac through this interaction</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence50">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction23">
+ <bp:evidence rdf:resource="#Evidence33" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Nef Binds and activates the Src-family tyrosine kinase Lck</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence53">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction24">
+ <bp:evidence rdf:resource="#Evidence34" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Nef Binds and activates the Src-family tyrosine kinase Hck</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence52">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence55">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence54">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence57">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence56">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction29">
+ <bp:evidence rdf:resource="#Evidence41" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Rev multimer-bound HIV mRNA associates with Crm1</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence59">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence58">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction108">
+ <bp:evidence rdf:resource="#Evidence143" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Limited elongation of the HIV-1 transcript</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction109">
+ <bp:evidence rdf:resource="#Evidence144" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Separation of abortive HIV-1 transcript from template</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction106">
+ <bp:evidence rdf:resource="#Evidence140" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Phosphorylation of  NEFL by the P-TEFb(Cyclin T1:Cdk9) complex</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction107">
+ <bp:evidence rdf:resource="#Evidence141" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Association of Tat with P-TEFb(Cyclin T1:Cdk9)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction30">
+ <bp:evidence rdf:resource="#Evidence42" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Release of the HIV mRNA and Crm1 from Rev in the cytoplasm</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction104">
+ <bp:evidence rdf:resource="#Evidence138" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Hyperphosphorylation (Ser2) of RNA Pol II CTD by the P-TEFb(Cyclin T1:Cdk9) complex</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction31">
+ <bp:evidence rdf:resource="#Evidence43" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Translocation of nuclear RNA transport complex to cytoplasm</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction105">
+ <bp:evidence rdf:resource="#Evidence139" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Phosphorylation of DSIF by the P-TEFb(Cyclin T1:Cdk9) complex</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction102">
+ <bp:evidence rdf:resource="#Evidence135" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Pol II elongation complex moves on the HIV-1 template as transcript elongates</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction103">
+ <bp:evidence rdf:resource="#Evidence137" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Recruitment of elongation factors to form HIV-1 elongation complex</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction100">
+ <bp:evidence rdf:resource="#Evidence133" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Separation of elongating HIV-1 transcript from template</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction101">
+ <bp:evidence rdf:resource="#Evidence134" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Addition of nucleotides leads to HIV-1 transcript elongation</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction131">
+ <bp:evidence rdf:resource="#Evidence172" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Transport of VPU to Plasma Membrane</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction132">
+ <bp:evidence rdf:resource="#Evidence173" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Transport of VPU to Golgi apparatus</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction130">
+ <bp:evidence rdf:resource="#Evidence171" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Splicing of HIV RNA transcript</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction98">
+ <bp:evidence rdf:resource="#Evidence129" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Resumption of elongation of HIV-1 transcript after recovery from pausing</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction99">
+ <bp:evidence rdf:resource="#Evidence130" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">2-4 nt.backtracking of Pol II complex on the HIV-1 template leading to elongation pausing</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction139">
+ <bp:evidence rdf:resource="#Evidence184" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Synthesis of minus strand strong stop DNA (-sssDNA)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction137">
+ <bp:evidence rdf:resource="#Evidence181" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Second strand transfer by annealing complementary PBS sequences</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction138">
+ <bp:evidence rdf:resource="#Evidence183" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Minus strand DNA synthesis resumes</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction135">
+ <bp:evidence rdf:resource="#Evidence179" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RNase H-mediated digestion of tRNA, 3&apos;PPT and cPPT RNA primers</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction136">
+ <bp:evidence rdf:resource="#Evidence180" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">3&apos; PPT-primed initiation of plus-strand DNA synthesis </bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction133">
+ <bp:evidence rdf:resource="#Evidence174" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Myristoylation of Nef</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction134">
+ <bp:evidence rdf:resource="#Evidence178" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Synthesis of full-length duplex viral DNA with a discontinuous plus strand</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction120">
+ <bp:evidence rdf:resource="#Evidence160" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Transport of GAG to the Plasma Membrane</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction121">
+ <bp:evidence rdf:resource="#Evidence161" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">N-myristoylation of GAG polyprotein by NMT2</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction87">
+ <bp:evidence rdf:resource="#Evidence116" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Abortive HIV-1 Initiation After Second Transition</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction88">
+ <bp:evidence rdf:resource="#Evidence117" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Addition of the fourth nucleotide on the nascent HIV-1 transcript: Second Transition</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction89">
+ <bp:evidence rdf:resource="#Evidence118" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Addition of nucleotides between position +11 and +30 on HIV-1 transcript</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction94">
+ <bp:evidence rdf:resource="#Evidence123" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Unwinding of DNA for the nascent HIV-1 transcript: Second Transition</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction128">
+ <bp:evidence rdf:resource="#Evidence169" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Transport of trimeric ENV precursor to Golgi apparatus</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction95">
+ <bp:evidence rdf:resource="#Evidence125" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Abortive termination of HIV-1 elongation after arrest</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction129">
+ <bp:evidence rdf:resource="#Evidence170" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Folding and Oligomerization of ENV glycoprotein</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction96">
+ <bp:evidence rdf:resource="#Evidence126" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">TFIIS-mediated recovery of HIV-1 elongation from arrest</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction126">
+ <bp:evidence rdf:resource="#Evidence167" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Cleavage of the viral Env gp160 precursor polyprotein</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction97">
+ <bp:evidence rdf:resource="#Evidence127" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">7-14 nt. Backtracking of Pol II complex on the HIV-1 template leading to elongation arrest</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction127">
+ <bp:evidence rdf:resource="#Evidence168" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Synthesis of VPU protein</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction90">
+ <bp:evidence rdf:resource="#Evidence119" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Unwinding of DNA for the nascent HIV-1 transcript</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction124">
+ <bp:evidence rdf:resource="#Evidence165" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Transport of trimeric gp41:gp120 to plasma membrane</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction91">
+ <bp:evidence rdf:resource="#Evidence120" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Addition of the third nucleotide on the nascent HIV-1 transcript</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction125">
+ <bp:evidence rdf:resource="#Evidence166" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Synthesis of ENV polyprotein</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction92">
+ <bp:evidence rdf:resource="#Evidence121" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Addition of nucleotides 5 through 9 on the growing HIV-1 transcript</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction122">
+ <bp:evidence rdf:resource="#Evidence162" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Monoubiquitination of N-myristoyl GAG polyprotein</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction93">
+ <bp:evidence rdf:resource="#Evidence122" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Abortive HIV-1 Initiation Before Second Transition</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction123">
+ <bp:evidence rdf:resource="#Evidence164" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Glycosylation of ENV polyprotein</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction153">
+ <bp:evidence rdf:resource="#Evidence201" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Gap repair completes provirus integration</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction154">
+ <bp:evidence rdf:resource="#Evidence202" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Target DNA binding</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction151">
+ <bp:evidence rdf:resource="#Evidence198" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">1-LTR circle formation</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction152">
+ <bp:evidence rdf:resource="#Evidence200" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Transesterification to connect viral DNA 3&apos; ends to host DNA 5&apos; ends</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction76">
+ <bp:evidence rdf:resource="#Evidence102" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Activation of GT</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction77">
+ <bp:evidence rdf:resource="#Evidence103" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RNA Polymerase II CTD (phosphorylated) binds to CE</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction150">
+ <bp:evidence rdf:resource="#Evidence196" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of RTC (Reverse Transcription Complex)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence20">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction78">
+ <bp:evidence rdf:resource="#Evidence104" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Phosphorylation (Ser5) of RNA pol II CTD</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction79">
+ <bp:evidence rdf:resource="#Evidence105" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Extrusion of 5&apos;-end of 30 nt long HIV-1 transcript through the pore in Pol II complex</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence22">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence21">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence24">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence23">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence26">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence25">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence28">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence27">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence19">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence18">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction83">
+ <bp:evidence rdf:resource="#Evidence110" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">7-14 nt. Backtracking of Pol II complex on the HIV-1 template leading to elongation arrest</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction84">
+ <bp:evidence rdf:resource="#Evidence112" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Resumption of elongation of HIV-1 transcript after recovery from pausing</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction85">
+ <bp:evidence rdf:resource="#Evidence113" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">2-4 nt.backtracking of Pol II complex on the HIV-1 template leading to elongation pausing</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction159">
+ <bp:evidence rdf:resource="#Evidence208" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of Pre-Integration Complex (PIC)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction86">
+ <bp:evidence rdf:resource="#Evidence115" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Addition of nucleotides 10 and 11 on the growing HIV-1 transcript: Third Transition</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction157">
+ <bp:evidence rdf:resource="#Evidence206" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">2-LTR formation due to circularization of viral DNA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction80">
+ <bp:evidence rdf:resource="#Evidence106" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">SPT5 subunit of Pol II binds the RNA triphosphatase (RTP)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction158">
+ <bp:evidence rdf:resource="#Evidence207" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Association of Ku heterodimer with viral DNA ends</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction81">
+ <bp:evidence rdf:resource="#Evidence108" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">TFIIS-mediated recovery of elongation from arrest</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction155">
+ <bp:evidence rdf:resource="#Evidence203" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Import of PIC to the Host Nucleus</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction82">
+ <bp:evidence rdf:resource="#Evidence109" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Abortive  termination of HIV-1 elongation after arrest (Tat-containing elongation complex)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction156">
+ <bp:evidence rdf:resource="#Evidence205" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Association of  XRCC4:DNA ligase IV complex with viral DNA ends</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction69">
+ <bp:evidence rdf:resource="#Evidence92" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Rev molecules assemble onto the RRE RNA sequence through their ARM sequence</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction142">
+ <bp:evidence rdf:resource="#Evidence187" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RTC binds NRTIs</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction143">
+ <bp:evidence rdf:resource="#Evidence188" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">First strand transfer mediated by Repeated (R) sequence</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction140">
+ <bp:evidence rdf:resource="#Evidence185" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RNase H-mediated degradation of the template strand</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction141">
+ <bp:evidence rdf:resource="#Evidence186" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RNase H-mediated degradation of the RNA strand of the -sssDNA:RNA duplex</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction65">
+ <bp:evidence rdf:resource="#Evidence88" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Release of the HIV mRNA and Crm1 from Rev in the cytoplasm</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction66">
+ <bp:evidence rdf:resource="#Evidence89" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Translocation of nuclear RNA transport complex to cytoplasm</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction67">
+ <bp:evidence rdf:resource="#Evidence90" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Association of RanBP1 with Ran-GTP:CRM1:Rev:mRNA complex</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction68">
+ <bp:evidence rdf:resource="#Evidence91" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Rev multimer-bound HIV mRNA:Crm1:Ran:GTP complex associates with the NPC</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence11">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence10">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence13">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence12">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence15">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence14">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence17">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence16">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction72">
+ <bp:evidence rdf:resource="#Evidence97" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NTP binds active site of RNA Polymerase II in HIV-1 open pre-initiation complex</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction73">
+ <bp:evidence rdf:resource="#Evidence98" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Nucleophillic attack by 3&apos;-hydroxyl oxygen of nascent HIV-1 transcript on the Alpha phosphate of NTP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction74">
+ <bp:evidence rdf:resource="#Evidence99" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Abortive HIV-1 initiation after formation of the first phosphodiester bond</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction148">
+ <bp:evidence rdf:resource="#Evidence194" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Disintegration of matrix layer</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction75">
+ <bp:evidence rdf:resource="#Evidence100" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HIV Promoter Opening: First Transition</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction149">
+ <bp:evidence rdf:resource="#Evidence195" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Disassembly of viral capsid</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction146">
+ <bp:evidence rdf:resource="#Evidence191" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Removal of plus-strand flap and gap closure complete synthesis of linear duplex viral DNA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction147">
+ <bp:evidence rdf:resource="#Evidence192" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Annealing of 3&apos;-end of unwound transfer RNA primer with genomic RNA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction70">
+ <bp:evidence rdf:resource="#Evidence94" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Fall Back to Closed Pre-initiation Complex</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction144">
+ <bp:evidence rdf:resource="#Evidence189" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RNase H-mediated cleavage of the RNA strand of the -sssDNA:RNA duplex</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction71">
+ <bp:evidence rdf:resource="#Evidence96" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Newly formed phosphodiester bond stabilized and PPi released</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction145">
+ <bp:evidence rdf:resource="#Evidence190" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RNase H-mediated cleavage of the template strand</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep87">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction65" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep181">
+ <bp:stepProcess rdf:resource="#Pathway45" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep86">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction64" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep182">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction138" />
+ <bp:stepProcess rdf:resource="#Catalysis34" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep85">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction63" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep84">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction62" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep180">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction137" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep89">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction67" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep88">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction66" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#Pathway2" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep189">
+ <bp:stepProcess rdf:resource="#Catalysis39" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction145" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep3">
+ <bp:stepProcess rdf:resource="#Catalysis1" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep187">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction143" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep2">
+ <bp:stepProcess rdf:resource="#Pathway3" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep188">
+ <bp:stepProcess rdf:resource="#Catalysis38" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction144" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep185">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction141" />
+ <bp:stepProcess rdf:resource="#Catalysis37" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep186">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction142" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep183">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction139" />
+ <bp:stepProcess rdf:resource="#Catalysis35" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep184">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction140" />
+ <bp:stepProcess rdf:resource="#Catalysis36" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction9">
+ <bp:evidence rdf:resource="#Evidence16" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of Nef CD28 cytoplasmic tail complex</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction6">
+ <bp:evidence rdf:resource="#Evidence12" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Degradation of MHC I Complex</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction5">
+ <bp:evidence rdf:resource="#Evidence11" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Transport of MHC I:Nef:AP-1:PACS-1 Complex</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction8">
+ <bp:evidence rdf:resource="#Evidence14" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of MHC I:Nef Complex</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction7">
+ <bp:evidence rdf:resource="#Evidence13" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of MHC I:Nef:AP-1:PACS-1 Complex</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
+ <bp:evidence rdf:resource="#Evidence5" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Proteosome-mediated degradation of APOBEC3G</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep83">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction61" />
+ <bp:stepProcess rdf:resource="#Catalysis11" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence4" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Multi-ubiquitination of APOBEC3G</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep82">
+ <bp:stepProcess rdf:resource="#Catalysis10" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction60" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction4">
+ <bp:evidence rdf:resource="#Evidence7" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Association of Vif with APOBEC3G</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep81">
+ <bp:stepProcess rdf:resource="#Pathway23" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction3">
+ <bp:evidence rdf:resource="#Evidence6" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Association of APOBEC3G:Vif with the Cul5-SCF complex</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep80">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction59" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep76">
+ <bp:stepProcess rdf:resource="#Pathway22" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep170">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction130" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep75">
+ <bp:stepProcess rdf:resource="#Pathway21" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep171">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction131" />
+</bp:PathwayStep>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:PathwayStep rdf:ID="PathwayStep74">
+ <bp:stepProcess rdf:resource="#Pathway20" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep73">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction55" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep79">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction58" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep78">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction57" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep77">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction56" />
+ <bp:stepProcess rdf:resource="#Catalysis9" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep178">
+ <bp:stepProcess rdf:resource="#Catalysis32" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction135" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep179">
+ <bp:stepProcess rdf:resource="#Catalysis33" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction136" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep176">
+ <bp:stepProcess rdf:resource="#Pathway44" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep177">
+ <bp:stepProcess rdf:resource="#Catalysis31" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction134" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep174">
+ <bp:stepProcess rdf:resource="#Pathway42" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep175">
+ <bp:stepProcess rdf:resource="#Pathway43" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep172">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction132" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep173">
+ <bp:stepProcess rdf:resource="#Catalysis30" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction133" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep169">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction129" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep72">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction54" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep71">
+ <bp:stepProcess rdf:resource="#Pathway19" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep70">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction53" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep98">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction74" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep192">
+ <bp:stepProcess rdf:resource="#Pathway46" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep97">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction73" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep193">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction148" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep96">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction72" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep190">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction146" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep95">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction71" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep191">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction147" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep99">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction75" />
+ <bp:stepProcess rdf:resource="#Catalysis12" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep198">
+ <bp:stepProcess rdf:resource="#Pathway48" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep199">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction152" />
+ <bp:stepProcess rdf:resource="#Catalysis40" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep196">
+ <bp:stepProcess rdf:resource="#Pathway47" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep197">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction151" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep194">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction149" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep195">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction150" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep90">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction68" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep94">
+ <bp:stepProcess rdf:resource="#Pathway25" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep93">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction70" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep92">
+ <bp:stepProcess rdf:resource="#Pathway24" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep91">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction69" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction14">
+ <bp:evidence rdf:resource="#Evidence22" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Internalization of the CD8:Nef:AP-2 Complex:v-ATPase Complex</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence111">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction15">
+ <bp:evidence rdf:resource="#Evidence24" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Internalization of the CD4:Nef:AP-2 Complex:v-ATPase Complex</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence112">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction16">
+ <bp:evidence rdf:resource="#Evidence25" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of a Nef:ARF1:CD4 complex</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence113">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction17">
+ <bp:evidence rdf:resource="#Evidence26" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Nef mediated disruption of CD4:Lck Complex</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence114">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction10">
+ <bp:evidence rdf:resource="#Evidence17" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Internalization of Nef:CD28:Clathrin-Coated Pit Adapter Protein Complex</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence115">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction11">
+ <bp:evidence rdf:resource="#Evidence18" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of Nef:Cd28:Clathrin-coated Pit Adapter Protein complex</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence116">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction12">
+ <bp:evidence rdf:resource="#Evidence20" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Degradation of CD8</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence117">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction13">
+ <bp:evidence rdf:resource="#Evidence21" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of CD8:Nef:AP-2 Complex:v-ATPase Complex</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence118">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction18">
+ <bp:evidence rdf:resource="#Evidence27" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Degradation of CD4</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction19">
+ <bp:evidence rdf:resource="#Evidence28" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of CD4:Nef:AP-2 Complex:v-ATPase Complex</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence110">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence108">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence109">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction20">
+ <bp:evidence rdf:resource="#Evidence30" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Nef Binds and activates the Src-family tyrosine kinase Fyn</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence100">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence221">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence101">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence222">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence102">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence223">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence103">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence104">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence105">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence106">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence107">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence220">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence218">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence219">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence210">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence211">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence212">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence213">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence214">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence215">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence216">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence217">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence207">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence208">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence209">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence200">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence201">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence202">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence203">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence204">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence205">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence206">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep9">
+ <bp:stepProcess rdf:resource="#Pathway6" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep8">
+ <bp:stepProcess rdf:resource="#Pathway5" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep5">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction3" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep4">
+ <bp:stepProcess rdf:resource="#Catalysis2" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction2" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep7">
+ <bp:stepProcess rdf:resource="#Pathway4" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep6">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction4" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence155">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence156">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence157">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence158">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence159">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep101">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction76" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep222">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction172" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep102">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction77" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep220">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction170" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep100">
+ <bp:stepProcess rdf:resource="#Pathway26" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence150">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep221">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction171" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence151">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence152">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence153">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence154">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep219">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction169" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep217">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction167" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep218">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction168" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep215">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction165" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep216">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction166" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep213">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction164" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep214">
+ <bp:stepProcess rdf:resource="#Pathway51" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence144">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence145">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence146">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence147">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence148">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence149">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep211">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction162" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep212">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction163" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep210">
+ <bp:stepProcess rdf:resource="#Pathway50" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence140">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence141">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence142">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence143">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep208">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction160" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep209">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction161" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep206">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction158" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep207">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction159" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep204">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction156" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep205">
+ <bp:stepProcess rdf:resource="#Catalysis41" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction157" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep202">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction155" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep203">
+ <bp:stepProcess rdf:resource="#Pathway49" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep21">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction14" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence133">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep20">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction13" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence134">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence135">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence136">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep25">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction17" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence137">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep24">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction16" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence138">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep23">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction15" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence139">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep22">
+ <bp:stepProcess rdf:resource="#Pathway9" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep29">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction20" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep123">
+ <bp:stepProcess rdf:resource="#Pathway30" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep28">
+ <bp:stepProcess rdf:resource="#Pathway10" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep124">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction95" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep27">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction19" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep121">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction93" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep26">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction18" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep122">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction94" />
+ <bp:stepProcess rdf:resource="#Catalysis20" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep120">
+ <bp:stepProcess rdf:resource="#Catalysis19" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction92" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence130">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence131">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence132">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep118">
+ <bp:stepProcess rdf:resource="#Catalysis17" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction90" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep119">
+ <bp:stepProcess rdf:resource="#Catalysis18" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction91" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep116">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction88" />
+ <bp:stepProcess rdf:resource="#Catalysis15" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep117">
+ <bp:stepProcess rdf:resource="#Catalysis16" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction89" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep114">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction86" />
+ <bp:stepProcess rdf:resource="#Catalysis14" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep115">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction87" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep10">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction5" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence122">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence123">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence124">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence125">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep14">
+ <bp:stepProcess rdf:resource="#Pathway7" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence126">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep13">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction8" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence127">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep12">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction7" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence128">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep11">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction6" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence129">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep18">
+ <bp:stepProcess rdf:resource="#Pathway8" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep112">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction85" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep17">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction11" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep113">
+ <bp:stepProcess rdf:resource="#Pathway29" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep16">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction10" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep110">
+ <bp:stepProcess rdf:resource="#Pathway28" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep15">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction9" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep111">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction84" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence120">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep19">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction12" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence121">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep109">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction83" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep107">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction81" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep108">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction82" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep105">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction80" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep106">
+ <bp:stepProcess rdf:resource="#Pathway27" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep103">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction78" />
+ <bp:stepProcess rdf:resource="#Catalysis13" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep104">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction79" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence119">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep43">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction32" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence199">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep42">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction31" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep41">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction30" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep40">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction29" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep47">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction35" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep46">
+ <bp:stepProcess rdf:resource="#Pathway13" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep45">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction34" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep44">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction33" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep145">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction110" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence191">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep146">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction111" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence192">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep49">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction37" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep143">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction109" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence193">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep48">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction36" />
+ <bp:stepProcess rdf:resource="#Catalysis5" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep144">
+ <bp:stepProcess rdf:resource="#Pathway36" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence194">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep141">
+ <bp:stepProcess rdf:resource="#Pathway35" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence195">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep142">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction108" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence196">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence197">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep140">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction107" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence198">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep138">
+ <bp:stepProcess rdf:resource="#Catalysis22" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction105" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep139">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction106" />
+ <bp:stepProcess rdf:resource="#Catalysis23" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep136">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction103" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep137">
+ <bp:stepProcess rdf:resource="#Catalysis21" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction104" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence190">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep32">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction23" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence188">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep31">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction22" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence189">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep30">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction21" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep36">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction25" />
+ <bp:stepProcess rdf:resource="#Catalysis3" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep35">
+ <bp:stepProcess rdf:resource="#Pathway12" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep34">
+ <bp:stepProcess rdf:resource="#Pathway11" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep33">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction24" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep134">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction102" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence180">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep39">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction28" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep135">
+ <bp:stepProcess rdf:resource="#Pathway34" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence181">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep38">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction27" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep132">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction100" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence182">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep37">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction26" />
+ <bp:stepProcess rdf:resource="#Catalysis4" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep133">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction101" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence183">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep130">
+ <bp:stepProcess rdf:resource="#Pathway32" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence184">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep131">
+ <bp:stepProcess rdf:resource="#Pathway33" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence185">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence186">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence187">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep129">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction99" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep127">
+ <bp:stepProcess rdf:resource="#Pathway31" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep128">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction98" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep125">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction96" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep126">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction97" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep65">
+ <bp:stepProcess rdf:resource="#Pathway17" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence177">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep64">
+ <bp:stepProcess rdf:resource="#Pathway16" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep160">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction121" />
+ <bp:stepProcess rdf:resource="#Catalysis28" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence178">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep63">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction49" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence179">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep62">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction48" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep69">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction52" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep68">
+ <bp:stepProcess rdf:resource="#Pathway18" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep67">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction51" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep66">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction50" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep167">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction127" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep168">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction128" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence170">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep165">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction125" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence171">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep166">
+ <bp:stepProcess rdf:resource="#Catalysis29" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction126" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence172">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep163">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction123" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence173">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep164">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction124" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence174">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep161">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction122" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence175">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep162">
+ <bp:stepProcess rdf:resource="#Pathway41" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence176">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep158">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction119" />
+ <bp:stepProcess rdf:resource="#Catalysis26" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep159">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction120" />
+ <bp:stepProcess rdf:resource="#Catalysis27" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep61">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction47" />
+ <bp:stepProcess rdf:resource="#Catalysis8" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep60">
+ <bp:stepProcess rdf:resource="#Pathway15" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep54">
+ <bp:stepProcess rdf:resource="#Pathway14" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence166">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep53">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction41" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence167">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep52">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction40" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence168">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep51">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction39" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence169">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep58">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction45" />
+ <bp:stepProcess rdf:resource="#Catalysis7" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep57">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction44" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep56">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction43" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep55">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction42" />
+ <bp:stepProcess rdf:resource="#Catalysis6" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep156">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction118" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep157">
+ <bp:stepProcess rdf:resource="#Pathway40" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep154">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction117" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence160">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep59">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction46" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep155">
+ <bp:stepProcess rdf:resource="#Pathway39" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence161">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep152">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction116" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence162">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep153">
+ <bp:stepProcess rdf:resource="#Pathway38" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence163">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep150">
+ <bp:stepProcess rdf:resource="#Pathway37" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence164">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep151">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction115" />
+ <bp:stepProcess rdf:resource="#Catalysis25" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence165">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep149">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction114" />
+ <bp:stepProcess rdf:resource="#Catalysis24" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep147">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction112" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep148">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction113" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep50">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction38" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence9">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction171">
+ <bp:evidence rdf:resource="#Evidence222" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Conformational changes in gp120 exposes gp41</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction172">
+ <bp:evidence rdf:resource="#Evidence223" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Fusogenic activation of gp41</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction170">
+ <bp:evidence rdf:resource="#Evidence221" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CD4:gp120  binds to chemokine co-receptor CCR5/CXCR4</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction164">
+ <bp:evidence rdf:resource="#Evidence214" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Integrase binds viral DNA ends</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction165">
+ <bp:evidence rdf:resource="#Evidence216" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Binding of gp120 of ENV oligomer to the host CD4</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction162">
+ <bp:evidence rdf:resource="#Evidence212" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Suicidal integration leading to inverted circle formation</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction163">
+ <bp:evidence rdf:resource="#Evidence213" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Suicidal integration leading to smaller circles of viral DNA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction160">
+ <bp:evidence rdf:resource="#Evidence209" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Terminal (3&apos; end) cleavage of viral DNA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction161">
+ <bp:evidence rdf:resource="#Evidence210" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of RTC with integration competent viral DNA:BANF1:HMGA1:PSIP1</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence5">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence6">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence7">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence8">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction168">
+ <bp:evidence rdf:resource="#Evidence219" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Conformational change in gp120 of Env oligomer</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction169">
+ <bp:evidence rdf:resource="#Evidence220" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Insertion of gp41 fusion peptide into the target membrane</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence3">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction166">
+ <bp:evidence rdf:resource="#Evidence217" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Fusion of viral membrane with host cell membrane</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence4">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction167">
+ <bp:evidence rdf:resource="#Evidence218" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">N and C terminal heptad repeat helices of gp41 form six-helix bundle</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis41">
+ <bp:controlled rdf:resource="#BiochemicalReaction157" />
+</bp:Catalysis>
+
+<bp:Pathway rdf:ID="Pathway15">
+ <bp:pathwayOrder rdf:resource="#PathwayStep63" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep62" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep61" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction47" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction48" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction49" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence61" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">APOBEC3G mediated resistance to HIV-1 infection</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Representatives of the apolipoprotein B mRNA editing enzyme catalytic polypeptide 3 (APOBEC3) family provide innate resistance to exogeneous and endogenous retroviruses (see Cullen 2006 for a recent review).  Humans and other primates encode a cluster of seven different cytidine deaminases with APOBEC3G, APOBEC3F and APOBEC3B having some anti HIV-1 activity. Our understanding is most complete for APOBEC3G which has been described first and the reactions described herein will focus on this representative enzyme.  APOBEC3G is a cytoplasmic protein which strongly restricts replication of Vif deficient HIV-1 (Sheehy 2002). It is expressed in cell populations that are susceptible to HIV infection (e.g., T-lymphocytes and macrophages).  In the producer cell, APOBEC3G is incorporated into budding HIV-1 particles through an interaction with HIV-1 gag nucleocapsid (NC) protein in a RNA-dependent fashion.   Within the newly infected cell (= target cell), virus-associated APOBEC3G regulates the infectivity of HIV-1 by deaminating cytidine to uracil in the minus-strand viral DNA intermediate during reverse transcription. Deamination results in the induction of G-to-A hypermutations in the plus-strand viral DNA which subsequently can either be integrated as a non-functional provirus or degraded before integration.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway16">
+ <bp:pathwayOrder rdf:resource="#PathwayStep65" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep68" />
+ <bp:pathwayComponent rdf:resource="#Pathway17" />
+ <bp:pathwayComponent rdf:resource="#Pathway18" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence65" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Interactions of Vpr with host cellular proteins</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Vpr has been implicated in multiple processes during HIV-1 replication, including nuclear import of the pre-integration complex (PIC)(Heinzinger et al., 1994), apoptosis (Stewart et al., 1997) and induction of cell cycle G2/M arrest (He et al., 1995; Re et al., 1995; Zhao et al., 1996).   Interactions between Vpr and host nucleoporins (importin) appear to facilitate the nuclear import of the PIC (Popov et al., 1998; Vodicka et al., 1998) while interactions between Vpr the adenine nucleotide transporter (ANT) protein at the inner mitochondrial membrane may contribute to release of apoptosis factors by promoting permeabilization of the mitochondrial outer membrane (Jacotot et al., 2000).    Vpr induces cell cycle G2/M arrest by promoting hyperphosphorylation of Cdk1/Cdc2 (Re et al., 1995; Zhao et al., 1996). However, it is unclear which protein(s) Vpr interacts with to cause this effect. For recent reviews, see, (Li et al., 2005; Zhao, Bukrinsky, and Elder, 2005). Progression of cells from G2 phase of the cell cycle to mitosis is a tightly regulated cellular process that requires activation of the Cdk1/Cdc2 kinase, which determines onset of mitosis in all eukaryotic cells. The activity of Cdk1/Cdc2 is regulated in part by the phosphorylation status of tyrosine 15 (Tyr15) on Cdk1/Cdc2, which is phosphorylated by Wee1 kinase during late G2 and is rapidly dephosphorylated by the Cdc25 tyrosine phosphatase to trigger entry into mitosis. These Cdk1/Cdc2 regulators are the downstream targets of two well-characterized G2/M checkpoint pathways which prevent cells from entering mitosis when cellular DNA is damaged or when DNA replication is inhibited. It is clear that Vpr induces cell cycle G2/M arrest by promoting Tyr15 phosphorylation of Cdk1/Cdc2 both in human and fission yeast cells (Elder et al., 2000;  Re et al., 1995; Zhao et al., 1996), which modulates host cell cycle machinery to benefit viral survival or replication. Although some aspects of Vpr-induced G2/M arrest resembles induction of host cellular checkpoints, increasing evidence suggests that Vpr induces cell cycle G2 arrest through a mechanism that is to some extent different from the classic G2/M checkpoints. One the unique features distinguishing Vpr-induced G2 arrest from the classic checkpoints is the role of phosphatase 2A (PP2A) in Vpr-induced G2 arrest (Elder, Benko, and Zhao, 2002; Elder et al., 2001; Masuda et al., 2000).  Interestingly, PP2A is targeted by a number of other viral proteins including SV40 small T antigen, polyomavirus T antigen, HTLV Tax and adenovirus E4orf4. Thus an in-depth understanding of the molecular mechanisms underlying Vpr-induced G2 arrest will provide additional insights into the basic biology of cell cycle G2/M regulation and into the biological significance of this effect during host-pathogen interactions.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway17">
+ <bp:pathwayOrder rdf:resource="#PathwayStep67" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep66" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction50" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction51" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence66" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Vpr-mediated nuclear import of PICs</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Vpr appears to function in anchoring  the PIC to the nuclear envelope. This anchoring likely involves interactions between Vpr and host nucleoporins.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Catalysis rdf:ID="Catalysis38">
+ <bp:controlled rdf:resource="#BiochemicalReaction144" />
+</bp:Catalysis>
+
+<bp:Pathway rdf:ID="Pathway18">
+ <bp:pathwayOrder rdf:resource="#PathwayStep69" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep70" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction52" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction53" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence69" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Vpr-mediated induction of apoptosis by mitochondrial outer membrane permeabilization</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">In one model of Vpr mediated induction of apoptosis, Vpr acts directly on the mitochondrial permeability transition pore complex through its interaction with adenine nucleotide translocator (ANT). This interaction promotes the permeabiliztion of  the mitochondrial membranes resulting in the release of cytochrome c and apoptosis-inducing factors.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Catalysis rdf:ID="Catalysis39">
+ <bp:controlled rdf:resource="#BiochemicalReaction145" />
+</bp:Catalysis>
+
+<bp:Pathway rdf:ID="Pathway11">
+ <bp:pathwayOrder rdf:resource="#PathwayStep35" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep46" />
+ <bp:pathwayComponent rdf:resource="#Pathway12" />
+ <bp:pathwayComponent rdf:resource="#Pathway13" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence35" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Interactions of Rev with host cellular proteins</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">In order to facilitate the transport of incompletely spliced HIV-1 transcripts, Rev shuttles between the cytoplasm and nucleus using host cell transport mechanisms (reviewed in Li et al. 2005).  Nuclear import appears to be achieved by the association of Rev with importin-beta and B23 and docking at the nuclear pore through interactions between importin-beta and nucleoporins. The dissociation of Rev with the import machinery and the subsequent export of Rev-associated HIV-1 mRNA complex requires Ran-GTP. Ran GTP associates with importin-beta, displacing its cargo. Crm1 associates with the Rev:RNA complex and Ran:GTP and is believed to interact with nucleoporins facilitating docking of the RRE-Rev-CRM1-RanGTP complex to the nuclear pore and the translocation of the complex across the nuclear pore complex. In the cytoplasm, RanBP1 associates with Ran-GTP causing the Crm1-Rev-Ran-GTP complex to disassemble. The Ran GAP protein promotes the hydrolysis of  RanGTP to Ran GDP. The activities of Ran GAP in the cytoplasm and  Ran-GEF, which converts RAN-GDP to Ran-GTP in the nucleus, produce a gradient of Ran-GTP/GDP  required for this shuttling of Rev and other cellular transport proteins.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway12">
+ <bp:pathwayOrder rdf:resource="#PathwayStep43" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep42" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep41" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep40" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep36" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep45" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep44" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep39" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep38" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep37" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction25" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction26" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction27" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction28" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction32" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction33" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction34" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction30" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction31" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction29" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence36" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Rev-mediated nuclear export of HIV RNA</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The  HIV-1 genome contains 9 genes encoded by a single transcript. In order for the virus to replicate, unspliced, singly-spliced and fully spliced viral mRNA must be exported from the nucleus. The HIV-1 mRNA splice sites are inefficient resulting it the accumulation of a pool of incompletely spliced RNAs (Staffa and Cochrane, 1994).  In the early stages of the viral life cycle, or in the absence of the viral Rev protein, completely spliced viral mRNA which encode the regulatory proteins Tat, Nef and Rev are exported from the nucleus while the incompletely spliced structural protein encoding transcripts are held within the nucleus by cellular proteins that normally function in preventing the nuclear export of cellular pre-mRNA.  Export of both unspliced and partially spliced mRNA is mediated by the viral protein Rev which is recruited, along with cellular cofactors, to the Rev Response Element (RRE) within the HIV-1 mRNA sequence (Malim et al., 1990; Fischer et al., 1994). The cellular hRIP protein is essential for correct Rev-mediated export of viral RNAs to the cytoplasm (Sanchez-Velar et al., 2004; Yu et al., 2005).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway13">
+ <bp:pathwayOrder rdf:resource="#PathwayStep53" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep52" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep51" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep47" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep49" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep48" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep50" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction36" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction37" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction38" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction39" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction35" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction40" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction41" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence47" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Nuclear import of Rev protein</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Nuclear import of Rev involves the cellular proteins including importin-beta and  B23 and is mediated by an arginine-rich nuclear localization signal (NLS) within the RNA binding domain of the Rev protein. The NLS of Rev associates with importin- beta as well as  B23  which has been shown to function in the nuclear import of ribosomal proteins. The Rev-importin beta-B23 complex associates with the nuclear pore through interactions between  importin beta and nucleoporin. Upon entry into the nucleus, Ran-GTP associates with  importin beta resulting in in the disassembly of the  importin beta-Rev-B23 complex and the release of Rev cargo.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway14">
+ <bp:pathwayOrder rdf:resource="#PathwayStep58" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep57" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep56" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep55" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep59" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction43" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction44" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction45" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction46" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction42" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence55" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Vpu mediated degradation of CD4</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The HIV-1 Vpu protein promotes the degradation of the CD4 receptor by  recruiting an SCF like ubiquitination complex that promotes CD4 degradation.  Vpu links beta-TrCP to CD4 at the ER membrane through interactions with beta-TrCP and  the cytoplasmic tail of CD4. The SKP1 component of the SCF complex is then recruited to the Vpu:beta-TrCP:CD4 promoting ubiquitination and subsequent proteasome-mediated degradation of CD4 (reviewed in Li et al., 2005). Vpu has also been shown to also increases progeny virus secretion from infected cells. Although the precise role of Vpu in this process is not yet known, it  may affect  ion conductive membrane pore formation and/or interference with TASK-1, an acid-sensitive K+ channel  that inhibits virion release in some cells (see references in Li et al., 2005).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Catalysis rdf:ID="Catalysis32">
+ <bp:controlled rdf:resource="#BiochemicalReaction135" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis33">
+ <bp:controlled rdf:resource="#BiochemicalReaction136" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis30">
+ <bp:controlled rdf:resource="#BiochemicalReaction133" />
+</bp:Catalysis>
+
+<bp:Pathway rdf:ID="Pathway10">
+ <bp:pathwayOrder rdf:resource="#PathwayStep32" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep31" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep30" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep33" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep29" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction21" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction22" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction23" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction24" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction20" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence29" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Nef and signal transduction</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Nef interferes with cellular signal transduction pathways in a number of ways. Nef is associated with lipid rafts through its amino-terminal myristoylation and a proline-rich SH3-binding domain. These cholesterol-rich membrane microdomains appear to concentrate potent signaling mediators. Nef was found to complex with and activate serine/threonine protein kinase PAK-2, which may contribute to activation of infected cells. In vitro, HIV-infected T cells produce enhanced levels of interleukin-2 during activation. When expressed in macrophages, Nef intersects the CD40L signaling pathway inducing secretion of chemokines and other factors that attract resting T cells and promote their infection by HIV.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Catalysis rdf:ID="Catalysis31">
+ <bp:controlled rdf:resource="#BiochemicalReaction134" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis36">
+ <bp:controlled rdf:resource="#BiochemicalReaction140" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis37">
+ <bp:controlled rdf:resource="#BiochemicalReaction141" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis34">
+ <bp:controlled rdf:resource="#BiochemicalReaction138" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis35">
+ <bp:controlled rdf:resource="#BiochemicalReaction139" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis40">
+ <bp:controlled rdf:resource="#BiochemicalReaction152" />
+</bp:Catalysis>
+
+<bp:Pathway rdf:ID="Pathway19">
+ <bp:pathwayOrder rdf:resource="#PathwayStep73" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep72" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction54" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction55" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence72" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Interactions of Tat with host cellular proteins</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The elongation of HIV-1 mRNA depends upon the interaction of Tat with the host P-TEFb complex (Hermann and Rice, 1995; Wei et al., 1998).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence80">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway26">
+ <bp:pathwayOrder rdf:resource="#PathwayStep105" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep103" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep104" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep101" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep102" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction76" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction77" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction78" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction79" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction80" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence101" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RNA Pol II CTD phosphorylation and interaction with CE during HIV infection</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">To facilitate co-transcriptional capping, and thereby restrict the cap structure to RNAs made by RNA polymerase II, the capping enzymes bind directly to the RNA polymerase II.  The C-terminal domain of the largest Pol II subunit contains several phosphorylation sites on its heptapeptide repeats.  The capping enzyme guanylyltransferase and the methyltransferase bind  specifically to CTD phosphorylated at Serine 5 within the CTD.  Kinase subunit of TFIIH, Cdk7, catalyzes this phosphorylation event that occurs near the promoter.  In addition, it has been shown that binding of capping enzyme to the Serine-5 phosphorylated CTD stimulates guanylyltransferase activity in vitro.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Catalysis rdf:ID="Catalysis29">
+ <bp:controlled rdf:resource="#BiochemicalReaction126" />
+</bp:Catalysis>
+
+<bp:Pathway rdf:ID="Pathway27">
+ <bp:pathwayOrder rdf:resource="#PathwayStep109" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep107" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep108" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction83" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction81" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction82" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence107" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Tat-mediated HIV elongation arrest and recovery</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RNA Pol II arrest is believed to be a result of irreversible backsliding of the enzyme by ~7-14 nucleotides. TFIIS reactivates arrested RNA Pol II by promoting the  excision of nascent transcript ~7-14 nucleotides upstream of the 3&apos; end. </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence82">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway28">
+ <bp:pathwayOrder rdf:resource="#PathwayStep112" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep111" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction84" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction85" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence111" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Pausing and recovery of HIV elongation</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">After Pol II pauses by back tracking 2 -4 nuleotides on the HIV-1 template, elongation of the  HIV-1 transcript resumes.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Catalysis rdf:ID="Catalysis27">
+ <bp:controlled rdf:resource="#BiochemicalReaction120" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence81">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway29">
+ <bp:pathwayOrder rdf:resource="#PathwayStep118" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep119" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep116" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep117" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep114" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep115" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep121" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep122" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep120" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction87" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction88" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction89" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction94" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction86" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction90" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction91" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction92" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction93" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence114" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RNA Polymerase II HIV Promoter Escape</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RNA Polymerase II promoter escape occurs after the first phosphodiester bond has been created.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Catalysis rdf:ID="Catalysis28">
+ <bp:controlled rdf:resource="#BiochemicalReaction121" />
+</bp:Catalysis>
+
+<bp:Pathway rdf:ID="Pathway22">
+ <bp:pathwayOrder rdf:resource="#PathwayStep79" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep78" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep77" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep80" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction58" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction59" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction56" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction57" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence77" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Budding and maturation of HIV virion</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">With the virus components precariously assembled on the inner leaflet of the plasma membrane, the host cell machinery is required for viral budding. The virus takes advantage of the host ESCRT pathway to terminate Gag polymerization and catalyze release. The ESCRT pathway is normally responsible for membrane fission that creates cytoplasm filled vesicular bodies. In this case HIV (and other viruses) take advantage of the ESCRT cellular machinery to facilitate virion budding from the host.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence84">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway23">
+ <bp:pathwayOrder rdf:resource="#PathwayStep87" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep86" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep85" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep84" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep89" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep88" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep90" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep83" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep82" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep91" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction69" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction65" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction66" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction67" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction68" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction61" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction62" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction63" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction64" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction60" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence82" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Rev-mediated nuclear export of HIV RNA</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The  HIV-1 genome contains 9 genes encoded by a single transcript. In order for the virus to replicate, unspliced, singly-spliced and fully spliced viral mRNA must be exported from the nucleus. The HIV-1 mRNA splice sites are inefficient resulting it the accumulation of a pool of incompletely spliced RNAs (Staffa and Cochrane, 1994).  In the early stages of the viral life cycle, or in the absence of the viral Rev protein, completely spliced viral mRNA which encode the regulatory proteins Tat, Nef and Rev are exported from the nucleus while the incompletely spliced structural protein encoding transcripts are held within the nucleus by cellular proteins that normally function in preventing the nuclear export of cellular pre-mRNA.  Export of both unspliced and partially spliced mRNA is mediated by the viral protein Rev which is recruited, along with cellular cofactors, to the Rev Response Element (RRE) within the HIV-1 mRNA sequence (Malim et al., 1990; Fischer et al., 1994). The cellular hRIP protein is essential for correct Rev-mediated export of viral RNAs to the cytoplasm (Sanchez-Velar et al., 2004; Yu et al., 2005).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence83">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence86">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway24">
+ <bp:pathwayOrder rdf:resource="#PathwayStep127" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep106" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep99" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep123" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep113" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep110" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep100" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep94" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep130" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep93" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep150" />
+ <bp:pathwayComponent rdf:resource="#Pathway26" />
+ <bp:pathwayComponent rdf:resource="#Pathway37" />
+ <bp:pathwayComponent rdf:resource="#Pathway27" />
+ <bp:pathwayComponent rdf:resource="#Pathway28" />
+ <bp:pathwayComponent rdf:resource="#Pathway29" />
+ <bp:pathwayComponent rdf:resource="#Pathway25" />
+ <bp:pathwayComponent rdf:resource="#Pathway30" />
+ <bp:pathwayComponent rdf:resource="#Pathway31" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction75" />
+ <bp:pathwayComponent rdf:resource="#Pathway32" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction70" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence93" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Transcription of the HIV genome</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Expression of the integrated HIV-1 provirus is dependent on the host cell Pol II transcription machinery, but is regulated in critical ways by HIV-1 Tat and Rev proteins. The long terminal repeats (LTR) located at either end of the proviral DNA contain regulatory sequences that recruit cellular transcription factors. The U3 region of the 5&apos; LTR contains numerous cis-acting elements that regulate Pol II-mediated transcription initiation. The full-length transcript, which encodes nine genes, functions as an mRNA and is packaged as genomic RNA.  Smaller (subgenomic) viral mRNAs are generated by alternative splicing. The activities of Tat and Rev create two phases of gene expression (see Karn 1999; Cullen 1991). The Tat protein is an RNA specific trans-activator of LTR-mediated transcription. Association of Tat with TAR, a RNA stem-loop within the RNA leader sequence, is required for efficient elongation of the HIV-1 transcript.  In the early phase of viral transcription, a multiply-spliced set of mRNAs is generated, producing the transcripts of the regulatory proteins, Tat, Rev, and Nef. In the late phase, Rev regulates nuclear export of HIV-1 mRNAs, repressing expression of the early regulatory mRNAs and promoting expression of viral structural proteins. Nuclear export of the unspliced and partially spliced late HIV-1 transcripts that encode the structural proteins requires the association of Rev with a cis-acting RNA sequence in the transcripts (Rev Response Element, RRE).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence85">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway25">
+ <bp:pathwayOrder rdf:resource="#PathwayStep98" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep97" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep96" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep95" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction72" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction73" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction74" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction71" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence95" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HIV Transcription Initiation</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of the open  complex exposes the template strand to the catalytic center of the RNA polymerase II enzyme. This facilitates formation of the first phosphodiester bond, which marks transcription initiation. As a result of this, the TFIIB basal transcription factor dissociates from the initiation complex. The open transcription initiation complex is unstable and can revert to the closed state. Initiation at this stage requires continued (d)ATP-hydrolysis by TFIIH. Dinucleotide transcripts are not stably associated with the transcription complex. Upon dissociation they form abortive products. The transcription complex is also sensitive to inhibition by small oligo-nucleotides.  Dinucleotides complementary to position -1 and +1 in the template can also direct first phosphodiester bond formation. This reaction is independent on the basal transcription factors TFIIE  and TFIIH and does not involve open complex formation.  This reaction is sensitive to inhibition by single-stranded oligonucleotides.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence88">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis21">
+ <bp:controlled rdf:resource="#BiochemicalReaction104" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence87">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis22">
+ <bp:controlled rdf:resource="#BiochemicalReaction105" />
+</bp:Catalysis>
+
+<bp:Pathway rdf:ID="Pathway20">
+ <bp:pathwayOrder rdf:resource="#PathwayStep75" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep174" />
+ <bp:pathwayComponent rdf:resource="#Pathway42" />
+ <bp:pathwayComponent rdf:resource="#Pathway21" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence75" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HIV Life Cycle</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The life cycle of HIV-1 is divided into early and late phases, shown schematically in the figure. In the  early  phase, an HIV-1 virion binds to receptors and co-receptors on the human host cell surface (a), viral and host cell membranes fuse and the viral particle is uncoated (b), the viral genome is reverse transcribed and the viral preintegration complex (PIC) forms (c), the PIC is transported through the nuclear pore into the nucleoplasm (d), and the viral reverse transcript is integrated into a host cell chromosome (e). In the  late  phase, viral RNAs are transcribed from the integrated viral genome and processed to generate viral mRNAs and full-length viral genomic RNAs (f), the viral RNAs are exported through the nuclear pore into the cytosol (g), viral mRNAs are translated and the resulting viral proteins are post-translationally processed (h), core particles containing viral genomic RNA and proteins assemble at the host cell membrane and immature viral particles are released by budding. The released particles mature to become infectious (j), completing the cycle (Frankel and Young 1998; Miller and Bushman 1997). Most of the crucial concepts used to describe these processes were originally elucidated in studies of retroviruses associated with tumors in chickens, birds, and other animal model systems, and the rapid elucidation of the basic features of the HIV-1 life cycle was critically dependent on the intellectual framework provided by these earlier studies. This earlier work has been very well summarized (e.g., Weiss et al. 1984; Coffin et al. 1997); here for brevity and clarity we focus on experimental studies specific to the HIV-1 life cycle.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway21">
+ <bp:pathwayOrder rdf:resource="#PathwayStep76" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep153" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep81" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep92" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep173" />
+ <bp:pathwayComponent rdf:resource="#Pathway38" />
+ <bp:pathwayComponent rdf:resource="#Pathway22" />
+ <bp:pathwayComponent rdf:resource="#Pathway23" />
+ <bp:pathwayComponent rdf:resource="#Pathway24" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction133" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence76" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Late Phase of HIV Life Cycle</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The late phase of the HIV-1 life cycle includes the regulated expression of the HIV gene products and the assembly of viral particles. The assembly of viral particles will be covered in a later release of Reactome. HIV-1 gene expression is regulated by both cellular and viral proteins. Although the initial activation of the HIV-1 transcription is facilitated by cellular transcription factors including NF-kappa B (Nabel and Baltimore, 1987), this activation results in the production of primarily short transcripts (Kao et al., 1987). Expression of high levels of the full length HIV-1 transcript requires the function of the HIV-1 Tat protein which promotes elongation of the HIV-1 transcript (reviewed in Karn, 1999; Taube et al. 1999; Liou et al., 2004; Barboric and Peterlin 2005).  The HIV-1 Rev protein is required post-transcriptionally for the expression of the late genes. Rev functions by promoting the nuclear export of unspliced and partially spliced transcripts that encode the major structural proteins Gag, Pol and Env, and the majority of the accessory proteins (Malim et al., 1989;  reviewed in Pollard and Malim 1998 .</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence89">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis20">
+ <bp:controlled rdf:resource="#BiochemicalReaction94" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis25">
+ <bp:controlled rdf:resource="#BiochemicalReaction115" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis26">
+ <bp:controlled rdf:resource="#BiochemicalReaction119" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis23">
+ <bp:controlled rdf:resource="#BiochemicalReaction106" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis24">
+ <bp:controlled rdf:resource="#BiochemicalReaction114" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis2">
+ <bp:controlled rdf:resource="#BiochemicalReaction2" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis18">
+ <bp:controlled rdf:resource="#BiochemicalReaction91" />
+</bp:Catalysis>
+
+<bp:Pathway rdf:ID="Pathway37">
+ <bp:pathwayOrder rdf:resource="#PathwayStep152" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep151" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction115" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction116" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence151" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of HIV elongation complex in the absence of HIV Tat</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">During the formation of the HIV elongation complex in the absence of HIV Tat, eongation factors are recruited to form the  HIV-1 elongation complex (Hill and Sundquist 2013) and P-TEFb complex hyperphosphorylates RNA Pol II CTD (Hermann and Rice, 2005, Zhou et al., 2000).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Catalysis rdf:ID="Catalysis1">
+ <bp:controlled rdf:resource="#BiochemicalReaction1" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis19">
+ <bp:controlled rdf:resource="#BiochemicalReaction92" />
+</bp:Catalysis>
+
+<bp:Pathway rdf:ID="Pathway38">
+ <bp:pathwayOrder rdf:resource="#PathwayStep154" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep155" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep162" />
+ <bp:pathwayComponent rdf:resource="#Pathway39" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction117" />
+ <bp:pathwayComponent rdf:resource="#Pathway41" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence154" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Assembly Of The HIV Virion</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Virion assembly packages all the components required for infectivity. These steps include two copies of the positive sense genomic viral RNA, cellular tRNALys, the viral envelope (Env) protein, the Gag polyprotein, and the three viral enzymes: protease (PR), reverse transcriptase (RT), and integrase (IN). The viral enzymes are packaged as domains within the Gag-Pro-Pol polyprotein.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway8">
+ <bp:pathwayOrder rdf:resource="#PathwayStep21" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep20" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep19" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction14" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction12" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction13" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence19" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Nef Mediated CD8 Down-regulation</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Human immunodeficiency virus (HIV) Nef is a membrane-associated protein decreasing surface expression of CD4, CD28, and major histocompatibility complex class I on infected cells. Nef also strongly down-modulates surface expression of the beta-chain of the CD8alphabeta receptor by accelerated endocytosis, while CD8 alpha-chain expression is less affected. Mutational analysis of the cytoplasmic tail of the CD8 beta-chain indicates that an FMK amino acid motif is critical for the Nef-induced endocytosis. Although independent of CD4, endocytosis of the CD8 beta-chain is abrogated by the same mutations in Nef that affect CD4 down-regulation, suggesting common molecular interactions. The ability to down-regulate the human CD8 beta-chain was conserved in HIV-1, HIV-2, and simian immunodeficiency virus SIVmac239 Nef and required an intact AP-2 complex.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence71">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis16">
+ <bp:controlled rdf:resource="#BiochemicalReaction89" />
+</bp:Catalysis>
+
+<bp:Pathway rdf:ID="Pathway39">
+ <bp:pathwayOrder rdf:resource="#PathwayStep156" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep157" />
+ <bp:pathwayComponent rdf:resource="#Pathway40" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction118" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence156" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Synthesis And Processing Of GAG, GAGPOL Polyproteins</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Evidence suggests that the RNA molecules used for the synthesis of Gag and Gag-Pro-Pol are not the same molecules that are packaged into virions. Gag proteins do not appear to aggregate around and capture the RNA contained in the polyribosome from which they emerged, but rather bind to and ultimately encapsidate free transcripts elsewhere. During the replication of retroviruses, large numbers of Gag molecules must be generated to serve as precursors to the structural proteins of the virions. Retroviruses have developed a mechanism that permits expression of the Gag protein at high levels relative to the protein sequences encoded in the pro and pol genes, while retaining coregulated expression. This linkage results from the use of the same initiation codon in the same mRNA to express the gag, pro, and pol genes. Translation of this RNA leads occasionally to synthesis of a fusion protein that is usually called the Gag-Pol precursor but is now more appropriately called the Gag-Pro-Pol precursor</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway9">
+ <bp:pathwayOrder rdf:resource="#PathwayStep25" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep24" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep23" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep27" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep26" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction15" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction16" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction17" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction18" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction19" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence23" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Nef Mediated CD4 Down-regulation</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The presence of Nef accelerates endocytosis and lysosomal degradation of the transmembrane glycoprotein CD4. CD4 has its own internalization motif, though this motif is normally concealed by CD4 interaction with Lck, a tyrosine kinase. Nef is known to disrupt this interaction and then facilitate a cascade of protein interactions that ultimately result in the degradation of internalized CD4 protein. The final set of protein interactions that direct Nef to the beta-subunit of the COPI coatomers are at this time unclear.  A benefit for the virus from CD4 down-modulation is abolition of interaction between the receptor and the Env protein of the budding virus, which likely increases HIV release from infected cell as well as infectivity of viral particles.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence70">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis17">
+ <bp:controlled rdf:resource="#BiochemicalReaction90" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence73">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway33">
+ <bp:pathwayOrder rdf:resource="#PathwayStep134" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep135" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep132" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep133" />
+ <bp:pathwayComponent rdf:resource="#Pathway34" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction102" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction100" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction101" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence132" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Tat-mediated elongation of the HIV-1 transcript</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The Tat protein is a viral transactivator protein that regulates HIV-1 gene expression by controlling RNA Pol II-mediated elongation (reviewed in Karn  1999; Taube et al. 1999; Liou et al. 2004; Barboric and Peterlin 2005).  Tat appears to be required in order to overcome the arrest of RNA Pol II by the negative transcriptional elongation factors DSIF and NELF (Wada et al. 1998; Yamaguchi et al. 1999; Yamaguchi et al 2002; Fujinaga et al. 2004). While Pol II can associate with the proviral LTR and initiate transcription in the absence of Tat, these polymerase complexes are non-processive and dissociate from the template prematurely producing very short transcripts (Kao et al. 1987). Tat associates with the RNA element, TAR, which forms a stem loop structure in the leader RNA sequence (Dingwall et al. 1989). Tat also associates with the cellular kinase complex P-TEFb(Cyclin T1:Cdk9) and recruits it to the TAR stem loop structure (Herrmann, 1995) (Wei et al. 1998). This association between Tat, TAR and  P-TEFb(Cyclin T1:Cdk9) is believed to bring the catalytic subunit of this kinase complex (Cdk9) in close proximity to Pol II where it hyperphosphorylates the CTD of RNA Pol II (Zhou et al. 2000). The RD subunits of NELF and the SPT5 subunit of DSIF, which associate through RD with the bottom stem of TAR, are also phosphorylated by P-TEFb(Cyclin T1:Cdk9)  (Yamaguchi et al. 2002; Fujinaga et al. 2004; Ivanov et al. 2000). Phosphorylation of RD results in its dissociation from TAR. Thus, Tat appears to facilitate transcriptional elongation of the HIV-1 transcript by hyperphosphorylating the RNA Poll II CTD and by removing the negative transcription elongation factors from TAR.  In addition, there is evidence that the association of Tat with P-TEFb(Cyclin T1:Cdk9) alters the substrate specificity of P-TEFb enhancing phosphorylation of ser5 residues in the CTD of RNA Pol II (Zhou  et al. 2000).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence72">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway34">
+ <bp:pathwayOrder rdf:resource="#PathwayStep138" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep139" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep136" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep137" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep140" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction106" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction107" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction104" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction105" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction103" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence136" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of HIV-1 elongation complex containing HIV-1 Tat</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This HIV-1 event was inferred from the corresponding human RNA Poll II transcription event in Reactome. The details relevant to HIV-1 are described below. For a more detailed description of the general mechanism, see the link to the corresponding RNA Pol II transcription event below.  The formation of the HIV-1 elongation complex involves Tat mediated recruitment of P-TEFb(Cyclin T1:Cdk9)  to the TAR sequence (Wei et al, 1998) and P-TEFb(Cyclin T1:Cdk9) mediated phosphorylation of the RNA Pol II CTD as well as the negative transcriptional elongation factors DSIF and NELF (Herrmann, 1995;  Ivanov et al. 2000; Fujinaga et al. 2004; Zhou et al., 2004).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence75">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway35">
+ <bp:pathwayOrder rdf:resource="#PathwayStep143" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep142" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction108" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction109" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence142" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Abortive elongation of HIV-1 transcript in the absence of Tat</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event was inferred from the corresponding Reactome human Poll II transcription elongation event. The details specific to HIV-1 transcription elongation are described below. In the absence of  the HIV-1 Tat protein, the RNA Pol II complexes associated with the HIV-1 template are non-processive. RNA Pol II is arrested after promoter clearance by the negative transcriptional elongation factors DSIF and NELF as occurs during early elongation of endogenous templates (Wada et al, 1998; Yamaguchi et al. 1999). This arrest cannot be overcome by P-TEFb mediated phosphorylation in the absence of Tat however, and elongation aborts resulting in the accumulation of short transcripts (Kao et al., 1987).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence74">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway36">
+ <bp:pathwayOrder rdf:resource="#PathwayStep149" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep147" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep148" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep145" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep146" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction110" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction113" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction114" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction111" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction112" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence145" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of the HIV-1 Early Elongation Complex</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This HIV-1 event was inferred from the corresponding human RNA Poll II transcription event. The details relevant to HIV-1 are described below.  Formation of the early elongation complex involves hypophosphorylation of RNA Pol II CTD by FCP1P protein, association of the DSIF complex with RNA Pol II, and formation of DSIF:NELF:HIV-1 early elongation complex as described below (Mandal et al 2002; Kim et al 2003; Yamaguchi et al 2002).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence77">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis10">
+ <bp:controlled rdf:resource="#BiochemicalReaction60" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence76">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis11">
+ <bp:controlled rdf:resource="#BiochemicalReaction61" />
+</bp:Catalysis>
+
+<bp:Pathway rdf:ID="Pathway30">
+ <bp:pathwayOrder rdf:resource="#PathwayStep125" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep126" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep124" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction95" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction96" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction97" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence124" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HIV elongation arrest and recovery</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RNA Pol II arrest is believed to be a result of irreversible backsliding of the enzyme by ~7-14 nucleotides. TFIIS reactivates arrested RNA Pol II by promoting the  excision of nascent transcript ~7-14 nucleotides upstream of the 3&apos; end. </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence79">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway31">
+ <bp:pathwayOrder rdf:resource="#PathwayStep129" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep128" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction98" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction99" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence128" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Pausing and recovery of Tat-mediated HIV elongation</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">After Pol II pauses by back tracking 2 -4 nuleotides on the HIV-1 template, elongation of the  HIV-1 transcript resumes.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence78">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway32">
+ <bp:pathwayOrder rdf:resource="#PathwayStep144" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep141" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep131" />
+ <bp:pathwayComponent rdf:resource="#Pathway33" />
+ <bp:pathwayComponent rdf:resource="#Pathway35" />
+ <bp:pathwayComponent rdf:resource="#Pathway36" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence131" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HIV Transcription Elongation</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">In the absence of the HIV-1 protein Tat, transcription of the proviral DNA is inefficient and results in the production of truncated transcripts (Kao et al., 1987). While initiation of transcription from the HIV-1 LTR and formation of the early elongation complex occurs normally, transcription elongation is incomplete with non-processive polymerases disengaging from the proviral DNA template prematurely (reviewed in Karn 1999). The mechanism of Tat-mediated elongation is described below.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Catalysis rdf:ID="Catalysis14">
+ <bp:controlled rdf:resource="#BiochemicalReaction86" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis15">
+ <bp:controlled rdf:resource="#BiochemicalReaction88" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis12">
+ <bp:controlled rdf:resource="#BiochemicalReaction75" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis13">
+ <bp:controlled rdf:resource="#BiochemicalReaction78" />
+</bp:Catalysis>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:Pathway rdf:ID="Pathway2">
+ <bp:pathwayOrder rdf:resource="#PathwayStep54" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep64" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep7" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep34" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep2" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep60" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep71" />
+ <bp:pathwayComponent rdf:resource="#Pathway15" />
+ <bp:pathwayComponent rdf:resource="#Pathway16" />
+ <bp:pathwayComponent rdf:resource="#Pathway11" />
+ <bp:pathwayComponent rdf:resource="#Pathway14" />
+ <bp:pathwayComponent rdf:resource="#Pathway3" />
+ <bp:pathwayComponent rdf:resource="#Pathway19" />
+ <bp:pathwayComponent rdf:resource="#Pathway4" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Host Interactions of HIV factors</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Like all viruses, HIV-1 must co-opt the host cell macromolecular transport and processing machinery. HIV-1 Vpr and Rev proteins play key roles in this co-optation. Efficient HIV-1 replication likewise requires evasion of APOBEC3G-mediated mutagenesis of reverse transcripts, a process mediated by the viral Vif protein.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway3">
+ <bp:pathwayOrder rdf:resource="#PathwayStep5" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep4" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep6" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep3" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction2" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction4" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction3" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Vif-mediated degradation of APOBEC3G</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The HIV-1 accessory protein Vif (Viral infectivity factor) is required for the efficient infection of primary cell populations (e.g., lymphocytes and macrophages) and &apos;non-permissive&apos; cell lines. Vif neutralises the host DNA editing enzyme, APOBEC3G, in the producer cell. Indeed, in the absence of a functional Vif, APOBEC3G is selectively incorporated into the budding virions and in the next cycle of infection leads to the deamination of deoxycytidines (dC) within the minus-strand cDNA during reverse transcription (Sheehy et al 2003; Li et al., 2005 ; Stopak et al. 2003). Deamination changes cytidine to uracil and thus results in G to A transitions and stop codons in the provirus. The aberrant cDNAs produced in the infected cell can either be integrated in form of non-functional proviruses or degraded.  Vif  counteracts the antiviral activity of APOBEC3G by associating directly with it and promoting its polyubiquitination and degradation by the 26S proteasome.  Vif binds APOBEC3G and recruits it into an E3 ubiquitin-enzyme complex composed by the cytoplasmic proteins Cullin5, Rbx, ElonginC and ElonginB (Yu et al., 2003) . Thus, in the presence of Vif, APOBEC3G incorporation into the virion is minimal. </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Catalysis rdf:ID="Catalysis9">
+ <bp:controlled rdf:resource="#BiochemicalReaction56" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis8">
+ <bp:controlled rdf:resource="#BiochemicalReaction47" />
+</bp:Catalysis>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep74" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayComponent rdf:resource="#Pathway2" />
+ <bp:pathwayComponent rdf:resource="#Pathway20" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HIV Infection</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The global pandemic of Human Immunodeficiency Virus (HIV) infection has resulted in tens of millions of people   infected by the virus  and millions more affected. UNAIDS estimates around 40 million HIV/AIDS patients worldwide with 75% of them   living in sub-Saharan Africa.  The primary method of HIV infection is by sexual exposure while nonsexual HIV transmission also can occur through transfusion with contaminated blood products, injection drug use, occupational exposure,accidental needlesticks or mother-to-child transmission.  HIV damages the immune system, leaving the infected person vulnerable to a variety of  &quot;opportunistic&quot; infections arising from   host immune impairment (Hare, 2004). HIV-1 and the less common HIV-2 belong to the family of retroviruses. HIV-1 contains a single-stranded RNA genome that is 9 kilobases in length and contains 9 genes that encode 15 different proteins. These proteins are classified as: structural proteins (Gag, Pol, and Env), regulatory proteins (Tat and Rev), and accessory proteins (Vpu, Vpr, Vif, and Nef) (Frankel and Young,1998).  HIV infection  cycle can be divided into two phases: 1. An  Early phase  consisting of early events occuring after HIV infection of  a susceptible target cell  and a  2.  Late phase  comprising the later events in the HIV-infected cell resulting in the assembly of new infectious virions. The section titled  HIV lifecycle  consists of annotations of events in these two phases. The virus has developed various molecular strategies to suppress the antiviral immune responses (innate, cellular and humoral) of the host.   HIV-1 viral auxiliary proteins (Tat, Rev, Nef, Vif, Vpr and Vpu) play important roles in these host-pathogen interactions (Li et al.,2005). The section titled  Host interactions of HIV factors  highlights these complex post-infection processes.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Catalysis rdf:ID="Catalysis7">
+ <bp:controlled rdf:resource="#BiochemicalReaction45" />
+</bp:Catalysis>
+
+<bp:Pathway rdf:ID="Pathway6">
+ <bp:pathwayOrder rdf:resource="#PathwayStep10" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep13" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep12" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep11" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction6" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction5" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction8" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction7" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence10" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Nef mediated downregulation of MHC class I complex cell surface expression</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Down-regulation of MHC class I involves Nef-mediated connection in the endosomes between MHC-I&apos;s cytoplasmic tail and the phosphofurin acidic cluster sorting protein-1 (PACS-1)-dependent protein-sorting pathway. Down-regulation of MHC I protects HIV-infected cells from host CTL response.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Catalysis rdf:ID="Catalysis6">
+ <bp:controlled rdf:resource="#BiochemicalReaction42" />
+</bp:Catalysis>
+
+<bp:Pathway rdf:ID="Pathway7">
+ <bp:pathwayOrder rdf:resource="#PathwayStep17" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep16" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep15" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction10" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction9" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction11" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence15" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Nef mediated downregulation of CD28 cell surface expression</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Down-regulation of CD28 receptors involves a dileucine-based motif in the second disordered loop of Nef, which connects Nef to adaptor protein (AP) complex, which is a part of cellular endocytosis machinery. Nef induces accelerated endocytosis of CD28 via clathrin-coated pits followed by lysosomal degradation.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Catalysis rdf:ID="Catalysis5">
+ <bp:controlled rdf:resource="#BiochemicalReaction36" />
+</bp:Catalysis>
+
+<bp:Pathway rdf:ID="Pathway4">
+ <bp:pathwayOrder rdf:resource="#PathwayStep8" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep28" />
+ <bp:pathwayComponent rdf:resource="#Pathway10" />
+ <bp:pathwayComponent rdf:resource="#Pathway5" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence8" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The role of Nef in HIV-1 replication and disease pathogenesis</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The HIV-1 Nef protein is a 27-kDa myristoylated protein that is abundantly produced during the early phase of viral replication cycle. It is highly conserved in all primate lentiviruses, suggesting that its function is essential for survival of these pathogens. The protein name &quot;Nef&quot; was derived from early reports of its negative effect on viral replication, thus &apos;negative factor&apos; or Nef. Subsequently it has been demonstrated that Nef plays an important role in several steps of HIV replication. In addition, it appears to be a critical pathogenic factor, as Nef-deficient SIV and HIV are significantly less pathogenic than the wild-type viruses, whereas Nef-transgenic mice show many features characteristic to HIV disease.  The role of Nef in HIV-1 replication and disease pathogenesis is determined by at least four independent activities of this protein. Nef affects the cell surface expression of several cellular proteins, interferes with cellular signal transduction pathways, enhances virion infectivity and viral replication, and regulates cholesterol trafficking in HIV-infected cells.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Catalysis rdf:ID="Catalysis4">
+ <bp:controlled rdf:resource="#BiochemicalReaction26" />
+</bp:Catalysis>
+
+<bp:Pathway rdf:ID="Pathway5">
+ <bp:pathwayOrder rdf:resource="#PathwayStep9" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep14" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep22" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep18" />
+ <bp:pathwayComponent rdf:resource="#Pathway8" />
+ <bp:pathwayComponent rdf:resource="#Pathway9" />
+ <bp:pathwayComponent rdf:resource="#Pathway6" />
+ <bp:pathwayComponent rdf:resource="#Pathway7" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence9" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Nef-mediates down modulation of cell surface receptors by recruiting them to clathrin adapters</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The maximal virulence of HIV-1 requires Nef, a virally encoded peripheral membrane protein. Nef binds to the adaptor protein (AP) complexes of coated vesicles, inducing an expansion of the endosomal compartment and altering the surface expression of cellular proteins including CD4 and class I major histocompatibility complex.  Nef affects the cell surface expression of several cellular proteins. It down-regulates CD4, CD8, CD28, and major histocompatibility complex class I and class II proteins, but upregulates the invariant chain of MHC II (CD74). To modulate cell surface receptor expression, Nef utilizes several strategies, linked to distinct regions within the Nef protein. Since all these receptors are essential for proper functions of the immune system, modulation of their surface expression by Nef has profound effects on anti-HIV immune responses. Down-regulation of MHC I protects HIV-infected cells from host CTL response, whereas down-modulation of CD28 and CD4 probably limits the adhesion of a Nef-expressing T cell to the antigen-presenting cell, thus promoting the movement of HIV-infected cells into circulation and the spread of the virus.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Catalysis rdf:ID="Catalysis3">
+ <bp:controlled rdf:resource="#BiochemicalReaction25" />
+</bp:Catalysis>
+
+<bp:Pathway rdf:ID="Pathway48">
+ <bp:pathwayOrder rdf:resource="#PathwayStep200" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep201" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep199" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction153" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction154" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction152" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence199" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Integration of viral DNA into host genomic DNA</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Following nuclear entry, the viral preintegration complex (PIC) must select a site for integration in a host cell chromosome, and then carry out the chemical steps of the reaction.  At the chromosomal level, HIV has been found to favor active transcription units for integration. Subsequent studies established that the cellular PSIP1/LEDGF/p75 protein is important in this reaction. PSIP1/LEDGF/p75 binds tightly to HIV integrase, and also to chromatin. Knocking down PSIP1/LEDGF/p75 in cells resulted in several perturbations of integration targeting in vivo, including reduced integration in transcription units. Thus PSIP1/LEDGF/p75 has been hypothesized to act as a tethering factor that dictates at least in part the placement of HIV integration sites.  The integration target DNA is also expected to be coated with nucleosomes. Tests of integration into mononucleosomes in vitro have shown that wrapping integration target DNA actually boosts integration activity. Kinked positions on the DNA gyre are particularly favored for integration.  Integration does not take place at a unique sequence in the integration target DNA (i.e. it is not like a restriction enzyme). However, favored and disfavored primary sequences can be detected when many integration sites are aligned. Synthesis and testing of favored HIV integration sites showed that they were favored for integration by PICs in vitro.  After a target DNA is bound, the integration reactions take place via a single-step transesterification. Integration of both ends of the viral DNA, followed by melting of the target DNA segments between the points of joining, yields single stranded gaps at each host-virus DNA junction, and a two base overhang derived from the viral DNA. The manner by which this intermediate is subsequently repaired to yield the fully integrated provirus is unclear. For many parasitic DNA replication reactions, the parasite carries out reaction steps only up to a point that the host cannot easily reverse, forcing the host to complete the job (Bushman 2001; Craig et al. 2002). For retroviral integration, it is reasonable to infer that host DNA repair enzymes complete provirus formation. DNA gap repair enzymes are known to be involved in a variety of DNA repair pathways, so their recruitment to gaps at host-virus DNA junctions is readily envisioned. Consistent with this, known gap repair enzymes have been shown to act on model host-virus DNA junctions in vitro (Yoder and Bushman, 2000).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway49">
+ <bp:pathwayOrder rdf:resource="#PathwayStep206" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep204" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep205" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction157" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction158" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction156" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence204" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">2-LTR circle formation</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The formation of 2-LTR circles requires the action of the cellular non-homologous DNA end-joining pathway.  Specifically the cellular Ku, XRCC4 and ligase IV proteins are needed.  Evidence for this is provided by the observation that cells mutant in these functions do not support detectable formation of 2-LTR circles, though integration and formation of 1-LTR circles are mostly normal.  The reaction takes place in the nucleus, and formation of 2-LTR circles has been used as a surrogate assay for nuclear transport.  It has also been suggested that the NHEJ system affects the toxicity of retroviral infection.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway44">
+ <bp:pathwayOrder rdf:resource="#PathwayStep180" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep178" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep179" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep177" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction137" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction135" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction136" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction134" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence177" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Plus-strand DNA synthesis</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Two specific polypurine tracts (PPT sequences) in the viral RNA, one within the pol gene (central or cPPT) and one immediately preceding the U3 sequence (3&apos; PPT), are spared from degradation during minus strand DNA synthesis and prime plus-strand synthesis. At least two discrete steps of DNA replication, removal of the PPT RNAs and the tRNA primer that initiated minus-strand synthesis, and a strand transfer lead to the synthesis of a linear duplex DNA corresponding to the full length of the HIV genomic RNA with long terminal repeat (LTR) sequences at both ends. Both DNA synthesis and RNA degradation are catalyzed by domains of the HIV-1 reverse transcriptase (RT) heterodimer. During plus-strand synthesis, Preston and colleagues observed  secondary sites of plus-strand initiation at low frequency both in the cell-free system and in cultured virus-infected cells (Klarman et al., 1997).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway45">
+ <bp:pathwayOrder rdf:resource="#PathwayStep182" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep189" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep187" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep188" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep185" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep186" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep183" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep184" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction142" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction143" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction140" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction141" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction139" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction138" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction144" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction145" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence182" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Minus-strand DNA synthesis</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">In the first part of reverse transcription, minus-strand synthesis, a DNA strand complementary to the HIV genomic RNA is synthesized, using the viral RNA as a template and a host cell lysine tRNA molecule as primer. The synthesis proceeds in two discrete steps, separated by a strand transfer event. As minus strand DNA is synthesized, the viral genomic RNA is degraded, also in several discrete steps. Two specific polypurine tracts (PPT sequences) in the viral RNA, one within the pol gene (central or cPPT) and one immediately preceding the U3 sequence (3&apos; PPT) are spared from degradation and serve to prime synthesis of DNA complementary to the minus strand (plus-strand synthesis). During plus-strand synthesis, Preston and colleagues observed secondary sites of plus-strand initiation at low frequency both in the cell-free system and in cultured virus (Klarman et al., 1997). Both DNA synthesis and RNA degradation activities are catalyzed by the HIV-1 reverse transcriptase (RT) heterodimer. </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway46">
+ <bp:pathwayOrder rdf:resource="#PathwayStep193" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep194" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction148" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction149" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence193" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uncoating of the HIV Virion</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HIV-1 uncoating is a poorly understood process. It likely involves a progressive and partial dissembly of matrix and capsid layers.  While viral proteins like MA and Nef are thought to be involved, the primary cause seems to be the cytosolic pH and a simple dilution effect. Successful uncoating generates the viral reverse transcription complex, which comprises the diploid viral RNA genome, tRNALys primer, RT, IN, MA, nucleocapsid (NC), viral protein R (Vpr) and various host proteins; the reverse-transcription complex is thus liberated from the plasma membrane. It is believed that the transiting viral nucleoprotein complex associates with the elements of cytoskeleton like actin microfilaments.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway47">
+ <bp:pathwayOrder rdf:resource="#PathwayStep208" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep209" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep207" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep202" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep213" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep203" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep198" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep210" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep197" />
+ <bp:pathwayComponent rdf:resource="#Pathway48" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction164" />
+ <bp:pathwayComponent rdf:resource="#Pathway49" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction151" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction160" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction161" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction159" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction155" />
+ <bp:pathwayComponent rdf:resource="#Pathway50" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence197" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Integration of provirus</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">For retroviral DNA to direct production of progeny virions it must become covalently integrated into the host cell chromosome (reviewed in Coffin et al. 1997; Hansen et al. 1998). Analyses of mutants have identified the viral integrase coding region (part of the retroviral pol gene) as essential for the integration process (Donehower 1988; Donehower and Varmus 1984; Panganiban and Temin 1984; Quinn and Grandgenett 1988; Schwartzberg et al. 1984). Also essential are regions at the ends of the viral long terminal repeats (LTRs) that serve as recognition sites for integrase protein (Colicelli and Goff 1985, 1988; Panganiban and Temin 1983). The viral genomic RNA is reverse transcribed to form a linear double-stranded DNA molecule, the precursor to the integrated provirus (Brown et al. 1987, 1989; Fujiwara and Mizuuchi 1988). The provirus is colinear with unintegrated linear viral DNA (Dhar et al. 1980; Hughes et al. 1978) but differs from the reverse transcription product in that it is missing two bases from each end (Hughes et al. 1981). Flanking the integrated HIV provirus are direct repeats of the cellular DNA that are 5 base pairs in length (Vincent et al. 1990). This duplication of cellular sequences flanking the viral DNA is generated as a consequence of the integration mechanism (Coffin et al., 1997).  Linear viral DNA is found in a complex with proteins in the cytoplasm of infected cells. These complexes (termed &quot;preintegration complexes&quot;, PICs) can be isolated and have been shown to mediate integration of viral DNA into target DNA in vitro (Bowerman et al. 1989; Brown et al. 1987; Ellison et al. 1990; Farnet and Haseltine 1990, 1991).  The development of in vitro assays with purified integrase has allowed its enzymatic functions to be elucidated. The provirus is formed by two reactions catalyzed by the viral integrase: terminal cleavage and strand transfer. Studies with purified integrase have shown that it is sufficient for both 3&apos; end cleavage (Bushman and Craigie 1991; Craigie et al. 1990; Katzman et al. 1989; Sherman and Fyfe 1990) and joining of the viral DNA to the cellular chromosome or naked target DNA (Bushman et al. 1990; Craigie et al. 1990; Katz et al. 1990). HIV integrase catalyze the removal of two bases from the 3&apos; end of each viral DNA strand, leaving recessed 3&apos; hydroxyl groups (Brown et al. 1989; Fujiwara and Mizuuchi 1988; Roth et al. 1989; Sherman and Fyfe 1990). This terminal cleavage reaction is required for proper integration. It may allow the virus to create a standard end from viral DNA termini that can be heterogeneous due to the terminal transferase activity of reverse transcriptase (Miller et al. 1997; Patel and Preston 1994). In addition, the terminal cleavage step is coupled to the formation of a stable integrase-DNA complex (Ellison and Brown 1994; Vink et al. 1994). Following terminal cleavage, a recessed hydroxyl is exposed that immediately follows a CA dinucleotide. More internal LTR sites are also important for integration (Balakrishnan and Jonsson 1997; Bushman and Craigie 1990; Leavitt et al. 1992). After end processing, integrase catalyzes the covalent attachment of hydroxyl groups at the viral DNA termini to protruding 5&apos; phosphoryl ends of the host cell DNA (Brown et al. 1987; Brown et al. 1989; Fujiwara and Mizuuchi 1988). The DNA cleavage and joining reactions involved in integration are shown in the figure below. Both the viral DNA 3&apos; end cleavage and strand transfer reactions are mediated by single-step transesterification chemistry as shown by stereochemical analysis of reaction products (Engelman et al. 1991). Biochemical analysis of purified integrase revealed that it requires a divalent metal - either Mg2+ or Mn2+ - to carry out reactions with model substrates, that probably mediate the reaction chemistry (Bushman and Craigie 1991; Craigie et al. 1990; Katzman et al. 1989; Sherman and Fyfe 1990; Gao et al. 2004).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway40">
+ <bp:pathwayOrder rdf:resource="#PathwayStep160" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep158" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep159" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep161" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction120" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction121" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction119" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction122" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence158" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Membrane binding and targetting of GAG proteins</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">One of the mysteries of Gag protein involvement in HIV virion assembly is how the proteins are targeted to the proper membrane for budding. Infectious retroviruses do not bud from all of the available membrane surfaces within an infected cell, but primarily from the plasma membrane, which constitutes a small proportion of the total membrane surface in most cells. In polarized cells, the sites of budding are further restricted to the basolateral membrane.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep200">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction153" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway41">
+ <bp:pathwayOrder rdf:resource="#PathwayStep170" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep171" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep169" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep167" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep168" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep165" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep166" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep163" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep164" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep172" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction131" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction132" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction130" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction128" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction129" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction126" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction127" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction124" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction125" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction123" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence163" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Synthesis and processing of ENV and VPU</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The two viral membrane proteins, Env and the accessory protein Vpu, which are encoded by the same mRNA, are translated on the rough ER. All virion components need to traffic from their point of synthesis to sites of assembly on the plasma membrane. Env is an integral membrane protein. It is inserted cotranslationally into ER membranes and then travels through the cellular secretory pathway where it is glycosylated, assembled into trimeric complexes, processed into the gp41 and gp120 subunits by the cellular protease furin.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep201">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction154" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway42">
+ <bp:pathwayOrder rdf:resource="#PathwayStep192" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep190" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep191" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep214" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep196" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep175" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep195" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction150" />
+ <bp:pathwayComponent rdf:resource="#Pathway46" />
+ <bp:pathwayComponent rdf:resource="#Pathway47" />
+ <bp:pathwayComponent rdf:resource="#Pathway51" />
+ <bp:pathwayComponent rdf:resource="#Pathway43" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction146" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction147" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence175" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Early Phase of HIV Life Cycle</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">In the  early phase   of HIV lifecycle, an active virion binds and enters a target cell mainly by specific interactions of the viral envelope proteins with host cell surface receptors.  The virion core is uncoated to expose a viral nucleoprotein complex containing RNA and viral proteins.  HIV RNA genome is reverse transcribed by the viral Reverse Transcriptase to form a cDNA copy, that gets inserted into host cell DNA.  The viral Integrase enzyme is vital to carry out the integration of the viral cDNA into the host genome.  The host DNA repair enzymes probably repair the breaks in DNA at the sites of integration.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway43">
+ <bp:pathwayOrder rdf:resource="#PathwayStep181" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep176" />
+ <bp:pathwayComponent rdf:resource="#Pathway44" />
+ <bp:pathwayComponent rdf:resource="#Pathway45" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence176" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reverse Transcription of HIV RNA</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The RNA genome of HIV-1, like that of other retroviruses, is reverse-transcribed (Baltimore 1970; Temin and Mizutani 1970) into double-stranded DNA, which is then integrated into a host cell chromosome and transcribed to yield both viral mRNAs and viral genomic RNAs. HIV-1 reverse transcription takes place in the cytosol of a newly infected host cell and involves multiple steps of RNA synthesis and degradation of the RNA strand of RNA:DNA duplexes mediated by the HIV-1 RT protein, as well as two template switches, to yield a DNA duplex colinear with the viral genomic RNA but with additional Long Terminal Repeat (LTR) sequence motifs at both ends (Telesnitsky and Goff 1997; Jonckheere et al. 2000). HIV-1 RT has two catalytic activities essential for transcription of a DNA duplex copy of the viral genomic RNA: a reverse transcriptase activity and an RNase H activity. The reverse transcriptase is primer dependent and can transcribe both RNA and DNA templates in a 5&apos;-3&apos; direction. The RNaseH acts on the RNA strand of RNA:DNA duplexes and can catalyze both endo- and exonucleolytic cleavage of such an RNA strand. RT is a heterodimer of 66 and 51 kD polypeptides, both generated by cleavage of the HIV-1 Pol gene product: p66 contains Pol amino acid residues 599-1158; p51 contains residues 599-1038. Both active sites of the HIV-1 RT enzyme are contained in the p66 polypeptide, the polymerase activity in its aminoterminal region, and the RNase in its carboxyterminus. The p51 subunit lacks an RNaseH domain, and while its polymerase domain is intact, its conformation in the p66:p51 heterodimer occludes the active site (Hughes et al. 1996; Jacobo-Molina et al. 1993; Kohlstaedt et al. 1992; Wang et al. 1994). The process of reverse transcription is outlined in the figure below: viral genomic RNA and primer tRNA are shown in black, &quot;minus&quot; strand DNA is shown in red, and &quot;plus&quot; strand DNA is shown in blue.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence91">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence90">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence93">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence92">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence95">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence94">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence97">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence96">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence99">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway51">
+ <bp:pathwayOrder rdf:resource="#PathwayStep219" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep217" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep218" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep215" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep216" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep222" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep220" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep221" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction165" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction171" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction172" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction170" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction168" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction169" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction166" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction167" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence215" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Binding and entry of HIV virion</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HIV enters cells by fusion at the cell surface, that results in a productive infection. The envelope (Env) protein of HIV mediates entry. Env is composed of a  surface subunit, gp120, and a transmembrane subunit, gp41, which assemble as heterotrimers on the virion surface.The trimeric, surface gp120 protein (SU) on the virion engages CD4 on the host cell, inducing conformational changes that promote binding to select chemokine receptors CCR5 and CXCR4. The sequential interplay between SU, CD4 and chemokine coreceptors prompts a conformational change in the transmembrane gp41.  This coiled coil protein, assembled as a trimer on the virion membrane, springs open to project three peptide fusion domains that &apos;harpoon&apos; the lipid bilayer of the target cell.  A hairpin structure (also referred to as a &quot;coiled coil bundle&quot;) is subsequently formed when the extracellular portion of gp41 collapses, and this hairpin formation promotes the fusion of virion and target cell membranes by bringing them into close proximity.  Virion and target cell membrane fusion leads to the release of HIV viral cores into the cell interior. </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence98">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway50">
+ <bp:pathwayOrder rdf:resource="#PathwayStep211" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep212" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction162" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction163" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence211" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Autointegration results in viral DNA circles</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">In this  pathway, the viral integration machinery uses a site within the viral DNA as an integration target.  This results in a covalent rearrangment of the viral DNA.  The resulting DNA forms are not substrates for integration. It has been suggested that the cellular BAF protein binds to viral DNA and diminishes autointegration by coating and condensing the viral DNA, thereby making it a less efficient integration target. </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+</rdf:RDF>

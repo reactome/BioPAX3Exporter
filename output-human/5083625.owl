@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/5083625#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective GALNT3 does not transfer GalNAc to mucins</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis1">
+ <bp:controlled rdf:resource="#BiochemicalReaction1" />
+</bp:Catalysis>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective GALNT3 causes HFTC</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The family of UDP GalNAc:polypeptide N acetylgalactosaminyltransferases (GalNAc transferases, GALNTs) carry out the addition of N acetylgalactosamine (GalNAc) on serine, threonine or possibly tyrosine residues on a wide variety of proteins, most commonly associated with mucins.  This is the initial reaction in the biosynthesis of GalNAc-type O linked oligosaccharides (Wandall et al. 1997). This reaction takes place in the Golgi apparatus (Rottger et al. 1998). There are 20 known members of the GALNT family, 15 of which have been characterised and 5 candidate members which are thought to belong to this family based on sequence similarity (Bennett et al. 2012). The GALNT-family is classified as belonging to CAZy family GT27. Defects in one of the GALNT family genes, GALNT3 (MIM:601756), can cause familial hyperphosphatemic tumoral calcinosis (HFTC; MIM:211900). HFTC is a rare autosomal recessive severe metabolic disorder characterised by the progressive deposition of calcium phosphate crystals in the skin, soft tissues and sometimes bone (Chefetz et al. 2005). The biochemical observation is hyperphosphatemia, caused by increased renal absorption of phosphate (Chefetz et al. 2005, Ichikawa et al. 2005). Some patients manifest recurrent, transient, painful swellings of the long bones with radiological evidence of periosteal reaction and cortical hyperostosis (Frishberg et al. 2005).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+ <bp:stepProcess rdf:resource="#Catalysis1" />
+</bp:PathwayStep>
+</rdf:RDF>

@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/9675136#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:PathwayStep rdf:ID="PathwayStep9">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction4" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep6">
+ <bp:stepProcess rdf:resource="#Pathway5" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep5">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction2" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep8">
+ <bp:stepProcess rdf:resource="#Pathway6" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep7">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction3" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep2">
+ <bp:stepProcess rdf:resource="#Pathway3" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#Pathway2" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep4">
+ <bp:stepProcess rdf:resource="#Pathway4" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep3">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep10">
+ <bp:stepProcess rdf:resource="#Pathway7" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep11">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction5" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep12">
+ <bp:stepProcess rdf:resource="#Pathway8" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep13">
+ <bp:stepProcess rdf:resource="#Pathway9" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep18">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction8" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep19">
+ <bp:stepProcess rdf:resource="#Pathway12" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep14">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction6" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep15">
+ <bp:stepProcess rdf:resource="#Pathway10" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep16">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction7" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep17">
+ <bp:stepProcess rdf:resource="#Pathway11" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence10">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence11">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence12">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence13">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway9">
+ <bp:pathwayOrder rdf:resource="#PathwayStep14" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction6" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence14" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Impaired BRCA2 translocation to the nucleus</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This pathway describes truncating mutations in BRCA2 that result in mutant proteins lacking nuclear localization signals (NLSs) in the C-terminal domain. These truncated BRCA2 proteins mainly localize to the cytosol, impairing the ability of BRCA2 mutants to participate in homologous recombination repair (HRR) in the nucleus. Truncating mutations are the most frequent BRCA2 mutations detected in cancer (Spain et al. 1999, Yano et al. 2000, Ma et al. 2017). </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence14">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence15">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence16">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway12">
+ <bp:pathwayOrder rdf:resource="#PathwayStep20" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction9" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence20" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Impaired BRCA2 binding to RAD51</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">A critical function of BRCA2 is to bind RAD51 and nucleate RAD51 filament formation on single-stranded DNA. BRCA2 has two regions that interact with RAD51: 8 BRC repeats encoded by exon11 (Bork et al. 1996, Wong et al. 1997) and a C-terminal RAD51 binding domain called TR2 (Sharan et al. 1997). </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence17">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway11">
+ <bp:pathwayOrder rdf:resource="#PathwayStep18" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction8" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence18" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Impaired BRCA2 binding to PALB2</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This pathway describes BRCA2 missense mutations that affect the N-terminus of BRCA2 and impair the ability of BRCA2 to bind PALB2, which is a crucial step in homologous recombination repair (HRR) of DNA double-strand breaks (DSBs) (Xia et al. 2006).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway10">
+ <bp:pathwayOrder rdf:resource="#PathwayStep16" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction7" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence16" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Impaired BRCA2 binding to SEM1 (DSS1)</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This pathway describes BRCA2 cancer mutations that affect the ability of BRCA2 to bind to SEM1 (DSS1), a small protein of 70 amino acids that regulates BRCA2 stability and its nuclear localization (reviewed in Le et al. 2021).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence18">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway3">
+ <bp:pathwayOrder rdf:resource="#PathwayStep3" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective HDR through Homologous Recombination Repair (HRR) due to PALB2 loss of BRCA1 binding function</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Mutations in the N-terminal coiled-coil domain of PALB2 (amino acids 9-44), involved in self-interaction and BRCA1 binding, impair the interaction of PALB2 with BRCA1 (Sy et al. 2009, Foo et al. 2017, Boonen et al. 2020). Phosphorylation of PALB2 by ATR on serine residue S59 promotes BRCA1-PALB2 interaction and the localization of PALB2 to DNA damage sites (Buisson et al. 2017). Mutations in the coiled-coil domain can also affect PALB2 self-interaction, recruitment to double-strand break sites, homologous recombination repair, and RAD51 foci formation (Buisson and Masson 2012).  PALB2 missense mutants that do not bind to BRCA1 can still be recruited to DNA double-strand break repair (DSBR) sites, probably through interaction with other proteins involved in DSBR, but they are unable to restore efficient gene conversion in PALB2-deficient cells and they render cells hypersensitive to the DNA damaging agent mitomycin C (Sy et al. 2009). Some variants in this region are also sensitive to PARP inhibitors (Foo et al. 2017).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence19">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway4">
+ <bp:pathwayOrder rdf:resource="#PathwayStep5" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction2" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence5" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective HDR through Homologous Recombination Repair (HRR) due to PALB2 loss of BRCA2/RAD51/RAD51C binding function</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Mutations affecting the C-terminal WD40 domain of PALB2 (amino acids 853-1186) impair its ability to interact with BRCA2, RAD51 and/or RAD51C (Erkko et al. 2007, Park et al. 2014). In addition, disruption of the WD40 domain can lead to the exposure of the nuclear export signal (NES) and cytoplasmic translocation of PALB2 (Pauty et al. 2017). Mutations affecting the C-terminal domain of PALB2 are more frequent than mutations that affect the N-terminus and have been observed, as germline mutations, in familial breast cancer and in Fanconi anemia, but somatic mutations also occur in sporadic cancers. Cells that express PALB2 mutants defective in BRCA2, RAD51 and/or RAD51C binding show reduced ability to perform DSBR via homologous recombination repair, form fewer RAD51 foci at DSBR sites, and are sensitive to DNA crosslinking agents such as mitomycin C (Erkko et al. 2007, Park et al. 2014).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep6" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep8" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep10" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep12" />
+ <bp:pathwayComponent rdf:resource="#Pathway2" />
+ <bp:pathwayComponent rdf:resource="#Pathway7" />
+ <bp:pathwayComponent rdf:resource="#Pathway8" />
+ <bp:pathwayComponent rdf:resource="#Pathway5" />
+ <bp:pathwayComponent rdf:resource="#Pathway6" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Diseases of DNA Double-Strand Break Repair</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Diseases of DNA double-strand break repair (DSBR) are caused by mutations in genes involved in repair of double strand breaks (DSBs), one of the most cytotoxic types of DNA damage. Unrepaired DSBs can lead to cell death, cellular senescence, or malignant transformation.  Germline mutations in DSBR genes are responsible for several developmental disorders associated with increased predisposition to cancer: Ataxia telangiectasia, characterized by cerebellar neurodegeneration, hematologic malignancies and immunodeficiency, is usually caused by germline mutations in the ATM gene; Nijmegen breakage syndrome 1, characterized by microcephaly, short stature and recurrent infections, is caused by germline mutations in the NBN (NBS1) gene; Seckel syndrome, characterized by short stature, skeletal deformities and microcephaly, is caused by germline mutations in the ATR or RBBP8 (CtIP) genes.  Heterozygous germline mutations in BRCA1, BRCA2 or PALB2 cause the hereditary breast and ovarian cancer syndrome (HBOC), while homozygous germline mutations in BRCA2 and PALB2 cause Fanconi anemia, a developmental disorder characterized by short stature, microcephaly, skeletal defects, bone marrow failure, and predisposition to cancer.  Somatic mutations in DSBR genes are also frequently found in sporadic cancers.  The pathways &quot;Defective DNA double strand break response due to BRCA1 loss of function&quot; describes defects in DSB response caused by loss-of-function mutations in BRCA1 which prevent the formation of the BRCA1:BARD1 complex.  The pathway &quot;Defective DNA double strand break response due to BARD1 loss of function&quot; describes defects in DSB response caused by loss-of-function mutations in BARD1, the heterodimerization partner of BRCA1, which prevent the formation of the BRCA1:BARD1 complex.  The pathway &quot;Defective homologous recombination repair (HRR) due to BRCA1 loss of function&quot; describes defects in HRR caused by loss-of-function mutations in BRCA1 that impair its association with PALB2.  The pathway &quot;Defective homologous recombination repair (HRR) due to BRCA2 loss of function&quot; describes defects in HRR caused by loss-of-function mutations in BRCA2 that impair either it association with SEM1 (DSS1), its translocation to the nucleus, its binding to RAD51, or its binding to PALB2.  The pathway &quot;Defective homologous recombination repair (HRR) due to PALB2 loss of function&quot; describes defects in HRR caused by loss-of-function mutations in PALB2 that impair its association with BRCA2/RAD51/RAD51C.  For review, please refer to McKinnon and Caldecott 2007, Keijzers et al. 2017, and Jachimowicz et al. 2019. </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway2">
+ <bp:pathwayOrder rdf:resource="#PathwayStep2" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep4" />
+ <bp:pathwayComponent rdf:resource="#Pathway3" />
+ <bp:pathwayComponent rdf:resource="#Pathway4" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective homologous recombination repair (HRR) due to PALB2 loss of function</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Biallelic loss-of-function mutations in  PALB2  results in Fanconi anemia subtype N (FA-N), which is phenotypically very similar to Fanconi anemia subtype D1, caused by biallelic loss-of-function of  BRCA2  (Reid et al. 2007). FA-D1 and FA-N are characterized by developmental abnormalities, bone marrow failure and childhood cancer susceptibility, especially childhood solid tumors, such as Wilms tumor and medulloblastoma. Monoallelic  PALB2  loss-of-function is an underlying cause of hereditary breast cancer in particular, but inactivating  PALB2  mutations are also to a lesser extent found in some other cancer types, including pancreatic cancer (Erkko et al. 2007, Erkko et al. 2008, Antoniou et al. 2014, Yang et al. 2020). Germline  PALB2  mutations are somewhat less frequent than those occurring in  BRCA1  and  BRCA2 , but cause a comparably high risk of developing breast cancer. Therefore,  PALB2  is a high-risk breast cancer predisposing gene (Nepomuceno et al. 2021).  PALB2 interacts with both BRCA1 and BRCA2, and serves as a bridge that connects BRCA2 with BRCA1 at sites of DNA double-strand break repair (DSBR). PALB2 also interacts directly with DNA and takes part in the regulation of RAD51-mediated homologous recombination (Buisson et al. 2010; Dray et al. 2010). PALB2 loss-of-function mutations can affect its interaction with BRCA1 when they affect the N-terminal coiled-coil domain that is necessary for BRCA1 binding (Sy et al. 2009, Foo et al. 2017). Mutations in the coiled-coil domain can also affect PALB2 self-interaction, recruitment to double-strand break sites, homologous recombination repair and RAD51 foci formation (Buisson and Masson 2012). PALB2 missense mutants that do not bind to BRCA1 can still be recruited to DSBR sites, probably through interaction with other proteins involved in DSBR, but they are unable to restore efficient gene conversion in PALB2-deficient cells and they render cells hypersensitive to the DNA damaging agent mitomycin C (Sy et al. 2009), with some variants also presenting sensitivity to PARP inhibitors (Foo et al. 2017).  Mutations evaluated so far in the central region of PALB2, which contains the ChAM motif and the MRG15-binding region, have shown no functional impact on the protein.  Mutations affecting the C-terminal WD40 domain of PALB2 impair its ability to interact with BRCA2, RAD51 and/or RAD51C (Erkko et al. 2007, Park et al. 2014, Simhadri et al. 2019). In addition, disruption of the WD40 domain can lead to the exposure of a nuclear export signal (NES), leading to cytoplasmic translocation of PALB2 (Pauty et al. 2017). Mutations affecting the C-terminal domain of PALB2 are more frequent than mutations that affect the N-terminus and have been observed, as germline mutations, in familial breast cancer and in Fanconi anemia, but somatic mutations also occur in sporadic cancers. Cells that express PALB2 mutants defective in BRCA2, RAD51 and/or RAD51C binding show reduced ability to perform DSBR via homologous recombination repair, form fewer RAD51 foci at DSBR sites, and are sensitive to DNA crosslinking agents such as mitomycin C (Erkko et al. 2007, Parker et al. 2014).  For review, please refer to Tischkowitz and Xia 2010, Pauty et al. 2014, Park et al. 2014, Nepomuceno et al. 2017, Ducy et al. 2019, Wu et al. 2020, Nepomuceno et al. 2021.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway7">
+ <bp:pathwayOrder rdf:resource="#PathwayStep11" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction5" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence11" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective DNA double strand break response due to BRCA1 loss of function</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Germline mutations in the BRCA1 or BRCA2 tumor suppressor genes are implicated in up to 10% of breast cancers overall and 40% of familial breast cancers. Carriers of either BRCA1 or BRCA2 germline mutation are predisposed to hereditary breast and ovarian cancer (the HBOC syndrome), which is inherited in an autosomal dominant manner. Besides early onset breast and ovarian cancer, HBOC patients also have a modestly increased risk of developing other tumor types, including pancreatic, stomach, laryngeal, fallopian tube, and prostate cancer. The BRCA1 gene encodes a large protein of 1863 amino acids, which contains a RING finger domain at the N-terminus and two BRCT repeats at the C-terminus. The RING domain is responsible for heterodimerization with BARD1, which increases stability of BRCA1 and activates its E3 ubiquitin ligase activity. BRCA1 plays an important role in homology-directed repair of DNA double-strand breaks (DSBs). Brca1-null knockout mice die early during embryonic development and cells depleted of BRCA1 show genomic instability (reviewed by Roy et al. 2011). Cancer mutations that affect the RING domain of BRCA1 frequently result in the inability of BRCA1 to bind to BARD1 and participate in DNA DSB response (Wu et al. 1996, Ransburgh et al. 2010). Some mutations in the RING domain of BRCA1 were shown to affect the ubiquitin ligase activity of BRCA1 (Brzovic et al. 2001), but it is uncertain if the ubiquitin ligase activity is essential for the tumor suppressor role of BRCA1 (Shakya et al. 2011).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway8">
+ <bp:pathwayOrder rdf:resource="#PathwayStep19" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep15" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep17" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep13" />
+ <bp:pathwayComponent rdf:resource="#Pathway9" />
+ <bp:pathwayComponent rdf:resource="#Pathway12" />
+ <bp:pathwayComponent rdf:resource="#Pathway11" />
+ <bp:pathwayComponent rdf:resource="#Pathway10" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence13" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective homologous recombination repair (HRR) due to BRCA2 loss of function</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">BRCA2 (FANCD1) is a tumor suppressor gene located on chromosomal arm 13q. BRCA2 protein is a mediator of the core mechanism of homologous recombination repair (HRR), essential for the recruitment of RAD51 recombinase to resected DNA double-strand breaks (DSBs). Monoallelic pathogenic germline mutations in BRCA2 are one of the underlying causes of the hereditary breast and ovarian cancer (HBOC) syndrome, with carriers having close to 50% lifetime risk for development of breast cancer and about 15% lifetime risk for development of ovarian cancer. In addition, BRCA2 germline mutation carriers are predisposed to cancers of the fallopian tube, pancreas, stomach, larynx and prostate. Biallelic germline mutations in BRCA2 cause Fanconi anemia subtype characterized by brain and soft tissue tumors, including medulloblastoma and Wilms tumor. BRCA2-deficient cells are defective in the formation of RAD51 foci upon treatment with DSB-inducing DNA damaging agents and accumulate chromatid breaks and radial chromosomes.  Besides its crucial role in HRR, BRCA2 is also implicated in protection of replication forks, centrosome duplication, spindle assembly checkpoint and cytokinesis. Recently published studies show the involvement of BRCA2 in the turnover of R-loops (hybrids between RNA and single strand DNA that are generated as intermediates of gene transcription). Unscheduled accumulated R-loops may be processed into DSBs, leading to genomic instability. Finally, BRCA2 is involved in pathway choice of DSB repair by inhibiting DNA polymerase theta-mediated end-joining (TMEJ) until M-phase (reviewed in Petropoulos and Halazonetis 2021, and Llorens-Agost et al. 2021). TMEJ is the predominant pathway for microhomology-mediated end joining MMEJ/alternative-nonhomologous end joining (alt-NHEJ, a-EJ) in mammals (reviewed in Ramsden et al. 2022).  BRCA2 haploinsufficiency is frequently observed in cancers, with close to 50% of BRCA2-mutant breast cancers retaining one wild type allele, suggesting that in some tissues at least heterozygous loss of BRCA2 function is sufficient for carcinogenesis. Promoter hypermethylation is not an obvious contributor to BRCA2 gene inactivation and no pathogenic mutations in the promoter region have been identified so far.  For review, please refer to Roy et al. 2011, Nalepa and Clapp 2018, Santana dos Santos et al. 2018, Venkitaraman 2019, Le et al. 2021, and Llorens-Agost et al. 2021. </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway5">
+ <bp:pathwayOrder rdf:resource="#PathwayStep7" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction3" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence7" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective DNA double strand break response due to BARD1 loss of function</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Although germline mutations of BARD1 are implicated in some cases of hereditary breast and ovarian cancer (HBOC), they occur less frequently that those of the BRCA1 or BRCA2 genes (De Brakeleer et al. 2010, Alenezi et al. 2020). From animal studies, it is known that the loss of BARD1 function results in a phenotype very similar to that caused by loss of BRCA1 function, characterized by embryonic lethality (McCarthy et al. 2003), genomic instability (McCarthy et al. 2003) and defects in homology-directed repair (Lee et al. 2015). A small number of clinically-relevant BARD1 missense mutants that have been functionally characterized and shown to be impaired in BRCA1 binding (Xia et al. 2003, Lee et al. 2015) are annotated in this pathway.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway6">
+ <bp:pathwayOrder rdf:resource="#PathwayStep9" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction4" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence9" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective homologous recombination repair (HRR) due to BRCA1 loss of function</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">In addition to its role in DNA double-strand break (DSB) signaling, BRCA1 plays an important role in homologous recombination repair (HRR) of DSBs by directly promoting recruitment of PALB2 and indirectly BRCA2 to DSB repair sites. In addition, BRCA1 increases the speed and processivity of DNA end resection which consists of 5&#8242;&#8211;3&#8242; nucleolytic degradation of DSBs (Cruz-Garcia et al. 2014). The direct BRCA1 interaction with PALB2 helps to fine-tune the localization of BRCA2 and RAD51 at DSBs (Zhang et al. 2009, Sy et al. 2009). PALB2 simultaneously interacts with RAD51, BRCA2 and RAD51AP1 (Modesti et al. 2007, Wiese et al. 2007, Buisson et al. 2010, Dray et al. 2010). PALB2 and RAD51AP1 synergistically stimulate RAD51 recombinase activity, thus enhancing RAD51-mediated strand exchange (branch migration) and promoting the formation of D-loop structures (synaptic complex assembly). A D-loop structure is formed when complementary duplex DNA (sister chromatid arm) is progressively invaded by the RAD51 nucleoprotein filament, with base pairing of the invading ssDNA and the complementary sister chromatid DNA strand (Sung et al. 2003).  The N-terminal region of BRCA1 contains the RING domain (residues 7-98), required for the heterodimerization of BRCA1 with BARD1. BRCA1:BARD1 heterodimer has E3 ubiquitin ligase activity which is important for DNA repair (Drost et al. 2011). Several missense mutations within the RING domain have been linked to increased risks of developing breast/ovarian cancers (Bouwman et al. 2013; Starita et al. 2018). BRCA1 mutant proteins impaired in BARD1 binding are annotated in the pathway &quot;Defective DNA double strand break response due to BRCA1 loss of function&quot;.  The C-terminal region of BRCA1 which contains two coiled coil domains (residues 1397-1424) and two BRCT domains (residues 1642-1736 for BRCT 1; residues 1756-1855 for BRCT 2) is involved in PALB2 binding, with the second coiled coil domain being essential (Sy et al. 2009). Several cancer-associated BRCA1 missense mutants that affect the C-terminal region were shown to have reduced ability to bind PALB2 (Sy et al. 2009). In addition, many nonsense and frameshift mutations in BRCA1 reported in cancer result in truncated proteins that lack the PALB2-binding domain.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep20">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction9" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence20">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence21">
+</bp:Evidence>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence4" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective D-loop formation mediated by PALB2, BRCA2 and RAD51 due to loss-of-function of PALB2 in BRCA1 binding</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
+ <bp:evidence rdf:resource="#Evidence6" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective D-loop formation mediated by PALB2, BRCA2 and RAD51 due to loss-of-function of PALB2 in binding to BRCA2/RAD51/RAD51C</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction3">
+ <bp:evidence rdf:resource="#Evidence8" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective BARD1 does not bind BRCA1</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction4">
+ <bp:evidence rdf:resource="#Evidence10" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective D-loop formation mediated by PALB2, BRCA2 and RAD51 due to loss-of-function of BRCA1 in PALB2 binding</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction5">
+ <bp:evidence rdf:resource="#Evidence12" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Some pathogenic BRCA1 mutants do not bind BARD1</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction6">
+ <bp:evidence rdf:resource="#Evidence15" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective BRCA2 does not translocate to the nucleus</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction7">
+ <bp:evidence rdf:resource="#Evidence17" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">BRCA2 mutants do not bind SEM1 (DSS1)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction8">
+ <bp:evidence rdf:resource="#Evidence19" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective recruitment of BRCA2 and RAD51 due to loss of BRCA2 function in PALB2 binding</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction9">
+ <bp:evidence rdf:resource="#Evidence21" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">BRCA2 mutants with BRC defects or a defect in the C-terminal RAD51 binding site do not bind RAD51</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:Evidence rdf:ID="Evidence8">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence9">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence6">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence7">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence4">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence5">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence3">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+</rdf:RDF>

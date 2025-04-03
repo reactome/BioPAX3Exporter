@@ -1,0 +1,1657 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/2559583#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction21">
+ <bp:evidence rdf:resource="#Evidence25" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Phosphorylated ETS2 binds p16INK4A promoter</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis19">
+ <bp:controlled rdf:resource="#BiochemicalReaction63" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction20">
+ <bp:evidence rdf:resource="#Evidence24" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p14ARF forms a ternary complex with MDM2 and TP53</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction23">
+ <bp:evidence rdf:resource="#Evidence27" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">E2F1/E2F2/E2F3 and SP1 stimulate transcription of p14ARF mRNA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction22">
+ <bp:evidence rdf:resource="#Evidence26" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p14ARF sequesters MDM2</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction25">
+ <bp:evidence rdf:resource="#Evidence29" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Translation of p14ARF mRNA is inhibited by miR-24</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis15">
+ <bp:controlled rdf:resource="#BiochemicalReaction53" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction24">
+ <bp:evidence rdf:resource="#Evidence28" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Phosphorylated ETS1 binds p16INK4A promoter</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis16">
+ <bp:controlled rdf:resource="#BiochemicalReaction55" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction27">
+ <bp:evidence rdf:resource="#Evidence31" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ERF binds ETS2 promoter</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis17">
+ <bp:controlled rdf:resource="#BiochemicalReaction56" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction26">
+ <bp:evidence rdf:resource="#Evidence30" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MDM2 ubiquitinates TP53</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis18">
+ <bp:controlled rdf:resource="#BiochemicalReaction61" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep71">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction66" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep70">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction65" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction18">
+ <bp:evidence rdf:resource="#Evidence21" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ATM phosphorylates TP53 at S15</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep77">
+ <bp:stepProcess rdf:resource="#Catalysis22" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction72" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis22">
+ <bp:controlled rdf:resource="#BiochemicalReaction72" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction17">
+ <bp:evidence rdf:resource="#Evidence20" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Inactivation of Cyclin A:Cdk2 complexes by p27/p21</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep76">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction71" />
+ <bp:stepProcess rdf:resource="#Catalysis21" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis23">
+ <bp:controlled rdf:resource="#BiochemicalReaction73" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep79">
+ <bp:stepProcess rdf:resource="#Catalysis24" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction74" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis24">
+ <bp:controlled rdf:resource="#BiochemicalReaction74" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction19">
+ <bp:evidence rdf:resource="#Evidence23" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Association of INK4 family proteins with CDK4/6</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep78">
+ <bp:stepProcess rdf:resource="#Catalysis23" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction73" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis25">
+ <bp:controlled rdf:resource="#BiochemicalReaction75" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep73">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction68" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep72">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction67" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis20">
+ <bp:controlled rdf:resource="#BiochemicalReaction69" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep75">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction70" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep74">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction69" />
+ <bp:stepProcess rdf:resource="#Catalysis20" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis21">
+ <bp:controlled rdf:resource="#BiochemicalReaction71" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction10">
+ <bp:evidence rdf:resource="#Evidence13" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MRN activates ATM</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction12">
+ <bp:evidence rdf:resource="#Evidence15" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Telomere shortening during replicative exhaustion</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction11">
+ <bp:evidence rdf:resource="#Evidence14" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MRN complex bound to shortened telomeres recruits ATM</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction14">
+ <bp:evidence rdf:resource="#Evidence17" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Transcriptional activation of CDKN1A by TP53 is inhibited by EP400</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis26">
+ <bp:controlled rdf:resource="#BiochemicalReaction76" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction13">
+ <bp:evidence rdf:resource="#Evidence16" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MRN complex bound to DNA ends recruits ATM</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis27">
+ <bp:controlled rdf:resource="#BiochemicalReaction77" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction16">
+ <bp:evidence rdf:resource="#Evidence19" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MRN bound to shortened telomeres activates ATM</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis28">
+ <bp:controlled rdf:resource="#BiochemicalReaction83" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction15">
+ <bp:evidence rdf:resource="#Evidence18" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Inactivation of Cyclin E:Cdk2 complexes by p27/p21</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis29">
+ <bp:controlled rdf:resource="#BiochemicalReaction85" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep80">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction75" />
+ <bp:stepProcess rdf:resource="#Catalysis25" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep82">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction77" />
+ <bp:stepProcess rdf:resource="#Catalysis27" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep81">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction76" />
+ <bp:stepProcess rdf:resource="#Catalysis26" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep88">
+ <bp:stepProcess rdf:resource="#Catalysis28" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction83" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep87">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction82" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep89">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction84" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep84">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction79" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep83">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction78" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis30">
+ <bp:controlled rdf:resource="#BiochemicalReaction86" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep86">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction81" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis31">
+ <bp:controlled rdf:resource="#BiochemicalReaction89" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep85">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction80" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction43">
+ <bp:evidence rdf:resource="#Evidence48" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">AP-1 transcription factor binds IL1A promoter</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction42">
+ <bp:evidence rdf:resource="#Evidence47" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Activated CEBPB and NFKB complex bind IL6 promoter</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction45">
+ <bp:evidence rdf:resource="#Evidence50" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Activated STAT3 positively regulates CEBPB transcription</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction44">
+ <bp:evidence rdf:resource="#Evidence49" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Activated CEBPB and NFKB complex bind IL8 promoter</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction47">
+ <bp:evidence rdf:resource="#Evidence52" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MAPK3 (ERK1) and MAPK1 (ERK2) phosphorylate CEBPB</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep59">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction55" />
+ <bp:stepProcess rdf:resource="#Catalysis16" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction46">
+ <bp:evidence rdf:resource="#Evidence51" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RPS6KA1/2/3 phosphorylates CEBPB on S321</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep58">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction54" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction49">
+ <bp:evidence rdf:resource="#Evidence54" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">AP-1 stimulates transcription of IGFBP7</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction48">
+ <bp:evidence rdf:resource="#Evidence53" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Regulation of IL6 transcription</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction41">
+ <bp:evidence rdf:resource="#Evidence46" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CEBPB homodimerization</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction40">
+ <bp:evidence rdf:resource="#Evidence45" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">AP-1 stimulates IL1A transcription</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep55">
+ <bp:stepProcess rdf:resource="#Catalysis13" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction51" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction39">
+ <bp:evidence rdf:resource="#Evidence44" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Association of INK4 family proteins with CDK4/6</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep54">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction50" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep57">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction53" />
+ <bp:stepProcess rdf:resource="#Catalysis15" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep56">
+ <bp:stepProcess rdf:resource="#Catalysis14" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction52" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep51">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction47" />
+ <bp:stepProcess rdf:resource="#Catalysis12" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep50">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction46" />
+ <bp:stepProcess rdf:resource="#Catalysis11" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep53">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction49" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep52">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction48" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction32">
+ <bp:evidence rdf:resource="#Evidence36" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Phosphorylated ERF translocates to the cytosol</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction31">
+ <bp:evidence rdf:resource="#Evidence35" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">miR-24 binds p16INK4A and p14ARF mRNAs</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction34">
+ <bp:evidence rdf:resource="#Evidence38" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">E2F1, E2F2, or E2F3 and SP1 bind p14ARF promoter</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction33">
+ <bp:evidence rdf:resource="#Evidence37" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Activated ERKs phosphorylate ERF</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction36">
+ <bp:evidence rdf:resource="#Evidence40" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p14ARF translocates to the nucleus</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction35">
+ <bp:evidence rdf:resource="#Evidence39" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p-T38-ETS1/p-T72-ETS2 stimulates transcription of p16INK4A mRNA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep69">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction64" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction38">
+ <bp:evidence rdf:resource="#Evidence43" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Stimulation of IL8 transcription in senescent cells</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction37">
+ <bp:evidence rdf:resource="#Evidence41" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ID1 sequesters ETS2</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction30">
+ <bp:evidence rdf:resource="#Evidence34" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MAPKs phosphorylate ETS1 and ETS2</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep60">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction56" />
+ <bp:stepProcess rdf:resource="#Catalysis17" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep101">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction96" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep100">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction95" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep103">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction98" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep102">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction97" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction29">
+ <bp:evidence rdf:resource="#Evidence33" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ERF inhibits ETS2 expression</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis11">
+ <bp:controlled rdf:resource="#BiochemicalReaction46" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep66">
+ <bp:stepProcess rdf:resource="#Catalysis18" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction61" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction28">
+ <bp:evidence rdf:resource="#Evidence32" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Translation of p16INK4A mRNA is inhibited by miR-24</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis12">
+ <bp:controlled rdf:resource="#BiochemicalReaction47" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep65">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction60" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep104">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction99" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis13">
+ <bp:controlled rdf:resource="#BiochemicalReaction51" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep68">
+ <bp:stepProcess rdf:resource="#Catalysis19" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction63" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis14">
+ <bp:controlled rdf:resource="#BiochemicalReaction52" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep67">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction62" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep62">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction58" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep61">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction57" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep64">
+ <bp:stepProcess rdf:resource="#Pathway6" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis10">
+ <bp:controlled rdf:resource="#BiochemicalReaction33" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep63">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction59" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction65">
+ <bp:evidence rdf:resource="#Evidence71" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of PRC2-EZH2 complex</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction64">
+ <bp:evidence rdf:resource="#Evidence70" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">E2F1/2/3:DP1/2 binds EED gene promoter</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction67">
+ <bp:evidence rdf:resource="#Evidence73" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">miR-24 binds p16INK4A and p14ARF mRNAs</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction66">
+ <bp:evidence rdf:resource="#Evidence72" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">E2F1/2/3:DP1/2 binds SUZ12 gene promoter</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction69">
+ <bp:evidence rdf:resource="#Evidence75" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MAP3K5 (ASK1) phosphorylates MAP2K4 (SEK1)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction68">
+ <bp:evidence rdf:resource="#Evidence74" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PRC1.4 complex binds H3K27Me3 nucleosomes on CDKN2A promoter</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence21">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence20">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction61">
+ <bp:evidence rdf:resource="#Evidence67" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MAP3K5 phosphorylates MKK3 and MKK6</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction60">
+ <bp:evidence rdf:resource="#Evidence66" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Association of INK4 family proteins with CDK4/6</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction63">
+ <bp:evidence rdf:resource="#Evidence69" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Activated JNKs phosphorylate c-JUN</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction62">
+ <bp:evidence rdf:resource="#Evidence68" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ROS oxidize thioredoxin and activate MAP3K5</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence16">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence15">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence18">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence17">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence12">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence11">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence14">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence13">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence19">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction54">
+ <bp:evidence rdf:resource="#Evidence59" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">AP-1 transcription factor binds IGFBP7 promoter</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction53">
+ <bp:evidence rdf:resource="#Evidence58" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">EHMT1:EHMT2 methylates IL6 promoter</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction56">
+ <bp:evidence rdf:resource="#Evidence61" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ERK1/2/5 activate RSK1/2/3</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction55">
+ <bp:evidence rdf:resource="#Evidence60" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CDKN1A (p21) prevents phosphorylation of Cdh1 by Cyclin A:Cdk2</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction58">
+ <bp:evidence rdf:resource="#Evidence63" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CDKN1A (p21) prevents association of Cyclin A:Cdk2 with Cdh1</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction57">
+ <bp:evidence rdf:resource="#Evidence62" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Activated CEBPB binds CDKN2B promoter</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction59">
+ <bp:evidence rdf:resource="#Evidence64" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Activated CEBPB stimulates transcription of CDKN2B</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence30">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence32">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence31">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction50">
+ <bp:evidence rdf:resource="#Evidence55" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Cdh1:APC/C complex binds EHMT1:EHMT2</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction52">
+ <bp:evidence rdf:resource="#Evidence57" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">EHMT1:EHMT2 methylates IL8 promoter</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction51">
+ <bp:evidence rdf:resource="#Evidence56" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Cdh1:APC/C ubiquitinates EHMT1 and EHMT2</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence27">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence26">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence29">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence28">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence23">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence22">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence25">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence24">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway4">
+ <bp:pathwayOrder rdf:resource="#PathwayStep29" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep26" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep37" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep25" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep36" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep28" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep39" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep27" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep38" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep22" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep33" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep32" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep24" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep35" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep23" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep34" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep40" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep31" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep30" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction21" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction32" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction20" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction31" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction23" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction34" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction22" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction33" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction25" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction36" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction24" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction35" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction27" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction26" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction37" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction30" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction29" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction28" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction19" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence22" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Oncogene Induced Senescence</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Oncogene-induced senescence (OIS) is triggered by high level of RAS/RAF/MAPK signaling that can be caused, for example, by oncogenic mutations in RAS or RAF proteins, or by oncogenic mutations in growth factor receptors, such as EGFR, that act upstream of RAS/RAF/MAPK cascade. Oncogene-induced senescence can also be triggered by high transcriptional activity of E2F1, E2F2 or E2F3 which can be caused, for example, by the loss-of-function of RB1 tumor suppressor.  Oncogenic signals trigger transcription of CDKN2A locus tumor suppressor genes: p16INK4A and p14ARF. p16INK4A and p14ARF share exons 2 and 3, but are expressed from different promoters and use different reading frames (Quelle et al. 1995). Therefore, while their mRNAs are homologous and are both translationally inhibited by miR-24 microRNA (Lal et al. 2008, To et al. 2012), they share no similarity at the amino acid sequence level and perform distinct functions in the cell. p16INK4A acts as the inhibitor of cyclin-dependent kinases CDK4 and CDK6 which phosphorylate and inhibit RB1 protein thereby promoting G1 to S transition and cell cycle progression (Serrano et al. 1993). Increased p16INK4A level leads to hypophosphorylation of RB1, allowing RB1 to inhibit transcription of E2F1, E2F2 and E2F3-target genes that are needed for cell cycle progression, which results in cell cycle arrest in G1 phase. p14-ARF binds and destabilizes MDM2 ubiquitin ligase (Zhang et al. 1998), responsible for ubiquitination and degradation of TP53 (p53) tumor suppressor protein (Wu et al. 1993, Fuchs et al. 1998, Fang et al. 2000). Therefore, increased p14-ARF level leads to increased level of TP53 and increased expression of TP53 target genes, such as p21, which triggers p53-mediated cell cycle arrest and, depending on other factors, may also lead to p53-mediated apoptosis. CDKN2B locus, which encodes an inhibitor of CDK4 and CDK6, p15INK4B, is located in the vicinity of CDKN2A locus, at the chromosome band 9p21. p15INK4B, together with p16INK4A, contributes to senescence of human T-lymphocytes (Erickson et al. 1998) and mouse fibroblasts (Malumbres et al. 2000). SMAD3, activated by TGF-beta-1 signaling, controls senescence in the mouse multistage carcinogenesis model through regulation of MYC and p15INK4B gene expression (Vijayachandra et al. 2003). TGF-beta-induced p15INK4B expression is also important for the senescence of hepatocellular carcinoma cell lines (Senturk et al. 2010). MAP kinases MAPK1 (ERK2) and MAPK3 (ERK1), which are activated by RAS signaling, phosphorylate ETS1 and ETS2 transcription factors in the nucleus (Yang et al. 1996, Seidel et al. 2002, Foulds et al. 2004, Nelson et al. 2010). Phosphorylated ETS1 and ETS2 are able to bind RAS response elements (RREs) in the CDKN2A locus and stimulate p16INK4A transcription (Ohtani et al. 2004). At the same time, activated ERKs (MAPK1 i.e. ERK2 and MAPK3 i.e. ERK1) phosphorylate ERF, the repressor of ETS2 transcription, which leads to translocation of ERF to the cytosol and increased transcription of ETS2 (Sgouras et al. 1995, Le Gallic et al. 2004). ETS2 can be sequestered and inhibited by binding to ID1, resulting in inhibition of p16INK4A transcription (Ohtani et al. 2004).  Transcription of p14ARF is stimulated by binding of E2F transcription factors (E2F1, E2F2 or E2F3) in complex with SP1 to p14ARF promoter (Parisi et al. 2002).  Oncogenic RAS signaling affects mitochondrial metabolism through an unknown mechanism, leading to increased generation of reactive oxygen species (ROS), which triggers oxidative stress induced senescence pathway. In addition, increased rate of cell division that is one of the consequences of oncogenic signaling, leads to telomere shortening which acts as another senescence trigger. While OIS has been studied to considerable detail in cultured cells, establishment of in vivo role of OIS has been difficult due to lack of specific biomarkers and its interconnectedness with other senescence pathways (Baek and Ryeom 2017, reviewed in Sharpless and Sherr 2015). </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction87">
+ <bp:evidence rdf:resource="#Evidence93" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Activated human JNKs migrate to nucleoplasm</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway3">
+ <bp:pathwayOrder rdf:resource="#PathwayStep3" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep4" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction2" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of Senescence-Associated Heterochromatin Foci (SAHF)</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The process of DNA damage/telomere stress induced senescence culminates in the formation of senescence associated heterochromatin foci (SAHF). These foci represent facultative heterochromatin that is formed in senescent cells. They contribute to the repression of proliferation promoting genes and play an important role in the permanent cell cycle exit that characterizes senescence (Narita et al. 2003 and 2006). SAHF appear as compacted, punctate DAPI stained foci of DNA. Each chromosome is condensed into a single SAH focus, with telomeric and centromeric chromatin located predominantly at its periphery (Funayama et al. 2006, Zhang et al. 2007). An evolutionarily conserved protein complex of HIRA, ASF1A, UBN1 and CABIN1 plays a crucial role in the SAHF formation. As cells approach senescence, HIRA, ASF1A, UBN1 and CABIN1 accumulate at the PML bodies (Zhang et al. 2005, Banumathy et al. 2009, Rai et al. 2011). PML bodies are punctate nuclear structures that contain PML protein and numerous other proteins and are proposed to be the sites of assembly of macromolecular regulatory complexes and protein modification (Fogal et al. 2000, Guo et al. 2000, Pearson et al. 2000). Recruitment of HIRA to PML bodies coincides with altered chromatin structure and deposition of macroH2A histone H2A variant onto chromatin. As cells become senescent, HIRA, ASF1A, UBN1 and CABIN1 relocate from PML bodies to SAHF. HIRA accumulation at PML bodies is RB1  and TP53  independent, but may require phosphorylation of HIRA serine S697 by GSK3B (Ye, Zerlanko, Kennedy et al. 2007). SAHF formation itself, however, requires functional RB1 and TP53 pathways (Ye, Zerlanko, Zhang et al. 2007). SAHF contain H3K9Me mark, characteristic of trancriptionally silent chromatin, and HP1, marcoH2A histone H2A variant and HMGA proteins are also components of SAHF (Narita et al. 2006), besides the HIRA:ASF1A:UBN1:CABIN1 complex. A yet unidentified H3K9Me histone methyltransferase may be recruited to SAHF by UBN1 (Banumathy et al. 2009). One of the functions of the HIRA:ASF1A:UBN1:CABIN1 complex is to deposit histone H3.3. variant to chromatin, which influences gene expression (Zhang et al. 2007, Rai et al. 2011). Further studies are needed to fully elucidate the mechanism of SAHF formation and mechanism by which SAHF promote cell senescence.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction86">
+ <bp:evidence rdf:resource="#Evidence92" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MDM2 ubiquitinates TP53</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway2">
+ <bp:pathwayOrder rdf:resource="#PathwayStep19" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep18" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep15" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep2" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep14" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep17" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep16" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep5" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep6" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep7" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep8" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep9" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep11" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep10" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep13" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep12" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep20" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction10" />
+ <bp:pathwayComponent rdf:resource="#Pathway3" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction12" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction11" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction14" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction13" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction16" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction15" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction5" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction4" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction3" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction9" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction8" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction7" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction6" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction18" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction17" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">DNA Damage/Telomere Stress Induced Senescence</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactive oxygen species (ROS), whose concentration increases in senescent cells due to oncogenic RAS-induced mitochondrial dysfunction (Moiseeva et al. 2009) or due to environmental stress, cause DNA damage in the form of double strand breaks (DSBs) (Yu and Anderson 1997). In addition, persistent cell division fueled by oncogenic signaling leads to replicative exhaustion, manifested in critically short telomeres (Harley et al. 1990, Hastie et al. 1990). Shortened telomeres are no longer able to bind the protective shelterin complex (Smogorzewska et al. 2000, de Lange 2005) and are recognized as damaged DNA.  The evolutionarily conserved MRN complex, consisting of MRE11A (MRE11), RAD50 and NBN (NBS1) subunits, binds DSBs (Lee and Paull 2005) and shortened telomeres that are no longer protected by shelterin (Wu et al. 2007). Once bound to the DNA, the MRN complex recruits and activates ATM kinase (Lee and Paull 2005, Wu et al. 2007), leading to phosphorylation of ATM targets, including TP53 (p53) (Banin et al. 1998, Canman et al. 1998, Khanna et al. 1998). TP53, phosphorylated on serine S15 by ATM, binds the CDKN1A (also known as p21, CIP1 or WAF1) promoter and induces CDKN1A transcription (El-Deiry et al. 1993, Karlseder et al. 1999). CDKN1A inhibits the activity of CDK2, leading to G1/S cell cycle arrest (Harper et al. 1993, El-Deiry et al. 1993). SMURF2 is upregulated in response to telomere attrition in human fibroblasts and induces senecscent phenotype through RB1 and TP53, independently of its role in TGF-beta-1 signaling (Zhang and Cohen 2004). The exact mechanism of SMURF2 involvement is senescence has not been elucidated.  </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction89">
+ <bp:evidence rdf:resource="#Evidence95" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">KDM6B demethylates H3K27me3 on p16INK4A promoter</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep21" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep64" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep41" />
+ <bp:pathwayComponent rdf:resource="#Pathway4" />
+ <bp:pathwayComponent rdf:resource="#Pathway2" />
+ <bp:pathwayComponent rdf:resource="#Pathway6" />
+ <bp:pathwayComponent rdf:resource="#Pathway5" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Cellular Senescence</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Cellular senescence involves irreversible growth arrest accompanied by phenotypic changes such as enlarged morphology, reorganization of chromatin through formation of senescence-associated heterochromatic foci (SAHF), and changes in gene expression that result in secretion of a number of proteins that alter local tissue environment, known as senescence-associated secretory phenotype (SASP).  Senescence is considered to be a cancer protective mechanism and is also involved in aging. Senescent cells accumulate in aged tissues (reviewed by Campisi 1997 and Lopez-Otin 2013), which may be due to an increased senescence rate and/or decrease in the rate of clearance of senescent cells. In a mouse model of accelerated aging, clearance of senescent cells delays the onset of age-related phenotypes (Baker et al. 2011). Cellular senescence can be triggered by the aberrant activation of oncogenes or loss-of-function of tumor suppressor genes, and this type of senescence is known as the oncogene-induced senescence, with RAS signaling-induced senescence being the best studied. Oxidative stress, which may or may not be caused by oncogenic RAS signaling, can also trigger senescence. Finally,  the cellular senescence program can be initiated by DNA damage, which may be caused by reactive oxygen species (ROS) during oxidative stress, and by telomere shortening caused by replicative exhaustion which may be due to oncogenic signaling. The senescent phenotype was first reported by Hayflick and Moorhead in 1961, when they proposed replicative senescence as a mechanism responsible for the cessation of mitotic activity and morphological changes that occur in human somatic diploid cell strains as a consequence of serial passaging, preventing the continuous culture of untransformed cells-the Hayflick limit (Hayflick and Moorhead 1961).  Secreted proteins that constitute the senescence-associated secretory phenotype (SASP), also known as the senescence messaging secretome (SMS), include inflammatory and immune-modulatory cytokines, growth factors, shed cell surface molecules and survival factors. The SASP profile is not significantly affected by the type of senescence trigger or the cell type (Coppe et al. 2008), but the persistent DNA damage may be a deciding SASP initiator (Rodier et al. 2009). SASP components function in an autocrine manner, reinforcing the senescent phenotype (Kuilman et al. 2008, Acosta et al. 2008), and in the paracrine manner, where they may promote epithelial-to-mesenchymal transition (EMT) and malignancy in the nearby premalignant or malignant cells (Coppe et al. 2008). Senescent cells may remain viable for years, such as senescent melanocytes of moles and nevi, or they can be removed by phagocytic cells. The standard marker for immunohistochemical detection of senescent cells is senescence-associated beta-galactosidase (SA-beta-Gal), a lysosomal enzyme that is not required for senescence. For reviews of this topic, please refer to Collado et al. 2007, Adams 2009, Kuilman et al. 2010. For a review of differential gene expression between senescent and immortalized cells, please refer to Fridman and Tainsky 2008.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction88">
+ <bp:evidence rdf:resource="#Evidence94" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Translation of p16INK4A mRNA is inhibited by miR-24</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence4" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">SAHF formation</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway6">
+ <bp:pathwayOrder rdf:resource="#PathwayStep91" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep90" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep71" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep93" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep70" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep92" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep77" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep99" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep76" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep98" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep79" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep78" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep73" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep95" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep72" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep94" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep75" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep97" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep74" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep96" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep69" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep80" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep82" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep81" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep101" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep100" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep103" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep102" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep66" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep88" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep65" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep87" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep104" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep68" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep67" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep89" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep84" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep83" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep86" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep85" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction65" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction87" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction64" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction86" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction67" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction89" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction66" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction88" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction69" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction68" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction81" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction80" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction61" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction83" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction60" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction82" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction63" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction85" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction62" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction84" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction76" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction98" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction75" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction97" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction78" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction77" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction99" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction79" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction90" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction70" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction92" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction91" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction72" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction94" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction71" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction93" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction74" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction96" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction73" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction95" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence65" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Oxidative Stress Induced Senescence</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Oxidative stress, caused by increased concentration of reactive oxygen species (ROS) in the cell, can happen as a consequence of mitochondrial dysfunction induced by the oncogenic RAS (Moiseeva et al. 2009) or independent of oncogenic signaling. Prolonged exposure to interferon-beta (IFNB, IFN-beta) also results in ROS increase (Moiseeva et al. 2006). ROS oxidize thioredoxin (TXN), which causes TXN to dissociate from the N-terminus of MAP3K5 (ASK1), enabling MAP3K5 to become catalytically active (Saitoh et al. 1998). ROS also stimulate expression of Ste20 family kinases MINK1 (MINK) and TNIK through an unknown mechanism, and MINK1 and TNIK positively regulate MAP3K5 activation (Nicke et al. 2005).   MAP3K5 phosphorylates and activates MAP2K3 (MKK3) and MAP2K6 (MKK6) (Ichijo et al. 1997, Takekawa et al. 2005), which act as p38 MAPK kinases, as well as MAP2K4 (SEK1) (Ichijo et al. 1997, Matsuura et al. 2002), which, together with MAP2K7 (MKK7), acts as a JNK kinase.   MKK3 and MKK6 phosphorylate and activate p38 MAPK alpha (MAPK14) and beta (MAPK11) (Raingeaud et al. 1996), enabling p38 MAPKs to phosphorylate and activate MAPKAPK2 (MK2) and MAPKAPK3 (MK3) (Ben-Levy et al. 1995, Clifton et al. 1996, McLaughlin et al. 1996, Sithanandam et al. 1996, Meng et al. 2002, Lukas et al. 2004, White et al. 2007), as well as MAPKAPK5 (PRAK) (New et al. 1998 and 2003, Sun et al. 2007).   Phosphorylation of JNKs (MAPK8, MAPK9 and MAPK10) by MAP3K5-activated MAP2K4 (Deacon and Blank 1997, Fleming et al. 2000) allows JNKs to migrate to the nucleus (Mizukami et al. 1997) where they phosphorylate JUN. Phosphorylated JUN binds FOS phosphorylated by ERK1 or ERK2, downstream of activated RAS (Okazaki and Sagata 1995, Murphy et al. 2002), forming the activated protein 1 (AP-1) complex (FOS:JUN heterodimer) (Glover and Harrison 1995, Ainbinder et al. 1997).    Activation of p38 MAPKs and JNKs downstream of MAP3K5 (ASK1) ultimately converges on transcriptional regulation of CDKN2A locus. In dividing cells, nucleosomes bound to the CDKN2A locus are trimethylated on lysine residue 28 of histone H3 (HIST1H3A) by the Polycomb repressor complex 2 (PRC2), creating the H3K27Me3 (Me3K-28-HIST1H3A) mark (Bracken et al. 2007, Kotake et al. 2007). The expression of Polycomb constituents of PRC2 (Kuzmichev et al. 2002) - EZH2, EED and SUZ12 - and thereby formation of the PRC2, is positively regulated in growing cells by E2F1, E2F2 and E2F3 (Weinmann et al. 2001, Bracken et al. 2003). H3K27Me3 mark serves as a docking site for the Polycomb repressor complex 1 (PRC1) that contains BMI1 (PCGF4) and is therefore named PRC1.4, leading to the repression of transcription of p16INK4A and p14ARF from the CDKN2A locus, where PCR1.4 mediated repression of p14ARF transcription in humans may be context dependent (Voncken et al. 2005, Dietrich et al. 2007, Agherbi et al. 2009, Gao et al. 2012). MAPKAPK2 and MAPKAPK3, activated downstream of the MAP3K5-p38 MAPK cascade, phosphorylate BMI1 of the PRC1.4 complex, leading to dissociation of PRC1.4 complex from the CDKN2A locus and upregulation of p14ARF transcription (Voncken et al. 2005). AP-1 transcription factor, formed as a result of MAP3K5-JNK signaling, as well as RAS signaling, binds the promoter of KDM6B (JMJD3) gene and stimulates KDM6B expression. KDM6B is a histone demethylase that removes H3K27Me3 mark i.e. demethylates lysine K28 of HIST1H3A, thereby preventing PRC1.4 binding to the CDKN2A locus and allowing transcription of p16INK4A (Agger et al. 2009, Barradas et al. 2009, Lin et al. 2012).   p16INK4A inhibits phosphorylation-mediated inactivation of RB family members by CDK4 and CDK6, leading to cell cycle arrest (Serrano et al. 1993). p14ARF inhibits MDM2-mediated degradation of TP53 (p53) (Zhang et al. 1998), which also contributes to cell cycle arrest in cells undergoing oxidative stress. In addition, phosphorylation of TP53 by MAPKAPK5 (PRAK) activated downstream of MAP3K5-p38 MAPK signaling, activates TP53 and contributes to cellular senescence (Sun et al. 2007). </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway5">
+ <bp:pathwayOrder rdf:resource="#PathwayStep48" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep59" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep47" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep58" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep49" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep60" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep44" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep55" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep43" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep54" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep46" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep57" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep45" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep56" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep51" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep62" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep50" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep61" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep42" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep53" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep52" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep63" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction43" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction54" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction42" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction53" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction45" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction56" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction44" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction55" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction47" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction58" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction46" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction57" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction38" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction49" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction48" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction59" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction50" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction41" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction52" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction40" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction51" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction39" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence42" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Senescence-Associated Secretory Phenotype (SASP)</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The culture medium of senescent cells in enriched in secreted proteins when compared with the culture medium of quiescent i.e. presenescent cells and these secreted proteins constitute the so-called senescence-associated secretory phenotype (SASP), also known as the senescence messaging secretome (SMS). SASP components include inflammatory and immune-modulatory cytokines (e.g. IL6 and IL8), growth factors (e.g. IGFBPs), shed cell surface molecules (e.g. TNF receptors) and survival factors. While the SASP exhibits a wide ranging profile, it is not significantly affected by the type of senescence trigger (oncogenic signalling, oxidative stress or DNA damage) or the cell type (epithelial vs. mesenchymal) (Coppe et al. 2008). However, as both oxidative stress and oncogenic signaling induce DNA damage, the persistent DNA damage may be a deciding SASP initiator (Rodier et al. 2009). SASP components function in an autocrine manner, reinforcing the senescent phenotype (Kuilman et al. 2008, Acosta et al. 2008), and in the paracrine manner, where they may promote epithelial-to-mesenchymal transition (EMT) and malignancy in the nearby premalignant or malignant cells (Coppe et al. 2008). Interleukin-1-alpha (IL1A), a minor SASP component whose transcription is stimulated by the AP-1 (FOS:JUN) complex (Bailly et al. 1996), can cause paracrine senescence through IL1 and inflammasome signaling (Acosta et al. 2013). Here, transcriptional regulatory processes that mediate the SASP are annotated. DNA damage triggers ATM-mediated activation of TP53, resulting in the increased level of CDKN1A (p21). CDKN1A-mediated inhibition of CDK2 prevents phosphorylation and inactivation of the Cdh1:APC/C complex, allowing it to ubiquitinate and target for degradation EHMT1 and EHMT2 histone methyltransferases. As EHMT1 and EHMT2 methylate and silence the promoters of IL6 and IL8 genes, degradation of these methyltransferases relieves the inhibition of IL6 and IL8 transcription (Takahashi et al. 2012). In addition, oncogenic RAS signaling activates the CEBPB (C/EBP-beta) transcription factor (Nakajima et al. 1993, Lee et al. 2010), which binds promoters of IL6 and IL8 genes and stimulates their transcription (Kuilman et al. 2008, Lee et al. 2010). CEBPB also stimulates the transcription of CDKN2B (p15-INK4B), reinforcing the cell cycle arrest (Kuilman et al. 2008). CEBPB transcription factor has three isoforms, due to three alternative translation start sites. The CEBPB-1 isoform (C/EBP-beta-1) seems to be exclusively involved in growth arrest and senescence, while the CEBPB-2 (C/EBP-beta-2) isoform may promote cellular proliferation (Atwood and Sealy 2010 and 2011). IL6 signaling stimulates the transcription of CEBPB (Niehof et al. 2001), creating a positive feedback loop (Kuilman et al. 2009, Lee et al. 2010). NF-kappa-B transcription factor is also activated in senescence (Chien et al. 2011) through IL1 signaling (Jimi et al. 1996, Hartupee et al. 2008, Orjalo et al. 2009). NF-kappa-B binds IL6 and IL8 promoters and cooperates with CEBPB transcription factor in the induction of IL6 and IL8 transcription (Matsusaka et al. 1993, Acosta et al. 2008). Besides IL6 and IL8, their receptors are also upregulated in senescence (Kuilman et al. 2008, Acosta et al. 2008) and IL6 and IL8 may be master regulators of the SASP. IGFBP7 is also an SASP component that is upregulated in response to oncogenic RAS-RAF-MAPK signaling and oxidative stress, as its transcription is directly stimulated by the AP-1 (JUN:FOS) transcription factor. IGFBP7 negatively regulates RAS-RAF (BRAF)-MAPK signaling and is important for the establishment of senescence in melanocytes (Wajapeyee et al. 2008). Please refer to Young and Narita 2009 for a recent review.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction5">
+ <bp:evidence rdf:resource="#Evidence8" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">KAT5 acetylates ATM at shortened telomeres</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction4">
+ <bp:evidence rdf:resource="#Evidence7" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">TP53 binds the CDKN1A promoter</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction3">
+ <bp:evidence rdf:resource="#Evidence6" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">KAT5 acetylates ATM at DNA DSBs</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction81">
+ <bp:evidence rdf:resource="#Evidence87" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">AP-1 complex stimulates KDM6B transcription</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
+ <bp:evidence rdf:resource="#Evidence5" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Initiation of SAHF formation</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction80">
+ <bp:evidence rdf:resource="#Evidence86" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MAPKAPK2/3-mediated removal of PRC1.4 complex stimulates p14ARF transcription</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction9">
+ <bp:evidence rdf:resource="#Evidence12" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MRN complex binds shortened telomeres</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction83">
+ <bp:evidence rdf:resource="#Evidence89" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Activated human MKK3/MKK6 phosphorylates p38 MAPK complexed with MAPKAPK5</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction8">
+ <bp:evidence rdf:resource="#Evidence11" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MRN complex binds DNA double strand breaks</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction82">
+ <bp:evidence rdf:resource="#Evidence88" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p14ARF sequesters MDM2</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction7">
+ <bp:evidence rdf:resource="#Evidence10" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">DSB inducing agents induce double strand DNA breaks</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction85">
+ <bp:evidence rdf:resource="#Evidence91" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Active p38 MAPK phosphorylates MAPKAPK2 or 3</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction6">
+ <bp:evidence rdf:resource="#Evidence9" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">EP400 binds CDKN1A promoter</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction84">
+ <bp:evidence rdf:resource="#Evidence90" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Translation of p14ARF mRNA is inhibited by miR-24</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep91">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction86" />
+ <bp:stepProcess rdf:resource="#Catalysis30" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep90">
+ <bp:stepProcess rdf:resource="#Catalysis29" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction85" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep93">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction88" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep92">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction87" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep99">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction94" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep98">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction93" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep95">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction90" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep94">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction89" />
+ <bp:stepProcess rdf:resource="#Catalysis31" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep97">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction92" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep96">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction91" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction76">
+ <bp:evidence rdf:resource="#Evidence82" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p-MAPKAPK3 phosphorylates BMI1</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction75">
+ <bp:evidence rdf:resource="#Evidence81" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Activated human MKK3/MKK6 phosphorylates p38 MAPK complexed with MAPKAPK2 or MAPKAPK3</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction78">
+ <bp:evidence rdf:resource="#Evidence84" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p14ARF forms a ternary complex with MDM2 and TP53</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction77">
+ <bp:evidence rdf:resource="#Evidence83" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Phosphorylation of human JNKs by activated MKK4/MKK7</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#Pathway2" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep2">
+ <bp:stepProcess rdf:resource="#Pathway3" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction79">
+ <bp:evidence rdf:resource="#Evidence85" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">E2F1/2/3 stimulates SUZ12 transcription</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep3">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence8">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep4">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction2" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence9">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep5">
+ <bp:stepProcess rdf:resource="#Catalysis1" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction3" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence6">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep6">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction4" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence7">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence4">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep7">
+ <bp:stepProcess rdf:resource="#Catalysis2" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction5" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence10">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction70">
+ <bp:evidence rdf:resource="#Evidence76" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Demethylation of H3K27Me3 by KDM6B stimulates p16INK4A transcription, while binding of PRC1.4 complex to H3K27Me3 represses p16INK4A transcription</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence5">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep8">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction6" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep9">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction7" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction72">
+ <bp:evidence rdf:resource="#Evidence78" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PRC2-EZH2 trimethylates nucleosomes associated with CDKN2A promoter</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence3">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction71">
+ <bp:evidence rdf:resource="#Evidence77" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">c-FOS activation by phospho ERK1/2</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction74">
+ <bp:evidence rdf:resource="#Evidence80" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Active p38 MAPK phosphorylates MAPKAPK5</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction73">
+ <bp:evidence rdf:resource="#Evidence79" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MAPKAPK5 phosphorylates TP53</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence100">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence102">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence101">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence104">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence103">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence105">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence63">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence62">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence65">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence64">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence61">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence60">
+</bp:Evidence>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:Evidence rdf:ID="Evidence59">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence56">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence55">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence58">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence57">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction98">
+ <bp:evidence rdf:resource="#Evidence104" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">E2F1/2/3 stimulates EZH2 transcription</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction97">
+ <bp:evidence rdf:resource="#Evidence103" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Phosphorylated MKK3/MKK6 migrates to nucleus</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction99">
+ <bp:evidence rdf:resource="#Evidence105" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">E2F1/2/3 stimulates EED transcription</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence74">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction90">
+ <bp:evidence rdf:resource="#Evidence96" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of Activated Protein 1 (AP-1) complex. cFOS/c-JUN heterodimer. </bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence73">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence76">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction92">
+ <bp:evidence rdf:resource="#Evidence98" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RAS signaling and prolonged interferon-beta stimulation promote generation of reactive oxygen species (ROS)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence75">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction91">
+ <bp:evidence rdf:resource="#Evidence97" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ERK1/2-activated AP1 complex binds KDM6B promoter</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence70">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction94">
+ <bp:evidence rdf:resource="#Evidence100" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">E2F1/2/3:DP1/2 binds EZH2 gene promoter</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction93">
+ <bp:evidence rdf:resource="#Evidence99" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">KDM6B binds iron</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence72">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction96">
+ <bp:evidence rdf:resource="#Evidence102" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p14ARF translocates to the nucleus</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence71">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction95">
+ <bp:evidence rdf:resource="#Evidence101" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Expression of MINK1/TNIK is positively regulated by ROS</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence67">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence66">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence69">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence68">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence41">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence40">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence43">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence42">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence38">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence37">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence39">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence34">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence33">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence36">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence35">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence52">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence51">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence54">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence53">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence50">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence49">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence48">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence45">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence44">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence47">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence46">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep37">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction34" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep36">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction33" />
+ <bp:stepProcess rdf:resource="#Catalysis10" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep39">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction36" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep38">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction35" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence99">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep33">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction30" />
+ <bp:stepProcess rdf:resource="#Catalysis9" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep32">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction29" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep35">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction32" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep34">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction31" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep31">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction28" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep30">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction27" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis3">
+ <bp:controlled rdf:resource="#BiochemicalReaction10" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep48">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction44" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis2">
+ <bp:controlled rdf:resource="#BiochemicalReaction5" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep47">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction43" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis1">
+ <bp:controlled rdf:resource="#BiochemicalReaction3" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep49">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction45" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis7">
+ <bp:controlled rdf:resource="#BiochemicalReaction18" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis6">
+ <bp:controlled rdf:resource="#BiochemicalReaction17" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis5">
+ <bp:controlled rdf:resource="#BiochemicalReaction16" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis4">
+ <bp:controlled rdf:resource="#BiochemicalReaction15" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis9">
+ <bp:controlled rdf:resource="#BiochemicalReaction30" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis8">
+ <bp:controlled rdf:resource="#BiochemicalReaction26" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep44">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction40" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep43">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction39" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep46">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction42" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep45">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction41" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep40">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction37" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep42">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction38" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep41">
+ <bp:stepProcess rdf:resource="#Pathway5" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep19">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction17" />
+ <bp:stepProcess rdf:resource="#Catalysis6" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep18">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction16" />
+ <bp:stepProcess rdf:resource="#Catalysis5" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep15">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction13" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep14">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction12" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep17">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction15" />
+ <bp:stepProcess rdf:resource="#Catalysis4" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep16">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction14" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence85">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence84">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence87">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence86">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence81">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence80">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence83">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence82">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence78">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence77">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence79">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep11">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction9" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep10">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction8" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep13">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction11" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep12">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction10" />
+ <bp:stepProcess rdf:resource="#Catalysis3" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep29">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction26" />
+ <bp:stepProcess rdf:resource="#Catalysis8" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence90">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep26">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction23" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep25">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction22" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep28">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction25" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep27">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction24" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence96">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence95">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence98">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence97">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence92">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence91">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence94">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence93">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence89">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence88">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep22">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction19" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep21">
+ <bp:stepProcess rdf:resource="#Pathway4" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep24">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction21" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep23">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction20" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep20">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction18" />
+ <bp:stepProcess rdf:resource="#Catalysis7" />
+</bp:PathwayStep>
+</rdf:RDF>

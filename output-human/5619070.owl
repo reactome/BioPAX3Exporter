@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/5619070#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:Catalysis rdf:ID="Catalysis1">
+ <bp:controlled rdf:resource="#BiochemicalReaction1" />
+</bp:Catalysis>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#Catalysis1" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective SLC16A1 does not cotransport monocarboxylates, H+ from extracellular region to cytosol</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective SLC16A1 causes symptomatic deficiency in lactate transport (SDLT)</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Four members of the SLC16A gene family encode classical monocarboxylate transporters MCT1-4. Widely expressed, they all function as proton-dependent transporters of monocarboxylic acids such as lactate and pyruvate and ketone bodies such as acetacetate and beta-hydroxybutyrate. These processes are crucial in the regulation of energy metabolism and acid-base homeostasis.  SLC16A1 encodes MCT1, a ubiquitiously expressed protein. Heterozygous defects in SLC16A1 were found in patients with symptomatic deficiency in lactate transport (SDLT aka erythrocyte lactate transporter defect; MIM:245340), resulting in an acidic intracellular environment and muscle degeneration with the release of myoglobin and creatine kinase (Merezhinskaya et al. 2000). This defect could compromise extreme performance in otherwise healthy individuals.  SLC16A1 is essential for lactate transport in muscle cells. It is also highly enriched in astrocytes and oligodendroglia, neuroglia that support, insulate and provide energy metabolites to axons. Oligodendroglia dysfunction can lead to axon degeneration in several diseases. The cause is unknown but disruption of SLC16A1 transporter produces axon damage and neuron loss in animal and cell culture models. In humans, this transporter is reduced in patients with amyotrophic lateral sclerosis (Lee et al. 2012).  In cancer cells, a common change is the upregulation of glycolysis. The anti-cancer drug candidate 3-bromopyruvate (3-BrPA) can inhibit glycolysis through its uptake into cancer cells via SLC16A1 so it is the main determinant of 3-BrPA sensitivity in these cells (Birsoy et al. 2013).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+</rdf:RDF>

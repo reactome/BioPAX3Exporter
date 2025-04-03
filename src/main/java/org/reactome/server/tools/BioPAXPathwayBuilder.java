@@ -1,5 +1,8 @@
 package org.reactome.server.tools;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import org.biopax.paxtools.model.level3.*;
 import org.biopax.paxtools.model.level3.Process;
 import org.reactome.server.graph.domain.model.*;
@@ -15,6 +18,10 @@ class BioPAXPathwayBuilder {
     private final org.reactome.server.graph.domain.model.Pathway thisPathway;
 
     private org.biopax.paxtools.model.Model thisModel;
+
+    // 1) Add a cache (map) for storing Pathway objects you've already built
+    private Map<Long, org.biopax.paxtools.model.level3.Pathway> visitedPathways = new HashMap<>();
+
 
     /**
      * Construct an instance of the BioPAXPathwayBuilder
@@ -55,11 +62,37 @@ class BioPAXPathwayBuilder {
      * @return the created BioPAX pathway
      */
     private org.biopax.paxtools.model.level3.Pathway addReactomePathway(org.reactome.server.graph.domain.model.Pathway pathway) {
-        org.biopax.paxtools.model.level3.Pathway bpPath = addBPPathway(pathway);
-        if (bpPath != null) {
-            addChildPathways(pathway, bpPath);
+        if (pathway == null) return null;
+
+        // 2a) Check the cache
+        Long dbId = pathway.getDbId();
+        if (visitedPathways.containsKey(dbId)) {
+            // Already created this Pathway. Reuse the same BioPAX object
+            return visitedPathways.get(dbId);
         }
-        return bpPath;
+    
+        // 2b) Create a new BioPAX Pathway
+        org.biopax.paxtools.model.level3.Pathway bpPath =
+             thisModel.addNew(org.biopax.paxtools.model.level3.Pathway.class,
+                              BioPAX3Utils.getTypeCount("Pathway"));
+    
+        // 2c) Store it in the cache so we don’t recreate it again
+        visitedPathways.put(dbId, bpPath);
+    
+        // 2d) Set all properties
+        bpPath.setDisplayName(pathway.getDisplayName());
+        bpPath.addComment(BioPAX3ReferenceUtils.getComment(pathway.getSummation()));
+    
+        // Build the “basic elements” (organism, dataSource, etc.)
+        BioPAX3BasicElementsBuilder elements = new BioPAX3BasicElementsBuilder(pathway, thisModel, bpPath);
+        elements.addBioSourceInformation();
+        elements.addReactomeDataSource();
+        elements.addEvidence();
+    
+        // 2e) Recurse over child “hasEvent” (subpathways or RLEs)
+        addChildPathways(pathway, bpPath);
+    
+        return bpPath;        
     }
 
 

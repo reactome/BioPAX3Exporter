@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/5619062#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#Catalysis1" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective SLC1A3 causes episodic ataxia 6 (EA6)</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">There are two classes of glutamate transporters; the excitatory amino acid transporters (EAATs) which depend on an electrochemical gradient of Na+ ions and vesicular glutamate transporters (VGLUTs) which are proton-dependent. Together, these transporters uptake and release glutamate to mediate this neurotransmitter&apos;s excitatory signal and are part of the glutamate-gluatamine cycle.  The SLC1 gene family includes five high-affinity glutamate transporters encoded by SLC1, 2, 3, 6 and 7. These transporters can mediate transport of L-Glutamate (L-Glu), L-Aspartate (L-Asp) and D-Aspartate (D-Asp) with cotransport of 3 Na+ ions and H+ and antiport of a K+ ion. This mechanism allows glutamate into cells against a concentration gradient. This is a crucial factor in the protection of neurons against glutamate excitotoxicity (the excitation of nerve cells to their death) in the CNS (Zhou    Danbolt 2014).  SLC1A3 is highly expressed in the cerebellum but also found in the frontal cortex, hippocampus and basal ganglia. Defects in SLC1A3 have been shown to cause episodic ataxia type 6 (EA6; MIM:612656) where mutations in SLC1A3 can lead to decreased glutamate uptake, thus contributing to neuronal hyperexcitability to cause seizures, hemiplegia and episodic ataxia (Jen et al. 2005, de Vries et al. 2009).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Catalysis rdf:ID="Catalysis1">
+ <bp:controlled rdf:resource="#BiochemicalReaction1" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective SLC1A3 does not cotransport L-Glu,L-Asp,D-Asp,H+,3Na+ from extracellular region to cytosol</bp:displayName>
+</bp:BiochemicalReaction>
+</rdf:RDF>

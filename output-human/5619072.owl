@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/5619072#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective SLC35A2 causes congenital disorder of glycosylation 2M (CDG2M)</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The human gene SLC35A2 encodes the UDP-galactose transporter. It is located on the Golgi membrane and mediates the antiport of UDP-Gal into the Golgi lumen in exchange for UMP. Nucleotide sugars such as UDP-Gal are used in protein glycosylation in the Golgi lumen. This transporter is also known to transport UDP-N-acetylgalactosamine (UDP-GalNAc) by the same antiport mechanism. Defects in SLC35A2 limit Golgi-localised pools of UDP-Gal, resulting in truncated beta-GlcNAc-terminated N-glycans and alpha-GalNAc-terminated O-glycans. Defects in SLC35A2 can cause congenital disorder of glycosylation 2M (CDG2M; MIM:300896), a disorder characterised by developmental delay, hypotonia, ocular defects and brain malformations (Ng et al. 2013). Congenital disorders of glycosylation (CDGs) are generally characterised by under-glycosylated serum glycoproteins and a wide spectrum of clinical features. Defects in SLC35A2 can also cause early infantile epileptic encephalopathy 22 (EIEE22; MIM:300896), a severe form of epilepsy characterised by by frequent tonic seizures or spasms beginning in infancy and accompanied by developmental problems (Kodera et al. 2013). </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+ <bp:stepProcess rdf:resource="#Catalysis1" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective SLC35A2 does not exchange UDP-Gal, UDP-GalNAc for UMP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis1">
+ <bp:controlled rdf:resource="#BiochemicalReaction1" />
+</bp:Catalysis>
+</rdf:RDF>

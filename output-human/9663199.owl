@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/9663199#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Some pathogenic BRCA1 mutants do not bind BARD1</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective DNA double strand break response due to BRCA1 loss of function</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Germline mutations in the BRCA1 or BRCA2 tumor suppressor genes are implicated in up to 10% of breast cancers overall and 40% of familial breast cancers. Carriers of either BRCA1 or BRCA2 germline mutation are predisposed to hereditary breast and ovarian cancer (the HBOC syndrome), which is inherited in an autosomal dominant manner. Besides early onset breast and ovarian cancer, HBOC patients also have a modestly increased risk of developing other tumor types, including pancreatic, stomach, laryngeal, fallopian tube, and prostate cancer. The BRCA1 gene encodes a large protein of 1863 amino acids, which contains a RING finger domain at the N-terminus and two BRCT repeats at the C-terminus. The RING domain is responsible for heterodimerization with BARD1, which increases stability of BRCA1 and activates its E3 ubiquitin ligase activity. BRCA1 plays an important role in homology-directed repair of DNA double-strand breaks (DSBs). Brca1-null knockout mice die early during embryonic development and cells depleted of BRCA1 show genomic instability (reviewed by Roy et al. 2011). Cancer mutations that affect the RING domain of BRCA1 frequently result in the inability of BRCA1 to bind to BARD1 and participate in DNA DSB response (Wu et al. 1996, Ransburgh et al. 2010). Some mutations in the RING domain of BRCA1 were shown to affect the ubiquitin ligase activity of BRCA1 (Brzovic et al. 2001), but it is uncertain if the ubiquitin ligase activity is essential for the tumor suppressor role of BRCA1 (Shakya et al. 2011).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+</rdf:RDF>

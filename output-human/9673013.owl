@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/9673013#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
+ <bp:evidence rdf:resource="#Evidence7" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective ATRX does not bind DAXX</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence7">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence6">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence5">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence4">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence3">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence5" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective DAXX does not bind ATRX</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep4">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep3">
+ <bp:stepProcess rdf:resource="#Pathway4" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep2">
+ <bp:stepProcess rdf:resource="#Pathway3" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#Pathway2" />
+</bp:PathwayStep>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:Pathway rdf:ID="Pathway5">
+ <bp:pathwayOrder rdf:resource="#PathwayStep6" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction2" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence6" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective Inhibition of DNA Recombination at Telomere Due to ATRX Mutations</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Many tumors that are positive for markers of alternative lengthening of telomeres (ALT) harbor loss-of-function mutations in the ATRX gene, encoding a chromatin remodeling protein ATRX. ATRX is thought to act together with DAXX and histone H3F3A to inhibit DNA recombination at telomere ends. For review, please refer to Heaphy et al. 2011, Gocha et al. 2014, Pickett and Reddel 2015, Amorim et al. 2016.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayComponent rdf:resource="#Pathway2" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Diseases of Telomere Maintenance</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Somatic mutations or rearrangements in genes involved in telomere maintenance enable immortalization of cancer cells either through upregulation of telomerase activity or through activation of alternative lengthening of telomeres (ALT) (Killela et al. 2013, reviewed by Gocha et al. 2013, Pickett and Reddel 2015, Amorim et al. 2016, Yuan et al. 2019). Germline mutations in telomere maintenance genes lead to telomere syndromes, such as dyskeratosis congenita (DC) and Hoyeraal-Hreidarsson (HH) syndrome, characterized by impaired ability to maintain telomere lengths during growth and development, leading to abnormally short telomere lengths and genomic instability that affects multiple organs and is associated with increased risk of certain cancers (reviewed by Sarek et al. 2015).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway2">
+ <bp:pathwayOrder rdf:resource="#PathwayStep2" />
+ <bp:pathwayComponent rdf:resource="#Pathway3" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Alternative Lengthening of Telomeres (ALT)</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Alternative lengthening of telomeres (ALT) is a homologous recombination repair-directed telomere synthesis that takes place in 5-15% of tumors. ALT positive tumors often harbor loss-of-function mutations in ATRX (Alpha thalassemia mental retardation X-linked) or, more rarely, DAXX (Death domain-associated protein 6) chromatin remodeling factors, which may act to inhibit DNA recombination at telomere ends (reviewed by Gocha et al. 2013). The nuclear receptor complex NuRD-ZNF827 contributes to the recruitment of homologous recombination (HR) machinery to telomeres (Conomos et al. 2014). ALT is most prevalent in subsets of sarcomas, including osteosarcomas and some soft tissue sarcomas, brain cancers and neuroblastomas (Heaphy et al. 2011, Arora and Azzalin 2015). For review, please refer to Nabetani and Ishikawa 2011, Pickett and Reddel 2015, Verma and Greenberg 2016, Amorim et al. 2016, Sommer and Royle 2020, Zhang and Zou 2020.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway3">
+ <bp:pathwayOrder rdf:resource="#PathwayStep3" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep5" />
+ <bp:pathwayComponent rdf:resource="#Pathway5" />
+ <bp:pathwayComponent rdf:resource="#Pathway4" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective Inhibition of DNA Recombination at Telomere</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ATRX (Alpha thalassemia mental retardation X-lined) and DAXX (Death domain-associated protein 6) chromatin remodeling factors form a complex that binds to subtelomeric regions and plays a role in inhibition of DNA recombination at telomere ends, probably by mediating loading of H3F3A histone at telomere ends and by repressing transcription of TERRA (Telomeric repeat containing RNA), a long noncoding telomeric repeats-containing RNA. Tumors positive for alternative lengthening of telomeres (ALT) markers often harbor loss-of-function mutations in ATRX, and more rarely in DAXX or missense mutations in H3F3A, implying that the impairment of function of one of these three proteins may contribute to initiation of the ALT process. Additionally, mutations in IDH, the tumor suppressor TP53 and SMARCAL1 are also observed in the context of ALT in certain types of human cancers, particularly sarcomas and tumors of the central nervous system (Jiao et al. 2012, Nicolle et al. 2019). For review, please refer to Gocha et al. 2013, Pickett and Reddel 2015, Amorim et al. 2016).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep6">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction2" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway4">
+ <bp:pathwayOrder rdf:resource="#PathwayStep4" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence4" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective Inhibition of DNA Recombination at Telomere Due to DAXX Mutations</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">A small portion of tumors that are positive for alternative lengthening of telomeres (ALT) markers and negative for mutations in the ATRX gene harbor loss-of-function mutations in the DAXX gene, which encodes the ATRX binding partner DAXX. For review, please refer to Gocha et al. 2013, and Pickett and Reddel 2015.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep5">
+ <bp:stepProcess rdf:resource="#Pathway5" />
+</bp:PathwayStep>
+</rdf:RDF>

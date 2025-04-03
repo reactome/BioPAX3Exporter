@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/75944#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:Pathway rdf:ID="Pathway3">
+ <bp:pathwayOrder rdf:resource="#PathwayStep5" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep4" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction2" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction3" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence4" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Mitochondrial transcription initiation</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Human mtDNA is transcribed by a dedicated mitochondrial RNA polymerase (POLRMT), which displays significant sequence similarity to the monomeric RNA polymerases found in bacteriophages. In contrast to the phage T7 RNA polymerase, POLRMT cannot interact with promoter DNA and initiate transcription on its own, but requires the presence of the mitochondrial transcription factor A (TFAM), and either transcription factor B1 (TFB1M) or B2 (TFB2M). The 4 proteins of the basal mitochondrial transcription machinery have been purified in recombinant form and used to reconstitute transcription in vitro with a promoter containing DNA fragment (Falkenberg et al., 2002). Although both TFB1M and TFB2M can support in vitro transcription with POLRMT, TFB2M is at least two orders of magnitude more active than TFB1M and the physiological role of TFB1M in mitochondrial transcription has not yet been completely defined. The  TFB1M and TFB2M display primary sequence similarity to a family of rRNA methyltransferases, which dimethylates two adjacent adenosine bases near the 3&apos; end of the small subunit rRNA during ribosome biogenesis (Falkenberg et al., 2002; McCulloch et al., 2002). Human TFB1M is, in fact, a dual function protein, which not only support mitochondrial transcription in vitro, but also acts as a rRNA methyltransferase (Seidel-Rogol et al., 2003). The methyltransferase activity is not required for transcription, since point mutations in conserved methyltransferase motifs of  TFB1M revealed that it stimulates transcription in vitro independently of S-adenosylmethionine binding and rRNA methyltransferase activity.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence6">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#Pathway2" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence5">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep2">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence4">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence3">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep5">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction3" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep3">
+ <bp:stepProcess rdf:resource="#Pathway3" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep4">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction2" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
+ <bp:evidence rdf:resource="#Evidence5" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">TFAM binds to mitochondrial promoters</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction3">
+ <bp:evidence rdf:resource="#Evidence6" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Association of TFAM:mt promoter complex with POLRMT:TFB2M</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Association of mTERF with the termination sequence</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway2">
+ <bp:pathwayOrder rdf:resource="#PathwayStep2" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Mitochondrial transcription termination</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Transcription of the heavy (H)-strand of mitochondrial DNA (mtDNA) involves two overlapping transcription units  (Montoyaet al.,1982; Montoya et al., 1983). The first unit starts right upstream of the tRNAPhe gene and spans the tRNAPhe, rRNA 12S, rRNA 16S and tRNAVal genes (initiation site IH1). The other starts about 100 bp further downstream (initiation site IH2), at the boundary between tRNAPhe and rRNA12S genes, and produces a single polycistronic RNA that encompasses almost the entire length of the H-strand. The ribosomal transcription unit is transcribed at a much higher rate compared to the other transcription unit and control of its expression is exerted both at the level of initiation and termination (Gelfand and Attardi, 1981; Attardi et al., 1990). A central role in the control of termination has been attributed to the mitochondrial transcription termination factor (mTERF), a 39-kDa protein that binds to a 28-base pair region of mtDNA located within the tRNALeu(UUR) gene, at a position immediately downstream of the rRNA 16S gene  (Fernandez-Silva et al.,1997; Kruse et al., 1989).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep3" />
+ <bp:pathwayComponent rdf:resource="#Pathway3" />
+ <bp:pathwayComponent rdf:resource="#Pathway2" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Transcription from mitochondrial promoters</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Thirteen of the ~80 different proteins present in the respiratory chain of human mitochondria are encoded by the mitochondrial genome (mtDNA). The circular mtDNA, which is present in 1000 to 10000 copies in the human cell, also encodes for 2 ribosomal RNAs, and 22 transfer RNAs. The double-stranded mitochondrial genome lacks introns and the longer non-coding region contains the control elements for transcription and replication of mtDNA  (Shadel and Clayton,  1997).   The two mtDNA strands are referred to as the heavy  (H-strand) and the light  (L-strand) due to their differing  G+T content.  In human cells, each strand contains one single promoter for transcriptional initiation, the light-strand promoter (LSP) or the heavy-strand promoter (HSP). Transcription from the mitochondrial promoters produce polycistronic precursor RNA encompassing all the genetic information encoded in each of the specific strands. The primary transcripts are processed to produce the individual tRNA and mRNA molecules (Clayton, 1991; Ojala et al., 1981). There is likely a second initiation site for heavy strand transcription, which produces RNAs spanning the rDNA region. The resulting transcript  including  the genes for the two mitochondrial rRNAs and ends at the boundary between the 16 S rRNA and the tRNALeu(UUR) genes (Montoya et al., 1982; Montoya et al.,1983; Christianson and Clayton 1986). The existence of such a separate transcription unit may explain why the steady-state levels of rRNAs are much higher than the steady state levels of mRNAs.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+</rdf:RDF>

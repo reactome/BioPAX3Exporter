@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/5603027#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective IKBKG (NEMO) destabilizes the association of IKBKA:IKBKB:IKBKG (via TLR)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">IKBKG deficiency causes anhidrotic ectodermal dysplasia with immunodeficiency (EDA-ID) (via TLR)</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Many signaling pathways rely on the activation of nuclear factor kappa B (NFkB), which is critical for the induction of the appropriate cellular function in response to various stimuli such as inflammatory cytokines, microbial products or various types of stress (Lawrence T 2009; Hoesel B and Schmid JA 2013). The NFkB family of transcription factors is kept inactive in the cytoplasm by inhibitor of kappa B (IkB) family members (Oeckinghaus A and Ghosh S 2009). Canonical NFkB activation depends on the phosphorylation of IkB by the I kappa B kinase (IKK) complex, which contains two catalytic subunits named IKK alpha, IKK beta and a regulatory subunit named NFkB essential modulator (NEMO or IKBKG) (Rothwarf DM et al. 1998). Phosphorylation of IkB leads to K48-linked ubiquitination and proteasomal degradation of IkB, allowing translocation of NFkB factor to the nucleus, where it can activate transcription of a variety of genes participating in the immune and inflammatory response, cell adhesion, growth control, and protection against apoptosis (Collins T et al. 1995; Kaltschmidt B et al. 2000; Lawrence T 2009). IKBKG is encoded by an X-linked gene. Null alleles of the gene are lethal in hemizygous males, whereas hypomorphic alleles typically result in the impaired NFkB signaling in patients with a broad spectrum of clinical phenotypes in terms of both developmental defects and immunodeficiency (D&#246;ffinger R et al. 2001; Hanson EP et al. 2008). Several categories of mutations affecting IKBKG have been reported in humans (D&#246;ffinger R et al. 2001; Vinolo E et al. 2006; Fusko F et al. 2008). The first category of these mutations consists of hypomorphic mutations typically involving the zinc finger domain and nearby C-terminal regions and causing hypohidrotic ectodermal dysplasia with immune deficiency (HED-ID) in males (Jain A et al. 2001; Shifera AS 2010). The second category consists of amorphic mutations causing incontinentia pigmenti (IP) in females and, generally, prenatal death in males (Aradhya S et al. 2001; Fusco F et al. 2004). The third category is composed of hypomorphic mutations involving the stop codon causing anhidrotic ectodermal dysplasia with immunodeficiency (EDA-ID), osteopetrosis and lymphedema (OL-EDA-ID) in males (D&#246;ffinger R et al. 2001). Also some patients with a defective IKBKG gene can develop immunodeficiency without ectodermal dysplasia (Orange JS et al. 2004). This module describes several EDA-ID-associated hypomorphic IKBKG mutations that have been reported to affect inflammatory responses initiated by toll like receptors (TLR).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+</rdf:RDF>

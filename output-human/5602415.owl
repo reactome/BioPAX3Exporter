@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/5602415#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective UNC93B1 does not bind TLR3</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">UNC93B1 deficiency - HSE</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">UNC93B1 is an endoplasmic reticulum protein with 12 membrane-spanning domains. Signaling cascades of nucleotide-sensing endosomal toll like receptors (TLR3 and TLR7-9) depends on functional UNC93B1, which is thought to deliver these TLRs from the ER to the endosome where they recognize specific pathogenic patterns and initiate host immune responses. UNC93B deficiency has been implicated in the increased susceptibility to herpes simplex virus type 1 (HSV1) encephalitis (HSE), a rare complication during HSV-1 infection of the central nervous system (CNS) (Casrouge A et al. 2006). Patients-derived UNC96B1-deficient fibroblasts showed an impaired production of IFN-beta and -gamma following stimulation with TLR3 agonist poly(I:C) (Casrouge A et al. 2006). These cells were also more susceptible to HSV1 infection, showing rapid viral replication together with high mortality rates. Furthermore, pluripotent stem cells (iPSC) derived from HSE patient dermal fibroblasts were differentiated into populations of neural stem cells (NSC), neurons, astrocytes and oligodendrocytes (Lafaille FG et al. 2012). The impaired induction of IFN beta and gamma was observed in all tested CNS cells upon stimulation with poly(I:C). However, HSV1 infection selectively affected type I and III IFN production in UNC93B1-deficient neurons and oligodendrocytes (Lafaille FG et al. 2012). Thus, impaired TLR3-mediated UNC93B-dependent type I and III IFN production in respose to HSV1 infection in CNS, in neurons and oligodendrocytes in particular, may underline the pathogenesis of HSE in patients with UNC93B1 deficiency (Casrouge A et al. 2006; Lafaille FG et al. 2012). Defective UNC93B1 also impairs the TLR7, TLR8 and TLR9 signaling pathways. Peripheral blood  mononuclear cells (PBMCs) from UNC93B-deficient patients did not respond to the stimulation of TLR7, TLR8, or TLR9, in terms of the production of type I and III interferons, and other cytokines tested (Casrouge A et al. 2006). Moreover, no inducible CD62L shedding on granulocytes was detected after stimulation of whole blood cells derived from UNC93B-deficients patients with R-848 (agonist of TLR7 and TLR8) (von Bernuth H. et al. 2008). However, no clinical condition has been so far associated with impaired TLR7, TLR8, TLR9 due to UNC93B1 deficiency so this defect is not annotated here.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+</rdf:RDF>

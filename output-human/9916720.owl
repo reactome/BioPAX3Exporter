@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/9916720#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Mitochondrial short-chain enoyl-CoA hydratase deficiency 1</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ECHS1 (short-chain enoyl-CoA hydratase, also known as SCEH) is a mitochondrial enzyme that plays roles in fatty acid oxidation and valine metabolism (Yamada et al, 2015). In the branched-chain amino acid catabolism pathway, ECHS1 has specificity for the valine derivative methylacrylyl-CoA, but can also act on the leucine derivative 3-methylcrotonyl-CoA. ECHS1 binds to the isoleucine derivative tiglyl-CoA, but does not appreciably catalyze its hydration (Yamada et al, 2015; Ferdinandusse et al, 2015). Homozygous mutations in ECHS1 are associated with a severe Leigh-like disorder, characterized by cardiac aberrations, encephalopathy and epilepsy and severe developmental and neurological delays, likely arising at least in large measure from the accumulation of toxic levels of methylacrylyl-CoA (Peters et al, 2014; Haack et al, 2015; Yamada et al, 2015; Ferinandusse et al, 2015; Sakai et al, 2015; Tetreault et al, 2015; Kohda et al, 2016; Fitzsimmons et al, 2018).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ECHS1 mutants don&apos;t synthesize beta-hydroxyisobutyryl-CoA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+ <bp:stepProcess rdf:resource="#Catalysis1" />
+</bp:PathwayStep>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis1">
+ <bp:controlled rdf:resource="#BiochemicalReaction1" />
+</bp:Catalysis>
+</rdf:RDF>

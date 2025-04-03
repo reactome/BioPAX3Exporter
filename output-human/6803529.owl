@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/6803529#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep2" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep3" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep4" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction3" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction2" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction4" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">FGFR2 alternative splicing</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Alternative splicing of the FGFR2 nascent mRNA generates an epithelial specific isoform (FGFR2 IIIb) and a mesenchymal specific isoform (FGFR2 IIIc).  The inclusion of exon 8 in FGFR2 IIIb or exon 9 in FGFR2 IIIc alters the C-terminal half of the D3 loop of the receptor and is responsible for the different ligand-binding specificities of the two isoforms (reviewed in Eswarakumar et al, 2005).  In recent years, a number of cis- and trans-acting elements have been identified that regulate the alternative splicing event. Exon IIIb repression is mediated by the presence of weak splice sites flanking the exon, an exonic silencing sequence (ESS) within the IIIb exon and both intronic silencing sequences (ISS) upstream and downstream (Carstens et al, 2000; Del Gatto and Breathnach, 1995; Del Gatto et al, 1996; Wagner et al 2005; Wagner and Garcia-Blanco, 2001).  Binding of hnRNPA1, PTB1, SR family proteins and other factors to these elements represses the IIIb exon and promotes FGFR2 IIIc expression in mesenchymal cells (Del Gatto-Konczak et al, 1999; Carstens et al, 2000; Wagner et al, 2005; Wagner and Garcia-Blanco, 2001; Wagner and Garcia-Blanco, 2002).  In epithelial cells, recruitment of epithelial specific factors shifts the splicing events to favour inclusion of exon 8.  ESPN1 and ESPN2 are epithelial-specific factors that bind to an ISE/ISS-3 (intronic splicing enhancer/intronic splicing silencer-3) region within intron 8 to promote FGFR2 IIIb-specific splicing (Warzecha et al, 2009). A complex of RBFOX2, hnRNPH1 and hnRNPF also contribute to epithelial-specific splicing by competing for binding to a site that is occupied by the SR proteins ASF/SF2 in mesenchymal cells (Baraniak et al, 2006; Mauger et al, 2008).  Other proteins and sequences have also been identified that appear to contribute to the regulated expression of FGFR2b and FGFR2c, but the full details of the alternative splicing event remain to be worked out (Muh et al, 2002; Newman et al, 2006; Del Gatto et al, 2000; Hovhannisyan and Carstens, 2007).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction3">
+ <bp:evidence rdf:resource="#Evidence4" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PTB and hnRNPA1 bind FGFR2 pre-mRNA to repress IIIb splicing and promote formation of FGFR2c mRNA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
+ <bp:evidence rdf:resource="#Evidence3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">FGFR2c-specific alternative splicing produces FGFR2c transcript</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">FGFR2b-specific alternative splicing produces FGFR2b transcript</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction4">
+ <bp:evidence rdf:resource="#Evidence5" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ESRP1 and 2 bind FGFR2 pre-mRNA to promote FGFR2b maturation and expression</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence4">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence5">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence3">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep2">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction2" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep3">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction3" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep4">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction4" />
+</bp:PathwayStep>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+</rdf:RDF>

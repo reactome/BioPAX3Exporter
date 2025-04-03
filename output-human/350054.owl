@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/350054#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep2" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction2" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Notch-HLH transcription pathway</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string"> THE NOTCH-HLH TRANSCRIPTION PATHWAY:      Notch signaling was first identified in Drosophila, where it has been studied in detail at the genetic, molecular, biochemical and cellular levels (reviewed in Justice, 2002; Bray, 2006; Schweisguth, 2004; Louvri, 2006).  In Drosophila, Notch signaling to the nucleus is thought always to be mediated by one specific DNA binding transcription factor, Suppressor of Hairless.  In mammals, the homologous genes are called CBF1 (or RBPJkappa), while in worms they are called Lag-1, so that the acronym &quot;CSL&quot; has been given to this conserved transcription factor family.  There are at least two human CSL homologues, which are now named RBPJ and RBPJL.  CSL is an example of a bifunctional DNA-binding transcription factor that mediates repression of specific target genes in one context, but activation of the same targets in another context.  This bifunctionality is mediated by the association of specific Co-Repressor complexes vs. specific Co-Activator complexes in different contexts, namely in the absence or presence of Notch signaling.  In Drosophila, Su(H) represses target gene transcription in the absence of Notch signaling, but activates target genes during Notch signaling.  At least some of the mammalian CSL homologues are believed also to be bifunctional, and to mediate target gene repression in the absence of Notch signaling, and activation in the presence of Notch signaling.  Notch Co-Activator and Co-Repressor complexes: This repression is mediated by at least one specific co-repressor complexes (Co-R) bound to CSL in the absence of Notch signaling.  In Drosophila, this co-repressor complex consists of at least three distinct co-repressor proteins: Hairless, Groucho, and dCtBP (Drosophila C-terminal Binding Protein).  Hairless has been show to bind directly to Su(H), and Groucho and dCtBP have been shown to bind directly to Hairless (Barolo, 2002).  All three of the co-repressor proteins have been shown to be necessary for proper gene regulation during Notch signaling in vivo (Nagel, 2005).  In mammals, the same general pathway and mechanisms are observed, where CSL proteins are bifunctional DNA binding transcription factors (TFs), that bind to Co-Repressor complexes to mediate repression in the absence of Notch signaling, and bind to Co-Activator  complexes to mediate activation in the presence of Notch signaling.  However, in mammals, there may be multiple co-repressor complexes, rather than the single Hairless co-repressor complex that has been observed in Drosophila.    During Notch signaling in all systems, the Notch transmembrane receptor is cleaved and the Notch intracellular domain (NICD) translocates to the nucleus, where it there functions as a specific transcription co-activator for CSL proteins.  In the nucleus, NICD replaces the Co-R complex bound to CSL, thus resulting in de-repression of  Notch target genes in the nucleus.  Once bound to CSL, NICD and CSL proteins recruit an additional co-activator protein, Mastermind, to form a CSL-NICD-Mam ternary co-activator (Co-A) complex.  This Co-A complex was initially thought to be sufficient to mediate activation of  at least some Notch target genes.  However, there now is evidence that still other co-activators and additional DNA-binding transcription factors are required in at least some contexts (reviewed in Barolo, 2002).  Mammalian CSL Corepressor Complexes: In the absence of activated Notch signaling, DNA-bound CSL proteins recruit a corepressor complex to maintain target genes in the repressed state until Notch is specifically activated. The mammalian corepressor complexes include NCOR complexes, but may also include additional corepressor proteins, such as SHARP (reviewed in Mumm, 2000 and Kovall, 2007). The exact composition of the CSL NCOR complex is not known, but in other pathways the &quot;core&quot; NCOR corepressor complex includes at least one NCOR protein (NCOR1, NCOR2, CIR), one Histone Deacetylase protein (HDAC1, HDAC2, HDAC3, etc), and one TBL1 protein (TBL1X, TBL1XR1) (reviewed in Rosenfeld, 2006). In some contexts, the core NCOR corepressor complex may also recruit additional corepressor proteins or complexes, such as the SIN3 complex, which consists of SIN3 (SIN3A, SIN3B), and SAP30, or other SIN3-associated proteins. An additional CSL - NCOR binding corepressor, SHARP, may also contribute to the CSL corepressor complex in some contexts (Oswald, 2002). The CSL corepressor complex also includes a bifunctional cofactor, SKIP, that is present in both CSL corepressor complexes and CSL coactivator complexes, and may function in the binding of NICD and displacement of the corepressor complex during activated Notch signaling (Zhou, 2000).  Mammalian CSL Coactivator Complexes: Upon activation of Notch signaling, cleavage of the transmembrane Notch receptor releases the Notch Intracellular Domain (NICD), which translocates to the nucleus, where it binds to CSL and displaces the corepressor complex from CSL (reviewed in Mumm, 2000 and Kovall, 2007). The resulting CSL-NICD &quot;binary complex&quot; then recruits an additional coactivator, Mastermind (Mam), to form a ternary complex. The ternary complex then recruits additional, more general coactivators, such as CREB Binding Protein (CBP), or the related p300 coactivator, and a number of Histone Acetytransferase (HAT) proteins, including GCN5 and PCAF (Fryer, 2002). There is evidence that Mam also can subsequently recruit specific kinases that phosphorylate NICD, to downregulate its function and turn off Notch signaling (Fryer, 2004).  Combinatorial Complexity in Transcription Cofactor Complexes: HDAC9 has at least 7 splice isoforms, with some having distinct interaction and functional properties. Isoforms 6 and 7 interact with NCOR1. Isoforms 1 and 4 interact with MEF2 (Sparrow, 1999), which is a specific DNA-binding cofactor for a subset of HLH proteins. Isoform 3 interacts with both NCOR1 and MEF2. Although many HDACs only have one or two isoforms, this complexity for HDAC9 illustrates the level of transcript complexity and functional specificity that such &quot;general&quot; transcriptional cofactors can have.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of CSL NCOR corepressor complex</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
+ <bp:evidence rdf:resource="#Evidence3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of CSL-NICD coactivator complex</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:Evidence rdf:ID="Evidence3">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep2">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction2" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+</rdf:RDF>

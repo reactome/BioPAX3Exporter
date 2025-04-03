@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/72312#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:Evidence rdf:ID="Evidence20">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence21">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep4">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction2" />
+ <bp:stepProcess rdf:resource="#Catalysis2" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep3">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+ <bp:stepProcess rdf:resource="#Catalysis1" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep2">
+ <bp:stepProcess rdf:resource="#Pathway3" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#Pathway2" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep8">
+ <bp:stepProcess rdf:resource="#Catalysis6" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction6" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence26">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep7">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction5" />
+ <bp:stepProcess rdf:resource="#Catalysis5" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence27">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep6">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction4" />
+ <bp:stepProcess rdf:resource="#Catalysis4" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep5">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction3" />
+ <bp:stepProcess rdf:resource="#Catalysis3" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence22">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence23">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence24">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep9">
+ <bp:stepProcess rdf:resource="#Pathway4" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence25">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence10">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep10">
+ <bp:stepProcess rdf:resource="#Pathway5" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep11">
+ <bp:stepProcess rdf:resource="#Catalysis7" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction7" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep12">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction8" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep13">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction9" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence19">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence15">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence16">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence17">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence18">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence11">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence12">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence13">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence14">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep21">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction16" />
+ <bp:stepProcess rdf:resource="#Catalysis12" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep22">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction17" />
+ <bp:stepProcess rdf:resource="#Catalysis13" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep23">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction18" />
+ <bp:stepProcess rdf:resource="#Catalysis14" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep24">
+ <bp:stepProcess rdf:resource="#Catalysis15" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction19" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep20">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction15" />
+ <bp:stepProcess rdf:resource="#Catalysis11" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep18">
+ <bp:stepProcess rdf:resource="#Pathway6" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep19">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction14" />
+ <bp:stepProcess rdf:resource="#Catalysis10" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep14">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction10" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep15">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction11" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep16">
+ <bp:stepProcess rdf:resource="#Catalysis8" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction12" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep17">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction13" />
+ <bp:stepProcess rdf:resource="#Catalysis9" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep25">
+ <bp:stepProcess rdf:resource="#Catalysis16" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction20" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep26">
+ <bp:stepProcess rdf:resource="#Catalysis17" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction21" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction20">
+ <bp:evidence rdf:resource="#Evidence26" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">DIMT1 dimethylates adenosine-1850,1851 of 18S rRNA yielding 6-dimethyladenosine-1850,1851</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction21">
+ <bp:evidence rdf:resource="#Evidence27" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">WBSCR22:TRMT112 methylates guanosine-1639 of 18S rRNA yielding 7-methylguanosine-1639</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction13">
+ <bp:evidence rdf:resource="#Evidence18" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">18SE pre-rRNA in pre-40S particles is nucleolytically processed during translocation from the nucleus to the cytosol</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis16">
+ <bp:controlled rdf:resource="#BiochemicalReaction20" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction14">
+ <bp:evidence rdf:resource="#Evidence20" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Box H/ACA snoRNP transforms uridine to pseudouridine in pre-rRNA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis15">
+ <bp:controlled rdf:resource="#BiochemicalReaction19" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction15">
+ <bp:evidence rdf:resource="#Evidence21" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">EMG1 of the SSU processome methylates pseudouridine-1248 of 18S rRNA yielding N(1)-methylpseudouridine-1248</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction16">
+ <bp:evidence rdf:resource="#Evidence22" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NAT10 acetylates cytidine-1337 and cytidine-1842 of 18S rRNA yielding 4-acetylcytidine-1377 and 4-acetylcytidine-1842</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis17">
+ <bp:controlled rdf:resource="#BiochemicalReaction21" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction10">
+ <bp:evidence rdf:resource="#Evidence15" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">32S pre-rRNA is nucleolytically processed at site 4 (4a) to yield 12S pre-rRNA and 28S rRNA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction11">
+ <bp:evidence rdf:resource="#Evidence16" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">30S pre-rRNA is nucleolytically processed at site 1 to yield 21S pre-rRNA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction12">
+ <bp:evidence rdf:resource="#Evidence17" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">21S pre-rRNA is nucleolytically processed at site E (site2a) to yield 18SE pre-rRNA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway5">
+ <bp:pathwayOrder rdf:resource="#PathwayStep14" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep15" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep16" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep17" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep11" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep12" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep13" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction13" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction7" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction10" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction8" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction11" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction9" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction12" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence11" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Major pathway of rRNA processing in the nucleolus and cytosol</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">In humans, a 47S precursor rRNA (pre-rRNA) is transcribed by RNA polymerase I from rRNA-encoding genes (rDNA) at the boundary of the fibrillar center and the dense fibrillar components of the nucleolus (Stanek et al. 2001). The 47S precursor is processed over the course of about 5-8 minutes (Popov et al. 2013) by endoribonucleases and exoribonucleases to yield the 28S rRNA and 5.8S rRNA of the 60S subunit and the 18S rRNA of the 40S subunit (reviewed in Mullineus and Lafontaine 2012, Henras et al. 2015). As the pre-rRNA is being transcribed, a large protein complex, the small subunit (SSU) processome, assembles in the region of the 18S rRNA sequence, forming terminal knobs on the pre-rRNA (reviewed in Phipps et al. 2011, inferred from yeast in Dragon et al. 2002). The SSU processome contains both ribosomal proteins of the small subunit and processing factors which process the pre-rRNA and modify nucleotides. Through addition of subunits the SSU processome appears to be converted into the larger 90S pre-ribosome (inferred from yeast in Grandi et al. 2002). An analogous large subunit processome (LSU) assembles in the region of the 28S rRNA, however the LSU is less well characterized (inferred from yeast in McCann et al. 2015). Following cleavage of the pre-rRNA within internal transcribed spacer 1 (ITS1), the pre-ribosomal particle separates into a pre-60S subunit and a pre-40S subunit in the nucleolus (reviewed in Hernandez-Verdun et al. 2010, Phipps et al. 2011). The pre-60S and pre-40S ribosomal particles are then exported from the nucleus to the cytoplasm where the processing factors dissociate and recycle back to the nucleus Nuclease digestions of the 47S pre-rRNA can follow several paths. In the major pathway, the ends of the 47S pre-rRNA are trimmed to yield the 45S pre-rRNA. Digestion at site 2  (also called site 2b in mouse, see Henras et al. 2015 for nomenclature) cleaves the 45S pre-rRNA to yield the 30S pre-rRNA containing the 18S rRNA of the small subunit and the 32S pre-rRNA containing the 5.8S rRNA and the 28S rRNA of the large subunit. The 32S pre-rRNA is digested in the nucleus to yield the 5.8S rRNA and the 28S rRNA while the 30S pre-rRNA is digested in the nucleus to yield the 18SE pre-rRNA which is then processed in the nucleus and cytosol to yield the 18S rRNA. At least 286 human proteins, 74 of which have no yeast homolog, are required for efficient processing of pre-rRNA in the nucleus (Tafforeau et al. 2013)</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway6">
+ <bp:pathwayOrder rdf:resource="#PathwayStep19" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep25" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep26" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep21" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep22" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep23" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep24" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep20" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction14" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction15" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction16" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction20" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction21" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction17" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction18" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction19" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence19" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">rRNA modification in the nucleus and cytosol</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Human ribosomal RNAs (rRNAs) contain about 200 residues that are enzymatically modified after transcription in the nucleolus (Maden and Khan 1977, Maden 1988, Maden and Hughes 1997, reviewed in Hernandez-Verdun et al. 2010, Boschi-Muller and Motorin 2013). The modified residues occur in regions of the rRNAs that are located in functionally important parts of the ribosome, notably in the A and P peptidyl transfer sites, the polypeptide exit tunnel, and intersubunit contacts (Polikanov et al. 2015, reviewed in Decatur and Fournier 2002, Chow et al. 2007, Sharma and Lafontaine 2015). The two most common modifications are pseudouridines and 2&apos;-O-methylribonucleotides. Formation of pseudouridine from encoded uridine is catalyzed by box H/ACA small nucleolar ribonucleoprotein (snoRNP) complexes (reviewed in Hamma and Ferre-D&apos;Amare 2010, Watkins and Bohnsack 2011, Ge and Yu 2013, Kierzek et al. 2014, Yu and Meier 2014) and methylation of the hydroxyl group of the 2&apos; carbon is catalyzed by box C/D snoRNPs (Kiss-Laszlo et al. 1996, Lapinaite et al. 2013, reviewed in Watkins and Bohnsack 2011). The snoRNP complexes contain common sets of protein subunits and unique snoRNAs that guide each complex to its target nucleotide of the rRNA by base-pairing between the snoRNA and the rRNA (reviewed in Henras et al. 2004, Watkins and Bohnsack 2011). Other modifications of rRNA include 5-methylcytidine (reviewed in Squires and Preiss 2010), 1-methylpseudouridine, 7-methylguanosine, 6-dimethyladenosine, and 4-acetylcytidine (reviewed in Sharma and Lafontaine 2015). In yeast most modifications are introduced co-transcriptionally (Kos and Tollervey 2010, reviewed in Turowski and Tollervey 2015), however the order of modification events and pre-rRNA cleavage events is not well characterized.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep9" />
+ <bp:pathwayComponent rdf:resource="#Pathway2" />
+ <bp:pathwayComponent rdf:resource="#Pathway4" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">rRNA processing</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Each eukaryotic cytosolic ribosome contains 4 molecules of RNA: 28S rRNA (25S rRNA in yeast), 5.8S rRNA, and 5S rRNA in the 60S subunit and 18S rRNA in the 40S subunit. The 18S rRNA, 5.8S rRNA, and 28S rRNA are produced by endonucleolytic and exonucleolytic processing of a single 47S precursor (pre-rRNA) (reviewed in Henras et al. 2015). Transcription of ribosomal RNA genes, processing of pre-rRNA, and assembly of precursor 60S and 40S subunits occur in the nucleolus (reviewed in Hernandez-Verdun et al. 2010), with a few late reactions occurring in the cytosol. Within the nucleolus non-transcribed DNA and inactive polymerase complexes are located in the fibrillar center, active DNA polymerase I transcription occurs at the interface between the fibrillar center and the dense fibrillar component, early processing of pre-rRNA occurs in the dense fibrillar component, and late processing of pre-rRNA occurs in the granular component (Stanek et al. 2001).  Processed ribosomal RNA contains many modified nucleotides which are generated by enzymes acting on encoded nucleotides contained in the precursor rRNA (reviewed in Boschi-Muller and Motorin 2013). The most numerous modifications are pseudouridine residues and 2&apos;-O-methylribonucleotides. Pseudouridylation is guided by base pairing between the precursor rRNA and a small nucleolar RNA (snoRNA) in a Box C/D snoRNP (reviewed in Henras et al 2004, Yu and Meier 2014).  Similarly, 2&apos;-O-methylation is guided by base pairing between the precursor rRNA and a snoRNA in a Box H/ACA snoRNP (reviewed in Henras et al. 2004, Hamma and Ferre-D&apos;Amare 2010). Other modifications include N(1)-methylpseudouridine, 5-methylcytosine, 7-methylguanosine, 6-dimethyladenosine, and 4-acetylcytidine. Modification of nucleotides occur as the pre-rRNA is being cleaved. However, the order of cleavage and modification steps is not clear so these two processes are presented separately here. Defects in ribosome biogenesis factors can cause disease (reviewed in Freed et al. 2010). Mitochondrial ribosomes are completely distinct from cytoplasmic ribosomes, having different protein subunits and 12S rRNA and 16S rRNA. The mitochondrial rRNAs are encoded in the mitochondrial genome and are produced by processing of a long H strand transcript. Specific residues in the rRNAs are modified by enzymes to yield 5 different types of modified nucleotides:</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway2">
+ <bp:pathwayOrder rdf:resource="#PathwayStep2" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep8" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction6" />
+ <bp:pathwayComponent rdf:resource="#Pathway3" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">rRNA processing in the mitochondrion</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Mitochondrial ribosomes contain 16S rRNA (large subunit) and 12S rRNA (small subunit) that are encoded in the mitochondrial genome and produced by processing of a long H strand transcript (reviewed in Van Haute et al. 2015). Enzymes encoded in the nucleus and acting in the mitochondrial matrix modify 5 nucleotides in the 12S RNA and 4 nucleotides in the 16S rRNA (reviewed in Van Haute et al. 2015).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway3">
+ <bp:pathwayOrder rdf:resource="#PathwayStep4" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep3" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep7" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep6" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep5" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction2" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction3" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction4" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction5" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">rRNA modification in the mitochondrion</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Five modified nucleotides have been detected in the 12S rRNA: 5-methylcytidine-841 catalyzed by NSUN4, 6-dimethyladenosine-936 catalyzed by TFB1M, 6-dimethyladenosine-937 catalyzed by TFB1M,  5-methyluridine-429, and 4-methylcytidine-839 (reviewed in Van Haute et al. 2015). Four modified nucleotides have been detected in 16S rRNA: 2&apos;-O-methylguanosine-1145 catalyzed by MRM1, 2&apos;-O-methylguanosine-1370 catalyzed by RNMTL1 (MRM3), 2&apos;-O-methyluridine-1369 catalyzed by FTSJ2 (MRM2), and pseudouridine-1397. 2&apos;-O-methyluridine-1369 and 2&apos;-O-methylguanosone-1370 occur in the A-loop of rRNA which is located at the peptidyl transferase center of the large subunit. Here the modified residues play a role in interaction with the aminoacyl site of tRNA. Knockouts of TFB1M and NSUN4 are lethal in mice and mutations in TFB1M may be related to aminoglycoside-induced deafness (reviewed in Van Haute et al. 2015).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway4">
+ <bp:pathwayOrder rdf:resource="#PathwayStep18" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep10" />
+ <bp:pathwayComponent rdf:resource="#Pathway5" />
+ <bp:pathwayComponent rdf:resource="#Pathway6" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence10" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">rRNA processing in the nucleus and cytosol</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Each eukaryotic cytosolic ribosome contains 4 molecules of RNA: 28S rRNA (25S rRNA in yeast), 5.8S rRNA, and 5S rRNA in the 60S subunit and 18S rRNA in the 40S subunit. The 18S rRNA, 5.8S rRNA, and 28S rRNA are produced by endonucleolytic and exonucleolytic processing of a single 47S precursor (pre-rRNA) (reviewed in Henras et al. 2015). Transcription of ribosomal RNA genes, processing of pre-rRNA, modification of nucleotide residues within the rRNA, and assembly of precursor 60S and 40S subunits occur predominantly in the nucleolus (reviewed in Hernandez-Verdun et al. 2010, Boschi-Muller and Motorin 2013), with a few late reactions occurring in the cytosol.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Catalysis rdf:ID="Catalysis10">
+ <bp:controlled rdf:resource="#BiochemicalReaction14" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis12">
+ <bp:controlled rdf:resource="#BiochemicalReaction16" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction17">
+ <bp:evidence rdf:resource="#Evidence23" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Box C/D snoRNP methylates ribonucleotides in pre-rRNA yielding 2&apos;-O-methylribonucleotides</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis11">
+ <bp:controlled rdf:resource="#BiochemicalReaction15" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction18">
+ <bp:evidence rdf:resource="#Evidence24" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">TSR3 transfers aminocarboxypropyl group from S-adenosylmethionine to N(1)-methylpseudouridine-1248 of 18SE rRNA yielding N(1)-methyl-N(3)-aminocarboxypropylpseudouridine-1248</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis14">
+ <bp:controlled rdf:resource="#BiochemicalReaction18" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction19">
+ <bp:evidence rdf:resource="#Evidence25" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NOP2 (NSUN1) methylates cytidine-4447 of 28S rRNA yielding 5-methylcytidine-4447</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis13">
+ <bp:controlled rdf:resource="#BiochemicalReaction17" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence5">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence4">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence7">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence6">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence3">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence9">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence8">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
+ <bp:evidence rdf:resource="#Evidence5" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">TFB1M dimethylates adenosine-936 and adenosine-937 of 12S rRNA yielding 6-dimethyladenosine-936 and 6-dimethyladenosine-937</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction3">
+ <bp:evidence rdf:resource="#Evidence6" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NSUN4 methylates cytidine-841 of 12S rRNA yielding 5-methylcytidine-841</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction4">
+ <bp:evidence rdf:resource="#Evidence7" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MRM1 methylates guanosine-1145 of 16S rRNA yielding 2&apos;-O-methylguanosine-1145</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction5">
+ <bp:evidence rdf:resource="#Evidence8" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MRM2 (FTSJ2) methylates uridine-1369 of 16S rRNA yielding 2&apos;-O-methyluridine</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction6">
+ <bp:evidence rdf:resource="#Evidence9" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Mitochondrial RNase P (mtRNase P) cleaves the 5&apos; ends of pre-tRNAs and ELAC2 (RNase Z) cleaves the 3&apos; ends of pre-tRNAs in the H strand transcript</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction7">
+ <bp:evidence rdf:resource="#Evidence12" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">47S pre-rRNA is nucleolytically processed at A&apos; (01,A1), site A0, and site 02 (site 6)  to yield 45S pre-rRNA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction8">
+ <bp:evidence rdf:resource="#Evidence13" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">45S pre-rRNA is nucleolytically processed at site 2 (site 2b) to yield 30S pre-rRNA and 32S pre-rRNA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction9">
+ <bp:evidence rdf:resource="#Evidence14" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">12S pre-rRNA is nucleolytically processed to yield 5.8S rRNA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence4" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MRM3 (RNMTL1) methylates guanosine-1370 of 16S rRNA yielding 2&apos;-O-methylguanosine-1370</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis6">
+ <bp:controlled rdf:resource="#BiochemicalReaction6" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis7">
+ <bp:controlled rdf:resource="#BiochemicalReaction7" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis4">
+ <bp:controlled rdf:resource="#BiochemicalReaction4" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis5">
+ <bp:controlled rdf:resource="#BiochemicalReaction5" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis8">
+ <bp:controlled rdf:resource="#BiochemicalReaction12" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis9">
+ <bp:controlled rdf:resource="#BiochemicalReaction13" />
+</bp:Catalysis>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:Catalysis rdf:ID="Catalysis2">
+ <bp:controlled rdf:resource="#BiochemicalReaction2" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis3">
+ <bp:controlled rdf:resource="#BiochemicalReaction3" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis1">
+ <bp:controlled rdf:resource="#BiochemicalReaction1" />
+</bp:Catalysis>
+</rdf:RDF>

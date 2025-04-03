@@ -2,18 +2,37 @@ package org.reactome.server.tools;
 
 import org.biopax.paxtools.io.SimpleIOHandler;
 import org.reactome.server.graph.domain.model.*;
-
+import org.biopax.validator.BiopaxIdentifier;
+import org.biopax.validator.api.Validator;
+import org.biopax.validator.api.ValidatorUtils;
+import org.biopax.validator.api.beans.Validation;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.core.io.Resource;
 
 import java.io.*;
 import java.util.List;
 import org.biopax.paxtools.model.*;
-import org.reactome.server.graph.domain.model.Pathway;
 
 /**
  * @author Sarah Keating <skeating@ebi.ac.uk>
  */
 class WriteBioPAX3 {
-
+    private static Validator validator;
+    // Initialize validator when the class is first loaded
+    static {
+        try {
+            ApplicationContext ctx = new ClassPathXmlApplicationContext(
+                "classpath:META-INF/spring/appContext-validator.xml",
+                "classpath:META-INF/spring/appContext-loadTimeWeaving.xml"
+            );
+            validator = (Validator) ctx.getBean("validator");
+            System.out.println("BioPAX Validator initialized.");
+        } catch (Exception e) {
+            System.err.println("Error initializing BioPAX Validator: " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
     private final org.reactome.server.graph.domain.model.Pathway thisPathway;
     private final List<Event> thisListEvents;
     private Pathway parentPathway;
@@ -82,8 +101,31 @@ class WriteBioPAX3 {
         BioPAXPathwayBuilder thisBPPath = new BioPAXPathwayBuilder(thisPathway, thisModel);
 
         thisBPPath.addReactomePathway();
+        // validateBioPAXFile();
     }
 
+    public void validateBioPAXFile(File file) {
+        try {
+            Resource owlResource = new org.springframework.core.io.FileSystemResource(file);
+            Validation result = new Validation(new BiopaxIdentifier(), owlResource.getDescription(), false, null, 0, "notstrict");
+
+            validator.importModel(result, owlResource.getInputStream());
+            validator.validate(result);
+
+            // Save validation results
+            PrintWriter writer = new PrintWriter(file.getPath() + "_validation.xml");
+            ValidatorUtils.write(result, writer, null);
+            writer.close();
+
+            System.out.println("Validation completed for: " + file.getName());
+
+            // Cleanup
+            validator.getResults().remove(result);
+        } catch (IOException e) {
+            System.err.println("BioPAX validation failed: " + e.getMessage());
+        }
+    }
+    
     /**
      * Set the database version number.
      *

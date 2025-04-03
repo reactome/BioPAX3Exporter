@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/9662001#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:Pathway rdf:ID="Pathway4">
+ <bp:pathwayOrder rdf:resource="#PathwayStep6" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction3" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence6" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective F8 binding to von Willebrand factor</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Upon secretion from the cell, FVIII circulates in a tight complex with the multimeric glycoprotein von Willebrand Factor (vWF), which is essential for maintaining stable levels of FVIII in the circulation (reviewed by Pipe SW et al. 2016). Genetic mutations in the F8 gene can compromise FVIII binding to vWF thus decreasing FVIII values in the plasma causing hemophilia A (HA), an X-linked recessive bleeding disorder.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#Pathway2" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway5">
+ <bp:pathwayOrder rdf:resource="#PathwayStep8" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction4" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence8" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective F8 binding to the cell membrane</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The Reactome event describes the defective interaction between the thrombin-activated FVIIIa protein and phospholipid membrane surfaces caused by hemophilia A-associated FVIII variants, such as A2220P, A2220del and Q2330P.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep2">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+ <bp:stepProcess rdf:resource="#Catalysis1" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway6">
+ <bp:pathwayOrder rdf:resource="#PathwayStep10" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction5" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence10" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective F8 cleavage by thrombin</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">In normal human plasma, thrombin cleaves factor VIII (FVIII) after arginine residues 391 (A1-A2 domain junction) and 759 (A2-B domain junction) to yield heavy chain fragments and at R1708 (a3-A3 junction) to yield the light chain fragment (Eaton D et al. 1986; Hill-Eubanks DC et al. 1989). Mutations affecting arginine residues located at the thrombin cleavage sites of factor VIII protein result in mild/moderate hemophilia A (HA) (Pattinson JK et al. 1990; Arai M et al. 1990; Schwaab R et al. 1991). The Reactome event describes failed thrombin-mediated activation of HA-associated FVIII variants (R391C, R391H, S392L, R1708C and R1708H) due to defects at or close to thrombin cleavage sites.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep3">
+ <bp:stepProcess rdf:resource="#Pathway3" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway7">
+ <bp:pathwayOrder rdf:resource="#PathwayStep12" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction6" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence12" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective F8 sulfation at Y1699</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Hemophilia A (HA) is a bleeding disorder caused by lack of or a defective factor VIII (FVIII) protein and results from defects in the F8 gene (Peyvandi F et al. 2016). In healthy individuals, FVIII is synthesized as a large glycoprotein of 2351 amino acids with a discrete domain structure: A1-A2-B-A3-C1-C2 (Wood WI et al. 1984; Vehar GA et al. 1984; Toole JJ et al. 1984). Upon synthesis, FVIII is translocated into the lumen of the endoplasmic reticulum (ER), where it undergoes extensive processing including cleavage of a signal peptide and N-linked glycosylation at asparagine residues (Kaufman RJ et al. 1988, 1997; Kaufman RJ 1998). In the ER lumen of mammalian cells FVIII interacts with the protein chaperones calnexin (CNX), calreticulin (CRT), and immunoglobulin-binding protein (BiP or GRP78) that facilitate proper folding of proteins prior to trafficking to the Golgi compartment (Marquette KA et al. 1995; Swaroop M et al. 1997; Pipe SW et al. 1998; Kaufman RJ et al. 1997; Kaufman RJ 1998). Trafficking from the ER to the Golgi compartment is facilitated by LMAN1 and multiple combined factor deficiency 2 (MCFD2) cargo receptor complex (Zhang B et al. 2005; Zheng, C et al. 2010, 2013). Within the Golgi apparatus, FVIII is subject to further processing, including modification of the N-linked oligosaccharides to complex-type structures, O-linked glycosylation, and sulfation of specific Tyr-residues (Kaufman RJ 1998). Upon secretion from the cell, FVIII is cleaved at two sites in the B-domain to form a heterodimer consisting of the heavy chain containing the A1-A2-B domains in a metal ion-dependent complex with the light chain consisting of the A3-C1-C2 domains (Kaufman RJ et al. 1997; Kaufman RJ 1998). The Reactome event describes defects within the secretory pathway due to mutations in the F8 gene that can impair FVIII synthesis, folding, intracellular processing and transport which result in a lack or reduced levels of the plasma FVIII protein. The module includes also an event of defective post-translational tyrosine sulfonation of FVIII in the Golgi apparatus that is required for the optimal interaction between the secreted FVIII and the von Willebrand factor (VWF).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep3" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep13" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep11" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep9" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep5" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep7" />
+ <bp:pathwayComponent rdf:resource="#Pathway4" />
+ <bp:pathwayComponent rdf:resource="#Pathway5" />
+ <bp:pathwayComponent rdf:resource="#Pathway6" />
+ <bp:pathwayComponent rdf:resource="#Pathway7" />
+ <bp:pathwayComponent rdf:resource="#Pathway2" />
+ <bp:pathwayComponent rdf:resource="#Pathway3" />
+ <bp:pathwayComponent rdf:resource="#Pathway8" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective factor VIII causes hemophilia A</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Hemophilia A is an X&#8208;chromosome&#8208;linked recessive bleeding disorder defined by a qualitative and/or quantitative factor VIII (FVIII, F8) deficiency (Salen P    Babiker HM 2019). Patients affected by the mild form of the disease (FVIII activity 0.05&#8211;0.4 IU/mL) suffer from bleedings occurring after trauma or surgery. In severe hemophilia A patients (FVIII activity 0.01 IU/mL) bleedings occur spontaneously, whereas moderate hemophilia A patients (FVIII activity 0.01&#8211;0.05 IU/mL present with an intermediate bleeding phenotype (White GC 2nd et al. 2001). In healthy individuals, FVIII is synthesized as an &#8764; 300-kDa glycoprotein by hepatocytes, liver sinusoidal endothelial cells, and certain types of endothelial cells (Wion KL et al. 1995; Jacquemin M et al. 2006; Shahani T et al. 2009; Turner NA    Moake JL 2015). The FVIII protein contains a domain sequence A1-A2-B-ap-A3-C1-C2 and circulates as an A1-A2-B:ap-A3-C1-C2 heterodimer bound noncovalently to the von Willebrand factor (vWF) protein. vWF protects FVIII from rapid clearance (Lenting PJ et al. 2007). During the activation of FVIII by thrombin to FVIIIa, the B domain and an activation peptide (ap) are released, and cleavage between the A1 and A2 domains produces an A1:A2:A3-C1-C2 heterotrimer (Lollar P    Parker ET 1991; Nogami K et al. 2005; Newell JL    Fay PJ 2007; 2009). Once activated, FVIIIa dissociates from vWF and binds to the membrane of activated platelets to assemble with activated factor IX (FIXa) (Gilbert GE    Arena AA 1996; Ahmad SS et al. 2003; Panteleev MA et al. 2004; Ngo JC et al. 2008). At physiologic concentrations, the A2 subunit spontaneously dissociates, leading to loss of FVIIIa cofactor activity (Lollar P    Parker CG 1990). Hemophilia A results from a broad spectrum of mutations that occur along the entire length of the F8 gene causing diverse molecular phenotypes that result in similar disease states (Peyvandi F et al. 2016). Together with missense mutations being the most common type of mutations in hemophilia A, a relatively frequent cause is ascribable to nonsense and splice site mutations, deletions/insertions and promoter mutations (Hakeos WH et al. 2002; Wei W et al. 2017; Jacquemin M et al. 2000; Amano K et al. 1998; Gilbert GE et al. 2012; Pahl S et al. 2014; Peyvandi F et al. 2016). In addition, the inversion of intron 1 or 22 in the F8 gene is responsible for approximately half of severely affected hemophilia A patients (Antonarakis SE et al. 1995). Although specific FVIII missense mutations correlate with defects including decreased secretion or stability and specific functional impairment of FVIII, the mechanisms of the majority of missense mutations are poorly understood (Hakeos WH et al. 2002; Wei W et al. 2017, 2018; Jacquemin M et al. 2000; Amano K et al. 1998; Gilbert GE et al. 2012; Pahl S et al. 2014). The Reactome module describes several molecular mechanisms underlying hemophilia A which include:(1) low-level secretion of defective FVIII molecule as a result of impaired FVIII folding and intracellular processing, (2) reduced ability of FVIII variants to bind to von Willebrand factor (VWF) that leads to instability of FVIII variants in the plasma, (3) abnormal interaction of defective FVIII with FIXa. Defects in FVIII activity may also result in potentially slowing down FVIII activation by thrombin or altering stability of activated FVIIIa.  </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway2">
+ <bp:pathwayOrder rdf:resource="#PathwayStep2" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective cofactor function of FVIIIa variant</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Factor VIII (FVIII) in its activated form, FVIIIa, acts as a cofactor to the serine protease FIXa, in the conversion of the zymogen FX to the active enzyme (FXa). Missense mutations within the S577-Q584 region of FVIII have been associated with mild/moderate hemophilia A (HA) (Amano K et al. 1998; Celie PH et al. 1999; Jenkins PV et al. 2002). A functional assay demonstrated that the mutations S577F, V578A, D579A, and Q584R interfere with FVIIIa:FIXa-mediated stimulation of FX activation thus the effect of the mutations is to reduce the cofactor potential of FVIII in FXa generation. The Reactome event describes failed generation of FXa as the functional consequence of the FIXa interaction with HA-associated FVIIIa variants due to reduced ability of defective FVIII to act as a cofactor for FIXa within the intrinsic tenase complex.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway3">
+ <bp:pathwayOrder rdf:resource="#PathwayStep4" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction2" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence4" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective F8 secretion</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Hemophilia A (HA) is a bleeding disorder caused by lack of or a defective factor VIII (FVIII) protein and results from defects in the F8 gene (Peyvandi F et al. 2016). In healthy individuals, FVIII is synthesized as a large glycoprotein of 2351 amino acids with a discrete domain structure: A1-A2-B-A3-C1-C2 (Wood WI et al. 1984; Vehar GA et al. 1984; Toole JJ et al. 1984). Upon synthesis, FVIII is translocated into the lumen of the endoplasmic reticulum (ER), where it undergoes extensive processing including cleavage of a signal peptide and N-linked glycosylation at asparagine residues (Kaufman RJ et al. 1988, 1997; Kaufman RJ 1998). In the ER lumen of mammalian cells FVIII interacts with the protein chaperones calnexin (CNX), calreticulin (CRT), and immunoglobulin-binding protein (BiP or GRP78) that facilitate proper folding of proteins prior to trafficking to the Golgi compartment (Marquette KA et al. 1995; Swaroop M et al. 1997; Pipe SW et al. 1998; Kaufman RJ et al. 1997; Kaufman RJ 1998). Trafficking from the ER to the Golgi compartment is facilitated by LMAN1 and multiple combined factor deficiency 2 (MCFD2) cargo receptor complex (Zhang B et al. 2005; Zheng, C et al. 2010, 2013). Within the Golgi apparatus, FVIII is subject to further processing, including modification of the N-linked oligosaccharides to complex-type structures, O-linked glycosylation, and sulfation of specific Tyr-residues (Kaufman RJ 1998). Upon secretion from the cell, FVIII is cleaved at two sites in the B-domain to form a heterodimer consisting of the heavy chain containing the A1-A2-B domains in a metal ion-dependent complex with the light chain consisting of the A3-C1-C2 domains (Kaufman RJ et al. 1997; Kaufman RJ 1998). The Reactome event describes defects within the secretory pathway due to mutations in the F8 gene that can impair FVIII synthesis, folding, intracellular processing and transport which result in a lack or reduced levels of the plasma FVIII protein. The module includes also an event of defective post-translational tyrosine sulfonation of FVIII in the Golgi apparatus that is required for the optimal interaction between the secreted FVIII and the von Willebrand factor (VWF).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep8">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction4" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep9">
+ <bp:stepProcess rdf:resource="#Pathway6" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep4">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction2" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway8">
+ <bp:pathwayOrder rdf:resource="#PathwayStep14" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep15" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction7" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction8" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence14" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective F8 accelerates dissociation of the A2 domain</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Retention of A2 polypeptide is required for normal stability of activated factor VIII (FVIIIa) and dissociation of A2 correlates with FVIIIa inactivation and consequent loss of FXase activity. Hemophilia A (HA)-associated mutations (R550H, A303E, S308L, N713I, R717W and R717L) within the predicted A1-A2 and A2-A3 interface are thought to disrupt potential intersubunit hydrogen bonds and have the molecular phenotype of increased rate of inactivation of FVIIIa due to increased rate of A2 subunit dissociation (Pipe SW et al. 1999; Hakeos WH et al. 2002)</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep5">
+ <bp:stepProcess rdf:resource="#Pathway4" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep6">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction3" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep7">
+ <bp:stepProcess rdf:resource="#Pathway5" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis3">
+ <bp:controlled rdf:resource="#BiochemicalReaction6" />
+</bp:Catalysis>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:Catalysis rdf:ID="Catalysis1">
+ <bp:controlled rdf:resource="#BiochemicalReaction1" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis2">
+ <bp:controlled rdf:resource="#BiochemicalReaction5" />
+</bp:Catalysis>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:PathwayStep rdf:ID="PathwayStep15">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction8" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep10">
+ <bp:stepProcess rdf:resource="#Catalysis2" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction5" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep14">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction7" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep13">
+ <bp:stepProcess rdf:resource="#Pathway8" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep12">
+ <bp:stepProcess rdf:resource="#Catalysis3" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction6" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep11">
+ <bp:stepProcess rdf:resource="#Pathway7" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction3">
+ <bp:evidence rdf:resource="#Evidence7" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">F8 variant does not bind von Willebrand factor</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence15">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction4">
+ <bp:evidence rdf:resource="#Evidence9" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">F8 variant does not bind the cell membrane</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence14">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">FVIIIa variant:FIXa does not convert FX to the active FXa</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
+ <bp:evidence rdf:resource="#Evidence5" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">F8 variant is not secreted</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence16">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence11">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction7">
+ <bp:evidence rdf:resource="#Evidence15" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defects in F8 A2 domain accelerate dissociation of the A2 domain</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence10">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction8">
+ <bp:evidence rdf:resource="#Evidence16" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defects in F8 A1 domain accelerate dissociation of the A2 domain</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction5">
+ <bp:evidence rdf:resource="#Evidence11" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">F8 variant is not cleaved by thrombin</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence13">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence12">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction6">
+ <bp:evidence rdf:resource="#Evidence13" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">F8 variant is not sulfonated at Y1699</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence9">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence3">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence4">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence7">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence8">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence5">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence6">
+</bp:Evidence>
+</rdf:RDF>

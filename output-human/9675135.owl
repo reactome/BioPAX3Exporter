@@ -1,0 +1,1034 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/9675135#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:Evidence rdf:ID="Evidence19">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence18">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence17">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence16">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence15">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence14">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence13">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence12">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence11">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence10">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence20">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence29">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence28">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence27">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence26">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence25">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence24">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence23">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence22">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence21">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence31">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence30">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence39">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence38">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence37">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence36">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence35">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence34">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence33">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence32">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence42">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence41">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence40">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence49">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence48">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence47">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence46">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence45">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence44">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence43">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence53">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence52">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence51">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence50">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep38">
+ <bp:stepProcess rdf:resource="#Pathway18" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep37">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction21" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep39">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction22" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep41">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction23" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep40">
+ <bp:stepProcess rdf:resource="#Pathway19" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep43">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction24" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep42">
+ <bp:stepProcess rdf:resource="#Pathway20" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep45">
+ <bp:stepProcess rdf:resource="#Pathway21" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep44">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction25" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep47">
+ <bp:stepProcess rdf:resource="#Pathway23" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep46">
+ <bp:stepProcess rdf:resource="#Pathway22" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence59">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence58">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence57">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence56">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence55">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence54">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence64">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence63">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence62">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence61">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence60">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep27">
+ <bp:stepProcess rdf:resource="#Pathway13" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep26">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction15" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep29">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction17" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep28">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction16" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep30">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction18" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep32">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction19" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep31">
+ <bp:stepProcess rdf:resource="#Pathway14" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep34">
+ <bp:stepProcess rdf:resource="#Pathway16" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep33">
+ <bp:stepProcess rdf:resource="#Pathway15" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep36">
+ <bp:stepProcess rdf:resource="#Pathway17" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep35">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction20" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence66">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence65">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep16">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction11" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep15">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction10" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep18">
+ <bp:stepProcess rdf:resource="#Pathway8" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep17">
+ <bp:stepProcess rdf:resource="#Pathway7" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep19">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction12" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep21">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction13" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep20">
+ <bp:stepProcess rdf:resource="#Pathway9" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep23">
+ <bp:stepProcess rdf:resource="#Pathway11" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep22">
+ <bp:stepProcess rdf:resource="#Pathway10" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep25">
+ <bp:stepProcess rdf:resource="#Pathway12" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep24">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction14" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep10">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction6" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep12">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction7" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep11">
+ <bp:stepProcess rdf:resource="#Pathway6" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep14">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction9" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep13">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction8" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep45" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep33" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayComponent rdf:resource="#Pathway2" />
+ <bp:pathwayComponent rdf:resource="#Pathway15" />
+ <bp:pathwayComponent rdf:resource="#Pathway21" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Diseases of DNA repair</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Germline and somatic defects in genes that encode proteins that participate in DNA repair give rise to genetic instability that can lead to malignant transformation or trigger cellular senescence or apoptosis. Germline defects in DNA repair genes are an underlying cause of familial cancer syndromes and premature ageing syndromes. Somatic defects in DNA repair genes are frequently found in tumors. For review, please refer to Tiwari and Wilson 2019.  We have so far annotated diseases of mismatch repair, diseases of base excision repair and diseases of DNA double-strand break repair.  Defects in mammalian DNA mismatch repair (MMR) genes (MLH1, PMS2, MSH2, and MSH6) result in microsatellite instability (MSI) and reduced fidelity during replication and repair steps. Defective variants of MMR genes are associated with sporadic cancers with hypermutation phenotypes as well as hereditary cancer syndromes such as Lynch syndrome (hereditary non-polyposis colorectal cancer) and constitutional mismatch repair deficiency syndrome (CMMRD). MSI is an important predictor of sensitivity to cancer immunotherapy as the high mutational burden renders MSI tumors immunogenic and sensitive to programmed cell death-1 (PD-1) immune checkpoint inhibitors (Mandal et al. 2019). For review, please refer to Pena-Diaz and Rasmussen 2016, Sijmons and Hofstra 2016, Tabori et al. 2017, Baretti and Le 2018.  Germline mutations, single nucleotide polymorphisms (SNPs) and somatic mutations in several genes involved in base excision repair (BER), a DNA repair pathway where a damaged DNA base is excised and replaced with a correct base, are involved in the development of cancer and several oxidative stress-related diseases. For review, please refer to Fu et al. 2012, Fletcher and Houlston 2010, Brenerman et al. 2014, Patrono et al. 2014, and D&apos;Errico et al. 2017.  Germline mutations in genes involved in repair of DNA double-strand breaks (DSBs) are the underlying cause of several cancer predisposition syndromes, some of which also encompass developmental disorders associated with immune dysfunction, radiosensitivity and neurodegeneration. Somatic mutations in genes involved in DSB repair also occur in sporadic cancers. For review, please refer to McKinnon and Caldecott 2007, Keijzers et al. 2017, and Jachimowicz et al. 2019.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway2">
+ <bp:pathwayOrder rdf:resource="#PathwayStep31" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep11" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep22" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep2" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep17" />
+ <bp:pathwayComponent rdf:resource="#Pathway14" />
+ <bp:pathwayComponent rdf:resource="#Pathway3" />
+ <bp:pathwayComponent rdf:resource="#Pathway6" />
+ <bp:pathwayComponent rdf:resource="#Pathway7" />
+ <bp:pathwayComponent rdf:resource="#Pathway10" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Diseases of Base Excision Repair</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Germline mutations, single nucleotide polymorphisms (SNPs) and somatic mutations in several genes involved in base excision repair (BER), a DNA repair pathway where a damaged DNA base is excised and replaced with a correct base, are involved in the development of cancer and several other oxidative stress-related diseases. For review, please refer to Fu et al. 2012, Fletcher and Houlston 2010, Brenerman et al. 2014, Patrono et al. 2014, and D&apos;Errico et al. 2017.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence9">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway3">
+ <bp:pathwayOrder rdf:resource="#PathwayStep6" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep3" />
+ <bp:pathwayComponent rdf:resource="#Pathway4" />
+ <bp:pathwayComponent rdf:resource="#Pathway5" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective Base Excision Repair Associated with NTHL1</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NTHL1 is a DNA N-glycosylase that catalyzes the first step in base excision repair (BER), the primary repair pathway for oxidative DNA damage. NTHL1 can recognize and remove oxidized cytosine, adenine and thymine, in the form of cytosine glycol (Cg), 4,6-diamino-5-formamidopyrimidine (FapyA), and thymine glycol (Tg), respectively. NTHL1 can also recognize and remove dihydrouracil (DHU), produced by cytosine deamination. Germline mutations that impair function of NTHL1 predispose affected patients to a cancer syndrome (NTHL1 syndrome) that involves adenomatous polyposis and colorectal cancer, similar to MUTYH-associated polyposis (MAP), but also causes development of tumors in other organs, such as breast, bladder, skin, uterus and brain. Only patients with mutations in both alleles of NTHL1 are affected, indicative of an autosomally recessive inheritance (Weren et al. 2015, Rivera et al. 2015, Broderick et al. 2017, Grolleman et al. 2019). Some common NTHL1 polymorphisms may results in reduced NTHL1 function, but predisposition of affected individuals to cancer has not been studied in full (Galick et al. 2013). Mice that are double knockout for Neil1 and Nthl1 genes accumulate DNA damage in the form of FapyA and FapyG and are more prone to development of lung adenocarcinoma than single Neil1 or Nthl1 gene knockouts (Chan et al. 2009). Biallelic loss-of-function mutations in NTHL1 result in a mutational signature characterized by C&gt;T transitions at non-CpG sites (Grolleman et al. 2019). For review, please refer to Weren et al. 2018. Besides loss-of-function mutations, NTHL1 is amplified and overexpressed in some cancers. NTHL1 overexpression leads to genomic instability in non-transformed human bronchial epithelial cells and may lead to malignant transformation (Limpose et al. 2018).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway4">
+ <bp:pathwayOrder rdf:resource="#PathwayStep5" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep4" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction2" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence4" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective NTHL1 substrate processing</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NTHL1 D239Y is produced as a consequence of a single nucleotide polymorphism (SNP) rs3087468 in the NTHL1 gene. The frequency of this polymorphism varies in different populations. Substitution of aspartic acid residue at position 239 with tyrosine results in an NTHL1 protein that is still able to bind to damaged DNA but appears to have impaired glycosylase activity. Expression of NTHL1 D239Y in non-transformed human and mouse mammary epithelial cells increases genomic instability and leads to neoplastic transformation, acting as a dominant negative for wild-type NTHL1, through competition for substrate binding (Galick et al. 2013). It is uncertain if heterozygosity for NTHL1 D239Y polymorphism increases predisposition to cancer.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway5">
+ <bp:pathwayOrder rdf:resource="#PathwayStep9" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep10" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep8" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep7" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction3" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction4" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction5" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction6" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence7" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective NTHL1 substrate binding</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Several different mutations that result in truncation of NTHL1 protein have been described and associated with cancer. NTHL1 Q90TER (NTHL1 Gln90*) truncation mutant results from a nonsense mutation that replaces codon for glutamine 90 with a STOP codon. NTHL1 Q90TER has not been studied at the protein level, but is predicted to lack the DNA binding domain and the glycosylase domain, thus resulting in a complete loss of the base excision repair (BER) related DNA glycosylase function. Homozygous or compound heterozygous germline NTHL1 Q90TER mutation result in a cancer syndrome (NTHL1 associated tumor syndrome) that involves adenomatous polyposis, colorectal cancer breast cancer and multiple other types of cancer and benign tumors (Weren et al. 2015, Rivera et al. 2015, Grolleman et al. 2019). Apart from NTHL1 Q90TER, at least seven other truncating variants have been identified in patients with NTHL1 associated tumor syndrome, such as NTHL1 A79fs (NTHL1 Ala79fs), NTHL1 Y130TER (NTHL1 Tyr130*), NTHL1 W182TER (NTHL1 Trp182*), NTHL1 c.709+1G&gt;A, NTHL1 I245fs (NTHL1 Ile245fs), NTHL1 W269TER (NTHL1 Trp269*), NTHL1 Q287TER (NTHL1 Gln287*) (Rivera et al. 2015, Broderick et al. 2017, Grolleman et al. 2019).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway6">
+ <bp:pathwayOrder rdf:resource="#PathwayStep12" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep14" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep13" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep16" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep15" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction7" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction8" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction10" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction11" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction9" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence12" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective Base Excision Repair Associated with NEIL1</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NEIL1 is an enzyme with dual DNA glycosylase and beta/delta lyase activity involved in base excision repair pathway (BER), the primary repair pathway for oxidative DNA damage. NEIL1 can detect and remove DNA damage resulting from oxidation of adenine, guanine and thymine, in the form of 4,6-diamino-5-formamidopyrimidine (FapyA), 2,6-diamino-4-hydroxy-5-formamidopyrimidine (FapyG), and thymine glycol (Tg), respectively. NEIL1 can also detect and remove dihydrouracil (DHU), which results from deamination of cytosine. Several low frequency NEIL1 polymorphisms, present in about 1% of general population in the United States have been reported. Different polymorphisms have different effects on NEIL1 function, and it was suggested that NEIL1 polymorphisms and NEIL1 deficiency or haploinsuficiency may be involved in predisposition to cancer and in metabolic syndrome (Roy et al. 2007, Vartanian et al. 2006, Sampath et al. 2011, Prakash et al. 2014). One polymorphism, NEIL1 G83D, is associated with primary sclerosing cholangitis and cholangiocarcinoma (Forsbring et al. 2009). NEIL1 G83D variant exhibits impaired DNA glycosylase activity towards different damaged DNA bases (Roy et al. 2007, Prakash et al. 2014) and induces genomic instability (Galick et al. 2017). NEIL1 E28del, an in frame deletion variant of NEIL1 reported in gastric (stomach) cancer, where glutamate at position 28 is deleted, does not cleave Tg from damaged DNA (Shinmura et al. 2004). NEIL1 Q282TER, a NEIL1 variant which lacks the putative nuclear localization signal (NLS), localizes to the cytosol and is therefore not able to access damaged DNA substrates, but its involvement in cancer is uncertain (Shinmura et al. 2015). Reduced expression of NEIL1 and NEIL2 genes, accompanied with increased NEIL3 gene expression was detected in various cancers. NEIL1 gene silencing by promoter hypermethylation may be one of the underlying mechanisms for reduced NEIL1 expression in cancer (Shinmura et al. 2016). Infection with the Hepatitis C virus (HCV) leads to decreased NEIL1 expression in liver cells, through an unknown mechanism (Pal et al. 2010). Mice that are double knockout for Neil1 and Nthl1 genes accumulate DNA damage in the form of FapyA and FapyG and are more prone to development of lung adenocarcinoma than single Neil1 or Nthl1 gene knockouts (Chan et al. 2009). Another study reported that Neil1 knockout mice did not show a predisposition to tumour formation, and neither did double knockouts of Neil1 and Neil2, nor triple knockouts of Neil1, Neil2 and Neil3. Neil1 knockout mice are obese, consistent with the metabolic syndrome, but double knockouts of Neil1 and Neil2 do not display obesity (Rolseth et al. 2017). </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway7">
+ <bp:pathwayOrder rdf:resource="#PathwayStep20" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep18" />
+ <bp:pathwayComponent rdf:resource="#Pathway8" />
+ <bp:pathwayComponent rdf:resource="#Pathway9" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence18" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective Base Excision Repair Associated with MUTYH</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MUTYH gene is located on chromosome 1 and encodes a DNA glycosylase involved in base excision repair (BER). MUTYH (MYH) functions as an adenine DNA glycosylase and removes adenines and 2-hydroxyadenines on the newly synthesized DNA strand mispaired with guanines or 8-oxoguanines. 8-oxogunanines are produced by oxidation of guanines in DNA or by incorporation of 8-oxodGTP from the nucleotide pool into the newly synthesized DNA strand. Germline mutations in MUTYH cause the MUTYH-associated polyposis (MAP), a syndrome that resembles the familial adenomatous polyposis (FAP) syndrome, caused by mutations in the APC tumor suppressor gene. MAP is also known as the familial adenomatous polyposis 2 (FAP2) (OMIM:608456). MAP-affected individuals are predisposed to development of multiple colorectal adenomas and colorectal cancer. MAP is largely inherited in an autosomally recessive manner, with both MUTYH alleles affected. The predisposition of heterozygous MUTYH mutation carriers to MAP has not been completely ruled out (Fleischmann et al. 2004).  MUTYH is most frequently affected by missense mutations in MAP patients, with two major mutations, Y165C and G382D, reported in about 80% of MAP patients of European origin. In Japanese patients, the most frequently reported mutation was Q324H (Yanaru-Fujisawa et al. 2008). Residues Y165C and G382D in the abundant MUTYH isoform MUTYH alpha-3 (MUTYH-3), used in the majority of functional studies, correspond to Y176C and G393D, respectively, in the canonical UniProt isoform (MUTYH alpha-1) and to Y179C and G396, respectively, in the longest NCBI isoform, which is used as a reference isoform in the database InSiGHT (International Society for Gastrointestinal Hereditary Tumours Database). However, both the canonical UniProt and NCBI MUTYH isoforms are expressed at very low levels or not at all (Plotz et al. 2012). In addition to the isoform MUTYH alpha-3, the other two abundant MUTYH isoforms are MUTYH beta-3 and MUTYH gamma-3 (Plotz et al. 2012), which differ from MUTYH alpha-3 in the first exon used. Exons 1-alpha and 1-beta contain sequences that resemble a mitochondrial targeting signal (MTS). It was reported that MUTYH alpha-3 and MUTYH beta-3 predominantly localize to mitochondria, while MUTYH gamma-3 predominantly localizes to the nucleus (Takao et al. 1999). However, a nuclear localization signal is located at the C-terminus of all MUTYH isoforms and other studies suggested that all isoforms can localize to the nucleus and only a small fraction of MUTYH is targeted to the mitochondria (Ohtsubo et al. 2000, Ichinoe et al. 2004). A small number of functional studies of MUTYH mutants uses the MUTYH isoform gama-3 (Goto et al. 2010, Shinmura et al. 2012). Nuclear localization of MUTYH may be affected by a splicing site variant (Tao et al. 2004).  MAP, compared with APC-associated FAP, is characterized by a later age of onset and a smaller number and size of polyps. Germline MUTYH mutations are associated with an increased incidence of duodenal polyps, gastric cancer, melanoma, breast cancer, dental and dermoid cysts, and osteomas. MUTYH mutations are rarely reported in the sporadic colorectal cancer. Tumors that develop in MAP patients are characterized with an excess of G:C -&gt; T:A transversions in tumor suppressor genes, such as APC, and oncogenes, such as KRAS, which is a consequence of MUTYH functional impairment.  A single nucleotide polymorphism (SNP) at the splice donor site was reported to affect translation efficiency of MUTYH transcript, but its relevance for cancer predisposition has not been clarified (Yamaguchi et al. 2002). Catalytic activity of MUTYH and its mutants may be affected by posttranslational modifications (Parker et al. 2003, Kundu et al. 2010). Some MUTYH mutations reported in colorectal cancer do not affect MUTYH catalytic activity but disrupt the interaction of MUTYH with other proteins involved in DNA repair (Tominaga et al. 2004, Turco et al. 2013).  For review, please refer to Chow et al. 2004, Nielsen et al. 2011, Venesio et al. 2012, Mazzei et al. 2013.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence3">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway8">
+ <bp:pathwayOrder rdf:resource="#PathwayStep19" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction12" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence19" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective MUTYH substrate binding</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">For a subset of MUTYH disease variants underlying MUTYH-associated polyposis (MAP), also known as familial adenomatous polyposis 2 (FAP2), it was shown that, in addition to impaired catalytic activity, they also exhibit reduced binding to their substrate, adenine mispaired with 8-oxoguanine (OGUA:Ade, also known as 8-oxoG:A). MUTYH alpha-3 isoform (MUTYH-3) mutants with demonstrated deficient binding to OGUA:Ade include missense variants MUTYH-3 Y165C, MUTYH-3 R227W, MUTYH-3 R231L, MUTYH-3 R231H, MUTYH-3 V232F, MUTYH-3 R260Q, MUTYH-3 P281L and MUTYH-3 G382D, nonsense variants MUTYH-3 Y90*, MUTYH-3 Q377*, MUTYH-3 E466*, and frameshift variant MUTYH-3 A368fs26* (commonly known as MUTYH 1103delC) (Chmiel et al. 2003, Parker et al. 2005, Ali et al. 2008, Molatore et al. 2010, D&apos;Agostino et al. 2010).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence4">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway9">
+ <bp:pathwayOrder rdf:resource="#PathwayStep21" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction13" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence21" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective MUTYH substrate processing</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MUTYH disease variants underlying the MUTYH-associated polyposis (MAP), also known as familial adenomatous polyposis 2 (FAP2), show impaired catalytic activity with respect to cleaving adenine mispaired with 8-oxoguanine (OGUA:Ade, also known as 8-oxoG:A). For some of the mutants, defective substrate processing is further aggravated by reduced substrate binding. MUTYH alpha-3 isoform (MUTYH-3) mutants and MUTYH gamma-3 isoform (MUTYH-6) mutants with experimentally demonstrated deficiency in catalytic activity include missense mutants MUTYH-3 Y165C (MUTYH-6 Y151C), MUTYH-3 R171W, MUTYH-3 R227W, MUTYH-3 R231H, MUTYH-3 R231L, MUTYH-3 V232F,  MUTYH-3 R260Q, MUTYH-3 G272E, MUTYH-3 P281L, MUTYH-3 P391L (MUTYH-6 P377L), MUTYH-3 Q324H, MUTYH-3 Q324R,, MUTYH-3 A359V, MUTYH-3 G382D (MUTYH-6 G368D), MUTYH-3 A459D, MUTYH-6 R154H, MUTYH-6 I195V, MUTYH-6 M255V and MUTYH-3 L360P, in-frame indel mutants MUTYH-3 W138_M139insIW (also known as MUTYH 137insIW) and MUTYH-3 E466del (MUTYH-6 E452del), nonsense mutants MUTYH-3 Y90*, MUTYH-3 Q377*, and MUTYH-3 E466*, and frameshift mutant MUTYH-3 A368fs26* (commonly known as MUTYH 1103delC) (Jones et al. 2002, Chmiel et al. 2003, Wooden et al. 2004, Parker et al. 2005, Bai et al. 2005, Alhopuro et al. 2005, Bai et al. 2007, Ali et al. 2008, Yanaru-Fujisawa et al. 2008, Kundu et al. 2009, Forsbring et al. 2009, Molatore et al. 2010, D&apos;Agostino et al. 2010, Goto et al. 2010, Raetz et al. 2012, Shinmura et al. 2012).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence7">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence8">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence5">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence6">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction18">
+ <bp:evidence rdf:resource="#Evidence31" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective OGG1 mutants do not excise 8-oxoguanine</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction19">
+ <bp:evidence rdf:resource="#Evidence33" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NEIL3 D132V does not cleave 5-guanidinohydantoin (Gh)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction9">
+ <bp:evidence rdf:resource="#Evidence15" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NEIL1 G83D does not cleave FapyA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction3">
+ <bp:evidence rdf:resource="#Evidence8" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective NTHL1 truncation mutants do not bind dihydrouracil (DHU)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction4">
+ <bp:evidence rdf:resource="#Evidence9" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective NTHL1 truncation mutants do not bind formamidopyrimidine (FapyA)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence5" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NTHL1 D239Y does not cleave thymine glycol (Tg)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
+ <bp:evidence rdf:resource="#Evidence6" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NTHL1 D239Y does not cleave dihydrouracil (DHU)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction7">
+ <bp:evidence rdf:resource="#Evidence13" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NEIL1 Q282TER does not translocate to the nucleus</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction8">
+ <bp:evidence rdf:resource="#Evidence14" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective NEIL1 variants do not cleave Tg</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction5">
+ <bp:evidence rdf:resource="#Evidence10" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective NTHL1 truncation mutants do not bind cytosine glycol (Cg)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction6">
+ <bp:evidence rdf:resource="#Evidence11" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective NTHL1 truncation mutants do not bind thymine glycol (Tg)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction10">
+ <bp:evidence rdf:resource="#Evidence16" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NEIL1 G83D does not cleave FapyG</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction11">
+ <bp:evidence rdf:resource="#Evidence17" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NEIL1 G83D does not cleave DHU</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction12">
+ <bp:evidence rdf:resource="#Evidence20" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective MUTYH mutants do not bind adenine mispaired with 8-oxoguanine</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction13">
+ <bp:evidence rdf:resource="#Evidence22" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective MUTYH mutants do not cleave adenine mispaired with 8-oxoguanine</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction14">
+ <bp:evidence rdf:resource="#Evidence25" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective OGG1 mutants show decreased binding to 8-oxoguanine</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction15">
+ <bp:evidence rdf:resource="#Evidence27" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">OGG1beta G12E does not translocate to mitochondria</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction16">
+ <bp:evidence rdf:resource="#Evidence29" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective OGG1 mutants do not excise FapyG</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction17">
+ <bp:evidence rdf:resource="#Evidence30" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">OGG1 S326C is oxidized</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction29">
+ <bp:evidence rdf:resource="#Evidence55" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective D-loop formation mediated by PALB2, BRCA2 and RAD51 due to loss-of-function of BRCA1 in PALB2 binding</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep9">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction5" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep8">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction4" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep7">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction3" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep6">
+ <bp:stepProcess rdf:resource="#Pathway5" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep5">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction2" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep4">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep3">
+ <bp:stepProcess rdf:resource="#Pathway4" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep2">
+ <bp:stepProcess rdf:resource="#Pathway3" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep59">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction31" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#Pathway2" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep63">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction33" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep62">
+ <bp:stepProcess rdf:resource="#Pathway31" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep65">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction34" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep64">
+ <bp:stepProcess rdf:resource="#Pathway32" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction20">
+ <bp:evidence rdf:resource="#Evidence36" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MLH1 variants-defective DNA mismatch repair</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction21">
+ <bp:evidence rdf:resource="#Evidence38" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PMS2 variants-defective DNA mismatch repair</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction22">
+ <bp:evidence rdf:resource="#Evidence40" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MSH6 variant:MSH2-defective DNA mismatch repair</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction23">
+ <bp:evidence rdf:resource="#Evidence42" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MSH3 variant:MSH2-defective DNA mismatch repair</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction24">
+ <bp:evidence rdf:resource="#Evidence44" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MSH2 variant:MSH3-defective DNA mismatch repair</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction25">
+ <bp:evidence rdf:resource="#Evidence45" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MSH2 variant:MSH6-defective DNA mismatch repair</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction26">
+ <bp:evidence rdf:resource="#Evidence49" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective D-loop formation mediated by PALB2, BRCA2 and RAD51 due to loss-of-function of PALB2 in BRCA1 binding</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction27">
+ <bp:evidence rdf:resource="#Evidence51" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective D-loop formation mediated by PALB2, BRCA2 and RAD51 due to loss-of-function of PALB2 in binding to BRCA2/RAD51/RAD51C</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep61">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction32" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction28">
+ <bp:evidence rdf:resource="#Evidence53" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective BARD1 does not bind BRCA1</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep60">
+ <bp:stepProcess rdf:resource="#Pathway30" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep49">
+ <bp:stepProcess rdf:resource="#Pathway24" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep48">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction26" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep52">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction28" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep51">
+ <bp:stepProcess rdf:resource="#Pathway25" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep54">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction29" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep53">
+ <bp:stepProcess rdf:resource="#Pathway26" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep56">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction30" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep55">
+ <bp:stepProcess rdf:resource="#Pathway27" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction30">
+ <bp:evidence rdf:resource="#Evidence57" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Some pathogenic BRCA1 mutants do not bind BARD1</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep58">
+ <bp:stepProcess rdf:resource="#Pathway29" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep57">
+ <bp:stepProcess rdf:resource="#Pathway28" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction31">
+ <bp:evidence rdf:resource="#Evidence60" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective BRCA2 does not translocate to the nucleus</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction32">
+ <bp:evidence rdf:resource="#Evidence62" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">BRCA2 mutants do not bind SEM1 (DSS1)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction33">
+ <bp:evidence rdf:resource="#Evidence64" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective recruitment of BRCA2 and RAD51 due to loss of BRCA2 function in PALB2 binding</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction34">
+ <bp:evidence rdf:resource="#Evidence66" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">BRCA2 mutants with BRC defects or a defect in the C-terminal RAD51 binding site do not bind RAD51</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep50">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction27" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway31">
+ <bp:pathwayOrder rdf:resource="#PathwayStep63" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction33" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence63" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Impaired BRCA2 binding to PALB2</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This pathway describes BRCA2 missense mutations that affect the N-terminus of BRCA2 and impair the ability of BRCA2 to bind PALB2, which is a crucial step in homologous recombination repair (HRR) of DNA double-strand breaks (DSBs) (Xia et al. 2006).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway32">
+ <bp:pathwayOrder rdf:resource="#PathwayStep65" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction34" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence65" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Impaired BRCA2 binding to RAD51</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">A critical function of BRCA2 is to bind RAD51 and nucleate RAD51 filament formation on single-stranded DNA. BRCA2 has two regions that interact with RAD51: 8 BRC repeats encoded by exon11 (Bork et al. 1996, Wong et al. 1997) and a C-terminal RAD51 binding domain called TR2 (Sharan et al. 1997). </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway30">
+ <bp:pathwayOrder rdf:resource="#PathwayStep61" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction32" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence61" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Impaired BRCA2 binding to SEM1 (DSS1)</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This pathway describes BRCA2 cancer mutations that affect the ability of BRCA2 to bind to SEM1 (DSS1), a small protein of 70 amino acids that regulates BRCA2 stability and its nuclear localization (reviewed in Le et al. 2021).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:Pathway rdf:ID="Pathway20">
+ <bp:pathwayOrder rdf:resource="#PathwayStep43" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep44" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction24" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction25" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence43" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective Mismatch Repair Associated With MSH2</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MSH2 is homologous to the E. coli MutS gene and is involved in DNA mismatch repair (MMR) (Fishel et al., 1994). Heterozygous mutations in the MSH2 gene result in hereditary nonpolyposis colorectal cancer-1. Variants of MSH2 are associated with hereditary nonpolyposis colorectal cancer. Alteration of MSH2 is also involved in Muir-Torre syndrome and mismatch repair cancer syndrome.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway21">
+ <bp:pathwayOrder rdf:resource="#PathwayStep51" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep53" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep55" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep46" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep57" />
+ <bp:pathwayComponent rdf:resource="#Pathway25" />
+ <bp:pathwayComponent rdf:resource="#Pathway22" />
+ <bp:pathwayComponent rdf:resource="#Pathway28" />
+ <bp:pathwayComponent rdf:resource="#Pathway26" />
+ <bp:pathwayComponent rdf:resource="#Pathway27" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence46" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Diseases of DNA Double-Strand Break Repair</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Diseases of DNA double-strand break repair (DSBR) are caused by mutations in genes involved in repair of double strand breaks (DSBs), one of the most cytotoxic types of DNA damage. Unrepaired DSBs can lead to cell death, cellular senescence, or malignant transformation.  Germline mutations in DSBR genes are responsible for several developmental disorders associated with increased predisposition to cancer: Ataxia telangiectasia, characterized by cerebellar neurodegeneration, hematologic malignancies and immunodeficiency, is usually caused by germline mutations in the ATM gene; Nijmegen breakage syndrome 1, characterized by microcephaly, short stature and recurrent infections, is caused by germline mutations in the NBN (NBS1) gene; Seckel syndrome, characterized by short stature, skeletal deformities and microcephaly, is caused by germline mutations in the ATR or RBBP8 (CtIP) genes.  Heterozygous germline mutations in BRCA1, BRCA2 or PALB2 cause the hereditary breast and ovarian cancer syndrome (HBOC), while homozygous germline mutations in BRCA2 and PALB2 cause Fanconi anemia, a developmental disorder characterized by short stature, microcephaly, skeletal defects, bone marrow failure, and predisposition to cancer.  Somatic mutations in DSBR genes are also frequently found in sporadic cancers.  The pathways &quot;Defective DNA double strand break response due to BRCA1 loss of function&quot; describes defects in DSB response caused by loss-of-function mutations in BRCA1 which prevent the formation of the BRCA1:BARD1 complex.  The pathway &quot;Defective DNA double strand break response due to BARD1 loss of function&quot; describes defects in DSB response caused by loss-of-function mutations in BARD1, the heterodimerization partner of BRCA1, which prevent the formation of the BRCA1:BARD1 complex.  The pathway &quot;Defective homologous recombination repair (HRR) due to BRCA1 loss of function&quot; describes defects in HRR caused by loss-of-function mutations in BRCA1 that impair its association with PALB2.  The pathway &quot;Defective homologous recombination repair (HRR) due to BRCA2 loss of function&quot; describes defects in HRR caused by loss-of-function mutations in BRCA2 that impair either it association with SEM1 (DSS1), its translocation to the nucleus, its binding to RAD51, or its binding to PALB2.  The pathway &quot;Defective homologous recombination repair (HRR) due to PALB2 loss of function&quot; describes defects in HRR caused by loss-of-function mutations in PALB2 that impair its association with BRCA2/RAD51/RAD51C.  For review, please refer to McKinnon and Caldecott 2007, Keijzers et al. 2017, and Jachimowicz et al. 2019. </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway24">
+ <bp:pathwayOrder rdf:resource="#PathwayStep50" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction27" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence50" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective HDR through Homologous Recombination Repair (HRR) due to PALB2 loss of BRCA2/RAD51/RAD51C binding function</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Mutations affecting the C-terminal WD40 domain of PALB2 (amino acids 853-1186) impair its ability to interact with BRCA2, RAD51 and/or RAD51C (Erkko et al. 2007, Park et al. 2014). In addition, disruption of the WD40 domain can lead to the exposure of the nuclear export signal (NES) and cytoplasmic translocation of PALB2 (Pauty et al. 2017). Mutations affecting the C-terminal domain of PALB2 are more frequent than mutations that affect the N-terminus and have been observed, as germline mutations, in familial breast cancer and in Fanconi anemia, but somatic mutations also occur in sporadic cancers. Cells that express PALB2 mutants defective in BRCA2, RAD51 and/or RAD51C binding show reduced ability to perform DSBR via homologous recombination repair, form fewer RAD51 foci at DSBR sites, and are sensitive to DNA crosslinking agents such as mitomycin C (Erkko et al. 2007, Park et al. 2014).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway25">
+ <bp:pathwayOrder rdf:resource="#PathwayStep52" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction28" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence52" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective DNA double strand break response due to BARD1 loss of function</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Although germline mutations of BARD1 are implicated in some cases of hereditary breast and ovarian cancer (HBOC), they occur less frequently that those of the BRCA1 or BRCA2 genes (De Brakeleer et al. 2010, Alenezi et al. 2020). From animal studies, it is known that the loss of BARD1 function results in a phenotype very similar to that caused by loss of BRCA1 function, characterized by embryonic lethality (McCarthy et al. 2003), genomic instability (McCarthy et al. 2003) and defects in homology-directed repair (Lee et al. 2015). A small number of clinically-relevant BARD1 missense mutants that have been functionally characterized and shown to be impaired in BRCA1 binding (Xia et al. 2003, Lee et al. 2015) are annotated in this pathway.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway22">
+ <bp:pathwayOrder rdf:resource="#PathwayStep47" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep49" />
+ <bp:pathwayComponent rdf:resource="#Pathway24" />
+ <bp:pathwayComponent rdf:resource="#Pathway23" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence47" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective homologous recombination repair (HRR) due to PALB2 loss of function</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Biallelic loss-of-function mutations in  PALB2  results in Fanconi anemia subtype N (FA-N), which is phenotypically very similar to Fanconi anemia subtype D1, caused by biallelic loss-of-function of  BRCA2  (Reid et al. 2007). FA-D1 and FA-N are characterized by developmental abnormalities, bone marrow failure and childhood cancer susceptibility, especially childhood solid tumors, such as Wilms tumor and medulloblastoma. Monoallelic  PALB2  loss-of-function is an underlying cause of hereditary breast cancer in particular, but inactivating  PALB2  mutations are also to a lesser extent found in some other cancer types, including pancreatic cancer (Erkko et al. 2007, Erkko et al. 2008, Antoniou et al. 2014, Yang et al. 2020). Germline  PALB2  mutations are somewhat less frequent than those occurring in  BRCA1  and  BRCA2 , but cause a comparably high risk of developing breast cancer. Therefore,  PALB2  is a high-risk breast cancer predisposing gene (Nepomuceno et al. 2021).  PALB2 interacts with both BRCA1 and BRCA2, and serves as a bridge that connects BRCA2 with BRCA1 at sites of DNA double-strand break repair (DSBR). PALB2 also interacts directly with DNA and takes part in the regulation of RAD51-mediated homologous recombination (Buisson et al. 2010; Dray et al. 2010). PALB2 loss-of-function mutations can affect its interaction with BRCA1 when they affect the N-terminal coiled-coil domain that is necessary for BRCA1 binding (Sy et al. 2009, Foo et al. 2017). Mutations in the coiled-coil domain can also affect PALB2 self-interaction, recruitment to double-strand break sites, homologous recombination repair and RAD51 foci formation (Buisson and Masson 2012). PALB2 missense mutants that do not bind to BRCA1 can still be recruited to DSBR sites, probably through interaction with other proteins involved in DSBR, but they are unable to restore efficient gene conversion in PALB2-deficient cells and they render cells hypersensitive to the DNA damaging agent mitomycin C (Sy et al. 2009), with some variants also presenting sensitivity to PARP inhibitors (Foo et al. 2017).  Mutations evaluated so far in the central region of PALB2, which contains the ChAM motif and the MRG15-binding region, have shown no functional impact on the protein.  Mutations affecting the C-terminal WD40 domain of PALB2 impair its ability to interact with BRCA2, RAD51 and/or RAD51C (Erkko et al. 2007, Park et al. 2014, Simhadri et al. 2019). In addition, disruption of the WD40 domain can lead to the exposure of a nuclear export signal (NES), leading to cytoplasmic translocation of PALB2 (Pauty et al. 2017). Mutations affecting the C-terminal domain of PALB2 are more frequent than mutations that affect the N-terminus and have been observed, as germline mutations, in familial breast cancer and in Fanconi anemia, but somatic mutations also occur in sporadic cancers. Cells that express PALB2 mutants defective in BRCA2, RAD51 and/or RAD51C binding show reduced ability to perform DSBR via homologous recombination repair, form fewer RAD51 foci at DSBR sites, and are sensitive to DNA crosslinking agents such as mitomycin C (Erkko et al. 2007, Parker et al. 2014).  For review, please refer to Tischkowitz and Xia 2010, Pauty et al. 2014, Park et al. 2014, Nepomuceno et al. 2017, Ducy et al. 2019, Wu et al. 2020, Nepomuceno et al. 2021.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway23">
+ <bp:pathwayOrder rdf:resource="#PathwayStep48" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction26" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence48" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective HDR through Homologous Recombination Repair (HRR) due to PALB2 loss of BRCA1 binding function</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Mutations in the N-terminal coiled-coil domain of PALB2 (amino acids 9-44), involved in self-interaction and BRCA1 binding, impair the interaction of PALB2 with BRCA1 (Sy et al. 2009, Foo et al. 2017, Boonen et al. 2020). Phosphorylation of PALB2 by ATR on serine residue S59 promotes BRCA1-PALB2 interaction and the localization of PALB2 to DNA damage sites (Buisson et al. 2017). Mutations in the coiled-coil domain can also affect PALB2 self-interaction, recruitment to double-strand break sites, homologous recombination repair, and RAD51 foci formation (Buisson and Masson 2012).  PALB2 missense mutants that do not bind to BRCA1 can still be recruited to DNA double-strand break repair (DSBR) sites, probably through interaction with other proteins involved in DSBR, but they are unable to restore efficient gene conversion in PALB2-deficient cells and they render cells hypersensitive to the DNA damaging agent mitomycin C (Sy et al. 2009). Some variants in this region are also sensitive to PARP inhibitors (Foo et al. 2017).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway28">
+ <bp:pathwayOrder rdf:resource="#PathwayStep62" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep64" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep58" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep60" />
+ <bp:pathwayComponent rdf:resource="#Pathway29" />
+ <bp:pathwayComponent rdf:resource="#Pathway31" />
+ <bp:pathwayComponent rdf:resource="#Pathway32" />
+ <bp:pathwayComponent rdf:resource="#Pathway30" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence58" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective homologous recombination repair (HRR) due to BRCA2 loss of function</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">BRCA2 (FANCD1) is a tumor suppressor gene located on chromosomal arm 13q. BRCA2 protein is a mediator of the core mechanism of homologous recombination repair (HRR), essential for the recruitment of RAD51 recombinase to resected DNA double-strand breaks (DSBs). Monoallelic pathogenic germline mutations in BRCA2 are one of the underlying causes of the hereditary breast and ovarian cancer (HBOC) syndrome, with carriers having close to 50% lifetime risk for development of breast cancer and about 15% lifetime risk for development of ovarian cancer. In addition, BRCA2 germline mutation carriers are predisposed to cancers of the fallopian tube, pancreas, stomach, larynx and prostate. Biallelic germline mutations in BRCA2 cause Fanconi anemia subtype characterized by brain and soft tissue tumors, including medulloblastoma and Wilms tumor. BRCA2-deficient cells are defective in the formation of RAD51 foci upon treatment with DSB-inducing DNA damaging agents and accumulate chromatid breaks and radial chromosomes.  Besides its crucial role in HRR, BRCA2 is also implicated in protection of replication forks, centrosome duplication, spindle assembly checkpoint and cytokinesis. Recently published studies show the involvement of BRCA2 in the turnover of R-loops (hybrids between RNA and single strand DNA that are generated as intermediates of gene transcription). Unscheduled accumulated R-loops may be processed into DSBs, leading to genomic instability. Finally, BRCA2 is involved in pathway choice of DSB repair by inhibiting DNA polymerase theta-mediated end-joining (TMEJ) until M-phase (reviewed in Petropoulos and Halazonetis 2021, and Llorens-Agost et al. 2021). TMEJ is the predominant pathway for microhomology-mediated end joining MMEJ/alternative-nonhomologous end joining (alt-NHEJ, a-EJ) in mammals (reviewed in Ramsden et al. 2022).  BRCA2 haploinsufficiency is frequently observed in cancers, with close to 50% of BRCA2-mutant breast cancers retaining one wild type allele, suggesting that in some tissues at least heterozygous loss of BRCA2 function is sufficient for carcinogenesis. Promoter hypermethylation is not an obvious contributor to BRCA2 gene inactivation and no pathogenic mutations in the promoter region have been identified so far.  For review, please refer to Roy et al. 2011, Nalepa and Clapp 2018, Santana dos Santos et al. 2018, Venkitaraman 2019, Le et al. 2021, and Llorens-Agost et al. 2021. </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway29">
+ <bp:pathwayOrder rdf:resource="#PathwayStep59" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction31" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence59" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Impaired BRCA2 translocation to the nucleus</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This pathway describes truncating mutations in BRCA2 that result in mutant proteins lacking nuclear localization signals (NLSs) in the C-terminal domain. These truncated BRCA2 proteins mainly localize to the cytosol, impairing the ability of BRCA2 mutants to participate in homologous recombination repair (HRR) in the nucleus. Truncating mutations are the most frequent BRCA2 mutations detected in cancer (Spain et al. 1999, Yano et al. 2000, Ma et al. 2017). </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway26">
+ <bp:pathwayOrder rdf:resource="#PathwayStep54" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction29" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence54" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective homologous recombination repair (HRR) due to BRCA1 loss of function</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">In addition to its role in DNA double-strand break (DSB) signaling, BRCA1 plays an important role in homologous recombination repair (HRR) of DSBs by directly promoting recruitment of PALB2 and indirectly BRCA2 to DSB repair sites. In addition, BRCA1 increases the speed and processivity of DNA end resection which consists of 5&#8242;&#8211;3&#8242; nucleolytic degradation of DSBs (Cruz-Garcia et al. 2014). The direct BRCA1 interaction with PALB2 helps to fine-tune the localization of BRCA2 and RAD51 at DSBs (Zhang et al. 2009, Sy et al. 2009). PALB2 simultaneously interacts with RAD51, BRCA2 and RAD51AP1 (Modesti et al. 2007, Wiese et al. 2007, Buisson et al. 2010, Dray et al. 2010). PALB2 and RAD51AP1 synergistically stimulate RAD51 recombinase activity, thus enhancing RAD51-mediated strand exchange (branch migration) and promoting the formation of D-loop structures (synaptic complex assembly). A D-loop structure is formed when complementary duplex DNA (sister chromatid arm) is progressively invaded by the RAD51 nucleoprotein filament, with base pairing of the invading ssDNA and the complementary sister chromatid DNA strand (Sung et al. 2003).  The N-terminal region of BRCA1 contains the RING domain (residues 7-98), required for the heterodimerization of BRCA1 with BARD1. BRCA1:BARD1 heterodimer has E3 ubiquitin ligase activity which is important for DNA repair (Drost et al. 2011). Several missense mutations within the RING domain have been linked to increased risks of developing breast/ovarian cancers (Bouwman et al. 2013; Starita et al. 2018). BRCA1 mutant proteins impaired in BARD1 binding are annotated in the pathway &quot;Defective DNA double strand break response due to BRCA1 loss of function&quot;.  The C-terminal region of BRCA1 which contains two coiled coil domains (residues 1397-1424) and two BRCT domains (residues 1642-1736 for BRCT 1; residues 1756-1855 for BRCT 2) is involved in PALB2 binding, with the second coiled coil domain being essential (Sy et al. 2009). Several cancer-associated BRCA1 missense mutants that affect the C-terminal region were shown to have reduced ability to bind PALB2 (Sy et al. 2009). In addition, many nonsense and frameshift mutations in BRCA1 reported in cancer result in truncated proteins that lack the PALB2-binding domain.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway27">
+ <bp:pathwayOrder rdf:resource="#PathwayStep56" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction30" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence56" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective DNA double strand break response due to BRCA1 loss of function</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Germline mutations in the BRCA1 or BRCA2 tumor suppressor genes are implicated in up to 10% of breast cancers overall and 40% of familial breast cancers. Carriers of either BRCA1 or BRCA2 germline mutation are predisposed to hereditary breast and ovarian cancer (the HBOC syndrome), which is inherited in an autosomal dominant manner. Besides early onset breast and ovarian cancer, HBOC patients also have a modestly increased risk of developing other tumor types, including pancreatic, stomach, laryngeal, fallopian tube, and prostate cancer. The BRCA1 gene encodes a large protein of 1863 amino acids, which contains a RING finger domain at the N-terminus and two BRCT repeats at the C-terminus. The RING domain is responsible for heterodimerization with BARD1, which increases stability of BRCA1 and activates its E3 ubiquitin ligase activity. BRCA1 plays an important role in homology-directed repair of DNA double-strand breaks (DSBs). Brca1-null knockout mice die early during embryonic development and cells depleted of BRCA1 show genomic instability (reviewed by Roy et al. 2011). Cancer mutations that affect the RING domain of BRCA1 frequently result in the inability of BRCA1 to bind to BARD1 and participate in DNA DSB response (Wu et al. 1996, Ransburgh et al. 2010). Some mutations in the RING domain of BRCA1 were shown to affect the ubiquitin ligase activity of BRCA1 (Brzovic et al. 2001), but it is uncertain if the ubiquitin ligase activity is essential for the tumor suppressor role of BRCA1 (Shakya et al. 2011).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway10">
+ <bp:pathwayOrder rdf:resource="#PathwayStep23" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep25" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep27" />
+ <bp:pathwayComponent rdf:resource="#Pathway13" />
+ <bp:pathwayComponent rdf:resource="#Pathway11" />
+ <bp:pathwayComponent rdf:resource="#Pathway12" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence23" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective Base Excision Repair Associated with OGG1</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">OGG1 is the main DNA glycosylase responsible for removal of 8-oxoguanine (8oxoG), the most frequent type of oxidative DNA damage, from DNA and initiation of the base excision repair (Klungland et al. 1999, Minowa et al. 2000). A frequent OGG1 polymorphism increases the risk of breast and lung cancer in affected individuals, and inactivating mutations in OGG1 have been reported in various cancer types and in Alzheimer&apos;s disease. Ogg1 knockout mice are predisposed to cancer. For review, please refer to Boiteux et al. 2017. </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway13">
+ <bp:pathwayOrder rdf:resource="#PathwayStep30" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep29" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep28" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction18" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction16" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction17" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence28" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective OGG1 Substrate Processing</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The majority of OGG1 mutants have been tested for their ability to excise 8-oxoguanine (8oxoG) from damaged DNA, while a small number of mutants have been tested for the ability to remove FapyG from DNA. The following OGG1 mutants show at least a partial loss of their ability to remove 8oxoG: OGG1 R46Q (Audebert, Chevillard et al. 2000; Audebert, Radicella et al. 2000); OGG1 R154H (Audebert, Radicella et al. 2000, Bruner et al. 2000); OGG1 R131Q (Chevillard et al. 1998, Bruner et al. 2000, Anderson and Dagget 2009); OGG1 R229Q (Hyun et al. 2000, Hyun et al. 2002, Hill and Evans 2007); OGG1 P266fs139* (Mao et al. 2007). OGG1 R46L and OGG1 R131G have not been functionally studied but have been reported in cancer and predicted to be pathogenic. They are annotated as candidate disease variants based on their similarity with OGG1 R46Q and OGG1 R131Q, respectively. OGG1 S326C, a frequent variant in European and Asian populations, is susceptible to oxidation, which diminishes catalytic activity under conditions of oxidative stress (Dherin et al. 1999, Yamane et al. 2004, Kershaw and Hodges 2012, Moritz et al. 2014). The following OGG1 mutants show at least a partial loss of their ability to remove FapyG: OGG1 R46Q (Audebert, Radicella et al. 2000); OGG1 R154H (Audebert, Radicella et al. 2000). OGG1 R46L has not been functionally studied but has been reported in cancer and predicted to be pathogenic. It is annotated as a candidate disease variant for FapyG excision, based on its similarity with OGG1 R46Q.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway14">
+ <bp:pathwayOrder rdf:resource="#PathwayStep32" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction19" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence32" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective Base Excision Repair Associated with NEIL3</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NEIL3 is a DNA N-glycosylase involved in base excision repair (BER), the primary repair pathway for oxidative DNA damage. NEIL3 can detect and remove oxidized guanine, in the form of 5-guanidinohydatoin and spiroiminodihydantoin, and oxidized thymine, in the form of thymine glycol. NEIL3 has a preference for single strand DNA (ssDNA) and is implicated in repair of oxidative DNA damage at telomeres (Zhou et al. 2013). A NEIL3 disease variant NEIL3 D132 is unable to cleave 5 guanidinohydantoin (Gh) from oxidatively damaged DNA. Individuals harboring a NEIL3 D132V homozygous mutation are predisposed to development of autoimmune diseases (Massaad et al. 2016) and NEIL3 depletion is also associated with an increase in telomere damage and loss (Zhou et al. 2017). NEIL3 unhooks DNA interstrand cross-links (ICLs) during DNA replication. NEIL3 resolves psoralen- and abasic site-induced ICLs in a Fanconi anemia (FA) pathway-independent manner (Semlow et al. 2016, Martin et al. 2017). A polymorphism in one of the NEIL3 gene splice sites may increase the risk of myocardial infarction (Skarpengland et al. 2015). NEIL3 expression in the heart increases after heart failure in humans and after myocardial infarction in mouse disease models. Neil3 knockout mice show increased mortality after myocardial infarction, but there is no increase in the amount of DNA damage in Neil3 knockout hearts. In the heart, NEIL3 may function in the epigenetic regulation of gene expression and facilitate transcriptional response to myocardial infarction (Olsen et al. 2017). NEIL3 mRNA expression is increased in human carotid plaques and Neil3 deficiency accelerates plaque formation in Apoe knockout mice, but it appears that this is not correlated with oxidative DNA damage (Skarpengland et al. 2016). The function of NEIL3 in removal of hydantoins from single strand DNA may be important for removal of replication blocks in proliferating cells. Mouse embryonic fibroblasts and neuronal stem cell derived from Neil3 knockout mouse embryos show decreased proliferation capacity and increased sensitivity to DNA damaging agents (Rolseth et al. 2013). NEIL3 may be required for maintenance of adult neurogenesis, as Neil3 knockout mice exhibit learning and memory deficits and synaptic irregularities in the hippocampus (Regnell et al. 2012). In addition, NEIL3 deficient neuronal stem cells exhibits signs of premature senescence (Reis and Hermanson 2012) and Neil3 knockout mice show reduced ability to augment neurogenesis to repair damage induced hypoxia ischemia (Sejersted et al. 2011). Mice that are triple knockout for Neil1, Neil2 and Neil3 do not show a predisposition to tumour formation or changes in telomere length (Rolseth et al. 2017). </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway11">
+ <bp:pathwayOrder rdf:resource="#PathwayStep24" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction14" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence24" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective OGG1 Substrate Binding</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">OGG1 missense mutants reported in Alzheimer&apos;s disease, OGG1 A53T and OGG1 A288V, show decreased binding to 8 oxoguanine substrate (Mao et al. 2007).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway12">
+ <bp:pathwayOrder rdf:resource="#PathwayStep26" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction15" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence26" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective OGG1 Localization</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">OGG1 splicing isoform beta contains a mitochondrial targeting sequence at the N terminus and lacks the C terminal nuclear localization signal. OGG1beta localizes to mitochondria (Nishioka et al. 1999), where it might participate in the repair of mitochondrial DNA, although its role in mitochondrial base excision repair has not been confirmed. OGG1beta G12E mutant, reported in kidney cancer, is unable to translocate to the mitochondrion as the missense mutation disrupts the mitochondrial targeting sequence (Audebert et al. 2002).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway17">
+ <bp:pathwayOrder rdf:resource="#PathwayStep37" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction21" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence37" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective Mismatch Repair Associated With PMS2</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PMS2 heterodimerizes with MLH1 to form the MutL alpha complex involved in DNA mismatch repair. Mutations in this PMS2 are associated with hereditary nonpolyposis colorectal cancer, Turcot syndrome, and are a cause of supratentorial primitive neuroectodermal tumors. Heterozygous truncating mutations in PMS2 play a role in a small subset of hereditary nonpolyposis colorectal carcinoma (Lynch syndrome, HNPCC-like) families. PMS2 mutations lead to microsatellite instability with carriers showing a microsatellite instability high phenotype and loss of PMS2 protein expression in all tumors.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway18">
+ <bp:pathwayOrder rdf:resource="#PathwayStep39" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction22" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence39" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective Mismatch Repair Associated With MSH6</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MSH6 encodes a G/T mismatch-binding protein encoded by a gene localized to within 1 megabase of the related hMSH2 gene on chromosome 2. Unlike other mismatch repair genes, the  MSH6 deficient cells showed alterations primarily in mononucleotide tracts, indicating the role MSH6 plays in maintaining the integrity of the human genome. Cells deficient in MSH6, accrue mutations in tracts of repeated nucleotides. MSH6 defects seem to be less common than MLH1 and MSH2 defects. They have been mostly observed in atypical HNPCC families and are characterized by a weaker family history of tumor development, higher age at disease onset, and low degrees of microsatellite instability (MSI) that predominantly involving mononucleotide runs.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway15">
+ <bp:pathwayOrder rdf:resource="#PathwayStep40" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep42" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep34" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep36" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep38" />
+ <bp:pathwayComponent rdf:resource="#Pathway17" />
+ <bp:pathwayComponent rdf:resource="#Pathway18" />
+ <bp:pathwayComponent rdf:resource="#Pathway16" />
+ <bp:pathwayComponent rdf:resource="#Pathway19" />
+ <bp:pathwayComponent rdf:resource="#Pathway20" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence34" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Diseases of Mismatch Repair (MMR)</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defects in mammalian DNA mismatch repair (MMR) genes (MLH1, PMS2, MSH2, and MSH6) are characterized by microsatellite instability and reduced fidelity during replication and repair steps. The MMR proteins interact with each other to execute steps within the mismatch repair pathway. Defective variants of these proteins are associated with nonpolyposis colorectal cancer. The MutS proteins are thought to directly contact double-stranded DNA, scanning along the genomic DNA for mismatches analogous to a &quot;sliding clamp&quot; until they encounter a base pair containing a mismatch. The MutS proteins interact with multiple proteins including other MLH and MutL, the later have significant amino acid identify and structural similarity to the MLH proteins, as well as RPA, EXO1, RFC, possibly HMGB1, and other less well-characterized proteins.  With respect to the mutator function, the MSH2/MutSaplha heterodimer is thought primarily to repair single-base substitutions and 1 bp insertiondeletion mutations, while MSH2/MutSbeta is thought primarily to repair 1-4 bp insertiondeletion mutations. The MLH and MutL heterodimer proteins interact with heterodimers of MutS proteins to help catalyze different functions. MLH1:MutLalpha is the primary complex that interacts with both MutS alpha and beta complex in mechanisms thought to be relevant to cancer prevention. Recent studies suggest that MLH1:MLH3 may also contributes to some of these processes as well, but in all mechanisms tested to a lesser degree than MLH1:PMS2.  Heterozygous mutations in the MLH1 gene result in hereditary nonpolyposis colorectal cancer-2 (Papadopoulos et al., 1994).  Variants of the MSH2 gene are associated with hereditary nonpolyposis colorectal cancer. Alteration of MSH2 is also involved in Muir-Torre syndrome and mismatch repair cancer syndrome (Fishel et al. 1993).  Defects in the MSH3 gene are a cause of susceptibility to endometrial cancer (Risinger et al. 1996).  Defects in the MSH6 gene are less common than MLH1 and MSH2 defects. They have been mostly observed in atypical HNPCC families and are characterized by a weaker family history of tumor development, higher age at disease onset, and low degrees of microsatellite instability (MSI) (Lucci-Cordisco et al. 2001).  Mutations in the PMS2 gene are associated with hereditary nonpolyposis colorectal cancer, Turcot syndrome, and are a cause of supratentorial primitive neuroectodermal tumors. Heterozygous truncating mutations in PMS2 play a role in a small subset of hereditary nonpolyposis colorectal carcinoma (Lynch syndrome, HNPCC-like) families. PMS2 mutations lead to microsatellite instability with carriers showing a microsatellite instability high phenotype and loss of PMS2 protein expression in all tumors (Hamilton et al. 1995, Hendriks et al. 2006).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway16">
+ <bp:pathwayOrder rdf:resource="#PathwayStep35" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction20" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence35" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective Mismatch Repair Associated With MLH1</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The MLH1:PMS2 complex is homologous to the E. coli MutL gene and is involved in DNA mismatch repair. Heterozygous mutations in the MLH1 gene result in hereditary nonpolyposis colorectal cancer-2 (Papadopoulos et al., 1994).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway19">
+ <bp:pathwayOrder rdf:resource="#PathwayStep41" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction23" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence41" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective Mismatch Repair Associated With MSH3</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MSH3 forms a heterodimer with MSH2 to form the MSH3:MSH2 complex, part of the post-replicative DNA mismatch repair system. This complex initiates mismatch repair by binding to a mismatch and then forming a complex with MutL alpha heterodimer. This gene contains a polymorphic 9 bp tandem repeat sequence in the first exon. Defects in this gene are a cause of susceptibility to endometrial cancer.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+</rdf:RDF>

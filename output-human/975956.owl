@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/975956#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Nonsense Mediated Decay (NMD) independent of the Exon Junction Complex (EJC)</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Nonsense-mediated decay has been observed with mRNAs that do not have an exon junction complex (EJC) downstream of the termination codon (reviewed in Isken and Maquat 2007, Chang et al. 2007, Behm-Ansmant et al. 2007, Rebbapragada and Lykke-Andersen 2009, Nicholson et al. 2010). In these cases the trigger is unknown but a correlation with the length of the 3&apos; UTR has sometimes been seen. The current model posits a competition between PABP and UPF1 for access to eRF3 at the terminating ribosome (Ivanov et al. 2008, Singh et al. 2008, reviewed in Bhuvanagiri et al. 2010). Abnormally long 3&apos; UTRs may prevent PABP from efficiently interacting with eRF3 and allow UPF1 to bind eRF3 instead. Long UTRs with hairpin loops may bring PABP closer to eRF3 and help evade NMD (Eberle et al. 2008). The pathway of degradation taken during EJC-independent NMD has not been elucidated. It is thought that phosphorylation of UPF1 by SMG1 and recruitment of SMG6 or SMG5 and SMG7 are involved, as with EJC-enhanced NMD, but this has not yet been shown.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of UPF1:eRF3 complex on mRNA with a premature termination codon and no Exon Junction Complex</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+</rdf:RDF>

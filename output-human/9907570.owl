@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/9907570#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Loss-of-function mutations in DLD cause MSUD3/DLDD</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Mutations in the dihydrolipoyl dehydrogenase (DLD) gene are associated with dihydrolipoyl dehydrogenase deficiency (DLDD), an autosomal recessive disorder characterized by lactic acidosis and neurological deterioration (reviewed in Quinonez et al, 2021). DLDD is sometimes referred to as Maple Syrup Urine Disease 3 due to its effects on BCKDH function, but the phenotype is distinct due to the involvement of DLD in multiple protein complexes (reviewed in Strauss et al, 2020). DLD encodes the shared E3 component of the multiprotein mitochondrial enzymes BCKDH (branched-chain amino acid dehydrogenase), KGDH (alpha-ketoglutarate deydrogenase) and PDH (pyruvate dehydrogenase). In consequence mutations in DLD have pleiotropic effects and manifest with a range of clinical outcomes, including increased urinary excretion of alpha-keto acids and accumulation of pyruvate and plasma branched-chain amino acids in plasma (reviewed in Quinonez and Thoene, 2021). Mutations in DLD often occur as compound heterozygotes complicating the assignment of pathogenic effect. Moreover, the severity of phenotypic effects displayed in vivo does not correlate linearly with the extent of residual DLD enzymatic activity in vitro (Shany et al, 1999; Cameron et al, 2006; Quinonez et al, 2013; reviewed in Quinonez and Thoene, 2021).  </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+ <bp:stepProcess rdf:resource="#Catalysis1" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Loss-of-function DLD mutants don&apos;t dehydrogenate dihydrolipoyl DBT</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis1">
+ <bp:controlled rdf:resource="#BiochemicalReaction1" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+</rdf:RDF>

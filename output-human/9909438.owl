@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/9909438#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MCCC mutants don&apos;t synthesize beta-methylglutaconyl-CoA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis1">
+ <bp:controlled rdf:resource="#BiochemicalReaction1" />
+</bp:Catalysis>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">3-Methylcrotonyl-CoA carboxylase deficiency</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">3-methylcrotonyl-CoA carboxylase catalyzes the reversible conversion of 3-methylcrotonyl-CoA to 3-methylglutaconyl-CoA, the fourth step in the catabolism of leucine (Chu et al, 2007; Son et al, 2020). MCCC is composed of two subunits encoded by MCCC1 and MCCC2. MCCC1 protein is covalently attached to a biotin moiety that is essential for the ATP dependent carboxylation activity, while MCCC2 contributes carboxyltransferase activity (Holzinger et al, 2001; Lau et al, 1979; Gallardo et al, 2001; Baumgartner et al, 2001). Mutations in either subunit of the enzyme, MCCC1 and MCCC2, are associated with 3-methylcrotonyl-CoA carboxylase deficiency (MCCD), also known as 3-methylcrotonylglycinuria, an autosomal recessive inborn error of metabolism characterized by accumulation and excretion of 3-hydroxyvaleric acid and 3-methylcrotonylglycine (Bannwart et al, 1992; Lehnert et al, 1996; Baumgartner et al, 2005). MCCD is the most prevalent organic aciduria with frequencies ~ 1:50,000 but has variable clinical phenotypes. 1-2% of affected individuals are at risk of a severe adverse effect that manifests during the neonatal period with severe neurological impairment while ~10% of affected individuals develop only minor symptoms (Baumgartner et al, 2001; Gallardo et al, 2001; Gruenert et al, 2012). Mutations in MCCC1 and MCCC2 have been identified that affect the stability or activity of the alpha or beta subunit, occasionally by compromising the essential biotinylation of the protein (Gallardo et al, 2001; Grunert et al, 2012; Fonseca et al, 2016; Dantas et al, 2005 ; Steen et al, 1999; Morscher et al, 2012 ; Baumgartner et al, 2001; 2004; Uematsu et al, 2007; Holzinger et al, 2001).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+ <bp:stepProcess rdf:resource="#Catalysis1" />
+</bp:PathwayStep>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+</rdf:RDF>

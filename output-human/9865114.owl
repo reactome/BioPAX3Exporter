@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/9865114#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">DBT loss-of-function mutants don&apos;t synthesize BCAA-CoA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis1">
+ <bp:controlled rdf:resource="#BiochemicalReaction1" />
+</bp:Catalysis>
+
+<bp:Pathway rdf:ID="Pathway4">
+ <bp:pathwayOrder rdf:resource="#PathwayStep6" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction3" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence6" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Loss-of-function mutations in DLD cause MSUD3/DLDD</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Mutations in the dihydrolipoyl dehydrogenase (DLD) gene are associated with dihydrolipoyl dehydrogenase deficiency (DLDD), an autosomal recessive disorder characterized by lactic acidosis and neurological deterioration (reviewed in Quinonez et al, 2021). DLDD is sometimes referred to as Maple Syrup Urine Disease 3 due to its effects on BCKDH function, but the phenotype is distinct due to the involvement of DLD in multiple protein complexes (reviewed in Strauss et al, 2020). DLD encodes the shared E3 component of the multiprotein mitochondrial enzymes BCKDH (branched-chain amino acid dehydrogenase), KGDH (alpha-ketoglutarate deydrogenase) and PDH (pyruvate dehydrogenase). In consequence mutations in DLD have pleiotropic effects and manifest with a range of clinical outcomes, including increased urinary excretion of alpha-keto acids and accumulation of pyruvate and plasma branched-chain amino acids in plasma (reviewed in Quinonez and Thoene, 2021). Mutations in DLD often occur as compound heterozygotes complicating the assignment of pathogenic effect. Moreover, the severity of phenotypic effects displayed in vivo does not correlate linearly with the extent of residual DLD enzymatic activity in vitro (Shany et al, 1999; Cameron et al, 2006; Quinonez et al, 2013; reviewed in Quinonez and Thoene, 2021).  </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep7">
+ <bp:stepProcess rdf:resource="#Pathway5" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
+ <bp:evidence rdf:resource="#Evidence5" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">H139Hfs13* PPM1K does not dephosphorylate BCKDH</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis2">
+ <bp:controlled rdf:resource="#BiochemicalReaction2" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep6">
+ <bp:stepProcess rdf:resource="#Catalysis3" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction3" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway5">
+ <bp:pathwayOrder rdf:resource="#PathwayStep8" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction4" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence8" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Loss-of-function mutations in BCKDHA or BCKDHB cause MSUD</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Mutations in either of the protein subunits of the E1 decarboxylase subcomplex of BCKDH are associated with Maple Syrup Urine Disease 1 (MSUD1). Mutations of residues in BCKDHA that participate in subunit associations or that form part of the hydrophobic core destabilize the overall assembly of BCKDH and are associated with classic Maple Syrup Urine Disease 1A (Aevarsson et al, 2000; reviewed in Straus et al, 2020; Biswas et al, 2019). Mutations of BCKDHA with less drastic effects on structural  stability of the overall BCKDH complex are generally associated with intermediate or intermittent forms of MSUD, and are not annotated in this pathway (reviewed in Strauss et al, 2020)  Mutations in BCKDHB appear to be causative in 35% of MSUD cases(reviewed in Strauss et al, 2020). Classic Maple Syrup Disease 1B is associated with severe loss-of-function mutations in BCKDHB that destabilize the protein interaction interfaces and compromise structural integrity of the complex (reviewed in Straus et al, 2020; Biswas et al, 2019).  Less detrimental mutations in BCKDHB are not annotated in this pathway and are generally associated with intermediate or intermittent forms of MSUD (reviewed in Strauss et al, 2020).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway2">
+ <bp:pathwayOrder rdf:resource="#PathwayStep2" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Loss-of-function mutations in DBT cause MSUD2</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Loss-of-function mutations in DBT disrupt the integrity of the E2 subunit of BCKDH, resulting in MSUD2 (reviewed in Strauss et al, 2020; Biswas et al, 2019).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Catalysis rdf:ID="Catalysis3">
+ <bp:controlled rdf:resource="#BiochemicalReaction3" />
+</bp:Catalysis>
+
+<bp:Pathway rdf:ID="Pathway3">
+ <bp:pathwayOrder rdf:resource="#PathwayStep4" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction2" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence4" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">H139Hfs13* PPM1K causes a mild variant of  MSUD</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PPM1K is a mitochondrial protein phosphatase that removes the inhibitory phosphorylation from the E1 beta subunit of branched-chain ketoacid dehydrogenase (BCKDH) to restore BCKDH activity (Lu et al, 2007; Lu et al, 2009 a, b; Wynn et al, 2012; Zhou et al, 2012).  BCKDH is responsible for the oxidative decarboxylation of branched-chain amino acid (BCAA) derivatives of leucine, valine and isoleucine, providing acetyl CoA and succinyl CoA intermediates for the Krebs Cycle (reviewed in Strauss et al, 2020; Zhang et al, 2023). Loss-of-function mutations in subunits of BCKDH cause accumulation of toxic BCAAs in the urine, neurological defects and are the cause of Maple Syrup Urine disease (MSUD). More recently, a frameshift mutation in PPM1K was identified as the probable cause of a mild variant of MSUD (Oyarzabal et al, 2012). This frameshift introduces a stop codon at residue 151, destabilizing the protein, and transfection of PPM1K-deficient fibroblast lines with WT PPM1K restores BCKDH activity (Oyarzabal et al, 2012). </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep8">
+ <bp:stepProcess rdf:resource="#Catalysis4" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction4" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis4">
+ <bp:controlled rdf:resource="#BiochemicalReaction4" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep3">
+ <bp:stepProcess rdf:resource="#Pathway3" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep7" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep3" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep5" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayComponent rdf:resource="#Pathway4" />
+ <bp:pathwayComponent rdf:resource="#Pathway5" />
+ <bp:pathwayComponent rdf:resource="#Pathway2" />
+ <bp:pathwayComponent rdf:resource="#Pathway3" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Maple Syrup Urine Disease</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The branched-chain alpha ketoacid dehydrogenase complex (BCKDH) catalyzes the oxidative decarboxylation of branched-chain keto acids in the mitochondrial matrix as the second step in the degradation of branched-chain amino acids (BCAAs) leucine, valine and isoleucine, providing acetyl CoA and succinyl CoA intermediates for the Krebs Cycle (reviewed in Strauss et al, 2020; Zhang et al, 2023).  BCKDH is a multi-enzyme complex consisting of three sub-complexes, the E2 transacylase, the E1 decarboxylase and the E3 dehydrogenase. The core of BCKDH is the E2 transacylase domain, made up of 24 copies of Dihydrolipoamide Branched-chain Transacylase (DBT) arranged in octahedral symmetry. Surrounding the E2 core are 12 copies of the E1 decarboxylase tetramer (each of which consists of a dimer of BCKDHA and a dimer of BCKDHB) and six copies of the E3 dehydrogenase (each consisting of a dimer of Dihydrolipoyl Dehydrogenase (DLD)). The E3 subcomplex is not specific to BCKDH but is also a component of the pyruvate dehydrogenase complex (PDC) and the alpha-ketoglutarate dehydrogenase complex (alpha-KGDC) (Chang et al, 2002; Brautigam et al, 2005; Aevarsson et al, 2000; reviewed in Biswas et al, 2019; Strauss et al, 2020).  In addition to the E1, E2 and E3 components, the BCKDH complex also depends on other cofactors- lipoamide for the function of the E2 transacylase, thiamine diphosphate and potassium for the function of the E1 decarboxylase and FAD and NAD+ for the function of the E3 dehydrogenase (Chang et al, 2002; Brautigam et al, 2005; Aevarsson et al, 2000; reviewed in Biswas et al, 2019; Strauss et al, 2020).  The activity of BCKDH is regulated by the association of BCKD kinase (BCKDK) and protein phosphatase 1K (PPM1K) with the macromolecular complex (Reed et al, 1985). Phosphorylation of BCKDHB S342 by BCKDK inhibits the catalytic activity of BCKDH, while PPM1K-mediated dephosphorylation activates it (Li et al, 2004; Wynn et al, 2004; Wynn et al, 2012). BCKDK is itself negatively regulated by thiamine (Chuang et al, 2006).  Structures for each of the subcomplexes of human BCKDH have been solved, and the complex has a total molecular mass on the order of 4 million Da (Chang et al, 2002; Brautigam et al, 2005; Aevarsson et al, 2000).  Loss-of-function mutations in the BCKDHA, BCKDHB and DBT genes disrupt the stability and the activity of the BCKDH complex, causing an accumulation of branched-chain keto-acids that causes the characteristic odor associated with Maple Syrup Urine disease (MSUD), an inborn error of metabolism with a prevalence of 1:185,000 live births (reviewed in Strauss et al, 2020; Biswas et al, 2019). MSUD is an autosomal recessive disorder and in its classic neonatal form is characterized by a maple syrup odor to the urine, poor feeding, mental and physical retardation, lethargy, seizures, coma and death. Classic MSUD, like the intermediate, intermittent and thiamine-responsive forms described below, may arise as a result of mutations in any of BCKDHA, BCKDHB or DBT. Classic MSUD is characterized by the lowest (~0-3%) residual enzymatic activity of all the forms, and presents clinically during the neonatal period. An intermediate form (residual activity ~3-30%) manifests clinically many months after birth with signs of mental retardation and developmental delay. Patients with the intermittent form of MSUD have normal levels of BCAA and BCKA and normal development and physiology while healthy, but are triggered into manifesting symptoms of MSUD when stressed by, for instance, infection. The existence of a thiamine-responsive form of MSUD, in which symptoms are alleviated by dietary thiamine, is somewhat controversial, but may reflect the inhibitory effect of thiamine on BCKDK, relieving inhibition of BCKDH activity (Chaung et al, 2006; reviewed in Strauss et al, 2020, Biswas et al, 2019). Mandatory newborn screening programs include testing for MSUD, allowing for early intervention that is especially critical in cases of classic MSUD (Strauss et al, 2020)  Mutations in DLD, the E3 subunit shared with PDH and alpha-KGDH, affect the enzymatic activity of all three complexes and are responsible for a more severe disorder called dihydrolipoamide dehydrogenase deficiency (DLDD). DLLD generally results in death in infancy due to lactic acidosis (Taylor et al, 1978; reviewed in Ambrus, 2019).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep2">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+ <bp:stepProcess rdf:resource="#Catalysis1" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep5">
+ <bp:stepProcess rdf:resource="#Pathway4" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction3">
+ <bp:evidence rdf:resource="#Evidence7" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Loss-of-function DLD mutants don&apos;t dehydrogenate dihydrolipoyl DBT</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep4">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction2" />
+ <bp:stepProcess rdf:resource="#Catalysis2" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction4">
+ <bp:evidence rdf:resource="#Evidence9" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">BCKDHA or BCKDHB loss-of-function mutants don&apos;t synthesize BCAA-CoA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence5">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence6">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#Pathway2" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence3">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence4">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence9">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence7">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence8">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+</rdf:RDF>

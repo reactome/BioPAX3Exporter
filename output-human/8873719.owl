@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/8873719#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:PathwayStep rdf:ID="PathwayStep2">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction2" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep2" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep4" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep3" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep5" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction5" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction4" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction3" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction2" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RAB geranylgeranylation</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Human cells have more than 60 RAB proteins that are involved in trafficking of proteins in the endolysosomal system. These small GTPases contribute to trafficking specificity by localizing to the membranes of different endocytic compartments and interacting with effectors such as sorting adaptors, tethering factors, kinases, phosphatases and tubular-vesicular cargo (reviewed in Stenmark et al, 2009; Wandinger-Ness and Zerial, 2014). RAB localization depends on a number of factors including C-terminal prenylation, the sequence of an upstream hypervariable regions and what nucleotide is bound (Chavrier et al, 1991; Ullrich et al, 1993; Soldati et al, 1994; Farnsworth et al, 1994; Seabra, 1996; Wu et al, 2010; reviewed in Stenmark, 2009; Wandinger-Ness and Zerial, 2014). In the active, GTP-bound form, prenylated RAB proteins are membrane associated, while in the inactive GDP-bound form, RABs are extracted from the target membrane and exist in a soluble form in complex with GDP dissociation inhibitors (GDIs) (Ullrich et al, 1993; Soldati et al, 1994; Gavriljuk et al, 2103). Conversion between the inactive and active form relies on the activities of RAB guanine nucleotide exchange factors (GEFs) and GTPase activating proteins (GAPs) (Yoshimura et al, 2010; Wu et al, 2011; Pan et al, 2006; Frasa et al, 2012; reviewed in Stenmark, 2009; Wandinger-Ness and Zerial, 2014). Newly synthesized RABs are bound by a RAB escort protein, CHM (also known as REP1) or CHML (REP2) (Alexandrov et al, 1994; Shen and Seabra, 1996). CHM/REP proteins are the substrate-binding component of the trimeric RAB geranylgeranyltransferase enzyme (GGTaseII) along with the two catalytic subunits RABGGTA and RABGGTB (reviewed in  Gutkowska and Swiezewska, 2012; Palsuledesai and Distefano, 2015). REP proteins recruit the unmodified RAB in its GDP-bound state to the GGTase for sequential geranylgeranylation at one or two C-terminal cysteine residues (Alexandrov et al, 1994; Seabra et al 1996; Shen and Seabra, 1996; Baron and Seabra, 2008). After geranylgeranylation, CHM/REP proteins remain in complex with the geranylgeranylated RAB and escort it to its target membrane, where its activity is regulated by GAPs, GEFs, GDIs and membrane-bound GDI displacement factors (GDFs) (Sivars et al, 2003; reviewed in Stenmark, 2009; Wandinger-Ness and Zerial, 2014).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep4">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction4" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep3">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction3" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction5">
+ <bp:evidence rdf:resource="#Evidence6" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RGGT geranylgeranylates RAB proteins</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction4">
+ <bp:evidence rdf:resource="#Evidence5" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RGGT:CHM binds RABs</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep5">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction5" />
+ <bp:stepProcess rdf:resource="#Catalysis1" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence6">
+</bp:Evidence>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:Evidence rdf:ID="Evidence4">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence5">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence3">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis1">
+ <bp:controlled rdf:resource="#BiochemicalReaction5" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction3">
+ <bp:evidence rdf:resource="#Evidence4" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RGGT binds the RAB-binding subunit</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
+ <bp:evidence rdf:resource="#Evidence3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RABGGTA and RABGGTB bind</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">FarC-PTP4A2 binds RABGGTB</bp:displayName>
+</bp:BiochemicalReaction>
+</rdf:RDF>

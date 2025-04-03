@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/9037628#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep2" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction2" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Rhesus blood group biosynthesis</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The Rhesus (Rh) blood group system (including the Rh factor) is the second most important blood group system after the ABO blood group system. The Rh blood type was first discovered in 1937 by Karl Landsteiner and Alexander S. Wiener who named it after the rhesus macaque whose RBCs were used to generate the rabbit immune serum that first detected the human blood group system. Subsequent studies by them and Philip Levine and Rufus Stetson identified the antigen that induced this immunization as the &quot;Rh factor&quot; and also its association with hemolytic disease of the newborn (Levine    Stetson 1984, Landsteiner    Wiener 1941). Of the 50 defined Rh blood group antigens, five (D, C/c and E/e) are the major types expressed by the  RHD  and  RHCE  genes in the  RH  gene complex. Rh antigens are expressed on red cell (RBC) membranes in association with other membrane proteins and this whole complex interacts with the spectrin-based skeleton and contributes to the maintenance of the mechanical properties of the RBC membrane (Van Kim et al. 2006).  The  RHD  gene produces the D antigen, the most immunogenic Rh antigen. The term &quot;Rh factor&quot; refers only to the D antigen; Rh positive (Rh+) individuals have the D antigen on their RBC membranes whereas Rh negative (Rh-) individuals don&apos;t. Humans are not born with antibodies towards the D antigen in their blood, they have to be exposed to it (through blood transfusion or placental exposure during pregnancy) at some point in their lives before antibodies are made against it. Once exposed, however, Rh+ individuals remain sensitive for the rest of their lives. Importantly, if individuals are Rh+ and are exposed to Rh- blood, no immune response is mounted. Anti-D antibodies are only seen if an individual is lacking the D antigen (Rh-) and is exposed to Rh+ blood. The  RHCE  gene produces polypeptides with C/c and E/e antigens.  These polypeptides are the core components of their respective antigens but by themselves are devoid of the immunoreactivity which defines the Rh antigens. The remaining antigens are produced by partial deletion, recombination, mutation, or polymorphisms of one or both  RHD  and  RHCE  genes (Cartron 1999). Together, these antigens form the most complex and polymorphic blood group system based on the multitude of phenotypes that can be expressed on the RBC surface. The Fisher-Race system, the nomenclature used most commonly, uses the CDE system to depict the notation of Rh genotypes (Race 1948). The most common group of 3 genes inherited is CDe with ce (D negative) being the second most common. Rh genotyping is used in blood transfusion, paternity testing and to determine the risk of hemolytic disease of the newborn.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence3">
+</bp:Evidence>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
+ <bp:evidence rdf:resource="#Evidence3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RHCE gene produces Rhesus C or E proteins</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RHD gene produces PALM-C-Rhesus D protein</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep2">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction2" />
+</bp:PathwayStep>
+</rdf:RDF>

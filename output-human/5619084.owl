@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/5619084#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:Pathway rdf:ID="Pathway9">
+ <bp:pathwayOrder rdf:resource="#PathwayStep24" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction16" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence24" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective ABCC2 causes DJS</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Canalicular multispecific organic anion transporter 1 (ABCC2 aka multidrug resistance-associated protein 2, MRP2), in addition to transporting many organic anions, mediates the ATP-dependent transport of glutathione and glucuronate conjugates from hepatocytes into bile. ABCC2 transports with high affinity and efficiency mono- and di-glucuronated bilirubin into bile. Bilirubin, the end product of heme breakdown, is an important constituent of bile and is responsible for its characteristic colour. Defects in ABCC2 can cause Dubin-Johnson syndrome (DJS; MIM:237500), an autosomal recessive disorder characterised by conjugated hyperbilirubinemia (Dubin    Johnson 1954, Keppler 2014, Erlinger et al. 2014). </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway7">
+ <bp:pathwayOrder rdf:resource="#PathwayStep20" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction14" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence20" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective ABCA1 causes TGD</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">In an ATP-dependent reaction, ATP-binding cassette sub-family A member 1 (ABCA1) mediates the movement of intracellular cholesterol to the extracellular face of the plasma membrane. Cholesterol associated with cytosolic vesicles is a substrate for this reaction. Under physiologocal conditions, the active form of ABCA1 is post-translationally modified (palmitoylated and phosphorylated), predominantly a tetramer and is associated with apolipoprotein A-I (APOA1). Defects in ABCA1 can cause Tangier disease (TGD; MIM:205400 aka high density lipoprotein deficiency type 1), an autosomal recessive disorder characterised by significantly reduced levels of plasma high density lipoproteins (HDL) resulting in tissue accumulation of cholesterol esters (Brooks-Wilson et al. 1999). Low HDL levels are among the most common biochemical abnormalities observed in coronary heart disease (CHD) patients (Kolovou et al. 2006, Iatan et al. 2008, Iatan et al. 2012).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway8">
+ <bp:pathwayOrder rdf:resource="#PathwayStep22" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction15" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence22" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective ABCC6 causes PXE</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The multidrug resistance associated protein (MRPs) subfamily of the ABC transporter family can transport a wide and diverse range of organic anions that can be endogenous compounds and xenobiotics and their metabolites. The multidrug resistance-associated protein 6 (ABCC6 aka MOAT-E) can actively transport organic anions. Defects in ABCC6 can cause pseudoxanthoma elasticum (PXE; MIM:264800), a rare multisystem disorder characterized by accumulation of mineralized and fragmented elastic fibers in the skin, vasculature and the Burch membrane of the eye (Finger et al. 2009).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway5">
+ <bp:pathwayOrder rdf:resource="#PathwayStep10" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep11" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep14" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep15" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep12" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep13" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep16" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep9" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction12" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction5" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction11" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction6" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction7" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction8" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction9" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction10" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence9" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective CFTR causes cystic fibrosis</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Cystic fibrosis transmembrane conductance regulator (CFTR) is a low conductance chloride-selective channel that mediates the transport of chloride ions in human airway epithelial cells. Chloride ions plays a key role in maintaining homoeostasis of epithelial secretions in the lungs. Defects in CFTR can cause cystic fibrosis (CF; MIM:602421), a common generalised disorder in Caucasians affecting the exocrine glands. CF results in an ionic imbalance that impairs clearance of secretions, not only in the lung, but also in the pancreas, gastrointestinal tract and liver. Wide-ranging manifestations of the disease include chronic lung disease, exocrine pancreatic insufficiency, blockage of the terminal ileum, male infertility and salty sweat. The median survival of CF patients in North America and Western Europe is around 40 years (Davis 2006, Radlovic 2012). </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep10">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction6" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep11">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction7" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway6">
+ <bp:pathwayOrder rdf:resource="#PathwayStep18" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction13" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence18" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective ABCD4 causes MAHCJ</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ATP-binding cassette sub-family D member 4 (ABCD4) is thought to mediate the lysosomal export of cobalamin (Cbl aka vitamin B12) into the cytosol, making it available for the production of Cbl cofactors. Cbl is an important cofactor for correct haematological and neurological functions. Defects in ABCD4 can cause methylmalonic aciduria and homocystinuria, cblJ type (MAHCJ; MIM:614857), a genetically heterogeneous metabolic disorder of Cbl metabolism characterised by decreased levels of the coenzymes adenosylcobalamin (AdoCbl) and methylcobalamin (MeCbl). Clinically, symptoms include feeding difficulties, poor growth, hypotonia, lethargy, anaemia and delayed development (Coelho et al. 2012).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway3">
+ <bp:pathwayOrder rdf:resource="#PathwayStep5" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction3" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence5" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective ABCB6 causes MCOPCB7</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ATP-binding cassette sub-family B member 6 (ABCB6), uniquely located on the outer mitochondrial membrane in homodimeric form, plays a crucial role in haem synthesis by mediating porphyrin uptake into the mitochondria. Defects in ABCB6 can cause isolated colobomatous microphthalmia 7 (MCOPCB7; MIM:614497), a developmental defect of the eye resulting from abnormal or incomplete fusion of the optic fissure with associated microphthalmia (eyeballs are abnormally small). Coloboma is thought to play an important role in the early development of the CNS, including that of the eye (Wang et al. 2012).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway4">
+ <bp:pathwayOrder rdf:resource="#PathwayStep7" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction4" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence7" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective ABCD1 causes ALD</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The 70-kDa peroxisomal membrane protein (PMP70) and the adrenoleukodystrophy protein (ALDP aka ABCD1) are half ATP binding cassette (ABC) transporters in the peroxisome membrane. They are involved in metabolic transport of long and very long chain fatty acids into peroxisomes. Mutations in the ALD gene result in the X-linked neurodegenerative disorder adrenoleukodystrophy (ALD; MIM:300100). ABCD1 deficiency impairs the peroxisomal beta-oxidation of very long-chain fatty acids (VLCFA) and facilitates their further chain elongation by ELOVL1 resulting in accumulation of VLCFA in plasma and tissues. While all patients with ALD have mutations in the ABCD1 gene, there is no general genotype-phenotype correlation. In addition to ABCD1, other genes and environmental factors determine clinical features of ALD (Kemp et al. 2012, Berger et al. 2014).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep4" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep6" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep21" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep33" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep31" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep25" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep37" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep23" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep35" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep29" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep19" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep27" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep17" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep8" />
+ <bp:pathwayComponent rdf:resource="#Pathway9" />
+ <bp:pathwayComponent rdf:resource="#Pathway14" />
+ <bp:pathwayComponent rdf:resource="#Pathway15" />
+ <bp:pathwayComponent rdf:resource="#Pathway7" />
+ <bp:pathwayComponent rdf:resource="#Pathway12" />
+ <bp:pathwayComponent rdf:resource="#Pathway8" />
+ <bp:pathwayComponent rdf:resource="#Pathway13" />
+ <bp:pathwayComponent rdf:resource="#Pathway5" />
+ <bp:pathwayComponent rdf:resource="#Pathway10" />
+ <bp:pathwayComponent rdf:resource="#Pathway6" />
+ <bp:pathwayComponent rdf:resource="#Pathway11" />
+ <bp:pathwayComponent rdf:resource="#Pathway3" />
+ <bp:pathwayComponent rdf:resource="#Pathway4" />
+ <bp:pathwayComponent rdf:resource="#Pathway2" />
+ <bp:pathwayComponent rdf:resource="#Pathway16" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ABC transporter disorders</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The ATP-binding cassette (ABC) transporters form a large family of transmembrane proteins that utilise the energy from the hydrolysis of ATP to facilitate the movement of a wide variety of substrates against a concentration gradient across membrane bilayers. Substrates include amino acids, lipids, inorganic ions, peptides, saccharides, peptides for antigen presentation, metals, drugs, and proteins. Of the 48 known ABC transporters in humans, 15 are associated with a defined human disease (Tarling et al. 2013, Woodward et al. 2011, Dean 2005, Kemp et al. 2011, Ueda 2011, Chen    Tiwari 2011).  </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep14">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction10" />
+ <bp:stepProcess rdf:resource="#Catalysis6" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway2">
+ <bp:pathwayOrder rdf:resource="#PathwayStep3" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep2" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction2" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective ABCC8 can cause hypo- and hyper-glycemias</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ATP-binding cassette sub-family C member 8 (ABCC8) is a subunit of the beta-cell ATP-sensitive potassium channel (KATP). KATP channels play an important role in the control of insulin release. Elevation of the ATP:ADP ratio closes KATP channels leading to cellular depolarisation, calcium influx and exocytosis of insulin from its storage granules. Defects in ABCC8 can cause dysregulation of insulin secretion resulting in hyperglycemias or hypoglycemias. Specific phenotypes observed are noninsulin-dependent diabetes mellitus (NIDDM; MIM:125853), permanent neonatal diabetes mellitus (PNDM; MIM:606176), transient neonatal diabetes mellitus 2 (TNDM2; MIM:610374), familial hyperinsulinemic hypoglycemia 1 (HHF1; MIM:256450) and leucine-induced hypoglycemia (LIH; MIM:240800) (Edghill et al. 2010, Flanagan et al. 2009, Yorifuji 2014, Yang et al. 2010, Chandran et al. 2014).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep15">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction11" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep12">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction8" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep13">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction9" />
+ <bp:stepProcess rdf:resource="#Catalysis5" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep18">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction13" />
+ <bp:stepProcess rdf:resource="#Catalysis8" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep19">
+ <bp:stepProcess rdf:resource="#Pathway7" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep16">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction12" />
+ <bp:stepProcess rdf:resource="#Catalysis7" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep17">
+ <bp:stepProcess rdf:resource="#Pathway6" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis1">
+ <bp:controlled rdf:resource="#BiochemicalReaction1" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis2">
+ <bp:controlled rdf:resource="#BiochemicalReaction3" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis3">
+ <bp:controlled rdf:resource="#BiochemicalReaction4" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis4">
+ <bp:controlled rdf:resource="#BiochemicalReaction5" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis5">
+ <bp:controlled rdf:resource="#BiochemicalReaction9" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence14">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway14">
+ <bp:pathwayOrder rdf:resource="#PathwayStep34" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction21" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence34" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective ABCG8 causes GBD4 and sitosterolemia</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ATP-binding cassette sub-family G member 8 (ABCG8 aka sterolin-2), is a &quot;half transporter&quot;, that forms a complex with another half transporter ABCG5 in the endoplasmic reticulum. This complex translocates to the plasma membrane to mediate the ATP-dependent intestinal absorption and facilitation of biliary secretion of cholesterol and phytosterols (eg sitosterol). Defects in either of these half transporters result in loss of enterocyte discrimination between cholesterol and sitosterol causing sterol accumulation and predisposition for atherosclerosis. Defects in ABCG8 are the cause of gallbladder disease 4 (GBD4; MIM:611465), one of the major digestive diseases. Gallstones are composed of cholesterol (cholelithiasis) and are the common manifestations of GBD in western countries (Buch et al. 2007, Rudkowska    Jones 2008, Jakulj et al. 2010). Defects in ABCG8 also cause sitosterolemia (MIM:210250), characterised by unrestricted intestinal absorption of both cholesterol and plant-derived sterols causing hypercholesterolemia and premature coronary atherosclerosis. Patients with sitosterolemia absorb between 15 and 60% of ingested sitosterol, and they excrete only a fraction into the bile (Berge et al. 2000, Othman et al. 2013, Yu et al. 2014).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence13">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway15">
+ <bp:pathwayOrder rdf:resource="#PathwayStep36" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction22" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence36" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective ABCC9 causes CMD10, ATFB12 and Cantu syndrome</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ATP-binding cassette sub-family C member 9 (ABCC9) forms cardiac and smooth muscle-type KATP channels with ATP-sensitive inward rectifier potassium channel 11 (KCNJ11). KCNJ11 forms the channel pore while ABCC9 is required for activation and regulation (Babenko et al. 1998, Tammaro    Ashcroft 2007). Inward rectifier potassium channels favor the flow of potassium into the cell rather than out of it. KATP channels open and close in response to intracellular changes in the ADP/ATP ratio, thereby linking the metabolic state of the cell to its membrane potential. Inhibition of KATP channel activity causes membrane depolarization and thereby activation of voltage-dependent Ca2+ channels, leading to Ca2+ influx and a rise in intracellular Ca2+ concentration. Correct maintenance of calcium balance is essential for the normal functioning of the heart.  Defects in ABCC9 can cause dilated cardiomyopathy 10 (CMD10: MIM:608569), a disorder characterised by ventricular dilation and impaired systolic function, resulting in congestive heart failure and arrhythmia (Bienengraeber et al. 2004). Defects in ABCC9 can also cause familial atrial fibrillation 12 (ATFB12; MIM:614050), characterised by disorganized atrial electrical activity and ineffective atrial contraction resulting in blood stasis in the atria and reduces ventricular filling. It can result in palpitations, syncope, thromboembolic stroke, and congestive heart failure (Olson et al. 2007). Defects in ABCC9 can also cause hypertrichotic osteochondrodysplasia (Cantu syndrome; MIM:239850), a rare disorder characterised by congenital hypertrichosis, neonatal macrosomia, a distinct osteochondrodysplasia and cardiomegaly (van Bon et al. 2012, Harakalova et al. 2012).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence16">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway12">
+ <bp:pathwayOrder rdf:resource="#PathwayStep30" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction19" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence30" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective ABCA3 causes SMDP3</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ATP-binding cassette sub-family A member 3 (ABCA3) is thought to play a role in the formation of pulmonary surfactant by transporting lipids such as cholesterol into lamellar bodies (LBs) in alveolar type II cells. In LBs, surfactant proteins and lipids are assembled into bilayer membranes that are secreted into the alveolar airspace, where they form a surface film at the air&#8211;liquid interface. Defects in ABCA3 can cause pulmonary surfactant metabolism dysfunction 3 (SMDP3), a usually fatal pulmonary disease in newborns, characterised by the absence of normal LBs and the presence of electron-dense inclusions within small vesicular structures. Loss of secretion of lipid pulmonary surfactants causes excessive lipoprotein accumulation in the alveoli resulting in severe respiratory distress (Shulenin et al. 2004, Quazi    Molday 2011, Tarling et al. 2014, Whitsett et al. 2015).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence15">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway13">
+ <bp:pathwayOrder rdf:resource="#PathwayStep32" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction20" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence32" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective ABCB4 causes PFIC3, ICP3 and GBD1</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Multidrug resistance protein 3 (ATP-binding cassette sub-family B member 4, ABCB4 aka MDR3) mediates the ATP-dependent export of organic anions, phospholipids and drugs from hepatocytes into the canalicular lumen in the presence of bile salts, especially the export of phospholipids such as phosphatidylcholine (PC). Biliary phospholipids associate with bile salts and cholesterol in mixed micelles, thereby reducing the detergent activity and cytotoxicity of bile salts and preventing cholesterol crystallisation. Thus, ABCB4 plays a crucial role in bile formation and lipid homeostasis. Defects in ABCB4 result in a wide spectrum of cholestasis phenotypes, from progressive familial intrahepatic cholestasis 3 (PFIC3; MIM:602347) and intrahepatic cholestasis of pregnancy 3 (ICP3; MIM:614972) to gallbladder disease 1 (GBD1; MIM:600803) (Jacquemin et al. 2001, Davit-Spraul et al. 2010, Jacquemin 2012). In PFIC3, the biliary phospholipid level is substantially decreased despite the presence of bile acids. Cholestasis may be caused by the toxicity of detergent bile salts that are not associated with phospholipids, leading to bile canaliculus and biliary epithelium damage. ICP3 is a reversible form of cholestasis in the third trimester of pregnancy and quickly disappears after childbearing. GBD1 is one of the major digestive diseases. Gallstones composed of cholesterol (cholelithiasis) are the common manifestations of GBD1 in western countries. Most people with gallstones remain asymptomatic throughout their lifetimes but approximately 10-50% of individuals eventually develop symptoms. </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence18">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway10">
+ <bp:pathwayOrder rdf:resource="#PathwayStep26" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction17" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence26" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective ABCG5 causes sitosterolemia</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ATP-binding cassette sub-family G member 5 (ABCG5 aka sterolin-1), is a &quot;half transporter&quot;, that forms a complex with another half transporter ABCG8 (aka sterolin-2) in the endoplasmic reticulum. This complex translocates to the plasma membrane to mediate the ATP-dependent intestinal absorption and facilitation of biliary secretion of cholesterol and phytosterols (e.g. sitosterol). Defects in either of these half transporters result in loss of enterocyte discrimination between cholesterol and sitosterol causing sterol accumulation and predisposition for atherosclerosis. Defects in ABCG5 are the cause of sitosterolemia (MIM:210250), characterised by unrestricted intestinal absorption of both cholesterol and plant-derived sterols causing hypercholesterolemia and premature coronary atherosclerosis. Patients with sitosterolemia absorb between 15 and 60% of ingested sitosterol and excrete only a fraction of this into the bile (Berge et al. 2000, Othman et al. 2013, Yu et al. 2014).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence17">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway11">
+ <bp:pathwayOrder rdf:resource="#PathwayStep28" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction18" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence28" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective ABCB11 causes PFIC2 and BRIC2</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The bile salt export pump ABCB11 mediates the release of bile salts from liver cells into bile. Defects in ABCB11 can cause two clinically distinct forms of cholestasis; progressive familial intrahepatic cholestasis 2 (PFIC2; MIM:601847) and benign recurrent intrahepatic cholestasis 2 (BRIC2; MIM:605479). Cholestasis is characterized by the retention of bile acids or salts. Bile acids can damage hepatocytes and bile duct cells leading to inflammation, fibrosis, cirrhosis and eventually carcinogenesis. PFIC2 patients suffer from chronic cholestasis and develop liver fibrosis, cirrhosis and end-stage liver disease before adulthood. BRIC2 patients experience intermittent episodes of cholestasis that resolve spontaneously after weeks or months (Strubbe et al. 2012, Cuperus et al. 2014).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence19">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence10">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence12">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence11">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence7">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep32">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction20" />
+ <bp:stepProcess rdf:resource="#Catalysis15" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence6">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep33">
+ <bp:stepProcess rdf:resource="#Pathway14" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence9">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep30">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction19" />
+ <bp:stepProcess rdf:resource="#Catalysis14" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence8">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep31">
+ <bp:stepProcess rdf:resource="#Pathway13" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep36">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction22" />
+ <bp:stepProcess rdf:resource="#Catalysis17" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep37">
+ <bp:stepProcess rdf:resource="#Pathway16" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep34">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction21" />
+ <bp:stepProcess rdf:resource="#Catalysis16" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep35">
+ <bp:stepProcess rdf:resource="#Pathway15" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep38">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction23" />
+ <bp:stepProcess rdf:resource="#Catalysis18" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence3">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence5">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence4">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway16">
+ <bp:pathwayOrder rdf:resource="#PathwayStep38" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction23" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence38" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective ABCA12 causes ARCI4B</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ATP-binding cassette sub-family A member 12 (ABCA12) is thought to function as an epidermal keratinocyte lipid transporter. These lipids form extracellular lipid layers in the stratum corneum of the epidermis, essential for skin barrier function. Defects in ABCA12 results in the loss of the skin lipid barrier, leading to autosomal recessive congenital ichthyosis 4B (ARCI4B; MIM:242500, aka harlequin ichthyosis, HI). ARCI4B shows the most severe phenotype of the congenital ichthyoses, with newborns having a thick covering of armour-like scales. The skin dries out to form hard diamond-shaped plaques separated by fissures. Affected babies are often born prematurely and rarely survive the perinatal period (Akiyama et al. 2005, Akiyama 2010, 2014).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep21">
+ <bp:stepProcess rdf:resource="#Pathway8" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep22">
+ <bp:stepProcess rdf:resource="#Catalysis10" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction15" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep20">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction14" />
+ <bp:stepProcess rdf:resource="#Catalysis9" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis6">
+ <bp:controlled rdf:resource="#BiochemicalReaction10" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep25">
+ <bp:stepProcess rdf:resource="#Pathway10" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis7">
+ <bp:controlled rdf:resource="#BiochemicalReaction12" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep26">
+ <bp:stepProcess rdf:resource="#Catalysis12" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction17" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis8">
+ <bp:controlled rdf:resource="#BiochemicalReaction13" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep23">
+ <bp:stepProcess rdf:resource="#Pathway9" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis9">
+ <bp:controlled rdf:resource="#BiochemicalReaction14" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep24">
+ <bp:stepProcess rdf:resource="#Catalysis11" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction16" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep29">
+ <bp:stepProcess rdf:resource="#Pathway12" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep27">
+ <bp:stepProcess rdf:resource="#Pathway11" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep28">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction18" />
+ <bp:stepProcess rdf:resource="#Catalysis13" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Activating ABCC8 mutants cause hyperglycemia in permanent neonatal diabetes mellitus (PNDM) and transient neonatal DM (TNDM)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
+ <bp:evidence rdf:resource="#Evidence4" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective ABCC8 does not form functional KATP channels, causing hyperinsulinemic hypoglycemia</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction3">
+ <bp:evidence rdf:resource="#Evidence6" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective ABCB6 does not transport porphyrin from cytosol into mitochondria matrix</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction23">
+ <bp:evidence rdf:resource="#Evidence39" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective ABCA12 does not transport lipids from cytosol to extracellular region</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction22">
+ <bp:evidence rdf:resource="#Evidence37" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective ABCC9 (in KCNJ11:ABCC9) does not transport K+ from extracellular region to cytosol</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction21">
+ <bp:evidence rdf:resource="#Evidence35" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective ABCG8 (in ABCG5:ABCG8) does not transport sterols from cytosol to extracellular region</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction20">
+ <bp:evidence rdf:resource="#Evidence33" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective ABCB4 does not transport PC from plasma membrane to extracellular region</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction4">
+ <bp:evidence rdf:resource="#Evidence8" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective ABCD1 does not transfer LCFAs from cytosol to peroxisomal matrix</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis12">
+ <bp:controlled rdf:resource="#BiochemicalReaction17" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction5">
+ <bp:evidence rdf:resource="#Evidence10" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RNF5 and RNF185 ubiquitinate CFTR F508del</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis11">
+ <bp:controlled rdf:resource="#BiochemicalReaction16" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction6">
+ <bp:evidence rdf:resource="#Evidence11" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CFTR F508del binds CFTR correctors</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis10">
+ <bp:controlled rdf:resource="#BiochemicalReaction15" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction7">
+ <bp:evidence rdf:resource="#Evidence12" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CFTR F508del binds components of the ERAD machinery for ubiquitination and degradation</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction8">
+ <bp:evidence rdf:resource="#Evidence13" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Ivacaftor binds CFTR G551D</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction9">
+ <bp:evidence rdf:resource="#Evidence14" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CFTR F508del is degraded by the 26S proteasome</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis18">
+ <bp:controlled rdf:resource="#BiochemicalReaction23" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis17">
+ <bp:controlled rdf:resource="#BiochemicalReaction22" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis16">
+ <bp:controlled rdf:resource="#BiochemicalReaction21" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis15">
+ <bp:controlled rdf:resource="#BiochemicalReaction20" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis14">
+ <bp:controlled rdf:resource="#BiochemicalReaction19" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis13">
+ <bp:controlled rdf:resource="#BiochemicalReaction18" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep4">
+ <bp:stepProcess rdf:resource="#Pathway3" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction12">
+ <bp:evidence rdf:resource="#Evidence17" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective CFTR does not transport Cl- from cytosol to extracellular region</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence25">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep3">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction2" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction11">
+ <bp:evidence rdf:resource="#Evidence16" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">VCP-catalyzed ATP hydrolysis promotes the translocation of CFTR F508del into the cytosol</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence24">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep6">
+ <bp:stepProcess rdf:resource="#Pathway4" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction14">
+ <bp:evidence rdf:resource="#Evidence21" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective ABCA1 does not transport CHOL from transport vesicle membrane to plasma membrane</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence27">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep5">
+ <bp:stepProcess rdf:resource="#Catalysis2" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction3" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction13">
+ <bp:evidence rdf:resource="#Evidence19" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective ABCD4:LMBRD1 does not transport Cbl from lysosomal lumen to cytosol</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence26">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence29">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence28">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep2">
+ <bp:stepProcess rdf:resource="#Catalysis1" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction10">
+ <bp:evidence rdf:resource="#Evidence15" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Ivacaftor:CFTR G551D transports Cl- from cytosol to extracellular region</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#Pathway2" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction19">
+ <bp:evidence rdf:resource="#Evidence31" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective ABCA3 does not transport PC, PG from ER membrane to lamellar body</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence21">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction16">
+ <bp:evidence rdf:resource="#Evidence25" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective ABCC2 does not transport BMG,BDG from cytosol to extracellular region</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence20">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction15">
+ <bp:evidence rdf:resource="#Evidence23" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective ABCC6 does not transport organic anion from cytosol to extracellular region</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence23">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction18">
+ <bp:evidence rdf:resource="#Evidence29" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective ABCB11 does not transport bile salts from cytosol to extracellular region</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence22">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction17">
+ <bp:evidence rdf:resource="#Evidence27" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective ABCG5 (in ABCG5:ABCG8) does not transport sterols from cytosol to extracellular region</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep8">
+ <bp:stepProcess rdf:resource="#Pathway5" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep7">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction4" />
+ <bp:stepProcess rdf:resource="#Catalysis3" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep9">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction5" />
+ <bp:stepProcess rdf:resource="#Catalysis4" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence36">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence35">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence38">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence37">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence39">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence30">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence32">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence31">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence34">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence33">
+</bp:Evidence>
+</rdf:RDF>

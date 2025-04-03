@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/9701193#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence4">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
+ <bp:evidence rdf:resource="#Evidence5" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective D-loop formation mediated by PALB2, BRCA2 and RAD51 due to loss-of-function of PALB2 in binding to BRCA2/RAD51/RAD51C</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective D-loop formation mediated by PALB2, BRCA2 and RAD51 due to loss-of-function of PALB2 in BRCA1 binding</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence3">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep4">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction2" />
+</bp:PathwayStep>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#Pathway2" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence5">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep3">
+ <bp:stepProcess rdf:resource="#Pathway3" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep2">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep3" />
+ <bp:pathwayComponent rdf:resource="#Pathway2" />
+ <bp:pathwayComponent rdf:resource="#Pathway3" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective homologous recombination repair (HRR) due to PALB2 loss of function</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Biallelic loss-of-function mutations in  PALB2  results in Fanconi anemia subtype N (FA-N), which is phenotypically very similar to Fanconi anemia subtype D1, caused by biallelic loss-of-function of  BRCA2  (Reid et al. 2007). FA-D1 and FA-N are characterized by developmental abnormalities, bone marrow failure and childhood cancer susceptibility, especially childhood solid tumors, such as Wilms tumor and medulloblastoma. Monoallelic  PALB2  loss-of-function is an underlying cause of hereditary breast cancer in particular, but inactivating  PALB2  mutations are also to a lesser extent found in some other cancer types, including pancreatic cancer (Erkko et al. 2007, Erkko et al. 2008, Antoniou et al. 2014, Yang et al. 2020). Germline  PALB2  mutations are somewhat less frequent than those occurring in  BRCA1  and  BRCA2 , but cause a comparably high risk of developing breast cancer. Therefore,  PALB2  is a high-risk breast cancer predisposing gene (Nepomuceno et al. 2021).  PALB2 interacts with both BRCA1 and BRCA2, and serves as a bridge that connects BRCA2 with BRCA1 at sites of DNA double-strand break repair (DSBR). PALB2 also interacts directly with DNA and takes part in the regulation of RAD51-mediated homologous recombination (Buisson et al. 2010; Dray et al. 2010). PALB2 loss-of-function mutations can affect its interaction with BRCA1 when they affect the N-terminal coiled-coil domain that is necessary for BRCA1 binding (Sy et al. 2009, Foo et al. 2017). Mutations in the coiled-coil domain can also affect PALB2 self-interaction, recruitment to double-strand break sites, homologous recombination repair and RAD51 foci formation (Buisson and Masson 2012). PALB2 missense mutants that do not bind to BRCA1 can still be recruited to DSBR sites, probably through interaction with other proteins involved in DSBR, but they are unable to restore efficient gene conversion in PALB2-deficient cells and they render cells hypersensitive to the DNA damaging agent mitomycin C (Sy et al. 2009), with some variants also presenting sensitivity to PARP inhibitors (Foo et al. 2017).  Mutations evaluated so far in the central region of PALB2, which contains the ChAM motif and the MRG15-binding region, have shown no functional impact on the protein.  Mutations affecting the C-terminal WD40 domain of PALB2 impair its ability to interact with BRCA2, RAD51 and/or RAD51C (Erkko et al. 2007, Park et al. 2014, Simhadri et al. 2019). In addition, disruption of the WD40 domain can lead to the exposure of a nuclear export signal (NES), leading to cytoplasmic translocation of PALB2 (Pauty et al. 2017). Mutations affecting the C-terminal domain of PALB2 are more frequent than mutations that affect the N-terminus and have been observed, as germline mutations, in familial breast cancer and in Fanconi anemia, but somatic mutations also occur in sporadic cancers. Cells that express PALB2 mutants defective in BRCA2, RAD51 and/or RAD51C binding show reduced ability to perform DSBR via homologous recombination repair, form fewer RAD51 foci at DSBR sites, and are sensitive to DNA crosslinking agents such as mitomycin C (Erkko et al. 2007, Parker et al. 2014).  For review, please refer to Tischkowitz and Xia 2010, Pauty et al. 2014, Park et al. 2014, Nepomuceno et al. 2017, Ducy et al. 2019, Wu et al. 2020, Nepomuceno et al. 2021.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway2">
+ <bp:pathwayOrder rdf:resource="#PathwayStep2" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective HDR through Homologous Recombination Repair (HRR) due to PALB2 loss of BRCA1 binding function</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Mutations in the N-terminal coiled-coil domain of PALB2 (amino acids 9-44), involved in self-interaction and BRCA1 binding, impair the interaction of PALB2 with BRCA1 (Sy et al. 2009, Foo et al. 2017, Boonen et al. 2020). Phosphorylation of PALB2 by ATR on serine residue S59 promotes BRCA1-PALB2 interaction and the localization of PALB2 to DNA damage sites (Buisson et al. 2017). Mutations in the coiled-coil domain can also affect PALB2 self-interaction, recruitment to double-strand break sites, homologous recombination repair, and RAD51 foci formation (Buisson and Masson 2012).  PALB2 missense mutants that do not bind to BRCA1 can still be recruited to DNA double-strand break repair (DSBR) sites, probably through interaction with other proteins involved in DSBR, but they are unable to restore efficient gene conversion in PALB2-deficient cells and they render cells hypersensitive to the DNA damaging agent mitomycin C (Sy et al. 2009). Some variants in this region are also sensitive to PARP inhibitors (Foo et al. 2017).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway3">
+ <bp:pathwayOrder rdf:resource="#PathwayStep4" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction2" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence4" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective HDR through Homologous Recombination Repair (HRR) due to PALB2 loss of BRCA2/RAD51/RAD51C binding function</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Mutations affecting the C-terminal WD40 domain of PALB2 (amino acids 853-1186) impair its ability to interact with BRCA2, RAD51 and/or RAD51C (Erkko et al. 2007, Park et al. 2014). In addition, disruption of the WD40 domain can lead to the exposure of the nuclear export signal (NES) and cytoplasmic translocation of PALB2 (Pauty et al. 2017). Mutations affecting the C-terminal domain of PALB2 are more frequent than mutations that affect the N-terminus and have been observed, as germline mutations, in familial breast cancer and in Fanconi anemia, but somatic mutations also occur in sporadic cancers. Cells that express PALB2 mutants defective in BRCA2, RAD51 and/or RAD51C binding show reduced ability to perform DSBR via homologous recombination repair, form fewer RAD51 foci at DSBR sites, and are sensitive to DNA crosslinking agents such as mitomycin C (Erkko et al. 2007, Park et al. 2014).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+</rdf:RDF>

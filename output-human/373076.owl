@@ -1,0 +1,3068 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/373076#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:PathwayStep rdf:ID="PathwayStep74">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction68" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep73">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction67" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep72">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction66" />
+ <bp:stepProcess rdf:resource="#Catalysis4" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep71">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction65" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep70">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction64" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway25">
+ <bp:pathwayOrder rdf:resource="#PathwayStep208" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep209" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction184" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction185" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence208" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Opsins</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Opsins are light-sensitive, 35-55 kDa membrane-bound G protein-coupled receptors of the retinylidene protein family found in photoreceptor cells of the retina. Five classical groups of opsins are involved in vision, mediating the conversion of a photon of light into an electrochemical signal, the first step in the visual transduction cascade (Terakita A, 2005; Nickle B and Robinson PR, 2007). Another opsin found in the mammalian retina, melanopsin, is involved in circadian rhythms and pupillary reflex but not in image-forming (Hankins MW et al, 2008; Kumbalasiri T and Provencio I, 2005). Guanine nucleotide-binding proteins (G proteins) are involved as modulators or transducers in various transmembrane signaling systems. The G protein transducin, encoded by GNAT genes, is one of the transducers of a visual impulse that performs the coupling between rhodopsin and cGMP-phosphodiesterase. Defects in GNAT1 are the cause of congenital stationary night blindness autosomal dominant type 3, also known as congenital stationary night blindness Nougaret type. Congenital stationary night blindness is a non-progressive retinal disorder characterized by impaired night vision (Dryja TP et al, 1996). Defects in GNAT2 are the cause of achromatopsia type 4 (ACHM4). Achromatopsia is an autosomal recessively inherited visual disorder that is present from birth and that features the absence of color discrimination (Kohl S et al, 2002).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway24">
+ <bp:pathwayOrder rdf:resource="#PathwayStep197" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep198" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep199" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep200" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep201" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep202" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep203" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep204" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep205" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction174" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction182" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction180" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction181" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction179" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction177" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction178" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction175" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction176" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence197" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Prostanoid ligand receptors</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Fatty acid cyclo-oxygenase (COX) converts arachidonic acid to prostaglandin H2 (PGH2) from which the prostanoids PGD2, PGE2, PGF2alpha, PGI2 (prostacyclin) and thromboxane A2 (TXA2) are derived. Based on the agonist potencies, five prostanoid receptors are recognized and correspondingly named DP, EP, FP, IP and TP receptors (Coleman RA et al, 1994). Additionally, EP receptors contains four subtypes, termed EP1, EP2, EP3 and EP4; the DP receptor also has two subtypes, DP1 and DP2 (CRTH2).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep69">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction63" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep68">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction62" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep67">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction61" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep66">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction60" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep65">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction59" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep64">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction58" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway21">
+ <bp:pathwayOrder rdf:resource="#PathwayStep182" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep183" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep184" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep185" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep186" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction162" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction163" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction166" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction164" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction165" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence182" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Free fatty acid receptors</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Fatty acids are the ligands for a small family of G-protein-coupled receptors, the Free Fatty Acid receptors, and an unrelated receptor GPR120.   Free fatty acid receptor 1 (FFAR1/GPR40) is activated by both saturated and unsaturated medium to long-chain fatty acids while FFAR2 (GPR43) and FFAR3 (GPR41) are activated by short-chain fatty acids (carboxylates) with six or fewer carbon molecules. A fourth highly homologous receptor GPR42 is believed to be a pseudogene with intact open reading frame, but could be a functional gene in a significant fraction of the human population.   GPR120 is activated by long chain (C16-22) fatty acids.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway20">
+ <bp:pathwayOrder rdf:resource="#PathwayStep178" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep179" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep180" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction160" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction161" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction159" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence178" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Hydroxycarboxylic acid-binding receptors</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The G-protein-coupled receptors Hydroxy-carboxylic acid receptor 1 (HCAR1, GPR81), HCAR2 (GPR109A), and HCAR3 (GPR109B) have significant sequence homology and are encoded by clustered genes. Their endogenous ligands are hydroxy-carboxylic acid metabolites. HCAR1 is activated by lactate (2-hydroxy-propanoic acid). HCAR2 is a receptor for 3-hydroxy-butyric acid. HCAR3 is activated by 3-hydroxy-octanoic acid. HCAR1 and HCAR2 are found in most mammalian species; HCA3 is found only in higher primates. All three receptors are expressed in adipocytes and are coupled to Gi-type G-proteins, mediating antilipolytic effects in fat cells. HCAR2 and HCAR3 are also expressed in a variety of immune cells. HCAR2 is a receptor for the antidyslipidemic drug nicotinic acid (niacin) and related natural and synthetic compounds.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway23">
+ <bp:pathwayOrder rdf:resource="#PathwayStep192" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep193" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep194" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep190" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep191" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction171" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction172" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction170" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction168" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction169" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence190" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Leukotriene receptors</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Leukotriene receptors bind leukotriene ligands. There are four types of receptor in humans; two for leukotriene B4 and two for cysteinyl leukotrienes (Brink C et al, 2003).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway22">
+ <bp:pathwayOrder rdf:resource="#PathwayStep195" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep196" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep189" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction173" />
+ <bp:pathwayComponent rdf:resource="#Pathway24" />
+ <bp:pathwayComponent rdf:resource="#Pathway23" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence189" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Eicosanoid ligand-binding receptors</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Eicosanoids, derived from polyunsaturated 20-carbon fatty acids, are paracrine and autocrine regulators of inflammation, smooth muscle contraction, and blood coagulation. The actions of eicosanoids are mediated by eicosanoid receptors, most of which are GPCRs. There are four types of eicosanoid GPCRs in humans; leukotriene, lipoxin (Brink C et al, 2003), prostanoid (Coleman RA et al, 1994) and oxoeicosanoid (Brink C et al, 2004) receptors. </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep63">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction57" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep62">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction56" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep61">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction55" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep60">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction54" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway14">
+ <bp:pathwayOrder rdf:resource="#PathwayStep131" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep132" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep133" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep134" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep135" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep136" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction119" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction118" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction122" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction123" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction120" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction121" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence131" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Serotonin receptors</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Serotonin (5-HT) is a monoamine neurotransmitter that plays an important role as a modulator of anger, aggression, body temperature, mood, sleep, sexuality, appetite, metabolism, as well as stimulating vomiting. Several classes of drugs target the 5-HT system including some antidepressants, antipsychotics, anxiolytics, antiemetics and antimigraine drugs. The activity of 5-HT is modulated by 5-HT receptors, made up of seven families (5-HT1-7). All but 5-HT3 (ligand-gated ion channel) are GPCRs and these receptors bind different G proteins resulting in differing outcomes (Hoyer D et al, 1994; Kitson SL, 2007).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep59">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction53" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway13">
+ <bp:pathwayOrder rdf:resource="#PathwayStep170" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep151" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep130" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep164" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep145" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep146" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep137" />
+ <bp:pathwayComponent rdf:resource="#Pathway14" />
+ <bp:pathwayComponent rdf:resource="#Pathway16" />
+ <bp:pathwayComponent rdf:resource="#Pathway15" />
+ <bp:pathwayComponent rdf:resource="#Pathway18" />
+ <bp:pathwayComponent rdf:resource="#Pathway17" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction131" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction153" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence130" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Amine ligand-binding receptors</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The class A (rhodopsin-like) GPCRs that bind to classical biogenic amine ligands are annotated here. The amines involved  (acetylcholine, adrenaline, noradrenaline, dopamine, serotonin and histamine) can all act as neurotransmitters in humans. The so-called &apos;trace amines&apos;, used when referring to p-tyramine, beta-phenylethylamine, tryptamine and octopamine, can also bind to recently-discovered GPCRs.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep58">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction52" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway16">
+ <bp:pathwayOrder rdf:resource="#PathwayStep150" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep147" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep148" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep149" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction135" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction133" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction134" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction132" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence147" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Dopamine receptors</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Dopamine receptors play vital roles in processes such as the control of learning, motivation, fine motor control and modulation of neuroendocrine signaling (Giralt JA and Greengard P, 2004). Abnormalities in dopamine receptor signaling may lead to neuropsychiatric disorders such as Parkinson&apos;s disease and schizophrenia. Dopamine receptors are prominent in the CNS and the neurotransmitter dopamine is the primary endogenous ligand for these receptors. In humans, there are five distinct types of dopamine receptor, D1-D5. They are subdivided into two families; D1-like family (D1 and D5) which couple with the G protein alpha-s and are excitatory and D2-like family (D2,D3 and D4) which couple with the G protein alpha-i and are inhibitory (Kebabian JW and Calne DB, 1979).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep57">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction51" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway15">
+ <bp:pathwayOrder rdf:resource="#PathwayStep140" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep141" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep142" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep143" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep144" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep138" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep139" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction130" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction128" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction129" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction126" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction127" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction124" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction125" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence138" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Histamine receptors</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Histamine is a biogenic amine involved in local immune responses, regulation of gut function and neurotransmission. It exerts its actions by binding to histamine receptors. There are four receptors in humans, H1-H4 (Hill SJ et al, 1997).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep56">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction50" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway18">
+ <bp:pathwayOrder rdf:resource="#PathwayStep165" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep166" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep167" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep168" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep169" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction151" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction152" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction150" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction148" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction149" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence165" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Muscarinic acetylcholine receptors</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Muscarinic acetylcholine (mAChRs) receptors were so named because they are more sensitive to muscarine than to nicotine (Ishii M and Kurachi Y, 2006). Their counterparts are nicotinic acetylcholine receptors (nAChRs), ion channels receptors that are also important in the autonomic nervous system. Many drugs can manipulate these two distinct receptors by acting as selective agonists or antagonists. mAChRs bind to the bioamine acetylcholine, have a widespread tissue distribution and are involved in the control of numerous central and peripheral physiological responses, particularly voluntary muscle contraction. They are also major targets for drugs in human diseases such as Alzheimer&apos;s, Parkinson&apos;s and schizophrenia. This family of G-protein coupled receptors consists of five members designated M1-M5 and are sub-divided into two groups based on their primary coupling to G proteins. M2 and M4 receptors couple to Gi/o proteins and M1, M3 and M5 receptors couple to Gq/11 proteins (Caulfield MP and Birdsall NJ, 1998).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep55">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction49" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway17">
+ <bp:pathwayOrder rdf:resource="#PathwayStep160" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep161" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep162" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep152" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep163" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep153" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep154" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep155" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep156" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep157" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep158" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep159" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction140" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction141" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction139" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction137" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction138" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction146" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction136" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction147" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction144" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction145" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction142" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction143" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence152" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Adrenoceptors</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The adrenoceptors (adrenergic receptors) are targets for the catecholamines adrenaline (epinephrine) and noradrenaline (norepinephrine). These receptors are widespread in the body and binding of catecholamines produces a sympathetic response (&apos;flight-or-fight response&apos;) resulting in increased heart rate, pupil dilation and energy mobilization amongst other responses. There are three major types of adrenoceptor, alpha1, alpha2 and beta. Each type is thought to have three subtypes; alpha1 (1A,1B,1D), alpha2 (2A,2B,2C) and beta (1,2,3) (Bylund DB et al, 1994).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep54">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction48" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep53">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction47" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway19">
+ <bp:pathwayOrder rdf:resource="#PathwayStep172" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep173" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep174" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep175" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep176" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction157" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction158" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction155" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction156" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction154" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence172" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Lysosphingolipid and LPA receptors</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The Lysophospholipid receptor (LPLR) group are members of the G protein-coupled receptor family of integral membrane proteins that are important for lipid signaling. In humans there are eight LPL receptors, each encoded by a separate gene (these genes also sometimes referred to as &quot;Edg&quot; or endothelial differentiation gene). The ligands for LPLRs are the lysophospholipid extracellular signaling molecules, lysophosphatidic acid (LPA) and sphingosine 1-phosphate (S1P). The primary effects are inhibition of adenylyl cyclase and release of calcium from the endoplasmic reticulum, as well as secondary effects of preventing apoptosis and increasing cell proliferation (Contos JJ et al, 2000; An S et al, 1998; Fukushima N and Chun J, 2001).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway10">
+ <bp:pathwayOrder rdf:resource="#PathwayStep100" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep101" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction92" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction91" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence100" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Adenosine P1 receptors</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The adenosine receptors (P1 receptors) are a class of purinergic receptors, G-protein coupled receptors with adenosine as their endogenous ligand.In humans, there are four adenosine receptors. Each is encoded by a separate gene and the four receptors have distinct, though overlapping, functions. For instance, both A1 and A2A receptors play roles in the heart, regulating myocardial oxygen consumption and coronary blood flow. They also have important roles in the brain, regulating the release of other neurotransmitters such as dopamine and glutamate. The A2B and A3 receptors are located peripherally and are involved in processes such as inflammation and immune responses. Fredholm BB et al, 2001).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway12">
+ <bp:pathwayOrder rdf:resource="#PathwayStep121" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep122" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep123" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep124" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep125" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep126" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep127" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep128" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction117" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction115" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction116" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction113" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction114" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction111" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction112" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction110" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence121" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Hormone ligand-binding receptors</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The class A (rhodopsin-like) GPCRs that bind to hormone ligands are annotated here. The hormones follicle-stimulating hormone (FSH), luteinizing hormone (LH), thyroid-stimulating hormone (TSH) and human chorionic gonadotrophin (hCG) are dimeric glycoproteins, sharing an identical alpha subunit and varying beta subunits. Their actions are mediated by the respective GPCRs, influencing reproductive processes and thyroid hormone release.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway11">
+ <bp:pathwayOrder rdf:resource="#PathwayStep109" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep112" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep113" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep103" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep114" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep104" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep115" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep105" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep106" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep107" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep108" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep110" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep111" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction93" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction95" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction94" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction97" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction96" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction99" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction98" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction104" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction105" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction102" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction103" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction100" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction101" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence103" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">P2Y receptors</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">P2Y receptors are a family of purinergic receptors, G protein-coupled receptors stimulated by nucleotides such as ATP, ADP, UTP, UDP and UDP-glucose. To date, 12 P2Y receptors have been cloned in humans (Abbracchio MP et al, 2006; Fischer W and Krugel U, 2007). P2Y receptors are present in almost all human tissues where they exert various biological functions based on their G-protein coupling. Purine nucleotides are involved in a large number of intermediate metabolic pathways, taking part as substrates, products or allosteric factors.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep96">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction89" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep95">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction88" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep94">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction87" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep93">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction86" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep92">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction85" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep91">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction84" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep90">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction83" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep89">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction82" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep88">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction81" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep87">
+ <bp:stepProcess rdf:resource="#Pathway8" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep86">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction80" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep85">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction79" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep84">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction78" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep83">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction77" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep82">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction76" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep81">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction75" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep80">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction74" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep79">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction73" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep78">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction72" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep77">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction71" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep76">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction70" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep75">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction69" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction162">
+ <bp:evidence rdf:resource="#Evidence183" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Receptor FFAR2 binds carboxylates</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction163">
+ <bp:evidence rdf:resource="#Evidence184" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Receptor FFAR1 binds free fatty acids</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction160">
+ <bp:evidence rdf:resource="#Evidence180" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HCAR1 binds LACT</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction161">
+ <bp:evidence rdf:resource="#Evidence181" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HCAR2 binds HCAR2 ligands</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep30">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction27" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep27">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction24" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep26">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction23" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep25">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction22" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep24">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction21" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep23">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction20" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep22">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction19" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep21">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction18" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep20">
+ <bp:stepProcess rdf:resource="#Catalysis1" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction17" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction159">
+ <bp:evidence rdf:resource="#Evidence179" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HCAR3 binds HCAR3 ligands</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction157">
+ <bp:evidence rdf:resource="#Evidence176" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">S1PR2-5 bind S1P</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction158">
+ <bp:evidence rdf:resource="#Evidence177" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">S1PR1 bind S1P</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction155">
+ <bp:evidence rdf:resource="#Evidence174" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LRPP4(LRPP1-3,5) hydrolyse LPA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction156">
+ <bp:evidence rdf:resource="#Evidence175" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">S1PR1 binds S1PR1 agonists</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep29">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction26" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction153">
+ <bp:evidence rdf:resource="#Evidence171" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GPR143 binds L-Dopa</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep28">
+ <bp:stepProcess rdf:resource="#Catalysis2" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction25" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction154">
+ <bp:evidence rdf:resource="#Evidence173" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LPA-binding receptors bind LPA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction173">
+ <bp:evidence rdf:resource="#Evidence196" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Oxoeicosanoid receptor can bind oxoeicosanoid</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction174">
+ <bp:evidence rdf:resource="#Evidence198" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">DP2 receptor can bind PGD2</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction171">
+ <bp:evidence rdf:resource="#Evidence194" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CYSLTR1 binds CYSLTR1 antagonists</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction172">
+ <bp:evidence rdf:resource="#Evidence195" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">BLT receptors can bind LTB4</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction170">
+ <bp:evidence rdf:resource="#Evidence193" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CYSLT2 binds LTC4,LTD4,LTE4</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep16">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction13" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep15">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction12" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep14">
+ <bp:stepProcess rdf:resource="#Pathway4" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep13">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction11" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep12">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction10" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep11">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction9" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep10">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction8" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction168">
+ <bp:evidence rdf:resource="#Evidence191" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">UDP/CysLT receptor can bind cysteinyl leukotrienes</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction169">
+ <bp:evidence rdf:resource="#Evidence192" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CYSLTR1 binds LTC4,LTD4,LTE4</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction166">
+ <bp:evidence rdf:resource="#Evidence187" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GPR31 is a receptor for 12(S)-HETE</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep19">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction16" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction167">
+ <bp:evidence rdf:resource="#Evidence188" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GPR183 binds 7alpha,25-dihydroxycholesterol</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep18">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction15" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction164">
+ <bp:evidence rdf:resource="#Evidence185" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GPR120 is a receptor for unsaturated long-chain free fatty acids</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep17">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction14" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction165">
+ <bp:evidence rdf:resource="#Evidence186" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Receptor FFAR3 binds carboxylates</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction184">
+ <bp:evidence rdf:resource="#Evidence209" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Light stimulates opsin receptors</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction185">
+ <bp:evidence rdf:resource="#Evidence210" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Melanospin is stimulated by light</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction182">
+ <bp:evidence rdf:resource="#Evidence206" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PTGFR binds PTGFR agonists</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction183">
+ <bp:evidence rdf:resource="#Evidence207" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Zinc is an agonist of GPR39</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction180">
+ <bp:evidence rdf:resource="#Evidence204" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">IP receptor can bind prostacyclin</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction181">
+ <bp:evidence rdf:resource="#Evidence205" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">EP2 and EP4 receptors can bind PGE2</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep52">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction46" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep51">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction45" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep50">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction44" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep49">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction43" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep48">
+ <bp:stepProcess rdf:resource="#Pathway7" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep47">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction42" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep46">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction41" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep45">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction40" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep44">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction39" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep43">
+ <bp:stepProcess rdf:resource="#Catalysis3" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction38" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence211">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep42">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction37" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence210">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction179">
+ <bp:evidence rdf:resource="#Evidence203" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">EP1 receptor can bind PGE2</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction177">
+ <bp:evidence rdf:resource="#Evidence201" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PTGFR binds PGF2a</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction178">
+ <bp:evidence rdf:resource="#Evidence202" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">TP receptor can bind thromboxane</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction175">
+ <bp:evidence rdf:resource="#Evidence199" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">DP1 receptor can bind PGD2</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction176">
+ <bp:evidence rdf:resource="#Evidence200" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">EP3 receptor can bind PGE2</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence209">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep41">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction36" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep40">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction35" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep38">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction33" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep37">
+ <bp:stepProcess rdf:resource="#Pathway6" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep36">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction32" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep35">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction31" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep34">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction30" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep33">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction29" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep32">
+ <bp:stepProcess rdf:resource="#Pathway5" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence200">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep31">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction28" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence202">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence201">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence204">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence203">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence206">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence205">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence208">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction186">
+ <bp:evidence rdf:resource="#Evidence211" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GPR4, GPR65, GPR132 and OGR1 are pH sensing receptors</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep39">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction34" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence207">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep178">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction159" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep179">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction160" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep170">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction153" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep171">
+ <bp:stepProcess rdf:resource="#Pathway19" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep172">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction154" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep173">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction155" />
+ <bp:stepProcess rdf:resource="#Catalysis5" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence110">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep174">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction156" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep175">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction157" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence112">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep176">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction158" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence111">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep177">
+ <bp:stepProcess rdf:resource="#Pathway20" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence114">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence113">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence116">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence115">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence118">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence117">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence119">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep167">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction150" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep168">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction151" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep169">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction152" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep160">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction144" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep161">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction145" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep162">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction146" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep163">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction147" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep164">
+ <bp:stepProcess rdf:resource="#Pathway18" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence101">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep165">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction148" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence100">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep166">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction149" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence103">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence102">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence105">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence104">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence107">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence106">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence109">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence108">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep192">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction170" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep193">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction171" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence130">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep194">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction172" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep195">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction173" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence132">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep196">
+ <bp:stepProcess rdf:resource="#Pathway24" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence131">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep197">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction174" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence134">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep198">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction175" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence133">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep199">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction176" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence136">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence135">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence138">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence137">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence139">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep190">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction168" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep191">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction169" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep189">
+ <bp:stepProcess rdf:resource="#Pathway23" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep181">
+ <bp:stepProcess rdf:resource="#Pathway21" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep182">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction162" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep183">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction163" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep184">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction164" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence121">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep185">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction165" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence120">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep186">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction166" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence123">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep187">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction167" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence122">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep188">
+ <bp:stepProcess rdf:resource="#Pathway22" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence125">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence124">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence127">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence126">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence129">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence128">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep180">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction161" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence4">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence3">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence6">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence5">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence8">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence7">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence9">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence150">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence152">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence151">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence154">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence153">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence156">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence155">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence158">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence157">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence159">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction5">
+ <bp:evidence rdf:resource="#Evidence6" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">G-protein coupled bile acid receptor binds lithocholic acid</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction6">
+ <bp:evidence rdf:resource="#Evidence8" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ARBs bind AGRT1</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction3">
+ <bp:evidence rdf:resource="#Evidence4" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">SUCNR1 binds SUCCA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction4">
+ <bp:evidence rdf:resource="#Evidence5" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">N-arachidonyl glycine receptor GPR18 binds N-arachidonyl glycine</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Melatonin receptors can bind melatonin</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
+ <bp:evidence rdf:resource="#Evidence3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Cannabinoid receptors can bind cannabinoids</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction9">
+ <bp:evidence rdf:resource="#Evidence12" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Orexin 2 receptor can bind orexin-B neuropeptide</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction7">
+ <bp:evidence rdf:resource="#Evidence9" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GPCR neuropeptide receptor binds neuropeptides B and W</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction8">
+ <bp:evidence rdf:resource="#Evidence11" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Orexin 1 receptor can bind orexin-A neuropeptide</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence141">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence140">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence143">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence142">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence145">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence144">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence147">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence146">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence149">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence148">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence181">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence180">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence172">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence171">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence174">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence173">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence176">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence175">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence178">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence177">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence179">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence170">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence161">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence160">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence163">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence162">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence165">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence164">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence167">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence166">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence169">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence168">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction11">
+ <bp:evidence rdf:resource="#Evidence14" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The orphan QRFP receptor can bind neuropeptide QRFP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction10">
+ <bp:evidence rdf:resource="#Evidence13" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Two NPFF receptors can bind neuropeptide FF</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway2">
+ <bp:pathwayOrder rdf:resource="#PathwayStep30" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep74" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep73" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep72" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep71" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep70" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep27" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep26" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep25" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep69" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep24" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep68" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep23" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep22" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep21" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep20" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep29" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep28" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep14" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep19" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep95" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep48" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep47" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep46" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep45" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep44" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep43" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep87" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep42" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep86" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep41" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep85" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep84" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep83" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep82" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep81" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep80" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep7" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep37" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep8" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep36" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep9" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep79" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep78" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep77" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep32" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep76" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep31" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep75" />
+ <bp:pathwayComponent rdf:resource="#Pathway3" />
+ <bp:pathwayComponent rdf:resource="#Pathway4" />
+ <bp:pathwayComponent rdf:resource="#Pathway5" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction17" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction16" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction19" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction18" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction6" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction62" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction20" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction64" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction63" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction22" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction66" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction21" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction65" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction7" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction24" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction68" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction23" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction67" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction26" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction25" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction69" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction28" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction27" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction71" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction70" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction73" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction72" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction75" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction74" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction77" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction32" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction76" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction79" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction78" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction37" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction36" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction39" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction38" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction40" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction42" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction41" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction88" />
+ <bp:pathwayComponent rdf:resource="#Pathway6" />
+ <bp:pathwayComponent rdf:resource="#Pathway7" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction80" />
+ <bp:pathwayComponent rdf:resource="#Pathway8" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence7" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Peptide ligand-binding receptors</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">These receptors, a subset of the Class A/1 (Rhodopsin-like) family, all bind peptide ligands which include the chemokines, opioids and somatostatins.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence77">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence194">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway3">
+ <bp:pathwayOrder rdf:resource="#PathwayStep13" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep12" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep11" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep10" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction11" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction10" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction9" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction8" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence10" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Orexin and neuropeptides FF and QRFP bind to their respective receptors</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The orphan G protein-coupled receptors mentioned here regulate sleep and appetite.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence76">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence193">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway4">
+ <bp:pathwayOrder rdf:resource="#PathwayStep16" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep15" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep18" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep17" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction13" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction12" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction15" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction14" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence15" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Relaxin receptors</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Relaxins are part of a family of peptide hormones that diverged from insulin in early vertebrate evolution to form the insulin-like peptides and relaxins, now often referred to as the relaxin peptide family. All are heterodimers; both chains are cleaved from a common propeptide and cross-linked by 2 disulphide bonds. Humans have 3 true relaxins encoded by 3 related genes, plus several more distantly related insulin-like peptide genes. Non-primates have 2 relaxin genes. The major circulating form of relaxin in humans is relaxin-2, equivalent to relaxin-1 in non-primates. Relaxin-3 is very highly conserved. Little is known about human relaxin-1; several of the insulin-like peptides have no known receptor or function.   There are 4 human G-protein coupled receptors for relaxin family peptides. Relaxin receptor 1 (RXFP1) and relaxin receptor 2 (RXFP2) are also known as LGR7 and LGR8 respectively, members of the LRR-containing G protein-coupled receptors (LGRs). Relaxin-3 receptor 1 (RXFP3) and Relaxin-3 receptor 2 (RXFP4) are unrelated, having more homology with small peptide receptors such as the somatostatin receptors.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence75">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence196">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway5">
+ <bp:pathwayOrder rdf:resource="#PathwayStep35" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep34" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep33" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction31" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction30" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction29" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence33" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Tachykinin receptors bind tachykinins</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Tachykinin peptides are one of the largest family of neuropeptides, so named due to their ability to rapidly induce contraction of gut tissue. Tachykinins excite neurons, elicit behavioural responses, are potent vasodilators and contract many smooth muscles. The tachykinin family is characterized by a common C-terminal sequence, Phe-X-Gly-Leu-Met-NH2 (where X can be either an aromatic or an aliphatic amino acid) and are ten to twelve residues long.  These peptides elicit their effects via the tachykinin receptors, of which there are three types in humans (NK1,2 and 3). There are two human tachykinin peptide genes in humans, TAC1 and TAC3. TAC1 encodes substance P and substance K while TAC3 encodes neurokinin B.  Antagonists of these receptors are promising candidates for classes of antidepressants, anxiolytics and antipsychotics.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence74">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence195">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence198">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence197">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence79">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep96" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep116" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep117" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep118" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep129" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep206" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep119" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep207" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep6" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep181" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep171" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep2" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep3" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep120" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep4" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep98" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep187" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep5" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep97" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep177" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep188" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep210" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction5" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction3" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction4" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction183" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction2" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction90" />
+ <bp:pathwayComponent rdf:resource="#Pathway9" />
+ <bp:pathwayComponent rdf:resource="#Pathway2" />
+ <bp:pathwayComponent rdf:resource="#Pathway25" />
+ <bp:pathwayComponent rdf:resource="#Pathway13" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction108" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction109" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction106" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction107" />
+ <bp:pathwayComponent rdf:resource="#Pathway19" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction89" />
+ <bp:pathwayComponent rdf:resource="#Pathway21" />
+ <bp:pathwayComponent rdf:resource="#Pathway20" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction167" />
+ <bp:pathwayComponent rdf:resource="#Pathway12" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction186" />
+ <bp:pathwayComponent rdf:resource="#Pathway22" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Class A/1 (Rhodopsin-like receptors)</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Rhodopsin-like receptors (class A/1) are the largest group of GPCRs and are the best studied group from a functional and structural point of view. They show great diversity at the sequence level and thus, can be subdivided into 19 subfamilies (Subfamily A1-19) based on a phylogenetic analysis (Joost P and  Methner A, 2002). They represent members which include hormone, light and neurotransmitter receptors and encompass a wide range of functions including many autocrine, paracrine and endocrine processes.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence78">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence199">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep210">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction186" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction13">
+ <bp:evidence rdf:resource="#Evidence17" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Relaxin receptor 2 binds relaxin 2 and INSL3</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction12">
+ <bp:evidence rdf:resource="#Evidence16" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Relaxin 3 receptor 2 binds relaxin 3 and INSL5</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction15">
+ <bp:evidence rdf:resource="#Evidence19" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Relaxin receptor 1 binds relaxin 2 and 3</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction14">
+ <bp:evidence rdf:resource="#Evidence18" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Relaxin 3 receptor 1 binds relaxin 3</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction17">
+ <bp:evidence rdf:resource="#Evidence21" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Neurolysin degrades neurotensin</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence73">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction16">
+ <bp:evidence rdf:resource="#Evidence20" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Prokineticin receptors bind prokineticin</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence72">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction19">
+ <bp:evidence rdf:resource="#Evidence23" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Opioid receptors bind opioid peptides</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence71">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction18">
+ <bp:evidence rdf:resource="#Evidence22" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">AGT(34-41) binds to AGTR1</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence70">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep208">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction184" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep209">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction185" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction20">
+ <bp:evidence rdf:resource="#Evidence24" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Neurotensin receptors can bind neurotensins</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction22">
+ <bp:evidence rdf:resource="#Evidence26" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GPR37 binds prosaptide</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction21">
+ <bp:evidence rdf:resource="#Evidence25" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Galanin receptors can bind galanin</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep200">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction177" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep201">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction178" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep202">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction179" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep203">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction180" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence190">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep204">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction181" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep205">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction182" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence192">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep206">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction183" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence191">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep207">
+ <bp:stepProcess rdf:resource="#Pathway25" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence66">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence183">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence65">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence182">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence64">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence185">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence63">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence184">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence187">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence69">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence186">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence68">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence189">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence67">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence188">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction24">
+ <bp:evidence rdf:resource="#Evidence28" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GHSR is a receptor for ghrelin</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction23">
+ <bp:evidence rdf:resource="#Evidence27" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GPR37L binds prosaposin</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction26">
+ <bp:evidence rdf:resource="#Evidence30" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Cholecystokinin receptors bind cholecystokinin</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction25">
+ <bp:evidence rdf:resource="#Evidence29" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ECE2 cleaves EDN1(53-90)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction28">
+ <bp:evidence rdf:resource="#Evidence32" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">G protein-coupled estrogen receptor 1 binds estrogen non-classically</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence62">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction27">
+ <bp:evidence rdf:resource="#Evidence31" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MLNR (GPR38) is a receptor for motilin</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence61">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence60">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction29">
+ <bp:evidence rdf:resource="#Evidence34" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Tachykinin receptor 1 (NK1) binds to substance P</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction31">
+ <bp:evidence rdf:resource="#Evidence36" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Tachykinin receptor 2 (NK2) binds to nuerokinin A</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction30">
+ <bp:evidence rdf:resource="#Evidence35" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Tachykinin receptor 3 (NK3) binds to neurokinin B</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction33">
+ <bp:evidence rdf:resource="#Evidence39" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">FPR2 binds FPR2 ligands</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction32">
+ <bp:evidence rdf:resource="#Evidence37" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Bradykinin receptors B1 and B2 bind to bradykinin</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep112">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction102" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep113">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction103" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep114">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction104" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep115">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction105" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep116">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction106" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep117">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction107" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep118">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction108" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep119">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction109" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence99">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence98">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence97">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence96">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep110">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction100" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep111">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction101" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction35">
+ <bp:evidence rdf:resource="#Evidence41" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">FPR is a receptor for formyl peptides</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence91">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction34">
+ <bp:evidence rdf:resource="#Evidence40" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">FPRL2 receptor binds a wide range of ligands</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence90">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction37">
+ <bp:evidence rdf:resource="#Evidence43" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">EDNRA binds EDNs</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction36">
+ <bp:evidence rdf:resource="#Evidence42" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Urotensin-2 receptor binds urotensin-2 and 2B</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction39">
+ <bp:evidence rdf:resource="#Evidence45" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Apelin receptor binds to apelin</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence95">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction38">
+ <bp:evidence rdf:resource="#Evidence44" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ECE1 cleaves EDN1(53-90)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence94">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence93">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence92">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep109">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction99" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction40">
+ <bp:evidence rdf:resource="#Evidence46" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">C5AR2 binds anaphylatoxins and thier desArginated derivatives</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction42">
+ <bp:evidence rdf:resource="#Evidence48" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NMUR2 binds neuromedin-S</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction41">
+ <bp:evidence rdf:resource="#Evidence47" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Nociceptin receptor binds to nociceptin</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction44">
+ <bp:evidence rdf:resource="#Evidence51" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CCRL2 binds CCL19</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction43">
+ <bp:evidence rdf:resource="#Evidence50" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CCR8 binds CCL1</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep101">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction92" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep102">
+ <bp:stepProcess rdf:resource="#Pathway11" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep103">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction93" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep104">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction94" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep105">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction95" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep106">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction96" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep107">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction97" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep108">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction98" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence88">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence87">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence86">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence85">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence89">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep100">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction91" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction46">
+ <bp:evidence rdf:resource="#Evidence53" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CX3CR1 binds CX3CL1</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence80">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction45">
+ <bp:evidence rdf:resource="#Evidence52" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Receptor CXC1 binds to the ligands lymphotactin and cytokine SCM-1 beta</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction48">
+ <bp:evidence rdf:resource="#Evidence55" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Receptor CXCR1 binds CXCL6 and CXCL8 ligands</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction47">
+ <bp:evidence rdf:resource="#Evidence54" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Receptor CCR10 binds CCL27 and 28 ligands</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence84">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction49">
+ <bp:evidence rdf:resource="#Evidence56" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Receptor CCR6 binds CCL20 ligand</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence83">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence82">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence81">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep134">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction121" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep135">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction122" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep136">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction123" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep137">
+ <bp:stepProcess rdf:resource="#Pathway15" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep138">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction124" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep139">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction125" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep130">
+ <bp:stepProcess rdf:resource="#Pathway14" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep131">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction118" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep132">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction119" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep133">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction120" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep123">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction112" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep124">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction113" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep125">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction114" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep126">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction115" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep127">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction116" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep128">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction117" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep129">
+ <bp:stepProcess rdf:resource="#Pathway13" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep120">
+ <bp:stepProcess rdf:resource="#Pathway12" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep121">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction110" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep122">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction111" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep156">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction140" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep157">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction141" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep158">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction142" />
+</bp:PathwayStep>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:PathwayStep rdf:ID="PathwayStep159">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction143" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep150">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction135" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep151">
+ <bp:stepProcess rdf:resource="#Pathway17" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep152">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction136" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep153">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction137" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep154">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction138" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep155">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction139" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep145">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction131" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep146">
+ <bp:stepProcess rdf:resource="#Pathway16" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep147">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction132" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep148">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction133" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway6">
+ <bp:pathwayOrder rdf:resource="#PathwayStep38" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep40" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep39" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction33" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction35" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction34" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence38" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formyl peptide receptors bind formyl peptides and many other ligands</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The formyl peptide receptor (FPR) was defined pharmacologically in 1976 as a high affinity binding site on the surface of neutrophils for the peptide N-formyl-methionine-leucine-phenylalanine (fMLF). FPR was cloned in 1990 and the cDNA used as a probe to identify two additional genes, FPRL1 and FPRL2. The three genes for a cluster on 19q13.3. All are coupled to the Gi family of G proteins.   All 3 receptors can be activated by formyl peptides but also display affinities for a range of structurally diverse ligands. </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep149">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction134" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway7">
+ <bp:pathwayOrder rdf:resource="#PathwayStep52" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep63" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep51" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep62" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep50" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep61" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep60" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep49" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep59" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep58" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep57" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep56" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep67" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep55" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep66" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep54" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep65" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep53" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep64" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction60" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction51" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction50" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction61" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction53" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction52" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction44" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction55" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction43" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction54" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction46" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction57" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction45" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction56" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction48" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction59" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction47" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction58" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction49" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence49" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Chemokine receptors bind chemokines</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Chemokine receptors are cytokine receptors found on the surface of certain cells, which interact with a type of cytokine called a chemokine. Following interaction, these receptors trigger a flux of intracellular calcium which leads to chemotaxis. Chemokine receptors are divided into different families, CXC chemokine receptors, CC chemokine receptors, CX3C chemokine receptors and XC chemokine receptors that correspond to the 4 distinct subfamilies of chemokines they bind.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway8">
+ <bp:pathwayOrder rdf:resource="#PathwayStep89" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep88" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep94" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep93" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep92" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep91" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep90" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction82" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction81" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction84" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction83" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction86" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction85" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction87" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence88" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Vasopressin-like receptors</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The vasopressins are peptide hormones consisting of nine amino acids (nonapeptides). They include arginine vasopressin (AVP; anti-diuretic hormone, ADH) and oxytocin. They are synthesized in the hypothalamus from a precursor and released from stores in the posterior pituitary into the blood stream. One of the most important roles of vasopressins is the regulation of water retention in the body. Oxytocin is important in uterine contraction during birth. The vasopressins act via AVP and oxytocin receptors. These are connected to G proteins which act as second messengers and convey the signal inside the cell.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway9">
+ <bp:pathwayOrder rdf:resource="#PathwayStep99" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep102" />
+ <bp:pathwayComponent rdf:resource="#Pathway10" />
+ <bp:pathwayComponent rdf:resource="#Pathway11" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence99" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Nucleotide-like (purinergic) receptors</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Purinergic receptors (Burnstock G, 2006; Abbracchio MP et al, 2009) are a family of newly characterized plasma membrane molecules involved in several cellular functions such as vascular reactivity, apoptosis and cytokine secretion. The functions of these receptors are as yet only partially characterized. The family includes the GPCR P2Y purinergic receptors and adenosine P1 receptors. A third family member, the P2X receptor, is a ligand-gated ion channel. </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep140">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction126" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep141">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction127" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep142">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction128" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep143">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction129" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep144">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction130" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction93">
+ <bp:evidence rdf:resource="#Evidence104" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">P2RY12 binds P2RY12 antagonists</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction92">
+ <bp:evidence rdf:resource="#Evidence102" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ADORA2A,B bind Ade-Rib</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction95">
+ <bp:evidence rdf:resource="#Evidence106" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">P2Y13 binds ADP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction94">
+ <bp:evidence rdf:resource="#Evidence105" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">P2Y9 receptor can bind to LPA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction97">
+ <bp:evidence rdf:resource="#Evidence108" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">P2RY1 binds ADP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction96">
+ <bp:evidence rdf:resource="#Evidence107" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">P2Y10 receptor can bind to LPA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction99">
+ <bp:evidence rdf:resource="#Evidence110" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">P2Y4 receptor can bind to UTP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction98">
+ <bp:evidence rdf:resource="#Evidence109" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">P2Y6 receptor can bind to UDP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction91">
+ <bp:evidence rdf:resource="#Evidence101" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">A1 and A3 receptors bind adenosine</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction90">
+ <bp:evidence rdf:resource="#Evidence98" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CMKLR1 binds Resolvin E1</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction119">
+ <bp:evidence rdf:resource="#Evidence133" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">5-HT2 receptor can bind serotonin</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction117">
+ <bp:evidence rdf:resource="#Evidence129" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Luteinizing hormone receptor can bind LH</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction118">
+ <bp:evidence rdf:resource="#Evidence132" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HTR1A binds HTR1A antagonists</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction115">
+ <bp:evidence rdf:resource="#Evidence127" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Follicle-stimulating hormone receptor can bind FSH</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction116">
+ <bp:evidence rdf:resource="#Evidence128" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GNRHR2 binds GNRH1,2</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction113">
+ <bp:evidence rdf:resource="#Evidence125" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Thyroid-stimulating hormone receptor can bind TSH, Thyrostimulin</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction114">
+ <bp:evidence rdf:resource="#Evidence126" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GNRHR binds GNRH1,2</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction111">
+ <bp:evidence rdf:resource="#Evidence123" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GNRHR binds GNRHR peptide antagonists</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction112">
+ <bp:evidence rdf:resource="#Evidence124" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GNRHR binds GNRHR peptide agonists</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction110">
+ <bp:evidence rdf:resource="#Evidence122" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GNRHR binds chemical antagonists</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction130">
+ <bp:evidence rdf:resource="#Evidence145" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HRH3 binds pitosilant</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction128">
+ <bp:evidence rdf:resource="#Evidence143" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HRH3 binds Hist</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction129">
+ <bp:evidence rdf:resource="#Evidence144" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HRH2 binds HRH2 antagonists</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction126">
+ <bp:evidence rdf:resource="#Evidence141" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HRH1 binds hist</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction127">
+ <bp:evidence rdf:resource="#Evidence142" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HRH4 binds Hist</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction124">
+ <bp:evidence rdf:resource="#Evidence139" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HRH2 binds hist</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction125">
+ <bp:evidence rdf:resource="#Evidence140" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HRH1 binds HRH1 inverse agonists</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction122">
+ <bp:evidence rdf:resource="#Evidence136" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HTR1 and 5A receptors can bind serotonin</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction123">
+ <bp:evidence rdf:resource="#Evidence137" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HTR1A binds 5HT</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction120">
+ <bp:evidence rdf:resource="#Evidence134" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">5-HT4, 6 and 7 receptors can bind serotonin</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction121">
+ <bp:evidence rdf:resource="#Evidence135" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HTR1A binds HTR1A agonists</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction140">
+ <bp:evidence rdf:resource="#Evidence157" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">&#945;1-agonists bind ADRA1A,B,D</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction141">
+ <bp:evidence rdf:resource="#Evidence158" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ADRB2 bind ADR,NAd</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence19">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence18">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence17">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence16">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence11">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence10">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence15">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence14">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence13">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction139">
+ <bp:evidence rdf:resource="#Evidence156" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">&#946;1-agonists bind ADRB1</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence12">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis2">
+ <bp:controlled rdf:resource="#BiochemicalReaction25" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction137">
+ <bp:evidence rdf:resource="#Evidence154" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">&#946;3-agonists bind ADRB3</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis1">
+ <bp:controlled rdf:resource="#BiochemicalReaction17" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction138">
+ <bp:evidence rdf:resource="#Evidence155" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">&#946;-blockers bind ADRB1,2,3</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis4">
+ <bp:controlled rdf:resource="#BiochemicalReaction66" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction135">
+ <bp:evidence rdf:resource="#Evidence151" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">DRD2 antagonist drugs bind to DRD2</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis3">
+ <bp:controlled rdf:resource="#BiochemicalReaction38" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction136">
+ <bp:evidence rdf:resource="#Evidence153" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ADRB3 bind ADR,NAd</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction133">
+ <bp:evidence rdf:resource="#Evidence149" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">DRD2 binds DA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction134">
+ <bp:evidence rdf:resource="#Evidence150" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">DRD1,5 bind DA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis5">
+ <bp:controlled rdf:resource="#BiochemicalReaction155" />
+</bp:Catalysis>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction131">
+ <bp:evidence rdf:resource="#Evidence146" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Trace amine-associated receptors can bind trace amines</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction132">
+ <bp:evidence rdf:resource="#Evidence148" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">D2D3,4 bind to DA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction151">
+ <bp:evidence rdf:resource="#Evidence169" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CHRM2,4 bind acetylcholine</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction152">
+ <bp:evidence rdf:resource="#Evidence170" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CHRM1,3,5 bind CHRM1,3,5 antagonists</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction150">
+ <bp:evidence rdf:resource="#Evidence168" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CHRM1,3,5 bind acetylcholine</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction148">
+ <bp:evidence rdf:resource="#Evidence166" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CHRM2 binds CHRM2 antagonists</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction149">
+ <bp:evidence rdf:resource="#Evidence167" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CHRM4 binds CHRM4 antagonists</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction146">
+ <bp:evidence rdf:resource="#Evidence163" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ADRA2A,B,C bind ADR,NAd</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction147">
+ <bp:evidence rdf:resource="#Evidence164" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">&#945;2-agonists bind ADRA2A,B,C</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction144">
+ <bp:evidence rdf:resource="#Evidence161" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">&#946;1,2-agonists bind ADRB1,2</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction145">
+ <bp:evidence rdf:resource="#Evidence162" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ADRA1A,B,D bind ADR,NAd</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction142">
+ <bp:evidence rdf:resource="#Evidence159" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">&#945;1-antagonists bind ADRA1A,B,D</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction143">
+ <bp:evidence rdf:resource="#Evidence160" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ADRB1 bind ADR,NAd</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction51">
+ <bp:evidence rdf:resource="#Evidence58" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Receptor ACKR2 binds most inflammatory CC chemokines</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction50">
+ <bp:evidence rdf:resource="#Evidence57" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Receptor CCR9  binds CCL25 ligand</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction53">
+ <bp:evidence rdf:resource="#Evidence60" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Receptor CXCR2 binds ligands CXCL1 to 7</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction52">
+ <bp:evidence rdf:resource="#Evidence59" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Receptors CCR1, 2 and 8 bind CCL16 ligand</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction55">
+ <bp:evidence rdf:resource="#Evidence62" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Receptor CXCR3 binds ligands CXCL9 to 11</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction54">
+ <bp:evidence rdf:resource="#Evidence61" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CXCR5 binds CXCL13</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence39">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence38">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence33">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence32">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence31">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence30">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence37">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence36">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence35">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence34">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction57">
+ <bp:evidence rdf:resource="#Evidence64" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Receptor CXCR6 binds CXCL16 ligand</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction56">
+ <bp:evidence rdf:resource="#Evidence63" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Receptor CCR11 binds CCL19, CCL21 &amp; CCL25</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction59">
+ <bp:evidence rdf:resource="#Evidence66" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Receptor CCR7 binds CCL19 and 21 ligands</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction58">
+ <bp:evidence rdf:resource="#Evidence65" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CCR2, CCR3 bind CCL13</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction60">
+ <bp:evidence rdf:resource="#Evidence67" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Receptors CXCR4 and 7 bind CXCL12 ligand</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction62">
+ <bp:evidence rdf:resource="#Evidence69" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Neuropeptide S receptor binds neuropeptide S</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction61">
+ <bp:evidence rdf:resource="#Evidence68" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Receptors CCR3, 4 and 5 bind CCL5 ligand</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction64">
+ <bp:evidence rdf:resource="#Evidence71" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">EDNRA binds selective ERAs</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction63">
+ <bp:evidence rdf:resource="#Evidence70" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Neuromedin-U receptors bind neuromedins U, S</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction66">
+ <bp:evidence rdf:resource="#Evidence73" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">XK:KEL:Zn2+ cleaves EDN3</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction65">
+ <bp:evidence rdf:resource="#Evidence72" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Proteinase-activated receptors can bind thrombin</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence29">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence28">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence27">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence22">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence21">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence20">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence26">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence25">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep99">
+ <bp:stepProcess rdf:resource="#Pathway10" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence24">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep98">
+ <bp:stepProcess rdf:resource="#Pathway9" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence23">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep97">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction90" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction68">
+ <bp:evidence rdf:resource="#Evidence75" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">EDNRA,EDNRB bind EDNs</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction67">
+ <bp:evidence rdf:resource="#Evidence74" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Thyrotropin-releasing hormone receptor binds thyrotropin</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction69">
+ <bp:evidence rdf:resource="#Evidence76" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">EDNRA, EDNRB bind non-selective ERAs</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction71">
+ <bp:evidence rdf:resource="#Evidence78" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Bombesin-like receptors bind bombesin homologues</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction70">
+ <bp:evidence rdf:resource="#Evidence77" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Melanin-concentrating hormone receptors bind MCH</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction73">
+ <bp:evidence rdf:resource="#Evidence80" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Somatostatin receptors bind somatostatin and cortistatin</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction72">
+ <bp:evidence rdf:resource="#Evidence79" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">C3a receptor binds anaphylatoxin C3a</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction75">
+ <bp:evidence rdf:resource="#Evidence82" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">C5a receptor binds C5a anaphylatoxin</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction74">
+ <bp:evidence rdf:resource="#Evidence81" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">AGT(34-41) binds to AGTR2</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction77">
+ <bp:evidence rdf:resource="#Evidence84" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The Kiss receptor GPR54 binds kisspeptin</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction76">
+ <bp:evidence rdf:resource="#Evidence83" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">DARC  is a non-specific receptor for many chemokines</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence55">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence54">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence53">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence52">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence59">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence58">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence57">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence56">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction79">
+ <bp:evidence rdf:resource="#Evidence86" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Prolactin-releasing hormone receptor binds PRH</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction78">
+ <bp:evidence rdf:resource="#Evidence85" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Melanocortin receptors bind melanocortins</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence51">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence50">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction82">
+ <bp:evidence rdf:resource="#Evidence90" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">AVPR1A,B bind desmopressin</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction81">
+ <bp:evidence rdf:resource="#Evidence89" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">AVPR2 bind desmopressin</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction84">
+ <bp:evidence rdf:resource="#Evidence92" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Oxytocin receptor bind oxytocin</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction83">
+ <bp:evidence rdf:resource="#Evidence91" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">AVPR1A,2 bind AVPR antagonists</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction86">
+ <bp:evidence rdf:resource="#Evidence94" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">AVP(20-28) binds AVPR1A,B</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction85">
+ <bp:evidence rdf:resource="#Evidence93" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">AVP(20-28) binds AVPR2</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction88">
+ <bp:evidence rdf:resource="#Evidence96" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Neuropeptide Y receptors can bind neuropeptide Y-related peptides</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction87">
+ <bp:evidence rdf:resource="#Evidence95" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">AVPR1A,B,2 bind atosiban</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence49">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction80">
+ <bp:evidence rdf:resource="#Evidence87" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">POMC(138-176) binds MC2R</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep6">
+ <bp:stepProcess rdf:resource="#Pathway2" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence44">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep7">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction6" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence43">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep8">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction7" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence42">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep9">
+ <bp:stepProcess rdf:resource="#Pathway3" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence41">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep2">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction2" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence48">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction108">
+ <bp:evidence rdf:resource="#Evidence119" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GPR35 binds kynurenic acid</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep3">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction3" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence47">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction109">
+ <bp:evidence rdf:resource="#Evidence120" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HCAR2 binds HCAR2 ligands</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep4">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction4" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence46">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction106">
+ <bp:evidence rdf:resource="#Evidence117" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CNRs bind CNR agonists</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep5">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction5" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence45">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction107">
+ <bp:evidence rdf:resource="#Evidence118" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PAF receptor binds platelet activating factor</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction104">
+ <bp:evidence rdf:resource="#Evidence115" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">P2Y2 receptor binds ATP and UTP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction89">
+ <bp:evidence rdf:resource="#Evidence97" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">OXGR1 binds 2OG</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction105">
+ <bp:evidence rdf:resource="#Evidence116" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The UDP/CysLT (P2Y17) receptor can bind UTP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction102">
+ <bp:evidence rdf:resource="#Evidence113" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">P2Y5 receptor can bind to LPA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction103">
+ <bp:evidence rdf:resource="#Evidence114" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">P2RY12 binds ADP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence40">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction100">
+ <bp:evidence rdf:resource="#Evidence111" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">P2Y11 receptor can bind to ATP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction101">
+ <bp:evidence rdf:resource="#Evidence112" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">P2Y14 receptor can bind to UDP-glucose</bp:displayName>
+</bp:BiochemicalReaction>
+</rdf:RDF>

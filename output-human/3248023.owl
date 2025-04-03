@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/3248023#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:Catalysis rdf:ID="Catalysis1">
+ <bp:controlled rdf:resource="#BiochemicalReaction2" />
+</bp:Catalysis>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">TREX1 binds retroviral-derived DNA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep2" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction2" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Regulation by TREX1</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Three prime repair exonuclease 1 (TREX1) is a DNase type III enzyme, which targets and digests unpaired nucleotides on ssDNA and dsDNA ends through a 3&apos;to 5&apos; exonuclease activity (Perrino FW et al. 1994; de Silva U et al. 2007; Lehtinen DA et al. 2008; Fye JM et al 2011). TREX1 is an endoplasmic reticulum (ER)-associated protein, which is anchored to ER membrane via the C-terminal transmembrane domain (Chowdhury D et al. 2006; Richards A et al. 2007; Stetson DB et al. 2009). TREX1 has been implicated in innate immune responses against self (damaged or retrotransposons-derived DNA) and retroviral-derived DNA (Stetson DB et al. 2009; Yan N et al. 2010; Hasan M et al. 2012). TREX1 deficiency in human and mouse cells led to accumulation of cytosolic DNA which resulted in a continual activation of cytosolic DNA-sensors. In addition, cells lacking TREX1 function were less susceptible to infection with different types of RNA viruses (Yan N et al. 2010; Hasan M et al. 2012).Thus, the physiological role of the exonuclease TREX1 is to digest cytosolic host DNA to avoid autoimmunity. Loss-of-function mutations in the gene encoding human TREX1 are associated with several autoimmune diseases (Aicardi-Goutieres syndrome (AGS), familial chilblain lupus (FCL), systemic lupus erythematosus (SLE)) that result in increased levels of interferon and circulating antibodies to DNA (Crow YJ et al. 2006; Rice G et al. 2007; Lee-Kirsch MA et al. 2007). During infection with human immunodeficiency virus (HIV) or other RNA viruses, TREX1 activity may inhibit the innate immune responses by processing viral DNA generated during reverse transcription (Yan N et al. 2010; Hasan M et al. 2012). It&apos;s not yet known whether TREX1 is also involved in regulation of host responses to DNA viruses. Detection of nucleic acids is known to launch signaling cascades leading to induction of type I interferons, which in turn orchestrate an immune response that involves the expression of hundreds of interferon-stimulated genes (ISGs). It is interesting to note that interferon(IFN)-independent activation of a subset of ISGs was detected in mouse and human cells lacking functional TREX1 (Hasan M et al. 2012).  Hasan et al. have also observed that TREX1-deficiency resulted in an increased lysosomal compartment. Trex1 was found to control mTORC1 activity in mouse embryonic fibroblasts (MEF), which in turn negatively regulates translocation of transcription factor EB (TFEB) to the nucleus thereby controlling lysosomal biogenesis (Hasan M et al. 2012; Roczniak-Ferguson A et al. 2012). The authors linked the altered lysosomal compartment to innate immune responses by suggesting that lysosomal biogenesis (regulated by TFEB and mTORC1)  acted upstream of IFN-independent ISG expression (regulated by IRF3 and IRF7) (Hasan M et al. 2012).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
+ <bp:evidence rdf:resource="#Evidence3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Viral DNA cleavage by TREX1</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:Evidence rdf:ID="Evidence3">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep2">
+ <bp:stepProcess rdf:resource="#Catalysis1" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction2" />
+</bp:PathwayStep>
+</rdf:RDF>

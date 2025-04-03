@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/3311021#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">SMAD4 MH2 Domain Mutants in Cancer</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The MH2 domain of SMAD4 is the most frequently mutated SMAD4 region in cancer. MH2 domain mutations result in the loss of function of SMAD4 by abrogating the formation of transcriptionally active heterotrimers of SMAD4 and TGF-beta receptor complex-activated R-SMADs - SMAD2 and SMAD3 (Shi et al. 1997, Chacko et al. 2001, Chacko et al. 2004, Fleming et al. 2013).  The hotspot MH2 domain amino acid residues that are targeted by missense mutations are Asp351 (D351), Pro356 (P356) and Arg361 (R361). These three hotspot residues map to the L1 loop which is conserved in SMAD2 and SMAD3 and is involved in intermolecular interactions that contribute to the formation of SMAD heterotrimers and homotrimers (Shi et al. 1997, Fleming et al. 2013). Other frequently mutated residues in the MH2 domain of SMAD4 - Ala406 (A406), Lys428 (K428) and Arg515 (R515) - are involved in binding the phosphorylation motif (Ser-Ser-X-Ser) of SMAD2 and SMAD3, with Arg515 in the L3 loop being critical for this interaction (Chacko et al. 2001, Chacko et al. 2004, Fleming et al. 2013).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">SMAD4 MH2 Domain Mutants do not bind phosphorylated SMAD2 and SMAD3</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+</rdf:RDF>

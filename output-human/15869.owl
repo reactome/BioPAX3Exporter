@@ -1,0 +1,2903 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/15869#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction64">
+ <bp:evidence rdf:resource="#Evidence70" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">XDH dehydrogenates xanthine to form urate</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep150">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction138" />
+ <bp:stepProcess rdf:resource="#Catalysis132" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction65">
+ <bp:evidence rdf:resource="#Evidence71" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ITPA hydrolyses XTP to XMP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction62">
+ <bp:evidence rdf:resource="#Evidence67" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">(R)-3-aminoisobutyric acid + pyruvate =&gt; 2-methyl-3-oxopropanoate + alanine</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep152">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction140" />
+ <bp:stepProcess rdf:resource="#Catalysis134" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction63">
+ <bp:evidence rdf:resource="#Evidence68" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">beta-alanine + pyruvate =&gt; 3-oxopropanoate + alanine</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep151">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction139" />
+ <bp:stepProcess rdf:resource="#Catalysis133" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction60">
+ <bp:evidence rdf:resource="#Evidence65" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">beta-ureidopropionate + H2O =&gt; beta-alanine + NH4+ + CO2</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep154">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction142" />
+ <bp:stepProcess rdf:resource="#Catalysis136" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction61">
+ <bp:evidence rdf:resource="#Evidence66" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Mitochondrial uptake of (R)-3-aminoisobutyric acid</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep153">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction141" />
+ <bp:stepProcess rdf:resource="#Catalysis135" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction68">
+ <bp:evidence rdf:resource="#Evidence74" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">AMP + H2O =&gt; adenosine + orthophosphate [NT5C1B]</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction69">
+ <bp:evidence rdf:resource="#Evidence75" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">XDH oxidizes hypoxanthine to form xanthine</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction66">
+ <bp:evidence rdf:resource="#Evidence72" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PNP catalyzes the conversion of (deoxy)inosine to hypoxanthine and (deoxy)ribose</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction67">
+ <bp:evidence rdf:resource="#Evidence73" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ITPA hydrolyses ITP to IMP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction53">
+ <bp:evidence rdf:resource="#Evidence58" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CMP or TMP or UMP + H2O =&gt; cytidine, thymidine, or uridine + orthophosphate [NT5E]</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction54">
+ <bp:evidence rdf:resource="#Evidence59" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">TMP, (d)UMP, uridine 2&apos; monophosphate, or uridine 3&apos;-monophosphate + H2O =&gt; thymidine, deoxyuridine, or uridine + orthophosphate [NT5M]</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction51">
+ <bp:evidence rdf:resource="#Evidence56" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">TMP, uridine 2&apos;, 3&apos;, or 5&apos; monophosphates, or deoxyuridine 3&apos; or 5&apos; monophosphates + H2O =&gt; thymidine or (deoxy)uridine + orthophosphate [NT5C]</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction52">
+ <bp:evidence rdf:resource="#Evidence57" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">(deoxy)uridine + orthophosphate &lt;=&gt; uracil + (deoxy)ribose 1-phosphate (UPP)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction50">
+ <bp:evidence rdf:resource="#Evidence55" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Mitochondrial uptake of beta-alanine</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction59">
+ <bp:evidence rdf:resource="#Evidence64" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">beta-ureidoisobutyrate + H2O =&gt; 3-aminoisobutyrate + NH4+ + CO2</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction57">
+ <bp:evidence rdf:resource="#Evidence62" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">5,6-dihydrothymine + H2O =&gt; beta-ureidoisobutyrate</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction58">
+ <bp:evidence rdf:resource="#Evidence63" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">5,6-dihydrouracil + H2O =&gt; beta-ureidopropionate</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction55">
+ <bp:evidence rdf:resource="#Evidence60" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">uracil + NADPH + H+ =&gt; 5,6-dihydrouracil + NADP+</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction56">
+ <bp:evidence rdf:resource="#Evidence61" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">thymine + NADPH + H+ =&gt; 5,6-dihydrothymine + NADP+</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction42">
+ <bp:evidence rdf:resource="#Evidence46" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NTPDase4 hydrolyzes nucleoside triphosphates</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction43">
+ <bp:evidence rdf:resource="#Evidence47" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NTPDase6 hydrolyzes nucleoside diphosphates</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction40">
+ <bp:evidence rdf:resource="#Evidence44" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NTPDase2 hydrolyzes nucleoside triphosphates</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep130">
+ <bp:stepProcess rdf:resource="#Pathway11" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction41">
+ <bp:evidence rdf:resource="#Evidence45" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NTPDase8 hydrolyzes nucleoside triphosphates</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis100">
+ <bp:controlled rdf:resource="#BiochemicalReaction102" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep132">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction121" />
+ <bp:stepProcess rdf:resource="#Catalysis115" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep131">
+ <bp:stepProcess rdf:resource="#Pathway12" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep134">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction123" />
+ <bp:stepProcess rdf:resource="#Catalysis117" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep133">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction122" />
+ <bp:stepProcess rdf:resource="#Catalysis116" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis105">
+ <bp:controlled rdf:resource="#BiochemicalReaction109" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep136">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction125" />
+ <bp:stepProcess rdf:resource="#Catalysis119" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis106">
+ <bp:controlled rdf:resource="#BiochemicalReaction110" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep135">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction124" />
+ <bp:stepProcess rdf:resource="#Catalysis118" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction48">
+ <bp:evidence rdf:resource="#Evidence53" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">(d)CMP, TMP, or (d)UMP + H2O =&gt; (deoxy)cytidine, thymidine, or (deoxy)uridine + orthophosphate (NT5C3)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis107">
+ <bp:controlled rdf:resource="#BiochemicalReaction111" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep138">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction127" />
+ <bp:stepProcess rdf:resource="#Catalysis121" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction49">
+ <bp:evidence rdf:resource="#Evidence54" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">thymidine or deoxyuridine + orthophosphate &lt;=&gt; thymine or uracil + 2-deoxy-D-ribose 1-phosphate [TYMP]</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis108">
+ <bp:controlled rdf:resource="#BiochemicalReaction112" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep137">
+ <bp:stepProcess rdf:resource="#Catalysis120" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction126" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction46">
+ <bp:evidence rdf:resource="#Evidence50" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NTPDase1 hydrolyzes nucleoside diphosphates</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis101">
+ <bp:controlled rdf:resource="#BiochemicalReaction103" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction47">
+ <bp:evidence rdf:resource="#Evidence52" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">(d)CMP, TMP, or (d)UMP + H2O =&gt; (deoxy)cytidine, thymidine, or (deoxy)uridine + orthophosphate (NT5C1A)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis102">
+ <bp:controlled rdf:resource="#BiochemicalReaction104" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep139">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction128" />
+ <bp:stepProcess rdf:resource="#Catalysis122" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction44">
+ <bp:evidence rdf:resource="#Evidence48" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NTPDase7 hydrolyzes nucleoside triphosphates</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis103">
+ <bp:controlled rdf:resource="#BiochemicalReaction106" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction45">
+ <bp:evidence rdf:resource="#Evidence49" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NTPDase3 hydrolyzes nucleoside triphosphates</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis104">
+ <bp:controlled rdf:resource="#BiochemicalReaction107" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis109">
+ <bp:controlled rdf:resource="#BiochemicalReaction114" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction31">
+ <bp:evidence rdf:resource="#Evidence33" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RNR (M1M2B) reduces nucleotide diphosphates to deoxynucleotide diphosphates (thioredoxin)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction32">
+ <bp:evidence rdf:resource="#Evidence34" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">dCMP + H2O =&gt; dUMP + NH4+</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep141">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction130" />
+ <bp:stepProcess rdf:resource="#Catalysis124" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction30">
+ <bp:evidence rdf:resource="#Evidence32" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">(d)GMP + ATP &lt;=&gt; (d)GDP + ADP (GUK1)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep140">
+ <bp:stepProcess rdf:resource="#Catalysis123" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction129" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep143">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction131" />
+ <bp:stepProcess rdf:resource="#Catalysis125" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep142">
+ <bp:stepProcess rdf:resource="#Pathway13" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep145">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction133" />
+ <bp:stepProcess rdf:resource="#Catalysis127" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep144">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction132" />
+ <bp:stepProcess rdf:resource="#Catalysis126" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction39">
+ <bp:evidence rdf:resource="#Evidence43" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NTPDase1 hydrolyzes nucleoside triphosphates</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep147">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction135" />
+ <bp:stepProcess rdf:resource="#Catalysis129" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep146">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction134" />
+ <bp:stepProcess rdf:resource="#Catalysis128" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction37">
+ <bp:evidence rdf:resource="#Evidence41" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NTPDase5 hydrolyzes nucleoside diphosphates</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep149">
+ <bp:stepProcess rdf:resource="#Catalysis131" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction137" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction38">
+ <bp:evidence rdf:resource="#Evidence42" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NTPDase8 hydrolyzes nucleoside diphosphates</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep148">
+ <bp:stepProcess rdf:resource="#Catalysis130" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction136" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction35">
+ <bp:evidence rdf:resource="#Evidence39" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NTPDase4 hydrolyzes nucleoside diphosphates</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction36">
+ <bp:evidence rdf:resource="#Evidence40" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NTPDase3 hydrolyzes nucleoside diphosphates</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction33">
+ <bp:evidence rdf:resource="#Evidence35" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RNR (M1M2) reduces nucleotide diphosphates to deoxynucleotide diphosphates (glutaredoxin)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction34">
+ <bp:evidence rdf:resource="#Evidence37" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">SAMHD1:Zn2+ tetramer hydrolyzes dNTP to nucleoside and triphosphate</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis120">
+ <bp:controlled rdf:resource="#BiochemicalReaction126" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis121">
+ <bp:controlled rdf:resource="#BiochemicalReaction127" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis122">
+ <bp:controlled rdf:resource="#BiochemicalReaction128" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep110">
+ <bp:stepProcess rdf:resource="#Catalysis100" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction102" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep112">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction104" />
+ <bp:stepProcess rdf:resource="#Catalysis102" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep111">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction103" />
+ <bp:stepProcess rdf:resource="#Catalysis101" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep114">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction106" />
+ <bp:stepProcess rdf:resource="#Catalysis103" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis127">
+ <bp:controlled rdf:resource="#BiochemicalReaction133" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep113">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction105" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis128">
+ <bp:controlled rdf:resource="#BiochemicalReaction134" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep116">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction108" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis129">
+ <bp:controlled rdf:resource="#BiochemicalReaction135" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep115">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction107" />
+ <bp:stepProcess rdf:resource="#Catalysis104" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep118">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction110" />
+ <bp:stepProcess rdf:resource="#Catalysis106" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis123">
+ <bp:controlled rdf:resource="#BiochemicalReaction129" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep117">
+ <bp:stepProcess rdf:resource="#Catalysis105" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction109" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis124">
+ <bp:controlled rdf:resource="#BiochemicalReaction130" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis125">
+ <bp:controlled rdf:resource="#BiochemicalReaction131" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep119">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction111" />
+ <bp:stepProcess rdf:resource="#Catalysis107" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis126">
+ <bp:controlled rdf:resource="#BiochemicalReaction132" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep3">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction2" />
+ <bp:stepProcess rdf:resource="#Catalysis2" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep4">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction3" />
+ <bp:stepProcess rdf:resource="#Catalysis3" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep5">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction4" />
+ <bp:stepProcess rdf:resource="#Catalysis4" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep6">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction5" />
+ <bp:stepProcess rdf:resource="#Catalysis5" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep7">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction6" />
+ <bp:stepProcess rdf:resource="#Catalysis6" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep8">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction7" />
+ <bp:stepProcess rdf:resource="#Catalysis7" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep9">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction8" />
+ <bp:stepProcess rdf:resource="#Catalysis8" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#Pathway2" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep2">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+ <bp:stepProcess rdf:resource="#Catalysis1" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction97">
+ <bp:evidence rdf:resource="#Evidence106" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">XMP + L-Glutamine + ATP + H2O =&gt; GMP + L-Glutamate + AMP + pyrophosphate</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction98">
+ <bp:evidence rdf:resource="#Evidence107" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">IMP + H2O + NAD+ =&gt; XMP + NADH + H+ [IMPDH1,2]</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction95">
+ <bp:evidence rdf:resource="#Evidence102" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NT5E:Zn2+ hydrolyses AMP,dAMP,GMP, IMP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis110">
+ <bp:controlled rdf:resource="#BiochemicalReaction115" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction96">
+ <bp:evidence rdf:resource="#Evidence103" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">(d)GMP or (d)IMP + H2O =&gt; (d)G or (d)I + orthophosphate (NT5C)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis111">
+ <bp:controlled rdf:resource="#BiochemicalReaction116" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction93">
+ <bp:evidence rdf:resource="#Evidence100" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">DNPH1 hydrolyses dGMP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep121">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction113" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction94">
+ <bp:evidence rdf:resource="#Evidence101" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">XDH oxidizes xanthine to form urate</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep120">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction112" />
+ <bp:stepProcess rdf:resource="#Catalysis108" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction91">
+ <bp:evidence rdf:resource="#Evidence98" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NUDT18 hydrolyses 8-oxo-dADP to 8-oxo-dAMP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep123">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction114" />
+ <bp:stepProcess rdf:resource="#Catalysis109" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction92">
+ <bp:evidence rdf:resource="#Evidence99" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NUDT16 hydrolyses IDP to IMP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep122">
+ <bp:stepProcess rdf:resource="#Pathway10" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep125">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction116" />
+ <bp:stepProcess rdf:resource="#Catalysis111" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis116">
+ <bp:controlled rdf:resource="#BiochemicalReaction122" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep124">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction115" />
+ <bp:stepProcess rdf:resource="#Catalysis110" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis117">
+ <bp:controlled rdf:resource="#BiochemicalReaction123" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep127">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction118" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis118">
+ <bp:controlled rdf:resource="#BiochemicalReaction124" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep126">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction117" />
+ <bp:stepProcess rdf:resource="#Catalysis112" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis119">
+ <bp:controlled rdf:resource="#BiochemicalReaction125" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis112">
+ <bp:controlled rdf:resource="#BiochemicalReaction117" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep129">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction120" />
+ <bp:stepProcess rdf:resource="#Catalysis114" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep128">
+ <bp:stepProcess rdf:resource="#Catalysis113" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction119" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis113">
+ <bp:controlled rdf:resource="#BiochemicalReaction119" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction99">
+ <bp:evidence rdf:resource="#Evidence108" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">FAICAR =&gt; IMP + H2O</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis114">
+ <bp:controlled rdf:resource="#BiochemicalReaction120" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis115">
+ <bp:controlled rdf:resource="#BiochemicalReaction121" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction86">
+ <bp:evidence rdf:resource="#Evidence93" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NUDT1 hydrolyses 8-oxo-dGTP to 8-oxo-dGMP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction87">
+ <bp:evidence rdf:resource="#Evidence94" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NUDT1 hydrolyses 2-oxo-dATP to 2-oxo-dAMP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction84">
+ <bp:evidence rdf:resource="#Evidence91" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NUDT1 hydrolyses 8-oxo-dATP to 8-oxo-dAMP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction85">
+ <bp:evidence rdf:resource="#Evidence92" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NUDT1 hydrolyzes N6-methyl-dATP to N6-methyl-dAMP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction82">
+ <bp:evidence rdf:resource="#Evidence89" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NUDT16 hydrolyses dIDP to dIMP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction83">
+ <bp:evidence rdf:resource="#Evidence90" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ADPRM hydrolyses ADP-ribose to R5P and AMP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction80">
+ <bp:evidence rdf:resource="#Evidence87" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NUDT18 hydrolyses 8-oxo-GDP to 8-oxo-GMP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction81">
+ <bp:evidence rdf:resource="#Evidence88" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Mitochondrial NUDT9 hydrolyses ADP-ribose to R5P and AMP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction88">
+ <bp:evidence rdf:resource="#Evidence95" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NUDT1 hydrolyzes O6-methyl-dGTP to O6-methyl-dGMP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction89">
+ <bp:evidence rdf:resource="#Evidence96" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Cytosolic NUDT5 hydrolyses ADP-ribose to R5P and AMP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction90">
+ <bp:evidence rdf:resource="#Evidence97" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NUDT15 hydrolyses 8-oxo-dGTP to 8-oxo-dGMP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction75">
+ <bp:evidence rdf:resource="#Evidence81" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Guanine + H2O =&gt; Xanthine + NH4+</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis130">
+ <bp:controlled rdf:resource="#BiochemicalReaction136" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction76">
+ <bp:evidence rdf:resource="#Evidence83" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NUDT15 hydrolyses 8-oxo-dGDP to 8-oxo-dGMP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis131">
+ <bp:controlled rdf:resource="#BiochemicalReaction137" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction73">
+ <bp:evidence rdf:resource="#Evidence79" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">(d)GMP or (d)IMP + H2O =&gt; (2&apos;-deoxy)guanosine or (2&apos;-deoxy)inosine + orthophosphate (NT5C2)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis132">
+ <bp:controlled rdf:resource="#BiochemicalReaction138" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction74">
+ <bp:evidence rdf:resource="#Evidence80" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">(d)AMP, (d)GMP, or (d)IMP + H2O =&gt; (deoxy)adenosine, (deoxy)guanosine, or (deoxy)inosine + orthophosphate (NT5C1A)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis133">
+ <bp:controlled rdf:resource="#BiochemicalReaction139" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction71">
+ <bp:evidence rdf:resource="#Evidence77" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PNP catalyzes the conversion of (deoxy)guanosine to guanine and (deoxy)ribose</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction72">
+ <bp:evidence rdf:resource="#Evidence78" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ITPA hydrolyses dITP to dIMP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep101">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction95" />
+ <bp:stepProcess rdf:resource="#Catalysis93" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction70">
+ <bp:evidence rdf:resource="#Evidence76" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">XDH dehydrogenates hypoxanthine to form xanthine</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep100">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction94" />
+ <bp:stepProcess rdf:resource="#Catalysis92" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep103">
+ <bp:stepProcess rdf:resource="#Pathway8" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep102">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction96" />
+ <bp:stepProcess rdf:resource="#Catalysis94" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep105">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction97" />
+ <bp:stepProcess rdf:resource="#Catalysis95" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep104">
+ <bp:stepProcess rdf:resource="#Pathway9" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction79">
+ <bp:evidence rdf:resource="#Evidence86" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NUDT1 hydrolyzes N6-methyl-ATP to N6-methyl-AMP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep107">
+ <bp:stepProcess rdf:resource="#Catalysis97" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction99" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis134">
+ <bp:controlled rdf:resource="#BiochemicalReaction140" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep106">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction98" />
+ <bp:stepProcess rdf:resource="#Catalysis96" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis135">
+ <bp:controlled rdf:resource="#BiochemicalReaction141" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction77">
+ <bp:evidence rdf:resource="#Evidence84" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NUDT18 hydrolyses 8-oxo-dGDP to 8-oxo-dGMP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep109">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction101" />
+ <bp:stepProcess rdf:resource="#Catalysis99" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis136">
+ <bp:controlled rdf:resource="#BiochemicalReaction142" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction78">
+ <bp:evidence rdf:resource="#Evidence85" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NUDT1 hydrolyses 2-oxo-ATP to 2-oxo-AMP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep108">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction100" />
+ <bp:stepProcess rdf:resource="#Catalysis98" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction117">
+ <bp:evidence rdf:resource="#Evidence127" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CAD hexamer transforms CAP to N-carb-L-Asp</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction116">
+ <bp:evidence rdf:resource="#Evidence126" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CAD hexamer transforms L-Gln to CAP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction115">
+ <bp:evidence rdf:resource="#Evidence125" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">UMPS dimer decarboxylates OMP to UMP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction114">
+ <bp:evidence rdf:resource="#Evidence124" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">UMPS dimer transfers phosphoribosyl group to ORO to form OMP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction113">
+ <bp:evidence rdf:resource="#Evidence122" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Dissociation of phosphoribosyl pyrophosphate amidotransferase tetramer</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction112">
+ <bp:evidence rdf:resource="#Evidence121" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">5-Phosphoribosylamine + Glycine + ATP =&gt; GAR + ADP + Pi</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction111">
+ <bp:evidence rdf:resource="#Evidence120" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">5-phospho-alpha-D-ribose 1-diphosphate (PRPP) + H2O + L-glutamine &lt;=&gt; 5-phosphoribosylamine + L-glutamate +pyrophosphate</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction110">
+ <bp:evidence rdf:resource="#Evidence119" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">FGAR + L-Glutamine + ATP + H2O =&gt; FGAM + L-Glutamate + ADP + Pi</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction119">
+ <bp:evidence rdf:resource="#Evidence129" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CAD hexamer dehydrates N-carb-L-Asp to (S)-DHO</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction118">
+ <bp:evidence rdf:resource="#Evidence128" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">DHODH:FMN binds DHODH inhibitors</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction106">
+ <bp:evidence rdf:resource="#Evidence115" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">AIR + CO2 =&gt; CAIR</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction105">
+ <bp:evidence rdf:resource="#Evidence114" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">IMPDH tetramers binds IMPDH inhibitors</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction104">
+ <bp:evidence rdf:resource="#Evidence113" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CAIR + Aspartate + ATP =&gt; SAICAR + ADP + Pi</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction103">
+ <bp:evidence rdf:resource="#Evidence112" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">SAICAR =&gt; AICAR + Fumarate</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction102">
+ <bp:evidence rdf:resource="#Evidence111" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">AICAR + 10-Formyl-THF =&gt; FAICAR + THF</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction101">
+ <bp:evidence rdf:resource="#Evidence110" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">adenylosuccinate =&gt; adenosine 5&apos;-monophosphate + fumarate</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction100">
+ <bp:evidence rdf:resource="#Evidence109" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">IMP + L-Aspartate + GTP =&gt; Adenylosuccinate + GDP + Pi [ADSS]</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction109">
+ <bp:evidence rdf:resource="#Evidence118" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GAR + 10-Formyl-THF =&gt; FGAR + THF</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction108">
+ <bp:evidence rdf:resource="#Evidence117" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of phosphoribosyl pyrophosphate amidotransferase tetramer</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction107">
+ <bp:evidence rdf:resource="#Evidence116" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">FGAM + ATP =&gt; AIR + ADP + Pi</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence149">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence145">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis19">
+ <bp:controlled rdf:resource="#BiochemicalReaction19" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence146">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis18">
+ <bp:controlled rdf:resource="#BiochemicalReaction18" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence147">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis17">
+ <bp:controlled rdf:resource="#BiochemicalReaction17" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence148">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis16">
+ <bp:controlled rdf:resource="#BiochemicalReaction16" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence152">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis15">
+ <bp:controlled rdf:resource="#BiochemicalReaction15" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence153">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis14">
+ <bp:controlled rdf:resource="#BiochemicalReaction14" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence154">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis13">
+ <bp:controlled rdf:resource="#BiochemicalReaction13" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence155">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis12">
+ <bp:controlled rdf:resource="#BiochemicalReaction12" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis11">
+ <bp:controlled rdf:resource="#BiochemicalReaction11" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis10">
+ <bp:controlled rdf:resource="#BiochemicalReaction10" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence150">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence151">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction142">
+ <bp:evidence rdf:resource="#Evidence155" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">AMP + H2O =&gt; IMP + NH4+ (AMPD)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction141">
+ <bp:evidence rdf:resource="#Evidence154" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">dA, dG, or dI + ATP =&gt; dAMP, dGMP, or dIMP + ADP (DGUOK)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction140">
+ <bp:evidence rdf:resource="#Evidence153" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GMP + NADPH + H+ =&gt; IMP + NADP+ + NH4+ (GMPR,GMPR2)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep94">
+ <bp:stepProcess rdf:resource="#Catalysis86" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction88" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction139">
+ <bp:evidence rdf:resource="#Evidence152" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">(2&apos;-deoxy)adenosine + ATP =&gt; (d)AMP + ADP (ADK)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep95">
+ <bp:stepProcess rdf:resource="#Catalysis87" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction89" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction138">
+ <bp:evidence rdf:resource="#Evidence151" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ADAL1 hydrolyzes N6-methyl-dAMP to dIMP and methylamine</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep92">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction86" />
+ <bp:stepProcess rdf:resource="#Catalysis84" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction137">
+ <bp:evidence rdf:resource="#Evidence150" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HPRT1 catalyzes the conversion of guanine or hypoxanthine to GMP or IMP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep93">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction87" />
+ <bp:stepProcess rdf:resource="#Catalysis85" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction136">
+ <bp:evidence rdf:resource="#Evidence149" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">deoxyadenosine or deoxyguanosine + ATP =&gt; dAMP or dGMP + ADP (DCK)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep90">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction84" />
+ <bp:stepProcess rdf:resource="#Catalysis82" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction135">
+ <bp:evidence rdf:resource="#Evidence148" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">APRT catalyzes the conversion of adenine to AMP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep91">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction85" />
+ <bp:stepProcess rdf:resource="#Catalysis83" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction134">
+ <bp:evidence rdf:resource="#Evidence147" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PNP catalyzes the conversion of guanine and (deoxy)ribose to (deoxy)guanosine</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction133">
+ <bp:evidence rdf:resource="#Evidence146" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ADAL1 hydrolyzes N6-methyl-AMP to IMP and methylamine</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction132">
+ <bp:evidence rdf:resource="#Evidence145" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PNP catalyzes the conversion of hypoxanthine and (deoxy)ribose to (deoxy)inosine</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction131">
+ <bp:evidence rdf:resource="#Evidence144" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ADA catalyzes the deamination of (deoxy)adenosine</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction130">
+ <bp:evidence rdf:resource="#Evidence142" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HDHD1:Mg2+ dephosphorylates PURIDP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep98">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction92" />
+ <bp:stepProcess rdf:resource="#Catalysis90" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep99">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction93" />
+ <bp:stepProcess rdf:resource="#Catalysis91" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep96">
+ <bp:stepProcess rdf:resource="#Catalysis88" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction90" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep97">
+ <bp:stepProcess rdf:resource="#Catalysis89" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction91" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep83">
+ <bp:stepProcess rdf:resource="#Catalysis75" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction77" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction128">
+ <bp:evidence rdf:resource="#Evidence140" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">uracil + (deoxy)ribose 1-phosphate &lt;=&gt; (deoxy)uridine + orthophosphate [UPP]</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep84">
+ <bp:stepProcess rdf:resource="#Catalysis76" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction78" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction127">
+ <bp:evidence rdf:resource="#Evidence139" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">(deoxy)cytidine + H2O =&gt; (deoxy)uridine + NH4+ (CDA)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep81">
+ <bp:stepProcess rdf:resource="#Pathway7" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction126">
+ <bp:evidence rdf:resource="#Evidence138" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">thymine or uracil + 2-deoxy-D-ribose 1-phosphate &lt;=&gt; thymidine or deoxyuridine + orthophosphate [TYMP]</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep82">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction76" />
+ <bp:stepProcess rdf:resource="#Catalysis74" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction125">
+ <bp:evidence rdf:resource="#Evidence137" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">deoxycytidine, thymidine, or deoxyuridine + ATP =&gt; dCMP, TMP, or dUMP + ADP [TK2]</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction124">
+ <bp:evidence rdf:resource="#Evidence136" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">cytidine or uridine + ATP =&gt; CMP or UMP + ADP [UCK1]</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep80">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction75" />
+ <bp:stepProcess rdf:resource="#Catalysis73" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction123">
+ <bp:evidence rdf:resource="#Evidence135" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">cytidine or uridine + ATP =&gt; CMP or UMP + ADP [UCK2]</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction122">
+ <bp:evidence rdf:resource="#Evidence134" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">UCKL1 phosphorylates urindine, cytidine</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction121">
+ <bp:evidence rdf:resource="#Evidence133" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">(2&apos;-deoxy)cytidine + ATP =&gt; (d)CMP + ADP (DCK)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction120">
+ <bp:evidence rdf:resource="#Evidence130" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">DHODH:FMN oxidises (S)-DHO to orotate</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep89">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction83" />
+ <bp:stepProcess rdf:resource="#Catalysis81" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep87">
+ <bp:stepProcess rdf:resource="#Catalysis79" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction81" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep88">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction82" />
+ <bp:stepProcess rdf:resource="#Catalysis80" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep85">
+ <bp:stepProcess rdf:resource="#Catalysis77" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction79" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep86">
+ <bp:stepProcess rdf:resource="#Catalysis78" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction80" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction129">
+ <bp:evidence rdf:resource="#Evidence141" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">thymidine + ATP =&gt; TMP (deoxythymidine 5&apos;-monophosphate) + ADP [TK1]</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence4">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence33">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep72">
+ <bp:stepProcess rdf:resource="#Catalysis65" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction67" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence5">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence34">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep73">
+ <bp:stepProcess rdf:resource="#Catalysis66" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction68" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence31">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep70">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction65" />
+ <bp:stepProcess rdf:resource="#Catalysis63" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence3">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence32">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep71">
+ <bp:stepProcess rdf:resource="#Catalysis64" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction66" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence8">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence37">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence9">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence38">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence6">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence35">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence7">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence36">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence39">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep78">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction73" />
+ <bp:stepProcess rdf:resource="#Catalysis71" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep79">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction74" />
+ <bp:stepProcess rdf:resource="#Catalysis72" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep76">
+ <bp:stepProcess rdf:resource="#Catalysis69" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction71" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep77">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction72" />
+ <bp:stepProcess rdf:resource="#Catalysis70" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep74">
+ <bp:stepProcess rdf:resource="#Catalysis67" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction69" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep75">
+ <bp:stepProcess rdf:resource="#Catalysis68" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction70" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis79">
+ <bp:controlled rdf:resource="#BiochemicalReaction81" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis78">
+ <bp:controlled rdf:resource="#BiochemicalReaction80" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis77">
+ <bp:controlled rdf:resource="#BiochemicalReaction79" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis76">
+ <bp:controlled rdf:resource="#BiochemicalReaction78" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis75">
+ <bp:controlled rdf:resource="#BiochemicalReaction77" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis74">
+ <bp:controlled rdf:resource="#BiochemicalReaction76" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis73">
+ <bp:controlled rdf:resource="#BiochemicalReaction75" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis72">
+ <bp:controlled rdf:resource="#BiochemicalReaction74" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis71">
+ <bp:controlled rdf:resource="#BiochemicalReaction73" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis70">
+ <bp:controlled rdf:resource="#BiochemicalReaction72" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence30">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence44">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep61">
+ <bp:stepProcess rdf:resource="#Catalysis56" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction57" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence45">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep62">
+ <bp:stepProcess rdf:resource="#Catalysis57" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction58" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence42">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence43">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep60">
+ <bp:stepProcess rdf:resource="#Catalysis55" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction56" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence48">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence49">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence46">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence47">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep69">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction64" />
+ <bp:stepProcess rdf:resource="#Catalysis62" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep67">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction63" />
+ <bp:stepProcess rdf:resource="#Catalysis61" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep68">
+ <bp:stepProcess rdf:resource="#Pathway6" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep65">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction61" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep66">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction62" />
+ <bp:stepProcess rdf:resource="#Catalysis60" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep63">
+ <bp:stepProcess rdf:resource="#Catalysis58" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction59" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep64">
+ <bp:stepProcess rdf:resource="#Catalysis59" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction60" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis69">
+ <bp:controlled rdf:resource="#BiochemicalReaction71" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis68">
+ <bp:controlled rdf:resource="#BiochemicalReaction70" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence100">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis67">
+ <bp:controlled rdf:resource="#BiochemicalReaction69" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis66">
+ <bp:controlled rdf:resource="#BiochemicalReaction68" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis65">
+ <bp:controlled rdf:resource="#BiochemicalReaction67" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis64">
+ <bp:controlled rdf:resource="#BiochemicalReaction66" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis63">
+ <bp:controlled rdf:resource="#BiochemicalReaction65" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis62">
+ <bp:controlled rdf:resource="#BiochemicalReaction64" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis61">
+ <bp:controlled rdf:resource="#BiochemicalReaction63" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis60">
+ <bp:controlled rdf:resource="#BiochemicalReaction62" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence40">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence41">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep50">
+ <bp:stepProcess rdf:resource="#Pathway5" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence55">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep51">
+ <bp:stepProcess rdf:resource="#Catalysis47" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction47" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence56">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence53">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence54">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence59">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence57">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence58">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep58">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction54" />
+ <bp:stepProcess rdf:resource="#Catalysis53" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep59">
+ <bp:stepProcess rdf:resource="#Catalysis54" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction55" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep56">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction52" />
+ <bp:stepProcess rdf:resource="#Catalysis51" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep57">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction53" />
+ <bp:stepProcess rdf:resource="#Catalysis52" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep54">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction50" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep55">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction51" />
+ <bp:stepProcess rdf:resource="#Catalysis50" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep52">
+ <bp:stepProcess rdf:resource="#Catalysis48" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction48" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep53">
+ <bp:stepProcess rdf:resource="#Catalysis49" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction49" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis99">
+ <bp:controlled rdf:resource="#BiochemicalReaction101" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis1">
+ <bp:controlled rdf:resource="#BiochemicalReaction1" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep49">
+ <bp:stepProcess rdf:resource="#Catalysis46" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction46" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis98">
+ <bp:controlled rdf:resource="#BiochemicalReaction100" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis97">
+ <bp:controlled rdf:resource="#BiochemicalReaction99" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis3">
+ <bp:controlled rdf:resource="#BiochemicalReaction3" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis96">
+ <bp:controlled rdf:resource="#BiochemicalReaction98" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis2">
+ <bp:controlled rdf:resource="#BiochemicalReaction2" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis95">
+ <bp:controlled rdf:resource="#BiochemicalReaction97" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis5">
+ <bp:controlled rdf:resource="#BiochemicalReaction5" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis94">
+ <bp:controlled rdf:resource="#BiochemicalReaction96" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis4">
+ <bp:controlled rdf:resource="#BiochemicalReaction4" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis93">
+ <bp:controlled rdf:resource="#BiochemicalReaction95" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis7">
+ <bp:controlled rdf:resource="#BiochemicalReaction7" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence51">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis92">
+ <bp:controlled rdf:resource="#BiochemicalReaction94" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis6">
+ <bp:controlled rdf:resource="#BiochemicalReaction6" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence52">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis91">
+ <bp:controlled rdf:resource="#BiochemicalReaction93" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis9">
+ <bp:controlled rdf:resource="#BiochemicalReaction9" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis90">
+ <bp:controlled rdf:resource="#BiochemicalReaction92" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis8">
+ <bp:controlled rdf:resource="#BiochemicalReaction8" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence50">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence66">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep40">
+ <bp:stepProcess rdf:resource="#Catalysis37" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction37" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence67">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence64">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence65">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence68">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence69">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep47">
+ <bp:stepProcess rdf:resource="#Catalysis44" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction44" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep48">
+ <bp:stepProcess rdf:resource="#Catalysis45" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction45" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep45">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction42" />
+ <bp:stepProcess rdf:resource="#Catalysis42" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep46">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction43" />
+ <bp:stepProcess rdf:resource="#Catalysis43" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep43">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction40" />
+ <bp:stepProcess rdf:resource="#Catalysis40" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep44">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction41" />
+ <bp:stepProcess rdf:resource="#Catalysis41" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep41">
+ <bp:stepProcess rdf:resource="#Catalysis38" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction38" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep42">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction39" />
+ <bp:stepProcess rdf:resource="#Catalysis39" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis89">
+ <bp:controlled rdf:resource="#BiochemicalReaction91" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis88">
+ <bp:controlled rdf:resource="#BiochemicalReaction90" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep38">
+ <bp:stepProcess rdf:resource="#Catalysis35" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction35" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis87">
+ <bp:controlled rdf:resource="#BiochemicalReaction89" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep39">
+ <bp:stepProcess rdf:resource="#Catalysis36" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction36" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis86">
+ <bp:controlled rdf:resource="#BiochemicalReaction88" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis85">
+ <bp:controlled rdf:resource="#BiochemicalReaction87" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis84">
+ <bp:controlled rdf:resource="#BiochemicalReaction86" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis83">
+ <bp:controlled rdf:resource="#BiochemicalReaction85" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis82">
+ <bp:controlled rdf:resource="#BiochemicalReaction84" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence62">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis81">
+ <bp:controlled rdf:resource="#BiochemicalReaction83" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence63">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis80">
+ <bp:controlled rdf:resource="#BiochemicalReaction82" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence60">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence61">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence77">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence78">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence75">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence76">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence79">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep36">
+ <bp:stepProcess rdf:resource="#Catalysis34" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction34" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence127">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep37">
+ <bp:stepProcess rdf:resource="#Pathway4" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence128">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep34">
+ <bp:stepProcess rdf:resource="#Catalysis33" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction33" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence129">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep35">
+ <bp:stepProcess rdf:resource="#Pathway3" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep32">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction31" />
+ <bp:stepProcess rdf:resource="#Catalysis31" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence123">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep33">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction32" />
+ <bp:stepProcess rdf:resource="#Catalysis32" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence124">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep30">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction29" />
+ <bp:stepProcess rdf:resource="#Catalysis29" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence125">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep31">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction30" />
+ <bp:stepProcess rdf:resource="#Catalysis30" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis39">
+ <bp:controlled rdf:resource="#BiochemicalReaction39" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence126">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis38">
+ <bp:controlled rdf:resource="#BiochemicalReaction38" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence130">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis37">
+ <bp:controlled rdf:resource="#BiochemicalReaction37" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence131">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis36">
+ <bp:controlled rdf:resource="#BiochemicalReaction36" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence132">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis35">
+ <bp:controlled rdf:resource="#BiochemicalReaction35" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence133">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep29">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction28" />
+ <bp:stepProcess rdf:resource="#Catalysis28" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis34">
+ <bp:controlled rdf:resource="#BiochemicalReaction34" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis33">
+ <bp:controlled rdf:resource="#BiochemicalReaction33" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep27">
+ <bp:stepProcess rdf:resource="#Catalysis26" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction26" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis32">
+ <bp:controlled rdf:resource="#BiochemicalReaction32" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep28">
+ <bp:stepProcess rdf:resource="#Catalysis27" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction27" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis31">
+ <bp:controlled rdf:resource="#BiochemicalReaction31" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis30">
+ <bp:controlled rdf:resource="#BiochemicalReaction30" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence70">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence73">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence74">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence71">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence72">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence88">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence89">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence86">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence87">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway10">
+ <bp:pathwayOrder rdf:resource="#PathwayStep123" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep125" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep124" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep127" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep126" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep129" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep128" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction117" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction116" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction115" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction114" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction120" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction119" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction118" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence123" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Pyrimidine biosynthesis</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The pyrimidine orotate (orotic acid) is synthesized in a sequence of four reactions, deriving its atoms from glutamine, bicarbonate, and aspartate. A single multifunctional cytosolic enzyme catalyzes the first three of these reactions, while the last one is catalyzed by an enzyme associated with the inner mitochondrial membrane. In two further reactions, catalyzed by a bifunctional cytosolic enzyme, orotate reacts with 1-phosphoribosyl 5-pyrophosphate (PRPP) to yield orotidine 5&apos;-monophosphate, which is decarboxylated to yield uridine 5&apos;-monophosphate (UMP). While several individual reactions in this pathway are reversible, other irreversible reactions drive the pathway in the direction of UMP biosynthesis in the normal cell. All reactions are thus annotated here only in the forward direction. This pathway has been most extensively analyzed at the genetic and biochemical level in hamster cell lines. All three enzymes have also been purified from human sources, however, and the key features of these reactions have been confirmed from studies of this human material (Jones 1980; Webster et al. 2001). All other pyrimidines are synthesized from UMP. The reactions annotaed here, catalyzed by dCMP deaminase and dUTP diphosphatase yield dUMP, which in turn is converted to TMP by thymidylate synthase.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway11">
+ <bp:pathwayOrder rdf:resource="#PathwayStep131" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep142" />
+ <bp:pathwayComponent rdf:resource="#Pathway12" />
+ <bp:pathwayComponent rdf:resource="#Pathway13" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence131" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Nucleotide salvage</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Nucleosides and free bases generated by RNA and DNA breakdown are converted back to nucleotide monophosphates, allowing them to re-enter the pathways of nucleotide biosynthesis and interconversion. Under normal conditions, DNA turnover is limited and deoxyribonucleotide salvage operates at a correspondingly low level (Watts 1974).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep25">
+ <bp:stepProcess rdf:resource="#Catalysis24" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction24" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence138">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep26">
+ <bp:stepProcess rdf:resource="#Catalysis25" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction25" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence139">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep23">
+ <bp:stepProcess rdf:resource="#Catalysis22" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction22" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep24">
+ <bp:stepProcess rdf:resource="#Catalysis23" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction23" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep21">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction20" />
+ <bp:stepProcess rdf:resource="#Catalysis20" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence134">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep22">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction21" />
+ <bp:stepProcess rdf:resource="#Catalysis21" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence135">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis29">
+ <bp:controlled rdf:resource="#BiochemicalReaction29" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence136">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep20">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction19" />
+ <bp:stepProcess rdf:resource="#Catalysis19" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis28">
+ <bp:controlled rdf:resource="#BiochemicalReaction28" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence137">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis27">
+ <bp:controlled rdf:resource="#BiochemicalReaction27" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence141">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis26">
+ <bp:controlled rdf:resource="#BiochemicalReaction26" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence142">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis25">
+ <bp:controlled rdf:resource="#BiochemicalReaction25" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence143">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis24">
+ <bp:controlled rdf:resource="#BiochemicalReaction24" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence144">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep18">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction17" />
+ <bp:stepProcess rdf:resource="#Catalysis17" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis23">
+ <bp:controlled rdf:resource="#BiochemicalReaction23" />
+</bp:Catalysis>
+
+<bp:Pathway rdf:ID="Pathway7">
+ <bp:pathwayOrder rdf:resource="#PathwayStep83" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep94" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep84" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep95" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep92" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep82" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep93" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep90" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep91" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep89" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep87" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep98" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep88" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep85" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep96" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep86" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep97" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction86" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction76" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction87" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction84" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction85" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction82" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction83" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction80" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction91" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction81" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction92" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction79" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction77" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction88" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction78" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction89" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction90" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence82" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Phosphate bond hydrolysis by NUDT proteins</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Enzymes that belong to the NUDT (Nudix) superfamily catalyze the hydrolysis of phosphodiester bonds in molecules including nucleoside triphosphates and diphosphates and nucleotide sugars. Family members are defined by the presence of an amino acid sequence motif shared with the E. coli MutT gene product, and are involved in diverse physiological processes (Mildvan et al. 2005; McLennan 2006). The hydrolysis of nucleoside di  and triphosphates whose purine bases have been oxidized, deaminated, or methylated may protect the cell from the mutational damage that would occur if modified deoxyribonucleotides were incorporated into DNA and from the aberrant protein synthesis that would occur if modified ribonucleotides were incorporated into mRNA (Iyama et al. 2010; Takagi et al. 2012). The hydrolysis of ADP ribose may prevent the aberrant spontaneous ADP ribosylation of cellular proteins that could occur were this molecule to accumulate to high levels in the cell (Perraud et al. 2003; Shen et al. 2003).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep19">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction18" />
+ <bp:stepProcess rdf:resource="#Catalysis18" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis22">
+ <bp:controlled rdf:resource="#BiochemicalReaction22" />
+</bp:Catalysis>
+
+<bp:Pathway rdf:ID="Pathway8">
+ <bp:pathwayOrder rdf:resource="#PathwayStep122" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep104" />
+ <bp:pathwayComponent rdf:resource="#Pathway10" />
+ <bp:pathwayComponent rdf:resource="#Pathway9" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence104" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Nucleotide biosynthesis</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The purine ribonucleotide inosine 5&apos;-monophosphate (IMP) is assembled on 5-phospho-alpha-D-ribose 1-diphosphate (PRPP), with atoms derived from aspartate, glutamine, glycine, N10-formyl-tetrahydrofolate, and carbon dioxide.  Although several of the individual reactions in this sequence are reversible, as indicated by the double-headed arrows in the diagram, other irreversible steps drive the pathway in the direction of IMP synthesis in the normal cell.  All of these reactions are thus annotated here only in the direction of IMP synthesis.  Guanosine 5&apos;-monophosphate (GMP) and adenosine 5&apos;-monophosphate (AMP) are synthesized from IMP (Zalkin    Dixon 1992). The pyrimidine orotate (orotic acid) is synthesized in a sequence of four reactions, deriving its atoms from glutamine, bicarbonate, and aspartate. A single multifunctional cytosolic enzyme catalyzes the first three of these reactions, while the last one is catalyzed by an enzyme associated with the inner mitochondrial membrane. In two further reactions, catalyzed by a bifunctional cytosolic enzyme, orotate reacts with 1-phosphoribosyl 5-pyrophosphate (PRPP) to yield orotidine 5&apos;-monophosphate, which is decarboxylated to yield uridine 5&apos;-monophosphate (UMP). While several individual reactions in this pathway are reversible, other irreversible reactions drive the pathway in the direction of UMP biosynthesis in the normal cell. All reactions are thus annotated here only in the forward direction. This pathway has been most extensively analyzed at the genetic and biochemical level in hamster cell lines. All three enzymes have also been purified from human sources, however, and the key features of these reactions have been confirmed from studies of this human material (Jones 1980). All other pyrimidines are synthesized from UMP. The reactions annotated here, catalyzed by dCMP deaminase and dUTP diphosphatase yield dUMP, which in turn is converted to TMP by thymidylate synthase.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep16">
+ <bp:stepProcess rdf:resource="#Catalysis15" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction15" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis21">
+ <bp:controlled rdf:resource="#BiochemicalReaction21" />
+</bp:Catalysis>
+
+<bp:Pathway rdf:ID="Pathway9">
+ <bp:pathwayOrder rdf:resource="#PathwayStep110" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep121" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep120" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep112" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep111" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep114" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep113" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep105" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep116" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep115" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep107" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep118" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep106" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep117" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep109" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep108" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep119" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction97" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction106" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction98" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction105" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction104" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction103" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction102" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction113" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction101" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction112" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction100" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction111" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction110" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction99" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction109" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction108" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction107" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence105" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Purine ribonucleoside monophosphate biosynthesis</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The purine ribonucleotide inosine 5&apos;-monophosphate (IMP) is assembled on 5-phospho-alpha-D-ribose 1-diphosphate (PRPP), with atoms derived from aspartate, glutamine, glycine, N10-formyl-tetrahydrofolate, and carbon dioxide.  Although several of the individual reactions in this sequence are reversible, as indicated by the double-headed arrows in the diagram, other irreversible steps drive the pathway in the direction of IMP synthesis in the normal cell.  All of these reactions are thus annotated here only in the direction of IMP synthesis.  Guanosine 5&apos;-monophosphate (GMP) and adenosine 5&apos;-monophosphate (AMP) are synthesized from IMP.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep17">
+ <bp:stepProcess rdf:resource="#Catalysis16" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction16" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis20">
+ <bp:controlled rdf:resource="#BiochemicalReaction20" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence140">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway3">
+ <bp:pathwayOrder rdf:resource="#PathwayStep50" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep36" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep37" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep68" />
+ <bp:pathwayComponent rdf:resource="#Pathway4" />
+ <bp:pathwayComponent rdf:resource="#Pathway5" />
+ <bp:pathwayComponent rdf:resource="#Pathway6" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction34" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence36" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Nucleotide catabolism</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The purine bases guanine and hypoxanthine (derived from adenine by events in the purine salvage pathways) are converted to xanthine and then to uric acid, which is excreted from the body (Watts 1974). The end-point of this pathway in humans and hominoid primates is unusual. Most other mammals metabolize uric acid further to yield more soluble end products, and much speculation has centered on possible roles for high uric acid levels in normal human physiology. In parallel sequences of three reactions each, the pyrimidines thymine and uracil are converted to beta-aminoisobutyrate and beta-alanine respectively. Both of these molecules are excreted in human urine and appear to be normal end products of pyrimidine catabolism (Griffith 1986). Mitochondrial AGXT2, however, can also catalyze the transamination of both molecules with pyruvate, yielding 2-oxoacids that can be metabolized further by reactions of branched-chain amino acid and short-chain fatty acid catabolism (Tamaki et al. 2000). Hydrolysis of phosphate bonds in nucleotides catalyzed by members of the NUDT and NTPD families of enzymes have been grouped here as well, although the physiological roles of these groups of  catabolic reactions are diverse.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence80">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway4">
+ <bp:pathwayOrder rdf:resource="#PathwayStep40" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep38" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep49" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep39" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep47" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep48" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep45" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep46" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep43" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep44" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep41" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep42" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction42" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction43" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction40" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction41" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction39" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction37" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction38" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction35" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction46" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction36" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction44" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction45" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence38" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Phosphate bond hydrolysis by NTPDase proteins</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The ectonucleoside triphosphate diphosphatase (E-NTPDase family) of ectonucleotidases includes 8 enzymes: NTPDase1 (encoded by the ENTPD1 gene), NTPDase2 (encoded by the ENTPD2 gene), NTPDase3 (encoded by the ENTPD3 gene), NTPDase4 (encoded by the ENTPD4 gene), NTPDase5 (encoded by the ENTPD5 gene), NTPDase6 (encoded by the ENTPD6 gene), NTPDase7 (encoded by the ENTPD7 gene) and NTPDase8 (encoded by the ENTPD8 gene). NTPDases hydrolyze nucleoside triphosphates and nucleoside diphosphates, producing the corresponding nucleoside monophosphates as final products. Different family members show different specificity for particular nucleotides. NTPDases are involved in various biological processes, such as hemostasis, immune response and development of the nervous system.  The catalytic domain of NTPDases is contained within the loop formed by a cluster of apyrase conserved regions (ACRs). All family members require divalent cations, such as calcium (Ca2+) or magnesium (Mg2+) ions, for catalytic activity. The hydrolysis involves a nucleophilic attack of a water molecule on the terminal phosphate of a nucleotide substrate. All E-NTPDase family members are transmembrane proteins, associated with either plasma membrane (NTPDase1, NTPDase2, NTPDase3 and NTPDase8) or organelle membranes (NTPDase4 and NTPDase7). Two family members, NTPDase5 and NTPDase6, can be secreted into extracellular space following a proteolytic cleavage from the plasma membrane. NTPDases hydrolyze exocytoplasmic nucleotides, thus regulating the availability of ligands for purinergic receptors. Glycosylation and oligomerization are involved in the regulation of NTPDases, but have not been thoroughly studied. For reviews of the NTPDase family, please refer to Robson et al. 2006 and Zimmermann et al. 2012.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence81">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway5">
+ <bp:pathwayOrder rdf:resource="#PathwayStep61" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep51" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep62" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep60" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep58" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep59" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep56" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep67" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep57" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep54" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep65" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep55" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep66" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep52" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep63" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep53" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep64" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction53" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction54" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction51" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction62" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction52" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction63" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction60" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction50" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction61" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction48" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction59" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction49" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction57" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction47" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction58" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction55" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction56" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence51" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Pyrimidine catabolism</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">In parallel sequences of three reactions each, thymine is converted to beta-aminoisobutyrate and uracil is converted to beta-alanine. Both of these molecules are excreted in human urine and appear to be normal end products of pyrimidine catabolism (Griffith 1986; Webster et al. 2001). Mitochondrial AGXT2, however, can also catalyze the transamination of both molecules with pyruvate, yielding 2-oxoacids that can be metabolized further by reactions of branched-chain amino acid and short-chain fatty acid catabolism (Tamaki et al. 2000). The importance of these reactions in normal human pyrimidine catabolism has not been well worked out.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway12">
+ <bp:pathwayOrder rdf:resource="#PathwayStep141" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep140" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep132" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep134" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep133" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep136" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep135" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep138" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep137" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep139" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction128" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction127" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction126" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction125" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction124" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction123" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction122" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction121" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction130" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction129" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence132" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Pyrimidine salvage</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">In pyrimidine salvage reactions, nucleosides and free bases generated by DNA and RNA breakdown are converted back to nucleotide monophosphates, allowing them to re-enter the pathways of pyrimidine biosynthesis and interconversion.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway6">
+ <bp:pathwayOrder rdf:resource="#PathwayStep72" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep73" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep70" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep81" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep71" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep80" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep101" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep100" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep69" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep102" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep78" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep79" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep76" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep77" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep99" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep74" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep75" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction64" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction75" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction65" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction73" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction95" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction74" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction96" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction71" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction93" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction72" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction94" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction70" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction68" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction69" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction66" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction67" />
+ <bp:pathwayComponent rdf:resource="#Pathway7" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence69" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Purine catabolism</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The purine bases guanine and hypoxanthine (derived from adenine by events in the purine salvage pathways) are converted to xanthine and then to urate uric acid, which is excreted from the body (Watts 1974). The end-point of this pathway in humans and hominoid primates is unusual. Most other mammals metabolize uric acid further to yield more soluble end products, and much speculation has centered on possible roles for high uric acid levels in normal human physiology.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway13">
+ <bp:pathwayOrder rdf:resource="#PathwayStep150" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep152" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep151" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep143" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep154" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep153" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep145" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep144" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep147" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep146" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep149" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep148" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction139" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction138" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction137" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction136" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction135" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction134" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction133" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction132" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction131" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction142" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction141" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction140" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence143" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Purine salvage</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Nucleosides and free bases generated by DNA and RNA breakdown are converted back to nucleotide monophosphates, allowing them to re-enter the pathway of purine biosynthesis and interconversion. Under normal conditions, DNA turnover is limited and deoxyribonucleotide salvage operates at a correspondingly low level (Watts 1974).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence84">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence85">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep130" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep103" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep35" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayComponent rdf:resource="#Pathway8" />
+ <bp:pathwayComponent rdf:resource="#Pathway11" />
+ <bp:pathwayComponent rdf:resource="#Pathway3" />
+ <bp:pathwayComponent rdf:resource="#Pathway2" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Metabolism of nucleotides</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Nucleotides and their derivatives are used for short-term energy storage (ATP, GTP), for intra- and extra-cellular signaling (cAMP; adenosine), as enzyme cofactors (NAD, FAD), and for the synthesis of DNA and RNA. Most dietary nucleotides are consumed by gut flora; the human body&apos;s own supply of these molecules is synthesized de novo. Additional metabolic pathways allow the interconversion of nucleotides, the salvage and reutilization of nucleotides released by degradation of DNA and RNA, the catabolism of excess nucleotides, and the transport of these molecules between the cytosol and the nucleus (Rudolph 1994). These pathways are regulated to control the total size of the intracellular nucleotide pool, to balance the relative amounts of individual nucleotides, and to couple the synthesis of deoxyribonucleotides to the onset of DNA replication (S phase of the cell cycle). These pathways are also of major clinical interest as they are the means by which nucleotide analogues used as anti-viral and anti-tumor drugs are taken up by cells, activated, and catabolized (Weilin and Nordlund 2010). As well, differences in nucleotide metabolic pathways between humans and aplicomplexan parasites like Plasmodium have been exploited to design drugs to attack the latter (Hyde 2007). The movement of nucleotides and purine and pyrimidine bases across lipid bilayer membranes, mediated by SLC transporters, is annotated as part of the module &quot;transmembrane transport of small molecules&quot;.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence82">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway2">
+ <bp:pathwayOrder rdf:resource="#PathwayStep14" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep15" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep12" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep34" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep13" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep10" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep32" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep11" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep33" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep30" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep31" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep3" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep4" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep5" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep6" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep7" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep29" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep8" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep9" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep27" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep28" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep2" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep25" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep26" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep23" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep24" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep21" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep22" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep20" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep18" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep19" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep16" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep17" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction20" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction21" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction28" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction29" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction26" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction27" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction24" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction25" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction22" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction23" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction31" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction10" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction32" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction30" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction8" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction17" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction9" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction18" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction15" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction16" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction13" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction14" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction11" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction33" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction12" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction2" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction3" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction4" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction5" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction6" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction19" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction7" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Interconversion of nucleotide di- and triphosphates</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">An array of kinases catalyze the reversible phosphorylation of nucleotide monophosphates to form nucleotide diphosphates and triphosphates. Nucleoside monophosphate kinases catalyze the reversible phosphorylation of nucleoside and deoxynucleoside 5&apos;-monophosphates to form the corresponding nucleoside 5&apos;-diphosphates.  Most appear to have restricted specificities for nucleoside monophosphates, and to use ATP preferentially (Van Rompay et al. 2000; Anderson 1973; Noda 1973).  The total number of human enzymes that catalyze these reactions in vivo is not clear.  In six cases, a well-defined biochemical activity has been associated with a purified protein, and these are annotated here.  However, additional nucleoside monophosphate kinase-like human proteins have been identified in molecular cloning studies whose enzymatic activities are unknown, and several distinctive nucleoside monophosphate kinase activities detected in cell extracts, e.g., a GTP-requiring adenylate kinase activity (Wilson et al. 1976) and one or more guanylate kinase activities (Jamil et al. 1975) have not been unambiguously associated with specific human proteins. The nucleoside monophosphates against which each of the six well-characterized enzymes is active is shown in the table (Van Rompay et al. 2000).  All six efficiently use ATP as a phosphate donor, but have some activity with other nucleoside triphosphates as well in vitro.  The high concentrations of ATP relative to other nucleoside triphosphates in vivo makes it the likely major phosphate donor in these reactions under most conditions. All of these phosphorylation reactions are freely reversible in vitro when carried out with purified enzymes and substrates, having equilibrium constants near 1.  In vivo, high ratios of ATP to ADP are likely to favor the forward direction of these reactions, i.e., the conversion of (d)NMP and ATP to (d)NDP and ADP.  At the same time, the reversibility of the reactions and the overlapping substrate specificities of the enzymes raises the possibility that this group of reactions can buffer the intracellular nucleotide pool and regulate the relative concentrations of individual nucleotides in the pool: if any one molecule builds up to unusually high levels, multiple routes appear to be open not only to dispose of it but to use it to increase the supply of less abundant nucleotides. Ribonucleotide reductase catalyzes the synthesis of deoxyribonucleotide diphosphates from ribonucleotide diphosphates.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence83">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence99">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence97">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence98">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence109">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep14">
+ <bp:stepProcess rdf:resource="#Catalysis13" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction13" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence105">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep15">
+ <bp:stepProcess rdf:resource="#Catalysis14" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction14" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence106">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep12">
+ <bp:stepProcess rdf:resource="#Catalysis11" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction11" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence107">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep13">
+ <bp:stepProcess rdf:resource="#Catalysis12" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction12" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence108">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep10">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction9" />
+ <bp:stepProcess rdf:resource="#Catalysis9" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence101">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep11">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction10" />
+ <bp:stepProcess rdf:resource="#Catalysis10" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence102">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence103">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence104">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis59">
+ <bp:controlled rdf:resource="#BiochemicalReaction60" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis58">
+ <bp:controlled rdf:resource="#BiochemicalReaction59" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence110">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis57">
+ <bp:controlled rdf:resource="#BiochemicalReaction58" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence111">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis56">
+ <bp:controlled rdf:resource="#BiochemicalReaction57" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis55">
+ <bp:controlled rdf:resource="#BiochemicalReaction56" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis54">
+ <bp:controlled rdf:resource="#BiochemicalReaction55" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis53">
+ <bp:controlled rdf:resource="#BiochemicalReaction54" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis52">
+ <bp:controlled rdf:resource="#BiochemicalReaction53" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence91">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis51">
+ <bp:controlled rdf:resource="#BiochemicalReaction52" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence92">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis50">
+ <bp:controlled rdf:resource="#BiochemicalReaction51" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence90">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence95">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence96">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence93">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence94">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence116">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence117">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence118">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence119">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence112">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence113">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence114">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence115">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis49">
+ <bp:controlled rdf:resource="#BiochemicalReaction49" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis48">
+ <bp:controlled rdf:resource="#BiochemicalReaction48" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence120">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis47">
+ <bp:controlled rdf:resource="#BiochemicalReaction47" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence121">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis46">
+ <bp:controlled rdf:resource="#BiochemicalReaction46" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence122">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis45">
+ <bp:controlled rdf:resource="#BiochemicalReaction45" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis44">
+ <bp:controlled rdf:resource="#BiochemicalReaction44" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis43">
+ <bp:controlled rdf:resource="#BiochemicalReaction43" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis42">
+ <bp:controlled rdf:resource="#BiochemicalReaction42" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis41">
+ <bp:controlled rdf:resource="#BiochemicalReaction41" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis40">
+ <bp:controlled rdf:resource="#BiochemicalReaction40" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction8">
+ <bp:evidence rdf:resource="#Evidence10" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">(d)CMP or UMP + ATP &lt;=&gt; (d)CDP or UDP + ADP (CMPK1)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction9">
+ <bp:evidence rdf:resource="#Evidence11" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NUDT13 hydrolyses AP6A to AP4 and ADP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">AMP + ATP &lt;=&gt; ADP + ADP [AK2]</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
+ <bp:evidence rdf:resource="#Evidence4" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ADP + ADP &lt;=&gt; AMP + ATP [AK2]</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction3">
+ <bp:evidence rdf:resource="#Evidence5" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">glutaredoxin (oxidized) + glutathione (reduced) =&gt; glutaredoxin (reduced) + glutathione (oxidized)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction4">
+ <bp:evidence rdf:resource="#Evidence6" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">glutathione (oxidized) + NADPH + H+ =&gt; 2 glutathione (reduced) + NADP+</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction5">
+ <bp:evidence rdf:resource="#Evidence7" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">dUTP + H2O =&gt; dUMP + pyrophosphate</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction6">
+ <bp:evidence rdf:resource="#Evidence8" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">dUMP + N5,N10-methylene tetrahydrofolate =&gt; TMP + dihydrofolate</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction7">
+ <bp:evidence rdf:resource="#Evidence9" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RNR (M1M2) reduces nucleotide diphosphates to deoxynucleotide diphosphates (thioredoxin)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction20">
+ <bp:evidence rdf:resource="#Evidence22" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">(d)CDP or UDP + ADP &lt;=&gt; (d)CMP or UMP + ATP (CMPK1)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction21">
+ <bp:evidence rdf:resource="#Evidence23" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">DCTPP1 hydrolyses 5idCTP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction28">
+ <bp:evidence rdf:resource="#Evidence30" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">(d)ADP + ADP &lt;=&gt; (d)AMP + ATP (AK1)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction29">
+ <bp:evidence rdf:resource="#Evidence31" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">(d)NDP + ATP &lt;=&gt; (d)NTP + ADP (NME1,2,3)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction26">
+ <bp:evidence rdf:resource="#Evidence28" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">AK5,7,8,9 phosphorylates (d)NMPs to (d)NDPs</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction27">
+ <bp:evidence rdf:resource="#Evidence29" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">(d)NTP + ADP &lt;=&gt; (d)NDP + ATP (NME4)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction24">
+ <bp:evidence rdf:resource="#Evidence26" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">(d)NTP + ADP &lt;=&gt; (d)NDP + ATP (NME1,2,3)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction25">
+ <bp:evidence rdf:resource="#Evidence27" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NME1:NME3 heterohexamer, NME2P1 phosphorylate NDPs to NTPs</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction22">
+ <bp:evidence rdf:resource="#Evidence24" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">dUDP or TDP + ADP &lt;=&gt; dUMP or TMP + ATP [DTYMK]</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction23">
+ <bp:evidence rdf:resource="#Evidence25" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">(d)ADP or (d)CDP + ADP &lt;=&gt; (d)AMP or (d)CMP + ATP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction10">
+ <bp:evidence rdf:resource="#Evidence12" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">AK4 phosphorylates (d)NMPs to (d)NDPs</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction17">
+ <bp:evidence rdf:resource="#Evidence19" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">UTP + glutamine + ATP + H2O =&gt; CTP + glutamate + ADP + orthophosphate [CTPS2]</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction18">
+ <bp:evidence rdf:resource="#Evidence20" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">(d)NDP + ATP &lt;=&gt; (d)NTP + ADP (NME4)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction15">
+ <bp:evidence rdf:resource="#Evidence17" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">UTP + glutamine + ATP + H2O =&gt; CTP + glutamate + ADP + orthophosphate [CTPS]</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction16">
+ <bp:evidence rdf:resource="#Evidence18" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">thioredoxin, oxidized + NADPH + H+ =&gt; thioredoxin, reduced + NADP+</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction13">
+ <bp:evidence rdf:resource="#Evidence15" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">(d)AMP + ATP &lt;=&gt; (d)ADP + ADP (AK1)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction14">
+ <bp:evidence rdf:resource="#Evidence16" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">AK6 phosphorylates (d)NMPs to (d)NDPs</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction11">
+ <bp:evidence rdf:resource="#Evidence13" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">dUMP or TMP + ATP &lt;=&gt; dUDP or TDP + ADP [DTYMK]</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction12">
+ <bp:evidence rdf:resource="#Evidence14" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RNR (M1M2B) reduces nucleotide diphosphates to deoxynucleotide diphosphates (glutaredoxin)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction19">
+ <bp:evidence rdf:resource="#Evidence21" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">(d)GDP + ADP &lt;=&gt; (d)GMP + ATP (GUK1)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence11">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence12">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence10">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence15">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence16">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence13">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence14">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence19">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence17">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence18">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence22">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence23">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence20">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence21">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence26">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence27">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence24">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence25">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence28">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence29">
+</bp:Evidence>
+</rdf:RDF>

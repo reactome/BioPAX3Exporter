@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/9734767#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:PathwayStep rdf:ID="PathwayStep2">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction10">
+ <bp:evidence rdf:resource="#Evidence13" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Transit-amplifying cell of basal layer differentiates into keratinocyte of spinosum layer in interfollicular epidermis</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#Pathway2" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep4">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction3" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction12">
+ <bp:evidence rdf:resource="#Evidence15" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Keratinocyte stem cell differentiates into transit amplifying cell in the basal layer of interfollicular epidermis</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep3">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction2" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction11">
+ <bp:evidence rdf:resource="#Evidence14" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Keratinocyte of spinosum layer differentiates into keratinocyte of granulosum layer in interfollicular epidermis</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep6">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction5" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep13">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction11" />
+</bp:PathwayStep>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:PathwayStep rdf:ID="PathwayStep5">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction4" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep12">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction10" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep8">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction7" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep11">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction9" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep7">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction6" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep10">
+ <bp:stepProcess rdf:resource="#Pathway3" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep9">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction8" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction9">
+ <bp:evidence rdf:resource="#Evidence12" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Keratinocyte of granulosum layer differentiates into corneocyte of corneum layer in interfollicular epidermis</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction8">
+ <bp:evidence rdf:resource="#Evidence10" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Primary multipotent pancreatic progenitor cell produces pancreatic tip progenitor cell</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction7">
+ <bp:evidence rdf:resource="#Evidence9" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Pancreatic pro-acinar cell produces pancreatic acinar cell</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction6">
+ <bp:evidence rdf:resource="#Evidence8" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Pancreatic tip progenitor cell produces pancreatic pro-acinar cell</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction5">
+ <bp:evidence rdf:resource="#Evidence7" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Ventral foregut endoderm cell produces primary multipotent pancreatic progenitor cell</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction4">
+ <bp:evidence rdf:resource="#Evidence6" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Definitive endoderm cell produces ventral foregut endoderm cell</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction3">
+ <bp:evidence rdf:resource="#Evidence5" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Dorsal foregut endoderm cell produces duodeno-pancreatic endoderm cell</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
+ <bp:evidence rdf:resource="#Evidence4" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Definitive endoderm cell produces dorsal foregut endoderm cell</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Duodeno-pancreatic endoderm cell produces primary multipotent pancreatic progenitor cell</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep10" />
+ <bp:pathwayComponent rdf:resource="#Pathway2" />
+ <bp:pathwayComponent rdf:resource="#Pathway3" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Developmental Cell Lineages</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Our bodies are built of &gt;30 trillion cells specialized to fulfill diverse roles within our tissues, organs, and organ systems. All these cells originate from a single cell, a zygote formed at conception. From zygote to fetus, and throughout childhood, adolescence, and adulthood, cells divide and commit to different fates in order for the organism to develop, sustain and regenerate. The series of steps that lead from an undifferentiated progenitor cell, such as a stem cell, to one of its several possible specialized descendants constitutes a cell lineage path (Burgess et al. 2018). Cell lineage paths are organized by organ systems. Each cell lineage path cross-references a Gene Ontology (GO) biological process (The Gene Ontology Consortium 2019), and consists of a series of causally connected cell development steps. Cell development steps describe the transition between cell states during development or differentiation and are characterized by regulators (molecules promoting or inhibiting the step) and, when established, &#8220;required input components&#8221; (cell state biomarkers required for the action of regulators). Each cell state is characterized by a cell type defined in Cell Ontology (Sarntivijai et al. 2014; Osumi-Sutherland 2017), anatomical location from UBERON (Haendel et al. 2014), and a unique combination of protein and/or RNA markers with references, when available, to CellMarker (Hu et al. 2023) and PanglaoDB (Franzen et al. 2019). For a more detailed data model description, please refer to Milacic et al. 2024. Recent technological advances have allowed researchers to harvest high-throughput omics data from single cells of multicellular organisms and use it to track and manipulate cell fates (Burgess 2018; Saelens et al. 2019). This opens the door to the possibility of deciphering cell lineage paths at single-cell resolution, a critical requirement for the advancement of regenerative medicine and cancer medicine.  The cell lineage path &#8220;Differentiation of keratinocytes in interfollicular epidermis in mammalian skin&#8221; describes the differentiation of keratinocytes from stem cells to corneocytes in the interfollicular epidermis, the skin surface layer in between the adnexa (hair follicles, sweat glands, and sebaceous glands).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway2">
+ <bp:pathwayOrder rdf:resource="#PathwayStep2" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep4" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep3" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep6" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep5" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep8" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep7" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep9" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction8" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction7" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction6" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction5" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction4" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction3" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction2" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Developmental Lineage of Pancreatic Acinar Cells</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string"> The exocrine pancreas, which comprises more than 95% of the pancreas mass, consists of lobules formed by tubuloacinar glands that are built by two cell types: acinar cells and ductal cells. A third, centroacinar cells type has been identified in murine studies, but their existence and functional role is under debate. Acinar cells are large pyramidal secretory epithelial cells, with apical-basal polarization, that surround the lumen of the acinus. Acinar cells have prominent endoplasmic reticulum and Golgi networks, and their cytoplasm contains a large number of secretory zymogen granules, filled with various digestive enzymes, that are clustered in the vicinity of the apical surface. At the surface of the lumen, acinar cells are attached to each other by apical tight junctions, while their basal surfaces are associated with the basal lamina. For overview, please refer to Liggitt and Dintzis; &quot;Pancreas&quot;; Comparative Anatomy and Histology; a Mouse, Rat, and Human Atlas; edited by Treuting, Dintzis, and Montine, Elsevier Inc., 2018, 241-250. For review, please refer to Tritschler et al. 2017.  Pancreatic acinar cells originate from definitive endoderm cells that form during gastrulation, and then undergo patterning along anterior/posterior, dorsal/ventral, and median/lateral axes, producing, among other embryonal cell types, endoderm cells of dorsal and ventral foregut, which, after transitioning through an intermediary duodeno-pancreatic endoderm cell state for dorsal foregut endoderm and possibly a hepato-pancreatic or pancreato-biliary intermediary state for ventral foregut endoderm, give rise to multipotent pancreatic progenitor cells (MPCs) that form dorsal and ventral pancreatic buds (Yu et al. 2019, reviewed in Jennings et al. 2015). Developing pancreas undergoes branching morphogenesis, which results in the apical-basal polarity that is critical for establishing the acinar-ductal functional unit (Darrigrand et al. 2024). Both dorsal and ventral MPCs located at the tips of the developing, branching pancreas, start committing to the acinar cell fate from Carnegie stage 19 (45-47 days post conception) of human embryonic development and around embryonic day E12 during mouse development, initially becoming distinct tip progenitors, and then pro-acinar and acinar cells (Yu et al. 2019, reviewed in Jennings et al. 2015). </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway3">
+ <bp:pathwayOrder rdf:resource="#PathwayStep14" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep13" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep12" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep11" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction9" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction10" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction12" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction11" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence11" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Differentiation of Keratinocytes in Interfollicular Epidermis in Mammalian Skin</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The interfollicular epidermis is the skin surface layer in between the adnexa (hair follicles, sweat glands, and sebaceous glands). Going from the dermal epidermal junction, the interfollicular epidermis strata include the basal layer (stratum basale), spinous layer (stratum spinosum), granular layer (stratum granulosum), and the cornified layer (stratum corneum). The basal layer consists of keratinocyte stem cells and transit amplifying cells. The spinous, granular, and cornified layers consist of spinous keratinocytes, granular keratinocytes, and corneocytes, respectively. Interfollicular epidermis has a high cell turnover rate. Keratinocyte stem cells self renew throughout adulthood and give rise to transit amplifying cells. Transit amplifying cells undergo several cell cycles before committing to differentiation, first into spinous layer keratinocytes, then into granular layer keratinocytes, and finally into corneocytes. Corneocytes lose their nuclei and cytoplasmic organelles, forming flattened squames that provide a physical barrier against the invasion of pathogens and loss of bodily fluids. For a detailed review, please refer to Zijl et al. 2022, and for the single cell transcriptomic and spatial transcriptomic studies that provide a higher resolution view of human interfollicular epidermis, please refer to Cheng et al. 2018, Wang et al. 2020, Aragona et al. 2020, Haensel et al. 2020, Negri et al. 2023, and Ganier et al. 2024).  The cell lineage path of keratinocytes in interfollicular epidermis is depicted through four cell differentiation steps involving five distinct cellular states: keratinocyte stem cells of epidermal basal layer, transit amplifying cells, spinous keratinocytes, granular keratinocytes, and corneocytes. Each differentiation step is regulated by a distinct combination of regulatory molecules present in the microenvironment of differentiating cells.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence15">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence12">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence11">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence14">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence13">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:Evidence rdf:ID="Evidence3">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence5">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence4">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence7">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence6">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep14">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction12" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence9">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence8">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence10">
+</bp:Evidence>
+</rdf:RDF>

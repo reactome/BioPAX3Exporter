@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/2243919#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:PathwayStep rdf:ID="PathwayStep4">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction4" />
+ <bp:stepProcess rdf:resource="#Catalysis1" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep13">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction13" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep5">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction5" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep2">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction2" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep3">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction3" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction13">
+ <bp:evidence rdf:resource="#Evidence14" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of hydroxylysino-5-ketonorleucine cross-links</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction12">
+ <bp:evidence rdf:resource="#Evidence13" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Prolysyl oxidase activation</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep10">
+ <bp:stepProcess rdf:resource="#Catalysis2" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction10" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep11">
+ <bp:stepProcess rdf:resource="#Catalysis3" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction11" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction11">
+ <bp:evidence rdf:resource="#Evidence12" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of hydroxyallysine by LOX</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction10">
+ <bp:evidence rdf:resource="#Evidence11" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Collagen type IV sulfilimine cross-linking by peroxidasin</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep12">
+ <bp:stepProcess rdf:resource="#Catalysis4" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction12" />
+</bp:PathwayStep>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction5">
+ <bp:evidence rdf:resource="#Evidence6" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of dehydro-lysinonorleucine cross-links</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction6">
+ <bp:evidence rdf:resource="#Evidence7" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of hydroxylysyl-pyrrole cross-links</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction3">
+ <bp:evidence rdf:resource="#Evidence4" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of dehydro-hydroxylysino-norleucine cross-links</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction4">
+ <bp:evidence rdf:resource="#Evidence5" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of allysine by LOX</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction9">
+ <bp:evidence rdf:resource="#Evidence10" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of hydroxylysyl-pyridinoline cross-links</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis4">
+ <bp:controlled rdf:resource="#BiochemicalReaction12" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis3">
+ <bp:controlled rdf:resource="#BiochemicalReaction11" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction7">
+ <bp:evidence rdf:resource="#Evidence8" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of lysino-5-ketonorleucine cross-links</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis2">
+ <bp:controlled rdf:resource="#BiochemicalReaction10" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis1">
+ <bp:controlled rdf:resource="#BiochemicalReaction4" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction8">
+ <bp:evidence rdf:resource="#Evidence9" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of histidino-hydroxylysinonorleucine cross-links</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep4" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep13" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep5" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep2" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep3" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep10" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep11" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep12" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep8" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep9" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep6" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep7" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction13" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction12" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction2" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction11" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction10" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction5" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction6" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction3" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction4" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction9" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction7" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction8" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Crosslinking of collagen fibrils</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">After removal of the N- and C-procollagen propeptides, fibrillar collagen molecules aggregate into microfibrillar arrays, stabilized by covalent intermolecular cross-links. These depend on the oxidative deamination of specific lysine or hydroxylysine residues in the telopeptide region by lysyl oxidase (LOX) with the subsequent spontaneous formation of covalent intermolecular cross-links (Pinnell    Martin 1968, Siegel et al. 1970, 1974, Maki 2009, Nishioka et al. 2012). Hydroxylysine is formed intracellularly by lysine hydroxylases (LH). There are different forms of LH responsible for hydroxylation of helical and telopeptide lysines (Royce    Barnes 1985, Knott et al.1997, Takaluoma et al. 2007, Myllyla 2007). The chemistry of the cross-links formed depends on whether lysines or hydroxylysines are present in the telopeptides (Barnes et al. 1974), which depends on the proportion of collagen lysines post-translationally converted to hydroxylysine by LH. The lysine pathway predominates in adult skin, cornea and sclera while the hydroxylysine pathway occurs primarily in bone, cartilage, ligament, tendons, embryonic skin and most connective tissues (Eyre 1987, Eyre    Wu 2005, Eyre et al. 2008). Oxidative deamination of lysine or hydroxylysine residues by LOX generates the allysine and hydroxyallysine aldehydes respectively. These can spontaneously react with either another aldehyde to form an aldol condensation product (intramolecular cross-link), or with an unmodified lysine or hydroxylysine residue to form intermolecular cross-links.  The pathway of cross-linking is regulated primarily by the hydroxylation pattern of telopeptide and triple-helix domain lysine residues. When lysine residues are the source of aldehydes formed by lysyl oxidase the allysine cross-linking pathway leads to the formation of aldimine cross-links (Eyre    Wu 2005). These are stable at physiological conditions but readily cleaved at acid pH or elevated temperature. When hydroxylysine residues are the source of aldehydes formed by lysyl oxidase the hydroxyallysine cross-linking pathway leads to the formation of more stable ketoimine cross-links.   Telopeptide lysine residues can be converted by LOX to allysine, which can react with a helical hydroxylysine residue forming the lysine aldehyde aldimine cross-link dehydro hydroxylysino norleucine (deHHLNL) (Bailey    Peach 1968, Eyre et al. 2008). If the telopeptide residue is hydroxylysine, the hydroxyallysine formed by LOX can react with a helical hydroxylysine forming the Schiff base, which spontaneously undergoes an Amadori rearrangement resulting in the ketoimine cross link hydroxylysino 5 ketonorleucine (HLKNL). This stable cross-link is formed in tissues where telopeptide residues are predominanly hydroxylated, such as foetal bone and cartilage, accounting for the relative insolubility of collagen from these tissues (Bailey et al. 1998). In bone, telopeptide hydroxyallysines can react with the epsilon-amino group of a helical lysine (Robins    Bailey 1975). The resulting Schiff base undergoes Amadori rearrangement to form lysino-hydroxynorleucine (LHNL). An alternative mechanism of maturation of ketoimine cross-links has been reported in cartilage leading to the formation of arginoline (Eyre et al. 2010).   These divalent crosslinks greatly diminish as connective tissues mature, due to further spontaneous reactions (Bailey    Shimokomaki 1971, Robins    Bailey 1973) with neighbouring peptides that result in tri- and tetrafunctional cross-links. In mature tissues collagen cross-links are predominantly trivalent. The most common are pyridinoline or 3-hydroxypyridinium cross-links, namely hydroxylysyl-pyridinoline (HL-Pyr) and  lysyl-pyridinoline (L-Pyr) cross-links (Eyre 1987, Ogawa et al. 1982, Fujimoto et al. 1978). HL-Pyr is formed from three hydroxylysine residues, HLKNL plus a further hydroxyallysine. It predominates in highly hydroxylated collagens such as type II collagen in cartilage. L-Pyr is formed from two hydroxylysines and a lysine, LKNL plus a further hydroxyallysine, found mostly in calcified tissues (Bailey et al. 1998). Trivalent collagen cross-links can also form as pyrroles, either Lysyl-Pyrrole (L-Pyrrole) or hydroxylysyl-pyrrole (HL-Pyrrole), respectively formed when LKNL or HLKNL react with allysine (Scott et al. 1981, Kuypers et al. 1992). A further three-way crosslink can form when DeH-HLNL reacts with histidine to form histidino-hydroxylysinonorleucine (HHL), found in skin and cornea (Yamauchi et al. 1987, 1996). This can react with an additional lysine to form the tetrafunctional cross-link histidinohydroxymerodesmosine (Reiser et al. 1992, Yamauchi et al. 1996).    Another mechanism which could be involved in the cross-linking of collagen IV networks is the sulfilimine bond (Vanacore et al. 2009), catalyzed by peroxidasin, an enzyme found in basement membrane (Bhave 2012).  To improve clarity inter-chain cross-linking is represented here for Collagen type I only. Although the formation of each type of cross-link is represented here as an independent event, the partial and random nature of lysine hydroxylation and subsequent lysyl oxidation means that any combination of these cross-linking events could occur within the same collagen fibril .</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:PathwayStep rdf:ID="PathwayStep8">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction8" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep9">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction9" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep6">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction6" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep7">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction7" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence13">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence12">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence14">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence6">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence5">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence4">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence11">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence3">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence10">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of lysyl-pyrrole cross-links</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
+ <bp:evidence rdf:resource="#Evidence3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of lysyl-pyridinoline cross-links</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence9">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence8">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence7">
+</bp:Evidence>
+</rdf:RDF>

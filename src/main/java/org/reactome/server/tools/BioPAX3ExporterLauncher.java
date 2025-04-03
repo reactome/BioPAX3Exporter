@@ -8,7 +8,17 @@ import org.reactome.server.graph.service.GeneralService;
 import org.reactome.server.graph.service.SchemaService;
 import org.reactome.server.graph.service.SpeciesService;
 import org.reactome.server.graph.utils.ReactomeGraphCore;
-import org.reactome.server.tools.config.GraphQANeo4jConfig;
+import org.biopax.validator.BiopaxIdentifier;
+import org.biopax.validator.api.Validator;
+import org.biopax.validator.api.ValidatorUtils;
+import org.biopax.validator.api.beans.Validation;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.core.io.Resource;
+import java.io.PrintWriter;
+import java.io.IOException;
+
+// import org.reactome.server.tools.config.GraphQANeo4jConfig;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -63,7 +73,17 @@ public class BioPAX3ExporterLauncher {
         if (jsap.messagePrinted()) System.exit(1);
 
         //Initialising ReactomeCore Neo4j configuration
-        ReactomeGraphCore.initialise(config.getString("host"), config.getString("port"), config.getString("user"), config.getString("password"), GraphQANeo4jConfig.class);
+        // ReactomeGraphCore.initialise(config.getString("host"), config.getString("port"), config.getString("user"), config.getString("password"));
+        // Build a valid Bolt URI from host/port
+        String boltUrl = "bolt://" + config.getString("host") + ":" + config.getString("port");
+
+        ReactomeGraphCore.initialise(
+            boltUrl,                      // e.g. "bolt://localhost:7687"
+            config.getString("user"),     // e.g. "neo4j"
+            config.getString("password")  // e.g. "reactome"
+        );
+
+        
 
         GeneralService genericService = ReactomeGraphCore.getService(GeneralService.class);
         DatabaseObjectService databaseObjectService = ReactomeGraphCore.getService(DatabaseObjectService.class);
@@ -77,7 +97,7 @@ public class BioPAX3ExporterLauncher {
             System.err.println("Too many arguments detected. Expected either no pathway arguments or one of -t, -s, -m, -l.");
         }
         else {
-            dbVersion = genericService.getDBVersion();
+            dbVersion = genericService.getDBInfo().getVersion();
 
             switch (outputStatus) {
                 case SINGLE_PATH:
@@ -241,6 +261,15 @@ public class BioPAX3ExporterLauncher {
 //        sbml.createModel();
 //        sbml.toStdOut();
         bp.toFile(out);
+
+        try {
+            // WriteBioPAX3.validateBioPAXFile(out);
+            WriteBioPAX3 writer = new WriteBioPAX3(path, dbVersion); 
+            writer.validateBioPAXFile(out); 
+
+        } catch (Exception e) {
+            System.err.println("Validation failed for " + filename + ": " + e.getMessage());
+        }
     }
 
     private static void outputEvents(List<Event> loe){

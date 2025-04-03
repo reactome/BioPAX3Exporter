@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/2514853#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:Catalysis rdf:ID="Catalysis3">
+ <bp:controlled rdf:resource="#BiochemicalReaction4" />
+</bp:Catalysis>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence3">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence4">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep4">
+ <bp:stepProcess rdf:resource="#Catalysis3" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction4" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence5">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep3">
+ <bp:stepProcess rdf:resource="#Catalysis2" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction3" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep2">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction2" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+ <bp:stepProcess rdf:resource="#Catalysis1" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CK2 phosphorylates condensin I subunits</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis2">
+ <bp:controlled rdf:resource="#BiochemicalReaction3" />
+</bp:Catalysis>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep3" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep2" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep4" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction2" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction3" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction4" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Condensation of Prometaphase Chromosomes</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The condensin I complex is evolutionarily conserved and consists of five subunits: two SMC (structural maintenance of chromosomes) family subunits, SMC2 and SMC4, and three non-SMC subunits, NCAPD2, NCAPH and NCAPG. The stoichiometry of the complex is 1:1:1:1:1 (Hirano and Mitchinson 1994, Hirano et al. 1997, Kimura et al. 2001). SMC2 and SMC4 subunits, shared between condensin I and condensin II, are DNA-dependent ATPases, and condensins are able to introduce positive supercoils into DNA in an ATP-dependent manner (Kimura and Hirano 1997).   Protein levels of condensin subunits are constant during the cell cycle, however condensins are enriched on mitotic chromosomes. Four of the five subunits, SMC4, NCAPD2, NCAPG and NCAPH, are phosphorylated in both mitotic and interphase HeLa cells, but on different sites (Takemoto et al. 2004). CDK1 (CDC2) in complex with CCNB (cyclin B) phosphorylates NCAPD2, NCAPG and NCAPH in mitosis (Kimura et al. 1998, Kimura et al. 2001, Takemoto et al. 2006, Murphy et al. 2008), but other mitotic kinases, such as PLK1 (St-Pierre et al. 2009), and other post-translational modifications, such as acetylation, may also be involved (reviewed by Bazile et al. 2010). Global proteomic analysis of human cell lines has identified N6-acetylation of lysine residues in condensin subunits SMC2, SMC4 and NCAPH (Choudhary et al. 2009). Another high throughput proteomic study showed that condensin I subunits NCAPD2 and NCAPH are phosphorylated upon DNA damage, probably by ATM or ATR kinase (Matsuoka et al. 2007).   As condensin I is cytosolic, it gains access to chromosomes only after the nuclear envelope breakdown at the start of prometaphase (Ono et al. 2004). Condensin I, activated by CDK1-mediated phosphorylation, promotes hypercondensation of chromosomes that were condensed in prophase through the action of condensin II (Hirota et al. 2004). AURKB may also regulate association of condensin I complex with chromatin (Lipp et al. 2007). Protein phosphatase PP2A acts independently of its catalytic activity to target condensin II complex to chromatin, but does not interact with condensin I (Takemoto et al. 2009). Full activation of condensin I requires dephosphorylation of sites modified by CK2 during interphase (Takemoto et al. 2006). Besides being essential for chromosome condensation in mitosis, condensin I may also contribute to cohesin removal from chromosome arms in prometaphase, but the exact mechanism is not known (Hirota et al. 2004).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Catalysis rdf:ID="Catalysis1">
+ <bp:controlled rdf:resource="#BiochemicalReaction1" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
+ <bp:evidence rdf:resource="#Evidence3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Phosphorylated condensin I promotes condensation of prometaphase chromosomes</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction3">
+ <bp:evidence rdf:resource="#Evidence4" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Dephosphorylation of CK2-modified condensin I</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction4">
+ <bp:evidence rdf:resource="#Evidence5" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CDK1 phosphorylates condensin I</bp:displayName>
+</bp:BiochemicalReaction>
+</rdf:RDF>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/69618#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep6" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayComponent rdf:resource="#Pathway2" />
+ <bp:pathwayComponent rdf:resource="#Pathway4" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Mitotic Spindle Checkpoint</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The mitotic checkpoint or spindle assembly checkpoint is an evolutionarily conserved mechanism that ensures that cells with misaligned chromosomes do not exit mitosis and divide to form aneuploid cells. As chromosome attachment to the spindle microtubules is a stochastic process, not all chromosomes achieve alignment at the spindle equator at the same time. It is therefore essential that even a single unaligned chromosome can prevent the onset of anaphase. The ability of the checkpoint to monitor the status of chromosome alignment is achieved by assigning checkpoint proteins to the kinetochore, a macromolecular complex that resides at centromeres of chromosomes that establishes connections with spindle microtubules.  The checkpoint proteins monitor, in an unknown way, the mechanical activities between kinetochore-associated proteins and microtubules.  Defects in mechanical activities at kinetochores activate the resident checkpoint proteins to initiate a signal that is amplified throughout the cell that ultimately prevents the activation of the proteolytic process that is required for sister chromatid separation and the onset of anaphase. Kinetochores of unaligned chromosomes differ from those of aligned chromosomes in two ways. Kinetochores of aligned chromosomes are saturated with between 20 to 30 microtubules. In addition, poleward directed forces exerted at each sister kinetochore generates tension between them. Unaligned kinetochores on the other hand, are not saturated with microtubules and are not under tension. The mitotic checkpoint detects the presence of unattached kinetochores rather than monitoring for the presence of attached kinetochores. Consequently, unattached kinetochores emit an inhibitory signal that inhibits the biochemical events that are required to initiate the onset of anaphase. The mechanism by which this inhibitory signal is generated at unattached kinetochores has not precisely been determined but the signal is generated as a result of the lack of microtubule occupancy and kinetochore tension. A single unattached kinetochore is capable of preventing cells from exiting mitosis. The mitotic checkpoint provides a way for a localized defect to affect the global biochemical status of the cell. In principle, the signal that is generated at an unattached kinetochore diffuses throughout the cell to affect its target.  There are currently two models for how this is achieved.  One model is based on the observation that the Mad2 checkpoint protein binds and is rapidly released from unattached kinetochores. The kinetochore is believed to act as a catalyst that converts Mad2 into an inhibitory state that diffuses throughout the cell upon its release from the  kinetochore. A second model proposes that the signal is amplified by a kinase cascade much like a conventional signal transduction pathway. This kinase cascade is believed to be comprised of the checkpoint kinases, hBUBR1, hBUB1, hMPS1.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence12">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence11">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence10">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep10">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction6" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep11">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction7" />
+</bp:PathwayStep>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:PathwayStep rdf:ID="PathwayStep9">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction5" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep8">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction4" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep7">
+ <bp:stepProcess rdf:resource="#Pathway5" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep6">
+ <bp:stepProcess rdf:resource="#Pathway4" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep5">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction3" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep4">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction2" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep3">
+ <bp:stepProcess rdf:resource="#Pathway3" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep2">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#Pathway2" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
+ <bp:evidence rdf:resource="#Evidence5" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Formation of the MCC complex</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Inactivation of APC/C via CDC20 sequestration</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence9">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence8">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence7">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway3">
+ <bp:pathwayOrder rdf:resource="#PathwayStep5" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep4" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction2" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction3" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence4" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Inactivation of APC/C via direct inhibition of the APC/C complex</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">In the direct inhibition model, the cytosolic Mitotic Checkpoint Complex, consisting of hBUBR1, hBUB3, Cdc20 and Mad2, directly inhibits APC/C by binding to it.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence6">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway2">
+ <bp:pathwayOrder rdf:resource="#PathwayStep3" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep2" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:pathwayComponent rdf:resource="#Pathway3" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Inhibition of the proteolytic activity of APC/C required for the onset of anaphase by mitotic spindle checkpoint components</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The target of the mitotic checkpoint is the Anaphase Promoting Complex/Cyclosome (APC/C) an E3 ubiquitin ligase that targets proteins whose destruction is essential for mitotic exit. Currently, there are two proposed mechanism by which inhibition of the APC/C is achieved. These mechanisms differ depending on the mechanism of signal transduction. The APC/C may be inhibited directly by association with the Mitotic Checkpoint Complex (MCC) or through the sequestration of its activator, Cdc20. </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence5">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence4">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway5">
+ <bp:pathwayOrder rdf:resource="#PathwayStep9" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep10" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep8" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep11" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction7" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction6" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction5" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction4" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence8" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Amplification  of signal from unattached  kinetochores via a MAD2  inhibitory signal</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The signal from unattached kinetochores is amplified through a Mad2 inhibitory signal that is propagated by the binding of Mad1 to the kinetochore, the association of Mad2 with Mad1, the conversion of Mad2 conformation to an inhibitory form through its association with Mad1 and finally the release of the inhibitory form of Mad2 from the kinetochore.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence3">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway4">
+ <bp:pathwayOrder rdf:resource="#PathwayStep7" />
+ <bp:pathwayComponent rdf:resource="#Pathway5" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence7" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Amplification of signal from the kinetochores</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">A single unattached kinetochore is capable of preventing cells from exiting mitosis. The mitotic checkpoint provides a way for  a localized defect to affect the global  biochemical status of the cell. In principle, the signal that is generated at an unattached kinetochore diffuses throughout the cell to affect its target.  There are currently two models for how this is achieved.  One model is based on the observation that the  Mad2 checkpoint protein binds and is rapidly released from unattached kinetochores. The kinetochore is believed to act as a catalyst that converts Mad2  into an inhibitory state that diffuses throughout the cell upon its release from the  kinetochore. A second model proposes that the signal is amplified by a kinase cascade much like a conventional signal transduction pathway. This kinase cascade is believed to be comprised of the checkpoint kinases, hBUBR1, hBUB1, hMPS1.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction7">
+ <bp:evidence rdf:resource="#Evidence12" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Mad1 binds kinetochore</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction6">
+ <bp:evidence rdf:resource="#Evidence11" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MAD2 associates with the Mad1 kinetochore complex</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction5">
+ <bp:evidence rdf:resource="#Evidence10" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MAD2 converted  to an inhibitory state via interaction with Mad1</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction4">
+ <bp:evidence rdf:resource="#Evidence9" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Release of activated MAD2 from kinetochores</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction3">
+ <bp:evidence rdf:resource="#Evidence6" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Binding of the MCC complex to the APC/C complex</bp:displayName>
+</bp:BiochemicalReaction>
+</rdf:RDF>

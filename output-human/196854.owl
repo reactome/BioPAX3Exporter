@@ -1,0 +1,4349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/196854#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:Pathway rdf:ID="Pathway11">
+ <bp:pathwayOrder rdf:resource="#PathwayStep80" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep83" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep81" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep82" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep77" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep78" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep79" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction70" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction72" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction71" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction73" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction67" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction69" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction68" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence77" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Uptake of dietary cobalamins into enterocytes</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The steps of transport of dietary cobalamins through the digestive tract to the distal ileum, leading to its endocytosis are annotated here. The proteins involved in these processes accommodate cobalamins including cyanocobalamin, methylcobalamin, and adenosylcobalamin. (Banerjee et al. 2021; Nielsen et al. 2012; Quadros 2010). This broad specificity is indicated by annotating R-cob(III)alamin (RCbl - CHEBI:140785) as the cargo in all of these processes.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway10">
+ <bp:pathwayOrder rdf:resource="#PathwayStep72" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep73" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep70" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep71" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep65" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep66" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep74" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep75" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep69" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep67" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep68" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction61" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction60" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction63" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction62" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction65" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction64" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction56" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction66" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction58" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction57" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction59" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence65" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Cobalamin (Cbl) metabolism</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The reactions by which adenosylcobalamin (AdoCbl) and methylcobalamin (MeCbl) cofactors are synthesized and regenerated are annotated here (Banerjee et al. 2021).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction198">
+ <bp:evidence rdf:resource="#Evidence222" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ACO1:4Fe-4S isomerises CIT to ISCIT</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction199">
+ <bp:evidence rdf:resource="#Evidence223" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">isocitrate + NADP+ =&gt; 2-oxoglutarate + CO2 + NADPH + H+</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction192">
+ <bp:evidence rdf:resource="#Evidence215" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">COQ7:COQ9 octamer hydroxylates DMQ10H2</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction193">
+ <bp:evidence rdf:resource="#Evidence216" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">COQ4 decarboxylates MHDB</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction190">
+ <bp:evidence rdf:resource="#Evidence213" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">COQ2 ligates all-E-10PrP2 to PHB</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction191">
+ <bp:evidence rdf:resource="#Evidence214" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">COQ3 methylates DHDB</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction196">
+ <bp:evidence rdf:resource="#Evidence220" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Exchange of isocitrate and 2-oxoglutarate across the peroxisomal membrane</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction197">
+ <bp:evidence rdf:resource="#Evidence221" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">isocitrate + NADP+ =&gt; 2-oxoglutarate + CO2 + NADPH + H+</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction194">
+ <bp:evidence rdf:resource="#Evidence217" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Unknown enzyme(s) process 4-HMA to 4-Hbz</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction195">
+ <bp:evidence rdf:resource="#Evidence218" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HPDL dioxygenates HPPA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction5">
+ <bp:evidence rdf:resource="#Evidence8" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">THTPA:Mg2+ hydrolyzes ThTP to TDP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction4">
+ <bp:evidence rdf:resource="#Evidence7" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">SLC19A2/3 transport extracellular THMN to cytosol</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction7">
+ <bp:evidence rdf:resource="#Evidence11" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">2xPNPO:2xFMN oxidizes PXAP to PXLP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction6">
+ <bp:evidence rdf:resource="#Evidence10" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">2xPDKX:2xZn2+ phosphorylates PDX</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence4" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">TDPK phosphorylates ThDP to ThTP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction3">
+ <bp:evidence rdf:resource="#Evidence6" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">SLC25A19 transports ThDP from cytosol to mitochondrial matrix</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
+ <bp:evidence rdf:resource="#Evidence5" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">2xTPK1:Mg2+ phosphorylates THMN</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction189">
+ <bp:evidence rdf:resource="#Evidence212" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Unknown enzyme hydroxylates DMPhOH</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction187">
+ <bp:evidence rdf:resource="#Evidence210" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">COQ5 methylates MDMQ10H2</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction188">
+ <bp:evidence rdf:resource="#Evidence211" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PDSS1,2 ligates FPP to IPPP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction9">
+ <bp:evidence rdf:resource="#Evidence13" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">2xPNPO:2xFMN oxidizes PDXP to PXLP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction8">
+ <bp:evidence rdf:resource="#Evidence12" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">AOX1 oxidises PXL to PDXate</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction181">
+ <bp:evidence rdf:resource="#Evidence202" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">AKRs reduce RBP2:atRAL to RBP2:atROL</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction182">
+ <bp:evidence rdf:resource="#Evidence205" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">mito-STARD7 transports Q10 to outer mitochondrial membrane</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction180">
+ <bp:evidence rdf:resource="#Evidence201" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LRAT esterifies RBP2:atROL and FACYLs to atREs</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction185">
+ <bp:evidence rdf:resource="#Evidence208" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">COQ6 hydroxylates DHB</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction186">
+ <bp:evidence rdf:resource="#Evidence209" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Unknown dehydrogenase oxidizes 4-HBz</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction183">
+ <bp:evidence rdf:resource="#Evidence206" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">STARD7 transports Q10 to plasma membrane</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction184">
+ <bp:evidence rdf:resource="#Evidence207" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">COQ3 methylates DeMQ10H2</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction178">
+ <bp:evidence rdf:resource="#Evidence199" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NREH hydrolyses atREs (HSPG:apoE) to atROL and FAs</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction179">
+ <bp:evidence rdf:resource="#Evidence200" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">atROL binds RBP1 (parenchymal cell)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction176">
+ <bp:evidence rdf:resource="#Evidence197" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PNLIP:CLPS hydrolyses RPALM to atROL and PALM</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction177">
+ <bp:evidence rdf:resource="#Evidence198" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Nascent CMs transform into mature CMs</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction170">
+ <bp:evidence rdf:resource="#Evidence191" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">BCMO1:Fe2+ cleaves betaC to atRAL</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction171">
+ <bp:evidence rdf:resource="#Evidence192" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">APOM binds retinoids</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction174">
+ <bp:evidence rdf:resource="#Evidence195" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PLB1 hydrolyses RPALM to atROL</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction175">
+ <bp:evidence rdf:resource="#Evidence196" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Cytosolic CMs translocate to extracellular region</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction172">
+ <bp:evidence rdf:resource="#Evidence193" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">atROL binds to RBP2</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction173">
+ <bp:evidence rdf:resource="#Evidence194" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">BCO2:Fe2+ cleaves betaC to APO10al and bION</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction167">
+ <bp:evidence rdf:resource="#Evidence188" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Parenchymal atROL translocates to HSCs</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction168">
+ <bp:evidence rdf:resource="#Evidence189" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LDLR transports extracellular CR:atREs to cytosol </bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction165">
+ <bp:evidence rdf:resource="#Evidence186" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HSC cytosolic atROL translocates to extracellular region</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction166">
+ <bp:evidence rdf:resource="#Evidence187" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">atREs binds to nascent CM</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction169">
+ <bp:evidence rdf:resource="#Evidence190" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LPL hydrolyses TGs from mature CMs</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction160">
+ <bp:evidence rdf:resource="#Evidence181" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NREH hydrolyses atREs to atROL and FAs</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction163">
+ <bp:evidence rdf:resource="#Evidence184" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CR:atREs binds apoE and HSPG</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction164">
+ <bp:evidence rdf:resource="#Evidence185" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LRAT esterifies RBP1:atROL and FACYLs to atREs</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction161">
+ <bp:evidence rdf:resource="#Evidence182" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">atROL binds RBP1</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction162">
+ <bp:evidence rdf:resource="#Evidence183" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">atRAL binds to RBP2</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway13">
+ <bp:pathwayOrder rdf:resource="#PathwayStep120" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep121" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep122" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep123" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep124" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep125" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep117" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep118" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep119" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction112" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction113" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction110" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction111" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction105" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction106" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction109" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction107" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction108" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence117" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Vitamin C (ascorbate) metabolism</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Vitamin C (ascorbate) is an antioxidant and a cofactor in reactions catalyzed by Cu+-dependent monooxygenases and Fe++-dependent dioxygenases. Many mammals can synthesize ascorbate de novo; humans and other primates cannot due to an evolutionarily recent mutation in the gene catalyzing the last step of the biosynthetic pathway. Reactions annotated here mediate the uptake of ascorbate and its fully oxidized form, dehydroascorbate (DHA) by cells, and the reduction of DHA and monodehydroascorbate to regenerate ascorbate (Linster and Van Schaftingen 2007).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction156">
+ <bp:evidence rdf:resource="#Evidence177" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RDH11 reduces RBP2:atRAL to RBP2:atROL</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence200">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway12">
+ <bp:pathwayOrder rdf:resource="#PathwayStep110" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep111" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep112" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep113" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep114" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep115" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep90" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep91" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep94" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep95" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep92" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep93" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep98" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep99" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep96" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep97" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep100" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep101" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep102" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep103" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep104" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep105" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep106" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep107" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep108" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep109" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep87" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep88" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep85" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep86" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep89" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction92" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction91" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction94" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction93" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction74" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction96" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction95" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction76" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction98" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction75" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction97" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction78" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction77" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction99" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction79" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction90" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction81" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction101" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction80" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction102" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction83" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction82" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction100" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction85" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction84" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction87" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction103" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction86" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction104" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction89" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction88" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence85" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Metabolism of folate and pterines</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Folates are essential cofactors that provide one-carbon moieties in various states of reduction for biosynthetic reactions. Processes annotated here include transport reactions by which folates are taken up by cells and moved intracellularly, folate conjugation with glutamate (required for folate retention within a cell), and some of the key reactions in the generation of reduced folates and one-carbon derivatives of folate.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction157">
+ <bp:evidence rdf:resource="#Evidence178" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RETSAT reduces atROL to at-13,14-dhROL</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence201">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway15">
+ <bp:pathwayOrder rdf:resource="#PathwayStep130" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep131" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep132" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep133" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep134" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep135" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep136" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction121" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction122" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction116" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction117" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction118" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction119" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction120" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence130" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Coenzyme A biosynthesis</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Coenzyme A (CoA) is a ubiquitous cofactor that functions as an acyl group carrier in diverse processes including fatty acid metabolism and the TCA cycle (Lipmann 1953). It is synthesized from the vitamin pantothenate in a sequence of five reactions (Daugherty et al. 2002; Leonardi et al. 2005; Robishaw and Neely 1985). These reactions all occur in the cytosol or the mitochondrial intermembrane space (Leonardi et al. 2005). A recently described transport protein appears to mediate the uptake of Coenzyme A into the mitochondrial matrix (Prohl et al. 2001).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction154">
+ <bp:evidence rdf:resource="#Evidence175" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">A REH hydrolses atREs to atROL and FAs</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence202">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway14">
+ <bp:pathwayOrder rdf:resource="#PathwayStep140" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep141" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep142" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep143" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep137" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep127" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep138" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep128" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep139" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep129" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction123" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction124" />
+ <bp:pathwayComponent rdf:resource="#Pathway15" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction127" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction128" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction114" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction125" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction115" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction126" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction129" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence127" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Vitamin B5 (pantothenate) metabolism</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Vitamin B5 ((R)-pantothenate, PanK), is an essential precursor for the synthesis of the metabolic cofactor Coenzyme A (CoA-SH) (Robishaw and Neely 1985) and is the prosthetic group of acyl carrier protein (ACP) (Joshi et al. 2003). The name pantothenate is from the Greek &#8220;pantothen&#8221;, &quot;from everywhere&quot;. Both pantothenate and CoA-SH are found in nearly every foodstuff and in the gut microbiome. CoA-SH itself is readily degraded in the gut and in extracellular fluids within the body. No processes are known to transport it across plasma membranes. Instead, individual cells take up PanK, which is stable in the extracellular environment, to synthesize CoA-SH for their own use. Within a cell, distinct groups of CoA-SH-requiring reactions occur in the cytosol, mitochondrial matrix, and peroxisomes, and controlling CoA pool size in each location plays a major role in regulating and integrating cellular metabolic processes. Control is achieved by selective degradation, synthesis, and transport of CoA within a cell (Cavestro et al. 2023, Naquet et al. 2020). The reactions annotated here provide an incomplete description of these processes, as key steps remain incompletely understood.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction155">
+ <bp:evidence rdf:resource="#Evidence176" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RBP4:atROL binds TTR</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence203">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway17">
+ <bp:pathwayOrder rdf:resource="#PathwayStep160" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep161" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep151" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep162" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep152" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep163" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep153" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep154" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep155" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep156" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep157" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep158" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep159" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction145" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction135" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction146" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction143" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction144" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction138" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction139" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction136" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction147" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction137" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction141" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction142" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction140" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence151" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Biotin transport and metabolism</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Biotin (Btn) is an essential cofactor in a variety of carboxylation reactions (Zempleni et al. 2009). Humans cannot synthesize Btn but it is abundant in the human diet and can be taken up from the intestinal lumen by the SLC5A6 transporter. Its uptake, intracellular translocation, covalent conjugation to apoenzymes, and salvage are described here.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence204">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway16">
+ <bp:pathwayOrder rdf:resource="#PathwayStep145" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep146" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep147" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep148" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep149" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction134" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction132" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction133" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction130" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction131" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence145" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Vitamin B2 (riboflavin) metabolism</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Riboflavin (vitamin B2, E101) is an essential component for the cofactors FAD (flavin-adenine dinucleotide) and FMN (flavin mononucleotide). Together with NAD+ and NADP+, FAD and FMN are important hydrogen carriers and take part in more than 100 redox reactions involved in energy metabolism. Riboflavin is present in many vegetables and meat and during digestion, various flavoproteins from food are degraded and riboflavin is resorbed. The major degradation and excretion product in humans is riboflavin (Rivlin 1970).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence205">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway19">
+ <bp:pathwayOrder rdf:resource="#PathwayStep166" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep167" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep168" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep169" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction149" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction148" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction150" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction151" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence166" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Metabolism of vitamin K</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Vitamin K is a required co-factor in a single metabolic reaction, the gamma-carboxylation of glutamate residues of proteins catalyzed by GGCX (gamma-carboxyglutamyl carboxylase). Substrates of GGCX include blood clotting factors, osteocalcin (OCN), and growth arrest-specific protein 6 (GAS6) (Brenner et al. 1998). Vitamin K is derived from green leafy vegetables as phylloquinone and is synthesized by gut flora as menaquinone-7. These molecules are taken up by intestinal enterocytes with other lipids, packaged into chylomicrons, and delivered via the lymphatic and blood circulation to tissues of the body, notably hepatocytes and osteoblasts, via processes of lipoprotein trafficking (Shearer    Newman 2014; Shearer et al. 2012) described elsewhere in Reactome. In these tissues, menadiol (reduced vitamin K3) reacts with geranylgeranyl pyrophosphate to form MK4 (vitamin K hydroquinone), the form of the vitamin required as cofactor for gamma-carboxylation of protein glutamate residues (Hirota et al. 2013). The gamma-carboxylation reactions, annotated elsewhere in Reactome as a part of protein metabolism, convert MK4 to its epoxide form, which is inactive as a cofactor. Two related enzymes, VKORC1 and VKORCL1, can each catalyze the reduction of MK4 epoxide to active MK4. VKORC1 activity is essential for normal operation of the blood clotting cascade and for osteocalcin function (Ferron et al. 2015). A physiological function for VKORCL1 has not yet been definitively established (Hammed et al. 2013; Tie et al. 2014).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction158">
+ <bp:evidence rdf:resource="#Evidence179" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RBP4 binds atROL</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence206">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway18">
+ <bp:pathwayOrder rdf:resource="#PathwayStep173" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep165" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep170" />
+ <bp:pathwayComponent rdf:resource="#Pathway19" />
+ <bp:pathwayComponent rdf:resource="#Pathway20" />
+ <bp:pathwayComponent rdf:resource="#Pathway21" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence165" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Metabolism of fat-soluble vitamins</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Vitamins A, D, E, and K are classified as fat-soluble. Metabolic pathways by which dietary precursors of vitamins A (Harrison 2005) and K (Shearer et al. 2012) are converted to active forms are annotated here. The conversion of 7-dehydrocholesterol is converted to active vitamin D (Dusso et al. 2005) is annotated as part of metabolism of steroids. (Vitamin E (tocopherol) is available in active form from the diet.)</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction159">
+ <bp:evidence rdf:resource="#Evidence180" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LRPs transport extracellular CR:atREs:HSPG:apoE to cytosol</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence207">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence208">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence209">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction152">
+ <bp:evidence rdf:resource="#Evidence172" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">TTPA binds alpha-TOH</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction153">
+ <bp:evidence rdf:resource="#Evidence173" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">TTPA transports alpha-TOH from lysosomal membrane to plasma membrane</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction150">
+ <bp:evidence rdf:resource="#Evidence169" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">UBIA1D prenylates menadione to form MK4 (vitamin K hydroquinone)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction151">
+ <bp:evidence rdf:resource="#Evidence170" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">VKORC1L1 reduces vitamin K epoxide to MK4 (vitamin K hydroquinone)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway9">
+ <bp:pathwayOrder rdf:resource="#PathwayStep61" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep62" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep60" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep55" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep63" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep58" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep59" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep56" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep57" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction50" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction52" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction51" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction54" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction53" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction55" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction47" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction49" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction48" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence55" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Transport of RCbl within the body</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The steps of transport of cobalamins (RCbl) from the enterocyte to the cells in which it will function as a cofactor, together with its reuptake in the renal tubule, are annotated here. While methylcobalamin is the predominant cobalamin in the blood (Chu et al. 1993), other cobalamins including cyanocobalamin and adenosylcobalamin are also present and the proteins involved in these processes accommodate all of them (Banerjee et al. 2021; Nielsen et al. 2012; Quadros 2010). This broad specificity is indicated by annotating R-cob(III)alamin (RCbl - CHEBI:140785) as the cargo in all of these processes.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway8">
+ <bp:pathwayOrder rdf:resource="#PathwayStep54" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep76" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep64" />
+ <bp:pathwayComponent rdf:resource="#Pathway9" />
+ <bp:pathwayComponent rdf:resource="#Pathway11" />
+ <bp:pathwayComponent rdf:resource="#Pathway10" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence54" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Cobalamin (Cbl, vitamin B12) transport and metabolism</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Vitamin B 12  (cobalamin) is a water soluble vitamin, consisting of a planar corrin ring coordinating with a cobalt atom through four nitrogen atoms. A 5,6 dimethylbenzamidizole base coordinates with the cobalt atom in the lower axial position. Groups that can coordinate with the cobalt atom in the upper axial position include methyl (methylcobalamin, MetCbl), adenosyl (adenosylcobalamin, AdoCbl) and cyano (cyanocobalamin (CNCbl)). Only bacteria and archaea synthesise cobalamin so humans need a dietary intake to prevent deficiency. Food derived from animals provides cobalamins (RCbl) including MeCbl and AdoCbl. CNCbl, a semi synthetic form of the vitamin produced from bacterial hydroxocobalamin is provided by many pharmaceuticals, supplements, and food additives. Cbl derivatives function as cofactors in two reactions, AdoCbl in the conversion of homocysteine to methionine and MetCbl in the conversion of L-methylmalonyl CoA to succinyl CoA. Both reactions are essential for normal human function, however, and defects in the steps by which Cbl or CNCbl is taken up from the diet, transported to metabolically active cells, and transformed to AdoCbl and MeCbl are associated with severe defects in blood formation and neural function (Banerjee et al. 2021, Froese    Gravel 2010, Green 2010, Nielsen et al. 2012, Quadros 2010; Seetharam 1999). The overall process of Cbl utilization is presented here in three parts: its uptake from the diet into gut enterocytes, its release into the blood, circulation within the body (including renal re-uptake), and delivery to the cells where it is used, and its metabolism in those cells to generate AdoCbl and MeCbl. </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway7">
+ <bp:pathwayOrder rdf:resource="#PathwayStep38" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep39" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep40" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep43" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep44" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep41" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep42" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep36" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep37" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep34" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep45" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep35" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction30" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction32" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction31" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction34" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction33" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction36" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction35" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction38" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction37" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction29" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction28" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction39" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence34" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Nicotinamide salvaging</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Nicotinamide (NAM) levels are modulated by the action of three enzymes involved in nicotinamide salvaging. They are nicotinamide deaminase, nicotinamide phosphoribosyltransferase and nicotinate phosphoribosyltransferase. These enzymes are poorly characterized in humans, depsite their importance in NAM utilization (Magni et al. 2004). Although not a salvage reaction, NAM levels can also be regulated by nicotinamide N-methyltransferase (NNMT), a potential regulator of diet-induced obesity (Kraus et al. 2014).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway2">
+ <bp:pathwayOrder rdf:resource="#PathwayStep150" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep8" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep84" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep144" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep2" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep22" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep126" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep53" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep116" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep15" />
+ <bp:pathwayComponent rdf:resource="#Pathway13" />
+ <bp:pathwayComponent rdf:resource="#Pathway12" />
+ <bp:pathwayComponent rdf:resource="#Pathway8" />
+ <bp:pathwayComponent rdf:resource="#Pathway14" />
+ <bp:pathwayComponent rdf:resource="#Pathway17" />
+ <bp:pathwayComponent rdf:resource="#Pathway16" />
+ <bp:pathwayComponent rdf:resource="#Pathway6" />
+ <bp:pathwayComponent rdf:resource="#Pathway5" />
+ <bp:pathwayComponent rdf:resource="#Pathway4" />
+ <bp:pathwayComponent rdf:resource="#Pathway3" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Metabolism of water-soluble vitamins and cofactors</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Vitamins are a diverse group of organic compounds, required in small amounts in the diet. They have distinct biochemical roles, often as coenzymes, and are either not synthesized or synthesized only in limited amounts by human cells. Vitamins are classified according to their solubility, either fat-soluble or water-soluble. The physiological processes dependent on vitamin-requiring reactions include many aspects of intermediary metabolism, vision, bone formation, and blood coagulation, and vitamin deficiencies are associated with a correspondingly diverse and severe group of diseases. Water-soluble vitamins include ascorbate (vitamin C) and the members of the B group: thiamin (vitamin B1), riboflavin (B2), niacin (B3), pantothenate (B5), pyridoxine (B6), biotin (B7), folate (B9), and cobalamin (B12). Metabolic processes annotated here include the synthesis of thiamin pyrophosphate (TPP) from thiamin (B1), the synthesis of FMN and FAD from riboflavin (B2), the synthesis of nicotinic acid (niacin - B3) from tryptophan, the synthesis of Coenzyme A from pantothenate (B5), features of the metabolism of folate (B9), the uptake, transport, and metabolism of cobalamin (B12), and molybdenum cofactor biosynthesis.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep164" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep202" />
+ <bp:pathwayComponent rdf:resource="#Pathway18" />
+ <bp:pathwayComponent rdf:resource="#Pathway2" />
+ <bp:pathwayComponent rdf:resource="#Pathway22" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Metabolism of vitamins and cofactors</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Vitamins are a diverse group of organic compounds, classified according to their solubility, either fat-soluble or water-soluble, that are either not synthesized or synthesized only in limited amounts by human cells. They are required in small amounts in the diet and have distinct biochemical roles, often as coenzymes (cofactors). The physiological processes dependent on vitamin-requiring reactions include many aspects of intermediary metabolism, vision, bone formation, and blood coagulation, and vitamin deficiencies are associated with a correspondingly diverse and severe group of diseases. Metabolic pathways for water-soluble B group and C vitamins, and for fat-soluble vitamins A, D and K are annotated in Reactome, covering processes that convert dietary forms of these molecules into active forms, and that regenerate active forms of vitamin cofactors consumed in other metabolic processes.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway6">
+ <bp:pathwayOrder rdf:resource="#PathwayStep29" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep27" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep49" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep28" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep50" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep51" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep32" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep33" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep30" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep52" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep31" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep25" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep47" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep26" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep48" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep23" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep24" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep46" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction41" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction40" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction21" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction43" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction20" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction42" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction23" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction45" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction22" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction44" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction25" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction24" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction46" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction27" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction26" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction18" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction19" />
+ <bp:pathwayComponent rdf:resource="#Pathway7" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence23" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Nicotinate metabolism</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Nicotinate (niacin) and nicotinamide are precursors of the coenzymes nicotinamide-adenine dinucleotide (NAD+) and nicotinamide-adenine dinucleotide phosphate (NADP+). When NAD+ and NADP+ are interchanged in a reaction with their reduced forms, NADH and NADPH respectively, they are important cofactors in several hundred redox reactions. Nicotinate is synthesized from 2-amino-3-carboxymuconate semialdehyde, an intermediate in the catabolism of the essential amino acid tryptophan (Magni et al. 2004).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway20">
+ <bp:pathwayOrder rdf:resource="#PathwayStep171" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep172" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction152" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction153" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence171" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Vitamin E transport</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Vitamins A, D, E and K are lipophilic compounds, the so-called fat-soluble vitamins. Because of their lipophilicity, fat-soluble vitamins are solubilised and transported by intracellular carrier proteins to exert their actions. Alpha-tocopherol, the main form of vitamin E found in the body, is transported by alpha-tocopherol transfer protein (TTPA) in hepatic cells (Kono    Arai 2015, Schmolz et al. 2016).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway5">
+ <bp:pathwayOrder rdf:resource="#PathwayStep18" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep19" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep16" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep17" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep21" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep20" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction12" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction14" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction13" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction16" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction15" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction17" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence16" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Molybdenum cofactor biosynthesis</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Molybdenum cofactor (MoCo) is needed by three enzymes in humans: sulfite oxidase, xanthine oxidase and aldehyde oxidase. The pathway of its synthesis is so conserved that plants and bacteria can readily use human enzymes. Bacteria, however, diverge after the first three steps from this path and their final MoCo differs from that of the eukaryotes. Plants and animals have also developed a refinement of their MoCo which is needed for the function of their xanthine and aldehyde oxidases. This means, in humans we find sulfurated instead of desulfurated molybdenum cofactor on these two enzymes (Schwarz 2005; Schwarz, Mendel, Ribbe 2009).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway4">
+ <bp:pathwayOrder rdf:resource="#PathwayStep9" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep10" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep11" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep14" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep12" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep13" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction9" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction8" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction10" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction11" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction7" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction6" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence9" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Vitamin B6 activation to pyridoxal phosphate</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Animals cannot synthesize pyridoxal 5&apos;-phosphate (PLP) which is a ligand in aminotransferases and other enzymes. PLP&apos;s accessible derivatives pyridoxine, pyridoxal, and pyridoxamine are traditionally called vitamins B6. They are taken up nutritionally from bacteria and plants, but also created from PLP in the body. The pathways used to recycle PLP from these three compounds can therefore be called vitamin B6 activation as well as PLP salvage. Because of the close similarity of the molecules, only two enzymes are needed for the task (McCormick    Chen, 1999).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway22">
+ <bp:pathwayOrder rdf:resource="#PathwayStep223" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep203" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep218" />
+ <bp:pathwayComponent rdf:resource="#Pathway24" />
+ <bp:pathwayComponent rdf:resource="#Pathway23" />
+ <bp:pathwayComponent rdf:resource="#Pathway25" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence203" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Metabolism of cofactors</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Many proteins depend for their activity on cofactors, associated ions and small molecules. This module contains annotations of processes involved in the synthesis of cofactors, either de novo or from essential molecules consumed in the diet (vitamins), as well as regeneration of active forms of cofactors (Lipmann 1984).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway3">
+ <bp:pathwayOrder rdf:resource="#PathwayStep7" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep5" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep6" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep3" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep4" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction5" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction4" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction3" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction2" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Vitamin B1 (thiamin) metabolism</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Vitamin B1 (thiamin) is found naturally in certain foodstuffs such as green peas, spinach, liver, bananas, whole grains and legumes. Human diseases associated with thiamin deficiency include beriberi, due to a thiamin-deficient diet, TMRA, due to defects in the SLC19A2 transport protein, and Wernicke-Korsakoff Syndrome, associated with thiamin deficiency in alcoholism (Haas 1988). Thiamin is water-soluble so is not stored in the body. When pyrophosphorylated, thiamin is converted into the coenzyme thiamin pyrophosphate (ThPP, codecarboxylase) which plays an essential role in oxidative decarboxylation and group transfer reactions.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway21">
+ <bp:pathwayOrder rdf:resource="#PathwayStep193" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep194" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep195" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep174" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep196" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep175" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep197" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep176" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep198" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep177" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep199" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep178" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep179" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep180" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep181" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep182" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep183" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep184" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep185" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep186" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep187" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep188" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep189" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep200" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep201" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep190" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep191" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep192" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction156" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction178" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction157" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction179" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction154" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction176" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction155" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction177" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction158" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction159" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction170" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction171" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction174" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction175" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction172" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction173" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction167" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction168" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction165" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction166" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction169" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction181" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction160" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction180" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction163" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction164" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction161" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction162" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence174" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Retinoid metabolism and transport</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Vitamin A (all-trans-retinol) must be taken up, either as carotenes from plants, or as retinyl esters from animal food. The most prominent carotenes are alpha-carotene, lycopene, lutein, beta-cryptoxanthine, and especially beta-carotene. After uptake they are mostly broken down to retinal. Retinyl esters are hydrolysed like other fats. In enterocytes, retinoids bind to retinol-binding protein (RBP). Transport from enterocytes to the liver happens via chylomicrons (Harrison    Hussain 2001, Harrison 2005).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction145">
+ <bp:evidence rdf:resource="#Evidence162" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HLCS biotinylates ACACB</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway24">
+ <bp:pathwayOrder rdf:resource="#PathwayStep220" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep221" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep222" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep219" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction198" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction199" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction196" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction197" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence219" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NADPH regeneration</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The conversion of isocitrate to 2-oxoglutarate (alpha-ketoglutarate) with the concomitant synthesis of NADPH from NADP+ is thought to play a significant role in supplying NADPH for other reactions in both the cytosol and the peroxisome (Geisbrecht and Gould 1999). The activity of H6PD (Hexose-6-phosphate dehydrogenase) is thought to play a role in maintaining NADP+ : NADPH balance within the endoplasmic reticulum (Zielinska et al. 2011).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction146">
+ <bp:evidence rdf:resource="#Evidence163" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Extracellular BTD hydrolyses BCTN</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway23">
+ <bp:pathwayOrder rdf:resource="#PathwayStep210" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep211" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep212" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep213" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep214" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep204" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep215" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep205" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep216" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep206" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep217" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep207" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep208" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep209" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction189" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction187" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction188" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction192" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction182" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction193" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction190" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction191" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction185" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction186" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction183" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction194" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction184" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction195" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence204" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Ubiquinol biosynthesis</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The length of the polyisoprenoid chain of ubiquinone, aka coenzyme Q (CoQ), varies depending on the species involved: it is 6 in budding yeast, Saccharomyces cerevisiae, (CoQ6) and 10 in humans (CoQ10). Most ubiquinone is naturally reduced to ubiquinol (CoQ10H2 in humans), and this form dominates in human tissues. It functions as a ubiquitous coenzyme in redox reactions, and has a central role in the electron transport chain of the inner mitochondrial membrane.to shuttle electrons from complexes I and II to complex III. It also acts as a cofactor for biosynthetic and catabolic reactions, detoxifies damaging lipid species, and engages in cellular signaling and oxygen sensing. In eukaryotes, ubiquinones/ubiquinols are also found in other membranes such as the endoplasmic reticulum, Golgi vesicles, lysosomes, peroxisomes and the plasma membrane (reviewed in Guerra    Pagliarini, 2023).  Ubiquinol/ubiquinone is synthesized in the following way. Initially, mitochondrial 4-hydroxyphenylpyruvate dioxygenase-like protein (HPDL) processes 4-hydroxphenylpyruvate (HPP, HPPA) to (S)-4-hydroxymandelate (4-HMA). HPDL defects lead to CoQ10 deficiency. The HPDL product 4-HMA is a precursor for the synthesis of 4-hydroxybenzoate (PHB), from which the CoQ10 head group is derived (Banh et al., 2021). Because HPDL is a mitochondrial protein, cytosolic HPP from tyrosine catabolism must either be imported by a yet unknown transport mechanism or mitochondrial HPP could be the product of an unknown mitochondrial reaction (Husain et al., 2020; reviewed in Staiano et al., 2023). A polyprenyl diphosphate synthase (PDSS1-2) assembles the polyisoprenoid tail. Next, 4-hydroxybenzoate polyprenyltransferase (COQ2) catalyzes the formation of the covalent linkage between PHB and the polyisoprenoid tail to produce 4-hydroxy-3-polyprenyl benzoic acid intermediate (DHB, 3-decaprenyl-4-hydroxybenzoic acid in humans). Modifications of the aromatic ring follow and involve an oxidative decarboxylation, two hydroxylations, two O-methylations, one C-methylation. This series of reactions, which precise order is not fully established, especially regarding the oxidative decarboxylation step (Pelosi et al., 2024; Nicoll et al., 2024), yield the fully substituted hydroquinone, ubiquinol (reviewed in Guerra    Pagliarini, 2023).   Homologs of the core enzymes COQ3, COQ4, COQ5, COQ6, COQ7, and COQ9 have been shown to form a membrane-localized multienzyme complex (&quot;COQ synthome&quot;) in yeast (He et al., 2014). There is some evidence of such a complex, called complex Q, in humans (Floyd et al., 2016). A complex was reconstituted in vitro with ancestral versions of COQ3-7 and COQ9, and was able to convert a short chain analog of DHB (4-Hydroxy-3-(3-methylbut-2-en-1-yl)benzoic acid) into CoQ1 (Nicoll et al., 2024). COQ8A and COQ8B proteins may contribute to the formation and functionality of this complex, as they can bind to most core enzymes (Floyd et al., 2016), and as COQ8B increased the in vitro activity of COQ6 via phosphorylation of COQ3 (Nicoll et al., 2024)..  Parts of CoQ10 synthesis may also occur in the Golgi and endoplasmic reticulum membranes, adding to the cellular membrane CoQ10 pool. The relevance of such processes seems minor (Kal&#233;n et al., 1990; Staiano et al., 2023).The precise function of two other genes, COQ10A and COQ10B, which appear to be quinone-binding proteins, is still under investigation. Most of the time, CoQ10 is transported out of the mitochondrion and to the plasma membrane by isoforms of the STARD7 lipid carrier (reviewed in Guile et al., 2023).  CoQ10 deficiency, which can result from reduced activity of any biosynthesis core enzymes or the COQ8A, and COQ8B proteins, has significant implications. It is associated with several inherited metabolic disorders, the phenotypes of which are extremely heterogeneous. These disorders range from fatal neonatal presentations with multisystem involvement to adult-onset isolated myopathy. However, in many cases, the symptoms can be ameliorated by nutritional supplementation with CoQ10 (reviewed in Quinzii et al., 2017; Staiano et al., 2023).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction143">
+ <bp:evidence rdf:resource="#Evidence160" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">An unknown protease degrades hCBXs</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction144">
+ <bp:evidence rdf:resource="#Evidence161" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">An unknown protease degrades ACACA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway25">
+ <bp:pathwayOrder rdf:resource="#PathwayStep230" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep231" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep232" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep233" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep234" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep224" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep235" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep225" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep236" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep226" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep237" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep227" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep238" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep228" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep239" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep229" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction200" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction211" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction201" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction212" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction210" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction204" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction215" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction205" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction202" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction213" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction203" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction214" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction208" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction209" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction206" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction207" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence224" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Tetrahydrobiopterin (BH4) synthesis, recycling, salvage and regulation</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Tetrahydrobiopterin (BH4) is an essential co-factor for the aromatic amino acid hydroxylases and glycerol ether monooxygenase and it regulates nitric oxide synthase (NOS) activity. Inherited BH4 deficiency leads to hyperphenylalaninemia, and dopamine and neurotransmitter deficiency in the brain. BH4 maintains enzymatic coupling to L-arginine oxidation to produce NO. Oxidation of BH4 to BH2 results in NOS uncoupling, resulting in superoxide (O2.-) formation rather than NO. Superoxide rapidly reacts with NO to produce peroxynitrite which can further uncouple NOS. These reactive oxygen species (superoxide and peroxynitrite) can contribute to increased oxidative stress in the endothelium leading to atherosclerosis and hypertension (Thony et al. 2000, Crabtree and Channon 2011,Schulz et al. 2008, Schmidt and Alp 2007).  The synthesis, recycling and effects of BH4 are shown here. Three enzymes are required for the de novo biosynthesis of BH4 and two enzymes for the recycling of BH4.</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction149">
+ <bp:evidence rdf:resource="#Evidence168" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">VKORC1 reduces vitamin K epoxide to MK4 (vitamin K hydroquinone)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction147">
+ <bp:evidence rdf:resource="#Evidence164" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HLCS biotinylates PC:Mn2+</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction148">
+ <bp:evidence rdf:resource="#Evidence167" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">VKORC1 inhibitors binds VKORC1 dimer</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction141">
+ <bp:evidence rdf:resource="#Evidence158" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HLCS biotinylates 6xMCCC1:6xMCCC2</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction142">
+ <bp:evidence rdf:resource="#Evidence159" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HLCS biotinylates 6x(PCCA:PCCB)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction140">
+ <bp:evidence rdf:resource="#Evidence157" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Mitochondrial BTD hydrolyses BCTN</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction134">
+ <bp:evidence rdf:resource="#Evidence150" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">FLAD1 phosphorylates FMN</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction135">
+ <bp:evidence rdf:resource="#Evidence152" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">BCTN translocates to extracellular region</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction132">
+ <bp:evidence rdf:resource="#Evidence148" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RFK:Mg2+ phosphorylates RIB</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction133">
+ <bp:evidence rdf:resource="#Evidence149" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">2xTRAP hydrolyzes FMN to RIB</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction138">
+ <bp:evidence rdf:resource="#Evidence155" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">An unknown protease degrades ACACB</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction139">
+ <bp:evidence rdf:resource="#Evidence156" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">SLC5A6 cotransports extracellular Btn and 2xNa+ to cytosol</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction136">
+ <bp:evidence rdf:resource="#Evidence153" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HLCS biotinylates ACACA:Mn2+</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction137">
+ <bp:evidence rdf:resource="#Evidence154" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Cytoslic carboxylases translocate to mitochondrial matrix</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction130">
+ <bp:evidence rdf:resource="#Evidence146" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">SLC52A1,2,3 transport RIB from extracellular region to cytosol</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction131">
+ <bp:evidence rdf:resource="#Evidence147" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">2xENPP1 hydrolyzes FAD to FMN</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction129">
+ <bp:evidence rdf:resource="#Evidence144" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Phosphopantetheine conjugation of the ACP domain of FAS</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction123">
+ <bp:evidence rdf:resource="#Evidence138" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PPANT translocates from extracellular region to cytosol</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction124">
+ <bp:evidence rdf:resource="#Evidence139" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">SLC5A6 cotransports extracellular PanK and 2Na+ to cytosol</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction121">
+ <bp:evidence rdf:resource="#Evidence136" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">COASY transfers an adenylyl group from ATP to PPANT</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction122">
+ <bp:evidence rdf:resource="#Evidence137" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PANK1/3 phosphorylate PanK</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction127">
+ <bp:evidence rdf:resource="#Evidence142" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">SLC25A16 transports cytosolic CoA-SH to mitochondrial matrix</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction128">
+ <bp:evidence rdf:resource="#Evidence143" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ENPPs hydrolyse CoA-SH to PPANT, PAP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction125">
+ <bp:evidence rdf:resource="#Evidence140" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Vanin hydrolyses pantetheine to PanK, 2AET</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction126">
+ <bp:evidence rdf:resource="#Evidence141" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">SLC25A42 exchanges cytosolic CoA-SH for mitochondrial matrix ADP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction120">
+ <bp:evidence rdf:resource="#Evidence135" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">2xPPCS ligates PPanK with Cys</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction118">
+ <bp:evidence rdf:resource="#Evidence133" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PANK2 phosphorylates PanK</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction119">
+ <bp:evidence rdf:resource="#Evidence134" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">COASY phosphorylates DP-CoA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction112">
+ <bp:evidence rdf:resource="#Evidence125" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">SLC2A1,3 transports DeHA from extracellular region to cytosol</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction113">
+ <bp:evidence rdf:resource="#Evidence126" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">DeHA hydrolyses to 2,3-DKG</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction110">
+ <bp:evidence rdf:resource="#Evidence123" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">SLC23A1,2 cotransports AscH-, 2Na+ from extracellular region to cytosol</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction111">
+ <bp:evidence rdf:resource="#Evidence124" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">2,3-DKG hydrolyses to ERU and oxalate</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction116">
+ <bp:evidence rdf:resource="#Evidence131" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">DCAKD phosphorylates DP-CoA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction117">
+ <bp:evidence rdf:resource="#Evidence132" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">3xPPCDC:3FMN decarboxylates PPC</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction114">
+ <bp:evidence rdf:resource="#Evidence128" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PANK4 hydrolyzes PPANT to pantetheine</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction115">
+ <bp:evidence rdf:resource="#Evidence129" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NUDT8 hydrolyzes CoA-SH to PPANT</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction109">
+ <bp:evidence rdf:resource="#Evidence122" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CYB5R3:FAD reduces CYB5A:ferriheme to CYB5A:heme</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction107">
+ <bp:evidence rdf:resource="#Evidence120" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CYB5A:heme reduces Asc.- to AscH-</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction108">
+ <bp:evidence rdf:resource="#Evidence121" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Asc.- radical dissociates to AscH- and DeHA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction101">
+ <bp:evidence rdf:resource="#Evidence113" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">SLC25A32 transports THF from cytosol to mitochondrial matrix</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction102">
+ <bp:evidence rdf:resource="#Evidence114" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">FOLR2 binds FOLA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction100">
+ <bp:evidence rdf:resource="#Evidence112" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">FPGS-2 transforms 5-methyl-THF to 5-methyl-THFPG</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction105">
+ <bp:evidence rdf:resource="#Evidence118" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">DeHA hydrolyses to threonate and oxalate</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction106">
+ <bp:evidence rdf:resource="#Evidence119" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GSTO dimers reduce DeHA to AscH-</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction103">
+ <bp:evidence rdf:resource="#Evidence115" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PXLP-K280-SHMT2 tetramer transfers CH2OH group to Gly to form L-Ser</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction104">
+ <bp:evidence rdf:resource="#Evidence116" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">DHFR dimer reduces FOLA to DHF</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction10">
+ <bp:evidence rdf:resource="#Evidence14" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">2xPDXK:2xZn2+ phosphorylates PXL</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction12">
+ <bp:evidence rdf:resource="#Evidence17" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Transfer of sulfur from MOCS3-S-S onto MOCS2A</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction11">
+ <bp:evidence rdf:resource="#Evidence15" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">2xPDXK:2xZn2+ phosphorylates PXA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction14">
+ <bp:evidence rdf:resource="#Evidence19" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Exchange of oxygen with sulfur in MoCo</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction13">
+ <bp:evidence rdf:resource="#Evidence18" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Sulfhydrylation and ring cleavage of precursor Z</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction16">
+ <bp:evidence rdf:resource="#Evidence21" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PXLP-K198-NFS1 transfers sulfur from cysteine onto MOCS3</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction15">
+ <bp:evidence rdf:resource="#Evidence20" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Molybdenum ion transfer onto molybdopterin</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction18">
+ <bp:evidence rdf:resource="#Evidence24" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ACS transforms to QUIN non-enzymatically</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction17">
+ <bp:evidence rdf:resource="#Evidence22" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Cyclisation of GTP to precursor Z</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction30">
+ <bp:evidence rdf:resource="#Evidence37" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">SLC22A13 transports NCA from extracellular region to cytosol</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction32">
+ <bp:evidence rdf:resource="#Evidence39" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RNLS:FAD oxidises dh-beta-NAD to NAD+</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction31">
+ <bp:evidence rdf:resource="#Evidence38" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">SLC5A8 transports monocarboxylates from extracellular region to cytosol</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction34">
+ <bp:evidence rdf:resource="#Evidence41" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PTGIS, CYP8A1 isomerise PGH2 to PGI2</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction33">
+ <bp:evidence rdf:resource="#Evidence40" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">APOA1BP dimer epimerises R-NAD(P)HX to S-NAD(P)HX</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction36">
+ <bp:evidence rdf:resource="#Evidence43" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NAMPT transfers PRIB to NAM to form NAMN</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction35">
+ <bp:evidence rdf:resource="#Evidence42" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NAPRT1 dimer transfers PRIB to NCA to form NAMN</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction38">
+ <bp:evidence rdf:resource="#Evidence45" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NUDT12 hydrolyses NADH to NMNH</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction37">
+ <bp:evidence rdf:resource="#Evidence44" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PARPs transfer ADP-D-ribose to proteins (poly(ADP-ribosyl)ation)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction39">
+ <bp:evidence rdf:resource="#Evidence46" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CARKD dehydrates S-NAD(P)HX to NADPH</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction21">
+ <bp:evidence rdf:resource="#Evidence27" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NT5E:Zn2+ hydrolyses NMN</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction20">
+ <bp:evidence rdf:resource="#Evidence26" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NMRK1 phosphorylates NAR to yield NAMN</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction23">
+ <bp:evidence rdf:resource="#Evidence29" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NMRK1 phosphorylates NR to yield NMN</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction22">
+ <bp:evidence rdf:resource="#Evidence28" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NMNAT1 transfers an adenylyl group from ATP to NAMN to yield NAAD</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction25">
+ <bp:evidence rdf:resource="#Evidence31" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">BST1 hydrolyzes NAD+ to yield NAM and ADP-ribose</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction24">
+ <bp:evidence rdf:resource="#Evidence30" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NADK:Zn2+ tetramer phosphorylates NAD+ to NADP+</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction27">
+ <bp:evidence rdf:resource="#Evidence33" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NMNAT2 transfers an adenylyl group from ATP to NAMN to yield NAAD</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction26">
+ <bp:evidence rdf:resource="#Evidence32" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NT5E:Zn2+ hydrolyses NAD+</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction29">
+ <bp:evidence rdf:resource="#Evidence36" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NNMT transfers CH3 from SAM to NAM to form MNA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction28">
+ <bp:evidence rdf:resource="#Evidence35" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PGG2 is reduced to PGH2 by PTGS2</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction19">
+ <bp:evidence rdf:resource="#Evidence25" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NMRK2 phosphorylates NAR to yield NAMN</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction50">
+ <bp:evidence rdf:resource="#Evidence59" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">TCN2:RCbl is degraded to release RCbl</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction52">
+ <bp:evidence rdf:resource="#Evidence61" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">TCN2 binds RCbl in the circulation</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction51">
+ <bp:evidence rdf:resource="#Evidence60" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CD320 binds extracellular TCN2:RCbl</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction54">
+ <bp:evidence rdf:resource="#Evidence63" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ABCD4:LMBRD1 transports RCbl from lysosomal lumen to cytosol</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction53">
+ <bp:evidence rdf:resource="#Evidence62" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LRP2-mediated TCN2:RCbl uptake and delivery to lysosome</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction56">
+ <bp:evidence rdf:resource="#Evidence66" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MMACHC decyanates CNCbl</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction55">
+ <bp:evidence rdf:resource="#Evidence64" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ABCC1 transports cytosolic RCbl to extracellular region</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction58">
+ <bp:evidence rdf:resource="#Evidence68" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">cob(II)alamin is transferred from MMACHC:MMADHC:cob(II)alamin to MTRR:MTR</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction57">
+ <bp:evidence rdf:resource="#Evidence67" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MTRR reduces cob(II)alamin to meCbl</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction59">
+ <bp:evidence rdf:resource="#Evidence69" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MMACHC dealkylates RCbl</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction41">
+ <bp:evidence rdf:resource="#Evidence48" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CD38 hydrolyses NAD+ to NAM and ADP-ribose</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction40">
+ <bp:evidence rdf:resource="#Evidence47" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NADSYN1 hexamer amidates NAAD to NAD+</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction43">
+ <bp:evidence rdf:resource="#Evidence50" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NMNAT3 transfers an adenylyl group from ATP to NAMN to yield NAAD</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction42">
+ <bp:evidence rdf:resource="#Evidence49" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">QPRT transfers PRIB to QUIN to form NAMN</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction45">
+ <bp:evidence rdf:resource="#Evidence52" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NADK2 dimer phosphorylates NAD+ to NADP+</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction44">
+ <bp:evidence rdf:resource="#Evidence51" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NMRK2 phosphorylates NR to yield NMN</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction47">
+ <bp:evidence rdf:resource="#Evidence56" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LRP2 binds extracellular TCN2:RCbl</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction46">
+ <bp:evidence rdf:resource="#Evidence53" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NMNAT2 transfers an adenylyl group from ATP to NMN to yield NAD+</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction49">
+ <bp:evidence rdf:resource="#Evidence58" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">TCN1 binds correnoids in the circulation</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction48">
+ <bp:evidence rdf:resource="#Evidence57" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CD320-mediated TCN2:RCbl uptake and delivery to lysosome</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction70">
+ <bp:evidence rdf:resource="#Evidence81" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CUBN:AMN binds CBLIF:RCbl</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence222">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence223">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction72">
+ <bp:evidence rdf:resource="#Evidence83" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CBLIF binds RCbl</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence224">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction71">
+ <bp:evidence rdf:resource="#Evidence82" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">TCN1 binds RCbl</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence225">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction74">
+ <bp:evidence rdf:resource="#Evidence86" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">FOLR2 transports FOLA from extracellular region to cytosol</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence226">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction73">
+ <bp:evidence rdf:resource="#Evidence84" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CUBN:AMN-mediated CBLIF:RCbl uptake and delivery to lysosome</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence227">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction76">
+ <bp:evidence rdf:resource="#Evidence88" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MTHFD1 dimer ligates HCOOH to THFPG to form 10-formyl-THFPG</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep210">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction188" />
+ <bp:stepProcess rdf:resource="#Catalysis160" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence228">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction75">
+ <bp:evidence rdf:resource="#Evidence87" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ALDH1L2 dehydrogenates 10-formyl-THFPG to THFPG</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep211">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction189" />
+ <bp:stepProcess rdf:resource="#Catalysis161" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence229">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction78">
+ <bp:evidence rdf:resource="#Evidence90" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">FPGS-2 transforms THF to THFPG</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep212">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction190" />
+ <bp:stepProcess rdf:resource="#Catalysis162" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction77">
+ <bp:evidence rdf:resource="#Evidence89" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Cytosolic folate export across the plasma membrane</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep213">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction191" />
+ <bp:stepProcess rdf:resource="#Catalysis163" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep214">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction192" />
+ <bp:stepProcess rdf:resource="#Catalysis164" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction79">
+ <bp:evidence rdf:resource="#Evidence91" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">5,10-methyleneTHF polyglutamate + NADP+ &lt;=&gt; 5,10-methenylTHF polyglutamate + NADPH + H+</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep215">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction193" />
+ <bp:stepProcess rdf:resource="#Catalysis165" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep216">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction194" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep217">
+ <bp:stepProcess rdf:resource="#Catalysis166" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction195" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep218">
+ <bp:stepProcess rdf:resource="#Pathway24" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep219">
+ <bp:stepProcess rdf:resource="#Catalysis167" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction196" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep90">
+ <bp:stepProcess rdf:resource="#Catalysis77" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction79" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep91">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction80" />
+ <bp:stepProcess rdf:resource="#Catalysis78" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep94">
+ <bp:stepProcess rdf:resource="#Catalysis81" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction83" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep95">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction84" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep92">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction81" />
+ <bp:stepProcess rdf:resource="#Catalysis79" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep93">
+ <bp:stepProcess rdf:resource="#Catalysis80" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction82" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep98">
+ <bp:stepProcess rdf:resource="#Catalysis84" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction87" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep99">
+ <bp:stepProcess rdf:resource="#Catalysis85" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction88" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep96">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction85" />
+ <bp:stepProcess rdf:resource="#Catalysis82" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep97">
+ <bp:stepProcess rdf:resource="#Catalysis83" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction86" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence220">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence221">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence211">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence212">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction61">
+ <bp:evidence rdf:resource="#Evidence71" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MMADHC targets transport of cytosolic cob(II)alamin to mitochondria</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence213">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction60">
+ <bp:evidence rdf:resource="#Evidence70" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MMAA:MUT binds AdoCbl</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence214">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction63">
+ <bp:evidence rdf:resource="#Evidence73" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MMACHC:cob(II)alamin binds MMADHC</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence215">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction62">
+ <bp:evidence rdf:resource="#Evidence72" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Cob(I)alamin bound to MMACHC is oxidized to cob(II)alamin</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence216">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction65">
+ <bp:evidence rdf:resource="#Evidence75" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MTR transfers CH3 from MeCbl to HCYS</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence217">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction64">
+ <bp:evidence rdf:resource="#Evidence74" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MMAB adenosylates cob(I)alamin</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep200">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction180" />
+ <bp:stepProcess rdf:resource="#Catalysis152" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence218">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction67">
+ <bp:evidence rdf:resource="#Evidence78" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ABCD4:LMBRD1 transports RCbl from lysosomal lumen to cytosol (gut mucosal cells)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep201">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction181" />
+ <bp:stepProcess rdf:resource="#Catalysis153" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence219">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction66">
+ <bp:evidence rdf:resource="#Evidence76" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MTR transfers CH3 group from 5-methyl-THF to cob(I)alamin</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep202">
+ <bp:stepProcess rdf:resource="#Pathway22" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction69">
+ <bp:evidence rdf:resource="#Evidence80" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Pancreatic proteases degrade TCN1:RCbl</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep203">
+ <bp:stepProcess rdf:resource="#Pathway23" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction68">
+ <bp:evidence rdf:resource="#Evidence79" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Unknown lysosomal protease degrades CBLIF:RCbl to release Cbl</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep204">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction182" />
+ <bp:stepProcess rdf:resource="#Catalysis154" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep205">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction183" />
+ <bp:stepProcess rdf:resource="#Catalysis155" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep206">
+ <bp:stepProcess rdf:resource="#Catalysis156" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction184" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep207">
+ <bp:stepProcess rdf:resource="#Catalysis157" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction185" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep208">
+ <bp:stepProcess rdf:resource="#Catalysis158" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction186" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep209">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction187" />
+ <bp:stepProcess rdf:resource="#Catalysis159" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep80">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction70" />
+ <bp:stepProcess rdf:resource="#Catalysis69" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep83">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction73" />
+ <bp:stepProcess rdf:resource="#Catalysis72" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep84">
+ <bp:stepProcess rdf:resource="#Pathway12" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep81">
+ <bp:stepProcess rdf:resource="#Catalysis70" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction71" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep82">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction72" />
+ <bp:stepProcess rdf:resource="#Catalysis71" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep87">
+ <bp:stepProcess rdf:resource="#Catalysis74" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction76" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep88">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction77" />
+ <bp:stepProcess rdf:resource="#Catalysis75" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep85">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction74" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep86">
+ <bp:stepProcess rdf:resource="#Catalysis73" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction75" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep89">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction78" />
+ <bp:stepProcess rdf:resource="#Catalysis76" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence210">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction92">
+ <bp:evidence rdf:resource="#Evidence104" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MTHFD1L transforms 10-formyl-THF to HCOOH and THF</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction91">
+ <bp:evidence rdf:resource="#Evidence103" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MTHFD2, D2L oxidise 5,10-methylene-THF to 5,10-methenyl-THF</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction94">
+ <bp:evidence rdf:resource="#Evidence106" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">SLC46A1 transports FOLA from extracellular region to cytosol</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction93">
+ <bp:evidence rdf:resource="#Evidence105" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MTHFS transforms 5-formyl-THFPG to 5,10-methenyl-THFPG</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction96">
+ <bp:evidence rdf:resource="#Evidence108" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">DHFR dimer binds DHFR inhibitors</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction95">
+ <bp:evidence rdf:resource="#Evidence107" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">SHMT1 tetramer transfers hydroxymethyl group to THFPG to form 5,10-methylene-THFPG</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction98">
+ <bp:evidence rdf:resource="#Evidence110" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">5,10-methenylTHF polyglutamate + H2O &lt;=&gt; 10-formylTHF polyglutamate</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction97">
+ <bp:evidence rdf:resource="#Evidence109" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MTHFR dimer reduces 5,10-methylene-THFPG to 5-methyl-THFPG</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction99">
+ <bp:evidence rdf:resource="#Evidence111" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Mitochondrial FPGS-1 transforms THF to THFPG</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep72">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction63" />
+ <bp:stepProcess rdf:resource="#Catalysis62" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep73">
+ <bp:stepProcess rdf:resource="#Catalysis63" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction64" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep70">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction61" />
+ <bp:stepProcess rdf:resource="#Catalysis60" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep71">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction62" />
+ <bp:stepProcess rdf:resource="#Catalysis61" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep76">
+ <bp:stepProcess rdf:resource="#Pathway11" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep77">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction67" />
+ <bp:stepProcess rdf:resource="#Catalysis66" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep74">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction65" />
+ <bp:stepProcess rdf:resource="#Catalysis64" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep75">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction66" />
+ <bp:stepProcess rdf:resource="#Catalysis65" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence240">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep78">
+ <bp:stepProcess rdf:resource="#Catalysis67" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction68" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction90">
+ <bp:evidence rdf:resource="#Evidence102" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ALDH1L1 dehydrogenates 10-formyl-THFPG to THFPG</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep79">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction69" />
+ <bp:stepProcess rdf:resource="#Catalysis68" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction81">
+ <bp:evidence rdf:resource="#Evidence93" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">5,10-methyleneTHF polyglutamate + glycine &lt;=&gt; tetrahydrofolate polyglutamate (THF polyglutamate) + serine</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence233">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction80">
+ <bp:evidence rdf:resource="#Evidence92" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">DHFR2 reduces FOLA to DHF</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence234">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction83">
+ <bp:evidence rdf:resource="#Evidence95" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">SLC19A1 transports 5-methyl-THF from extracellular region to cytosol</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence235">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction82">
+ <bp:evidence rdf:resource="#Evidence94" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MTHFD1 dimer dehydrogenates 5,10-methenyl-THFPG to 5,10-methylene-THFPG</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence236">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction85">
+ <bp:evidence rdf:resource="#Evidence97" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MTHFD1L dimer ligates HCOOH to THF to form 10-formyl-THF</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence237">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction84">
+ <bp:evidence rdf:resource="#Evidence96" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">HCOOH translocated from mitochondrial matrix to cytosol</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence238">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction87">
+ <bp:evidence rdf:resource="#Evidence99" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">SLC25A32 transports THF from mitochondrial matrix to cytosol</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence239">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction86">
+ <bp:evidence rdf:resource="#Evidence98" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MTHFD2, D2L oxidise 5,10-methenyl-THF to 10-formyl-THF</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction89">
+ <bp:evidence rdf:resource="#Evidence101" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">DHF is reduced to tetrahydrofolate (THF)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction88">
+ <bp:evidence rdf:resource="#Evidence100" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MTHFD1 dimer transforms 10-formyl-THFPG to 5,10-methenyl-THFPG</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep61">
+ <bp:stepProcess rdf:resource="#Catalysis52" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction53" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep62">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction54" />
+ <bp:stepProcess rdf:resource="#Catalysis53" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep60">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction52" />
+ <bp:stepProcess rdf:resource="#Catalysis51" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep65">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction56" />
+ <bp:stepProcess rdf:resource="#Catalysis55" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep66">
+ <bp:stepProcess rdf:resource="#Catalysis56" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction57" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep63">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction55" />
+ <bp:stepProcess rdf:resource="#Catalysis54" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep64">
+ <bp:stepProcess rdf:resource="#Pathway10" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep69">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction60" />
+ <bp:stepProcess rdf:resource="#Catalysis59" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence230">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep67">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction58" />
+ <bp:stepProcess rdf:resource="#Catalysis57" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence231">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep68">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction59" />
+ <bp:stepProcess rdf:resource="#Catalysis58" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence232">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep50">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction44" />
+ <bp:stepProcess rdf:resource="#Catalysis43" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep51">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction45" />
+ <bp:stepProcess rdf:resource="#Catalysis44" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep54">
+ <bp:stepProcess rdf:resource="#Pathway9" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep55">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction47" />
+ <bp:stepProcess rdf:resource="#Catalysis46" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep52">
+ <bp:stepProcess rdf:resource="#Catalysis45" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction46" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep53">
+ <bp:stepProcess rdf:resource="#Pathway8" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep58">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction50" />
+ <bp:stepProcess rdf:resource="#Catalysis49" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep59">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction51" />
+ <bp:stepProcess rdf:resource="#Catalysis50" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep56">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction48" />
+ <bp:stepProcess rdf:resource="#Catalysis47" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep57">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction49" />
+ <bp:stepProcess rdf:resource="#Catalysis48" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep49">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction43" />
+ <bp:stepProcess rdf:resource="#Catalysis42" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep40">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction34" />
+ <bp:stepProcess rdf:resource="#Catalysis33" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep43">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction37" />
+ <bp:stepProcess rdf:resource="#Catalysis36" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep44">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction38" />
+ <bp:stepProcess rdf:resource="#Catalysis37" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep41">
+ <bp:stepProcess rdf:resource="#Catalysis34" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction35" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep42">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction36" />
+ <bp:stepProcess rdf:resource="#Catalysis35" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep47">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction41" />
+ <bp:stepProcess rdf:resource="#Catalysis40" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep48">
+ <bp:stepProcess rdf:resource="#Catalysis41" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction42" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep45">
+ <bp:stepProcess rdf:resource="#Catalysis38" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction39" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep46">
+ <bp:stepProcess rdf:resource="#Catalysis39" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction40" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep38">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction32" />
+ <bp:stepProcess rdf:resource="#Catalysis31" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep39">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction33" />
+ <bp:stepProcess rdf:resource="#Catalysis32" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep230">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction206" />
+ <bp:stepProcess rdf:resource="#Catalysis174" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep231">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction207" />
+ <bp:stepProcess rdf:resource="#Catalysis175" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep232">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction208" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep233">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction209" />
+ <bp:stepProcess rdf:resource="#Catalysis176" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep234">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction210" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep235">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction211" />
+ <bp:stepProcess rdf:resource="#Catalysis177" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep236">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction212" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep237">
+ <bp:stepProcess rdf:resource="#Catalysis178" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction213" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep238">
+ <bp:stepProcess rdf:resource="#Catalysis179" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction214" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep239">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction215" />
+ <bp:stepProcess rdf:resource="#Catalysis180" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep32">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction27" />
+ <bp:stepProcess rdf:resource="#Catalysis26" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep33">
+ <bp:stepProcess rdf:resource="#Pathway7" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep30">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction25" />
+ <bp:stepProcess rdf:resource="#Catalysis24" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep31">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction26" />
+ <bp:stepProcess rdf:resource="#Catalysis25" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep36">
+ <bp:stepProcess rdf:resource="#Catalysis29" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction30" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep37">
+ <bp:stepProcess rdf:resource="#Catalysis30" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction31" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep34">
+ <bp:stepProcess rdf:resource="#Catalysis27" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction28" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep35">
+ <bp:stepProcess rdf:resource="#Catalysis28" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction29" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep29">
+ <bp:stepProcess rdf:resource="#Catalysis23" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction24" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep27">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction22" />
+ <bp:stepProcess rdf:resource="#Catalysis21" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep28">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction23" />
+ <bp:stepProcess rdf:resource="#Catalysis22" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep220">
+ <bp:stepProcess rdf:resource="#Catalysis168" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction197" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep221">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction198" />
+ <bp:stepProcess rdf:resource="#Catalysis169" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep222">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction199" />
+ <bp:stepProcess rdf:resource="#Catalysis170" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep223">
+ <bp:stepProcess rdf:resource="#Pathway25" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep224">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction200" />
+ <bp:stepProcess rdf:resource="#Catalysis171" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep225">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction201" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep226">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction202" />
+ <bp:stepProcess rdf:resource="#Catalysis172" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep227">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction203" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep228">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction204" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep229">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction205" />
+ <bp:stepProcess rdf:resource="#Catalysis173" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep21">
+ <bp:stepProcess rdf:resource="#Catalysis17" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction17" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep22">
+ <bp:stepProcess rdf:resource="#Pathway6" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep20">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction16" />
+ <bp:stepProcess rdf:resource="#Catalysis16" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep25">
+ <bp:stepProcess rdf:resource="#Catalysis19" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction20" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep26">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction21" />
+ <bp:stepProcess rdf:resource="#Catalysis20" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep23">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction18" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep24">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction19" />
+ <bp:stepProcess rdf:resource="#Catalysis18" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep18">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction14" />
+ <bp:stepProcess rdf:resource="#Catalysis14" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence99">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep171">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction152" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep19">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction15" />
+ <bp:stepProcess rdf:resource="#Catalysis15" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis19">
+ <bp:controlled rdf:resource="#BiochemicalReaction20" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep172">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction153" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep16">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction12" />
+ <bp:stepProcess rdf:resource="#Catalysis12" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis18">
+ <bp:controlled rdf:resource="#BiochemicalReaction19" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence97">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep173">
+ <bp:stepProcess rdf:resource="#Pathway21" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep17">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction13" />
+ <bp:stepProcess rdf:resource="#Catalysis13" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis17">
+ <bp:controlled rdf:resource="#BiochemicalReaction17" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence98">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep174">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction154" />
+ <bp:stepProcess rdf:resource="#Catalysis139" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep175">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction155" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep176">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction156" />
+ <bp:stepProcess rdf:resource="#Catalysis140" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep177">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction157" />
+ <bp:stepProcess rdf:resource="#Catalysis141" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep178">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction158" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep179">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction159" />
+ <bp:stepProcess rdf:resource="#Catalysis142" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep10">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction7" />
+ <bp:stepProcess rdf:resource="#Catalysis7" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis23">
+ <bp:controlled rdf:resource="#BiochemicalReaction24" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep11">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction8" />
+ <bp:stepProcess rdf:resource="#Catalysis8" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis22">
+ <bp:controlled rdf:resource="#BiochemicalReaction23" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis21">
+ <bp:controlled rdf:resource="#BiochemicalReaction22" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis20">
+ <bp:controlled rdf:resource="#BiochemicalReaction21" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep14">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction11" />
+ <bp:stepProcess rdf:resource="#Catalysis11" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis27">
+ <bp:controlled rdf:resource="#BiochemicalReaction28" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep15">
+ <bp:stepProcess rdf:resource="#Pathway5" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis26">
+ <bp:controlled rdf:resource="#BiochemicalReaction27" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep12">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction9" />
+ <bp:stepProcess rdf:resource="#Catalysis9" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis25">
+ <bp:controlled rdf:resource="#BiochemicalReaction26" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep180">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction160" />
+ <bp:stepProcess rdf:resource="#Catalysis143" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep13">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction10" />
+ <bp:stepProcess rdf:resource="#Catalysis10" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis24">
+ <bp:controlled rdf:resource="#BiochemicalReaction25" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep181">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction161" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence88">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep160">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction144" />
+ <bp:stepProcess rdf:resource="#Catalysis132" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence89">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep161">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction145" />
+ <bp:stepProcess rdf:resource="#Catalysis133" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence86">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep162">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction146" />
+ <bp:stepProcess rdf:resource="#Catalysis134" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence87">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep163">
+ <bp:stepProcess rdf:resource="#Catalysis135" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction147" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep164">
+ <bp:stepProcess rdf:resource="#Pathway18" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep165">
+ <bp:stepProcess rdf:resource="#Pathway19" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep166">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction148" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep167">
+ <bp:stepProcess rdf:resource="#Catalysis136" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction149" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep168">
+ <bp:stepProcess rdf:resource="#Catalysis137" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction150" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep169">
+ <bp:stepProcess rdf:resource="#Catalysis138" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction151" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis12">
+ <bp:controlled rdf:resource="#BiochemicalReaction12" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence91">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis11">
+ <bp:controlled rdf:resource="#BiochemicalReaction11" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence92">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis10">
+ <bp:controlled rdf:resource="#BiochemicalReaction10" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence90">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis16">
+ <bp:controlled rdf:resource="#BiochemicalReaction16" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence95">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis15">
+ <bp:controlled rdf:resource="#BiochemicalReaction15" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence96">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis14">
+ <bp:controlled rdf:resource="#BiochemicalReaction14" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence93">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis13">
+ <bp:controlled rdf:resource="#BiochemicalReaction13" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence94">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep170">
+ <bp:stepProcess rdf:resource="#Pathway20" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep150">
+ <bp:stepProcess rdf:resource="#Pathway17" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep151">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction135" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis39">
+ <bp:controlled rdf:resource="#BiochemicalReaction40" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep152">
+ <bp:stepProcess rdf:resource="#Catalysis125" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction136" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep153">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction137" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep154">
+ <bp:stepProcess rdf:resource="#Catalysis126" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction138" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep155">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction139" />
+ <bp:stepProcess rdf:resource="#Catalysis127" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep156">
+ <bp:stepProcess rdf:resource="#Catalysis128" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction140" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep157">
+ <bp:stepProcess rdf:resource="#Catalysis129" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction141" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep158">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction142" />
+ <bp:stepProcess rdf:resource="#Catalysis130" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep159">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction143" />
+ <bp:stepProcess rdf:resource="#Catalysis131" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis179">
+ <bp:controlled rdf:resource="#BiochemicalReaction214" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis178">
+ <bp:controlled rdf:resource="#BiochemicalReaction213" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis41">
+ <bp:controlled rdf:resource="#BiochemicalReaction42" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis40">
+ <bp:controlled rdf:resource="#BiochemicalReaction41" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis45">
+ <bp:controlled rdf:resource="#BiochemicalReaction46" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis171">
+ <bp:controlled rdf:resource="#BiochemicalReaction200" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis44">
+ <bp:controlled rdf:resource="#BiochemicalReaction45" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis170">
+ <bp:controlled rdf:resource="#BiochemicalReaction199" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis43">
+ <bp:controlled rdf:resource="#BiochemicalReaction44" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis173">
+ <bp:controlled rdf:resource="#BiochemicalReaction205" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis42">
+ <bp:controlled rdf:resource="#BiochemicalReaction43" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis172">
+ <bp:controlled rdf:resource="#BiochemicalReaction202" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis49">
+ <bp:controlled rdf:resource="#BiochemicalReaction50" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis175">
+ <bp:controlled rdf:resource="#BiochemicalReaction207" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis48">
+ <bp:controlled rdf:resource="#BiochemicalReaction49" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis174">
+ <bp:controlled rdf:resource="#BiochemicalReaction206" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis47">
+ <bp:controlled rdf:resource="#BiochemicalReaction48" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis177">
+ <bp:controlled rdf:resource="#BiochemicalReaction211" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis46">
+ <bp:controlled rdf:resource="#BiochemicalReaction47" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis176">
+ <bp:controlled rdf:resource="#BiochemicalReaction209" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis29">
+ <bp:controlled rdf:resource="#BiochemicalReaction30" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep140">
+ <bp:stepProcess rdf:resource="#Catalysis116" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction126" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis28">
+ <bp:controlled rdf:resource="#BiochemicalReaction29" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep141">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction127" />
+ <bp:stepProcess rdf:resource="#Catalysis117" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep142">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction128" />
+ <bp:stepProcess rdf:resource="#Catalysis118" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep143">
+ <bp:stepProcess rdf:resource="#Catalysis119" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction129" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep144">
+ <bp:stepProcess rdf:resource="#Pathway16" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis180">
+ <bp:controlled rdf:resource="#BiochemicalReaction215" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep145">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction130" />
+ <bp:stepProcess rdf:resource="#Catalysis120" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep146">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction131" />
+ <bp:stepProcess rdf:resource="#Catalysis121" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep147">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction132" />
+ <bp:stepProcess rdf:resource="#Catalysis122" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep148">
+ <bp:stepProcess rdf:resource="#Catalysis123" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction133" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep149">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction134" />
+ <bp:stepProcess rdf:resource="#Catalysis124" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis30">
+ <bp:controlled rdf:resource="#BiochemicalReaction31" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis34">
+ <bp:controlled rdf:resource="#BiochemicalReaction35" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis33">
+ <bp:controlled rdf:resource="#BiochemicalReaction34" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis32">
+ <bp:controlled rdf:resource="#BiochemicalReaction33" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis31">
+ <bp:controlled rdf:resource="#BiochemicalReaction32" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis38">
+ <bp:controlled rdf:resource="#BiochemicalReaction39" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis37">
+ <bp:controlled rdf:resource="#BiochemicalReaction38" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis36">
+ <bp:controlled rdf:resource="#BiochemicalReaction37" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis35">
+ <bp:controlled rdf:resource="#BiochemicalReaction36" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis157">
+ <bp:controlled rdf:resource="#BiochemicalReaction185" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis156">
+ <bp:controlled rdf:resource="#BiochemicalReaction184" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis159">
+ <bp:controlled rdf:resource="#BiochemicalReaction187" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis158">
+ <bp:controlled rdf:resource="#BiochemicalReaction186" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis151">
+ <bp:controlled rdf:resource="#BiochemicalReaction178" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis150">
+ <bp:controlled rdf:resource="#BiochemicalReaction176" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis153">
+ <bp:controlled rdf:resource="#BiochemicalReaction181" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis152">
+ <bp:controlled rdf:resource="#BiochemicalReaction180" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis155">
+ <bp:controlled rdf:resource="#BiochemicalReaction183" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis154">
+ <bp:controlled rdf:resource="#BiochemicalReaction182" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis168">
+ <bp:controlled rdf:resource="#BiochemicalReaction197" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis167">
+ <bp:controlled rdf:resource="#BiochemicalReaction196" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis169">
+ <bp:controlled rdf:resource="#BiochemicalReaction198" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis160">
+ <bp:controlled rdf:resource="#BiochemicalReaction188" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis162">
+ <bp:controlled rdf:resource="#BiochemicalReaction190" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis161">
+ <bp:controlled rdf:resource="#BiochemicalReaction189" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis164">
+ <bp:controlled rdf:resource="#BiochemicalReaction192" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis163">
+ <bp:controlled rdf:resource="#BiochemicalReaction191" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis166">
+ <bp:controlled rdf:resource="#BiochemicalReaction195" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis165">
+ <bp:controlled rdf:resource="#BiochemicalReaction193" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep9">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction6" />
+ <bp:stepProcess rdf:resource="#Catalysis6" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep193">
+ <bp:stepProcess rdf:resource="#Catalysis148" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction173" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep194">
+ <bp:stepProcess rdf:resource="#Catalysis149" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction174" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep7">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction5" />
+ <bp:stepProcess rdf:resource="#Catalysis5" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep195">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction175" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep8">
+ <bp:stepProcess rdf:resource="#Pathway4" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep196">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction176" />
+ <bp:stepProcess rdf:resource="#Catalysis150" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep5">
+ <bp:stepProcess rdf:resource="#Catalysis3" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction3" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep197">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction177" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep6">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction4" />
+ <bp:stepProcess rdf:resource="#Catalysis4" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep198">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction178" />
+ <bp:stepProcess rdf:resource="#Catalysis151" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep3">
+ <bp:stepProcess rdf:resource="#Catalysis1" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep199">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction179" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep4">
+ <bp:stepProcess rdf:resource="#Catalysis2" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction2" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#Pathway2" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep2">
+ <bp:stepProcess rdf:resource="#Pathway3" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis135">
+ <bp:controlled rdf:resource="#BiochemicalReaction147" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis134">
+ <bp:controlled rdf:resource="#BiochemicalReaction146" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis137">
+ <bp:controlled rdf:resource="#BiochemicalReaction150" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis136">
+ <bp:controlled rdf:resource="#BiochemicalReaction149" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis139">
+ <bp:controlled rdf:resource="#BiochemicalReaction154" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis138">
+ <bp:controlled rdf:resource="#BiochemicalReaction151" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis131">
+ <bp:controlled rdf:resource="#BiochemicalReaction143" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis130">
+ <bp:controlled rdf:resource="#BiochemicalReaction142" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis133">
+ <bp:controlled rdf:resource="#BiochemicalReaction145" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis132">
+ <bp:controlled rdf:resource="#BiochemicalReaction144" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep182">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction162" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep183">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction163" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep184">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction164" />
+ <bp:stepProcess rdf:resource="#Catalysis144" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep185">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction165" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep186">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction166" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep187">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction167" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep188">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction168" />
+ <bp:stepProcess rdf:resource="#Catalysis145" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep189">
+ <bp:stepProcess rdf:resource="#Catalysis146" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction169" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis146">
+ <bp:controlled rdf:resource="#BiochemicalReaction169" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis145">
+ <bp:controlled rdf:resource="#BiochemicalReaction168" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis148">
+ <bp:controlled rdf:resource="#BiochemicalReaction173" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis147">
+ <bp:controlled rdf:resource="#BiochemicalReaction170" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis149">
+ <bp:controlled rdf:resource="#BiochemicalReaction174" />
+</bp:Catalysis>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:Catalysis rdf:ID="Catalysis140">
+ <bp:controlled rdf:resource="#BiochemicalReaction156" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis142">
+ <bp:controlled rdf:resource="#BiochemicalReaction159" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis141">
+ <bp:controlled rdf:resource="#BiochemicalReaction157" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep190">
+ <bp:stepProcess rdf:resource="#Catalysis147" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction170" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis144">
+ <bp:controlled rdf:resource="#BiochemicalReaction164" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep191">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction171" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis143">
+ <bp:controlled rdf:resource="#BiochemicalReaction160" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep192">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction172" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence11">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence12">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence10">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence15">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence16">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence13">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence14">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence19">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis109">
+ <bp:controlled rdf:resource="#BiochemicalReaction118" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence17">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence18">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis113">
+ <bp:controlled rdf:resource="#BiochemicalReaction122" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis112">
+ <bp:controlled rdf:resource="#BiochemicalReaction121" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis115">
+ <bp:controlled rdf:resource="#BiochemicalReaction125" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis114">
+ <bp:controlled rdf:resource="#BiochemicalReaction124" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis117">
+ <bp:controlled rdf:resource="#BiochemicalReaction127" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis116">
+ <bp:controlled rdf:resource="#BiochemicalReaction126" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis119">
+ <bp:controlled rdf:resource="#BiochemicalReaction129" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis118">
+ <bp:controlled rdf:resource="#BiochemicalReaction128" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis111">
+ <bp:controlled rdf:resource="#BiochemicalReaction120" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis110">
+ <bp:controlled rdf:resource="#BiochemicalReaction119" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis92">
+ <bp:controlled rdf:resource="#BiochemicalReaction95" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis124">
+ <bp:controlled rdf:resource="#BiochemicalReaction134" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis91">
+ <bp:controlled rdf:resource="#BiochemicalReaction94" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis123">
+ <bp:controlled rdf:resource="#BiochemicalReaction133" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis90">
+ <bp:controlled rdf:resource="#BiochemicalReaction93" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis126">
+ <bp:controlled rdf:resource="#BiochemicalReaction138" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis125">
+ <bp:controlled rdf:resource="#BiochemicalReaction136" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis96">
+ <bp:controlled rdf:resource="#BiochemicalReaction100" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis128">
+ <bp:controlled rdf:resource="#BiochemicalReaction140" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis95">
+ <bp:controlled rdf:resource="#BiochemicalReaction99" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis127">
+ <bp:controlled rdf:resource="#BiochemicalReaction139" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis94">
+ <bp:controlled rdf:resource="#BiochemicalReaction98" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis93">
+ <bp:controlled rdf:resource="#BiochemicalReaction97" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis129">
+ <bp:controlled rdf:resource="#BiochemicalReaction141" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis99">
+ <bp:controlled rdf:resource="#BiochemicalReaction104" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis98">
+ <bp:controlled rdf:resource="#BiochemicalReaction103" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis97">
+ <bp:controlled rdf:resource="#BiochemicalReaction101" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis120">
+ <bp:controlled rdf:resource="#BiochemicalReaction130" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis122">
+ <bp:controlled rdf:resource="#BiochemicalReaction132" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis121">
+ <bp:controlled rdf:resource="#BiochemicalReaction131" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence33">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence34">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence31">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence32">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence37">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence38">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence35">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence36">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence39">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence40">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence41">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence22">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence23">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence20">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence21">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence26">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence27">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence24">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence25">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence28">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence29">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis102">
+ <bp:controlled rdf:resource="#BiochemicalReaction109" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis101">
+ <bp:controlled rdf:resource="#BiochemicalReaction107" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis104">
+ <bp:controlled rdf:resource="#BiochemicalReaction112" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis103">
+ <bp:controlled rdf:resource="#BiochemicalReaction110" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis106">
+ <bp:controlled rdf:resource="#BiochemicalReaction115" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis105">
+ <bp:controlled rdf:resource="#BiochemicalReaction114" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis108">
+ <bp:controlled rdf:resource="#BiochemicalReaction117" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis107">
+ <bp:controlled rdf:resource="#BiochemicalReaction116" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence30">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis100">
+ <bp:controlled rdf:resource="#BiochemicalReaction106" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence55">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction211">
+ <bp:evidence rdf:resource="#Evidence236" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Sepiapterin reductase (SPR) is phosphorylated by Ca2+/calmodulin-dependent protein kinase II</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence56">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction212">
+ <bp:evidence rdf:resource="#Evidence237" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Ascorbate can reduce the BH3 radical back to BH4</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence53">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence54">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction210">
+ <bp:evidence rdf:resource="#Evidence235" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Ferrous iron reduces the BH3 radical back to BH4</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence59">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction215">
+ <bp:evidence rdf:resource="#Evidence240" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PTHP is reduced to BH4 by sepiapterin reductase (SPR)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence57">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction213">
+ <bp:evidence rdf:resource="#Evidence238" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Unknown sepiapterin synthase transforms PTHP to sepiapterin</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence58">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction214">
+ <bp:evidence rdf:resource="#Evidence239" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PTPS is phosphorylated by cGMP-dependant protein kinase II</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis63">
+ <bp:controlled rdf:resource="#BiochemicalReaction64" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis62">
+ <bp:controlled rdf:resource="#BiochemicalReaction63" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis61">
+ <bp:controlled rdf:resource="#BiochemicalReaction62" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis60">
+ <bp:controlled rdf:resource="#BiochemicalReaction61" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis67">
+ <bp:controlled rdf:resource="#BiochemicalReaction68" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction208">
+ <bp:evidence rdf:resource="#Evidence233" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The BH3 radical can decay to dihydrobiopterin (BH2)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis66">
+ <bp:controlled rdf:resource="#BiochemicalReaction67" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction209">
+ <bp:evidence rdf:resource="#Evidence234" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The cofactor BH4 is required for electron transfer in the eNOS catalytic cycle</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis65">
+ <bp:controlled rdf:resource="#BiochemicalReaction66" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction206">
+ <bp:evidence rdf:resource="#Evidence231" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GCH1 reduces GTP to dihydroneopterin triphosphate</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis64">
+ <bp:controlled rdf:resource="#BiochemicalReaction65" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction207">
+ <bp:evidence rdf:resource="#Evidence232" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">BH2 binding can lead to eNOS uncoupling</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence62">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence63">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence60">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis69">
+ <bp:controlled rdf:resource="#BiochemicalReaction70" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence61">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis68">
+ <bp:controlled rdf:resource="#BiochemicalReaction69" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence44">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction200">
+ <bp:evidence rdf:resource="#Evidence225" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">DHNTP is dephosphorylated by PTPS to PTHP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence45">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction201">
+ <bp:evidence rdf:resource="#Evidence226" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Peroxynitrite can oxidise BH4 to the BH3 radical</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence42">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence43">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence48">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction204">
+ <bp:evidence rdf:resource="#Evidence229" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">BH4 is oxidised to the BH3 radical during the eNOS catalytic cycle</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence49">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction205">
+ <bp:evidence rdf:resource="#Evidence230" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Salvage - BH2 is reduced to BH4 by DHFR</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence46">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction202">
+ <bp:evidence rdf:resource="#Evidence227" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Salvage - Sepiapterin is reduced to q-BH2</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence47">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction203">
+ <bp:evidence rdf:resource="#Evidence228" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GCHFR binds to GCH1 and negatively regulates its activity</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis52">
+ <bp:controlled rdf:resource="#BiochemicalReaction53" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis51">
+ <bp:controlled rdf:resource="#BiochemicalReaction52" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis50">
+ <bp:controlled rdf:resource="#BiochemicalReaction51" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis56">
+ <bp:controlled rdf:resource="#BiochemicalReaction57" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis55">
+ <bp:controlled rdf:resource="#BiochemicalReaction56" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis54">
+ <bp:controlled rdf:resource="#BiochemicalReaction55" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis53">
+ <bp:controlled rdf:resource="#BiochemicalReaction54" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence51">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence52">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis59">
+ <bp:controlled rdf:resource="#BiochemicalReaction60" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis58">
+ <bp:controlled rdf:resource="#BiochemicalReaction59" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence50">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis57">
+ <bp:controlled rdf:resource="#BiochemicalReaction58" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence77">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence78">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence75">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence76">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence79">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis81">
+ <bp:controlled rdf:resource="#BiochemicalReaction83" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis80">
+ <bp:controlled rdf:resource="#BiochemicalReaction82" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis85">
+ <bp:controlled rdf:resource="#BiochemicalReaction88" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis84">
+ <bp:controlled rdf:resource="#BiochemicalReaction87" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis83">
+ <bp:controlled rdf:resource="#BiochemicalReaction86" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis82">
+ <bp:controlled rdf:resource="#BiochemicalReaction85" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence80">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis89">
+ <bp:controlled rdf:resource="#BiochemicalReaction92" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence81">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis88">
+ <bp:controlled rdf:resource="#BiochemicalReaction91" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis87">
+ <bp:controlled rdf:resource="#BiochemicalReaction90" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis86">
+ <bp:controlled rdf:resource="#BiochemicalReaction89" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence84">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence85">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence82">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence83">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence66">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence67">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence64">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence65">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence68">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence69">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis70">
+ <bp:controlled rdf:resource="#BiochemicalReaction71" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis74">
+ <bp:controlled rdf:resource="#BiochemicalReaction76" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis73">
+ <bp:controlled rdf:resource="#BiochemicalReaction75" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis1">
+ <bp:controlled rdf:resource="#BiochemicalReaction1" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis72">
+ <bp:controlled rdf:resource="#BiochemicalReaction73" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis71">
+ <bp:controlled rdf:resource="#BiochemicalReaction72" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis3">
+ <bp:controlled rdf:resource="#BiochemicalReaction3" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis78">
+ <bp:controlled rdf:resource="#BiochemicalReaction80" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis2">
+ <bp:controlled rdf:resource="#BiochemicalReaction2" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence70">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis77">
+ <bp:controlled rdf:resource="#BiochemicalReaction79" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis5">
+ <bp:controlled rdf:resource="#BiochemicalReaction5" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis76">
+ <bp:controlled rdf:resource="#BiochemicalReaction78" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis4">
+ <bp:controlled rdf:resource="#BiochemicalReaction4" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis75">
+ <bp:controlled rdf:resource="#BiochemicalReaction77" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis7">
+ <bp:controlled rdf:resource="#BiochemicalReaction7" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence73">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis6">
+ <bp:controlled rdf:resource="#BiochemicalReaction6" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence74">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis9">
+ <bp:controlled rdf:resource="#BiochemicalReaction9" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence71">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis8">
+ <bp:controlled rdf:resource="#BiochemicalReaction8" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence72">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis79">
+ <bp:controlled rdf:resource="#BiochemicalReaction81" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence189">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence180">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence181">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence182">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence183">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence184">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence185">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence186">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence187">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence188">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence178">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence179">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence170">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence171">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence172">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence173">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence174">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence175">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence176">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence177">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence190">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence191">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence192">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence193">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence194">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence195">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence196">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence197">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence198">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence199">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence101">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence102">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence103">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence104">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence105">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence106">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence107">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence108">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence109">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence100">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence123">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence124">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence125">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence126">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence127">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence128">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence129">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence120">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence121">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence122">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence112">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence113">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence114">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence115">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence116">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence117">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence118">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence119">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence110">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence111">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence145">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence146">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence147">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep130">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction116" />
+ <bp:stepProcess rdf:resource="#Catalysis107" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence148">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep131">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction117" />
+ <bp:stepProcess rdf:resource="#Catalysis108" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence149">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep132">
+ <bp:stepProcess rdf:resource="#Catalysis109" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction118" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep133">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction119" />
+ <bp:stepProcess rdf:resource="#Catalysis110" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep134">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction120" />
+ <bp:stepProcess rdf:resource="#Catalysis111" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep135">
+ <bp:stepProcess rdf:resource="#Catalysis112" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction121" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep136">
+ <bp:stepProcess rdf:resource="#Catalysis113" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction122" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep137">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction123" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep138">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction124" />
+ <bp:stepProcess rdf:resource="#Catalysis114" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep139">
+ <bp:stepProcess rdf:resource="#Catalysis115" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction125" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence140">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence141">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence142">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence143">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence144">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence134">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence135">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence136">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence137">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep120">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction108" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence138">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep121">
+ <bp:stepProcess rdf:resource="#Catalysis102" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction109" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence139">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep122">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction110" />
+ <bp:stepProcess rdf:resource="#Catalysis103" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep123">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction111" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep124">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction112" />
+ <bp:stepProcess rdf:resource="#Catalysis104" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep125">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction113" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep126">
+ <bp:stepProcess rdf:resource="#Pathway14" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep127">
+ <bp:stepProcess rdf:resource="#Catalysis105" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction114" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep128">
+ <bp:stepProcess rdf:resource="#Catalysis106" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction115" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep129">
+ <bp:stepProcess rdf:resource="#Pathway15" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence130">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence131">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence132">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence133">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence167">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence168">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence169">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep110">
+ <bp:stepProcess rdf:resource="#Catalysis95" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction99" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep111">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction100" />
+ <bp:stepProcess rdf:resource="#Catalysis96" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep112">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction101" />
+ <bp:stepProcess rdf:resource="#Catalysis97" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep113">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction102" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep114">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction103" />
+ <bp:stepProcess rdf:resource="#Catalysis98" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep115">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction104" />
+ <bp:stepProcess rdf:resource="#Catalysis99" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep116">
+ <bp:stepProcess rdf:resource="#Pathway13" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep117">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction105" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep118">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction106" />
+ <bp:stepProcess rdf:resource="#Catalysis100" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep119">
+ <bp:stepProcess rdf:resource="#Catalysis101" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction107" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence160">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence161">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence162">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence163">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence164">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence165">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence166">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence156">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence157">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence158">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence159">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep100">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction89" />
+ <bp:stepProcess rdf:resource="#Catalysis86" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep101">
+ <bp:stepProcess rdf:resource="#Catalysis87" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction90" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence3">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep102">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction91" />
+ <bp:stepProcess rdf:resource="#Catalysis88" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep103">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction92" />
+ <bp:stepProcess rdf:resource="#Catalysis89" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence5">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep104">
+ <bp:stepProcess rdf:resource="#Catalysis90" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction93" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence4">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep105">
+ <bp:stepProcess rdf:resource="#Catalysis91" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction94" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence7">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep106">
+ <bp:stepProcess rdf:resource="#Catalysis92" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction95" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence6">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep107">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction96" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence9">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep108">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction97" />
+ <bp:stepProcess rdf:resource="#Catalysis93" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence8">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep109">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction98" />
+ <bp:stepProcess rdf:resource="#Catalysis94" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence150">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence151">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence152">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence153">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence154">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence155">
+</bp:Evidence>
+</rdf:RDF>

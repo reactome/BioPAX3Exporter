@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/5626978#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">TNF-&#945;:TNFR1 binds NSMAF</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep3">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction3" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction3">
+ <bp:evidence rdf:resource="#Evidence4" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">TNF-&#945;:TNFR1:NSMAF:GNB2L1 associates with SMPD2,3</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:PathwayStep rdf:ID="PathwayStep2">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction2" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
+ <bp:evidence rdf:resource="#Evidence3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">TNF-&#945;:TNFR1:NSMAF binds GNB2L1</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence3">
+</bp:Evidence>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:Evidence rdf:ID="Evidence4">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep3" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep2" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction3" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction2" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">TNFR1-mediated ceramide production</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">TNF-alpha activates sphingomyelinase (SMASE) proteins to catalyze hydrolysis of sphingomyeline into ceramide. Two types of SMASE can be distinguished downstream of TNFR1 signaling, acid and neutral SMASEs (Adam-Klages S et al. 1996, 1998). Neutral SMASE (such as SMPD2,3) has a pH optimum of 7.4, requires Mg2+ ions and is found at the plasma membrane (Rao BG and Spence MW 1976). Acid SMASE is active at pH 4-5, is Zn2+-dependent and is mainly localized in the lysosomes. The death domain of TNFR1 that is responsible for the initiation of the apoptotic pathway also mediates activation of an acid SMASE. The two proapoptotic adaptor proteins TRADD and FADD are also involved in the activation of acid SMASE signaling events (Schwandner R et al. 1998). TNF-alpha can also activate the pro-apoptotic  acidic SMASE via caspase-8 mediated activation of caspase-7 which in turn proteolytically cleaves and activates the 72kDa pro-acid SMASE form (Edelmann B et al. 2011). Neutral SMASE(SMPD) binds to adaptor protein NSMAF (FAN), which bridges it to NSMASE-activating domain (NSD) of TNFR1 (Adam D et al. 1996; Adam-Klages S et al. 1996; S&#233;gui B et al. 2001). Activation of SMPD2,3 leads to an accumulation of ceramide at the cell surface. Ceramide metabolism generates a cascade of bioactive lipids, all of which carry a specific signaling capacity. Ceramide can be converted by ceramidase into sphingosine, which in turn is phosphorylated by sphingosine kinase into sphingosine-1-phosphate (S1P). These lipids exert opposite biological effects: ceramide and sphingosine are able to induce anti-proliferative and pro-apoptotic responses, whereas S1P is a cytoprotective molecule that promotes cell growth and counteracts apoptotic stimuli (Cuvillier O et al.1996) </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+</rdf:RDF>

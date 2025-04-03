@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/9674519#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:Catalysis rdf:ID="Catalysis1">
+ <bp:controlled rdf:resource="#BiochemicalReaction1" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Defective F8 sulfation at Y1699</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Hemophilia A (HA) is a bleeding disorder caused by lack of or a defective factor VIII (FVIII) protein and results from defects in the F8 gene (Peyvandi F et al. 2016). In healthy individuals, FVIII is synthesized as a large glycoprotein of 2351 amino acids with a discrete domain structure: A1-A2-B-A3-C1-C2 (Wood WI et al. 1984; Vehar GA et al. 1984; Toole JJ et al. 1984). Upon synthesis, FVIII is translocated into the lumen of the endoplasmic reticulum (ER), where it undergoes extensive processing including cleavage of a signal peptide and N-linked glycosylation at asparagine residues (Kaufman RJ et al. 1988, 1997; Kaufman RJ 1998). In the ER lumen of mammalian cells FVIII interacts with the protein chaperones calnexin (CNX), calreticulin (CRT), and immunoglobulin-binding protein (BiP or GRP78) that facilitate proper folding of proteins prior to trafficking to the Golgi compartment (Marquette KA et al. 1995; Swaroop M et al. 1997; Pipe SW et al. 1998; Kaufman RJ et al. 1997; Kaufman RJ 1998). Trafficking from the ER to the Golgi compartment is facilitated by LMAN1 and multiple combined factor deficiency 2 (MCFD2) cargo receptor complex (Zhang B et al. 2005; Zheng, C et al. 2010, 2013). Within the Golgi apparatus, FVIII is subject to further processing, including modification of the N-linked oligosaccharides to complex-type structures, O-linked glycosylation, and sulfation of specific Tyr-residues (Kaufman RJ 1998). Upon secretion from the cell, FVIII is cleaved at two sites in the B-domain to form a heterodimer consisting of the heavy chain containing the A1-A2-B domains in a metal ion-dependent complex with the light chain consisting of the A3-C1-C2 domains (Kaufman RJ et al. 1997; Kaufman RJ 1998). The Reactome event describes defects within the secretory pathway due to mutations in the F8 gene that can impair FVIII synthesis, folding, intracellular processing and transport which result in a lack or reduced levels of the plasma FVIII protein. The module includes also an event of defective post-translational tyrosine sulfonation of FVIII in the Golgi apparatus that is required for the optimal interaction between the secreted FVIII and the von Willebrand factor (VWF).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#Catalysis1" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">F8 variant is not sulfonated at Y1699</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+</rdf:RDF>

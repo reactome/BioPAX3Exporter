@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/1461957#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:PathwayStep rdf:ID="PathwayStep4">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction4" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence5">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep3">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction3" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence4">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep2">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction2" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Beta-defensins 4A and 103 bind CCR2</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence6">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
+ <bp:evidence rdf:resource="#Evidence3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Beta-defensins 1, 4A and 103 bind CCR6</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction3">
+ <bp:evidence rdf:resource="#Evidence4" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Beta-defensins are secreted</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep4" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep3" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep2" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep5" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction2" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction3" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction4" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction5" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Beta defensins</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Humans have 38 beta-defensin genes plus 9-10 pseudogenes (details available on the HGNC website at http://www.genenames.org/genefamilies/DEFB). Many beta-defensins are encoded by recently duplicated genes giving rise to identical transcripts. Nomenclature is confusing and currently in transition. Uniprot recommended names are used throughout this pathway. Many beta-defensins show expression that correlates with infection (Sahl et al. 2005, Pazgier et al. 2006). All so far characterized beta-defensins, i.e. beta-defensin 1 (hBD1), 4A (hBD2), 103 (hBD3), 104 (hBD4), 106 (hBD6), 118 (hBD18) and 128 (hBD28) have antimicrobial properties (Pazgier et al. 2006). For beta-defensins 4A, 103 and 118 (hBD2, 3, and 18) this has been shown to correlate with membrane permeabilization effects (Antcheva et al. 2004, Sahl et al. 2005, Yenugu et al. 2004). Electrostatic interaction and disruption of microbial membranes is widely believed to the primary mechanism of action for beta-defensins. Two models explain how membrane disruption takes place, the &apos;pore model&apos; which postulates that beta-defensins form transmembrane pores in a similar manner to alpha-defensins, and the &apos;carpet model&apos;, which suggests that beta-defensins act as detergents. Beta-defensins contain 6 conserved cysteine residues that in beta-defensins 1, 4A and 103 (hBD1-3) are experimentally confirmed to be cross-linked 1-5, 2-4, 3-6. The canonical sequence for beta-defensins is x2-10Cx5-6(G/A)xCX3-4Cx9-13Cx4-7CCxn. Structurally they are similar to alpha-defensins but with much shorter pre-regions. Though dimerization of some beta-defensins has been reported this is not the case for all and it is unclear whether it is required for function. The majority of functional studies have focused on beta-defensin 103 (hBD3), which has the most significant antimicrobial activity at physiological salt concentrations (Harder et al. 2001). Beta-defensin 103  is highly cationic with a net charge of +11 e0.  It exhibits broad-spectrum antimicrobial activity against gram-positive bacteria and some gram-negative bacteria (Harder et al. 2001), though some species are highly resistant (Sahly et al. 2003). Sensitivity correlates with lipid composition of the membrane, with more negatively-charged lipids correlating with larger beta-defensin 103-induced changes in membrane capacitance (Bohling et al. 2006). Though membrane disruption is widely believed to be the primary mechanism of action of beta-defensins they have other antimicrobial properties, such as inhibition of cell wall biosynthesis (Sass et al. 2010), and chemoattractant effects (Yang et al. 1999, Niyonsaba et al. 2002, 2004). The chemotactic activity of beta-defensins 1, 4A and 103 (hBD1-3) for memory T cells and immature DCs is mediated through binding to the chemokine receptor CCR6 and probably another unidentified Gi-coupled receptor (Yang et al. 1999, 2000).    Like defensins, the human cathelicidin LL37 peptide is rich in positively-charged  residues (Lehrer    Ganz 2002). Expression of certain beta-defensins can be induced in response to various signals, such as bacteria, pathogen-associated molecular patterns (PAMPs), or proinflammatory cytokines (Ganz 2003, Yang et al. 2004). Like the alpha-defensins, copy number variation has been reported for DEFB4, DEFB103 and DEFB104 with individuals having 2-12 copies per diploid genome. In contrast DEFB1 does not show such variation but exhibits a number of SNPs (Hollox et al. 2003, Linzmier    Ganz 2005).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction4">
+ <bp:evidence rdf:resource="#Evidence5" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Beta defensin 103 activates TLR1:TLR2</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep5">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction5" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction5">
+ <bp:evidence rdf:resource="#Evidence6" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Beta-defensins bind microbial membranes causing disruption</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence3">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+</rdf:RDF>

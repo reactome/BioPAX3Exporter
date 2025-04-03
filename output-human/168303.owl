@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/168303#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
+ <bp:evidence rdf:resource="#Evidence3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Association with M1 at cell membrane</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep2" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction2" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Packaging of Eight RNA Segments</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">For a budding influenza virus to be fully infectious is it essential that it contains a full complement of the eight vRNA segments. Two different models have been proposed for packaging of the vRNPs into newly assembling virus particles; the random incorporation model and the selective incorporation model. The random incorporation model as its name suggests proposes that there is no selection at all on which vRNPs are packaged. It is assumed that each vRNP has equal probability of being packaged, and that if enough vRNPS are packaged a particular percentage of budding virions will receive at least one copy of each genome segment. This model is supported by evidence that infectious virions may possess more than eight vRNPs assuring the presence of a full complement of eight vRNPs in a significant percentage of virus particles. Mathematical analysis of packaging suggested that twelve RNA segments would need to be packaged in order to obtain approximately 10% of virus particles that are fully infectious (Enami, 1991), a number that is compatible with experimental data (Donald, 1954). Due to the low amount of RNA per virion (estimated at 1-2% w/w), enumeration of the precise number of RNAs packaged in a virion is difficult. The selective incorporation model, suggests that each vRNA segment contains a unique &quot;packaging signal&quot; allowing it to act independently, with each vRNA segment being packaged selectively. There is increasing evidence to support the theory of a packaging signal within the coding regions at both the 5&apos; and 3&apos; end of the genomic RNA, with signals being reported for all segments except segment 7 (Ozawa 2007, Muramoto 2006, Fujii 2005, Fujii 2003, Watanabe 2003, Liang 2005). The exact method by which individual vRNP segments are packaged is not known but it has been hypothesized to occur via specific RNA-RNA or protein-RNA interactions. This model is also supported by thin section electron microscopy images of influenza particles that show eight distinct &quot;dots&quot;, presumably vRNPs within virus particles (Noda 2006).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep2">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction2" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RNP association</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence3">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+</rdf:RDF>

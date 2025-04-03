@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/9865125#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#Catalysis1" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis1">
+ <bp:controlled rdf:resource="#BiochemicalReaction1" />
+</bp:Catalysis>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:name>
+</bp:BioSource>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Loss-of-function mutations in BCKDHA or BCKDHB cause MSUD</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Mutations in either of the protein subunits of the E1 decarboxylase subcomplex of BCKDH are associated with Maple Syrup Urine Disease 1 (MSUD1). Mutations of residues in BCKDHA that participate in subunit associations or that form part of the hydrophobic core destabilize the overall assembly of BCKDH and are associated with classic Maple Syrup Urine Disease 1A (Aevarsson et al, 2000; reviewed in Straus et al, 2020; Biswas et al, 2019). Mutations of BCKDHA with less drastic effects on structural  stability of the overall BCKDH complex are generally associated with intermediate or intermittent forms of MSUD, and are not annotated in this pathway (reviewed in Strauss et al, 2020)  Mutations in BCKDHB appear to be causative in 35% of MSUD cases(reviewed in Strauss et al, 2020). Classic Maple Syrup Disease 1B is associated with severe loss-of-function mutations in BCKDHB that destabilize the protein interaction interfaces and compromise structural integrity of the complex (reviewed in Straus et al, 2020; Biswas et al, 2019).  Less detrimental mutations in BCKDHB are not annotated in this pathway and are generally associated with intermediate or intermittent forms of MSUD (reviewed in Strauss et al, 2020).</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">BCKDHA or BCKDHB loss-of-function mutants don&apos;t synthesize BCAA-CoA</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+</rdf:RDF>
