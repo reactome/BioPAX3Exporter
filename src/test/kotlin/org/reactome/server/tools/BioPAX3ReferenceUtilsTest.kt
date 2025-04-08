@@ -48,6 +48,42 @@ class BioPAX3ReferenceUtilsTest {
         assertEquals(expected, result.trim())
     }
     
+    @Test
+    fun `test removeTags handles control characters`() {
+        val input = "Text with\u0000control\u0001characters"
+        val expected = "Text with control characters"
+        
+        val result = BioPAX3ReferenceUtils.getComment(listOf(createSummation(input)))
+        assertEquals(expected, result.trim())
+    }
+    
+    @Test
+    fun `test removeTags handles multiple line breaks`() {
+        val input = "First line\n\n\nSecond line"
+        val expected = "First line  Second line"
+        
+        val result = BioPAX3ReferenceUtils.getComment(listOf(createSummation(input)))
+        assertEquals(expected, result.trim())
+    }
+    
+    @Test
+    fun `test removeTags handles ampersands`() {
+        val input = "Text with &&& ampersands"
+        val expected = "Text with   ampersands"
+        
+        val result = BioPAX3ReferenceUtils.getComment(listOf(createSummation(input)))
+        assertEquals(expected, result.trim())
+    }
+    
+    @Test
+    fun `test getComment handles complex HTML`() {
+        val input = "<div class=\"test\"><p>This is a <b>complex</b> <i>HTML</i> <a href=\"http://example.com\">link</a></p></div>"
+        val expected = "This is a complex HTML link"
+        
+        val result = BioPAX3ReferenceUtils.getComment(listOf(createSummation(input)))
+        assertEquals(expected, result.trim())
+    }
+    
     private fun createSummation(text: String): Summation {
         return Summation().apply {
             this.text = text
