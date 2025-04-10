@@ -194,7 +194,10 @@
 
 	<!-- end of the XrefRule config. -->
 
-	<bean id="validator" class="org.biopax.validator.BiopaxValidator" />
+	<bean id="validator" class="org.biopax.validator.BiopaxValidator">
+		<property name="utils" ref="utils" />
+		<property name="xrefHelper" ref="xrefHelper" />
+	</bean>
     
 	<!-- BiopaxValidatorUtils configuration -->
 
@@ -215,15 +218,17 @@
 		<property name="maxErrors" value="10000" />
 	</bean>
     
-	
-    <bean id="validator" class="org.biopax.validator.BiopaxValidator" />
-       
 	<!-- end of BiopaxValidatorUtils config. -->
 
 	<bean id="ontologyManager" class="org.biopax.psidev.ontology_manager.impl.OntologyManagerImpl" scope="singleton">
 		 <constructor-arg index="0">
 		 	<util:properties local-override="false" location="classpath:obo.properties"/>
 		 </constructor-arg>
+	</bean>
+	
+	<!-- Add the missing CvUtils bean -->
+	<bean id="cvUtils" class="org.biopax.validator.utils.CvUtils" scope="singleton">
+		<constructor-arg ref="ontologyManager" />
 	</bean>
 	
 	<!-- a helper and a proxy to access MIRIAM and MI database citation and regexps 
@@ -233,7 +238,9 @@
         <constructor-arg ref="ontologyManager" />
     </bean>
 	
-	
+	<!-- Update component scanning to include all necessary packages -->
 	<context:component-scan base-package="org.biopax.validator.rules"/>
+	<context:component-scan base-package="org.biopax.validator.utils"/>
+	<context:component-scan base-package="org.biopax.validator.api"/>
 	
 </beans>

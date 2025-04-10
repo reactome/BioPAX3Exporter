@@ -1,0 +1,2540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/11034862#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:Evidence rdf:ID="Evidence72">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence71">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence70">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence76">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence75">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence74">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence73">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence79">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence78">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence77">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence83">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence82">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence81">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence80">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence87">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence86">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence85">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence84">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction8">
+ <bp:evidence rdf:resource="#Evidence19" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Autophosphorylation and activation of CAMK2</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction9">
+ <bp:evidence rdf:resource="#Evidence24" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">FURIN translocates to the plasma membrane</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction6">
+ <bp:evidence rdf:resource="#Evidence17" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Translocation of NFATC1:CaN:CaM to nucleus</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence89">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction7">
+ <bp:evidence rdf:resource="#Evidence18" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Activation of Calcineurin</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence88">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction4">
+ <bp:evidence rdf:resource="#Evidence15" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NLK translocates to nucleus</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction5">
+ <bp:evidence rdf:resource="#Evidence16" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Dissociation of CaM and CAMK2 autophosphorylation</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
+ <bp:evidence rdf:resource="#Evidence10" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PIK3C3:PIK3R4 phosphorylates PI to PI3P</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction3">
+ <bp:evidence rdf:resource="#Evidence14" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Active calmodulin binds CAMK2</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence90">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence94">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence93">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence92">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence91">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence98">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence97">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence96">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence95">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence99">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis27">
+ <bp:controlled rdf:resource="#BiochemicalReaction57" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis26">
+ <bp:controlled rdf:resource="#BiochemicalReaction54" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis29">
+ <bp:controlled rdf:resource="#BiochemicalReaction59" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis28">
+ <bp:controlled rdf:resource="#BiochemicalReaction58" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence32">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence31">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence30">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence36">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence35">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence34">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis21">
+ <bp:controlled rdf:resource="#BiochemicalReaction36" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence33">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis20">
+ <bp:controlled rdf:resource="#BiochemicalReaction33" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis23">
+ <bp:controlled rdf:resource="#BiochemicalReaction41" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence39">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis22">
+ <bp:controlled rdf:resource="#BiochemicalReaction38" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence38">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis25">
+ <bp:controlled rdf:resource="#BiochemicalReaction47" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence37">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis24">
+ <bp:controlled rdf:resource="#BiochemicalReaction44" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep29">
+ <bp:stepProcess rdf:resource="#Catalysis5" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction10" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep25">
+ <bp:stepProcess rdf:resource="#Pathway17" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep26">
+ <bp:stepProcess rdf:resource="#Pathway18" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep27">
+ <bp:stepProcess rdf:resource="#Pathway19" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep28">
+ <bp:stepProcess rdf:resource="#Pathway20" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep21">
+ <bp:stepProcess rdf:resource="#Pathway14" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep22">
+ <bp:stepProcess rdf:resource="#Pathway15" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep23">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction9" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep24">
+ <bp:stepProcess rdf:resource="#Pathway16" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep20">
+ <bp:stepProcess rdf:resource="#Pathway13" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence43">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence42">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence41">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence40">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence47">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis30">
+ <bp:controlled rdf:resource="#BiochemicalReaction61" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence46">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence45">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis32">
+ <bp:controlled rdf:resource="#BiochemicalReaction66" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence44">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis31">
+ <bp:controlled rdf:resource="#BiochemicalReaction63" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis34">
+ <bp:controlled rdf:resource="#BiochemicalReaction70" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis33">
+ <bp:controlled rdf:resource="#BiochemicalReaction68" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence49">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis36">
+ <bp:controlled rdf:resource="#BiochemicalReaction72" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence48">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis35">
+ <bp:controlled rdf:resource="#BiochemicalReaction71" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep18">
+ <bp:stepProcess rdf:resource="#Catalysis4" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction8" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep19">
+ <bp:stepProcess rdf:resource="#Pathway12" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep14">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction4" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep15">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction5" />
+ <bp:stepProcess rdf:resource="#Catalysis3" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep16">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction6" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep17">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction7" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep10">
+ <bp:stepProcess rdf:resource="#Pathway9" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep11">
+ <bp:stepProcess rdf:resource="#Pathway10" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep12">
+ <bp:stepProcess rdf:resource="#Pathway11" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep13">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction3" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis5">
+ <bp:controlled rdf:resource="#BiochemicalReaction10" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence50">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis4">
+ <bp:controlled rdf:resource="#BiochemicalReaction8" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis7">
+ <bp:controlled rdf:resource="#BiochemicalReaction13" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis6">
+ <bp:controlled rdf:resource="#BiochemicalReaction12" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis9">
+ <bp:controlled rdf:resource="#BiochemicalReaction18" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence54">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis8">
+ <bp:controlled rdf:resource="#BiochemicalReaction14" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence53">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence52">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence51">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence58">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence57">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence56">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence55">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence59">
+</bp:Evidence>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:PathwayStep rdf:ID="PathwayStep47">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction19" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep48">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction20" />
+ <bp:stepProcess rdf:resource="#Catalysis10" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep49">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction21" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep43">
+ <bp:stepProcess rdf:resource="#Pathway27" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep44">
+ <bp:stepProcess rdf:resource="#Pathway28" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep45">
+ <bp:stepProcess rdf:resource="#Pathway29" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep46">
+ <bp:stepProcess rdf:resource="#Catalysis9" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction18" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep40">
+ <bp:stepProcess rdf:resource="#Pathway25" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep41">
+ <bp:stepProcess rdf:resource="#Pathway26" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep42">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction17" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep5">
+ <bp:stepProcess rdf:resource="#Pathway5" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence61">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis16">
+ <bp:controlled rdf:resource="#BiochemicalReaction27" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep6">
+ <bp:stepProcess rdf:resource="#Pathway6" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence60">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis15">
+ <bp:controlled rdf:resource="#BiochemicalReaction26" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep7">
+ <bp:stepProcess rdf:resource="#Pathway7" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis18">
+ <bp:controlled rdf:resource="#BiochemicalReaction31" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep8">
+ <bp:stepProcess rdf:resource="#Pathway8" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis17">
+ <bp:controlled rdf:resource="#BiochemicalReaction29" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep9">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction2" />
+ <bp:stepProcess rdf:resource="#Catalysis2" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence65">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence64">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis19">
+ <bp:controlled rdf:resource="#BiochemicalReaction32" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence63">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence62">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence69">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence68">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis10">
+ <bp:controlled rdf:resource="#BiochemicalReaction20" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence67">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence66">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis12">
+ <bp:controlled rdf:resource="#BiochemicalReaction23" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis11">
+ <bp:controlled rdf:resource="#BiochemicalReaction22" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis14">
+ <bp:controlled rdf:resource="#BiochemicalReaction25" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis13">
+ <bp:controlled rdf:resource="#BiochemicalReaction24" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep36">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction13" />
+ <bp:stepProcess rdf:resource="#Catalysis7" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep37">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction14" />
+ <bp:stepProcess rdf:resource="#Catalysis8" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep38">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction15" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep39">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction16" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep32">
+ <bp:stepProcess rdf:resource="#Catalysis6" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction12" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep33">
+ <bp:stepProcess rdf:resource="#Pathway22" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep34">
+ <bp:stepProcess rdf:resource="#Pathway23" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep35">
+ <bp:stepProcess rdf:resource="#Pathway24" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#Pathway2" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis1">
+ <bp:controlled rdf:resource="#BiochemicalReaction1" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep2">
+ <bp:stepProcess rdf:resource="#Pathway3" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep3">
+ <bp:stepProcess rdf:resource="#Pathway4" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis3">
+ <bp:controlled rdf:resource="#BiochemicalReaction5" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep30">
+ <bp:stepProcess rdf:resource="#Pathway21" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep4">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+ <bp:stepProcess rdf:resource="#Catalysis1" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis2">
+ <bp:controlled rdf:resource="#BiochemicalReaction2" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep31">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction11" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep70">
+ <bp:stepProcess rdf:resource="#Pathway43" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep71">
+ <bp:stepProcess rdf:resource="#Pathway44" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep69">
+ <bp:stepProcess rdf:resource="#Pathway42" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep65">
+ <bp:stepProcess rdf:resource="#Catalysis16" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction27" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep66">
+ <bp:stepProcess rdf:resource="#Pathway39" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep67">
+ <bp:stepProcess rdf:resource="#Pathway40" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep68">
+ <bp:stepProcess rdf:resource="#Pathway41" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep61">
+ <bp:stepProcess rdf:resource="#Pathway37" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep62">
+ <bp:stepProcess rdf:resource="#Pathway18" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep63">
+ <bp:stepProcess rdf:resource="#Pathway38" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep64">
+ <bp:stepProcess rdf:resource="#Catalysis15" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction26" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep60">
+ <bp:stepProcess rdf:resource="#Pathway36" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep58">
+ <bp:stepProcess rdf:resource="#Pathway34" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep59">
+ <bp:stepProcess rdf:resource="#Pathway35" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep54">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction24" />
+ <bp:stepProcess rdf:resource="#Catalysis13" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep55">
+ <bp:stepProcess rdf:resource="#Pathway32" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep56">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction25" />
+ <bp:stepProcess rdf:resource="#Catalysis14" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep57">
+ <bp:stepProcess rdf:resource="#Pathway33" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep50">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction22" />
+ <bp:stepProcess rdf:resource="#Catalysis11" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep51">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction23" />
+ <bp:stepProcess rdf:resource="#Catalysis12" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep52">
+ <bp:stepProcess rdf:resource="#Pathway30" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep53">
+ <bp:stepProcess rdf:resource="#Pathway31" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep90">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction35" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep91">
+ <bp:stepProcess rdf:resource="#Pathway56" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep92">
+ <bp:stepProcess rdf:resource="#Pathway57" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep93">
+ <bp:stepProcess rdf:resource="#Pathway58" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep5" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep19" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep10" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep43" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep66" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep141" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep24" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep102" />
+ <bp:pathwayComponent rdf:resource="#Pathway9" />
+ <bp:pathwayComponent rdf:resource="#Pathway12" />
+ <bp:pathwayComponent rdf:resource="#Pathway39" />
+ <bp:pathwayComponent rdf:resource="#Pathway16" />
+ <bp:pathwayComponent rdf:resource="#Pathway27" />
+ <bp:pathwayComponent rdf:resource="#Pathway2" />
+ <bp:pathwayComponent rdf:resource="#Pathway5" />
+ <bp:pathwayComponent rdf:resource="#Pathway72" />
+ <bp:pathwayComponent rdf:resource="#Pathway63" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Signal Transduction</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway2">
+ <bp:pathwayOrder rdf:resource="#PathwayStep2" />
+ <bp:pathwayComponent rdf:resource="#Pathway3" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Signaling by Non-Receptor Tyrosine Kinases</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway3">
+ <bp:pathwayOrder rdf:resource="#PathwayStep3" />
+ <bp:pathwayComponent rdf:resource="#Pathway4" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Signaling by PTK6</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway4">
+ <bp:pathwayOrder rdf:resource="#PathwayStep4" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence4" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PTK6 Regulates RTKs and Their Effectors AKT1 and DOK1</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway5">
+ <bp:pathwayOrder rdf:resource="#PathwayStep6" />
+ <bp:pathwayComponent rdf:resource="#Pathway6" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence6" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Signaling by Rho GTPases, Miro GTPases and RHOBTB3</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway6">
+ <bp:pathwayOrder rdf:resource="#PathwayStep7" />
+ <bp:pathwayComponent rdf:resource="#Pathway7" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence7" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Signaling by Rho GTPases</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway7">
+ <bp:pathwayOrder rdf:resource="#PathwayStep8" />
+ <bp:pathwayComponent rdf:resource="#Pathway8" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence8" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RHO GTPase Effectors</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway8">
+ <bp:pathwayOrder rdf:resource="#PathwayStep9" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction2" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence9" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RHO GTPases Activate NADPH Oxidases</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep87">
+ <bp:stepProcess rdf:resource="#Pathway54" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep88">
+ <bp:stepProcess rdf:resource="#Pathway55" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep89">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction34" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep83">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction33" />
+ <bp:stepProcess rdf:resource="#Catalysis20" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep84">
+ <bp:stepProcess rdf:resource="#Pathway51" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep85">
+ <bp:stepProcess rdf:resource="#Pathway52" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep86">
+ <bp:stepProcess rdf:resource="#Pathway53" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep80">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction30" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep81">
+ <bp:stepProcess rdf:resource="#Catalysis18" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction31" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep82">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction32" />
+ <bp:stepProcess rdf:resource="#Catalysis19" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway9">
+ <bp:pathwayOrder rdf:resource="#PathwayStep11" />
+ <bp:pathwayComponent rdf:resource="#Pathway10" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence11" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Signaling by WNT</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep76">
+ <bp:stepProcess rdf:resource="#Catalysis17" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction29" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep77">
+ <bp:stepProcess rdf:resource="#Pathway48" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep78">
+ <bp:stepProcess rdf:resource="#Pathway49" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep79">
+ <bp:stepProcess rdf:resource="#Pathway50" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep72">
+ <bp:stepProcess rdf:resource="#Pathway45" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep73">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction28" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep74">
+ <bp:stepProcess rdf:resource="#Pathway46" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep75">
+ <bp:stepProcess rdf:resource="#Pathway47" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep98">
+ <bp:stepProcess rdf:resource="#Pathway61" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep99">
+ <bp:stepProcess rdf:resource="#Pathway43" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep94">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction36" />
+ <bp:stepProcess rdf:resource="#Catalysis21" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep95">
+ <bp:stepProcess rdf:resource="#Pathway59" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep96">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction37" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep97">
+ <bp:stepProcess rdf:resource="#Pathway60" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence5" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CBL autoubiquitinates</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence150">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence141">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence142">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence140">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence149">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence3">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence147">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence148">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence5">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence145">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence4">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence146">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence7">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence143">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence6">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence144">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence9">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence8">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence130">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence131">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence138">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence139">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence136">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence137">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence134">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence135">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence132">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence133">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence120">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence127">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence128">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence125">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence126">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence123">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence124">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence121">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence122">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence129">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence116">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence117">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence114">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence115">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence112">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence113">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence110">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence111">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence118">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence119">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence105">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence106">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence103">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence104">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence101">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence102">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence100">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence109">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence107">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence108">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep118">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction50" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep117">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction49" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep116">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction48" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep115">
+ <bp:stepProcess rdf:resource="#Pathway67" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep119">
+ <bp:stepProcess rdf:resource="#Pathway68" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction60">
+ <bp:evidence rdf:resource="#Evidence130" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">BRAP binds KSR1:MARK3</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction61">
+ <bp:evidence rdf:resource="#Evidence131" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Cytosolic DUSPs dephosphorylate MAPKs</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction62">
+ <bp:evidence rdf:resource="#Evidence132" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PEBP1 binds activated RAF1</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction63">
+ <bp:evidence rdf:resource="#Evidence133" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Nuclear DUSPs dephosphorylate MAPKs</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction68">
+ <bp:evidence rdf:resource="#Evidence139" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Nuclear DUSPs dephosphorylate MAPKs</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway77">
+ <bp:pathwayOrder rdf:resource="#PathwayStep150" />
+ <bp:pathwayComponent rdf:resource="#Pathway78" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence148" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Signaling by Retinoic Acid</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction69">
+ <bp:evidence rdf:resource="#Evidence144" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ESR1- and PRCKZ-dependent MAPK1 translocation to the nucleus</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway76">
+ <bp:pathwayOrder rdf:resource="#PathwayStep148" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction71" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence146" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Estrogen-dependent gene expression</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway78">
+ <bp:pathwayOrder rdf:resource="#PathwayStep151" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction72" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence149" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RA biosynthesis pathway</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction64">
+ <bp:evidence rdf:resource="#Evidence134" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p-T,Y MAPKs dimerize</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction65">
+ <bp:evidence rdf:resource="#Evidence136" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Phosphorylated MAPKs translocate into the nucleus</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction66">
+ <bp:evidence rdf:resource="#Evidence137" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Cytosolic DUSPs dephosphorylate MAPKs</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction67">
+ <bp:evidence rdf:resource="#Evidence138" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p-T,Y MAPKs dimerize</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep110">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction45" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway71">
+ <bp:pathwayOrder rdf:resource="#PathwayStep139" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep138" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep137" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep140" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction68" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction65" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction66" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction67" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence135" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RAF-independent MAPK1/3 activation</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway70">
+ <bp:pathwayOrder rdf:resource="#PathwayStep129" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep130" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction58" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction59" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence127" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Negative feedback regulation of MAPK pathway</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep114">
+ <bp:stepProcess rdf:resource="#Pathway66" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway73">
+ <bp:pathwayOrder rdf:resource="#PathwayStep143" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep147" />
+ <bp:pathwayComponent rdf:resource="#Pathway76" />
+ <bp:pathwayComponent rdf:resource="#Pathway74" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence141" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ESR-mediated signaling</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep113">
+ <bp:stepProcess rdf:resource="#Pathway65" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway72">
+ <bp:pathwayOrder rdf:resource="#PathwayStep149" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep142" />
+ <bp:pathwayComponent rdf:resource="#Pathway77" />
+ <bp:pathwayComponent rdf:resource="#Pathway73" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence140" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Signaling by Nuclear Receptors</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep112">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction47" />
+ <bp:stepProcess rdf:resource="#Catalysis25" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway75">
+ <bp:pathwayOrder rdf:resource="#PathwayStep145" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction69" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence143" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Estrogen-stimulated signaling through PRKCZ</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep111">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction46" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway74">
+ <bp:pathwayOrder rdf:resource="#PathwayStep146" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep144" />
+ <bp:pathwayComponent rdf:resource="#Pathway75" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction70" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence142" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Extra-nuclear estrogen signaling</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep129">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction58" />
+ <bp:stepProcess rdf:resource="#Catalysis28" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep128">
+ <bp:stepProcess rdf:resource="#Pathway70" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep127">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction57" />
+ <bp:stepProcess rdf:resource="#Catalysis27" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep126">
+ <bp:stepProcess rdf:resource="#Pathway69" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction50">
+ <bp:evidence rdf:resource="#Evidence117" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Phosphorylated MAPKs translocate into the nucleus</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction51">
+ <bp:evidence rdf:resource="#Evidence119" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p-S311,S406 KSR1:MARK3 binds YWHAB dimer</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction52">
+ <bp:evidence rdf:resource="#Evidence120" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Inactive RAFs bind YWHAB</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction57">
+ <bp:evidence rdf:resource="#Evidence126" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PP5 dephosphorylates RAF1 S338</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction58">
+ <bp:evidence rdf:resource="#Evidence128" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Activated MAPKs phosphorylate BRAF</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction59">
+ <bp:evidence rdf:resource="#Evidence129" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Activated MAPK phosphorylates RAF1</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction53">
+ <bp:evidence rdf:resource="#Evidence121" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Raf dimer inhibitors bind RAF heterodimers</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction54">
+ <bp:evidence rdf:resource="#Evidence122" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MARK3 phosphorylates KSR1</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction55">
+ <bp:evidence rdf:resource="#Evidence123" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">YWHAB dimer dissociates from KSR1:MARK3</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction56">
+ <bp:evidence rdf:resource="#Evidence124" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">YWHAB dimer dissociates from dephosphorylated RAF</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep121">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction52" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep120">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction51" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep125">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction56" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep124">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction55" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep123">
+ <bp:stepProcess rdf:resource="#Catalysis26" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction54" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep122">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction53" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence10">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence14">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence13">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence12">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence11">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence18">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence17">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence16">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence15">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway55">
+ <bp:pathwayOrder rdf:resource="#PathwayStep90" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep89" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction35" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction34" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence88" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Frs2-mediated activation</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway54">
+ <bp:pathwayOrder rdf:resource="#PathwayStep88" />
+ <bp:pathwayComponent rdf:resource="#Pathway55" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence87" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Prolonged ERK activation events</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway57">
+ <bp:pathwayOrder rdf:resource="#PathwayStep93" />
+ <bp:pathwayComponent rdf:resource="#Pathway58" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence92" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ERK/MAPK targets</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence19">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway56">
+ <bp:pathwayOrder rdf:resource="#PathwayStep92" />
+ <bp:pathwayComponent rdf:resource="#Pathway57" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence91" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Nuclear Events (kinase and transcription factor activation)</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway59">
+ <bp:pathwayOrder rdf:resource="#PathwayStep96" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction37" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence95" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Signalling to ERK5</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway58">
+ <bp:pathwayOrder rdf:resource="#PathwayStep94" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction36" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence93" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ERKs are inactivated</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway51">
+ <bp:pathwayOrder rdf:resource="#PathwayStep85" />
+ <bp:pathwayComponent rdf:resource="#Pathway52" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence84" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Signaling by NTRKs</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway50">
+ <bp:pathwayOrder rdf:resource="#PathwayStep80" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep81" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep82" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep83" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction31" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction32" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction33" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction30" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence79" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">VEGFR2 mediated vascular permeability</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway53">
+ <bp:pathwayOrder rdf:resource="#PathwayStep87" />
+ <bp:pathwayComponent rdf:resource="#Pathway54" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence86" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Signalling to ERKs</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway52">
+ <bp:pathwayOrder rdf:resource="#PathwayStep91" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep95" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep86" />
+ <bp:pathwayComponent rdf:resource="#Pathway56" />
+ <bp:pathwayComponent rdf:resource="#Pathway59" />
+ <bp:pathwayComponent rdf:resource="#Pathway53" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence85" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Signaling by NTRK1 (TRKA)</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep107">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction42" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep106">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction41" />
+ <bp:stepProcess rdf:resource="#Catalysis23" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep105">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction40" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep104">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction39" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence21">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence20">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep109">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction44" />
+ <bp:stepProcess rdf:resource="#Catalysis24" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep108">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction43" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence25">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction71">
+ <bp:evidence rdf:resource="#Evidence147" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p-TEFb phosphorylates serine 2 in RNA polymerase II CTD</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence24">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction72">
+ <bp:evidence rdf:resource="#Evidence150" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RDH13 reduces atRAL to atROL</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence23">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence22">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence29">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence28">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence27">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence26">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction70">
+ <bp:evidence rdf:resource="#Evidence145" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">eNOS synthesizes NO</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway66">
+ <bp:pathwayOrder rdf:resource="#PathwayStep118" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep115" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep126" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep119" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep135" />
+ <bp:pathwayComponent rdf:resource="#Pathway68" />
+ <bp:pathwayComponent rdf:resource="#Pathway67" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction64" />
+ <bp:pathwayComponent rdf:resource="#Pathway69" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction50" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence113" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RAF/MAP kinase cascade</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway65">
+ <bp:pathwayOrder rdf:resource="#PathwayStep114" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep136" />
+ <bp:pathwayComponent rdf:resource="#Pathway66" />
+ <bp:pathwayComponent rdf:resource="#Pathway71" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence112" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MAPK1/MAPK3 signaling</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway68">
+ <bp:pathwayOrder rdf:resource="#PathwayStep121" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep120" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep125" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep124" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep123" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep122" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction53" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction54" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction55" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction56" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction51" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction52" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence118" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RAF activation</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway67">
+ <bp:pathwayOrder rdf:resource="#PathwayStep117" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep116" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction48" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction49" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence114" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">RAS processing</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway69">
+ <bp:pathwayOrder rdf:resource="#PathwayStep128" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep127" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep132" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep131" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep134" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep133" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction57" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction60" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction61" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction62" />
+ <bp:pathwayComponent rdf:resource="#Pathway70" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction63" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence125" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Negative regulation of MAPK pathway</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway60">
+ <bp:pathwayOrder rdf:resource="#PathwayStep98" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep100" />
+ <bp:pathwayComponent rdf:resource="#Pathway62" />
+ <bp:pathwayComponent rdf:resource="#Pathway61" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence97" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Signaling by Insulin receptor</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway62">
+ <bp:pathwayOrder rdf:resource="#PathwayStep101" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction38" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence99" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Insulin receptor recycling</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep103">
+ <bp:stepProcess rdf:resource="#Pathway64" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway61">
+ <bp:pathwayOrder rdf:resource="#PathwayStep99" />
+ <bp:pathwayComponent rdf:resource="#Pathway43" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence98" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Insulin receptor signalling cascade</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep102">
+ <bp:stepProcess rdf:resource="#Pathway63" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep101">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction38" />
+ <bp:stepProcess rdf:resource="#Catalysis22" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway64">
+ <bp:pathwayOrder rdf:resource="#PathwayStep107" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep106" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep105" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep104" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep109" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep108" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep110" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep112" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep111" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction46" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction47" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction42" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction43" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction44" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction45" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction40" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction41" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction39" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence102" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MAPK6/MAPK4 signaling</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep100">
+ <bp:stepProcess rdf:resource="#Pathway62" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway63">
+ <bp:pathwayOrder rdf:resource="#PathwayStep103" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep113" />
+ <bp:pathwayComponent rdf:resource="#Pathway65" />
+ <bp:pathwayComponent rdf:resource="#Pathway64" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence101" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MAPK family signaling cascades</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway29">
+ <bp:pathwayOrder rdf:resource="#PathwayStep47" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep48" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep49" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep46" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep50" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep51" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction20" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction21" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction22" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction23" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction18" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction19" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence46" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">G alpha (s) signalling events</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction24">
+ <bp:evidence rdf:resource="#Evidence55" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">DAG kinase produces phosphatidic acid from DAG</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway33">
+ <bp:pathwayOrder rdf:resource="#PathwayStep58" />
+ <bp:pathwayComponent rdf:resource="#Pathway34" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence58" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">G alpha (i) signalling events</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway32">
+ <bp:pathwayOrder rdf:resource="#PathwayStep56" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction25" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence56" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Arachidonate production from DAG</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction25">
+ <bp:evidence rdf:resource="#Evidence57" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">2-AG hydrolysis to arachidonate by MAGL</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway35">
+ <bp:pathwayOrder rdf:resource="#PathwayStep60" />
+ <bp:pathwayComponent rdf:resource="#Pathway36" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence60" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">G-protein mediated events</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction26">
+ <bp:evidence rdf:resource="#Evidence64" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p-S54-PDE4B hydrolyses cAMP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway34">
+ <bp:pathwayOrder rdf:resource="#PathwayStep59" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep63" />
+ <bp:pathwayComponent rdf:resource="#Pathway35" />
+ <bp:pathwayComponent rdf:resource="#Pathway38" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence59" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Opioid Signalling</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction27">
+ <bp:evidence rdf:resource="#Evidence65" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PDE4A,C,D hydrolyse cAMP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction20">
+ <bp:evidence rdf:resource="#Evidence49" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PDE3B hydrolyses cAMP to AMP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway37">
+ <bp:pathwayOrder rdf:resource="#PathwayStep62" />
+ <bp:pathwayComponent rdf:resource="#Pathway18" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence62" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Ca-dependent events</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep150">
+ <bp:stepProcess rdf:resource="#Pathway78" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction21">
+ <bp:evidence rdf:resource="#Evidence50" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PDE4A binds PDE4A inhibitors</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway36">
+ <bp:pathwayOrder rdf:resource="#PathwayStep61" />
+ <bp:pathwayComponent rdf:resource="#Pathway37" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence61" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PLC beta mediated events</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction22">
+ <bp:evidence rdf:resource="#Evidence51" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PDE3A hydrolyses cAMP to AMP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway39">
+ <bp:pathwayOrder rdf:resource="#PathwayStep77" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep67" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep84" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep97" />
+ <bp:pathwayComponent rdf:resource="#Pathway48" />
+ <bp:pathwayComponent rdf:resource="#Pathway60" />
+ <bp:pathwayComponent rdf:resource="#Pathway40" />
+ <bp:pathwayComponent rdf:resource="#Pathway51" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence66" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Signaling by Receptor Tyrosine Kinases</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction23">
+ <bp:evidence rdf:resource="#Evidence52" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PDE4A hydrolyses cAMP to AMP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway38">
+ <bp:pathwayOrder rdf:resource="#PathwayStep65" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep64" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction26" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction27" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence63" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">DARPP-32 events</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep151">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction72" />
+ <bp:stepProcess rdf:resource="#Catalysis36" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction28">
+ <bp:evidence rdf:resource="#Evidence73" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PDPK1 binds PIP3</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction29">
+ <bp:evidence rdf:resource="#Evidence76" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p-S295-PDE3B hydrolyses cAMP to AMP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway31">
+ <bp:pathwayOrder rdf:resource="#PathwayStep54" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep55" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction24" />
+ <bp:pathwayComponent rdf:resource="#Pathway32" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence54" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Effects of PIP2 hydrolysis</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway30">
+ <bp:pathwayOrder rdf:resource="#PathwayStep53" />
+ <bp:pathwayComponent rdf:resource="#Pathway31" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence53" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">G alpha (q) signalling events</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction13">
+ <bp:evidence rdf:resource="#Evidence37" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PI4P is phosphorylated to PI(4,5)P2 by PIP5K1A-C at the plasma membrane</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway44">
+ <bp:pathwayOrder rdf:resource="#PathwayStep72" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep74" />
+ <bp:pathwayComponent rdf:resource="#Pathway46" />
+ <bp:pathwayComponent rdf:resource="#Pathway45" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence71" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PI3K Cascade</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction14">
+ <bp:evidence rdf:resource="#Evidence38" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PI5P is phosphorylated to PI(4,5)P2 by PIP4K2 dimers at the plasma membrane</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway43">
+ <bp:pathwayOrder rdf:resource="#PathwayStep71" />
+ <bp:pathwayComponent rdf:resource="#Pathway44" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence70" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">IRS-mediated signalling</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction15">
+ <bp:evidence rdf:resource="#Evidence39" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PIP3 recruits PDPK1 to the membrane</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway46">
+ <bp:pathwayOrder rdf:resource="#PathwayStep75" />
+ <bp:pathwayComponent rdf:resource="#Pathway47" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence74" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PKB-mediated events</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction16">
+ <bp:evidence rdf:resource="#Evidence40" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PDPK1 binds PIP2</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway45">
+ <bp:pathwayOrder rdf:resource="#PathwayStep73" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction28" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence72" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Activation of AKT2</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway48">
+ <bp:pathwayOrder rdf:resource="#PathwayStep78" />
+ <bp:pathwayComponent rdf:resource="#Pathway49" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence77" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Signaling by VEGF</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction10">
+ <bp:evidence rdf:resource="#Evidence30" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CAMK4 autophosphorylates</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway47">
+ <bp:pathwayOrder rdf:resource="#PathwayStep76" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction29" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence75" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PDE3B signalling</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction11">
+ <bp:evidence rdf:resource="#Evidence32" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Calmodulin activates Cam-PDE 1</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction12">
+ <bp:evidence rdf:resource="#Evidence33" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">cAMP hydrolysis by Cam-PDE 1</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway49">
+ <bp:pathwayOrder rdf:resource="#PathwayStep79" />
+ <bp:pathwayComponent rdf:resource="#Pathway50" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence78" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">VEGFA-VEGFR2 Pathway</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction17">
+ <bp:evidence rdf:resource="#Evidence43" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MAF1 translocates to the nucleus</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway40">
+ <bp:pathwayOrder rdf:resource="#PathwayStep68" />
+ <bp:pathwayComponent rdf:resource="#Pathway41" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence67" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Signaling by Type 1 Insulin-like Growth Factor 1 Receptor (IGF1R)</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction18">
+ <bp:evidence rdf:resource="#Evidence47" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">cAMP degradation by Phosphodiesterases</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction19">
+ <bp:evidence rdf:resource="#Evidence48" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PDE3A inhibitors bind PDE3A</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway42">
+ <bp:pathwayOrder rdf:resource="#PathwayStep70" />
+ <bp:pathwayComponent rdf:resource="#Pathway43" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence69" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">IRS-related events triggered by IGF1R</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway41">
+ <bp:pathwayOrder rdf:resource="#PathwayStep69" />
+ <bp:pathwayComponent rdf:resource="#Pathway42" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence68" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">IGF1R signaling cascade</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep139">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction67" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep138">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction66" />
+ <bp:stepProcess rdf:resource="#Catalysis32" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep137">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction65" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction40">
+ <bp:evidence rdf:resource="#Evidence104" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p-S115 MAPKAPK5 translocates to the cytosol</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction41">
+ <bp:evidence rdf:resource="#Evidence105" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p-T182-MAPKAPK5 phoshphorylates DNAJB1</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway11">
+ <bp:pathwayOrder rdf:resource="#PathwayStep18" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep14" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep15" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep16" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep17" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep13" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction8" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction6" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction7" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction4" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction5" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction3" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence13" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Ca2+ pathway</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction46">
+ <bp:evidence rdf:resource="#Evidence110" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MAPK4,6 translocate to the cytoplasm</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway10">
+ <bp:pathwayOrder rdf:resource="#PathwayStep12" />
+ <bp:pathwayComponent rdf:resource="#Pathway11" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence12" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Beta-catenin independent WNT signaling</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction47">
+ <bp:evidence rdf:resource="#Evidence111" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p-S MAPK6,4 phosphorylate MAPKAPK5</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway13">
+ <bp:pathwayOrder rdf:resource="#PathwayStep21" />
+ <bp:pathwayComponent rdf:resource="#Pathway14" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence21" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Signaling by TGF-beta Receptor Complex</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction48">
+ <bp:evidence rdf:resource="#Evidence115" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">FNTB inhibitors bind FNTA:FNTB</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway12">
+ <bp:pathwayOrder rdf:resource="#PathwayStep20" />
+ <bp:pathwayComponent rdf:resource="#Pathway13" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence20" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Signaling by TGFB family members</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction49">
+ <bp:evidence rdf:resource="#Evidence116" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Palmostatin B binds RAS depalmitoylases</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway15">
+ <bp:pathwayOrder rdf:resource="#PathwayStep23" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction9" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence23" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">SMAD2/SMAD3:SMAD4 heterotrimer regulates transcription</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction42">
+ <bp:evidence rdf:resource="#Evidence106" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p-T182 MAPKAPK5 binds DNAJB1</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway14">
+ <bp:pathwayOrder rdf:resource="#PathwayStep22" />
+ <bp:pathwayComponent rdf:resource="#Pathway15" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence22" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Transcriptional activity of SMAD2/SMAD3:SMAD4 heterotrimer</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction43">
+ <bp:evidence rdf:resource="#Evidence107" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p-S MAPK6,4:p-T182 MAPKAPK5 translocate to the cytosol</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway17">
+ <bp:pathwayOrder rdf:resource="#PathwayStep26" />
+ <bp:pathwayComponent rdf:resource="#Pathway18" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence26" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">DAG and IP3 signaling</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction44">
+ <bp:evidence rdf:resource="#Evidence108" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MAPK6 is degraded by the 26S proteasome</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway16">
+ <bp:pathwayOrder rdf:resource="#PathwayStep25" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep33" />
+ <bp:pathwayComponent rdf:resource="#Pathway22" />
+ <bp:pathwayComponent rdf:resource="#Pathway17" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence25" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Intracellular signaling by second messengers</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction45">
+ <bp:evidence rdf:resource="#Evidence109" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p-S MAPK6,4 binds MAPKAPK5</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep132">
+ <bp:stepProcess rdf:resource="#Catalysis30" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction61" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep131">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction60" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep130">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction59" />
+ <bp:stepProcess rdf:resource="#Catalysis29" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep136">
+ <bp:stepProcess rdf:resource="#Pathway71" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep135">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction64" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep134">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction63" />
+ <bp:stepProcess rdf:resource="#Catalysis31" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep133">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction62" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep149">
+ <bp:stepProcess rdf:resource="#Pathway77" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep148">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction71" />
+ <bp:stepProcess rdf:resource="#Catalysis35" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway19">
+ <bp:pathwayOrder rdf:resource="#PathwayStep28" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep30" />
+ <bp:pathwayComponent rdf:resource="#Pathway21" />
+ <bp:pathwayComponent rdf:resource="#Pathway20" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence28" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Calmodulin induced events</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway18">
+ <bp:pathwayOrder rdf:resource="#PathwayStep27" />
+ <bp:pathwayComponent rdf:resource="#Pathway19" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence27" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CaM pathway</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction30">
+ <bp:evidence rdf:resource="#Evidence80" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PIP3 recruits PDPK1 to the membrane</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway22">
+ <bp:pathwayOrder rdf:resource="#PathwayStep38" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep39" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep34" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep40" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction15" />
+ <bp:pathwayComponent rdf:resource="#Pathway23" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction16" />
+ <bp:pathwayComponent rdf:resource="#Pathway25" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence34" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PIP3 activates AKT signaling</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction35">
+ <bp:evidence rdf:resource="#Evidence90" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p-T,Y MAPKs dimerize</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway21">
+ <bp:pathwayOrder rdf:resource="#PathwayStep32" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep31" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction11" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction12" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence31" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Cam-PDE 1 activation</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction36">
+ <bp:evidence rdf:resource="#Evidence94" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ERKs are inactivated by dual-specific phosphatases (DUSPs)</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway24">
+ <bp:pathwayOrder rdf:resource="#PathwayStep36" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep37" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction13" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction14" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence36" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PI5P, PP2A and IER3 Regulate PI3K/AKT Signaling</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction37">
+ <bp:evidence rdf:resource="#Evidence96" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ERK5 translocates to the nucleus</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway23">
+ <bp:pathwayOrder rdf:resource="#PathwayStep35" />
+ <bp:pathwayComponent rdf:resource="#Pathway24" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence35" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Negative regulation of the PI3K/AKT network</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction38">
+ <bp:evidence rdf:resource="#Evidence100" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Endosome acidification</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway26">
+ <bp:pathwayOrder rdf:resource="#PathwayStep42" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction17" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence42" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Regulation of PTEN gene transcription</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction31">
+ <bp:evidence rdf:resource="#Evidence81" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">AKT1 phosphorylates eNOS</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway25">
+ <bp:pathwayOrder rdf:resource="#PathwayStep41" />
+ <bp:pathwayComponent rdf:resource="#Pathway26" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence41" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">PTEN Regulation</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction32">
+ <bp:evidence rdf:resource="#Evidence82" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The cofactor BH4 is required for electron transfer in the eNOS catalytic cycle</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway28">
+ <bp:pathwayOrder rdf:resource="#PathwayStep45" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep57" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep52" />
+ <bp:pathwayComponent rdf:resource="#Pathway33" />
+ <bp:pathwayComponent rdf:resource="#Pathway29" />
+ <bp:pathwayComponent rdf:resource="#Pathway30" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence45" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GPCR downstream signalling</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction33">
+ <bp:evidence rdf:resource="#Evidence83" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">eNOS synthesizes NO</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Pathway rdf:ID="Pathway27">
+ <bp:pathwayOrder rdf:resource="#PathwayStep44" />
+ <bp:pathwayComponent rdf:resource="#Pathway28" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence44" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Signaling by GPCR</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction34">
+ <bp:evidence rdf:resource="#Evidence89" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">p-T,Y MAPK dimers translocate to nucleus</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep143">
+ <bp:stepProcess rdf:resource="#Pathway74" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep142">
+ <bp:stepProcess rdf:resource="#Pathway73" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep141">
+ <bp:stepProcess rdf:resource="#Pathway72" />
+</bp:PathwayStep>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Plasmodium falciparum</bp:name>
+</bp:BioSource>
+
+<bp:PathwayStep rdf:ID="PathwayStep140">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction68" />
+ <bp:stepProcess rdf:resource="#Catalysis33" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction39">
+ <bp:evidence rdf:resource="#Evidence103" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MAPK4,6 translocate to nucleus</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep147">
+ <bp:stepProcess rdf:resource="#Pathway76" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep146">
+ <bp:stepProcess rdf:resource="#Catalysis34" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction70" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway20">
+ <bp:pathwayOrder rdf:resource="#PathwayStep29" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction10" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence29" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CaMK IV-mediated phosphorylation of CREB</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep145">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction69" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep144">
+ <bp:stepProcess rdf:resource="#Pathway75" />
+</bp:PathwayStep>
+</rdf:RDF>

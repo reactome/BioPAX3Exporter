@@ -48,12 +48,12 @@ class BioPAX3BasicElementsBuilder(
      */
     fun addEvidence() {
         val evids = thisBPModel?.getObjects(org.biopax.paxtools.model.level3.Evidence::class.java);
-        var evidence: Evidence? = null; // todo do we already have this
+        var src: Evidence? = null; // todo do we already have this
 
-        if (evidence == null) {
-            evidence = thisBPModel?.addNew(org.biopax.paxtools.model.level3.Evidence::class.java, BioPAX3Utils.getTypeCount("Evidence"));
+        if (src == null) {
+            src = thisBPModel?.addNew(org.biopax.paxtools.model.level3.Evidence::class.java, BioPAX3Utils.getTypeCount("Evidence"));
         }
-        thisBPElement?.addEvidence(evidence);
+        thisBPElement?.addEvidence(src);
     }
 
     // private functions

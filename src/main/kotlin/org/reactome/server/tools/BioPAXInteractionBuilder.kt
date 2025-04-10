@@ -15,11 +15,6 @@ class BioPAXInteractionBuilder(
     private var thisModel: Model?
 ) {
 
-    // A cache to store already-created BiochemicalReactions keyed by the Reactome dbId.
-    companion object {
-        private val visitedReactions = HashMap<Long, BiochemicalReaction>()
-    }
-
     /**
      * Function to add the Reactome ReactionLikeEvent to the BioPAX model
      */
@@ -41,25 +36,20 @@ class BioPAXInteractionBuilder(
     private fun addBPReaction(event: ReactionLikeEvent?): BiochemicalReaction? {
         if (event == null) return null
 
-        // Check if we've already created this reaction
-        val dbId = event.dbId
-        if (visitedReactions.containsKey(dbId)) {
-            return visitedReactions[dbId]
-        }
-
         // Create a new BioPAX BiochemicalReaction
         val bpReaction = thisModel?.addNew(BiochemicalReaction::class.java, BioPAX3Utils.getTypeCount("BiochemicalReaction"))
         
-        // Store it in the cache
-        bpReaction?.let { visitedReactions[dbId] = it }
-
         // Set properties
         bpReaction?.displayName = event.displayName
 
+        // Handle catalyst activities
+        event.catalystActivity?.forEach { cat ->
+            val bpCatalysis = addBPCatalyst()
+            bpCatalysis?.addControlled(bpReaction)
+        }
+
         // Build the "basic elements" (organism, dataSource, etc.)
         val elements = BioPAX3BasicElementsBuilder(event, thisModel!!, bpReaction!!)
-        elements.addBioSourceInformation()
-        elements.addReactomeDataSource()
         elements.addEvidence()
 
         return bpReaction

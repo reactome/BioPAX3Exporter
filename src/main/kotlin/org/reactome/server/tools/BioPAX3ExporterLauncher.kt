@@ -180,7 +180,7 @@ class BioPAX3ExporterLauncher {
         }
 
         private fun outputPath(pathway: Pathway) {
-            val filename = "${pathway.getDisplayName()}_${pathway.getDbId()}.owl"
+            val filename = "${pathway.getDbId()}.owl"
             val outputFile = File(outputdir, filename)
             val bp = WriteBioPAX3(pathway, dbVersion)
             bp.createModel()
@@ -188,16 +188,11 @@ class BioPAX3ExporterLauncher {
         }
 
         private fun outputPathsForSpecies(species: Species, schemaService: SchemaService) {
-            val filename = "${species.getDisplayName()}_${species.getDbId()}.owl"
-            val outputFile = File(outputdir, filename)
-            // Create a dummy pathway for the species
-            val dummyPathway = object : Pathway() {
-                override fun getDisplayName(): String = species.getDisplayName()
-                override fun getDbId(): Long = species.getDbId()
+            // Get all pathways for this species and output one file per pathway
+            val pathways = schemaService.getByClass(Pathway::class.java, species)
+            pathways.forEach { pathway ->
+                outputPath(pathway)
             }
-            val bp = WriteBioPAX3(dummyPathway, dbVersion)
-            bp.createModel()
-            bp.toFile(outputFile)
         }
 
         private fun outputEvents(events: List<Event>) {

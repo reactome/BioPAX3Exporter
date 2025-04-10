@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/11035934#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:Evidence rdf:ID="Evidence3">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence4">
+</bp:Evidence>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Plasmodium falciparum</bp:name>
+</bp:BioSource>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence4" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">FURIN translocates to the plasma membrane</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#Pathway2" />
+</bp:PathwayStep>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayComponent rdf:resource="#Pathway2" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Signaling by TGF-beta Receptor Complex</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep3">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep2">
+ <bp:stepProcess rdf:resource="#Pathway3" />
+</bp:PathwayStep>
+
+<bp:Pathway rdf:ID="Pathway2">
+ <bp:pathwayOrder rdf:resource="#PathwayStep2" />
+ <bp:pathwayComponent rdf:resource="#Pathway3" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Transcriptional activity of SMAD2/SMAD3:SMAD4 heterotrimer</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:Pathway rdf:ID="Pathway3">
+ <bp:pathwayOrder rdf:resource="#PathwayStep3" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">SMAD2/SMAD3:SMAD4 heterotrimer regulates transcription</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+</rdf:RDF>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:owl="http://www.w3.org/2002/07/owl#"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+ xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+ xml:base="http://www.reactome.org/biopax/91/11035306#">
+<owl:Ontology rdf:about="">
+ <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+</owl:Ontology>
+
+<bp:Pathway rdf:ID="Pathway1">
+ <bp:pathwayOrder rdf:resource="#PathwayStep9" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep11" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep10" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep4" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep3" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep2" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep1" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep8" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep7" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep6" />
+ <bp:pathwayOrder rdf:resource="#PathwayStep5" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction6" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction7" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction8" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction9" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction2" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction3" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction4" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction5" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction10" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction11" />
+ <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:evidence rdf:resource="#Evidence1" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Cellular hexose transport</bp:displayName>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">This event has been computationally inferred from an event that has been demonstrated in another species. The inference is based on the homology mapping from PANTHER. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least 75% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.  More details and caveats of the event inference in Reactome.  For details on PANTHER see also:  http://www.pantherdb.org/about.jsp </bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+</bp:Pathway>
+
+<bp:PathwayStep rdf:ID="PathwayStep11">
+ <bp:stepProcess rdf:resource="#Catalysis9" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction11" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep10">
+ <bp:stepProcess rdf:resource="#Catalysis8" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction10" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
+ <bp:evidence rdf:resource="#Evidence3" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GLUT3 (SLC2A3) tetramer transports Glc from extracellular region to cytosol</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction3">
+ <bp:evidence rdf:resource="#Evidence4" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GLUT7 and GLUT11 transport glucose and fructose</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction4">
+ <bp:evidence rdf:resource="#Evidence5" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GLUT1:ATP tetramer dissociates to GLUT1 tetramer and 4xATP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence11">
+</bp:Evidence>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction5">
+ <bp:evidence rdf:resource="#Evidence6" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GLUT1 (SLC2A1) tetramer transports Glc from extracellular region to cytosol</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence12">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis8">
+ <bp:controlled rdf:resource="#BiochemicalReaction10" />
+</bp:Catalysis>
+
+<bp:Evidence rdf:ID="Evidence10">
+</bp:Evidence>
+
+<bp:Catalysis rdf:ID="Catalysis9">
+ <bp:controlled rdf:resource="#BiochemicalReaction11" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:evidence rdf:resource="#Evidence2" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GLUT2 (SLC2A2) transports Glc from cytosol to extracellular region</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis4">
+ <bp:controlled rdf:resource="#BiochemicalReaction5" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis5">
+ <bp:controlled rdf:resource="#BiochemicalReaction6" />
+</bp:Catalysis>
+
+<bp:Catalysis rdf:ID="Catalysis6">
+ <bp:controlled rdf:resource="#BiochemicalReaction8" />
+</bp:Catalysis>
+
+<bp:PathwayStep rdf:ID="PathwayStep9">
+ <bp:stepProcess rdf:resource="#Catalysis7" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction9" />
+</bp:PathwayStep>
+
+<bp:Catalysis rdf:ID="Catalysis7">
+ <bp:controlled rdf:resource="#BiochemicalReaction9" />
+</bp:Catalysis>
+
+<bp:BioSource rdf:ID="BioSource1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Plasmodium falciparum</bp:name>
+</bp:BioSource>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction6">
+ <bp:evidence rdf:resource="#Evidence7" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GLUT2 (SLC2A2) tetramer transports Glc from extracellular region to cytosol</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis1">
+ <bp:controlled rdf:resource="#BiochemicalReaction1" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction7">
+ <bp:evidence rdf:resource="#Evidence8" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GLUT1 tetramer binds 4xATP</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis2">
+ <bp:controlled rdf:resource="#BiochemicalReaction2" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction8">
+ <bp:evidence rdf:resource="#Evidence9" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">SLC50A1 transports Glc from cytosol to extracellular region</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Catalysis rdf:ID="Catalysis3">
+ <bp:controlled rdf:resource="#BiochemicalReaction3" />
+</bp:Catalysis>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction9">
+ <bp:evidence rdf:resource="#Evidence10" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GLUT14 (SLC2A14) tetramer transports Glc from extracellular region to cytosol</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:Evidence rdf:ID="Evidence4">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence5">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence6">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence7">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence8">
+</bp:Evidence>
+
+<bp:Provenance rdf:ID="Provenance1">
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org</bp:comment>
+</bp:Provenance>
+
+<bp:Evidence rdf:ID="Evidence9">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence1">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence2">
+</bp:Evidence>
+
+<bp:Evidence rdf:ID="Evidence3">
+</bp:Evidence>
+
+<bp:PathwayStep rdf:ID="PathwayStep4">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction4" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep3">
+ <bp:stepProcess rdf:resource="#Catalysis3" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction3" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep2">
+ <bp:stepProcess rdf:resource="#Catalysis2" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction2" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep1">
+ <bp:stepProcess rdf:resource="#Catalysis1" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction1" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep8">
+ <bp:stepProcess rdf:resource="#Catalysis6" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction8" />
+</bp:PathwayStep>
+
+<bp:PathwayStep rdf:ID="PathwayStep7">
+ <bp:stepProcess rdf:resource="#BiochemicalReaction7" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction10">
+ <bp:evidence rdf:resource="#Evidence11" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GLUT4 (SLC2A4) tetramer transports Glc from extracellular region to cytosol</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep6">
+ <bp:stepProcess rdf:resource="#Catalysis5" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction6" />
+</bp:PathwayStep>
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction11">
+ <bp:evidence rdf:resource="#Evidence12" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">SLC2A9 transports Fru, Glc, urate</bp:displayName>
+</bp:BiochemicalReaction>
+
+<bp:PathwayStep rdf:ID="PathwayStep5">
+ <bp:stepProcess rdf:resource="#Catalysis4" />
+ <bp:stepProcess rdf:resource="#BiochemicalReaction5" />
+</bp:PathwayStep>
+</rdf:RDF>

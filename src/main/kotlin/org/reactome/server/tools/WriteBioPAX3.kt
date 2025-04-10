@@ -25,6 +25,14 @@ class WriteBioPAX3 {
 
         init {
             try {
+                // Add JVM arguments to open required modules
+                System.setProperty("java.vm.vendor", "Oracle Corporation")
+                System.setProperty("java.vm.name", "Java HotSpot(TM) 64-Bit Server VM")
+                System.setProperty("java.vm.version", "17")
+                System.setProperty("java.vm.specification.version", "17")
+                System.setProperty("java.vm.specification.vendor", "Oracle Corporation")
+                System.setProperty("java.vm.specification.name", "Java Virtual Machine Specification")
+                
                 val ctx = ClassPathXmlApplicationContext(
                     "classpath:META-INF/spring/appContext-validator.xml",
                     "classpath:META-INF/spring/appContext-loadTimeWeaving.xml"
