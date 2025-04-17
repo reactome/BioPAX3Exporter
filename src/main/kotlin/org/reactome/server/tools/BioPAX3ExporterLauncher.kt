@@ -21,7 +21,7 @@ import java.io.IOException;
 
 import java.io.File;
 import java.util.ArrayList;
-import java.util.List;
+// import java.util.List;
 import java.util.stream.Collectors;
 
 
@@ -107,7 +107,7 @@ class BioPAX3ExporterLauncher {
                         }
                         Status.ALL_PATWAYS -> {
                             speciesService.species.forEach { s ->
-                                outputPathsForSpecies(s, schemaService)
+                                outputPathsForSpecies(s)
                             }
                         }
                         Status.ALL_PATHWAYS_SPECIES -> {
@@ -117,7 +117,7 @@ class BioPAX3ExporterLauncher {
                             } catch (e: Exception) {
                                 System.err.println("$speciesId is not the identifier of a valid Species object")
                             }
-                            species?.let { outputPathsForSpecies(it, schemaService) }
+                            species?.let { outputPathsForSpecies(it) }
                         }
                         Status.MULTIPLE_PATHS -> {
                             multipleIds.forEach { id ->
@@ -131,7 +131,8 @@ class BioPAX3ExporterLauncher {
                             }
                         }
                         Status.MULTIPLE_EVENTS -> {
-                            val eventList = ArrayList<Event>()
+                            // Declare eventList explicitly as a java.util.ArrayList
+                            val eventList: java.util.ArrayList<Event> = java.util.ArrayList()
                             var valid = true
                             multipleEvents.forEach { id ->
                                 try {
@@ -143,8 +144,8 @@ class BioPAX3ExporterLauncher {
                                 }
                             }
                             if (valid && eventList.isNotEmpty()) {
-                                val javaList = eventList.toList() as java.util.List<Event>
-                                outputEvents(javaList)
+                                // Pass eventList directly; it is already a java.util.ArrayList<Event>
+                                outputEvents(eventList as java.util.List<Event>)
                             }
                         }
                     }
@@ -187,15 +188,29 @@ class BioPAX3ExporterLauncher {
             bp.toFile(outputFile)
         }
 
-        private fun outputPathsForSpecies(species: Species, schemaService: SchemaService) {
-            // Get all pathways for this species and output one file per pathway
-            val pathways = schemaService.getByClass(Pathway::class.java, species)
-            pathways.forEach { pathway ->
-                outputPath(pathway)
+        private fun outputPathsForSpecies(species: Species) {
+            val pathways: List<Pathway> = getPathwaysForSpecies(species)
+            if (pathways.isEmpty()) {
+                println("No pathways found for species ${species.displayName}")
+                return
             }
+            
+            // Create a single file for all pathways of this species
+            val writer = WriteBioPAX3(species, dbVersion)
+            writer.createModelForSpecies(species, pathways)
+            
+            // Create output directory if it doesn't exist
+            val outputDir = File(outputdir)
+            if (!outputDir.exists()) {
+                outputDir.mkdirs()
+            }
+            
+            val outputFile = File(outputDir, "${species.dbId}_${species.displayName.replace(" ", "_")}.owl")
+            writer.toFile(outputFile)
+            println("Generated BioPAX file for species ${species.displayName}: ${outputFile.absolutePath}")
         }
 
-        private fun outputEvents(events: List<Event>) {
+        private fun outputEvents(events: java.util.List<Event>) {
             val filename = "events.owl"
             val outputFile = File(outputdir, filename)
             // Create a dummy pathway for the events
@@ -207,6 +222,12 @@ class BioPAX3ExporterLauncher {
             bp.createModel()
             bp.toFile(outputFile)
         }
+
+        private fun getPathwaysForSpecies(species: Species): List<Pathway> =
+            ReactomeGraphCore
+            .getService(SchemaService::class.java)
+            .getByClass(Pathway::class.java, species)
+            .toList()
     }
 }
 

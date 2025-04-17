@@ -12,7 +12,7 @@ import org.springframework.core.io.Resource;
 import org.biopax.paxtools.model.*;
 
 import java.io.*;
-import java.util.List;
+// import java.util.List;
 
 /**
  * @author Sarah Keating <skeating@ebi.ac.uk>
@@ -99,6 +99,21 @@ class WriteBioPAX3 {
     }
 
     /**
+     * Construct an instance of the WriteBioPAX3 for multiple pathways of a species
+     *
+     * @param species Species from ReactomeDB
+     * @param version Integer - version number of the database
+     */
+    constructor(species: Species, version: Int) {
+        thisPathway = null
+        thisListEvents = null
+        parentPathway = null
+        dbVersion = version
+        xmlBase = "http://www.reactome.org/biopax/$dbVersion/species/${species.dbId}#"
+        BioPAX3Utils.clearCounterArray()
+    }
+
+    /**
      * Create the BioPAX model using the Reactome Pathway specified in the constructor.
      */
     fun createModel() {
@@ -106,6 +121,24 @@ class WriteBioPAX3 {
         thisModel?.xmlBase = xmlBase
         val thisBPPath = BioPAXPathwayBuilder(thisPathway!!, thisModel!!)
         thisBPPath.addReactomePathway()
+    }
+
+    /**
+     * Create the BioPAX model using multiple pathways for a species
+     */
+    fun createModelForSpecies(species: Species, pathways: List<Pathway>) {
+        thisModel = bioPAXFactory.createModel()
+        thisModel?.xmlBase = xmlBase
+        
+        // Add species information first
+        val speciesBuilder = BioPAXSpeciesBuilder(species, thisModel!!)
+        speciesBuilder.addReactomeSpecies()
+        
+        // Add each pathway
+        pathways.forEach { pathway ->
+            val thisBPPath = BioPAXPathwayBuilder(pathway, thisModel!!)
+            thisBPPath.addReactomePathway()
+        }
     }
 
     fun validateBioPAXFile(file: File) {
