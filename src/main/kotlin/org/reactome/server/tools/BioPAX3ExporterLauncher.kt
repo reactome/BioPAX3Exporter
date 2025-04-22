@@ -205,7 +205,7 @@ class BioPAX3ExporterLauncher {
                 outputDir.mkdirs()
             }
             
-            val outputFile = File(outputDir, "${species.dbId}_${species.displayName.replace(" ", "_")}.owl")
+            val outputFile = File(outputDir, "${species.displayName.replace(" ", "_")}.owl")
             writer.toFile(outputFile)
             println("Generated BioPAX file for species ${species.displayName}: ${outputFile.absolutePath}")
         }

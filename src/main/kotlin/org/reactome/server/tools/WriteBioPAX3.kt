@@ -130,9 +130,9 @@ class WriteBioPAX3 {
         thisModel = bioPAXFactory.createModel()
         thisModel?.xmlBase = xmlBase
         
-        // Add species information first
-        val speciesBuilder = BioPAXSpeciesBuilder(species, thisModel!!)
-        speciesBuilder.addReactomeSpecies()
+        // // Add species information first
+        // val speciesBuilder = BioPAXSpeciesBuilder(species, thisModel!!)
+        // speciesBuilder.addReactomeSpecies()
         
         // Add each pathway
         pathways.forEach { pathway ->
