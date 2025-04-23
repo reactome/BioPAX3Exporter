@@ -8,6 +8,7 @@ import org.reactome.server.graph.domain.model.SimpleEntity
 import org.reactome.server.graph.domain.model.EntityWithAccessionedSequence
 import org.reactome.server.graph.domain.model.PhysicalEntity as RPhysicalEntity
 import org.reactome.server.graph.domain.model.Complex as RComplex
+import org.reactome.server.tools.BioPAX3ReferenceUtils
 
 /**
  * Builds a BioPAX BiochemicalReaction for a given Reactome ReactionLikeEvent,
@@ -40,6 +41,8 @@ class BioPAXInteractionBuilder(
             BioPAX3Utils.getTypeCount("BiochemicalReaction")
         )
         bpReaction.displayName = event.displayName
+        // Add functional notes from Reactome Summation as BioPAX comment
+        bpReaction.addComment(BioPAX3ReferenceUtils.getComment(event.summation))
 
         // Participants (left/right)
         addParticipants(event, bpReaction)
