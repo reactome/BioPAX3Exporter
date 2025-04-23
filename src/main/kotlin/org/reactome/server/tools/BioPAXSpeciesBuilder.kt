@@ -1,41 +1,47 @@
-// package org.reactome.server.tools
+package org.reactome.server.tools
 
-// import org.biopax.paxtools.model.Model
-// import org.biopax.paxtools.model.level3.BioSource
-// import org.biopax.paxtools.model.level3.Entity
-// import org.reactome.server.graph.domain.model.Species
-// import org.reactome.server.graph.domain.model.Pathway
+import org.biopax.paxtools.model.Model
+import org.biopax.paxtools.model.level3.BioSource
+import org.biopax.paxtools.model.level3.Entity
+import org.reactome.server.graph.domain.model.Species
+import org.reactome.server.graph.domain.model.Pathway
 
-// /**
-//  * Builds species-specific BioPAX elements for a given Reactome species.
-//  */
-// class BioPAXSpeciesBuilder(
-//     private val species: Species?,
-//     private val model: Model?
-// ) {
-//     fun addReactomeSpecies() {
-//         // Ensure we have both species and model
-//         if (species == null || model == null) return
+/**
+ * Builds the BioPAX header (BioSource + Reactome dataSource) for a species-level dump.
+ */
+class BioPAXSpeciesBuilder(
+    private val species: Species,
+    private val model: Model
+) {
+    fun addReactomeSpecies() {
+        /* 1. BioSource ******************************************************/
+        val bioSource = model.addNew(
+            BioSource::class.java,
+            BioPAX3Utils.getTypeCount("BioSource")
+        )
+        bioSource.name = setOf(species.displayName)
+        val sp = species   
 
-//         // Create and initialize a BioSource for this species
-//         val bioSource = model.addNew(
-//             BioSource::class.java,
-//             BioPAX3Utils.getTypeCount("BioSource")
-//         )
-//         bioSource.name = setOf(species.displayName)
+        /* 2. Reactome dataSource ********************************************/
+        // fake Event needed by BasicElementsBuilder
+        val dummyEvent = object : Pathway() {
+            override fun getDisplayName(): String? = sp.displayName
+            override fun getDbId(): Long?        = sp.dbId
+        }
 
-//         // Create a dummy Event by subclassing Pathway (implements Event)
-//         val dummyEvent = object : Pathway() {
-//             override fun getDisplayName(): String = species.displayName
-//             override fun getDbId(): Long = species.dbId
-//         }
+        /* 3. Tiny BioPAX Pathway header (real Entity) ***********************/
+        val header: org.biopax.paxtools.model.level3.Pathway = 
+        model.addNew(
+            org.biopax.paxtools.model.level3.Pathway::class.java,
+            BioPAX3Utils.getTypeCount("Pathway")
+        )
+        header.displayName = sp.displayName
 
-//         // Use dummyEvent to add Reactome data source elements
-//         val basicElements = BioPAX3BasicElementsBuilder(
-//             dummyEvent,
-//             model,
-//             bioSource as Entity
-//         )
-//         basicElements.addReactomeDataSource()
-//     }
-// }
+        /* 4. Attach Reactome provenance to the header ************************/
+        BioPAX3BasicElementsBuilder(
+            dummyEvent,       // first parameter: Reactome Event (can be null, but this gives names)
+            model,
+            header            // third parameter: BioPAX Entity
+        ).addReactomeDataSource()
+    }
+}

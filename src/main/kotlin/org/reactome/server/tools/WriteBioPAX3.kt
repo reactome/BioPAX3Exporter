@@ -131,6 +131,7 @@ class WriteBioPAX3 {
         thisModel?.xmlBase = xmlBase
         
         // // Add species information first
+        BioPAXSpeciesBuilder(species, thisModel!!).addReactomeSpecies()
         // val speciesBuilder = BioPAXSpeciesBuilder(species, thisModel!!)
         // speciesBuilder.addReactomeSpecies()
         
