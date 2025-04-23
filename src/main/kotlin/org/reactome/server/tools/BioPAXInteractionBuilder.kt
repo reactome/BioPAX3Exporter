@@ -1,80 +1,98 @@
-package org.reactome.server.tools;
+package org.reactome.server.tools
 
-import java.util.HashMap;
-import java.util.Map;
-
-import org.biopax.paxtools.model.level3.*;
-import org.reactome.server.graph.domain.model.*;
-import org.biopax.paxtools.model.Model;
+import java.util.HashMap
+import org.biopax.paxtools.model.Model
+import org.biopax.paxtools.model.level3.*
+import org.reactome.server.graph.domain.model.ReactionLikeEvent
+import org.reactome.server.graph.domain.model.SimpleEntity
+import org.reactome.server.graph.domain.model.EntityWithAccessionedSequence
+import org.reactome.server.graph.domain.model.PhysicalEntity as RPhysicalEntity
+import org.reactome.server.graph.domain.model.Complex as RComplex
 
 /**
- * @author Sarah Keating <skeating@ebi.ac.uk>
+ * Builds a BioPAX BiochemicalReaction for a given Reactome ReactionLikeEvent,
+ * mapping inputs → left and outputs → right.  Stoichiometry is left at 1 for
+ * now (extend once coefficients are exposed in the domain model).
  */
 class BioPAXInteractionBuilder(
     private val thisRLEvent: ReactionLikeEvent?,
-    private var thisModel: Model?
+    private val thisModel: Model?
 ) {
 
-    /**
-     * Function to add the Reactome ReactionLikeEvent to the BioPAX model
-     */
-    fun addReactomeRLEvent(): BiochemicalReaction? {
-        return addBPReaction(thisRLEvent)
-    }
+    /** cache so that identical PhysicalEntities are reused within a reaction tree */
+    private val peCache: MutableMap<Long, org.biopax.paxtools.model.level3.PhysicalEntity> = HashMap()
 
-    //////////////////////////////////////////////////////////////////////////////////
+    // ─────────────────────────────────────────────────────────────────────────────
+    //  Public entry point
+    // ─────────────────────────────────────────────────────────────────────────────
+    fun addReactomeRLEvent(): BiochemicalReaction? = addBPReaction(thisRLEvent)
 
-    // Private functions
+    // ─────────────────────────────────────────────────────────────────────────────
+    //  Private helpers
+    // ─────────────────────────────────────────────────────────────────────────────
 
-    /**
-     * Function to create a BioPAX BiochemicalReaction from the Reactome ReactionLikeEvent given
-     *
-     * @param event the Reactome ReactionLikeEvent to be created in BioPAX
-     *
-     * @return the created BioPAX BiochemicalReaction
-     */
     private fun addBPReaction(event: ReactionLikeEvent?): BiochemicalReaction? {
-        if (event == null) return null
+        if (event == null || thisModel == null) return null
 
-        // Create a new BioPAX BiochemicalReaction
-        val bpReaction = thisModel?.addNew(BiochemicalReaction::class.java, BioPAX3Utils.getTypeCount("BiochemicalReaction"))
-        
-        // Set properties
-        bpReaction?.displayName = event.displayName
+        // Create the BiochemicalReaction shell
+        val bpReaction = thisModel.addNew(
+            BiochemicalReaction::class.java,
+            BioPAX3Utils.getTypeCount("BiochemicalReaction")
+        )
+        bpReaction.displayName = event.displayName
 
-        // Handle catalyst activities
-        event.catalystActivity?.forEach { cat ->
+        // Participants (left/right)
+        addParticipants(event, bpReaction)
+
+        // Catalysts
+        event.catalystActivity?.forEach { _ ->
             val bpCatalysis = addBPCatalyst()
             bpCatalysis?.addControlled(bpReaction)
         }
 
-        // Build the "basic elements" (organism, dataSource, etc.)
-        val elements = BioPAX3BasicElementsBuilder(event, thisModel!!, bpReaction!!)
-        elements.addEvidence()
-
+        // Evidence / datasource etc.
+        BioPAX3BasicElementsBuilder(event, thisModel, bpReaction).addEvidence()
         return bpReaction
     }
 
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-    // add related Biopax classes
-
-    // these are small classes so do not need separate code files
-
-    // Catalysis
-
     /**
-     * Function to create a BioPAX Catalysis
-     *
-     * @return the BioPAX Catalysis created
-     *
-     * NOTE: will more than one reaction use the same catalysis ?????
+     * Maps Reactome inputs/outputs onto BioPAX left/right sets.
      */
-    private fun addBPCatalyst(): Catalysis? {
-        return thisModel?.addNew(
-            Catalysis::class.java,
-            BioPAX3Utils.getTypeCount("Catalysis")
-        )
-    }
-}
+    private fun addParticipants(event: ReactionLikeEvent, rxn: BiochemicalReaction) {
+        // LEFT = input
+        event.input?.forEach { pe ->
+            val bpPe = getOrCreatePhysicalEntity(pe)
+            rxn.addLeft(bpPe)
+        }
 
+        // RIGHT = output
+        event.output?.forEach { pe ->
+            val bpPe = getOrCreatePhysicalEntity(pe)
+            rxn.addRight(bpPe)
+        }
+    }
+
+    /** create/reuse BioPAX PhysicalEntity corresponding to a Reactome PhysicalEntity */
+    private fun getOrCreatePhysicalEntity(pe: RPhysicalEntity): org.biopax.paxtools.model.level3.PhysicalEntity {
+        peCache[pe.dbId]?.let { return it }
+
+        val bpPe: org.biopax.paxtools.model.level3.PhysicalEntity = when (pe) {
+            is SimpleEntity -> thisModel!!.addNew(SmallMolecule::class.java,
+                BioPAX3Utils.getTypeCount("SmallMolecule"))
+            is EntityWithAccessionedSequence -> thisModel!!.addNew(Protein::class.java,
+                BioPAX3Utils.getTypeCount("Protein"))
+            is RComplex -> thisModel!!.addNew(org.biopax.paxtools.model.level3.Complex::class.java,
+                BioPAX3Utils.getTypeCount("Complex"))
+            else -> thisModel!!.addNew(org.biopax.paxtools.model.level3.PhysicalEntity::class.java,
+                BioPAX3Utils.getTypeCount("PhysicalEntity"))
+        }
+        bpPe.displayName = pe.displayName
+        peCache[pe.dbId] = bpPe
+        return bpPe
+    }
+
+    private fun addBPCatalyst(): Catalysis? = thisModel?.addNew(
+        Catalysis::class.java,
+        BioPAX3Utils.getTypeCount("Catalysis")
+    )
+}
