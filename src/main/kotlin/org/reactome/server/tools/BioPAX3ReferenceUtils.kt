@@ -21,12 +21,11 @@ object BioPAX3ReferenceUtils {
         var comment = ""
         if (summations != null) {
             for (s in summations) {
-                if (comment.isEmpty()) {
-                    comment += removeTags(s.text)
-                } else {
+                if (!comment.isEmpty()) {
                     comment += System.getProperty("line.separator")
-                    comment += removeTags(s.text)
-                }
+                }     
+                comment += removeTags(s.text)
+                
             }
         }
         return comment

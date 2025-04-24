@@ -33,7 +33,7 @@ class BioPAX3ExporterLauncher {
 
         enum class Status {
             SINGLE_PATH,
-            ALL_PATWAYS,
+            ALL_PATHWAYS,
             ALL_PATHWAYS_SPECIES,
             MULTIPLE_PATHS,
             MULTIPLE_EVENTS,
@@ -119,7 +119,7 @@ class BioPAX3ExporterLauncher {
                             }
                             pathway?.let { outputPath(it) }
                         }
-                        Status.ALL_PATWAYS -> {
+                        Status.ALL_PATHWAYS -> {
                             speciesService.species.forEach { s ->
                                 outputPathsForSpecies(s)
                             }
@@ -182,7 +182,7 @@ class BioPAX3ExporterLauncher {
                     speciesId != 0L -> Status.ALL_PATHWAYS_SPECIES
                     multipleIds.isNotEmpty() -> Status.MULTIPLE_PATHS
                     multipleEvents.isNotEmpty() -> Status.MULTIPLE_EVENTS
-                    else -> Status.ALL_PATWAYS
+                    else -> Status.ALL_PATHWAYS
                 }
         }
 

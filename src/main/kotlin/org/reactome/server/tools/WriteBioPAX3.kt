@@ -56,6 +56,7 @@ class WriteBioPAX3 {
     private val bioPAXFactory = BioPAXLevel.L3.defaultFactory
     private var thisModel: Model? = null
 
+
     /**
      * Construct an instance of the WriteBioPAX3
      */
@@ -63,7 +64,7 @@ class WriteBioPAX3 {
         thisPathway = null
         thisListEvents = null
         parentPathway = null
-        xmlBase = "http://www.reactome.org/biopax/#"
+        xmlBase = "https://www.reactome.org/biopax/#"
         BioPAX3Utils.clearCounterArray()
     }
 
@@ -77,7 +78,7 @@ class WriteBioPAX3 {
         thisPathway = pathway
         thisListEvents = null
         parentPathway = null
-        xmlBase = "http://www.reactome.org/biopax/$dbVersion/${pathway.dbId}#"
+        xmlBase = "https://www.reactome.org/biopax/$dbVersion/${pathway.dbId}#"
         BioPAX3Utils.clearCounterArray()
     }
 
@@ -93,7 +94,7 @@ class WriteBioPAX3 {
         thisListEvents = null
         parentPathway = null
         dbVersion = version
-        xmlBase = "http://www.reactome.org/biopax/$dbVersion/${pathway.dbId}#"
+        xmlBase = "https://www.reactome.org/biopax/$dbVersion/${pathway.dbId}#"
         BioPAX3Utils.clearCounterArray()
     }
 
@@ -108,7 +109,7 @@ class WriteBioPAX3 {
         thisListEvents = null
         parentPathway = null
         dbVersion = version
-        xmlBase = "http://www.reactome.org/biopax/$dbVersion/species/${species.dbId}#"
+        xmlBase = "https://www.reactome.org/biopax/$dbVersion/species/${species.dbId}#"
         BioPAX3Utils.clearCounterArray()
     }
 

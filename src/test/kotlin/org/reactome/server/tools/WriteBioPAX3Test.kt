@@ -18,7 +18,7 @@ class WriteBioPAX3Test {
         val writer = WriteBioPAX3()
         
         // Verify that the xmlBase is set correctly
-        assertEquals("http://www.reactome.org/biopax/#", WriteBioPAX3.xmlBase)
+        assertEquals("https://www.reactome.org/biopax/#", WriteBioPAX3.xmlBase)
         
         // Verify that the model is null initially
         assertNull(writer.getModel())
@@ -34,7 +34,7 @@ class WriteBioPAX3Test {
         val writer = WriteBioPAX3(mockPathway)
         
         // Verify that the xmlBase is set correctly
-        assertEquals("http://www.reactome.org/biopax/0/123#", WriteBioPAX3.xmlBase)
+        assertEquals("https://www.reactome.org/biopax/0/123#", WriteBioPAX3.xmlBase)
         
         // Verify that the model is null initially
         assertNull(writer.getModel())
@@ -44,6 +44,7 @@ class WriteBioPAX3Test {
     fun `test pathway and version constructor initializes correctly`() {
         // Create a mock Pathway
         val mockPathway = mock(Pathway::class.java)
+        val const mockVersion = 42 // remember to replace 42 with the const
         whenever(mockPathway.dbId).thenReturn(123L)
         
         // Create the WriteBioPAX3 instance with pathway and version constructor
@@ -53,7 +54,7 @@ class WriteBioPAX3Test {
         assertEquals(42, WriteBioPAX3.dbVersion)
         
         // Verify that the xmlBase is set correctly
-        assertEquals("http://www.reactome.org/biopax/42/123#", WriteBioPAX3.xmlBase)
+        assertEquals("https://www.reactome.org/biopax/42/123#", WriteBioPAX3.xmlBase)
         
         // Verify that the model is null initially
         assertNull(writer.getModel())
