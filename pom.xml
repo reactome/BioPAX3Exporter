@@ -13,22 +13,36 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <graph.core>1.0.1</graph.core>
+        <graph.core>2.0.9</graph.core>
         <jasp.version>2.1</jasp.version>
 
-        <maven.compiler.version>3.5.1</maven.compiler.version>
-        <jdk.version>1.8</jdk.version>
-        <junit.version>4.12</junit.version>
+        <maven.compiler.version>3.11.0</maven.compiler.version>
+        <jdk.version>17</jdk.version>
         
         <paxtools.version>4.3.1</paxtools.version>
+        <kotlin.version>1.7.10</kotlin.version>
     </properties>
 
     <developers>
         <developer>
             <id>skeating</id>
             <name>Sarah Keating</name>
-            <email>skeating@ebi.ac.uk</email>
+            <roles>
+                <role>
+                    Alumni
+                </role>
+            </roles>
             <organization>http://www.ebi.ac.uk/</organization>
+        </developer>
+    <developer>
+            <id>nsachdeva</id>
+            <name>Neil Sachdeva</name>
+            <roles>
+                <role>
+                    Alumni
+                </role>
+            </roles>
+            <organization>https://www.oicr.on.ca</organization>
         </developer>
     </developers>
 
@@ -55,11 +69,62 @@
         </dependency>
 
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>${junit.version}</version>
+            <groupId>org.biopax.validator</groupId>
+            <artifactId>biopax-validator</artifactId>
+            <version>5.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.biopax.validator</groupId>
+            <artifactId>validator-core</artifactId>
+            <version>5.1.0</version>
+        </dependency>
+
+        <!-- Kotlin Standard Library -->
+        <dependency>
+            <groupId>org.jetbrains.kotlin</groupId>
+            <artifactId>kotlin-stdlib</artifactId>
+            <version>${kotlin.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jetbrains.kotlin</groupId>
+            <artifactId>kotlin-stdlib-jdk8</artifactId>
+            <version>${kotlin.version}</version>
+        </dependency>
+
+        <!-- JUnit 5 -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.9.2</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.9.2</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- ktlint -->
+        <!-- <dependency>
+            <groupId>com.pinterest</groupId>
+            <artifactId>ktlint-core</artifactId>
+            <version>0.49.1</version>
+        </dependency> -->
+
+        <!-- Mockito -->
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>4.5.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito.kotlin</groupId>
+            <artifactId>mockito-kotlin</artifactId>
+            <version>4.0.0</version>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
 
     <repositories>
@@ -97,5 +162,102 @@
             <releases><enabled>true</enabled></releases>
         </repository>
     </repositories>
+
+    <build>
+        <sourceDirectory>${project.basedir}/src/main/kotlin</sourceDirectory>
+        
+        <plugins>
+            <!-- Kotlin Maven Plugin -->
+            <plugin>
+                <groupId>org.jetbrains.kotlin</groupId>
+                <artifactId>kotlin-maven-plugin</artifactId>
+                <version>${kotlin.version}</version>
+                <executions>
+                    <execution>
+                        <id>compile</id>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>compile</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <!-- ktlint -->
+            <plugin>
+            <groupId>com.github.gantsign.maven</groupId>
+            <artifactId>ktlint-maven-plugin</artifactId>
+            <version>3.5.0</version>
+            <executions>
+                <!-- Bind the style check to the verify phase -->
+        <!-- 1) auto-format your Kotlin sources -->
+                <execution>
+                    <id>ktlint-format</id>
+                    <phase>process-sources</phase>
+                    <goals>
+                        <goal>format</goal>
+                    </goals>
+                </execution>
+
+                <!-- 2) then check them on verify -->
+                <execution>
+                    <id>ktlint-check</id>
+                    <phase>verify</phase>
+                    <goals>
+                        <goal>check</goal>
+                    </goals>
+                </execution>
+            </executions>
+            </plugin>
+            <!-- Maven Shade Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.2.4</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <transformers>
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                    <mainClass>org.reactome.server.tools.BioPAX3ExporterLauncher</mainClass>
+                                </transformer>
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
+                                    <resource>META-INF/spring.handlers</resource>
+                                </transformer>
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
+                                    <resource>META-INF/spring.schemas</resource>
+                                </transformer>
+                            </transformers>
+                            <filters>
+                                <filter>
+                                    <artifact>*:*</artifact>
+                                    <excludes>
+                                        <exclude>META-INF/*.SF</exclude>
+                                        <exclude>META-INF/*.DSA</exclude>
+                                        <exclude>META-INF/*.RSA</exclude>
+                                    </excludes>
+                                </filter>
+                            </filters>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0</version>
+                <configuration>
+                    <includes>
+                        <include>**/*Test.kt</include>
+                    </includes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
 
 </project>
