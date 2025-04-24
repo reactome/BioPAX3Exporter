@@ -1,9 +1,9 @@
-package org.reactome.server.tools;
+@file:Suppress("ktlint:standard:no-wildcard-imports")
 
-import org.biopax.paxtools.model.level3.*;
-import org.reactome.server.graph.domain.model.Event;
-
-import java.util.*;
+package org.reactome.server.tools
+import org.biopax.paxtools.model.level3.*
+import org.reactome.server.graph.domain.model.Event
+import java.util.*
 
 /**
  * @author Sarah Keating <skeating@ebi.ac.uk>
@@ -12,34 +12,33 @@ import java.util.*;
 class BioPAX3BasicElementsBuilder(
     private val thisReactomeEvent: Event? = null,
     private val thisBPModel: org.biopax.paxtools.model.Model? = null,
-    private var thisBPElement: org.biopax.paxtools.model.level3.Entity? = null
+    private var thisBPElement: org.biopax.paxtools.model.level3.Entity? = null,
 ) {
-
     /**
      * Function to add the BioSource element to the Entity supplied
      */
     fun addBioSourceInformation() {
         // note this should only get added to a Pathway
         if (thisReactomeEvent == null || thisBPElement !is org.biopax.paxtools.model.level3.Pathway) {
-            return;
+            return
         }
-        val src = getBPBioSource();
-        (thisBPElement as org.biopax.paxtools.model.level3.Pathway).organism = src;
+        val src = getBPBioSource()
+        (thisBPElement as org.biopax.paxtools.model.level3.Pathway).organism = src
     }
 
     /**
      * Function to add the Reacome Database as a BioPAX Provenance element
      */
     fun addReactomeDataSource() {
-        val provs = thisBPModel?.getObjects(org.biopax.paxtools.model.level3.Provenance::class.java);
-        var src = BioPAX3Utils.getObjectFromSet(provs, "Provenance1");
+        val provs = thisBPModel?.getObjects(org.biopax.paxtools.model.level3.Provenance::class.java)
+        var src = BioPAX3Utils.getObjectFromSet(provs, "Provenance1")
         // // TODO: 30/01/2017 check that Provenance1 is the reactome data source
         if (src == null) {
-            src = thisBPModel?.addNew(org.biopax.paxtools.model.level3.Provenance::class.java, BioPAX3Utils.getTypeCount("Provenance"));
-            src?.addName("Reactome");
-            src?.addComment("http://www.reactome.org");
+            src = thisBPModel?.addNew(org.biopax.paxtools.model.level3.Provenance::class.java, BioPAX3Utils.getTypeCount("Provenance"))
+            src?.addName("Reactome")
+            src?.addComment("http://www.reactome.org")
         }
-        thisBPElement?.addDataSource(src);
+        thisBPElement?.addDataSource(src)
     }
 
     /**
@@ -47,13 +46,13 @@ class BioPAX3BasicElementsBuilder(
      * and linking it to the BioPAX Entity supplied
      */
     fun addEvidence() {
-        val evids = thisBPModel?.getObjects(org.biopax.paxtools.model.level3.Evidence::class.java);
+        val evids = thisBPModel?.getObjects(org.biopax.paxtools.model.level3.Evidence::class.java)
         var src: Evidence? = null; // todo do we already have this
 
         if (src == null) {
-            src = thisBPModel?.addNew(org.biopax.paxtools.model.level3.Evidence::class.java, BioPAX3Utils.getTypeCount("Evidence"));
+            src = thisBPModel?.addNew(org.biopax.paxtools.model.level3.Evidence::class.java, BioPAX3Utils.getTypeCount("Evidence"))
         }
-        thisBPElement?.addEvidence(src);
+        thisBPElement?.addEvidence(src)
     }
 
     // private functions

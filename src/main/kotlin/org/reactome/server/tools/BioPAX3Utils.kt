@@ -1,4 +1,8 @@
-package org.reactome.server.tools;
+@file:Suppress(
+    "ktlint:standard:no-wildcard-imports",
+)
+
+package org.reactome.server.tools
 
 import org.biopax.paxtools.model.BioPAXElement
 import java.util.*
@@ -7,11 +11,9 @@ import java.util.*
  * @author Sarah Keating <skeating@ebi.ac.uk>
  */
 
-/**
- * Class to keep track of the different IDS used in biopax
- * e.g. Pathway1 Publication1 etc.
- */
-class TypeCounter(val name: String) {
+class TypeCounter(
+    val name: String,
+) {
     var count: Int = 0
         private set
 
@@ -67,9 +69,7 @@ object BioPAX3Utils {
      *
      * @return fully qualified ID
      */
-    fun getID(id: String): String {
-        return WriteBioPAX3.xmlBase + id
-    }
+    fun getID(id: String): String = WriteBioPAX3.xmlBase + id
 
     /**
      * Generic function to retrieve an object from a set based on its ID
@@ -84,7 +84,10 @@ object BioPAX3Utils {
      * @return the object from the set that matches the fully qualified ID created
      * from the id argument passed OR null if no such object exists
      */
-    fun <T : BioPAXElement> getObjectFromSet(setObjects: Set<T>?, id: String?): T? {
+    fun <T : BioPAXElement> getObjectFromSet(
+        setObjects: Set<T>?,
+        id: String?,
+    ): T? {
         if (setObjects.isNullOrEmpty() || id.isNullOrEmpty()) {
             return null
         }
@@ -104,7 +107,10 @@ object BioPAX3Utils {
      * @return the object from the set that matches the name argument passed
      * OR null if no such object exists
      */
-    fun <T : org.biopax.paxtools.model.level3.Named> getObjectFromSetByName(setObjects: Set<T>?, name: String?): T? {
+    fun <T : org.biopax.paxtools.model.level3.Named> getObjectFromSetByName(
+        setObjects: Set<T>?,
+        name: String?,
+    ): T? {
         if (setObjects.isNullOrEmpty() || name.isNullOrEmpty()) {
             return null
         }
@@ -118,7 +124,10 @@ object BioPAX3Utils {
      *
      * @return true if the Set contains an element matching the id given; false otherwise
      */
-    fun <T : BioPAXElement> contains(setObjects: Set<T>?, id: String?): Boolean {
+    fun <T : BioPAXElement> contains(
+        setObjects: Set<T>?,
+        id: String?,
+    ): Boolean {
         if (setObjects.isNullOrEmpty() || id.isNullOrEmpty()) {
             return false
         }
@@ -133,7 +142,10 @@ object BioPAX3Utils {
      *
      * @return true if the Set contains an element matching the name given; false otherwise
      */
-    fun <T : org.biopax.paxtools.model.level3.Named> containsName(setObjects: Set<T>?, name: String?): Boolean {
+    fun <T : org.biopax.paxtools.model.level3.Named> containsName(
+        setObjects: Set<T>?,
+        name: String?,
+    ): Boolean {
         if (setObjects.isNullOrEmpty() || name.isNullOrEmpty()) {
             return false
         }

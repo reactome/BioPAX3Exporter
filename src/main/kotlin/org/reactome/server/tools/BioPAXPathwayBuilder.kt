@@ -1,24 +1,23 @@
-package org.reactome.server.tools;
+@file:Suppress("ktlint:standard:no-wildcard-imports")
 
-import java.util.HashMap;
-import java.util.Map;
-import org.biopax.paxtools.model.Model;
-import org.biopax.paxtools.model.level3.*;
-import org.biopax.paxtools.model.level3.Process;
-import org.reactome.server.graph.domain.model.*;
-import org.reactome.server.graph.domain.model.Pathway;
+package org.reactome.server.tools
+
+import org.biopax.paxtools.model.Model
+import org.biopax.paxtools.model.level3.*
+import org.biopax.paxtools.model.level3.Process
+import org.reactome.server.graph.domain.model.*
+import org.reactome.server.graph.domain.model.Pathway
+import java.util.HashMap
 
 /**
  * @author Sarah Keating <skeating@ebi.ac.uk>
  */
 class BioPAXPathwayBuilder(
     private val thisPathway: Pathway?,
-    private var thisModel: Model?
+    private var thisModel: Model?,
 ) {
-
     // 1) Add a cache (map) for storing Pathway objects you've already built
     private val visitedPathways = HashMap<Long, org.biopax.paxtools.model.level3.Pathway>()
-
 
     /**
      * Function to add the Reactome Pathway to the BioPAX model
@@ -26,7 +25,7 @@ class BioPAXPathwayBuilder(
     fun addReactomePathway() {
         addReactomePathway(thisPathway)
     }
-    //////////////////////////////////////////////////////////////////////////////////
+    // ////////////////////////////////////////////////////////////////////////////////
 
     // Private functions
 
@@ -47,29 +46,28 @@ class BioPAXPathwayBuilder(
             // Already created this Pathway. Reuse the same BioPAX object
             return visitedPathways[dbId]
         }
-    
+
         // 2b) Create a new BioPAX Pathway
         val bpPath = thisModel?.addNew(org.biopax.paxtools.model.level3.Pathway::class.java, BioPAX3Utils.getTypeCount("Pathway"))
-    
+
         // 2c) Store it in the cache so we don't recreate it again
         bpPath?.let { visitedPathways[dbId] = it }
-    
+
         // 2d) Set all properties
         bpPath?.displayName = pathway.displayName
         bpPath?.addComment(BioPAX3ReferenceUtils.getComment(pathway.summation))
-    
+
         // Build the "basic elements" (organism, dataSource, etc.)
         val elements = BioPAX3BasicElementsBuilder(pathway, thisModel!!, bpPath!!)
         elements.addBioSourceInformation()
         elements.addReactomeDataSource()
         elements.addEvidence()
-    
+
         // 2e) Recurse over child "hasEvent" (subpathways or RLEs)
         addChildPathways(pathway, bpPath)
-    
+
         return bpPath
     }
-
 
     /**
      * Function to recurse through all the Reactome events associate with the given
@@ -79,7 +77,10 @@ class BioPAXPathwayBuilder(
      * @param pathway the Reactome pathway to be created in BioPAX
      * @param bpPath the BioPAX pathway to which the information is added
      */
-    private fun addChildPathways(pathway: Pathway, bpPath: org.biopax.paxtools.model.level3.Pathway) {
+    private fun addChildPathways(
+        pathway: Pathway,
+        bpPath: org.biopax.paxtools.model.level3.Pathway,
+    ) {
         pathway.hasEvent?.forEach { event ->
             addReactomeEvent(event, bpPath)
         }
@@ -92,7 +93,10 @@ class BioPAXPathwayBuilder(
      * @param event the Reactome event to be created in BioPAX
      * @param bpPath the BioPAX pathway to which the information is added
      */
-    private fun addReactomeEvent(event: Event, bpPath: org.biopax.paxtools.model.level3.Pathway) {
+    private fun addReactomeEvent(
+        event: Event,
+        bpPath: org.biopax.paxtools.model.level3.Pathway,
+    ) {
         val step = addBPStep(bpPath)
         step?.let { bpPath.addPathwayOrder(it) }
         var childPath: org.biopax.paxtools.model.level3.Process? = null
@@ -129,7 +133,7 @@ class BioPAXPathwayBuilder(
         return bpPath
     }
 
-    /////////////////////////////////////////////////////////////////////////////////////////////////
+    // ///////////////////////////////////////////////////////////////////////////////////////////////
 
     // add other information to Pathway
 
@@ -146,7 +150,11 @@ class BioPAXPathwayBuilder(
      * @param childPath the child BioPAX Pathway that is the pathwayComponent
      * @param step the BioPAX PathwayStep associated with this component
      */
-    private fun addComponentInformation(bpPath: org.biopax.paxtools.model.level3.Pathway, childPath: org.biopax.paxtools.model.level3.Process, step: PathwayStep) {
+    private fun addComponentInformation(
+        bpPath: org.biopax.paxtools.model.level3.Pathway,
+        childPath: org.biopax.paxtools.model.level3.Process,
+        step: PathwayStep,
+    ) {
         bpPath.addPathwayComponent(childPath)
         step.addStepProcess(childPath)
         if (childPath is org.biopax.paxtools.model.level3.BiochemicalReaction && childPath.controlledOf.isNotEmpty()) {
@@ -159,7 +167,7 @@ class BioPAXPathwayBuilder(
     // pathwayOrder
     // this is added in the addReactomeEvent function as it needs to enter the PathwayStep information as well
 
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // //////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     // add related Biopax classes
 
@@ -181,4 +189,3 @@ class BioPAXPathwayBuilder(
         return thisModel?.addNew(org.biopax.paxtools.model.level3.PathwayStep::class.java, BioPAX3Utils.getTypeCount("PathwayStep"))
     }
 }
-

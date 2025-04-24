@@ -1,15 +1,15 @@
-package org.reactome.server.tools;
+@file:Suppress("ktlint:standard:no-wildcard-imports")
 
-import org.reactome.server.graph.domain.model.Summation;
+package org.reactome.server.tools
 
-import java.util.*;
+import org.reactome.server.graph.domain.model.Summation
+import java.util.*
 
 /**
  * @author Sarah Keating <skeating@ebi.ac.uk>
  */
 
 object BioPAX3ReferenceUtils {
-
     /**
      * Function to create a text comment from the Summation
      *
@@ -40,13 +40,14 @@ object BioPAX3ReferenceUtils {
      * @return the text with any xhtml mark up removed
      */
     private fun removeTags(notes: String): String {
-        var result = notes
-            .replace(Regex("\\p{Cntrl}+"), " ")
-            .replace(Regex("</*[a-zA-Z][^>]*>"), " ")
-            .replace("<>", " interconverts to ")
-            .replace("<", " ")
-            .replace(Regex("\n+"), "  ")
-            .replace(Regex("&+"), "  ")
+        var result =
+            notes
+                .replace(Regex("\\p{Cntrl}+"), " ")
+                .replace(Regex("</*[a-zA-Z][^>]*>"), " ")
+                .replace("<>", " interconverts to ")
+                .replace("<", " ")
+                .replace(Regex("\n+"), "  ")
+                .replace(Regex("&+"), "  ")
         return result
     }
 }

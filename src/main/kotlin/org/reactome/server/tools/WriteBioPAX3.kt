@@ -1,18 +1,16 @@
-package org.reactome.server.tools;
+@file:Suppress("ktlint:standard:no-wildcard-imports")
 
-import org.biopax.paxtools.io.SimpleIOHandler;
-import org.reactome.server.graph.domain.model.*;
-import org.biopax.validator.BiopaxIdentifier;
-import org.biopax.validator.api.Validator;
-import org.biopax.validator.api.ValidatorUtils;
-import org.biopax.validator.api.beans.Validation;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.core.io.Resource;
-import org.biopax.paxtools.model.*;
+package org.reactome.server.tools
 
-import java.io.*;
-// import java.util.List;
+import org.biopax.paxtools.io.SimpleIOHandler
+import org.biopax.paxtools.model.*
+import org.biopax.validator.BiopaxIdentifier
+import org.biopax.validator.api.Validator
+import org.biopax.validator.api.ValidatorUtils
+import org.biopax.validator.api.beans.Validation
+import org.reactome.server.graph.domain.model.*
+import org.springframework.context.support.ClassPathXmlApplicationContext
+import java.io.*
 
 /**
  * @author Sarah Keating <skeating@ebi.ac.uk>
@@ -32,11 +30,12 @@ class WriteBioPAX3 {
                 System.setProperty("java.vm.specification.version", "17")
                 System.setProperty("java.vm.specification.vendor", "Oracle Corporation")
                 System.setProperty("java.vm.specification.name", "Java Virtual Machine Specification")
-                
-                val ctx = ClassPathXmlApplicationContext(
-                    "classpath:META-INF/spring/appContext-validator.xml",
-                    "classpath:META-INF/spring/appContext-loadTimeWeaving.xml"
-                )
+
+                val ctx =
+                    ClassPathXmlApplicationContext(
+                        "classpath:META-INF/spring/appContext-validator.xml",
+                        "classpath:META-INF/spring/appContext-loadTimeWeaving.xml",
+                    )
                 validator = ctx.getBean("validator") as Validator
                 println("BioPAX Validator initialized.")
             } catch (e: Exception) {
@@ -126,15 +125,18 @@ class WriteBioPAX3 {
     /**
      * Create the BioPAX model using multiple pathways for a species
      */
-    fun createModelForSpecies(species: Species, pathways: List<Pathway>) {
+    fun createModelForSpecies(
+        species: Species,
+        pathways: List<Pathway>,
+    ) {
         thisModel = bioPAXFactory.createModel()
         thisModel?.xmlBase = xmlBase
-        
+
         // // Add species information first
         BioPAXSpeciesBuilder(species, thisModel!!).addReactomeSpecies()
         // val speciesBuilder = BioPAXSpeciesBuilder(species, thisModel!!)
         // speciesBuilder.addReactomeSpecies()
-        
+
         // Add each pathway
         pathways.forEach { pathway ->
             val thisBPPath = BioPAXPathwayBuilder(pathway, thisModel!!)
@@ -144,7 +146,9 @@ class WriteBioPAX3 {
 
     fun validateBioPAXFile(file: File) {
         try {
-            val owlResource = org.springframework.core.io.FileSystemResource(file)
+            val owlResource =
+                org.springframework.core.io
+                    .FileSystemResource(file)
             val result = Validation(BiopaxIdentifier(), owlResource.description, false, null, 0, "notstrict")
 
             validator?.let { validator ->
@@ -165,7 +169,7 @@ class WriteBioPAX3 {
             System.err.println("BioPAX validation failed: ${e.message}")
         }
     }
-    
+
     /**
      * Set the database version number.
      *
@@ -175,7 +179,7 @@ class WriteBioPAX3 {
         dbVersion = version
     }
 
-    ///////////////////////////////////////////////////////////////////////////////////
+    // /////////////////////////////////////////////////////////////////////////////////
 
     // functions to output resulting document
 
@@ -186,11 +190,12 @@ class WriteBioPAX3 {
         val os = ByteArrayOutputStream()
         val out = SimpleIOHandler()
         out.convertToOWL(thisModel, os)
-        val output = try {
-            String(os.toByteArray(), Charsets.UTF_8)
-        } catch (e: Exception) {
-            "failed to write"
-        }
+        val output =
+            try {
+                String(os.toByteArray(), Charsets.UTF_8)
+            } catch (e: Exception) {
+                "failed to write"
+            }
         println(output)
     }
 
@@ -232,7 +237,7 @@ class WriteBioPAX3 {
         }
     }
 
-    //////////////////////////////////////////////////////////////////////////////////
+    // ////////////////////////////////////////////////////////////////////////////////
 
     // functions to facilitate testing
 
