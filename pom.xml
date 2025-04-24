@@ -27,8 +27,22 @@
         <developer>
             <id>skeating</id>
             <name>Sarah Keating</name>
-            <email>skeating@ebi.ac.uk</email>
+            <roles>
+                <role>
+                    Alumni
+                </role>
+            </roles>
             <organization>http://www.ebi.ac.uk/</organization>
+        </developer>
+    <developer>
+            <id>nsachdeva</id>
+            <name>Neil Sachdeva</name>
+            <roles>
+                <role>
+                    Alumni
+                </role>
+            </roles>
+            <organization>https://www.oicr.on.ca</organization>
         </developer>
     </developers>
 
