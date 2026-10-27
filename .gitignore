@@ -37,3 +37,6 @@ output/
 
 # Python bytecode from the ci/ tools
 __pycache__/
+
+# Written by the shade plugin at each package
+dependency-reduced-pom.xml

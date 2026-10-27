@@ -77,7 +77,7 @@ descriptions:
 
 ## Before pushing
 
-- The unit tests run and pass: see "Checks that do not work yet". Every fix has a
+- The unit tests run and pass: see "The checks". Every fix has a
   test seen failing first.
 - `mvn verify` passes (tests and ktlint).
 - No personal names in fixtures, logs or test output.
