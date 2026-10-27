@@ -1,4 +1,6 @@
 """Tests for ci/validate.py: python3 -I -m unittest discover -s ci"""
+import contextlib
+import io
 import json
 import os
 import tempfile
@@ -7,12 +9,14 @@ import unittest
 import validate
 
 
-def report(*errors, not_fixed_errors=None):
-    """A validator report with the given (type, code, cases) errors."""
+def report(*errors, not_fixed_errors=None, not_fixed=None):
+    """A validator report with the given (type, code, cases) errors, each with a case's message."""
     cases = sum(n for kind, _, n in errors if kind == "ERROR")
     nfe = cases if not_fixed_errors is None else not_fixed_errors
     body = "".join(
-        f'<error type="{kind}" code="{code}" category="x" message="m" totalCases="{n}" notFixedCases="{n}"/>'
+        f'<error type="{kind}" code="{code}" category="x" message="m" totalCases="{n}" '
+        f'notFixedCases="{n if not_fixed is None else not_fixed}">'
+        f'<errorCase fixed="false"><message>A Person Name</message></errorCase></error>'
         for kind, code, n in errors
     )
     return (
@@ -50,7 +54,25 @@ class ValidateTest(unittest.TestCase):
 
     def test_prints_no_message(self):
         lines, _ = validate.check([self.write(report(("WARNING", "no.display.name", 1)))], {})
-        self.assertFalse(any(" m" in line.split("no.display.name")[-1] for line in lines))
+        self.assertFalse(any("Person" in line for line in lines))
+
+    def test_refuses_a_report_with_no_validation(self):
+        path = self.write('<?xml version="1.0"?><validatorResponse/>')
+        with self.assertRaises(ValueError):
+            validate.check([path], {})
+
+    def test_counts_an_error_whatever_its_not_fixed_count_says(self):
+        path = self.write(report(("ERROR", "e", 2), not_fixed_errors=0, not_fixed=0))
+        lines, failed = validate.check([path], {})
+        self.assertTrue(failed)
+        self.assertIn("  ERROR e 2", lines)
+
+    def test_adds_up_a_code_repeated_across_validations(self):
+        one = report(("ERROR", "e", 1))
+        two = one.replace("</validatorResponse>", one.split("<validatorResponse")[1].split(">", 1)[1])
+        lines, failed = validate.check([self.write(two)], {"e": 1})
+        self.assertTrue(failed)
+        self.assertIn("  ERROR e 2", lines)
 
     def test_reads_a_baseline_file(self):
         path = self.write(report(("ERROR", "e", 1)))
@@ -58,7 +80,8 @@ class ValidateTest(unittest.TestCase):
         with os.fdopen(handle, "w") as f:
             json.dump({"e": 1}, f)
         self.addCleanup(os.remove, base)
-        self.assertEqual(validate.main(["validate.py", "--baseline", base, path]), 0)
+        with contextlib.redirect_stdout(io.StringIO()):
+            self.assertEqual(validate.main(["validate.py", "--baseline", base, path]), 0)
 
 
 if __name__ == "__main__":

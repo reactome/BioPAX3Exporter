@@ -10,4 +10,4 @@ The BioPAX validator 6.0.0 (`--profile=notstrict`), read by `ci/validate.py`, on
 | --- | --- | --- | --- |
 | _Plasmodium falciparum_ | 0 | 16,863 | 19 |
 
-Measured 27 Oct 2026. A run takes about four minutes, most of it the validator's start-up. The other species' baselines are made in T020.
+Measured 27 Oct 2026. A run takes about four minutes by the shell's clock (249 s with the network off, 242 s with it on), most of it the validator's start-up. The other species' baselines are made in T020.

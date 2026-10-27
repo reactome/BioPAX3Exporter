@@ -21,16 +21,26 @@ def local(tag):
 
 
 def read(path):
-    """[(type, code, not-fixed cases)] and the validation's notFixedErrors, of one report."""
+    """{(type, code): cases} and the validations' notFixedErrors, of one report.
+
+    A code's cases are the larger of its totalCases and notFixedCases: with
+    fixing off (as run) they are equal, and a report where they are not is
+    read so that no case goes uncounted. A code repeated across validations
+    adds up. A report with no validation at all is refused: an empty or
+    partial report is not a clean one.
+    """
     root = ElementTree.parse(path).getroot()
-    codes, not_fixed_errors = [], 0
-    for validation in root.iter():
-        if local(validation.tag) != "validation":
-            continue
+    validations = [element for element in root.iter() if local(element.tag) == "validation"]
+    if not validations:
+        raise ValueError(f"{path}: no validation in the report")
+    codes, not_fixed_errors = {}, 0
+    for validation in validations:
         not_fixed_errors += int(validation.get("notFixedErrors", "0"))
         for error in validation:
             if local(error.tag) == "error":
-                codes.append((error.get("type", ""), error.get("code", ""), int(error.get("notFixedCases", "0"))))
+                key = (error.get("type", ""), error.get("code", ""))
+                cases = max(int(error.get("totalCases", "0")), int(error.get("notFixedCases", "0")))
+                codes[key] = codes.get(key, 0) + cases
     return codes, not_fixed_errors
 
 
@@ -39,17 +49,19 @@ def check(paths, baseline):
     lines, failed = [], False
     for path in paths:
         codes, not_fixed_errors = read(path)
-        errors = {code: count for kind, code, count in codes if kind == "ERROR"}
-        warnings = sum(count for kind, _, count in codes if kind == "WARNING")
+        errors = {code: count for (kind, code), count in codes.items() if kind == "ERROR"}
+        warnings = sum(count for (kind, _), count in codes.items() if kind == "WARNING")
         lines.append(f"{path}: {sum(errors.values())} errors, {warnings} warnings, {len(codes)} codes")
-        for kind, code, count in sorted(codes):
+        for (kind, code), count in sorted(codes.items()):
             lines.append(f"  {kind} {code} {count}")
         over = {code: count for code, count in errors.items() if count > baseline.get(code, 0)}
-        # notFixedErrors counts ERROR cases; a report saying more than its codes do is read as failing.
-        if over or not_fixed_errors > sum(min(count, baseline.get(code, 0)) for code, count in errors.items()):
-            failed = True
-            for code, count in sorted(over.items()):
-                lines.append(f"  over the baseline: ERROR {code} {count} (allowed {baseline.get(code, 0)})")
+        allowed = sum(min(count, baseline.get(code, 0)) for code, count in errors.items())
+        for code, count in sorted(over.items()):
+            lines.append(f"  over the baseline: ERROR {code} {count} (allowed {baseline.get(code, 0)})")
+        # notFixedErrors counts ERROR cases: a report saying more than its codes do fails too.
+        if not_fixed_errors > allowed and not over:
+            lines.append(f"  over the baseline: {not_fixed_errors} errors by the report's own count")
+        failed = failed or bool(over) or not_fixed_errors > allowed
     return lines, failed
 
 
@@ -57,13 +69,23 @@ def main(argv):
     args = argv[1:]
     baseline = {}
     if args[:1] == ["--baseline"]:
+        if len(args) < 2:
+            print(__doc__.strip(), file=sys.stderr)
+            return 2
         with open(args[1], encoding="utf-8") as f:
             baseline = json.load(f)
+        if not isinstance(baseline, dict) or not all(isinstance(n, int) for n in baseline.values()):
+            print(f"{args[1]}: a baseline is an object of code to a number", file=sys.stderr)
+            return 2
         args = args[2:]
     if not args:
         print(__doc__.strip(), file=sys.stderr)
         return 2
-    lines, failed = check(args, baseline)
+    try:
+        lines, failed = check(args, baseline)
+    except ValueError as refused:
+        print(refused, file=sys.stderr)
+        return 1
     print("\n".join(lines))
     return 1 if failed else 0
 
