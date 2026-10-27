@@ -34,3 +34,6 @@ local.properties
 .DS_Store
 
 output/
+
+# Python bytecode from the ci/ tools
+__pycache__/
