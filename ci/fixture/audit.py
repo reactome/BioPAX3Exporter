@@ -76,8 +76,7 @@ def main(argv):
     unknown = hits - collections.Counter(KNOWN)
     print(f"{len(people)} people ({len(rows)} found), {len(names)} names of 3+ letters, {count} strings")
     print(f"strings holding a name, an email or an ORCID: {sum(hits.values())}",
-          dict(collections.Counter({f"{c}.{k}": 0 for c, k, _ in hits}) + collections.Counter(
-              {f"{c}.{k}": n for (c, k, _), n in hits.items()})))
+          dict(sum((collections.Counter({f"{c}.{k}": n}) for (c, k, _), n in hits.items()), collections.Counter())))
     print(f"beyond those known to be coincidences: {sum(unknown.values())}")
     return 1 if unknown or not people or len(rows) != len(people) else 0
 

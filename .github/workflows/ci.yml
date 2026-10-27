@@ -143,7 +143,11 @@ jobs:
                 JDK_JAVA_OPTIONS="--add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.lang.reflect=ALL-UNNAMED" \
                   java -javaagent:"$home/lib/spring-instrument-6.1.5.jar" -Xmx4g -jar "$home/biopax-validator.jar" \
                   ../out --profile=notstrict --out-format=xml > ../validator.log 2>&1
-                cd .. && python3 -I ci/validate.py reports/*.xml
+                cd ..
+                # One report per file written: a validator that stopped part way must not pass
+                # on the reports it did write. (Its log echoes display names, so it is not shown.)
+                [ "$(ls reports | wc -l)" = "$(ls out | wc -l)" ] || { echo "$(ls reports | wc -l) reports for $(ls out | wc -l) files"; exit 1; }
+                python3 -I ci/validate.py reports/*.xml
 
     docker-push:
         if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
