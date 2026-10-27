@@ -11,7 +11,8 @@ import compare
 HEAD = (
     '<?xml version="1.0"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" '
     'xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" '
-    'xml:base="http://www.reactome.org/biopax/97/1#"><owl:Ontology rdf:about="" />'
+    'xml:base="http://www.reactome.org/biopax/97/1#"><owl:Ontology rdf:about="">'
+    '<owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" /></owl:Ontology>'
 )
 
 
@@ -112,7 +113,8 @@ class CompareTest(unittest.TestCase):
         # The Provenance's comment, and the citation's three triples: its key
         # is its content, author included.
         self.assertEqual(sum(only_other.values()), 4)
-        text = "\n".join(compare.report(only_reference, only_other, examples=10))
+        changed = [part.replace("Someone", "Another") for part in BASE]
+        text = "\n".join(compare.report(compare.triples(self.write(*BASE)), compare.triples(self.write(*changed)), 10))
         for name in ("Someone", "Another"):
             self.assertNotIn(name, text)
 
@@ -121,12 +123,13 @@ class CompareTest(unittest.TestCase):
         return sum(only_one.values()), sum(only_other.values())
 
     def test_every_person_prefix_is_hashed(self):
-        for comment in ("Authored: N", "Reviewed: N", "Edited: N", "authored : N", " REVISED: N", "Created: N"):
+        for comment in ("Authored: N", "Reviewed: N", "Edited: N", "authored : N", " REVISED: N", "Created: N",
+                        "Modified: N", "Curated: N"):
             parts = [f'<bp:Provenance rdf:ID="V1"><bp:comment>{comment}</bp:comment></bp:Provenance>']
             (triple,) = compare.triples(self.write(*parts))
             self.assertTrue(triple[2][1].startswith("<hashed "), comment)
         plain = ['<bp:Provenance rdf:ID="V1"><bp:comment>activeUnit: N</bp:comment></bp:Provenance>']
-        self.assertEqual(next(iter(compare.triples(self.write(*plain))))[2], ("l", "activeUnit: N"))
+        self.assertEqual(next(iter(compare.triples(self.write(*plain))))[2], ("l", "activeUnit: N", ""))
 
     def test_a_citation_is_told_from_another_of_the_same_book(self):
         # Two chapters of one book share db and id: which one an event cites
@@ -200,14 +203,89 @@ class CompareTest(unittest.TestCase):
             keys = {t[0] for t in compare.triples(self.write(xref, protein("P1", xref.split('"')[1])))}
             self.assertFalse(any("dbId:" in k for k in keys), xref)
 
-    def test_a_catalysis_is_keyed_by_what_it_controls(self):
-        def catalysis(name, reaction, controller):
-            return (f'<bp:Catalysis rdf:ID="{name}"><bp:xref rdf:resource="#X8" /><bp:controlled rdf:resource="#{reaction}" />'
-                    f'<bp:controller rdf:resource="#{controller}" /></bp:Catalysis>')
-        common = [part for part in BASE if "bp:Control" not in part]
-        one = common + [catalysis("K1", "R1", "P1"), catalysis("K2", "R2", "P2")]
-        other = common + [catalysis("K1", "R1", "P2"), catalysis("K2", "R2", "P1")]
-        self.assertEqual(self.counts(one, other), (2, 2))
+    def test_whatever_controls_is_keyed_by_what_it_controls(self):
+        for cls in ("Catalysis", "Modulation", "TemplateReactionRegulation"):
+            def control(name, reaction, controller):
+                return (f'<bp:{cls} rdf:ID="{name}"><bp:xref rdf:resource="#X8" /><bp:controlled rdf:resource="#{reaction}" />'
+                        f'<bp:controller rdf:resource="#{controller}" /></bp:{cls}>')
+            common = [part for part in BASE if "bp:Control" not in part]
+            one = common + [control("K1", "R1", "P1"), control("K2", "R2", "P2")]
+            other = common + [control("K1", "R1", "P2"), control("K2", "R2", "P1")]
+            self.assertEqual(self.counts(one, other), (2, 2), cls)
+
+    def test_names_are_hashed_with_a_salt(self):
+        hashed = compare.literal("author", "N", None)[1]
+        self.assertNotIn(compare.digest("N"), hashed)
+        self.assertEqual(hashed, compare.literal("author", "N", None)[1])
+
+    def test_an_individual_named_by_a_relative_about_is_the_one_its_id_names(self):
+        about = [part.replace('rdf:ID="P1"', 'rdf:about="#P1"') for part in BASE]
+        self.assertNotEqual(about, BASE)
+        self.assertEqual(sum(sum(side.values()) for side in self.compared(about)), 0)
+
+    def typed(self, text, datatype):
+        kind = f' rdf:datatype="http://www.w3.org/2001/XMLSchema#{datatype}"' if datatype else ""
+        return [f'<bp:Stoichiometry rdf:ID="S1"><bp:stoichiometricCoefficient{kind}>{text}</bp:stoichiometricCoefficient></bp:Stoichiometry>']
+
+    def test_an_integer_is_compared_by_value(self):
+        self.assertEqual(self.counts(self.typed("+01", "int"), self.typed("1", "int")), (0, 0))
+        self.assertEqual(self.counts(self.typed("1_0", "int"), self.typed("10", "int")), (1, 1))
+
+    def test_a_float_is_compared_as_a_float_holds_it(self):
+        self.assertEqual(self.counts(self.typed("0.1", "float"), self.typed("0.10000000149011612", "float")), (0, 0))
+        self.assertEqual(self.counts(self.typed("0.1", "double"), self.typed("0.10000000149011612", "double")), (1, 1))
+        self.assertEqual(self.counts(self.typed("1", "float"), self.typed("1", "double")), (1, 1))
+        self.assertEqual(self.counts(self.typed("1_0", "float"), self.typed("10", "float")), (1, 1))
+
+    def test_a_datatype_is_part_of_a_literal(self):
+        self.assertEqual(self.counts(self.typed("a", "string"), self.typed("a", None)), (1, 1))
+        self.assertEqual(self.counts(self.typed("a", "string"), self.typed("a^^string", None)), (1, 1))
+        # And of the key it is in: the complex that holds it differs too.
+        holder = [dbid("X1", 1), '<bp:Complex rdf:ID="C1"><bp:xref rdf:resource="#X1" /><bp:componentStoichiometry rdf:resource="#S1" /></bp:Complex>']
+        self.assertEqual(self.counts(self.typed("a", "string") + holder, self.typed("a", None) + holder), (2, 2))
+
+    def test_a_value_repeated_within_one_individual_counts_once(self):
+        def named(*names):
+            return [dbid("X1", 1), '<bp:Protein rdf:ID="P1"><bp:xref rdf:resource="#X1" />'
+                    + "".join(f"<bp:name>{n}</bp:name>" for n in names) + "</bp:Protein>"]
+        self.assertEqual(self.counts(named("a", "a"), named("a")), (0, 0))
+        self.assertEqual(self.counts(named("a", "b"), named("a")), (1, 0))
+
+    def test_refuses_a_cycle_of_individuals_keyed_by_content(self):
+        cycle = ['<bp:Evidence rdf:ID="A"><bp:xref rdf:resource="#B" /></bp:Evidence>',
+                 '<bp:Evidence rdf:ID="B"><bp:xref rdf:resource="#A" /></bp:Evidence>']
+        with self.assertRaises(compare.Refused):
+            compare.triples(self.write(*cycle))
+
+    def location(self, go):
+        return [dbid("X1", 1), dbid("X2", 2),
+                f'<bp:UnificationXref rdf:ID="G1"><bp:db>GO</bp:db><bp:id>{go}</bp:id></bp:UnificationXref>',
+                '<bp:CellularLocationVocabulary rdf:ID="L1"><bp:term>cytosol</bp:term><bp:xref rdf:resource="#G1" /></bp:CellularLocationVocabulary>',
+                '<bp:Protein rdf:ID="P1"><bp:xref rdf:resource="#X1" /><bp:cellularLocation rdf:resource="#L1" /></bp:Protein>',
+                '<bp:Protein rdf:ID="P2"><bp:xref rdf:resource="#X2" /><bp:cellularLocation rdf:resource="#L1" /></bp:Protein>']
+
+    def test_names_the_change_at_the_root_apart_from_what_it_carries(self):
+        one, other = compare.triples(self.write(*self.location("1"))), compare.triples(self.write(*self.location("2")))
+        away = compare.carried(one, other)
+        roots = {compare.kind(t) for side, skip in zip(compare.differences(one, other), away) for t in side if t not in skip}
+        self.assertEqual(roots, {"UnificationXref.db", "UnificationXref.id"})
+        self.assertEqual({compare.kind(t) for t in away[1]},
+                         {"CellularLocationVocabulary.term", "CellularLocationVocabulary.xref", "Protein.cellularLocation"})
+        lines = compare.report(one, other, examples=1)
+        self.assertIn(" at the root: 4", lines)
+        self.assertIn(" carried by a change at the root: 8", lines)
+        self.assertTrue(lines[-1].startswith("    + 1 x UnificationXref|GO|2|"), lines[-1])
+
+    def test_an_example_prints_no_free_text(self):
+        def cited(title):
+            return [dbid("X1", 1), '<bp:PublicationXref rdf:ID="B1"><bp:db>ISBN</bp:db><bp:id>123</bp:id>'
+                    f"<bp:title>{title}</bp:title><bp:source>{title}</bp:source></bp:PublicationXref>",
+                    '<bp:Pathway rdf:ID="E1"><bp:xref rdf:resource="#X1" /><bp:xref rdf:resource="#B1" />'
+                    f"<bp:comment>{title}</bp:comment></bp:Pathway>"]
+        one, other = compare.triples(self.write(*cited("Words One"))), compare.triples(self.write(*cited("Words Two")))
+        text = "\n".join(compare.report(one, other, examples=20))
+        self.assertNotIn("Words", text)
+        self.assertIn("'123'", text)
 
     def test_refuses_an_individual_nested_in_another(self):
         path = self.write('<bp:Protein rdf:ID="P1"><bp:xref><bp:UnificationXref rdf:ID="X1" /></bp:xref></bp:Protein>')
