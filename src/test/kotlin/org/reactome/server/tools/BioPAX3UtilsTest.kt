@@ -9,70 +9,17 @@ import org.junit.jupiter.api.Assertions.assertFalse
 import org.junit.jupiter.api.Assertions.assertNotNull
 import org.junit.jupiter.api.Assertions.assertNull
 import org.junit.jupiter.api.Assertions.assertTrue
-import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 
 class BioPAX3UtilsTest {
-    // The exporter keeps its base, version and id counters in shared state
-    // (spec 001 T008 removes it); each test starts from none.
-    @BeforeEach
-    fun resetSharedState() {
-        WriteBioPAX3.xmlBase = ""
-        WriteBioPAX3.dbVersion = 0
-        BioPAX3Utils.clearCounterArray()
-    }
-
     // A real element, as the model makes them: Paxtools' interfaces are not
     // for implementing by hand.
     private fun protein(id: String): Protein = BioPAXLevel.L3.defaultFactory.create(Protein::class.java, id)
 
     @Test
-    fun `test getTypeCount returns correct ID format`() {
-        // Test first ID for a new type
-        val firstId = BioPAX3Utils.getTypeCount("TestType")
-        assertEquals("TestType1", firstId)
-
-        // Test second ID for the same type
-        val secondId = BioPAX3Utils.getTypeCount("TestType")
-        assertEquals("TestType2", secondId)
-
-        // Test ID for a different type
-        val differentTypeId = BioPAX3Utils.getTypeCount("AnotherType")
-        assertEquals("AnotherType1", differentTypeId)
-    }
-
-    @Test
-    fun `test getTypeCount maintains separate counters for different types`() {
-        // Reset counters by creating new instances
-        val pathwayId1 = BioPAX3Utils.getTypeCount("Pathway")
-        val publicationId1 = BioPAX3Utils.getTypeCount("Publication")
-        val pathwayId2 = BioPAX3Utils.getTypeCount("Pathway")
-        val publicationId2 = BioPAX3Utils.getTypeCount("Publication")
-
-        assertEquals("Pathway1", pathwayId1)
-        assertEquals("Publication1", publicationId1)
-        assertEquals("Pathway2", pathwayId2)
-        assertEquals("Publication2", publicationId2)
-    }
-
-    @Test
-    fun `test clearCounterArray resets all counters`() {
-        // Add some types to the counter
-        BioPAX3Utils.getTypeCount("TypeA")
-        BioPAX3Utils.getTypeCount("TypeB")
-
-        // Clear the counter array
-        BioPAX3Utils.clearCounterArray()
-
-        // Get a new ID for TypeA, should start from 1 again
-        val newId = BioPAX3Utils.getTypeCount("TypeA")
-        assertEquals("TypeA1", newId)
-    }
-
-    @Test
     fun `test getObjectFromSet returns correct object`() {
         // Create a mock BioPAXElement
-        val mockElement: BioPAXElement = protein(BioPAX3Utils.getID("TestId"))
+        val mockElement: BioPAXElement = protein("TestId")
 
         val set = setOf(mockElement)
 
@@ -97,7 +44,7 @@ class BioPAX3UtilsTest {
     @Test
     fun `test getObjectFromSetByName returns correct object`() {
         // Create a mock Named object
-        val mockNamed: Named = protein(BioPAX3Utils.getID("TestId")).apply { addName("TestName") }
+        val mockNamed: Named = protein("TestId").apply { addName("TestName") }
 
         val set = setOf(mockNamed)
 
@@ -122,7 +69,7 @@ class BioPAX3UtilsTest {
     @Test
     fun `test contains returns correct boolean`() {
         // Create a mock BioPAXElement
-        val mockElement: BioPAXElement = protein(BioPAX3Utils.getID("TestId"))
+        val mockElement: BioPAXElement = protein("TestId")
 
         val set = setOf(mockElement)
 
@@ -142,7 +89,7 @@ class BioPAX3UtilsTest {
     @Test
     fun `test containsName returns correct boolean`() {
         // Create a mock Named object
-        val mockNamed: Named = protein(BioPAX3Utils.getID("TestId")).apply { addName("TestName") }
+        val mockNamed: Named = protein("TestId").apply { addName("TestName") }
 
         val set = setOf(mockNamed)
 

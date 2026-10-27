@@ -2,7 +2,6 @@
 
 package org.reactome.server.tools
 
-import org.biopax.paxtools.model.Model
 import org.biopax.paxtools.model.level3.*
 import org.biopax.paxtools.model.level3.Process
 import org.reactome.server.graph.domain.model.*
@@ -14,8 +13,10 @@ import java.util.HashMap
  */
 class BioPAXPathwayBuilder(
     private val thisPathway: Pathway?,
-    private var thisModel: Model?,
+    private val context: ConversionContext?,
 ) {
+    private val thisModel = context?.model
+
     // 1) Add a cache (map) for storing Pathway objects you've already built
     private val visitedPathways = HashMap<Long, org.biopax.paxtools.model.level3.Pathway>()
 
@@ -48,7 +49,7 @@ class BioPAXPathwayBuilder(
         }
 
         // 2b) Create a new BioPAX Pathway
-        val bpPath = thisModel?.addNew(org.biopax.paxtools.model.level3.Pathway::class.java, BioPAX3Utils.getTypeCount("Pathway"))
+        val bpPath = thisModel?.addNew(org.biopax.paxtools.model.level3.Pathway::class.java, context!!.nextId("Pathway"))
 
         // 2c) Store it in the cache so we don't recreate it again
         bpPath?.let { visitedPathways[dbId] = it }
@@ -58,7 +59,7 @@ class BioPAXPathwayBuilder(
         bpPath?.addComment(BioPAX3ReferenceUtils.getComment(pathway.summation))
 
         // Build the "basic elements" (organism, dataSource, etc.)
-        val elements = BioPAX3BasicElementsBuilder(pathway, thisModel!!, bpPath!!)
+        val elements = BioPAX3BasicElementsBuilder(pathway, context, bpPath!!)
         elements.addBioSourceInformation()
         elements.addReactomeDataSource()
         elements.addEvidence()
@@ -103,7 +104,7 @@ class BioPAXPathwayBuilder(
         when (event) {
             is Pathway -> childPath = addReactomePathway(event)
             is ReactionLikeEvent -> {
-                val thisBPInteract = BioPAXInteractionBuilder(event, thisModel!!)
+                val thisBPInteract = BioPAXInteractionBuilder(event, context)
                 childPath = thisBPInteract.addReactomeRLEvent()
             }
             else -> {} // Handle other event types if needed
@@ -121,9 +122,9 @@ class BioPAXPathwayBuilder(
      */
     private fun addBPPathway(pathway: Pathway?): org.biopax.paxtools.model.level3.Pathway? {
         if (pathway == null) return null
-        val bpPath = thisModel?.addNew(org.biopax.paxtools.model.level3.Pathway::class.java, BioPAX3Utils.getTypeCount("Pathway"))
+        val bpPath = thisModel?.addNew(org.biopax.paxtools.model.level3.Pathway::class.java, context!!.nextId("Pathway"))
         bpPath?.let {
-            val elements = BioPAX3BasicElementsBuilder(pathway, thisModel!!, it)
+            val elements = BioPAX3BasicElementsBuilder(pathway, context, it)
             elements.addBioSourceInformation()
             elements.addReactomeDataSource()
             elements.addEvidence()
@@ -186,6 +187,6 @@ class BioPAXPathwayBuilder(
      */
     private fun addBPStep(bpPath: org.biopax.paxtools.model.level3.Pathway?): PathwayStep? {
         if (bpPath == null) return null
-        return thisModel?.addNew(org.biopax.paxtools.model.level3.PathwayStep::class.java, BioPAX3Utils.getTypeCount("PathwayStep"))
+        return thisModel?.addNew(org.biopax.paxtools.model.level3.PathwayStep::class.java, context!!.nextId("PathwayStep"))
     }
 }

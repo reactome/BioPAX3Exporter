@@ -5,7 +5,6 @@ import org.biopax.paxtools.model.level3.Entity
 import org.biopax.paxtools.model.level3.Evidence
 import org.biopax.paxtools.model.level3.Pathway
 import org.biopax.paxtools.model.level3.Provenance
-import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import org.mockito.Mockito.mock
 import org.mockito.Mockito.never
@@ -17,15 +16,6 @@ import org.mockito.kotlin.whenever
 import org.reactome.server.graph.domain.model.Event
 
 class BioPAX3BasicElementsBuilderTest {
-    // The exporter keeps its base, version and id counters in shared state
-    // (spec 001 T008 removes it); each test starts from none.
-    @BeforeEach
-    fun resetSharedState() {
-        WriteBioPAX3.xmlBase = ""
-        WriteBioPAX3.dbVersion = 0
-        BioPAX3Utils.clearCounterArray()
-    }
-
     @Test
     fun `test addReactomeDataSource uses existing Provenance if exists`() {
         // One Provenance per file, as the published files have (research R1):
@@ -33,13 +23,13 @@ class BioPAX3BasicElementsBuilderTest {
         val mockModel = mock(Model::class.java)
         val mockEntity = mock(Entity::class.java)
         val mockProvenance = mock(Provenance::class.java)
-        whenever(mockProvenance.rdfId).thenReturn(BioPAX3Utils.getID("Provenance1"))
+        whenever(mockProvenance.rdfId).thenReturn("Provenance1")
         whenever(mockModel.getObjects(Provenance::class.java)).thenReturn(setOf(mockProvenance))
 
         val builder =
             BioPAX3BasicElementsBuilder(
                 thisReactomeEvent = null,
-                thisBPModel = mockModel,
+                context = ConversionContext(0, "", mockModel),
                 thisBPElement = mockEntity,
             )
         builder.addReactomeDataSource()
@@ -57,7 +47,7 @@ class BioPAX3BasicElementsBuilderTest {
         val builder =
             BioPAX3BasicElementsBuilder(
                 thisReactomeEvent = null,
-                thisBPModel = mock(Model::class.java),
+                context = ConversionContext(0, "", mock(Model::class.java)),
                 thisBPElement = mockPathway,
             )
 
@@ -78,7 +68,7 @@ class BioPAX3BasicElementsBuilderTest {
         val builder =
             BioPAX3BasicElementsBuilder(
                 thisReactomeEvent = mockEvent,
-                thisBPModel = mock(Model::class.java),
+                context = ConversionContext(0, "", mock(Model::class.java)),
                 thisBPElement = mockEntity,
             )
 
@@ -106,7 +96,7 @@ class BioPAX3BasicElementsBuilderTest {
         val builder =
             BioPAX3BasicElementsBuilder(
                 thisReactomeEvent = null,
-                thisBPModel = mockModel,
+                context = ConversionContext(0, "", mockModel),
                 thisBPElement = mockEntity,
             )
 
@@ -141,7 +131,7 @@ class BioPAX3BasicElementsBuilderTest {
         val builder =
             BioPAX3BasicElementsBuilder(
                 thisReactomeEvent = null,
-                thisBPModel = mockModel,
+                context = ConversionContext(0, "", mockModel),
                 thisBPElement = mockEntity,
             )
 

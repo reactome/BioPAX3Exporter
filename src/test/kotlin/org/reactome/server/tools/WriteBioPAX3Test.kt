@@ -5,7 +5,6 @@ import org.junit.jupiter.api.Assertions.assertFalse
 import org.junit.jupiter.api.Assertions.assertNotNull
 import org.junit.jupiter.api.Assertions.assertNull
 import org.junit.jupiter.api.Assertions.assertTrue
-import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.io.TempDir
 import org.mockito.Mockito.mock
@@ -18,22 +17,13 @@ class WriteBioPAX3Test {
     // (http://www.reactome.org/biopax/{release}/{dbId}#): T018 changes them
     // together with the code.
 
-    // The exporter keeps its base, version and id counters in shared state
-    // (spec 001 T008 removes it); each test starts from none.
-    @BeforeEach
-    fun resetSharedState() {
-        WriteBioPAX3.xmlBase = ""
-        WriteBioPAX3.dbVersion = 0
-        BioPAX3Utils.clearCounterArray()
-    }
-
     @Test
     fun `test default constructor initializes correctly`() {
         // Create the WriteBioPAX3 instance with default constructor
         val writer = WriteBioPAX3()
 
         // Verify that the xmlBase is set correctly
-        assertEquals("https://www.reactome.org/biopax/#", WriteBioPAX3.xmlBase)
+        assertEquals("https://www.reactome.org/biopax/#", writer.xmlBase)
 
         // Verify that the model is null initially
         assertNull(writer.getModel())
@@ -49,7 +39,7 @@ class WriteBioPAX3Test {
         val writer = WriteBioPAX3(mockPathway)
 
         // Verify that the xmlBase is set correctly
-        assertEquals("https://www.reactome.org/biopax/0/123#", WriteBioPAX3.xmlBase)
+        assertEquals("https://www.reactome.org/biopax/0/123#", writer.xmlBase)
 
         // Verify that the model is null initially
         assertNull(writer.getModel())
@@ -65,10 +55,10 @@ class WriteBioPAX3Test {
         val writer = WriteBioPAX3(mockPathway, 42)
 
         // Verify that the dbVersion is set correctly
-        assertEquals(42, WriteBioPAX3.dbVersion)
+        assertEquals(42, writer.dbVersion)
 
         // Verify that the xmlBase is set correctly
-        assertEquals("https://www.reactome.org/biopax/42/123#", WriteBioPAX3.xmlBase)
+        assertEquals("https://www.reactome.org/biopax/42/123#", writer.xmlBase)
 
         // Verify that the model is null initially
         assertNull(writer.getModel())
@@ -83,7 +73,7 @@ class WriteBioPAX3Test {
         writer.setDBVersion(42)
 
         // Verify that the dbVersion is set correctly
-        assertEquals(42, WriteBioPAX3.dbVersion)
+        assertEquals(42, writer.dbVersion)
     }
 
     @Test

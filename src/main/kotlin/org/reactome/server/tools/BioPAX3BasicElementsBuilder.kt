@@ -11,9 +11,11 @@ import java.util.*
 
 class BioPAX3BasicElementsBuilder(
     private val thisReactomeEvent: Event? = null,
-    private val thisBPModel: org.biopax.paxtools.model.Model? = null,
+    private val context: ConversionContext? = null,
     private var thisBPElement: org.biopax.paxtools.model.level3.Entity? = null,
 ) {
+    private val thisBPModel = context?.model
+
     /**
      * Function to add the BioSource element to the Entity supplied
      */
@@ -31,10 +33,10 @@ class BioPAX3BasicElementsBuilder(
      */
     fun addReactomeDataSource() {
         val provs = thisBPModel?.getObjects(org.biopax.paxtools.model.level3.Provenance::class.java)
-        var src = BioPAX3Utils.getObjectFromSet(provs, "Provenance1")
+        var src = BioPAX3Utils.getObjectFromSet(provs, context?.id("Provenance1"))
         // // TODO: 30/01/2017 check that Provenance1 is the reactome data source
         if (src == null) {
-            src = thisBPModel?.addNew(org.biopax.paxtools.model.level3.Provenance::class.java, BioPAX3Utils.getTypeCount("Provenance"))
+            src = thisBPModel?.addNew(org.biopax.paxtools.model.level3.Provenance::class.java, context!!.nextId("Provenance"))
             src?.addName("Reactome")
             src?.addComment("http://www.reactome.org")
         }
@@ -50,7 +52,7 @@ class BioPAX3BasicElementsBuilder(
         var src: Evidence? = null; // todo do we already have this
 
         if (src == null) {
-            src = thisBPModel?.addNew(org.biopax.paxtools.model.level3.Evidence::class.java, BioPAX3Utils.getTypeCount("Evidence"))
+            src = thisBPModel?.addNew(org.biopax.paxtools.model.level3.Evidence::class.java, context!!.nextId("Evidence"))
         }
         thisBPElement?.addEvidence(src)
     }
@@ -83,7 +85,7 @@ class BioPAX3BasicElementsBuilder(
      * @return BioPAX BioSource element created
      */
     private fun addBioSource(species: String): org.biopax.paxtools.model.level3.BioSource {
-        val src = thisBPModel?.addNew(org.biopax.paxtools.model.level3.BioSource::class.java, BioPAX3Utils.getTypeCount("BioSource"))!!
+        val src = thisBPModel?.addNew(org.biopax.paxtools.model.level3.BioSource::class.java, context!!.nextId("BioSource"))!!
         val name = TreeSet<String>()
         name.add(species)
         src.name = name

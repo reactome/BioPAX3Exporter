@@ -1,6 +1,5 @@
 package org.reactome.server.tools
 
-import org.biopax.paxtools.model.Model
 import org.biopax.paxtools.model.level3.BioSource
 import org.reactome.server.graph.domain.model.Pathway
 import org.reactome.server.graph.domain.model.Species
@@ -10,14 +9,16 @@ import org.reactome.server.graph.domain.model.Species
  */
 class BioPAXSpeciesBuilder(
     private val species: Species,
-    private val model: Model,
+    private val context: ConversionContext,
 ) {
+    private val model = context.model
+
     fun addReactomeSpecies() {
         // 1. BioSource *****************************************************
         val bioSource =
             model.addNew(
                 BioSource::class.java,
-                BioPAX3Utils.getTypeCount("BioSource"),
+                context.nextId("BioSource"),
             )
         bioSource.name = setOf(species.displayName)
         val sp = species
@@ -35,14 +36,14 @@ class BioPAXSpeciesBuilder(
         val header: org.biopax.paxtools.model.level3.Pathway =
             model.addNew(
                 org.biopax.paxtools.model.level3.Pathway::class.java,
-                BioPAX3Utils.getTypeCount("Pathway"),
+                context.nextId("Pathway"),
             )
         header.displayName = sp.displayName
 
         // 4. Attach Reactome provenance to the header ***********************
         BioPAX3BasicElementsBuilder(
             dummyEvent, // first parameter: Reactome Event (can be null, but this gives names)
-            model,
+            context,
             header, // third parameter: BioPAX Entity
         ).addReactomeDataSource()
     }
