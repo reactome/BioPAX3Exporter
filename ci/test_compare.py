@@ -267,7 +267,7 @@ class CompareTest(unittest.TestCase):
     def roots(self, one, other):
         """The kinds at the root, each side, and the report's lines."""
         one, other = compare.triples(self.write(*one)), compare.triples(self.write(*other))
-        sides = compare.at_the_root(one, other)
+        sides, _ = compare.at_the_root(one, other)
         return [sorted(compare.kind(t) for t in side.elements()) for side in sides], compare.report(one, other, examples=1)
 
     def test_names_the_change_at_the_root_apart_from_what_it_carries(self):
@@ -295,6 +295,46 @@ class CompareTest(unittest.TestCase):
         (gone, came), _ = self.roots(BASE, changed)
         self.assertEqual((gone, came), (["BiochemicalReaction.left"], ["BiochemicalReaction.left"]))
 
+    def test_a_re_pointing_between_individuals_both_files_have_is_at_the_root(self):
+        # A step's next step changed to another step both files have: the
+        # steps are keyed by content, but neither key is new.
+        changed = [part.replace('<bp:nextStep rdf:resource="#W1" />', '<bp:nextStep rdf:resource="#W2" />') for part in BASE]
+        (gone, came), _ = self.roots(BASE, changed)
+        self.assertEqual((gone, came), (["PathwayStep.nextStep"], ["PathwayStep.nextStep"]))
+
+    def stoichiometries(self, first, second, entity="P1"):
+        return [dbid("X1", 1), dbid("X2", 2), protein("P1", "X1"), protein("P2", "X2"),
+                f'<bp:Stoichiometry rdf:ID="S1"><bp:physicalEntity rdf:resource="#P1" /><bp:stoichiometricCoefficient>{first}</bp:stoichiometricCoefficient></bp:Stoichiometry>',
+                f'<bp:Stoichiometry rdf:ID="S2"><bp:physicalEntity rdf:resource="#{entity}" /><bp:stoichiometricCoefficient>{second}</bp:stoichiometricCoefficient></bp:Stoichiometry>',
+                '<bp:Complex rdf:ID="C1"><bp:xref rdf:resource="#X1" /><bp:componentStoichiometry rdf:resource="#S1" /></bp:Complex>',
+                '<bp:Complex rdf:ID="C2"><bp:xref rdf:resource="#X2" /><bp:componentStoichiometry rdf:resource="#S2" /></bp:Complex>']
+
+    def test_a_swap_between_individuals_both_files_have_is_at_the_root(self):
+        (gone, came), _ = self.roots(self.stoichiometries("1", "2"), self.stoichiometries("2", "1"))
+        self.assertEqual((gone, came), (["Complex.componentStoichiometry"] * 2, ["Complex.componentStoichiometry"] * 2))
+
+    def test_a_swap_that_makes_new_keys_is_said_to_have_no_root(self):
+        one, other = self.stoichiometries("1", "2", "P2"), self.stoichiometries("2", "1", "P2")
+        (gone, came), lines = self.roots(one, other)
+        self.assertEqual((gone, came), ([], []))
+        self.assertNotEqual(self.counts(one, other), (0, 0))
+        self.assertIn(" nothing differs at the root: what differs is swapped among individuals keyed by content", lines)
+        self.assertIn(" swapped or carried: 12", lines)
+
+    def test_a_database_id_key_is_never_coarsened(self):
+        # Two Catalyses with database ids control one reaction keyed by
+        # content. The reaction changes, so their keys (which name it) are new
+        # in the other file; and their controllers are swapped. Coarsened,
+        # the swap would vanish; a database-id key stays exact, so it shows.
+        def catalyses(first, second, side="P1"):
+            return [dbid("X1", 1), dbid("X2", 2), dbid("X3", 3), protein("P1", "X1"), protein("P2", "X2"),
+                    f'<bp:BiochemicalReaction rdf:ID="R1"><bp:left rdf:resource="#{side}" /></bp:BiochemicalReaction>',
+                    f'<bp:Catalysis rdf:ID="K1"><bp:xref rdf:resource="#X3" /><bp:controlled rdf:resource="#R1" /><bp:controller rdf:resource="#{first}" /></bp:Catalysis>',
+                    f'<bp:Catalysis rdf:ID="K2"><bp:xref rdf:resource="#X1" /><bp:controlled rdf:resource="#R1" /><bp:controller rdf:resource="#{second}" /></bp:Catalysis>']
+        (gone, came), _ = self.roots(catalyses("P1", "P2"), catalyses("P2", "P1", side="P2"))
+        self.assertEqual(gone.count("Catalysis.controller"), 2)
+        self.assertEqual(came.count("Catalysis.controller"), 2)
+
     def test_a_coefficient_changed_is_at_the_root_and_its_holder_carried(self):
         changed = [part.replace(">2</bp:stoichiometricCoefficient>", ">3</bp:stoichiometricCoefficient>") for part in BASE]
         (gone, came), lines = self.roots(BASE, changed)
@@ -319,6 +359,28 @@ class CompareTest(unittest.TestCase):
     def test_a_decimal_is_compared_exactly(self):
         self.assertEqual(self.counts(self.typed("0.1", "decimal"), self.typed("0.10", "decimal")), (0, 0))
         self.assertEqual(self.counts(self.typed("0.1", "decimal"), self.typed("0.1000000000000000000001", "decimal")), (1, 1))
+        self.assertEqual(self.counts(self.typed("1", "decimal"), self.typed("1.00000000000000000000000000001", "decimal")), (1, 1))
+        self.assertEqual(self.counts(self.typed("-0", "decimal"), self.typed("0.0", "decimal")), (0, 0))
+        self.assertEqual(self.counts(self.typed("007.50", "decimal"), self.typed("+7.5", "decimal")), (0, 0))
+
+    def test_only_ascii_digits_make_a_number(self):
+        for datatype in ("int", "decimal", "float"):
+            self.assertEqual(self.counts(self.typed("\u0663", datatype), self.typed("3", datatype)), (1, 1), datatype)
+
+    def test_an_integer_is_read_up_to_forty_digits(self):
+        self.assertEqual(self.counts(self.typed("0" * 50 + "1", "int"), self.typed("1", "int")), (0, 0))
+        self.assertEqual(self.counts(self.typed("1" + "0" * 40, "int"), self.typed("1" + "0" * 40, "int")), (0, 0))
+        self.assertEqual(compare.number("1" + "0" * 39, "int"), "1" + "0" * 39)
+        self.assertIsNone(compare.number("1" + "0" * 40, "int"))
+
+    def test_a_number_prints_as_it_is(self):
+        self.assertEqual(compare.shown(("Protein|dbId:1", "comment", ("n", "1.5", "float"))), "'1.5'^^float")
+
+    def test_a_database_id_written_as_a_number_is_one(self):
+        typed = ('<bp:UnificationXref rdf:ID="X1"><bp:db>Reactome Database ID Release 97</bp:db>'
+                 '<bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">11</bp:id></bp:UnificationXref>')
+        keys = {t[0] for t in compare.triples(self.write(typed, protein("P1", "X1")))}
+        self.assertIn("Protein|dbId:11", keys)
 
     def test_a_file_it_cannot_read_through_exits_2(self):
         same = self.write(*BASE)

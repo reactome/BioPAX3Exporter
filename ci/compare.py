@@ -17,11 +17,13 @@ do not count:
 A hashed key moves with any change to its individual, so one change shows
 again in every triple that points at it, and at whatever points at those. The
 report therefore names the changes at the root apart: it compares the files
-again with every hashed key replaced by its class alone (database-id keys
-stay as they are), and what still differs is where the files really part;
-the rest is carried, a key rehashed by a change made elsewhere. A difference
-that shows only as carried is a re-pointing between individuals keyed by
-content (two citations swapped between two reactions, say).
+again with each hashed key found in one file only replaced by its class
+(database-id keys, and hashed keys both files have, stay as they are), and
+what still differs is where the files really part; the rest is carried, a
+key rehashed by a change made elsewhere. What it cannot place is a swap
+among individuals keyed by content (two coefficients, or two citations,
+traded between two reactions): the files differ and the exit says so, but
+nothing differs at the root, and the report says that.
 
 Within one individual a value counts once, the same literal or the same
 reference repeated (in RDF a repeated triple adds nothing, and Paxtools keeps
@@ -45,7 +47,6 @@ title, a citation's source, which can name authors and editors) only as its
 length and a salted hash.
 """
 import collections
-import decimal
 import hashlib
 import os
 import re
@@ -60,9 +61,10 @@ NAMED = re.compile(r"\s*(authored|reviewed|edited|created|revised|modified|curat
 UNKEYED = {"nextStep"}
 DBID = "Reactome Database ID"
 SALT = os.urandom(16)
-INTEGER = re.compile(r"[+-]?\d{1,40}")
-FLOATING = re.compile(r"[+-]?(\d+\.?\d*|\.\d+)([eE][+-]?\d+)?|NaN|[+-]?INF")
-DECIMAL = re.compile(r"[+-]?(\d+\.?\d*|\.\d+)")
+# ASCII digits only: Python's own readers take any script's.
+INTEGER = re.compile(r"[+-]?0*[0-9]{1,40}")
+FLOATING = re.compile(r"[+-]?([0-9]+\.?[0-9]*|\.[0-9]+)([eE][+-]?[0-9]+)?|NaN|[+-]?INF")
+DECIMAL = re.compile(r"([+-]?)([0-9]*)\.?([0-9]*)")
 # Literals an example may print as they are: codes, ids and numbers, never free text.
 SHOWN = {
     "db", "id", "idVersion", "term", "stoichiometricCoefficient", "conversionDirection", "controlType",
@@ -92,8 +94,12 @@ def number(text, kind):
     text = text.strip()
     if kind in ("int", "integer", "long", "short") and INTEGER.fullmatch(text):
         return str(int(text))
-    if kind == "decimal" and DECIMAL.fullmatch(text):
-        return str(decimal.Decimal(text).normalize())
+    written = DECIMAL.fullmatch(text) if kind == "decimal" else None
+    if written and (written[2] or written[3]):
+        # Exactly, at any length: leading and trailing zeros dropped, -0 is 0.
+        whole, fraction = written[2].lstrip("0") or "0", written[3].rstrip("0")
+        value = whole + (f".{fraction}" if fraction else "")
+        return value if value == "0" or written[1] != "-" else f"-{value}"
     if kind in ("float", "double") and FLOATING.fullmatch(text):
         value = float(text.replace("INF", "inf"))
         if kind == "float":
@@ -204,7 +210,9 @@ def triples(path):
         keys[name] = found
         return found
 
-    sys.setrecursionlimit(max(sys.getrecursionlimit(), 100000))
+    # Keys are made recursively. Python's own stack stops a chain of a few
+    # thousand (about 4,000 here) whatever this says; a deeper one exits 2.
+    sys.setrecursionlimit(max(sys.getrecursionlimit(), 10000))
     counted = collections.Counter()
     for name, (cls, props) in nodes.items():
         subject = key(name)
@@ -222,25 +230,36 @@ def kind(triple):
     return f"{triple[0].split('|', 1)[0]}.{triple[1]}"
 
 
-def coarse(key):
-    """A key as the root comparison reads it: a hashed key by its class alone."""
-    return key.split("|", 1)[0] if "|#" in key else key
+def hashed(key):
+    """Whether a key is a hash of its individual's content (a database-id key never is)."""
+    return "|#" in key and "|dbId:" not in key
 
 
-def blur(triple):
-    """A triple with its hashed keys by class."""
-    subject, prop, target = triple
-    return (coarse(subject), prop, ("r", coarse(target[1])) if target[0] == "r" else target)
+def keys_of(counted):
+    return {t[0] for t in counted} | {t[2][1] for t in counted if t[2][0] == "r"}
 
 
 def at_the_root(reference, other):
-    """The two files compared again with hashed keys by class: (only in the reference, only in the other)."""
+    """The files compared again with each hashed key found in one only by its class.
+
+    Returns (only in the reference, only in the other) and the blur used.
+    """
+    one_sided = keys_of(reference) ^ keys_of(other)
+
+    def coarse(key):
+        return key.split("|", 1)[0] if key in one_sided and hashed(key) else key
+
+    def blur(triple):
+        subject, prop, target = triple
+        return (coarse(subject), prop, ("r", coarse(target[1])) if target[0] == "r" else target)
+
     def blurred(counted):
         found = collections.Counter()
         for triple, count in counted.items():
             found[blur(triple)] += count
         return found
-    return differences(blurred(reference), blurred(other))
+
+    return differences(blurred(reference), blurred(other)), blur
 
 
 def shown(triple):
@@ -254,7 +273,7 @@ def shown(triple):
 def report(reference, other, examples=0):
     """Lines describing the differences of two files' triples by kind and count, the changes at the root apart."""
     only = differences(reference, other)
-    roots = at_the_root(reference, other)
+    roots, blur = at_the_root(reference, other)
     lines = [f"only in the reference: {sum(only[0].values())}", f"only in the file: {sum(only[1].values())}"]
     root_kinds, all_kinds = collections.Counter(), collections.Counter()
     for side, found, root in zip("-+", only, roots):
@@ -263,7 +282,10 @@ def report(reference, other, examples=0):
         for triple, count in found.items():
             all_kinds[(kind(triple), side)] += count
     carried_kinds = all_kinds - root_kinds
-    for title, kinds in (("at the root", root_kinds), ("carried by a change at the root", carried_kinds)):
+    if all_kinds and not root_kinds:
+        lines.append(" nothing differs at the root: what differs is swapped among individuals keyed by content")
+    rest = "carried by a change at the root" if root_kinds else "swapped or carried"
+    for title, kinds in (("at the root", root_kinds), (rest, carried_kinds)):
         if kinds:
             lines.append(f" {title}: {sum(kinds.values())}")
             lines.extend(f"  {side} {name} {count}" for (name, side), count in sorted(kinds.items()))
