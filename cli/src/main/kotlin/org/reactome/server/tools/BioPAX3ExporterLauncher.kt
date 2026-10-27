@@ -44,10 +44,10 @@ class BioPAX3ExporterLauncher {
                 val jsap =
                     SimpleJSAP(
                         BioPAX3ExporterLauncher::class.java.name,
-                        "A tool for generating SBML files",
+                        "A tool for generating BioPAX Level 3 files",
                         arrayOf(
                             FlaggedOption("host", JSAP.STRING_PARSER, "localhost", JSAP.REQUIRED, 'h', "host", "The neo4j host"),
-                            FlaggedOption("port", JSAP.STRING_PARSER, "7474", JSAP.NOT_REQUIRED, 'b', "port", "The neo4j port"),
+                            FlaggedOption("port", JSAP.STRING_PARSER, "7687", JSAP.NOT_REQUIRED, 'b', "port", "The neo4j port"),
                             FlaggedOption("user", JSAP.STRING_PARSER, "neo4j", JSAP.REQUIRED, 'u', "user", "The neo4j user"),
                             FlaggedOption("password", JSAP.STRING_PARSER, "reactome", JSAP.REQUIRED, 'p', "password", "The neo4j password"),
                             FlaggedOption("outdir", JSAP.STRING_PARSER, ".", JSAP.REQUIRED, 'o', "outdir", "The output directory"),
