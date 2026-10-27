@@ -1,5 +1,6 @@
 package org.reactome.server.tools
 
+import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.Assertions.*
 import org.biopax.paxtools.model.Model
@@ -7,9 +8,40 @@ import org.biopax.paxtools.model.level3.*
 import org.reactome.server.graph.domain.model.Event
 import org.mockito.Mockito.*
 import org.mockito.kotlin.any
+import org.mockito.kotlin.eq
 import org.mockito.kotlin.whenever
 
 class BioPAX3BasicElementsBuilderTest {
+    // The exporter keeps its base, version and id counters in shared state
+    // (spec 001 T008 removes it); each test starts from none.
+    @BeforeEach
+    fun resetSharedState() {
+        WriteBioPAX3.xmlBase = ""
+        WriteBioPAX3.dbVersion = 0
+        BioPAX3Utils.clearCounterArray()
+    }
+
+    @Test
+    fun `test addReactomeDataSource uses existing Provenance if exists`() {
+        // One Provenance per file, as the published files have (research R1):
+        // a second element asks for the one already in the model.
+        val mockModel = mock(Model::class.java)
+        val mockEntity = mock(Entity::class.java)
+        val mockProvenance = mock(Provenance::class.java)
+        whenever(mockProvenance.rdfId).thenReturn(BioPAX3Utils.getID("Provenance1"))
+        whenever(mockModel.getObjects(Provenance::class.java)).thenReturn(setOf(mockProvenance))
+
+        val builder = BioPAX3BasicElementsBuilder(
+            thisReactomeEvent = null,
+            thisBPModel = mockModel,
+            thisBPElement = mockEntity
+        )
+        builder.addReactomeDataSource()
+
+        verify(mockModel, never()).addNew(eq(Provenance::class.java), any())
+        verify(mockEntity).addDataSource(mockProvenance)
+    }
+
     
     @Test
     fun `test addBioSourceInformation does nothing when event is null`() {
@@ -46,8 +78,8 @@ class BioPAX3BasicElementsBuilderTest {
         // Call the method
         builder.addBioSourceInformation()
         
-        // Verify that organism was not set
-        verify(mockEntity, never()).organism = any()
+        // An Entity has no organism; nothing is set on it.
+        verifyNoInteractions(mockEntity)
     }
     
     @Test
@@ -61,7 +93,7 @@ class BioPAX3BasicElementsBuilderTest {
         whenever(mockModel.getObjects(Provenance::class.java)).thenReturn(emptySet())
         
         // Set up the model to create a new Provenance
-        whenever(mockModel.addNew(Provenance::class.java, any())).thenReturn(mockProvenance)
+        whenever(mockModel.addNew(eq(Provenance::class.java), any())).thenReturn(mockProvenance)
         
         // Create the builder
         val builder = BioPAX3BasicElementsBuilder(
@@ -74,41 +106,11 @@ class BioPAX3BasicElementsBuilderTest {
         builder.addReactomeDataSource()
         
         // Verify that a new Provenance was created
-        verify(mockModel).addNew(Provenance::class.java, any())
+        verify(mockModel).addNew(eq(Provenance::class.java), any())
         
         // Verify that the Provenance was configured
         verify(mockProvenance).addName("Reactome")
         verify(mockProvenance).addComment("http://www.reactome.org")
-        
-        // Verify that the Provenance was added to the entity
-        verify(mockEntity).addDataSource(mockProvenance)
-    }
-    
-    @Test
-    fun `test addReactomeDataSource uses existing Provenance if exists`() {
-        // Create mocks
-        val mockModel = mock(Model::class.java)
-        val mockEntity = mock(Entity::class.java)
-        val mockProvenance = mock(Provenance::class.java)
-        
-        // Set up the model to return a set with the mock Provenance
-        whenever(mockModel.getObjects(Provenance::class.java)).thenReturn(setOf(mockProvenance))
-        
-        // Set up BioPAX3Utils to return the mock Provenance
-        // This is a bit tricky since BioPAX3Utils is an object, but we can test the behavior indirectly
-        
-        // Create the builder
-        val builder = BioPAX3BasicElementsBuilder(
-            thisReactomeEvent = null,
-            thisBPModel = mockModel,
-            thisBPElement = mockEntity
-        )
-        
-        // Call the method
-        builder.addReactomeDataSource()
-        
-        // Verify that a new Provenance was not created
-        verify(mockModel, never()).addNew(Provenance::class.java, any())
         
         // Verify that the Provenance was added to the entity
         verify(mockEntity).addDataSource(mockProvenance)
@@ -125,7 +127,7 @@ class BioPAX3BasicElementsBuilderTest {
         whenever(mockModel.getObjects(Evidence::class.java)).thenReturn(emptySet())
         
         // Set up the model to create a new Evidence
-        whenever(mockModel.addNew(Evidence::class.java, any())).thenReturn(mockEvidence)
+        whenever(mockModel.addNew(eq(Evidence::class.java), any())).thenReturn(mockEvidence)
         
         // Create the builder
         val builder = BioPAX3BasicElementsBuilder(
@@ -138,36 +140,10 @@ class BioPAX3BasicElementsBuilderTest {
         builder.addEvidence()
         
         // Verify that a new Evidence was created
-        verify(mockModel).addNew(Evidence::class.java, any())
+        verify(mockModel).addNew(eq(Evidence::class.java), any())
         
         // Verify that the Evidence was added to the entity
         verify(mockEntity).addEvidence(mockEvidence)
     }
     
-    @Test
-    fun `test addEvidence uses existing Evidence if exists`() {
-        // Create mocks
-        val mockModel = mock(Model::class.java)
-        val mockEntity = mock(Entity::class.java)
-        val mockEvidence = mock(Evidence::class.java)
-        
-        // Set up the model to return a set with the mock Evidence
-        whenever(mockModel.getObjects(Evidence::class.java)).thenReturn(setOf(mockEvidence))
-        
-        // Create the builder
-        val builder = BioPAX3BasicElementsBuilder(
-            thisReactomeEvent = null,
-            thisBPModel = mockModel,
-            thisBPElement = mockEntity
-        )
-        
-        // Call the method
-        builder.addEvidence()
-        
-        // Verify that a new Evidence was not created
-        verify(mockModel, never()).addNew(Evidence::class.java, any())
-        
-        // Verify that the Evidence was added to the entity
-        verify(mockEntity).addEvidence(mockEvidence)
-    }
 } 

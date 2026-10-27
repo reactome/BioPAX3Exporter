@@ -1,5 +1,6 @@
 package org.reactome.server.tools
 
+import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.io.TempDir
@@ -11,6 +12,19 @@ import org.mockito.kotlin.whenever
 import java.io.File
 
 class WriteBioPAX3Test {
+    // The bases asserted here are today's, which no published file uses
+    // (http://www.reactome.org/biopax/{release}/{dbId}#): T018 changes them
+    // together with the code.
+
+    // The exporter keeps its base, version and id counters in shared state
+    // (spec 001 T008 removes it); each test starts from none.
+    @BeforeEach
+    fun resetSharedState() {
+        WriteBioPAX3.xmlBase = ""
+        WriteBioPAX3.dbVersion = 0
+        BioPAX3Utils.clearCounterArray()
+    }
+
     
     @Test
     fun `test default constructor initializes correctly`() {
@@ -44,7 +58,6 @@ class WriteBioPAX3Test {
     fun `test pathway and version constructor initializes correctly`() {
         // Create a mock Pathway
         val mockPathway = mock(Pathway::class.java)
-        val const mockVersion = 42 // remember to replace 42 with the const
         whenever(mockPathway.dbId).thenReturn(123L)
         
         // Create the WriteBioPAX3 instance with pathway and version constructor

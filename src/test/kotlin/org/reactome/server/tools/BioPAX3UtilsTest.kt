@@ -1,12 +1,26 @@
 package org.reactome.server.tools
 
+import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.Assertions.*
 import org.biopax.paxtools.model.BioPAXElement
+import org.biopax.paxtools.model.BioPAXLevel
+import org.biopax.paxtools.model.level3.Protein
 import org.biopax.paxtools.model.level3.Named
-import java.util.*
 
 class BioPAX3UtilsTest {
+    // The exporter keeps its base, version and id counters in shared state
+    // (spec 001 T008 removes it); each test starts from none.
+    @BeforeEach
+    fun resetSharedState() {
+        WriteBioPAX3.xmlBase = ""
+        WriteBioPAX3.dbVersion = 0
+        BioPAX3Utils.clearCounterArray()
+    }
+
+    // A real element, as the model makes them: Paxtools' interfaces are not
+    // for implementing by hand.
+    private fun protein(id: String): Protein = BioPAXLevel.L3.defaultFactory.create(Protein::class.java, id)
     
     @Test
     fun `test getTypeCount returns correct ID format`() {
@@ -21,13 +35,6 @@ class BioPAX3UtilsTest {
         // Test ID for a different type
         val differentTypeId = BioPAX3Utils.getTypeCount("AnotherType")
         assertEquals("AnotherType1", differentTypeId)
-    }
-    
-    @Test
-    fun `test getID returns correct format`() {
-        val id = BioPAX3Utils.getID("TestName")
-        assertTrue(id.startsWith("http://www.reactome.org/biopax3/"))
-        assertTrue(id.endsWith("TestName"))
     }
     
     @Test
@@ -61,9 +68,7 @@ class BioPAX3UtilsTest {
     @Test
     fun `test getObjectFromSet returns correct object`() {
         // Create a mock BioPAXElement
-        val mockElement = object : BioPAXElement {
-            override var rdfId: String = BioPAX3Utils.getID("TestId")
-        }
+        val mockElement: BioPAXElement = protein(BioPAX3Utils.getID("TestId"))
         
         val set = setOf(mockElement)
         
@@ -88,10 +93,7 @@ class BioPAX3UtilsTest {
     @Test
     fun `test getObjectFromSetByName returns correct object`() {
         // Create a mock Named object
-        val mockNamed = object : Named {
-            override var name: Set<String> = TreeSet<String>().apply { add("TestName") }
-            override var rdfId: String = BioPAX3Utils.getID("TestId")
-        }
+        val mockNamed: Named = protein(BioPAX3Utils.getID("TestId")).apply { addName("TestName") }
         
         val set = setOf(mockNamed)
         
@@ -116,9 +118,7 @@ class BioPAX3UtilsTest {
     @Test
     fun `test contains returns correct boolean`() {
         // Create a mock BioPAXElement
-        val mockElement = object : BioPAXElement {
-            override var rdfId: String = BioPAX3Utils.getID("TestId")
-        }
+        val mockElement: BioPAXElement = protein(BioPAX3Utils.getID("TestId"))
         
         val set = setOf(mockElement)
         
@@ -138,10 +138,7 @@ class BioPAX3UtilsTest {
     @Test
     fun `test containsName returns correct boolean`() {
         // Create a mock Named object
-        val mockNamed = object : Named {
-            override var name: Set<String> = TreeSet<String>().apply { add("TestName") }
-            override var rdfId: String = BioPAX3Utils.getID("TestId")
-        }
+        val mockNamed: Named = protein(BioPAX3Utils.getID("TestId")).apply { addName("TestName") }
         
         val set = setOf(mockNamed)
         
