@@ -7,9 +7,6 @@ WORKDIR ${REPO_DIR}
 COPY . .
 SHELL ["/bin/bash", "-c"]
 
-# run ktlint if container started
-ENTRYPOINT []
-CMD mvn verify | grep -i --color=never 'ktlint' > lint.log && exit 1 || exit 0
 
 # ===== stage 2 =====
 FROM setup-env AS build-jar
