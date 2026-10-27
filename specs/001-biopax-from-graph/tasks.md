@@ -94,6 +94,7 @@ description: 'Tasks for spec 001: BioPAX Level 3 from the graph, as the release 
     - two proteins written in the other order, as an order from a hash set would, pass the comparison by design and fail the byte check.
   - **What today's output already holds:** more than pathways — reactions, catalyses, complexes, proteins and steps. It also holds the old converter's oddities, which the content tasks fix and these files record as they go: Evidence for every human event, where release 97 writes it for inferred events only. Its built-in validator fails to start on JDK 17, which is harmless here; T008 takes the validator out of the library.
   - **From #26's review:** `audit.py` keys its one known coincidence by the node as well as the class and property. The same keyword on another node now fails it, which was shown. The check's comments and README now say a person-like key is one from its list, not any key containing one.
+  - **From #27's review, in #28:** the job requires one validator report per file written, so a validator that stops part way cannot pass on what it did write. `no-relational.sh` fails when Maven lists no dependency (it once printed a pass for 0), shows Maven's own output, and knows more drivers, pools and ORMs (jTDS, DB2, Firebird, DuckDB, Snowflake, Teradata, HikariCP, c3p0, DBCP, EclipseLink, JPA); a Neo4j JDBC driver is allowed. `audit.py`'s summary adds hits of one class and property across nodes (it showed the last node's).
 
 ## Phase 3: The code's shape (User Story 3's independence, constitution IV)
 

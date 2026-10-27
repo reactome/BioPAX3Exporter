@@ -6,10 +6,16 @@
 set -euo pipefail
 list=$(mktemp)
 trap 'rm -f "$list"' EXIT
-mvn -B -q dependency:list -DincludeScope=runtime -DoutputFile="$list" -DappendOutput=false >/dev/null
-relational='(mysql|mariadb|postgresql|ojdbc|oracle\.database|mssql|sqlserver|sqlite|hsqldb|com\.h2database|derby|jdbc|r2dbc|hibernate-core|hibernate-orm|jooq|mybatis|spring-jdbc)'
+mvn -B -q dependency:list -DincludeScope=runtime -DoutputFile="$list" -DappendOutput=false
+# Drivers, connection pools and ORMs by their artifacts; a Neo4j JDBC driver reads the graph
+# and is no relational one.
+relational='(mysql|mariadb|postgresql|ojdbc|oracle\.database|mssql|sqlserver|sqlite|hsqldb|com\.h2database|derby|jtds|com\.ibm\.db2|jaybird|firebird|duckdb|snowflake|teradata|jdbc|r2dbc|hikaricp|c3p0|commons-dbcp|hibernate-core|hibernate-orm|eclipselink|jakarta\.persistence|javax\.persistence|spring-data-jpa|jooq|mybatis|spring-jdbc)'
 count=$(grep -cE ':.*:(jar|pom)' "$list" || true)
-if grep -iE "$relational" "$list"; then
+if [ "$count" -eq 0 ]; then
+  echo "Maven listed no dependencies: nothing was checked"
+  exit 1
+fi
+if grep -iE "$relational" "$list" | grep -iv neo4j; then
   echo "a relational database driver or reader among the $count dependencies, above"
   exit 1
 fi
