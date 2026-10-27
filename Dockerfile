@@ -11,7 +11,10 @@ SHELL ["/bin/bash", "-c"]
 # ===== stage 2 =====
 # Both modules; the command line's shaded jar (cli) is what runs.
 FROM setup-env AS build-jar
-RUN mvn clean package
+# -nsu: no snapshot updates mid-build; ci/snapshots.sh checks what resolved.
+RUN mvn -B -nsu clean package
+# Fail if a snapshot dependency (graph-core) changed under the build (T010).
+RUN ci/snapshots.sh check
 
 # ===== stage 3 =====
 FROM eclipse-temurin:17-jre-focal

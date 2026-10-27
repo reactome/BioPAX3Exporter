@@ -123,7 +123,12 @@ description: 'Tasks for spec 001: BioPAX Level 3 from the graph, as the release 
     - `ci/lib-dependencies.sh` read the direct dependencies from Maven's resolved list, which names a relocated artifact by its new name: `mysql:mysql-connector-java` added to `lib` passed it. It now reads them as declared in `lib`'s pom and the parent's, in every scope but test (a `provided` validator passed before), and a disallowed one no longer stops it before the check at any depth.
     - CLAUDE.md's pointer to the renamed section is corrected.
   - **From #32's review, in #33:** a dependency added by an active profile, or by an ancestor above the parent, passed: the declared list was read from two files. It is now read from `lib`'s effective model (`help:effective-pom`), every ancestor and active profile merged in; seen failing on MySQL in an active-by-default profile and on a `provided` artifact in a JDK-activated one. An inactive profile, which puts nothing on the classpath, passes.
-- [ ] T010 graph-core moves to the version sbml-exporter pins (research R4), before Phase 4; the fixture's expected output does not move, or each change is explained. (Publishing the library later needs a released graph-core, not a snapshot pinned by commit: a ticket on graph-core, T022.)
+- [x] T010 graph-core moves to the version sbml-exporter pins (research R4), before Phase 4; the fixture's expected output does not move, or each change is explained. (Publishing the library later needs a released graph-core, not a snapshot pinned by commit: a ticket on graph-core, T022.) — #34.
+  - **The version:** graph-core 2.0.9 → 3.0.0-SNAPSHOT, resolving to the very build sbml-exporter pins: the four snapshot files (graph-core's jar and pom, reactome-parent and reactome-bom 1.0.5-SNAPSHOT) have the same sha1s as its `ci/snapshots.sha1`. No source change was needed; the 27 tests pass.
+  - **Pinned by content:** `ci/snapshots.sh` (sbml-exporter's) and `ci/snapshots.sha1`; the image's build resolves with `-nsu` and runs the check over its fresh local repository. Seen failing on a changed graph-core jar.
+  - **The output does not move:** the image over the fixture graph (a private Neo4j 4.4.48, as CI's job) writes both species files equal by meaning to the unchanged `ci/fixture/expected` (`compare.py`: nothing only in either).
+  - The library's dependencies are still graph-core, Paxtools and Kotlin's (`ci/lib-dependencies.sh`), and no relational driver arrives (`ci/no-relational.sh`, 48 dependencies).
+  - **From #33's review:** the help plugin that reads the effective model is pinned (3.5.2), and the check's known limit is stated: a profile switched off only on CI is unseen.
 
 ## Phase 4: The content (User Story 2, P1)
 

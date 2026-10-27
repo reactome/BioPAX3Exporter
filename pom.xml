@@ -20,7 +20,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <graph.core>2.0.9</graph.core>
+        <graph.core>3.0.0-SNAPSHOT</graph.core>
         <jasp.version>2.1</jasp.version>
 
         <maven.compiler.version>3.11.0</maven.compiler.version>
