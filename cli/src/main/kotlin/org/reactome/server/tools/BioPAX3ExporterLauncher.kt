@@ -85,6 +85,8 @@ class BioPAX3ExporterLauncher {
 
                 val config = jsap.parse(args)
                 if (!config.success()) System.exit(1)
+                // --help: the usage is printed; nothing to convert
+                if (jsap.messagePrinted()) System.exit(0)
 
                 // Build a valid Bolt URI from host/port
                 val boltUrl = "bolt://${config.getString("host")}:${config.getString("port")}"

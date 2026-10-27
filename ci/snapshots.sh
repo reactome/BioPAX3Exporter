@@ -17,7 +17,7 @@ here="$(cd "$(dirname "$0")" && pwd)"
 
 list() {
     # In a process substitution a failure is not seen by set -e: fail loudly instead.
-    [ -d "$repo" ] || { echo "no local repository at $repo" >&2; echo "(no local repository)"; return; }
+    [ -d "$repo" ] || { echo "no local repository at $repo" >&2; echo "(no local repository)"; return 1; }
     (cd "$repo" &&
         find . -type f \( -name '*-SNAPSHOT.jar' -o -name '*-SNAPSHOT.pom' \) |
         sed 's|^\./||' | LC_ALL=C sort | xargs sha1sum)
