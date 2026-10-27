@@ -122,6 +122,7 @@ description: 'Tasks for spec 001: BioPAX Level 3 from the graph, as the release 
   - **From #31's review, in #32:**
     - `ci/lib-dependencies.sh` read the direct dependencies from Maven's resolved list, which names a relocated artifact by its new name: `mysql:mysql-connector-java` added to `lib` passed it. It now reads them as declared in `lib`'s pom and the parent's, in every scope but test (a `provided` validator passed before), and a disallowed one no longer stops it before the check at any depth.
     - CLAUDE.md's pointer to the renamed section is corrected.
+  - **From #32's review, in #33:** a dependency added by an active profile, or by an ancestor above the parent, passed: the declared list was read from two files. It is now read from `lib`'s effective model (`help:effective-pom`), every ancestor and active profile merged in; seen failing on MySQL in an active-by-default profile and on a `provided` artifact in a JDK-activated one. An inactive profile, which puts nothing on the classpath, passes.
 - [ ] T010 graph-core moves to the version sbml-exporter pins (research R4), before Phase 4; the fixture's expected output does not move, or each change is explained. (Publishing the library later needs a released graph-core, not a snapshot pinned by commit: a ticket on graph-core, T022.)
 
 ## Phase 4: The content (User Story 2, P1)
