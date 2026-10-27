@@ -16,17 +16,21 @@ do not count:
 
 A hashed key moves with any change to its individual, so one change shows
 again in every triple that points at it, and at whatever points at those. The
-report therefore names the changes at the root apart: a differing triple is
-carried when it points at, or belongs to an individual that points at, a key
-found in one file only; the rest are where the files really part. An
-individual keyed by content that changes itself shows all its triples at the
-root, the unchanged ones with it, since its key is new.
+report therefore names the changes at the root apart: it compares the files
+again with every hashed key replaced by its class alone (database-id keys
+stay as they are), and what still differs is where the files really part;
+the rest is carried, a key rehashed by a change made elsewhere. A difference
+that shows only as carried is a re-pointing between individuals keyed by
+content (two citations swapped between two reactions, say).
 
-Within one individual a value counts once (in RDF a repeated triple adds
-nothing, and Paxtools keeps values as sets); across individuals they count as
-a multiset, since the published files repeat individuals of the same content.
-A literal is compared with its datatype, a number by its value as that type
-holds it (an xsd:float as a 32-bit float: "1", "1.0" and "1e0" are one value).
+Within one individual a value counts once, the same literal or the same
+reference repeated (in RDF a repeated triple adds nothing, and Paxtools keeps
+values as sets; release 97's human file repeats 2,421); two individuals of
+the same content, referred to twice, count twice, as do repeated individuals
+across the file. A literal is compared with its datatype, a number by its
+value as that type holds it (an xsd:float as a 32-bit float: "1", "1.0" and
+"1e0" are one value; an xsd:decimal exactly), and a number is never equal to
+text, however it is spelled.
 
 It prints the differences by kind (class and property) and count, and exits 0
 when the files mean the same, 1 when they differ, and 2 when it cannot compare
@@ -41,6 +45,7 @@ title, a citation's source, which can name authors and editors) only as its
 length and a salted hash.
 """
 import collections
+import decimal
 import hashlib
 import os
 import re
@@ -55,13 +60,14 @@ NAMED = re.compile(r"\s*(authored|reviewed|edited|created|revised|modified|curat
 UNKEYED = {"nextStep"}
 DBID = "Reactome Database ID"
 SALT = os.urandom(16)
-INTEGER = re.compile(r"[+-]?\d+")
-DECIMAL = re.compile(r"[+-]?(\d+\.?\d*|\.\d+)([eE][+-]?\d+)?|NaN|-?INF")
+INTEGER = re.compile(r"[+-]?\d{1,40}")
+FLOATING = re.compile(r"[+-]?(\d+\.?\d*|\.\d+)([eE][+-]?\d+)?|NaN|[+-]?INF")
+DECIMAL = re.compile(r"[+-]?(\d+\.?\d*|\.\d+)")
 # Literals an example may print as they are: codes, ids and numbers, never free text.
 SHOWN = {
     "db", "id", "idVersion", "term", "stoichiometricCoefficient", "conversionDirection", "controlType",
     "catalysisDirection", "sequencePosition", "positionStatus", "year", "eCNumber", "dbVersion",
-    "templateDirection", "stepDirection", "url",
+    "templateDirection", "stepDirection",
 }
 
 
@@ -82,11 +88,13 @@ def salted(text):
 
 
 def number(text, kind):
-    """A numeric literal by its value as its datatype holds it, or None when it is not one."""
+    """A numeric literal by its value as its datatype holds it, or None when it is not a well-formed one."""
     text = text.strip()
     if kind in ("int", "integer", "long", "short") and INTEGER.fullmatch(text):
         return str(int(text))
-    if kind in ("float", "double", "decimal") and DECIMAL.fullmatch(text):
+    if kind == "decimal" and DECIMAL.fullmatch(text):
+        return str(decimal.Decimal(text).normalize())
+    if kind in ("float", "double") and FLOATING.fullmatch(text):
         value = float(text.replace("INF", "inf"))
         if kind == "float":
             value = struct.unpack("f", struct.pack("f", value))[0]
@@ -95,12 +103,12 @@ def number(text, kind):
 
 
 def literal(prop, text, datatype):
-    """('l', text, datatype) as compared: a person's name hashed; a number by its value."""
+    """('l', text, datatype), or ('n', value, datatype) for a number, as compared; a person's name hashed."""
     kind = datatype.removeprefix(XSD) if datatype else ""
     if prop == "author" or (prop == "comment" and NAMED.match(text)):
         return ("l", f"<hashed {salted(text)}>", kind)
     value = number(text, kind)
-    return ("l", text if value is None else value, kind)
+    return ("l", text, kind) if value is None else ("n", value, kind)
 
 
 def individuals(path):
@@ -161,7 +169,7 @@ def triples(path):
     keys, open_keys = {}, set()
 
     def literals(props):
-        return {prop: value[1] for prop, value in props if value[0] == "l"}
+        return {prop: value[1] for prop, value in props if value[0] != "r"}
 
     def is_dbid(value):
         if value[0] != "r" or value[1] not in nodes or nodes[value[1]][0] != "UnificationXref":
@@ -185,7 +193,7 @@ def triples(path):
                 raise Refused(f"{path}: a cycle through a {cls}")
             open_keys.add(name)
             parts = sorted(
-                f"{prop}>{key(value[1])}" if value[0] == "r" else f"{prop}={value[1]}^^{value[2]}"
+                f"{prop}>{key(value[1])}" if value[0] == "r" else f"{prop}={value[0]}:{value[1]}^^{value[2]}"
                 for prop, value in props
                 if prop not in UNKEYED
             )
@@ -214,46 +222,54 @@ def kind(triple):
     return f"{triple[0].split('|', 1)[0]}.{triple[1]}"
 
 
-def carried(reference, other):
-    """The differing triples that only carry a change made elsewhere, for each side, as sets."""
-    subjects = [{t[0] for t in side} for side in (reference, other)]
-    one_sided = subjects[0] ^ subjects[1]
+def coarse(key):
+    """A key as the root comparison reads it: a hashed key by its class alone."""
+    return key.split("|", 1)[0] if "|#" in key else key
 
-    def points_away(triple):
-        return triple[2][0] == "r" and triple[2][1] in one_sided
 
-    result = []
-    for side in differences(reference, other):
-        pointing = {t[0] for t in side if points_away(t) and t[0] in one_sided}
-        result.append({t for t in side if points_away(t) or t[0] in pointing})
-    return result
+def blur(triple):
+    """A triple with its hashed keys by class."""
+    subject, prop, target = triple
+    return (coarse(subject), prop, ("r", coarse(target[1])) if target[0] == "r" else target)
+
+
+def at_the_root(reference, other):
+    """The two files compared again with hashed keys by class: (only in the reference, only in the other)."""
+    def blurred(counted):
+        found = collections.Counter()
+        for triple, count in counted.items():
+            found[blur(triple)] += count
+        return found
+    return differences(blurred(reference), blurred(other))
 
 
 def shown(triple):
     prop, target = triple[1], triple[2]
     if target[0] == "r":
         return f"-> {target[1]}"
-    text = target[1] if prop in SHOWN or target[1].startswith("<hashed ") else f"<{len(target[1])} chars {salted(target[1])}>"
+    text = target[1] if target[0] == "n" or prop in SHOWN or target[1].startswith("<hashed ") else f"<{len(target[1])} chars {salted(target[1])}>"
     return f"{text!r}^^{target[2]}" if target[2] else repr(text)
 
 
 def report(reference, other, examples=0):
-    """Lines describing the differences of two files' triples by kind and count, the root changes apart."""
+    """Lines describing the differences of two files' triples by kind and count, the changes at the root apart."""
     only = differences(reference, other)
-    away = carried(reference, other)
+    roots = at_the_root(reference, other)
     lines = [f"only in the reference: {sum(only[0].values())}", f"only in the file: {sum(only[1].values())}"]
-    for title, wanted in (("at the root", False), ("carried by a change at the root", True)):
-        kinds = collections.Counter()
-        for side, found, skip in zip("-+", only, away):
-            for triple, count in found.items():
-                if (triple in skip) == wanted:
-                    kinds[(kind(triple), side)] += count
+    root_kinds, all_kinds = collections.Counter(), collections.Counter()
+    for side, found, root in zip("-+", only, roots):
+        for triple, count in root.items():
+            root_kinds[(kind(triple), side)] += count
+        for triple, count in found.items():
+            all_kinds[(kind(triple), side)] += count
+    carried_kinds = all_kinds - root_kinds
+    for title, kinds in (("at the root", root_kinds), ("carried by a change at the root", carried_kinds)):
         if kinds:
             lines.append(f" {title}: {sum(kinds.values())}")
             lines.extend(f"  {side} {name} {count}" for (name, side), count in sorted(kinds.items()))
     if examples:
-        for side, found, skip in zip("-+", only, away):
-            ordered = sorted(found.items(), key=lambda item: (item[0] in skip, item[0][0], item[0][1], repr(item[0][2])))
+        for side, found, root in zip("-+", only, roots):
+            ordered = sorted(found.items(), key=lambda item: (blur(item[0]) not in root, item[0][0], item[0][1], repr(item[0][2])))
             for triple, count in ordered[:examples]:
                 lines.append(f"    {side} {count} x {triple[0]} {triple[1]} {shown(triple)}")
     return lines
@@ -269,7 +285,7 @@ def main(argv):
         return 2
     try:
         reference, other = triples(args[0]), triples(args[1])
-    except (OSError, ElementTree.ParseError, Refused) as failure:
+    except (OSError, ElementTree.ParseError, ValueError, RecursionError) as failure:
         print(f"cannot compare: {failure}", file=sys.stderr)
         return 2
     print("\n".join(report(reference, other, examples)))

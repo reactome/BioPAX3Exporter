@@ -264,17 +264,74 @@ class CompareTest(unittest.TestCase):
                 '<bp:Protein rdf:ID="P1"><bp:xref rdf:resource="#X1" /><bp:cellularLocation rdf:resource="#L1" /></bp:Protein>',
                 '<bp:Protein rdf:ID="P2"><bp:xref rdf:resource="#X2" /><bp:cellularLocation rdf:resource="#L1" /></bp:Protein>']
 
+    def roots(self, one, other):
+        """The kinds at the root, each side, and the report's lines."""
+        one, other = compare.triples(self.write(*one)), compare.triples(self.write(*other))
+        sides = compare.at_the_root(one, other)
+        return [sorted(compare.kind(t) for t in side.elements()) for side in sides], compare.report(one, other, examples=1)
+
     def test_names_the_change_at_the_root_apart_from_what_it_carries(self):
-        one, other = compare.triples(self.write(*self.location("1"))), compare.triples(self.write(*self.location("2")))
-        away = compare.carried(one, other)
-        roots = {compare.kind(t) for side, skip in zip(compare.differences(one, other), away) for t in side if t not in skip}
-        self.assertEqual(roots, {"UnificationXref.db", "UnificationXref.id"})
-        self.assertEqual({compare.kind(t) for t in away[1]},
-                         {"CellularLocationVocabulary.term", "CellularLocationVocabulary.xref", "Protein.cellularLocation"})
-        lines = compare.report(one, other, examples=1)
-        self.assertIn(" at the root: 4", lines)
-        self.assertIn(" carried by a change at the root: 8", lines)
+        (gone, came), lines = self.roots(self.location("1"), self.location("2"))
+        self.assertEqual((gone, came), (["UnificationXref.id"], ["UnificationXref.id"]))
+        self.assertIn(" at the root: 2", lines)
+        self.assertIn(" carried by a change at the root: 10", lines)
         self.assertTrue(lines[-1].startswith("    + 1 x UnificationXref|GO|2|"), lines[-1])
+
+    def test_a_change_of_its_own_stays_at_the_root_beside_a_carried_one(self):
+        # The vocabulary's term changes, and so does the xref it points at:
+        # both are where the files part.
+        changed = [part.replace("<bp:term>cytosol", "<bp:term>nucleus") for part in self.location("2")]
+        (gone, came), _ = self.roots(self.location("1"), changed)
+        self.assertEqual(came, ["CellularLocationVocabulary.term", "UnificationXref.id"])
+
+    def test_an_event_added_is_at_the_root(self):
+        reaction = '<bp:BiochemicalReaction rdf:ID="R9"><bp:xref rdf:resource="#X9" /><bp:left rdf:resource="#P1" /></bp:BiochemicalReaction>'
+        (gone, came), _ = self.roots(BASE, BASE + [dbid("X9", 99), reaction])
+        self.assertEqual(gone, [])
+        self.assertEqual(came, ["BiochemicalReaction.left", "BiochemicalReaction.xref", "UnificationXref.db", "UnificationXref.id"])
+
+    def test_a_re_pointing_between_events_or_entities_is_at_the_root(self):
+        changed = [part.replace('<bp:left rdf:resource="#P1" />', '<bp:left rdf:resource="#P2" />') for part in BASE]
+        (gone, came), _ = self.roots(BASE, changed)
+        self.assertEqual((gone, came), (["BiochemicalReaction.left"], ["BiochemicalReaction.left"]))
+
+    def test_a_coefficient_changed_is_at_the_root_and_its_holder_carried(self):
+        changed = [part.replace(">2</bp:stoichiometricCoefficient>", ">3</bp:stoichiometricCoefficient>") for part in BASE]
+        (gone, came), lines = self.roots(BASE, changed)
+        self.assertEqual((gone, came), (["Stoichiometry.stoichiometricCoefficient"], ["Stoichiometry.stoichiometricCoefficient"]))
+        self.assertIn(" carried by a change at the root: 4", lines)
+
+    def test_free_text_is_never_printed(self):
+        for prop in ("name", "displayName", "url", "comment", "title", "source", "standardName"):
+            self.assertIn("chars", compare.shown(("Protein|dbId:1", prop, ("l", "Words", "string"))), prop)
+        for prop in ("db", "id", "term"):
+            self.assertIn("Words", compare.shown(("Protein|dbId:1", prop, ("l", "Words", "string"))), prop)
+
+    def test_a_number_never_equals_text(self):
+        self.assertEqual(self.counts(self.typed("inf", "float"), self.typed("INF", "float")), (1, 1))
+        # Nor inside a key: the complex holding it differs too.
+        holder = [dbid("X1", 1), '<bp:Complex rdf:ID="C1"><bp:xref rdf:resource="#X1" /><bp:componentStoichiometry rdf:resource="#S1" /></bp:Complex>']
+        self.assertEqual(self.counts(self.typed("inf", "float") + holder, self.typed("INF", "float") + holder), (2, 2))
+        self.assertEqual(self.counts(self.typed("+INF", "float"), self.typed("INF", "float")), (0, 0))
+        self.assertEqual(self.counts(self.typed(" 1", "long"), self.typed("1", "long")), (0, 0))
+        self.assertEqual(self.counts(self.typed("1", "short"), self.typed("01", "short")), (0, 0))
+
+    def test_a_decimal_is_compared_exactly(self):
+        self.assertEqual(self.counts(self.typed("0.1", "decimal"), self.typed("0.10", "decimal")), (0, 0))
+        self.assertEqual(self.counts(self.typed("0.1", "decimal"), self.typed("0.1000000000000000000001", "decimal")), (1, 1))
+
+    def test_a_file_it_cannot_read_through_exits_2(self):
+        same = self.write(*BASE)
+        real = compare.triples
+        for failure in (RecursionError(), ValueError()):
+            def broken(path, failure=failure):
+                raise failure
+            compare.triples = broken
+            try:
+                with contextlib.redirect_stdout(io.StringIO()), contextlib.redirect_stderr(io.StringIO()):
+                    self.assertEqual(compare.main(["compare.py", same, same]), 2)
+            finally:
+                compare.triples = real
 
     def test_an_example_prints_no_free_text(self):
         def cited(title):
