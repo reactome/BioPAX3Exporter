@@ -10,7 +10,8 @@ fixture's people and searches every string in the fixture for them as whole word
 for anything shaped like an email address or an ORCID.
 
 It prints counts by node class and property, never a name or a value, and exits 1 if
-anything is found. Run it whenever the events change.
+anything is found beyond KNOWN, the hits judged by hand to be coincidences. Run it
+whenever the events change, and judge any new hit before adding it there.
 """
 import collections
 import json
@@ -20,6 +21,28 @@ import urllib.request
 
 EMAIL = re.compile(r"[\w.+-]+@[\w-]+\.[\w.]+")
 ORCID = re.compile(r"\b\d{4}-\d{4}-\d{4}-\d{3}[\dX]\b")
+# Hits judged to be coincidences, by class and property, with their count: a UniProt
+# keyword naming a disease after a person, one of whose names is also a fixture
+# person's first name.
+KNOWN = {("ReferenceGeneProduct", "keyword"): 1}
+
+
+def values(text):
+    """A node's {`key`: value, ...}, as extract.py writes it: keys in backticks, values JSON."""
+    decoder, found, at = json.JSONDecoder(), {}, 1
+    while text[at:] != "}":
+        key = re.compile(r"`(\w+)`: ").match(text, at)
+        found[key[1]], at = decoder.raw_decode(text, key.end())
+        at += 2 if text[at:at + 2] == ", " else 0
+    return found
+
+
+def strings(value):
+    if isinstance(value, str):
+        yield value
+    elif isinstance(value, list):
+        for each in value:
+            yield from strings(each)
 
 
 def main(argv):
@@ -38,21 +61,23 @@ def main(argv):
         rows = json.load(response)["results"][0]["data"]
     names = {n for row in rows for n in row["row"] if n and len(n) >= 3}
     pattern = re.compile(r"\b(" + "|".join(re.escape(n) for n in sorted(names, key=len, reverse=True)) + r")\b")
-    hits, strings = collections.Counter(), 0
+    hits, count = collections.Counter(), 0
     for line in fixture.splitlines():
         node = re.match(r"CREATE \(:(.*?) \{(.*)\}\);$", line)
         if not node or "`Person`" in node[1]:
             continue
-        cls = re.search(r'`schemaClass`: "(\w+)"', line)
-        for key, value in re.findall(r'`(\w+)`: ("(?:[^"\\]|\\.)*")', node[2]):
-            strings += 1
-            text = json.loads(value)
-            if pattern.search(text) or EMAIL.search(text) or ORCID.search(text):
-                hits[(cls[1] if cls else "?", key)] += 1
-    print(f"{len(people)} people ({len(rows)} found), {len(names)} names of 3+ letters, {strings} strings")
+        props = values("{" + node[2] + "}")
+        for key, value in props.items():
+            for text in strings(value):
+                count += 1
+                if pattern.search(text) or EMAIL.search(text) or ORCID.search(text):
+                    hits[(str(props.get("schemaClass")), key)] += 1
+    unknown = hits - collections.Counter(KNOWN)
+    print(f"{len(people)} people ({len(rows)} found), {len(names)} names of 3+ letters, {count} strings")
     print(f"strings holding a name, an email or an ORCID: {sum(hits.values())}",
           {f"{c}.{k}": n for (c, k), n in hits.most_common()})
-    return 1 if hits or len(rows) != len(people) else 0
+    print(f"beyond those known to be coincidences: {sum(unknown.values())}")
+    return 1 if unknown or not people or len(rows) != len(people) else 0
 
 
 if __name__ == "__main__":

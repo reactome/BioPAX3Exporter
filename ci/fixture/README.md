@@ -94,9 +94,14 @@ not from the service.
   - `lastName`, or `Surname` capitalised, on another node;
   - a fixture with no people.
 - **No names, by search (at extraction):** `audit.py` compares every string in the
-  fixture with the real surnames and first names (of three letters or more) of its 1,235
-  people in the private copy, and looks for emails and ORCIDs, counts only: none holds
-  one. The first draft had 44 (43 summations and a Book's
+  fixture (19,190, list items included) with the real surnames and first names (of three
+  letters or more) of its 1,235 people in the private copy, and looks for emails and
+  ORCIDs, counts only. One string matches: a UniProt keyword naming a disease after a
+  person, one of whose names is also a fixture person's first name. It is judged a
+  coincidence and listed in `audit.py`'s `KNOWN`; any other hit fails it. It matches
+  whole words, as written: an upper-cased name, a name with a suffix, a name under three
+  letters, a part of a multi-word name, or one spelled without its diacritics is not
+  searched, which #25's review measured as noise on this fixture. The first draft had 44 (43 summations and a Book's
   display name). #23's review compared it with all 176,891 people in the graph (short
   and multi-word surnames, first names, initial-and-surname pairs, emails, ORCIDs) and
   found only common words, a journal abbreviation and a protein name. Repeat both
