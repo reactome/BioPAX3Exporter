@@ -21,6 +21,12 @@ free text that could cite one, replaced.
   each with its parent pathways up to the top, and release 97's `DBInfo` node.
   The shapes were chosen as the smallest human events with each (by the published human
   file); no human event is inferred, so that one is _P. falciparum_'s.
+- **`expected/`**: the exporter's output from this graph, one file per species as the
+  release writes them (`-s 48887`, Homo sapiens; `-s 170928`, _P. falciparum_). CI's
+  `fixture` job converts both species, twice, and holds each file to its expected one by
+  meaning (`ci/compare.py`), the second run to the first byte for byte (FR-006), and
+  both to the BioPAX validator with no error allowed (`ci/validate.py`). Each content
+  task (T011–T019) changes these files with the triples it means to change.
 - **`extract.py`**: wrote `fixture.cypher`.
 - **`check-placeholders.sh`**: fails if the fixture leaves its allowlists (below); CI runs it.
 - **`audit.py`**: searches the fixture for its people's real names, against the private
@@ -72,7 +78,9 @@ not from the service.
   people, edits, summations, publications' display names and comments to placeholders;
   every line to the four shapes `extract.py` writes; every node's labels to the graph
   classes the fixture holds, its `schemaClass` among them; and refuses, on any node, a
-  person-like key (in any capitalisation, underscores and hyphens aside) and any value
+  key from its list of person-like
+  names (in any capitalisation, underscores and hyphens aside; a longer key containing
+  one, such as `authorName`, is not matched) and any value
   like an email address or an ORCID. It cannot judge other free text (a
   title, a journal): the audit below covers that, at extraction. It fails on the first
   two drafts (the second kept summations' display names) and on copies of the fixture
@@ -98,7 +106,7 @@ not from the service.
   letters or more) of its 1,235 people in the private copy, and looks for emails and
   ORCIDs, counts only. One string matches: a UniProt keyword naming a disease after a
   person, one of whose names is also a fixture person's first name. It is judged a
-  coincidence and listed in `audit.py`'s `KNOWN`; any other hit fails it. It matches
+  coincidence and listed in `audit.py`'s `KNOWN`, by its node; any other hit fails it. It matches
   whole words, as written: an upper-cased name, a name with a suffix, a name under three
   letters, a part of a multi-word name, or one spelled without its diacritics is not
   searched, which #25's review measured as noise on this fixture. The first draft had 44 (43 summations and a Book's
