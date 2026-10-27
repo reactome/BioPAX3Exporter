@@ -6,13 +6,15 @@
 # and every active profile's dependencies merged in), as declared, so that a relocated
 # artifact (which Maven's resolved list names by its new name) is still seen; every scope
 # but test counts. Maven's resolved list is used for the check at any depth.
+# Known limit: both read the model CI builds, so a profile switched off only on CI (say,
+# activated by !env.CI) is unseen; that takes a deliberate edit, for review to catch.
 # Usage: ci/lib-dependencies.sh   (from the repository's root, with Maven and Python 3 on the PATH)
 set -euo pipefail
 all=$(mktemp)
 effective=$(mktemp)
 trap 'rm -f "$all" "$effective"' EXIT
 mvn -B -q -pl lib dependency:list -DincludeScope=runtime -DoutputFile="$all" -DappendOutput=false
-mvn -B -q -pl lib help:effective-pom -Doutput="$effective"
+mvn -B -q -pl lib org.apache.maven.plugins:maven-help-plugin:3.5.2:effective-pom -Doutput="$effective"
 allowed='org.reactome.server.graph:graph-core
 org.biopax.paxtools:paxtools-core
 org.jetbrains.kotlin:kotlin-stdlib
