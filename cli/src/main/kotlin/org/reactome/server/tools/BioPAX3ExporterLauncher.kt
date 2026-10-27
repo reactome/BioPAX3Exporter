@@ -29,7 +29,6 @@ class BioPAX3ExporterLauncher {
         private var multipleEvents: LongArray = LongArray(0)
         private var outputStatus: Status = Status.SINGLE_PATH
         private var dbVersion: Int = 0
-        private var model: org.biopax.paxtools.model.Model? = null
 
         enum class Status {
             SINGLE_PATH,

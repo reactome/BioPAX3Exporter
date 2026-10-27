@@ -71,9 +71,9 @@ converters, by two routes, and nothing held them together.
 - a library module: graph in, BioPAX model out, published as a versioned artefact;
 - a thin command line for the release, built on that library.
 
-The website is to depend on the published library, not on a copy. Today there is
-one module, a shaded jar with a main class, and nothing is published. Until that
-changes, a change lands in the code both will use.
+The website is to depend on the published library, not on a copy. The two modules
+exist (`lib` and `cli`); nothing is published yet. Until it is, a change lands in
+the library both will use.
 
 ### V. Production services are not test fixtures
 
