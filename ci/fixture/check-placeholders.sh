@@ -8,7 +8,9 @@
 #   publication's display name and every comment are placeholders;
 # - every node's labels are graph classes this fixture is known to hold (a new one is
 #   added here after the extract-time audit, README.md);
-# - no other node holds a property that names or reaches a person, in any spelling, and
+# - each node's schemaClass is among its labels, and the class rules read both;
+# - no other node holds a property that names or reaches a person (in any capitalisation,
+#   underscores and hyphens aside), and
 #   no value anywhere looks like an email address or an ORCID;
 # - a relationship holds only a number `order` and a number `stoichiometry`, and an
 #   edit's dateTime is a date;
@@ -28,8 +30,9 @@ NODE = re.compile(r"CREATE \(:((?:`\w+`:)*`\w+`) (\{.*\})\);")
 LINK = re.compile(r"MATCH \(a:DatabaseObject \{dbId: \d+\}\), \(b:DatabaseObject \{dbId: \d+\}\) "
                   r"CREATE \(a\)-\[:`\w+` (\{.*\})\]->\(b\);")
 INDEX = re.compile(r"CREATE INDEX fixture_\w+ IF NOT EXISTS FOR \(n:DatabaseObject\) ON \(n\.\w+\);")
-PERSONAL = {"firstname", "surname", "initial", "orcidid", "emailaddress", "email", "project",
-            "lastname", "givenname", "familyname", "middlename"}
+PERSONAL = {"firstname", "surname", "initial", "orcidid", "orcid", "emailaddress", "email", "project",
+            "lastname", "givenname", "familyname", "middlename", "author", "authors", "fullname"}
+PUBLICATIONS = {"Publication", "LiteratureReference", "Book", "URL"}
 LABELS = set("""AbstractModifiedResidue BlackBoxEvent Book CandidateSet CatalystActivity Compartment
 Complex DBInfo DatabaseIdentifier DatabaseObject DefinedSet Deletable Disease
 EntityFunctionalStatus EntitySet EntityWithAccessionedSequence Event EvidenceType ExternalOntology
@@ -97,6 +100,9 @@ for number, line in enumerate(open(sys.argv[1], encoding="utf-8"), 1):
     labels = set(re.findall(r"`(\w+)`", node[1]))
     if labels - LABELS:
         problems.append(f"line {number}: labels this fixture is not known to hold: {sorted(labels - LABELS)}")
+    if props.get("schemaClass") not in labels:
+        problems.append(f"line {number}: a node whose schemaClass is not among its labels")
+    labels = labels | {str(props.get("schemaClass"))}
     if "Person" in labels:
         people += 1
         n = re.fullmatch(r"Person(\d+)", str(props.get("surname")))
@@ -106,7 +112,7 @@ for number, line in enumerate(open(sys.argv[1], encoding="utf-8"), 1):
         if not n or not isinstance(props.get("dbId"), int) or props != expected:
             problems.append(f"line {number}: a Person that is not a placeholder")
         continue
-    personal = PERSONAL & {key.lower() for key in props}
+    personal = PERSONAL & {re.sub(r"[_-]", "", key.lower()) for key in props}
     if personal:
         problems.append(f"line {number}: a {sorted(labels)[0]} with {sorted(personal)}")
     if "InstanceEdit" in labels:
@@ -118,7 +124,7 @@ for number, line in enumerate(open(sys.argv[1], encoding="utf-8"), 1):
     for key in ("text", "displayName"):
         if "Summation" in labels and not re.fullmatch(r"Placeholder summation \d+", str(props.get(key, "Placeholder summation 0"))):
             problems.append(f"line {number}: a summation's {key} that is not a placeholder")
-    if "Publication" in labels and not re.fullmatch(r"Placeholder publication \d+", str(props.get("displayName"))):
+    if PUBLICATIONS & labels and not re.fullmatch(r"Placeholder publication \d+", str(props.get("displayName"))):
         problems.append(f"line {number}: a publication's display name that is not a placeholder")
     if props.get("comment", "Placeholder comment") != "Placeholder comment":
         problems.append(f"line {number}: a comment that is not a placeholder")
