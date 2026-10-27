@@ -34,6 +34,9 @@ jobs:
             - name: The tools' own tests (ci/)
               run: python3 -I -m unittest discover -s ci
 
+            - name: No person's name in the fixture graph
+              run: ci/fixture/check-placeholders.sh
+
     docker-build:
         runs-on: ubuntu-latest
         steps:

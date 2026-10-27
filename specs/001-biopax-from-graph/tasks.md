@@ -41,7 +41,7 @@ description: 'Tasks for spec 001: BioPAX Level 3 from the graph, as the release 
   - **Refusals.** A form it does not read exits 2, as a missing file, a value Python cannot read or a chain too deep to key does: a nested individual, `rdf:nodeID`, or an attribute other than `rdf:resource` and `rdf:datatype`. Names resolve against `xml:base`.
   - **On _P. falciparum_.** The file against itself, or with two ids swapped, gives no difference. A set's member re-pointed gives 1 a side, and a coefficient changed 3. A Paxtools 6.0.0 round trip shows `LEFT_TO_RIGHT` against release 97's `LEFT-TO-RIGHT`, recorded in `differences.md` for T012, with the rest of what the round trip changes at the root.
   - **All species.** All 15 published files read without refusal, human in 36 s and 1.4 GB.
-  - **Tests.** `ci/test_compare.py` (48 tests) runs in CI's `verify` job. Each test was shown failing on a broken comparer, with these mutants:
+  - **Tests.** `ci/test_compare.py` (48 tests at #20) runs in CI's `verify` job. Each test was shown failing on a broken comparer, with these mutants:
     - names unsalted, or a prefix dropped;
     - `rdf:about="#X"` not resolved;
     - numbers by spelling, leniently, or a float held as a double;
@@ -67,8 +67,20 @@ description: 'Tasks for spec 001: BioPAX Level 3 from the graph, as the release 
     - A dangling reference (`EXTERNAL|`) is never treated as a content key.
     - A changed individual nothing points at keeps its unchanged properties off the root.
     - Python's stack stops a chain at about 5,000.
-    - 65 tests; each of the review's surviving mutants now fails one.
-- [ ] T006 `ci/fixture/`: `extract.py` over a private copy of release 97's graph (sbml-exporter's pattern), extended to publications' authors, events' created, authored, reviewed and edited records, entity references with their cross-references, GO terms, diseases, PSI-MOD terms, `inferredFrom`, catalyst activities and regulation; at least eight events, each with its parent pathways (today's exporter writes pathways only): a pathway, a TemplateReaction with its regulation, a Degradation, a disease reaction, a reaction with nested sets, DNA and RNA, and one inferred event (research R3). People and curation comments replaced by placeholders, held by `check-placeholders.sh` in CI as an allowlist; shown failing on a value not on it.
+    - 56 tests in `ci/test_compare.py` (65 with `ci/test_validate.py`'s nine); each of the review's surviving mutants now fails one.
+- [x] T006 `ci/fixture/`: `extract.py` over a private copy of release 97's graph (sbml-exporter's pattern), extended to publications' authors, events' created, authored, reviewed and edited records, entity references with their cross-references, GO terms, diseases, PSI-MOD terms, `inferredFrom`, catalyst activities and regulation; at least eight events, each with its parent pathways (today's exporter writes pathways only): a pathway, a TemplateReaction with its regulation, a Degradation, a disease reaction, a reaction with nested sets, DNA and RNA, and one inferred event (research R3). People and curation comments replaced by placeholders, held by `check-placeholders.sh` in CI as an allowlist; shown failing on a value not on it. — #23, replacing #22 after its review. The events and why each is there are in `ci/fixture/README.md`. There are nine, not eight:
+  - the smallest human event of each shape, plus a small pathway with its two reactions and a black box, chosen from the published human file;
+  - the first of research R3's cover, R-HSA-5660013, which is the disease reaction (a FailedReaction); R-HSA-2894858 is a disease pathway;
+  - the inferred one, R-PFA-68947, which is _P. falciparum_'s, since no human event is inferred.
+
+  - **Size:** 2,373 nodes and 4,714 relationships.
+  - **What it follows:** parent pathways only along the way down. Reference sequences' own cross-references and genes are left out; the published files write neither, and they were 7,483 of the first draft's cross-references.
+  - **It loads:** into an empty Neo4j 4.4 in 67 s.
+  - **Names, from #22's review:** #22's fixture kept a Book's display name, which held a real author's surname, and 43 summation texts citing fixture people. Its branch was deleted.
+    - Now every summation's text, publication's display name and comment is a placeholder too.
+    - `check-placeholders.sh` is an allowlist of whole lines: each must be one of the four shapes `extract.py` writes, a person holds exactly its id, class and placeholders, and those free texts are placeholders. It was shown failing on #22's fixture and on twelve altered copies, with invented values only. CI's `verify` job runs it.
+    - Every string was compared with the real surnames of the fixture's 1,235 people, counts only: none holds one.
+
 - [ ] T007 CI runs the exporter over the fixture graph (a Neo4j service), validates its output (T004) and compares it with `ci/fixture/expected` (T005); `expected` is today's output, and each later task updates it with the triples it changes. Today's validator errors on it, if any, are its first baseline, which may only fall, and is zero by T020. CI also runs it twice and compares the bytes (FR-006), and checks the dependency lists for any relational driver (FR-001); each shown failing (a written value changed; an order from a hash set; a JDBC driver added).
 
 ## Phase 3: The code's shape (User Story 3's independence, constitution IV)
