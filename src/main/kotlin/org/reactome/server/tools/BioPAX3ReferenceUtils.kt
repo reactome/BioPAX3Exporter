@@ -23,9 +23,8 @@ object BioPAX3ReferenceUtils {
             for (s in summations) {
                 if (!comment.isEmpty()) {
                     comment += System.getProperty("line.separator")
-                }     
+                }
                 comment += removeTags(s.text)
-                
             }
         }
         return comment

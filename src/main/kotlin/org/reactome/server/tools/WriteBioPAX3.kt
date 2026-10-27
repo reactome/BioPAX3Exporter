@@ -56,7 +56,6 @@ class WriteBioPAX3 {
     private val bioPAXFactory = BioPAXLevel.L3.defaultFactory
     private var thisModel: Model? = null
 
-
     /**
      * Construct an instance of the WriteBioPAX3
      */

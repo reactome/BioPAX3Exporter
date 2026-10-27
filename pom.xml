@@ -183,31 +183,22 @@
                     </execution>
                 </executions>
             </plugin>
-            <!-- ktlint -->
+            <!-- ktlint: checks style, sources and tests, and rewrites nothing.
+                 A format goal bound to the build rewrote sources on every
+                 build, so the check that followed could never fail. -->
             <plugin>
-            <groupId>com.github.gantsign.maven</groupId>
-            <artifactId>ktlint-maven-plugin</artifactId>
-            <version>3.5.0</version>
-            <executions>
-                <!-- Bind the style check to the verify phase -->
-        <!-- 1) auto-format your Kotlin sources -->
-                <execution>
-                    <id>ktlint-format</id>
-                    <phase>process-sources</phase>
-                    <goals>
-                        <goal>format</goal>
-                    </goals>
-                </execution>
-
-                <!-- 2) then check them on verify -->
-                <execution>
-                    <id>ktlint-check</id>
-                    <phase>verify</phase>
-                    <goals>
-                        <goal>check</goal>
-                    </goals>
-                </execution>
-            </executions>
+                <groupId>com.github.gantsign.maven</groupId>
+                <artifactId>ktlint-maven-plugin</artifactId>
+                <version>3.5.0</version>
+                <executions>
+                    <execution>
+                        <id>ktlint-check</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
             <!-- Maven Shade Plugin -->
             <plugin>
