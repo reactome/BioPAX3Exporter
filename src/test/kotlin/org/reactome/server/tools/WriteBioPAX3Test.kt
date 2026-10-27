@@ -12,6 +12,10 @@ import org.mockito.kotlin.whenever
 import java.io.File
 
 class WriteBioPAX3Test {
+    // The bases asserted here are today's, which no published file uses
+    // (http://www.reactome.org/biopax/{release}/{dbId}#): T018 changes them
+    // together with the code.
+
     // The exporter keeps its base, version and id counters in shared state
     // (spec 001 T008 removes it); each test starts from none.
     @BeforeEach

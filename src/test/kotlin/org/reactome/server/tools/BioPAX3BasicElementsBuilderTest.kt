@@ -1,5 +1,6 @@
 package org.reactome.server.tools
 
+import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.Assertions.*
 import org.biopax.paxtools.model.Model
@@ -11,6 +12,36 @@ import org.mockito.kotlin.eq
 import org.mockito.kotlin.whenever
 
 class BioPAX3BasicElementsBuilderTest {
+    // The exporter keeps its base, version and id counters in shared state
+    // (spec 001 T008 removes it); each test starts from none.
+    @BeforeEach
+    fun resetSharedState() {
+        WriteBioPAX3.xmlBase = ""
+        WriteBioPAX3.dbVersion = 0
+        BioPAX3Utils.clearCounterArray()
+    }
+
+    @Test
+    fun `test addReactomeDataSource uses existing Provenance if exists`() {
+        // One Provenance per file, as the published files have (research R1):
+        // a second element asks for the one already in the model.
+        val mockModel = mock(Model::class.java)
+        val mockEntity = mock(Entity::class.java)
+        val mockProvenance = mock(Provenance::class.java)
+        whenever(mockProvenance.rdfId).thenReturn(BioPAX3Utils.getID("Provenance1"))
+        whenever(mockModel.getObjects(Provenance::class.java)).thenReturn(setOf(mockProvenance))
+
+        val builder = BioPAX3BasicElementsBuilder(
+            thisReactomeEvent = null,
+            thisBPModel = mockModel,
+            thisBPElement = mockEntity
+        )
+        builder.addReactomeDataSource()
+
+        verify(mockModel, never()).addNew(eq(Provenance::class.java), any())
+        verify(mockEntity).addDataSource(mockProvenance)
+    }
+
     
     @Test
     fun `test addBioSourceInformation does nothing when event is null`() {
