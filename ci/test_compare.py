@@ -109,26 +109,132 @@ class CompareTest(unittest.TestCase):
 
     def test_names_are_compared_but_never_printed(self):
         only_reference, only_other = self.changed("Someone", "Another")
-        self.assertEqual(sum(only_other.values()), 2)
+        # The Provenance's comment, and the citation's three triples: its key
+        # is its content, author included.
+        self.assertEqual(sum(only_other.values()), 4)
         text = "\n".join(compare.report(only_reference, only_other, examples=10))
         for name in ("Someone", "Another"):
             self.assertNotIn(name, text)
 
+    def counts(self, one, other):
+        only_one, only_other = compare.differences(compare.triples(self.write(*one)), compare.triples(self.write(*other)))
+        return sum(only_one.values()), sum(only_other.values())
+
+    def test_every_person_prefix_is_hashed(self):
+        for comment in ("Authored: N", "Reviewed: N", "Edited: N", "authored : N", " REVISED: N", "Created: N"):
+            parts = [f'<bp:Provenance rdf:ID="V1"><bp:comment>{comment}</bp:comment></bp:Provenance>']
+            (triple,) = compare.triples(self.write(*parts))
+            self.assertTrue(triple[2][1].startswith("<hashed "), comment)
+        plain = ['<bp:Provenance rdf:ID="V1"><bp:comment>activeUnit: N</bp:comment></bp:Provenance>']
+        self.assertEqual(next(iter(compare.triples(self.write(*plain))))[2], ("l", "activeUnit: N"))
+
+    def test_a_citation_is_told_from_another_of_the_same_book(self):
+        # Two chapters of one book share db and id: which one an event cites
+        # still counts.
+        def chapter(name, title):
+            return (f'<bp:PublicationXref rdf:ID="{name}"><bp:db>ISBN</bp:db><bp:id>1</bp:id>'
+                    f"<bp:title>{title}</bp:title></bp:PublicationXref>")
+        cites = '<bp:Pathway rdf:ID="E1"><bp:xref rdf:resource="#X1" /><bp:xref rdf:resource="#{}" /></bp:Pathway>'
+        one = [dbid("X1", 1), chapter("B1", "One"), chapter("B2", "Two"), cites.format("B1")]
+        self.assertEqual(self.counts(one, one[:3] + [cites.format("B2")]), (1, 1))
+
+    def test_a_vocabulary_is_told_from_another_of_the_same_term(self):
+        def term(name, go):
+            return (f'<bp:CellularLocationVocabulary rdf:ID="{name}"><bp:term>cytosol</bp:term>'
+                    f'<bp:xref rdf:resource="#{go}" /></bp:CellularLocationVocabulary>')
+        go = ('<bp:UnificationXref rdf:ID="{}"><bp:db>GO</bp:db><bp:id>{}</bp:id></bp:UnificationXref>')
+        placed = '<bp:Protein rdf:ID="P1"><bp:xref rdf:resource="#X1" /><bp:cellularLocation rdf:resource="#{}" /></bp:Protein>'
+        one = [dbid("X1", 1), go.format("G1", "1"), go.format("G2", "2"), term("L1", "G1"), term("L2", "G2")]
+        self.assertEqual(self.counts(one + [placed.format("L1")], one + [placed.format("L2")]), (1, 1))
+
+    def test_an_xref_is_keyed_by_all_it_says(self):
+        def xref(kind):
+            return (f'<bp:RelationshipXref rdf:ID="R1"><bp:db>GO</bp:db><bp:id>1</bp:id>'
+                    f'<bp:relationshipType rdf:resource="#{kind}" /></bp:RelationshipXref>')
+        types = [f'<bp:RelationshipTypeVocabulary rdf:ID="{t}"><bp:term>{t}</bp:term></bp:RelationshipTypeVocabulary>'
+                 for t in ("a", "b")]
+        self.assertNotEqual(self.counts(types + [xref("a")], types + [xref("b")]), (0, 0))
+
+    def test_a_number_is_compared_by_value_and_type(self):
+        def coefficient(text, datatype="float"):
+            return ('<bp:Stoichiometry rdf:ID="S1"><bp:stoichiometricCoefficient '
+                    f'rdf:datatype="http://www.w3.org/2001/XMLSchema#{datatype}">{text}</bp:stoichiometricCoefficient></bp:Stoichiometry>')
+        self.assertEqual(self.counts([coefficient("1")], [coefficient("1.0")]), (0, 0))
+        self.assertEqual(self.counts([coefficient("1")], [coefficient("2")]), (1, 1))
+        self.assertEqual(self.counts([coefficient("1")], [coefficient("1", "string")]), (1, 1))
+
+    def test_whitespace_in_a_literal_counts(self):
+        def named(text):
+            return f'<bp:Protein rdf:ID="P1"><bp:xref rdf:resource="#X1" /><bp:name>{text}</bp:name></bp:Protein>'
+        self.assertEqual(self.counts([dbid("X1", 1), named("a b")], [dbid("X1", 1), named("a  b")]), (1, 1))
+
+    def test_a_literal_is_not_a_reference(self):
+        one = [dbid("X1", 1), dbid("X2", 2), protein("P2", "X2"),
+               '<bp:Protein rdf:ID="P1"><bp:xref rdf:resource="#X1" /><bp:comment>Protein|dbId:2</bp:comment></bp:Protein>']
+        other = one[:3] + ['<bp:Protein rdf:ID="P1"><bp:xref rdf:resource="#X1" /><bp:comment rdf:resource="#P2" /></bp:Protein>']
+        self.assertEqual(self.counts(one, other), (1, 1))
+
+    def test_a_literal_is_not_a_reference_inside_a_key(self):
+        # A Stoichiometry is keyed by its content: a literal spelling what a
+        # reference would must still key it apart, so its referrer differs too.
+        def part(entity):
+            return [dbid("X1", 1), dbid("X2", 2), protein("P2", "X2"),
+                    f'<bp:Stoichiometry rdf:ID="S1"><bp:physicalEntity{entity}</bp:Stoichiometry>',
+                    '<bp:Complex rdf:ID="C1"><bp:xref rdf:resource="#X1" /><bp:componentStoichiometry rdf:resource="#S1" /></bp:Complex>']
+        self.assertEqual(self.counts(part('>&gt;Protein|dbId:2</bp:physicalEntity>'), part(' rdf:resource="#P2" />')), (2, 2))
+
+    def test_several_database_ids_in_any_order_are_one_key(self):
+        def two(first, second):
+            return [dbid("X1", 1), dbid("X2", 2),
+                    f'<bp:Protein rdf:ID="P1"><bp:xref rdf:resource="#{first}" /><bp:xref rdf:resource="#{second}" />'
+                    "<bp:name>n</bp:name></bp:Protein>"]
+        self.assertEqual(self.counts(two("X1", "X2"), two("X2", "X1")), (0, 0))
+        (subject,) = {t[0] for t in compare.triples(self.write(*two("X2", "X1"))) if t[0].startswith("Protein")}
+        self.assertEqual(subject, "Protein|dbId:1,2")
+
+    def test_only_a_reactome_unification_xref_is_a_database_id(self):
+        other = ('<bp:RelationshipXref rdf:ID="X9"><bp:db>Reactome Database ID Release 97</bp:db>'
+                 "<bp:id>9</bp:id></bp:RelationshipXref>")
+        uniprot = '<bp:UnificationXref rdf:ID="X8"><bp:db>UniProt</bp:db><bp:id>9</bp:id></bp:UnificationXref>'
+        for xref in (other, uniprot):
+            keys = {t[0] for t in compare.triples(self.write(xref, protein("P1", xref.split('"')[1])))}
+            self.assertFalse(any("dbId:" in k for k in keys), xref)
+
+    def test_a_catalysis_is_keyed_by_what_it_controls(self):
+        def catalysis(name, reaction, controller):
+            return (f'<bp:Catalysis rdf:ID="{name}"><bp:xref rdf:resource="#X8" /><bp:controlled rdf:resource="#{reaction}" />'
+                    f'<bp:controller rdf:resource="#{controller}" /></bp:Catalysis>')
+        common = [part for part in BASE if "bp:Control" not in part]
+        one = common + [catalysis("K1", "R1", "P1"), catalysis("K2", "R2", "P2")]
+        other = common + [catalysis("K1", "R1", "P2"), catalysis("K2", "R2", "P1")]
+        self.assertEqual(self.counts(one, other), (2, 2))
+
     def test_refuses_an_individual_nested_in_another(self):
         path = self.write('<bp:Protein rdf:ID="P1"><bp:xref><bp:UnificationXref rdf:ID="X1" /></bp:xref></bp:Protein>')
-        with self.assertRaises(ValueError):
+        with self.assertRaises(compare.Refused):
             compare.triples(path)
 
     def test_refuses_two_individuals_of_one_name(self):
-        with self.assertRaises(ValueError):
+        with self.assertRaises(compare.Refused):
             compare.triples(self.write(protein("P1", "X1"), protein("P1", "X2")))
+
+    def test_refuses_what_it_does_not_read(self):
+        for part in ('<bp:Protein rdf:nodeID="n1"><bp:name>a</bp:name></bp:Protein>',
+                     '<bp:Protein rdf:ID="P1"><bp:xref rdf:nodeID="n1" /></bp:Protein>',
+                     '<bp:Protein rdf:ID="P1" bp:displayName="a" />',
+                     '<bp:Protein rdf:ID="P1"><bp:name xml:lang="en">a</bp:name></bp:Protein>'):
+            with self.assertRaises(compare.Refused, msg=part):
+                compare.triples(self.write(part))
 
     def test_exits_by_whether_the_files_differ(self):
         same, other = self.write(*BASE), self.write(*BASE[:-1])
+        refused = self.write('<bp:Protein rdf:nodeID="n1" />')
         with contextlib.redirect_stdout(io.StringIO()), contextlib.redirect_stderr(io.StringIO()):
             self.assertEqual(compare.main(["compare.py", same, same]), 0)
             self.assertEqual(compare.main(["compare.py", same, other]), 1)
             self.assertEqual(compare.main(["compare.py", same]), 2)
+            self.assertEqual(compare.main(["compare.py", same, refused]), 2)
+            self.assertEqual(compare.main(["compare.py", same, same + ".missing"]), 2)
 
 
 if __name__ == "__main__":
