@@ -40,6 +40,9 @@ jobs:
             - name: No relational database driver among the dependencies (FR-001)
               run: ci/no-relational.sh
 
+            - name: The library depends on graph-core and Paxtools alone (T009)
+              run: ci/lib-dependencies.sh
+
     docker-build:
         runs-on: ubuntu-latest
         steps:

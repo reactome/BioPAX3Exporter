@@ -111,7 +111,14 @@ description: 'Tasks for spec 001: BioPAX Level 3 from the graph, as the release 
     - The parallel check now reaches every builder that numbers ids: catalyses, a generic entity (the builder's last branch), and two species conversions with their BioSource and header. A shared counter for Catalysis alone fails it.
     - The Provenance lookup's test uses a real base, so a lookup that dropped it would fail.
     - Left for T009, which takes the launcher into the command line: its options as companion state (one run per process, no conversion shares them) and the validator's dependencies and Spring files still in the jar.
-- [ ] T009 [US3] Two Maven modules, `lib` (`biopax3-exporter-lib`: builders and context, graph-core and paxtools-core only) and `cli` (`biopax3-exporter`: launcher, options, logging, validator; shaded), with the library's dependency list checked in CI (no command-line or release dependency). The Dockerfile and the Jenkinsfile build the command line's jar.
+- [x] T009 [US3] Two Maven modules, `lib` (`biopax3-exporter-lib`: builders and context, graph-core and paxtools-core only) and `cli` (`biopax3-exporter`: launcher, options, logging, validator; shaded), with the library's dependency list checked in CI (no command-line or release dependency). The Dockerfile and the Jenkinsfile build the command line's jar. — #31.
+  - **The split:** `lib` holds the builders, the context and all the tests (27 run); `cli` holds the launcher and `logback.xml`. The parent pom keeps the versions (dependencyManagement) and the Kotlin, ktlint and surefire plugins; only `cli` shades.
+  - **The library's dependencies:** graph-core, paxtools-core and Kotlin's standard library. graph-core brought `logback-classic`, a logging binding a library should not impose, so `lib` excludes it and `cli` adds it back. `ci/lib-dependencies.sh` fails on any other direct dependency, and on `jsap`, the validator or `logback-classic` at any depth: seen failing with `jsap` added to `lib`, and with the exclusion removed.
+  - **No validator in the jar:** the validator 5.1.0 dependencies, its Spring files and its four placeholder `.properties` files are removed (never called, and it failed to start on JDK 17). CI's standalone validator 6.0.0 is the validator.
+  - **`ci/no-relational.sh`** lists both modules (`compile` first, so the command line finds the library in the build); seen failing with a MySQL driver added to `cli`.
+  - **The image** runs `cli/target/biopax3-exporter-0.0.1-SNAPSHOT.jar`. The Jenkinsfile pulls that image and builds no jar, so it is unchanged.
+  - **The launcher's companion state** stays: one run per process, and no conversion reads it. Its unused `model` is removed.
+  - `dependency-reduced-pom.xml`, which shading generates and `.gitignore` names, is no longer tracked.
 - [ ] T010 graph-core moves to the version sbml-exporter pins (research R4), before Phase 4; the fixture's expected output does not move, or each change is explained. (Publishing the library later needs a released graph-core, not a snapshot pinned by commit: a ticket on graph-core, T022.)
 
 ## Phase 4: The content (User Story 2, P1)

@@ -16,8 +16,13 @@ It is to become the one implementation of BioPAX Level 3, used for two things:
 
 - **the release's `biopax.zip`:** one `.owl` file per species, made by the command
   line;
-- **the website's per-event downloads:** one pathway or reaction, made through a
-  library module that does not exist yet.
+- **the website's per-event downloads:** one pathway or reaction, made through the
+  library module.
+
+Two Maven modules: `lib` (`biopax3-exporter-lib`, graph in and BioPAX model out,
+depending on graph-core and Paxtools alone, as `ci/lib-dependencies.sh` checks)
+and `cli` (`biopax3-exporter`, the release's command line on it, shaded; the
+image runs its jar).
 
 The plan is in [issue #4](https://github.com/reactome/BioPAX3Exporter/issues/4)
 and in this repository's specs.
@@ -39,16 +44,13 @@ Feature-sized work goes through Spec Kit before any code, and the specs live in
   website part in that repository's specs. Its spec 015 is the website's half of
   this work, and holds the research this work started from.
 
-## Checks that do not work yet
+## The checks
 
-Don't trust these until the first spec has fixed them (constitution, Principle II):
-
-- **`mvn test` runs no tests.** The Kotlin plugin binds only `compile`, so
-  `src/test` is never compiled. A green `mvn test` means nothing.
-- **ktlint.** `mvn package` runs `ktlint:format`, which rewrites the sources.
-  Check with `mvn ktlint:check` on its own, and expect it to fail on `main` today.
-- **The validator.** `validateBioPAXFile` (validator 5.1.0) is never called. The
-  standalone validator exits 0 whatever it finds, so read its reports.
+- **`mvn verify`** compiles and runs the library's tests and runs `ktlint`'s check
+  (no format step: it rewrites nothing). CI runs it on JDK 17.
+- **The validator.** The jar carries none. CI runs the standalone BioPAX
+  validator 6.0.0 over the fixture's output. It exits 0 whatever it finds, so
+  CI reads its reports.
 
 ## Proving what is written
 
@@ -77,5 +79,5 @@ descriptions:
 
 - The unit tests run and pass: see "Checks that do not work yet". Every fix has a
   test seen failing first.
-- `mvn ktlint:check` passes, run on its own.
+- `mvn verify` passes (tests and ktlint).
 - No personal names in fixtures, logs or test output.

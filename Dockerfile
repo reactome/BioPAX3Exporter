@@ -9,13 +9,14 @@ SHELL ["/bin/bash", "-c"]
 
 
 # ===== stage 2 =====
+# Both modules; the command line's shaded jar (cli) is what runs.
 FROM setup-env AS build-jar
 RUN mvn clean package
 
 # ===== stage 3 =====
 FROM eclipse-temurin:17-jre-focal
 ARG REPO_DIR
-ARG JAR_FILE=target/biopax3-exporter-0.0.1-SNAPSHOT.jar
+ARG JAR_FILE=cli/target/biopax3-exporter-0.0.1-SNAPSHOT.jar
 WORKDIR ${REPO_DIR}
 
 COPY --from=build-jar ${REPO_DIR}/${JAR_FILE} ./target/

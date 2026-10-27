@@ -2,11 +2,13 @@
 # Fails if the exporter's resolved dependencies hold a relational database driver or
 # reader (spec 001, FR-001): it reads the graph alone. Reads Maven's own list of the
 # runtime dependencies, transitive ones included.
+# Lists both modules (the command line holds the library), each appended to one list;
+# `compile` first, so the command line finds the library in the build.
 # Usage: ci/no-relational.sh   (from the repository's root, with Maven on the PATH)
 set -euo pipefail
 list=$(mktemp)
 trap 'rm -f "$list"' EXIT
-mvn -B -q dependency:list -DincludeScope=runtime -DoutputFile="$list" -DappendOutput=false
+mvn -B -q compile dependency:list -DincludeScope=runtime -DoutputFile="$list" -DappendOutput=true
 # Drivers, connection pools and ORMs by their artifacts; a Neo4j JDBC driver reads the graph
 # and is no relational one.
 relational='(mysql|mariadb|postgresql|ojdbc|oracle\.database|mssql|sqlserver|sqlite|hsqldb|com\.h2database|derby|jtds|com\.ibm\.db2|jaybird|firebird|duckdb|snowflake|teradata|jdbc|r2dbc|hikaricp|c3p0|commons-dbcp|hibernate-core|hibernate-orm|eclipselink|jakarta\.persistence|javax\.persistence|spring-data-jpa|jooq|mybatis|spring-jdbc)'
