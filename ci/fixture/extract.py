@@ -24,7 +24,7 @@ classes read, in their direction, each node with its full label set and every pr
 
 People's names never leave the graph (constitution VI): every `Person` keeps only its
 dbId and class and is named `Placeholder` `PersonN`; every `InstanceEdit`'s display
-name (which carries a surname) and note, every summation's text, every publication's
+name (which carries a surname) and note, every summation's text and display name, every publication's
 display name and every comment are replaced. `check-placeholders.sh` checks the output.
 """
 import json
@@ -124,8 +124,10 @@ def anonymise(labels, props, people):
             props["note"] = "Placeholder note"
     # Free text that can name people: a summation cites authors ("X et al"), a
     # publication's display name begins with its first author, a comment is free.
-    if "Summation" in labels and "text" in props:
-        props["text"] = f"Placeholder summation {props['dbId']}"
+    if "Summation" in labels:
+        for key in ("text", "displayName"):  # the display name is the text's opening
+            if key in props:
+                props[key] = f"Placeholder summation {props['dbId']}"
     if "Publication" in labels:
         props["displayName"] = f"Placeholder publication {props['dbId']}"
     if "comment" in props:
