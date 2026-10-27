@@ -6,19 +6,19 @@
 
 **Status**: Draft
 
-**Input**: Decided with the repository's owners on 27 Oct 2026: "biopax should be the same concept of sbml where we try to match current biopax.zip and make only obvious bug fixes. and then we make tickets on the relevant repos for issues that we find and improvements as well." The work goes to `main` directly: nothing uses this exporter yet. Its website half is reactome/WebsiteAngular spec 015 (User Story 2, tasks T045–T054), which also holds the research it starts from (R4, R9, data-model.md).
+**Input**: Decided with the repository's owners on 27 Oct 2026: "biopax should be the same concept of sbml where we try to match current biopax.zip and make only obvious bug fixes. and then we make tickets on the relevant repos for issues that we find and improvements as well." The work goes to `main` by pull request, with no long-lived branch: by the owners' account nothing uses this exporter yet. (Each merge to `main` still republishes its container image, as `:latest`.) Its website half is reactome/WebsiteAngular spec 015 (User Story 2, tasks T045–T054), which also holds the research it starts from (R4, R9, data-model.md).
 
 ## Background
 
 Reactome publishes BioPAX Level 3 twice:
 
 - **the release's `biopax.zip`:** one `.owl` file per species, made by Pathway-Exchange's converter from the relational database;
-- **the website's per-event downloads:** one pathway or reaction, made by the same converter behind a legacy service.
+- **the website's per-event downloads:** one pathway or reaction, made by another of Pathway-Exchange's converters (`ReactomeToBioPAX3XMLConverter`) behind a legacy service; the species files come from `SpeciesAllPathwaysLevel3Converter`.
 
-Both read the relational database, which the release is retiring in favour of the graph. This exporter reads the graph and was written to replace them, but it was never compared with what they publish. Measured on 24 Oct 2026 (WebsiteAngular spec 015, R9), it writes:
+Both converters read the relational database, which the release is retiring in favour of the graph. This exporter reads the graph and was written to replace them, but it was never compared with what they publish. Measured on 24 Oct 2026 (WebsiteAngular spec 015, R9), it writes:
 
-- pathways with their name, summation and organism, and an empty evidence on every element;
-- reactions with their left and right sides, but no stoichiometry;
+- pathways with their name, summation and organism, and an empty evidence on each pathway and reaction;
+- every reaction-like event as a BiochemicalReaction (never a Degradation or a TemplateReaction), with its left and right sides but no stoichiometry;
 - physical entities by name only: no entity references, cross-references, components or locations;
 - catalyses without their controller;
 - no regulation, no literature, and no stable-identifier cross-references.
@@ -27,11 +27,11 @@ Release 97's published `biopax.zip` (174 MB, 15 species files) has all of these.
 
 The exporter also has defects of its own:
 
-- species mode writes every pathway of a species as a component of the file, sub-pathways included;
+- species mode writes every pathway of a species on its own, sub-pathways included, so a sub-pathway (with its reactions and entities) is written again under every pathway that contains it, beside a header pathway named for the species;
 - the events in no pathway are found but never written;
 - `-l` writes an empty pathway;
 - its `xml:base` is not the form the release checks for (`http://www.reactome.org/biopax/{release}/…`);
-- its base URI is a static field, so two conversions at once interfere;
+- its base URI, its database version and its per-class id counters are shared across conversions, and each conversion resets the counters, so two conversions at once interfere;
 - a single reaction cannot be exported;
 - its release step's command has a stray quote;
 - its tests run nothing (`mvn test` compiles no tests), its lint never runs in CI, and its validator call is unused.
@@ -106,12 +106,12 @@ The release builds `biopax.zip` with this exporter in place of Pathway-Exchange'
 
 ### Edge Cases
 
-- **Order and ids:** the old converter's order and `rdf:ID`s cannot be reproduced, even against itself, so the exporter writes a deterministic order (graph order, then dbId) and the comparison replaces each id by its content.
-- **Sets:** a set is written as the type its members share, as the published files show, not as the type a reading of the old source suggests.
+- **Order and ids:** the old converter's order and `rdf:ID`s cannot be reproduced, even against itself, so the exporter writes the same order on every run and the comparison replaces each id by its content.
+- **Sets:** in the per-event samples (WebsiteAngular spec 015, R4) a set is written as the type its members share, else as a PhysicalEntity, with its members; the species files are measured for the same rule before it is written.
 - **The old converter's early return** on a repeated cross-reference or disease: an obvious bug. The exporter writes all of them, and the difference is recorded.
 - **`Book.chapterAuthors`:** not in the graph; recorded as the data's.
 - **People's names** in literature and curation comments: in the output, but never in a fixture, a test log or a comparison's printout (constitution VI).
-- **An event in no pathway:** written in its species' file, as the published file has it.
+- **An event in no pathway:** whether, and how, the published species file has it is measured first; the exporter does what it shows.
 - **A species with no pathways:** whether a file is written for it is whatever release 97 published.
 
 ## Requirements _(mandatory)_
@@ -119,9 +119,9 @@ The release builds `biopax.zip` with this exporter in place of Pathway-Exchange'
 ### Functional Requirements
 
 - **FR-001**: The exporter MUST read only the graph, through graph-core, and nothing relational.
-- **FR-002**: Each species file MUST match the release's published file of the same release by meaning: every difference fixed or recorded with its count and reason.
+- **FR-002**: Each species file MUST match the release's published file of the same release by meaning. A difference may stay only for one of three reasons, recorded with its count: the order and ids (replaced by content in the comparison); the data, where the graph holds something other than the relational database (with a ticket on the repository that owns it); or an obvious bug of the old converter, fixed here. Any other difference fails.
 - **FR-003**: Changes to what is written MUST be limited to matching the published files and fixing obvious bugs. Every other issue or improvement found MUST be opened as a ticket on the repository that owns it, and the written files left matching.
-- **FR-004**: The library MUST convert one pathway or one reaction, with its contents and references, and be safe to call from several threads at once.
+- **FR-004**: The library MUST convert one pathway or one reaction, with its contents and references, and be safe to call from several threads at once: nothing a conversion writes is shared with another.
 - **FR-005**: The library MUST NOT depend on the command line or the release's tooling; the command line MUST be built on the library.
 - **FR-006**: The output MUST be in a deterministic order.
 - **FR-007**: `xml:base` MUST be `http://www.reactome.org/biopax/{release}/{dbId}#`, the species' dbId for a species file and the event's for one event.
@@ -142,18 +142,17 @@ The release builds `biopax.zip` with this exporter in place of Pathway-Exchange'
 ### Measurable Outcomes
 
 - **SC-001**: For all 15 species of release 97, the exporter writes the same file names as the published `biopax.zip`.
-- **SC-002**: Every species file's differences from the published one, by meaning, are recorded kinds, each with its count.
+- **SC-002**: Every species file's differences from the published one, by meaning, are of the three kinds FR-002 allows, each recorded with its count; none is of any other kind.
 - **SC-003**: No written file has a validator error its published counterpart lacks.
 - **SC-004**: A sample of 30 events (pathways of several sizes, reactions, black-box, disease, inferred), each converted through the library, is contained in its species file by meaning, but for recorded differences.
-- **SC-005**: Two conversions run in parallel give the same files as each run alone, every time.
-- **SC-006**: A deliberate mistake in a test, a lint rule or a written element fails CI, every time it is tried.
+- **SC-005**: Over 20 runs of eight events converted in parallel, every file equals the one written alone.
+- **SC-006**: For each check (unit tests, lint, validation of the fixture's output), a deliberate mistake fails CI when tried, and each check's failing run is linked from the pull request that adds it.
 - **SC-007**: The full run's time is recorded against today's step's.
 
 ## Assumptions
 
 - The reference is release 97's published `biopax.zip`, fetched once from the release's download directory and kept outside the repository; a later release's file is compared in the same way when one is run.
 - A private copy of release 97's graph is available for runs, as for sbml-exporter's dry runs, and removed after.
-- The relational legacy service on the same host as the private copy (not production) may be read for a per-event cross-check; the species files are the primary reference.
 - The website's half (serving the library through its Java library service, the routes and the site's links) is WebsiteAngular spec 015's, not this one's.
-- Publishing the library as a versioned artefact (Maven Central) is the aim, and follows once it is proven; until then the website builds it from a pinned commit.
+- Publishing the library as a versioned artefact is the aim, once it is proven; how the website takes it until then is the website's spec's.
 - The release's owners agree the switch's timing (User Story 4).
