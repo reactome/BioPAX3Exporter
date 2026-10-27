@@ -31,7 +31,7 @@ Make the exporter write what release 97's `biopax.zip` holds, from the graph, an
 | Principle | How the plan meets it |
 | --- | --- |
 | I. Proven against the published files, by meaning | The comparer (R2) over every species of release 97 (Order of work 5); every difference fixed or recorded under FR-002's three reasons |
-| II. Verify the instrument | The comparer shown sound before use (two proteins swapped: no difference; one coefficient changed: three triples each side); the validator's report read, not its exit status |
+| II. Verify the instrument | The comparer shown sound before use (one set member re-pointed: one triple each side; one coefficient changed: three); the validator's report read, not its exit status |
 | III. Prove a test fails before believing it passes | Every check and every fix with a test seen failing first; the tests are bound and repaired before anything else |
 | IV. One implementation, for the release and the website | The library module, the command line built on it (R4) |
 | V. Production services are not test fixtures | The published `biopax.zip` (fetched once, outside the repository) and a private graph copy only |
@@ -42,7 +42,8 @@ Make the exporter write what release 97's `biopax.zip` holds, from the graph, an
 ## Project Structure
 
 ```text
-specs/001-biopax-from-graph/   spec, research, plan, contracts/checks.md, quickstart.md, tasks.md
+specs/001-biopax-from-graph/   spec, research, plan, contracts/checks.md, quickstart.md, tasks.md,
+                               differences.md (each remaining difference: kind, count, reason, ticket)
 
 lib/                           biopax3-exporter-lib: ConversionContext, builders; graph-core, paxtools-core
 cli/                           biopax3-exporter: launcher, options, logging, validator; shaded

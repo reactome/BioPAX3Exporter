@@ -9,22 +9,23 @@ Measured 27 Oct 2026 on release 97's published `biopax.zip` (15 species files, 2
 - **The writing:** JDOM's (CRLF line endings, 2-space indent), `rdf:datatype` on every literal; namespaces `rdf`, `bp`, `rdfs`, `owl`, `xsd`; `owl:Ontology rdf:about=""` with one `owl:imports`.
 - **`xml:base`** is `http://www.reactome.org/biopax/{release}/{species dbId}#` (`…/97/170928#`, `…/97/48887#` for human).
 - **Ids** are `{Class}{n}` in every individual (52,302 in _P. falciparum_, 546,714 in human).
-- **Classes** (_P. falciparum_; human in brackets): UnificationXref 17,026 (182,500), PublicationXref 5,648 (39,543), Protein 3,161 (33,688), Stoichiometry 2,960 (44,180), BiochemicalReaction 966 (16,079), Catalysis 689 (6,833), Pathway 658 (2,883), PhysicalEntity 413 (2,158), Control 67 (3,247), Evidence 1,624 (0), PathwayStep 1,598, Complex 1,091, SmallMolecule 1,269, ProteinReference 993, SmallMoleculeReference 723, features and vocabularies. Human only: Dna, DnaReference, Rna, RnaReference, **Degradation (20), TemplateReaction (8), TemplateReactionRegulation (3)**.
+- **Classes** (_P. falciparum_; human in brackets; "in human" below means in human and not in _P. falciparum_, the two files measured): UnificationXref 17,026 (182,500), PublicationXref 5,648 (39,543), Protein 3,161 (33,688), Stoichiometry 2,960 (44,180), BiochemicalReaction 966 (16,079), Catalysis 689 (6,833), Pathway 658 (2,883), PhysicalEntity 413 (2,158), Control 67 (3,247), Evidence 1,624 (0), PathwayStep 1,598, Complex 1,091, SmallMolecule 1,269, ProteinReference 993, SmallMoleculeReference 723, features and vocabularies. In human, not in _P. falciparum_: Dna, DnaReference, Rna, RnaReference, **Degradation (20), TemplateReaction (8), TemplateReactionRegulation (3)**.
 - **Reactions:** `conversionDirection` LEFT-TO-RIGHT; Degradation has `left` only, TemplateReaction `product` only. Most stoichiometries hang off `Complex.componentStoichiometry`.
 - **Catalysis:** `controlType` ACTIVATION; controller a Complex, Protein or PhysicalEntity; two RelationshipXrefs (the catalyst activity and its GO molecular function); an `activeUnit:` comment where there is one.
-- **Control:** ACTIVATION or INHIBITION, with a UnificationXref to the regulation's dbId; it controls BiochemicalReaction and, in human, Degradation.
+- **Control:** ACTIVATION or INHIBITION; one individual per controlled reaction (in _P. falciparum_ six regulations are written as 18 Controls, each with its own `controlled`); UnificationXrefs for the regulation's database id (67) and, on 39 of them, its stable id; it controls BiochemicalReaction and, in human, Degradation.
+- **Events' own cross-references:** RelationshipXrefs on pathways (446) and reactions (56): GO biological process, disease (DOID) and others; where the old converter returns early on a repeat (WebsiteAngular spec 015, R4), fewer than the graph holds.
 - **PathwayStep:** `stepProcess` names a reaction, a catalysis, a control or a pathway; `nextStep` follows the event order. Every Catalysis and Control is a step's process, none a pathway component.
 - **Evidence** exists only for inferred events (IEA, with an xref to the publication and a comment). Human, curated, has none: its literature is a PublicationXref on the event itself.
 - **Every physical entity** carries a "Reactome DB_ID" comment and two UnificationXrefs: the database id of the release and the stable id with its version.
 - **Curation comments** ("Authored:", "Reviewed:", "Edited:") on human events carry people's names, as PublicationXref's `author` does.
 - **EC numbers** are literal `eCNumber` values, several per reaction: up to 84 on one human reaction, 20,384 in all. The graph keeps one per molecular function (reactome/graph-importer#9): the largest of the data's differences.
-- **Sets** are written as the class their members share, else as PhysicalEntity, with "Converted from EntitySet in Reactome" and `memberPhysicalEntity`. A set with a set among its members is a PhysicalEntity (102 of the 136 single-class PhysicalEntity sets in _P. falciparum_). 33 all-SmallMolecule sets with no nested set are PhysicalEntity too, for a reason to measure against the graph (drugs, perhaps).
+- **Sets** are written as the class their members share, else as PhysicalEntity, with "Converted from EntitySet in Reactome" and `memberPhysicalEntity`. Of the 136 single-class sets written as PhysicalEntity in _P. falciparum_, 103 have a set among their members, and every one of those also has a member with no entity reference: the two rules fit equally, and 33 more all-SmallMolecule sets are PhysicalEntity with neither nesting. The graph decides (R6, T016).
 - **No header pathway** named for the species (0 in both files). Top-level pathways: 26 (_P. falciparum_), 29 (human).
 - **No reaction outside a pathway** (0 of 966 in _P. falciparum_, none in human): events in no pathway are not written.
-- **A shared child is written once** and referenced by each parent (in _P. falciparum_, 61 children have two parents, six have three to seven).
+- **A shared child event is written once** and referenced by each parent (in _P. falciparum_, 61 children have two parents, six have three to seven). A Control is the exception: one per controlled reaction (above).
 - **Individuals of identical content repeat** (SequenceSite 4,912 extra, Stoichiometry 1,077 in _P. falciparum_; far more in human), so files compare as multisets.
 
-**Decision:** these are what the exporter writes. Spec 001's two edge cases left to measurement are settled: an event in no pathway is not written, and a set nesting a set is a PhysicalEntity.
+**Decision:** these are what the exporter writes. Of spec 001's two edge cases left to measurement, one is settled (an event in no pathway is not written); the sets rule is left to the graph.
 
 ## R2. The comparison by meaning
 
@@ -36,7 +37,7 @@ Measured 27 Oct 2026 on release 97's published `biopax.zip` (15 species files, 2
 
 **Decision:** a Python comparer (`ci/compare.py`), lxml streaming. Each individual's `rdf:ID` is replaced by a content key: an event or entity by its "Reactome Database ID Release {n}" xref; an xref by (class, db, id); a vocabulary by its term; anything else by a hash of its content, built bottom-up, leaving `nextStep` out of the key. Triples count as a multiset. Literals of `author` and of comments beginning "Authored:", "Reviewed:" or "Edited:" are hashed, never printed.
 
-**Shown sound** on _P. falciparum_: swapping two proteins' ids gives no difference; changing one stoichiometric coefficient gives three triples on each side and nothing else.
+**Shown sound** on _P. falciparum_: re-pointing one set's `memberPhysicalEntity` gives one triple on each side; changing one stoichiometric coefficient gives three triples on each side. (Swapping two proteins' ids consistently gives none, as it must for any comparison blind to ids, so it shows nothing.) A Control is keyed by its regulation's database id and the reaction it controls, since one regulation is several Controls.
 
 **Rationale:** independent of the code under test (Paxtools both writes the files and would read them, normalising on load, which would hide what it changes; constitution II); the same language as sbml-exporter's `ci/compare.py`; human in under a minute.
 
@@ -53,8 +54,9 @@ A greedy cover over the published files finds that 29 human events cover every c
 ## R4. The code today
 
 - **Shared state:** `BioPAX3Utils` is an `object` with one global list of id counters, reset by every `WriteBioPAX3` constructor; `getID()` reads the companion's `xmlBase`; `dbVersion` and the validator are companion statics. The companion's `init` sets `java.vm.*` system properties and starts the validator whenever the class loads.
-- **Builders:** no reaction cache, and the entity cache lives per reaction, which is why a shared child is written again; `getObjectFromSet` scans linearly (quadratic at human scale; `Model.getByID` is constant time). `BioPAXEventBuilder` asks for an abstract `Process`. `BioPAX3ReferenceUtils` strips HTML from comments, where the published files keep it.
+- **Builders:** species mode makes one `BioPAXPathwayBuilder` per pathway, each with its own `visitedPathways`, which is why a sub-pathway is written again under every ancestor; there is no reaction cache, and the entity cache lives per reaction; `getObjectFromSet` scans linearly (quadratic at human scale; `Model.getByID` is constant time). `BioPAXEventBuilder` asks for an abstract `Process`. `BioPAX3ReferenceUtils` strips HTML from comments, where the published files keep it.
 - **Tests:** `mvn test` runs none ("No tests to run"): the Kotlin plugin binds only `compile`, there is no `testSourceDirectory`, and surefire's `**/*Test.kt` matches no class. Bound and compiled, the tests show 82 compile errors in five of seven files.
+- **Single events and `-l`:** `BioPAXEventBuilder` asks for an abstract `Process` and is never called; `-l` builds an empty pathway.
 - **Lint:** `ktlint:format` at `process-sources` rewrites files on every build; `mvn ktlint:check` alone finds five violations in two files; the Dockerfile's lint stage formats first, so it can never fail. CI only builds and pushes the image.
 - **Versions:** graph-core 2.0.9, Paxtools 4.3.1, validator 5.1.0, Kotlin 1.7.10. sbml-exporter and the deployed content service use graph-core 3.0.0-SNAPSHOT pinned by commit.
 

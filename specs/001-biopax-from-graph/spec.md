@@ -107,7 +107,7 @@ The release builds `biopax.zip` with this exporter in place of Pathway-Exchange'
 ### Edge Cases
 
 - **Order and ids:** the old converter's order and `rdf:ID`s cannot be reproduced, even against itself, so the exporter writes the same order on every run and the comparison replaces each id by its content.
-- **Sets:** a set is written as the class its members share, else as a PhysicalEntity, with its members; a set with a set among its members is a PhysicalEntity (measured in the species files, research R1).
+- **Sets:** a set is written as the class its members share, else as a PhysicalEntity, with its members; but some sets of a single class are PhysicalEntity too, by a rule the graph decides (research R1, R6).
 - **The old converter's early return** on a repeated cross-reference or disease: an obvious bug. The exporter writes all of them, and the difference is recorded.
 - **`Book.chapterAuthors`:** not in the graph; recorded as the data's.
 - **People's names** in literature and curation comments: in the output, but never in a fixture, a test log or a comparison's printout (constitution VI).
