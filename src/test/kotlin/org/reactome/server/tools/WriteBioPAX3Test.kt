@@ -65,18 +65,6 @@ class WriteBioPAX3Test {
     }
 
     @Test
-    fun `test setDBVersion updates dbVersion`() {
-        // Create the WriteBioPAX3 instance
-        val writer = WriteBioPAX3()
-
-        // Set the dbVersion
-        writer.setDBVersion(42)
-
-        // Verify that the dbVersion is set correctly
-        assertEquals(42, writer.dbVersion)
-    }
-
-    @Test
     fun `test createModel creates a model`() {
         // Create a mock Pathway
         val mockPathway = mock(Pathway::class.java)

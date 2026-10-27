@@ -85,7 +85,7 @@ class WriteBioPAX3 {
      * Create the BioPAX model using the Reactome Pathway specified in the constructor.
      */
     fun createModel() {
-        val context = ConversionContext(dbVersion, xmlBase)
+        val context = ConversionContext(xmlBase)
         thisModel = context.model
         val thisBPPath = BioPAXPathwayBuilder(thisPathway!!, context)
         thisBPPath.addReactomePathway()
@@ -98,7 +98,7 @@ class WriteBioPAX3 {
         species: Species,
         pathways: List<Pathway>,
     ) {
-        val context = ConversionContext(dbVersion, xmlBase)
+        val context = ConversionContext(xmlBase)
         thisModel = context.model
 
         // // Add species information first
@@ -111,15 +111,6 @@ class WriteBioPAX3 {
             val thisBPPath = BioPAXPathwayBuilder(pathway, context)
             thisBPPath.addReactomePathway()
         }
-    }
-
-    /**
-     * Set the database version number.
-     *
-     * @param version  Integer the ReactomeDB version number being used.
-     */
-    fun setDBVersion(version: Int) {
-        dbVersion = version
     }
 
     // /////////////////////////////////////////////////////////////////////////////////
