@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test
 class ConversionContextTest {
     @Test
     fun `numbers each class's ids from 1, on the xml base`() {
-        val context = ConversionContext(97, "http://www.reactome.org/biopax/97/1#")
+        val context = ConversionContext("http://www.reactome.org/biopax/97/1#")
         assertEquals("http://www.reactome.org/biopax/97/1#Pathway1", context.nextId("Pathway"))
         assertEquals("http://www.reactome.org/biopax/97/1#Protein1", context.nextId("Protein"))
         assertEquals("http://www.reactome.org/biopax/97/1#Pathway2", context.nextId("Pathway"))
@@ -16,8 +16,8 @@ class ConversionContextTest {
 
     @Test
     fun `a conversion's ids are its own`() {
-        val one = ConversionContext(97, "a#")
-        val other = ConversionContext(97, "b#")
+        val one = ConversionContext("a#")
+        val other = ConversionContext("b#")
         one.nextId("Pathway")
         one.nextId("Pathway")
         assertEquals("b#Pathway1", other.nextId("Pathway"))

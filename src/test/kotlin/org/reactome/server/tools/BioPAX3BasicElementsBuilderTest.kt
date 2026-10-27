@@ -23,13 +23,13 @@ class BioPAX3BasicElementsBuilderTest {
         val mockModel = mock(Model::class.java)
         val mockEntity = mock(Entity::class.java)
         val mockProvenance = mock(Provenance::class.java)
-        whenever(mockProvenance.rdfId).thenReturn("Provenance1")
+        whenever(mockProvenance.rdfId).thenReturn("http://www.reactome.org/biopax/97/1#Provenance1")
         whenever(mockModel.getObjects(Provenance::class.java)).thenReturn(setOf(mockProvenance))
 
         val builder =
             BioPAX3BasicElementsBuilder(
                 thisReactomeEvent = null,
-                context = ConversionContext(0, "", mockModel),
+                context = ConversionContext("http://www.reactome.org/biopax/97/1#", mockModel),
                 thisBPElement = mockEntity,
             )
         builder.addReactomeDataSource()
@@ -47,7 +47,7 @@ class BioPAX3BasicElementsBuilderTest {
         val builder =
             BioPAX3BasicElementsBuilder(
                 thisReactomeEvent = null,
-                context = ConversionContext(0, "", mock(Model::class.java)),
+                context = ConversionContext("", mock(Model::class.java)),
                 thisBPElement = mockPathway,
             )
 
@@ -68,7 +68,7 @@ class BioPAX3BasicElementsBuilderTest {
         val builder =
             BioPAX3BasicElementsBuilder(
                 thisReactomeEvent = mockEvent,
-                context = ConversionContext(0, "", mock(Model::class.java)),
+                context = ConversionContext("", mock(Model::class.java)),
                 thisBPElement = mockEntity,
             )
 
@@ -96,7 +96,7 @@ class BioPAX3BasicElementsBuilderTest {
         val builder =
             BioPAX3BasicElementsBuilder(
                 thisReactomeEvent = null,
-                context = ConversionContext(0, "", mockModel),
+                context = ConversionContext("", mockModel),
                 thisBPElement = mockEntity,
             )
 
@@ -131,7 +131,7 @@ class BioPAX3BasicElementsBuilderTest {
         val builder =
             BioPAX3BasicElementsBuilder(
                 thisReactomeEvent = null,
-                context = ConversionContext(0, "", mockModel),
+                context = ConversionContext("", mockModel),
                 thisBPElement = mockEntity,
             )
 

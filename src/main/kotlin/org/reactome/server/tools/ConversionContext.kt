@@ -4,13 +4,12 @@ import org.biopax.paxtools.model.BioPAXLevel
 import org.biopax.paxtools.model.Model
 
 /**
- * One conversion's state (spec 001 T008): the model it writes, its xml:base, the
- * release it is of, and the counters that number its ids. Each conversion has its
+ * One conversion's state (spec 001 T008): the model it writes, its xml:base, and the
+ * counters that number its ids. Each conversion has its
  * own, so two conversions at once number their ids apart; nothing a conversion
  * writes is kept anywhere else.
  */
 class ConversionContext(
-    val dbVersion: Int,
     val xmlBase: String,
     /** A new model on the xml:base; a test may give its own. */
     val model: Model =

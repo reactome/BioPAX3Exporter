@@ -20,7 +20,7 @@ class BioPAXInteractionBuilderTest {
         val mockModel = mock(Model::class.java)
 
         // Create the builder with null event
-        val builder = BioPAXInteractionBuilder(null, ConversionContext(0, "", mockModel))
+        val builder = BioPAXInteractionBuilder(null, ConversionContext("", mockModel))
 
         // Call the method
         val result = builder.addReactomeRLEvent()
@@ -62,7 +62,7 @@ class BioPAXInteractionBuilderTest {
         whenever(mockModel.addNew(eq(BiochemicalReaction::class.java), any())).thenReturn(mockBPReaction)
 
         // Create the builder
-        val builder = BioPAXInteractionBuilder(mockRLEvent, ConversionContext(0, "", mockModel))
+        val builder = BioPAXInteractionBuilder(mockRLEvent, ConversionContext("", mockModel))
 
         // Call the method
         val result = builder.addReactomeRLEvent()
