@@ -118,7 +118,10 @@ description: 'Tasks for spec 001: BioPAX Level 3 from the graph, as the release 
   - **`ci/no-relational.sh`** lists both modules (`compile` first, so the command line finds the library in the build); seen failing with a MySQL driver added to `cli`.
   - **The image** runs `cli/target/biopax3-exporter-0.0.1-SNAPSHOT.jar`. The Jenkinsfile pulls that image and builds no jar, so it is unchanged.
   - **The launcher's companion state** stays: one run per process, and no conversion reads it. Its unused `model` is removed.
-  - `dependency-reduced-pom.xml`, which shading generates and `.gitignore` names, is no longer tracked.
+  - `dependency-reduced-pom.xml`, which shading generates, is no longer tracked, and `.gitignore` names it (in #32: it did not before).
+  - **From #31's review, in #32:**
+    - `ci/lib-dependencies.sh` read the direct dependencies from Maven's resolved list, which names a relocated artifact by its new name: `mysql:mysql-connector-java` added to `lib` passed it. It now reads them as declared in `lib`'s pom and the parent's, in every scope but test (a `provided` validator passed before), and a disallowed one no longer stops it before the check at any depth.
+    - CLAUDE.md's pointer to the renamed section is corrected.
 - [ ] T010 graph-core moves to the version sbml-exporter pins (research R4), before Phase 4; the fixture's expected output does not move, or each change is explained. (Publishing the library later needs a released graph-core, not a snapshot pinned by commit: a ticket on graph-core, T022.)
 
 ## Phase 4: The content (User Story 2, P1)
