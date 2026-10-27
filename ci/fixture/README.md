@@ -22,7 +22,9 @@ free text that could cite one, replaced.
   The shapes were chosen as the smallest human events with each (by the published human
   file); no human event is inferred, so that one is _P. falciparum_'s.
 - **`extract.py`**: wrote `fixture.cypher`.
-- **`check-placeholders.sh`**: fails if a person's name could have survived; CI runs it.
+- **`check-placeholders.sh`**: fails if the fixture leaves its allowlists (below); CI runs it.
+- **`audit.py`**: searches the fixture for its people's real names, against the private
+  copy, at extraction; it prints counts only.
 
 ## How it was made
 
@@ -34,6 +36,7 @@ python3 -I ci/fixture/extract.py http://<private-copy>:7474 R-HSA-68689 R-HSA-67
   R-HSA-174731 R-HSA-2894858 R-HSA-9911234 R-HSA-5696356 R-HSA-68825 R-HSA-5660013 \
   R-PFA-68947 > ci/fixture/fixture.cypher
 ci/fixture/check-placeholders.sh
+python3 -I ci/fixture/audit.py http://<private-copy>:7474
 ```
 
 `extract.py` follows, in their direction, the relationships the exporter's classes read,
@@ -68,8 +71,9 @@ not from the service.
 - **No names, by allowlist (CI):** `check-placeholders.sh` passes on the fixture. It holds
   people, edits, summations, publications' display names and comments to placeholders;
   every line to the four shapes `extract.py` writes; every node's labels to the graph
-  classes the fixture holds; and refuses, on any node, a person-like key in any spelling
-  and any value like an email address or an ORCID. It cannot judge other free text (a
+  classes the fixture holds, its `schemaClass` among them; and refuses, on any node, a
+  person-like key (in any capitalisation, underscores and hyphens aside) and any value
+  like an email address or an ORCID. It cannot judge other free text (a
   title, a journal): the audit below covers that, at extraction. It fails on the first
   two drafts (the second kept summations' display names) and on copies of the fixture
   altered in each of these ways (invented values only):
@@ -89,9 +93,15 @@ not from the service.
   - a node of a class the fixture does not hold;
   - `lastName`, or `Surname` capitalised, on another node;
   - a fixture with no people.
-- **No names, by search (at extraction):** every string in the fixture was compared with
-  the real surnames (of four letters or more) of its 1,235 people in the private copy,
-  counts only: none holds one. The first draft had 44 (43 summations and a Book's
+- **No names, by search (at extraction):** `audit.py` compares every string in the
+  fixture (19,190, list items included) with the real surnames and first names (of three
+  letters or more) of its 1,235 people in the private copy, and looks for emails and
+  ORCIDs, counts only. One string matches: a UniProt keyword naming a disease after a
+  person, one of whose names is also a fixture person's first name. It is judged a
+  coincidence and listed in `audit.py`'s `KNOWN`; any other hit fails it. It matches
+  whole words, as written: an upper-cased name, a name with a suffix, a name under three
+  letters, a part of a multi-word name, or one spelled without its diacritics is not
+  searched, which #25's review measured as noise on this fixture. The first draft had 44 (43 summations and a Book's
   display name). #23's review compared it with all 176,891 people in the graph (short
   and multi-word surnames, first names, initial-and-surname pairs, emails, ORCIDs) and
   found only common words, a journal abbreviation and a protein name. Repeat both
