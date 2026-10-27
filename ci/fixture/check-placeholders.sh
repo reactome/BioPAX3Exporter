@@ -9,8 +9,9 @@
 # - every node's labels are graph classes this fixture is known to hold (a new one is
 #   added here after the extract-time audit, README.md);
 # - each node's schemaClass is among its labels, and the class rules read both;
-# - no other node holds a property that names or reaches a person (in any capitalisation,
-#   underscores and hyphens aside), and
+# - no other node holds a key from PERSONAL's list of person-like names (in any
+#   capitalisation, underscores and hyphens aside; a longer key containing one is not
+#   matched), and
 #   no value anywhere looks like an email address or an ORCID;
 # - a relationship holds only a number `order` and a number `stoichiometry`, and an
 #   edit's dateTime is a date;

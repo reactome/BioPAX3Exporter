@@ -21,10 +21,11 @@ import urllib.request
 
 EMAIL = re.compile(r"[\w.+-]+@[\w-]+\.[\w.]+")
 ORCID = re.compile(r"\b\d{4}-\d{4}-\d{4}-\d{3}[\dX]\b")
-# Hits judged to be coincidences, by class and property, with their count: a UniProt
-# keyword naming a disease after a person, one of whose names is also a fixture
-# person's first name.
-KNOWN = {("ReferenceGeneProduct", "keyword"): 1}
+# Hits judged to be coincidences, by class, property and the node's dbId, with their
+# count: a UniProt keyword naming a disease after a person, one of whose names is also
+# a fixture person's first name. Keyed by node, so a new hit elsewhere in the same
+# property is not taken for it.
+KNOWN = {("ReferenceGeneProduct", "keyword", 57641): 1}
 
 
 def values(text):
@@ -71,11 +72,12 @@ def main(argv):
             for text in strings(value):
                 count += 1
                 if pattern.search(text) or EMAIL.search(text) or ORCID.search(text):
-                    hits[(str(props.get("schemaClass")), key)] += 1
+                    hits[(str(props.get("schemaClass")), key, props.get("dbId"))] += 1
     unknown = hits - collections.Counter(KNOWN)
     print(f"{len(people)} people ({len(rows)} found), {len(names)} names of 3+ letters, {count} strings")
     print(f"strings holding a name, an email or an ORCID: {sum(hits.values())}",
-          {f"{c}.{k}": n for (c, k), n in hits.most_common()})
+          dict(collections.Counter({f"{c}.{k}": 0 for c, k, _ in hits}) + collections.Counter(
+              {f"{c}.{k}": n for (c, k, _), n in hits.items()})))
     print(f"beyond those known to be coincidences: {sum(unknown.values())}")
     return 1 if unknown or not people or len(rows) != len(people) else 0
 

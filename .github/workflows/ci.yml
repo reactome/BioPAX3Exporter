@@ -37,6 +37,9 @@ jobs:
             - name: No person's name in the fixture graph
               run: ci/fixture/check-placeholders.sh
 
+            - name: No relational database driver among the dependencies (FR-001)
+              run: ci/no-relational.sh
+
     docker-build:
         runs-on: ubuntu-latest
         steps:
@@ -56,9 +59,95 @@ jobs:
                 name: image-artifact
                 path: /tmp/image.tar
 
+    # Spec 001 T007: the exporter over the fixture graph (ci/fixture), one file per
+    # species as the release writes them. Each file must be what ci/fixture/expected
+    # holds by meaning (ci/compare.py), the same bytes on a second run (FR-006), and
+    # free of validator errors (ci/validate.py; none allowed).
+    fixture:
+        needs: docker-build
+        runs-on: ubuntu-latest
+        services:
+            neo4j:
+                image: neo4j:4.4.48-community
+                env:
+                    NEO4J_AUTH: none
+                    # graph-core reads this database
+                    NEO4J_dbms_default__database: graph.db
+                ports:
+                    - 7687:7687
+                options: >-
+                    --health-cmd "cypher-shell -d graph.db 'RETURN 1'"
+                    --health-interval 5s --health-timeout 10s --health-retries 30
+        steps:
+            - uses: actions/checkout@v4
+
+            - name: Load the fixture graph
+              run: |
+                docker cp ci/fixture/fixture.cypher ${{ job.services.neo4j.id }}:/fixture.cypher
+                docker exec ${{ job.services.neo4j.id }} cypher-shell -d graph.db -f /fixture.cypher
+
+            - uses: actions/download-artifact@v4
+              with:
+                name: image-artifact
+                path: /tmp
+
+            - name: Convert each species, twice
+              run: |
+                docker load --input /tmp/image.tar
+                for run in out out-again; do
+                  mkdir -m 777 "$run"
+                  # Homo sapiens and Plasmodium falciparum, by their dbIds
+                  for species in 48887 170928; do
+                    docker run --rm --network host -v "$PWD/$run:/out" tmp-tag \
+                      -h localhost -b 7687 -u neo4j -p none -o /out -s "$species"
+                  done
+                done
+                ls -l out
+
+            - name: As expected
+              run: |
+                status=0
+                for expected in ci/fixture/expected/*.owl; do
+                  echo "== $(basename "$expected")"
+                  python3 -I ci/compare.py --examples 5 "$expected" "out/$(basename "$expected")" || status=1
+                done
+                [ "$(ls out | sort)" = "$(ls ci/fixture/expected | sort)" ] || { echo "the files written are not the files expected"; status=1; }
+                exit $status
+
+            - name: The same bytes on a second run (FR-006)
+              run: diff -r out out-again && echo "identical"
+
+            - uses: actions/setup-java@v4
+              with:
+                distribution: temurin
+                java-version: '17'
+
+            - name: The BioPAX validator 6.0.0, cached by its sha1
+              id: validator
+              uses: actions/cache@v4
+              with:
+                path: validator
+                key: biopax-validator-6.0.0-d3c7e7402a3b11915cd8e75b5d7a1d682dfce01c
+
+            - name: Fetch the validator
+              if: steps.validator.outputs.cache-hit != 'true'
+              run: |
+                curl -fsSL -o distr.zip https://repo1.maven.org/maven2/org/biopax/validator/distr/6.0.0/distr-6.0.0-all.zip
+                echo "d3c7e7402a3b11915cd8e75b5d7a1d682dfce01c  distr.zip" | sha1sum -c -
+                mkdir validator && unzip -q distr.zip -d validator && rm distr.zip
+
+            - name: Valid
+              run: |
+                home=$(dirname "$(find "$PWD/validator" -name biopax-validator.jar | head -1)")
+                mkdir reports && cd reports
+                JDK_JAVA_OPTIONS="--add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.lang.reflect=ALL-UNNAMED" \
+                  java -javaagent:"$home/lib/spring-instrument-6.1.5.jar" -Xmx4g -jar "$home/biopax-validator.jar" \
+                  ../out --profile=notstrict --out-format=xml > ../validator.log 2>&1
+                cd .. && python3 -I ci/validate.py reports/*.xml
+
     docker-push:
         if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
-        needs: [docker-build, verify]
+        needs: [docker-build, verify, fixture]
         runs-on: ubuntu-latest
         steps:
             - uses: actions/download-artifact@v4
