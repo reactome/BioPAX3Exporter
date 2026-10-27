@@ -11,7 +11,8 @@ SHELL ["/bin/bash", "-c"]
 # ===== stage 2 =====
 # Both modules; the command line's shaded jar (cli) is what runs.
 FROM setup-env AS build-jar
-# -nsu: no snapshot updates mid-build; ci/snapshots.sh checks what resolved.
+# The local repository starts empty, so the snapshot resolved is the one published now;
+# ci/snapshots.sh fails unless it is the one pinned.
 RUN mvn -B -nsu clean package
 # Fail if a snapshot dependency (graph-core) changed under the build (T010).
 RUN ci/snapshots.sh check

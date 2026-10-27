@@ -16,6 +16,8 @@ repo="${MAVEN_LOCAL_REPO:-$HOME/.m2/repository}"
 here="$(cd "$(dirname "$0")" && pwd)"
 
 list() {
+    # In a process substitution a failure is not seen by set -e: fail loudly instead.
+    [ -d "$repo" ] || { echo "no local repository at $repo" >&2; echo "(no local repository)"; return 1; }
     (cd "$repo" &&
         find . -type f \( -name '*-SNAPSHOT.jar' -o -name '*-SNAPSHOT.pom' \) |
         sed 's|^\./||' | LC_ALL=C sort | xargs sha1sum)
@@ -24,6 +26,8 @@ list() {
 case "${1:-}" in
     list) list ;;
     check)
+        # An empty list would match an empty or missing repository: nothing checked.
+        [ -s "$here/snapshots.sha1" ] || { echo "ci/snapshots.sha1 is empty: nothing to check" >&2; exit 1; }
         if ! diff "$here/snapshots.sha1" <(list); then
             echo "The resolved snapshot dependencies differ from ci/snapshots.sha1 (above: < expected, > resolved)." >&2
             echo "A snapshot changed under the build. Pin a release, or update the list deliberately." >&2
