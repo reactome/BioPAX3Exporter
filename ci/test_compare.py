@@ -274,7 +274,7 @@ class CompareTest(unittest.TestCase):
         (gone, came), lines = self.roots(self.location("1"), self.location("2"))
         self.assertEqual((gone, came), (["UnificationXref.id"], ["UnificationXref.id"]))
         self.assertIn(" at the root: 2", lines)
-        self.assertIn(" carried by a change at the root: 10", lines)
+        self.assertIn(" not at the root (carried by a rehashed key, or swapped among content keys): 10", lines)
         self.assertTrue(lines[-1].startswith("    + 1 x UnificationXref|GO|2|"), lines[-1])
 
     def test_a_change_of_its_own_stays_at_the_root_beside_a_carried_one(self):
@@ -313,13 +313,48 @@ class CompareTest(unittest.TestCase):
         (gone, came), _ = self.roots(self.stoichiometries("1", "2"), self.stoichiometries("2", "1"))
         self.assertEqual((gone, came), (["Complex.componentStoichiometry"] * 2, ["Complex.componentStoichiometry"] * 2))
 
+    def test_a_swap_beside_a_root_change_is_not_called_carried(self):
+        one, other = self.stoichiometries("1", "2", "P2"), self.stoichiometries("2", "1", "P2")
+        other = [part.replace('<bp:Protein rdf:ID="P1"><bp:xref rdf:resource="#X1" />',
+                              '<bp:Protein rdf:ID="P1"><bp:xref rdf:resource="#X1" /><bp:comment>c</bp:comment>') for part in other]
+        (gone, came), lines = self.roots(one, other)
+        self.assertEqual(came, ["Protein.comment"])
+        self.assertIn(" not at the root (carried by a rehashed key, or swapped among content keys): 12", lines)
+
+    def test_identical_files_say_nothing_of_a_root(self):
+        _, lines = self.roots(BASE, BASE)
+        self.assertEqual(lines, ["only in the reference: 0", "only in the file: 0"])
+
+    def test_a_changed_individual_nothing_points_at_is_at_the_root_alone(self):
+        # Its key is new, though nothing points at it: coarsened, its unchanged
+        # physicalEntity is not at the root.
+        alone = [dbid("X1", 1), protein("P1", "X1"),
+                 '<bp:Stoichiometry rdf:ID="S9"><bp:physicalEntity rdf:resource="#P1" /><bp:stoichiometricCoefficient>{}</bp:stoichiometricCoefficient></bp:Stoichiometry>']
+        (gone, came), _ = self.roots(alone[:2] + [alone[2].format(1)], alone[:2] + [alone[2].format(2)])
+        self.assertEqual((gone, came), (["Stoichiometry.stoichiometricCoefficient"], ["Stoichiometry.stoichiometricCoefficient"]))
+
+    def test_a_dangling_reference_re_pointed_is_at_the_root(self):
+        def dangling(target):
+            return [HEAD.replace(' xml:base="http://www.reactome.org/biopax/97/1#"', "") + dbid("X1", 1)
+                    + f'<bp:Protein rdf:ID="P1"><bp:xref rdf:resource="#X1" /><bp:cellularLocation rdf:resource="#{target}" /></bp:Protein></rdf:RDF>']
+        one, other = (self.write_raw(*dangling(t)) for t in ("A", "B"))
+        sides, _ = compare.at_the_root(compare.triples(one), compare.triples(other))
+        self.assertEqual([sum(side.values()) for side in sides], [1, 1])
+
+    def write_raw(self, text):
+        handle, path = tempfile.mkstemp(suffix=".owl")
+        with os.fdopen(handle, "w") as f:
+            f.write(text)
+        self.addCleanup(os.remove, path)
+        return path
+
     def test_a_swap_that_makes_new_keys_is_said_to_have_no_root(self):
         one, other = self.stoichiometries("1", "2", "P2"), self.stoichiometries("2", "1", "P2")
         (gone, came), lines = self.roots(one, other)
         self.assertEqual((gone, came), ([], []))
         self.assertNotEqual(self.counts(one, other), (0, 0))
         self.assertIn(" nothing differs at the root: what differs is swapped among individuals keyed by content", lines)
-        self.assertIn(" swapped or carried: 12", lines)
+        self.assertIn(" not at the root (carried by a rehashed key, or swapped among content keys): 12", lines)
 
     def test_a_database_id_key_is_never_coarsened(self):
         # Two Catalyses with database ids control one reaction keyed by
@@ -339,7 +374,7 @@ class CompareTest(unittest.TestCase):
         changed = [part.replace(">2</bp:stoichiometricCoefficient>", ">3</bp:stoichiometricCoefficient>") for part in BASE]
         (gone, came), lines = self.roots(BASE, changed)
         self.assertEqual((gone, came), (["Stoichiometry.stoichiometricCoefficient"], ["Stoichiometry.stoichiometricCoefficient"]))
-        self.assertIn(" carried by a change at the root: 4", lines)
+        self.assertIn(" not at the root (carried by a rehashed key, or swapped among content keys): 4", lines)
 
     def test_free_text_is_never_printed(self):
         for prop in ("name", "displayName", "url", "comment", "title", "source", "standardName"):
@@ -362,6 +397,23 @@ class CompareTest(unittest.TestCase):
         self.assertEqual(self.counts(self.typed("1", "decimal"), self.typed("1.00000000000000000000000000001", "decimal")), (1, 1))
         self.assertEqual(self.counts(self.typed("-0", "decimal"), self.typed("0.0", "decimal")), (0, 0))
         self.assertEqual(self.counts(self.typed("007.50", "decimal"), self.typed("+7.5", "decimal")), (0, 0))
+
+    def test_a_decimal_keeps_its_sign_and_refuses_what_is_not_one(self):
+        self.assertEqual(self.counts(self.typed("-1.5", "decimal"), self.typed("1.5", "decimal")), (1, 1))
+        for text in (".", "+", "1e5", "1.2.3"):
+            self.assertIsNone(compare.number(text, "decimal"), text)
+
+    def test_a_non_ascii_number_is_text_and_kept_whole(self):
+        self.assertEqual(self.counts(self.typed("\u0663.50", "decimal"), self.typed("\u0663.5", "decimal")), (1, 1))
+        self.assertEqual(self.counts(self.typed("0\u0663", "int"), self.typed("\u0663", "int")), (1, 1))
+
+    def test_only_ascii_space_is_stripped(self):
+        self.assertEqual(self.counts(self.typed("7\u2003", "int"), self.typed("7", "int")), (1, 1))
+        self.assertEqual(self.counts(self.typed(" 7\n", "int"), self.typed("7", "int")), (0, 0))
+
+    def test_an_integer_with_many_leading_zeros_is_read(self):
+        self.assertEqual(compare.number("-" + "0" * 5000 + "12", "int"), "-12")
+        self.assertEqual(compare.number("-0000", "int"), "0")
 
     def test_only_ascii_digits_make_a_number(self):
         for datatype in ("int", "decimal", "float"):

@@ -23,7 +23,9 @@ what still differs is where the files really part; the rest is carried, a
 key rehashed by a change made elsewhere. What it cannot place is a swap
 among individuals keyed by content (two coefficients, or two citations,
 traded between two reactions): the files differ and the exit says so, but
-nothing differs at the root, and the report says that.
+nothing for it differs at the root. So the rest is titled "not at the root":
+carried, or swapped; and when nothing at all differs there, the report says
+so.
 
 Within one individual a value counts once, the same literal or the same
 reference repeated (in RDF a repeated triple adds nothing, and Paxtools keeps
@@ -91,9 +93,11 @@ def salted(text):
 
 def number(text, kind):
     """A numeric literal by its value as its datatype holds it, or None when it is not a well-formed one."""
-    text = text.strip()
+    text = text.strip(" \t\r\n")
     if kind in ("int", "integer", "long", "short") and INTEGER.fullmatch(text):
-        return str(int(text))
+        sign, digits = ("-", text[1:]) if text[0] == "-" else ("", text.lstrip("+"))
+        digits = digits.lstrip("0") or "0"
+        return digits if digits == "0" else sign + digits
     written = DECIMAL.fullmatch(text) if kind == "decimal" else None
     if written and (written[2] or written[3]):
         # Exactly, at any length: leading and trailing zeros dropped, -0 is 0.
@@ -211,7 +215,7 @@ def triples(path):
         return found
 
     # Keys are made recursively. Python's own stack stops a chain of a few
-    # thousand (about 4,000 here) whatever this says; a deeper one exits 2.
+    # thousand (about 5,000 here) whatever this says; a deeper one exits 2.
     sys.setrecursionlimit(max(sys.getrecursionlimit(), 10000))
     counted = collections.Counter()
     for name, (cls, props) in nodes.items():
@@ -232,7 +236,7 @@ def kind(triple):
 
 def hashed(key):
     """Whether a key is a hash of its individual's content (a database-id key never is)."""
-    return "|#" in key and "|dbId:" not in key
+    return "|#" in key and "|dbId:" not in key and not key.startswith("EXTERNAL|")
 
 
 def keys_of(counted):
@@ -284,7 +288,7 @@ def report(reference, other, examples=0):
     carried_kinds = all_kinds - root_kinds
     if all_kinds and not root_kinds:
         lines.append(" nothing differs at the root: what differs is swapped among individuals keyed by content")
-    rest = "carried by a change at the root" if root_kinds else "swapped or carried"
+    rest = "not at the root (carried by a rehashed key, or swapped among content keys)"
     for title, kinds in (("at the root", root_kinds), (rest, carried_kinds)):
         if kinds:
             lines.append(f" {title}: {sum(kinds.values())}")
