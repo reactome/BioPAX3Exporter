@@ -146,7 +146,8 @@ jobs:
                 cd ..
                 # One report per file written: a validator that stopped part way must not pass
                 # on the reports it did write. (Its log echoes display names, so it is not shown.)
-                [ "$(ls reports | wc -l)" = "$(ls out | wc -l)" ] || { echo "$(ls reports | wc -l) reports for $(ls out | wc -l) files"; exit 1; }
+                reports=$(ls reports/*.validation.xml 2>/dev/null | wc -l)
+                [ "$reports" = "$(ls out | wc -l)" ] || { echo "$reports reports for $(ls out | wc -l) files"; exit 1; }
                 python3 -I ci/validate.py reports/*.xml
 
     docker-push:

@@ -4,47 +4,13 @@ package org.reactome.server.tools
 
 import org.biopax.paxtools.io.SimpleIOHandler
 import org.biopax.paxtools.model.*
-import org.biopax.validator.BiopaxIdentifier
-import org.biopax.validator.api.Validator
-import org.biopax.validator.api.ValidatorUtils
-import org.biopax.validator.api.beans.Validation
 import org.reactome.server.graph.domain.model.*
-import org.springframework.context.support.ClassPathXmlApplicationContext
 import java.io.*
 
 /**
  * @author Sarah Keating <skeating@ebi.ac.uk>
  */
 class WriteBioPAX3 {
-    companion object {
-        var validator: Validator? = null
-        var dbVersion: Int = 0
-        var xmlBase: String = ""
-
-        init {
-            try {
-                // Add JVM arguments to open required modules
-                System.setProperty("java.vm.vendor", "Oracle Corporation")
-                System.setProperty("java.vm.name", "Java HotSpot(TM) 64-Bit Server VM")
-                System.setProperty("java.vm.version", "17")
-                System.setProperty("java.vm.specification.version", "17")
-                System.setProperty("java.vm.specification.vendor", "Oracle Corporation")
-                System.setProperty("java.vm.specification.name", "Java Virtual Machine Specification")
-
-                val ctx =
-                    ClassPathXmlApplicationContext(
-                        "classpath:META-INF/spring/appContext-validator.xml",
-                        "classpath:META-INF/spring/appContext-loadTimeWeaving.xml",
-                    )
-                validator = ctx.getBean("validator") as Validator
-                println("BioPAX Validator initialized.")
-            } catch (e: Exception) {
-                System.err.println("Error initializing BioPAX Validator: ${e.message}")
-                e.printStackTrace()
-            }
-        }
-    }
-
     private val thisPathway: Pathway?
     private val thisListEvents: List<Event>?
     private var parentPathway: Pathway? = null
@@ -53,8 +19,15 @@ class WriteBioPAX3 {
     private var biornNum: Int = 0
     private var catNum: Int = 0
     private var useEventOf: Boolean = true
-    private val bioPAXFactory = BioPAXLevel.L3.defaultFactory
     private var thisModel: Model? = null
+
+    /** The release, as the ids' base names it. */
+    var dbVersion: Int = 0
+        private set
+
+    /** The xml:base of the conversion's ids. */
+    var xmlBase: String = ""
+        private set
 
     /**
      * Construct an instance of the WriteBioPAX3
@@ -64,7 +37,6 @@ class WriteBioPAX3 {
         thisListEvents = null
         parentPathway = null
         xmlBase = "https://www.reactome.org/biopax/#"
-        BioPAX3Utils.clearCounterArray()
     }
 
     /**
@@ -78,7 +50,6 @@ class WriteBioPAX3 {
         thisListEvents = null
         parentPathway = null
         xmlBase = "https://www.reactome.org/biopax/$dbVersion/${pathway.dbId}#"
-        BioPAX3Utils.clearCounterArray()
     }
 
     /**
@@ -94,7 +65,6 @@ class WriteBioPAX3 {
         parentPathway = null
         dbVersion = version
         xmlBase = "https://www.reactome.org/biopax/$dbVersion/${pathway.dbId}#"
-        BioPAX3Utils.clearCounterArray()
     }
 
     /**
@@ -109,16 +79,15 @@ class WriteBioPAX3 {
         parentPathway = null
         dbVersion = version
         xmlBase = "https://www.reactome.org/biopax/$dbVersion/species/${species.dbId}#"
-        BioPAX3Utils.clearCounterArray()
     }
 
     /**
      * Create the BioPAX model using the Reactome Pathway specified in the constructor.
      */
     fun createModel() {
-        thisModel = bioPAXFactory.createModel()
-        thisModel?.xmlBase = xmlBase
-        val thisBPPath = BioPAXPathwayBuilder(thisPathway!!, thisModel!!)
+        val context = ConversionContext(dbVersion, xmlBase)
+        thisModel = context.model
+        val thisBPPath = BioPAXPathwayBuilder(thisPathway!!, context)
         thisBPPath.addReactomePathway()
     }
 
@@ -129,44 +98,18 @@ class WriteBioPAX3 {
         species: Species,
         pathways: List<Pathway>,
     ) {
-        thisModel = bioPAXFactory.createModel()
-        thisModel?.xmlBase = xmlBase
+        val context = ConversionContext(dbVersion, xmlBase)
+        thisModel = context.model
 
         // // Add species information first
-        BioPAXSpeciesBuilder(species, thisModel!!).addReactomeSpecies()
+        BioPAXSpeciesBuilder(species, context).addReactomeSpecies()
         // val speciesBuilder = BioPAXSpeciesBuilder(species, thisModel!!)
         // speciesBuilder.addReactomeSpecies()
 
         // Add each pathway
         pathways.forEach { pathway ->
-            val thisBPPath = BioPAXPathwayBuilder(pathway, thisModel!!)
+            val thisBPPath = BioPAXPathwayBuilder(pathway, context)
             thisBPPath.addReactomePathway()
-        }
-    }
-
-    fun validateBioPAXFile(file: File) {
-        try {
-            val owlResource =
-                org.springframework.core.io
-                    .FileSystemResource(file)
-            val result = Validation(BiopaxIdentifier(), owlResource.description, false, null, 0, "notstrict")
-
-            validator?.let { validator ->
-                validator.importModel(result, owlResource.inputStream)
-                validator.validate(result)
-
-                // Save validation results
-                PrintWriter(file.path + "_validation.xml").use { writer ->
-                    ValidatorUtils.write(result, writer, null)
-                }
-
-                println("Validation completed for: ${file.name}")
-
-                // Cleanup
-                validator.results.remove(result)
-            }
-        } catch (e: IOException) {
-            System.err.println("BioPAX validation failed: ${e.message}")
         }
     }
 

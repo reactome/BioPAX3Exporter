@@ -2,7 +2,6 @@
 
 package org.reactome.server.tools
 
-import org.biopax.paxtools.model.Model
 import org.biopax.paxtools.model.level3.*
 import org.reactome.server.graph.domain.model.EntityWithAccessionedSequence
 import org.reactome.server.graph.domain.model.ReactionLikeEvent
@@ -19,8 +18,10 @@ import org.reactome.server.graph.domain.model.PhysicalEntity as RPhysicalEntity
  */
 class BioPAXInteractionBuilder(
     private val thisRLEvent: ReactionLikeEvent?,
-    private val thisModel: Model?,
+    private val context: ConversionContext?,
 ) {
+    private val thisModel = context?.model
+
     /** cache so that identical PhysicalEntities are reused within a reaction tree */
     private val peCache: MutableMap<Long, org.biopax.paxtools.model.level3.PhysicalEntity> = HashMap()
 
@@ -40,7 +41,7 @@ class BioPAXInteractionBuilder(
         val bpReaction =
             thisModel.addNew(
                 BiochemicalReaction::class.java,
-                BioPAX3Utils.getTypeCount("BiochemicalReaction"),
+                context!!.nextId("BiochemicalReaction"),
             )
         bpReaction.displayName = event.displayName
         // Add functional notes from Reactome Summation as BioPAX comment
@@ -56,7 +57,7 @@ class BioPAXInteractionBuilder(
         }
 
         // Evidence / datasource etc.
-        BioPAX3BasicElementsBuilder(event, thisModel, bpReaction).addEvidence()
+        BioPAX3BasicElementsBuilder(event, context, bpReaction).addEvidence()
         return bpReaction
     }
 
@@ -89,22 +90,22 @@ class BioPAXInteractionBuilder(
                 is SimpleEntity ->
                     thisModel!!.addNew(
                         SmallMolecule::class.java,
-                        BioPAX3Utils.getTypeCount("SmallMolecule"),
+                        context!!.nextId("SmallMolecule"),
                     )
                 is EntityWithAccessionedSequence ->
                     thisModel!!.addNew(
                         Protein::class.java,
-                        BioPAX3Utils.getTypeCount("Protein"),
+                        context!!.nextId("Protein"),
                     )
                 is RComplex ->
                     thisModel!!.addNew(
                         org.biopax.paxtools.model.level3.Complex::class.java,
-                        BioPAX3Utils.getTypeCount("Complex"),
+                        context!!.nextId("Complex"),
                     )
                 else ->
                     thisModel!!.addNew(
                         org.biopax.paxtools.model.level3.PhysicalEntity::class.java,
-                        BioPAX3Utils.getTypeCount("PhysicalEntity"),
+                        context!!.nextId("PhysicalEntity"),
                     )
             }
         bpPe.displayName = pe.displayName
@@ -115,6 +116,6 @@ class BioPAXInteractionBuilder(
     private fun addBPCatalyst(): Catalysis? =
         thisModel?.addNew(
             Catalysis::class.java,
-            BioPAX3Utils.getTypeCount("Catalysis"),
+            context!!.nextId("Catalysis"),
         )
 }

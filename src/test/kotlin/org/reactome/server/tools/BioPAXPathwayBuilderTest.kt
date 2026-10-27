@@ -16,7 +16,7 @@ class BioPAXPathwayBuilderTest {
         val mockModel = mock(Model::class.java)
 
         // Create the builder with null pathway
-        val builder = BioPAXPathwayBuilder(null, mockModel)
+        val builder = BioPAXPathwayBuilder(null, ConversionContext(0, "", mockModel))
 
         // Call the method
         builder.addReactomePathway()
