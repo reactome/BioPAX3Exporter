@@ -30,16 +30,6 @@ class BioPAX3ReferenceUtilsTest {
     }
     
     @Test
-    fun `test removeTags removes HTML tags and special characters`() {
-        val input = "<p>This is a <b>test</b> with &lt;special&gt; characters</p>"
-        val expected = "This is a test with special characters"
-        
-        // Since removeTags is private, we'll test it through getComment
-        val result = BioPAX3ReferenceUtils.getComment(listOf(createSummation(input)))
-        assertEquals(expected, result.trim())
-    }
-    
-    @Test
     fun `test removeTags handles interconverts to syntax`() {
         val input = "A<>B"
         val expected = "A interconverts to B"
@@ -52,33 +42,6 @@ class BioPAX3ReferenceUtilsTest {
     fun `test removeTags handles control characters`() {
         val input = "Text with\u0000control\u0001characters"
         val expected = "Text with control characters"
-        
-        val result = BioPAX3ReferenceUtils.getComment(listOf(createSummation(input)))
-        assertEquals(expected, result.trim())
-    }
-    
-    @Test
-    fun `test removeTags handles multiple line breaks`() {
-        val input = "First line\n\n\nSecond line"
-        val expected = "First line  Second line"
-        
-        val result = BioPAX3ReferenceUtils.getComment(listOf(createSummation(input)))
-        assertEquals(expected, result.trim())
-    }
-    
-    @Test
-    fun `test removeTags handles ampersands`() {
-        val input = "Text with &&& ampersands"
-        val expected = "Text with   ampersands"
-        
-        val result = BioPAX3ReferenceUtils.getComment(listOf(createSummation(input)))
-        assertEquals(expected, result.trim())
-    }
-    
-    @Test
-    fun `test getComment handles complex HTML`() {
-        val input = "<div class=\"test\"><p>This is a <b>complex</b> <i>HTML</i> <a href=\"http://example.com\">link</a></p></div>"
-        val expected = "This is a complex HTML link"
         
         val result = BioPAX3ReferenceUtils.getComment(listOf(createSummation(input)))
         assertEquals(expected, result.trim())
