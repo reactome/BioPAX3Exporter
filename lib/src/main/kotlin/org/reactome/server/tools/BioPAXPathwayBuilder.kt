@@ -102,11 +102,15 @@ class BioPAXPathwayBuilder(
         step?.let { bpPath.addPathwayOrder(it) }
         var childPath: org.biopax.paxtools.model.level3.Process? = null
         when (event) {
-            is Pathway -> childPath = addReactomePathway(event)
+            is Pathway -> {
+                childPath = addReactomePathway(event)
+            }
+
             is ReactionLikeEvent -> {
                 val thisBPInteract = BioPAXInteractionBuilder(event, context)
                 childPath = thisBPInteract.addReactomeRLEvent()
             }
+
             else -> {} // Handle other event types if needed
         }
 

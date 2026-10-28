@@ -104,21 +104,43 @@ class BioPAXPhysicalEntityBuilder(
         reference: ReferenceEntity?,
     ): Class<out BpPhysicalEntity> =
         when {
-            entity is RComplex -> BpComplex::class.java
+            entity is RComplex -> {
+                BpComplex::class.java
+            }
+
             // A set has no reference here (T017 types it), so it is a PhysicalEntity too.
-            reference == null -> BpPhysicalEntity::class.java
-            entity is Drug ->
+            reference == null -> {
+                BpPhysicalEntity::class.java
+            }
+
+            entity is Drug -> {
                 when (entity) {
                     is ProteinDrug -> Protein::class.java
                     is ChemicalDrug -> SmallMolecule::class.java
                     is RNADrug -> Rna::class.java
                     else -> BpPhysicalEntity::class.java
                 }
-            reference is ReferenceGeneProduct -> Protein::class.java
-            reference is ReferenceMolecule || reference is ReferenceGroup -> SmallMolecule::class.java
-            reference is ReferenceDNASequence -> Dna::class.java
-            reference is ReferenceRNASequence -> Rna::class.java
-            else -> BpPhysicalEntity::class.java
+            }
+
+            reference is ReferenceGeneProduct -> {
+                Protein::class.java
+            }
+
+            reference is ReferenceMolecule || reference is ReferenceGroup -> {
+                SmallMolecule::class.java
+            }
+
+            reference is ReferenceDNASequence -> {
+                Dna::class.java
+            }
+
+            reference is ReferenceRNASequence -> {
+                Rna::class.java
+            }
+
+            else -> {
+                BpPhysicalEntity::class.java
+            }
         }
 
     // The first compartment, with its GO term as a UnificationXref; none without an accession.
@@ -210,10 +232,14 @@ class BioPAXPhysicalEntityBuilder(
             model.addNew(ModificationFeature::class.java, context.nextId("ModificationFeature")).apply {
                 when (residue) {
                     is TranslationalModification -> residue.coordinate
+
                     is ReplacedResidue -> residue.coordinate
+
                     is FragmentInsertionModification -> residue.coordinate
+
                     // A transcriptional one, not a translational one, though the converter read both alike
                     is ModifiedNucleotide -> residue.coordinate
+
                     else -> null
                 }?.let { featureLocation = sequenceSite(it) }
                 // The first PSI-MOD term, else what the residue is modified by.

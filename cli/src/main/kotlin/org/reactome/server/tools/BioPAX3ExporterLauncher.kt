@@ -120,11 +120,13 @@ class BioPAX3ExporterLauncher {
                             }
                             pathway?.let { outputPath(it) }
                         }
+
                         Status.ALL_PATHWAYS -> {
                             speciesService.species.forEach { s ->
                                 outputPathsForSpecies(s)
                             }
                         }
+
                         Status.ALL_PATHWAYS_SPECIES -> {
                             var species: Species? = null
                             try {
@@ -134,6 +136,7 @@ class BioPAX3ExporterLauncher {
                             }
                             species?.let { outputPathsForSpecies(it) }
                         }
+
                         Status.MULTIPLE_PATHS -> {
                             multipleIds.forEach { id ->
                                 var pathway: Pathway? = null
@@ -145,6 +148,7 @@ class BioPAX3ExporterLauncher {
                                 pathway?.let { outputPath(it) }
                             }
                         }
+
                         Status.MULTIPLE_EVENTS -> {
                             // Declare eventList explicitly as a java.util.ArrayList
                             val eventList: java.util.ArrayList<Event> = java.util.ArrayList()
