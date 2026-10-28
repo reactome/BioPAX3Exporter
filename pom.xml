@@ -26,7 +26,7 @@
         <maven.compiler.version>3.11.0</maven.compiler.version>
         <jdk.version>17</jdk.version>
         
-        <paxtools.version>4.3.1</paxtools.version>
+        <paxtools.version>6.0.0</paxtools.version>
         <kotlin.version>1.7.10</kotlin.version>
     </properties>
 
