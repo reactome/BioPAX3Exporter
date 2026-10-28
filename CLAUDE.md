@@ -60,6 +60,7 @@ Feature-sized work goes through Spec Kit before any code, and the specs live in
   - keep it out of the repository, since it holds people's names.
 
   No other Reactome production service is used.
+
 - **Compare by meaning**, not bytes. Reduce each file to (class, property, target)
   triples, with each `rdf:ID` replaced by its content, and record every
   difference with its reason.

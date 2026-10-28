@@ -68,6 +68,7 @@ description: 'Tasks for spec 001: BioPAX Level 3 from the graph, as the release 
     - A changed individual nothing points at keeps its unchanged properties off the root.
     - Python's stack stops a chain at about 5,000.
     - 56 tests in `ci/test_compare.py` (65 with `ci/test_validate.py`'s nine); each of the review's surviving mutants now fails one.
+
 - [x] T006 `ci/fixture/`: `extract.py` over a private copy of release 97's graph (sbml-exporter's pattern), extended to publications' authors, events' created, authored, reviewed and edited records, entity references with their cross-references, GO terms, diseases, PSI-MOD terms, `inferredFrom`, catalyst activities and regulation; at least eight events, each with its parent pathways (today's exporter writes pathways only): a pathway, a TemplateReaction with its regulation, a Degradation, a disease reaction, a reaction with nested sets, DNA and RNA, and one inferred event (research R3). People and curation comments replaced by placeholders, held by `check-placeholders.sh` in CI as an allowlist; shown failing on a value not on it. — #24, replacing #22 and #23 after their reviews. The events and why each is there are in `ci/fixture/README.md`. There are nine, not eight:
   - the smallest human event of each shape, plus a small pathway with its two reactions and a black box, chosen from the published human file;
   - the first of research R3's cover, R-HSA-5660013, which is the disease reaction (a FailedReaction); R-HSA-2894858 is a disease pathway;
@@ -185,7 +186,7 @@ description: 'Tasks for spec 001: BioPAX Level 3 from the graph, as the release 
       - no ProteinReference for a protein drug;
       - no description in place of a missing comment;
       - what a residue is modified by ahead of its PSI-MOD term.
-    
+
     A 17th, sets typed by their reference, was equivalent, and the clause it changed is removed. `ParallelConversionTest`'s pathways now have a species, so their organisms are still exercised.
 - [ ] T012 [US2] Reactions: BiochemicalReaction, Degradation (`left` only) and TemplateReaction (`product` only) as the event's kind; `conversionDirection`; `participantStoichiometry`; `eCNumber`; their literature.
 - [ ] T013 [US2] Catalysis with its controller and its two RelationshipXrefs and the `activeUnit:` comment; Control (ACTIVATION, INHIBITION) and TemplateReactionRegulation from regulation, one per controlled reaction, with the regulation's UnificationXrefs (database id, and stable id where the published file has one).

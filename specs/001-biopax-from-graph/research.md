@@ -29,11 +29,11 @@ Measured 27 Oct 2026 on release 97's published `biopax.zip` (15 species files, 2
 
 ## R2. The comparison by meaning
 
-| Approach | _P. falciparum_ | Human (333 MB) |
-| --- | --- | --- |
-| Python lxml, streaming, to triples with content keys | 3.4 s, 122 MB | 56 s, 1.05 GB (2,711,269 triples) |
-| Paxtools 6.0.0 (load only) | 2.0 s, 386 MB RSS | 15 s, 2.3 GB RSS |
-| rdflib 7.1.4 (parse only) | 21.7 s, 420 MB | not run (about 4 min, 4.5 GB by size) |
+| Approach                                             | _P. falciparum_   | Human (333 MB)                        |
+| ---------------------------------------------------- | ----------------- | ------------------------------------- |
+| Python lxml, streaming, to triples with content keys | 3.4 s, 122 MB     | 56 s, 1.05 GB (2,711,269 triples)     |
+| Paxtools 6.0.0 (load only)                           | 2.0 s, 386 MB RSS | 15 s, 2.3 GB RSS                      |
+| rdflib 7.1.4 (parse only)                            | 21.7 s, 420 MB    | not run (about 4 min, 4.5 GB by size) |
 
 **Decision:** a Python comparer (`ci/compare.py`), streaming. Each individual's `rdf:ID` is replaced by a content key: an event or entity by its "Reactome Database ID Release {n}" xrefs; anything else, xrefs and vocabularies included, by a hash of its content, built bottom-up, leaving `nextStep` out of the key. Individuals count as a multiset, a value within one individual once. Literals of `author` and of comments beginning "Authored:", "Reviewed:" or "Edited:" are hashed, never printed. (As built in T005, #18; at first xrefs were keyed by (class, db, id) and vocabularies by term, which T005's review showed blind to which chapter of a book is cited.)
 
