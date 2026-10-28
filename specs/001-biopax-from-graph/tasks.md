@@ -140,7 +140,9 @@ description: 'Tasks for spec 001: BioPAX Level 3 from the graph, as the release 
 
 ## Phase 4: The content (User Story 2, P1)
 
-**Goal**: each class written as release 97 writes it. Each task changes the fixture's expected output for its class only, and compares _P. falciparum_ from the private copy before and after, its differences falling.
+**Goal**: each class written as the release writes it (release 97, then 98: below). Each task changes the fixture's expected output for its class only, and compares _P. falciparum_ from the private copy before and after, its differences falling.
+
+**From 28 Oct 2026, release 98.** The release published its `biopax.zip` for 98, so the tasks from T012 on, T020's full run included, generate from a private copy of release 98's graph and compare with release 98's published files. The fixture was regenerated from release 98 by `extract.py`, its events unchanged (#41, replacing #40 after its review). T011's measurements, made on release 97, stand as recorded.
 
 - [x] T011 [US2] Physical entities: their entity references (ProteinReference, SmallMoleculeReference, DnaReference, RnaReference) with cross-references; the "Reactome DB_ID" comment and the two UnificationXrefs (database id of the release, stable id with version); cellular location; complexes with `component` and `componentStoichiometry`; features (modifications, fragments). — #38, replacing #37 after its review.
   - **The rules** are Pathway-Exchange's `ReactomeToBioPAX3XMLConverter.createPhysicalEntity` and `BioPAX3FeatureHandler`, read from the graph:
@@ -200,7 +202,7 @@ description: 'Tasks for spec 001: BioPAX Level 3 from the graph, as the release 
 
 ## Phase 5: Proof (User Stories 2 and 3)
 
-- [ ] T020 [US2] The full run: every species from a private copy of release 97's graph, the same 15 file names as the published zip, each compared by T005. `differences.md` records each remaining difference by kind, count and reason (order and ids; the data's, with its ticket, the EC numbers first, reactome/graph-importer#9; an obvious bug fixed), and nothing else. Validated by T004 against each published file's own baseline, made in this task for all 15 (human with enough memory for its size, measured). The private copy removed after.
+- [ ] T020 [US2] The full run: every species from a private copy of release 98's graph, the same 15 file names as the published zip, each compared by T005. `differences.md` records each remaining difference by kind, count and reason (order and ids; the data's, with its ticket, the EC numbers first, reactome/graph-importer#9; an obvious bug fixed), and nothing else. Validated by T004 against each published file's own baseline, made in this task for all 15 (human with enough memory for its size, measured). The private copy removed after.
 - [ ] T021 [US3] One event through the library: the 30-event sample (pathways of several sizes, reactions, a black box, a disease event, an inferred one) each contained in its species file by meaning but for recorded differences.
 - [ ] T022 Tickets: each issue found on the way, and each improvement, opened on the repository that owns it and linked from `differences.md` (spec FR-003).
 

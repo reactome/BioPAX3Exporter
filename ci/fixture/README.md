@@ -1,10 +1,10 @@
 # The fixture graph (spec 001, T006)
 
-A small graph for CI: nine events of release 97, their parent pathways, and everything
+A small graph for CI: nine events of release 98 (chosen on release 97), their parent pathways, and everything
 the exporter's classes read about them (T011–T019), with every person's name, and all
 free text that could cite one, replaced.
 
-- **`fixture.cypher`**: 2,373 nodes and 4,714 relationships, for
+- **`fixture.cypher`**: 2,379 nodes and 4,740 relationships (release 98), for
 
   | Event         | What it is here for                                                                                         |
   | ------------- | ----------------------------------------------------------------------------------------------------------- |
@@ -18,7 +18,7 @@ free text that could cite one, replaced.
   | R-HSA-5660013 | the first of research R3's greedy cover: a disease reaction (a FailedReaction), with catalysis and controls |
   | R-PFA-68947   | an inferred event, for Evidence (IEA)                                                                       |
 
-  each with its parent pathways up to the top, and release 97's `DBInfo` node.
+  each with its parent pathways up to the top, and the release's `DBInfo` node.
   The shapes were chosen as the smallest human events with each (by the published human
   file); no human event is inferred, so that one is _P. falciparum_'s.
 
@@ -35,7 +35,8 @@ free text that could cite one, replaced.
 
 ## How it was made
 
-From a private copy of release 97's graph (Neo4j 4.4, database `graph.db`, on the
+From a private copy of the release's graph: release 98 since 28 Oct 2026, release 97
+before, each made with the same command (Neo4j 4.x, database `graph.db`, on the
 loopback interface; never a shared or production graph):
 
 ```
@@ -74,8 +75,8 @@ not from the service.
 
 ## How it was checked
 
-- **It loads:** into an empty Neo4j 4.4 (`graph.db`) with `cypher-shell -f`, in 67 s,
-  giving 2,373 nodes and 4,714 relationships.
+- **It loads:** into an empty Neo4j 4.4 (`graph.db`) with `cypher-shell -f`, in about 70 s,
+  giving 2,379 nodes and 4,740 relationships.
 - **No names, by allowlist (CI):** `check-placeholders.sh` passes on the fixture. It holds
   people, edits, summations, publications' display names and comments to placeholders;
   every line to the four shapes `extract.py` writes; every node's labels to the graph
@@ -104,7 +105,7 @@ not from the service.
   - `lastName`, or `Surname` capitalised, on another node;
   - a fixture with no people.
 - **No names, by search (at extraction):** `audit.py` compares every string in the
-  fixture (19,190, list items included) with the real surnames and first names (of three
+  fixture (20,085 on release 98, list items included) with the real surnames and first names (of three
   letters or more) of its 1,235 people in the private copy, and looks for emails and
   ORCIDs, counts only. One string matches: a UniProt keyword naming a disease after a
   person, one of whose names is also a fixture person's first name. It is judged a
