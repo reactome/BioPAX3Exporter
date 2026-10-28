@@ -49,10 +49,7 @@ class BioPAXXrefBuilder(
                 model.addNew(RelationshipXref::class.java, context.nextId("RelationshipXref")).apply {
                     db = "Reactome Database ID Release ${context.release}"
                     id = dbId.toString()
-                    addComment(
-                        "Database identifier. Use this URL to connect to the web page of this instance in Reactome: " +
-                            "http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&ID=$dbId",
-                    )
+                    addComment(databaseIdComment(dbId))
                     relationshipType = relationshipType(SAME_CATALYST_ACTIVITY)
                 }
             },
@@ -77,16 +74,17 @@ class BioPAXXrefBuilder(
             }
         }
 
+    private fun databaseIdComment(dbId: Long) =
+        "Database identifier. Use this URL to connect to the web page of this instance in Reactome: " +
+            "http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&ID=$dbId"
+
     private fun databaseIdXref(instance: DatabaseObject): UnificationXref {
         val dbId = instance.dbId
         return context.once("databaseId:$dbId") {
             model.addNew(UnificationXref::class.java, context.nextId("UnificationXref")).apply {
                 db = "Reactome Database ID Release ${context.release}"
                 id = dbId.toString()
-                addComment(
-                    "Database identifier. Use this URL to connect to the web page of this instance in Reactome: " +
-                        "http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&ID=$dbId",
-                )
+                addComment(databaseIdComment(dbId))
             }
         }
     }

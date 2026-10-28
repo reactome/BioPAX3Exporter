@@ -221,7 +221,7 @@ description: 'Tasks for spec 001: BioPAX Level 3 from the graph, as the release 
       - no ids on a TemplateReaction.
     - One more mutant, the display name kept among the names, is equivalent: Paxtools keeps the display name in the name set either way.
     - Left for T013, which found none to write: the release's converter also puts a pathway's own regulations into its step.
-- [x] T013 [US2] Catalysis with its controller and its two RelationshipXrefs and the `activeUnit:` comment; Control (ACTIVATION, INHIBITION) and TemplateReactionRegulation from regulation, one per controlled reaction, with the regulation's UnificationXrefs (database id, and stable id where the published file has one). — #57.
+- [x] T013 [US2] Catalysis with its controller and its two RelationshipXrefs and the `activeUnit:` comment; Control (ACTIVATION, INHIBITION) and TemplateReactionRegulation from regulation, one per controlled reaction, with the regulation's UnificationXrefs (database id, and stable id where the published file has one). — #58, replacing #57 after its review.
   - **The rules** are `handleCatalystActivity`, `handleActiveUnits`, `handleRegulation` and `createModulationFromRegulation` from Pathway-Exchange's converter.
     - **A catalyst activity** is a new Catalysis for each reaction (none for a TemplateReaction, which returns before it), with:
       - its catalyst as controller, ACTIVATION;
@@ -235,7 +235,11 @@ description: 'Tasks for spec 001: BioPAX Level 3 from the graph, as the release 
   - **Measured on release 98** (`differences.md`): the published file's catalyses and controls are matched but for sets (T017) and repetition (T015). The validator reports 0 errors on the fixture's output.
   - **Not written, as the graph has none:** a pathway's regulations (graph-core's `Regulation` regulates reactions only) and a catalyst activity's own regulation (the converter's Modulation).
   - **Left to their tasks:** a regulation's literature (T016).
-  - **Tests:** `BioPAXControlTest`, 5 tests. Each of 20 mutants made one fail:
+  - **From #57's review:**
+    - A regulation graph-core lists twice (its link's stoichiometry 2, eleven times at release 98) is written once, as the converter's set of regulations makes it.
+    - Regulations follow the reaction's ids, in the converter's order.
+    - The validator heading `differences.md` lost is back, and the catalysis count is corrected.
+  - **Tests:** `BioPAXControlTest`, 7 tests. Each of 25 mutants made one fail:
     - no controller;
     - no ACTIVATION;
     - no molecular function, or the function typed as a biological process;
@@ -246,7 +250,8 @@ description: 'Tasks for spec 001: BioPAX Level 3 from the graph, as the release 
     - INHIBITION for a positive regulation, or no INHIBITION;
     - no regulation ids, regulator, active units or data source;
     - "Same Catalyst Activity" with a PSI-MI xref;
-    - a GO id without its prefix.
+    - a GO id without its prefix;
+    - from #57's review: regulations not taken once each; the GO xref not shared; the "Same Catalyst Activity" comment changed; a catalysis's units numbered in descending dbId order; a regulation's units out of their order.
 - [ ] T014 [US2] Events' own cross-references: RelationshipXrefs for GO biological process, disease and the rest, all of them where the old converter returned early on a repeat (an obvious bug fixed; recorded in `differences.md`).
 - [ ] T015 [US2] Pathways (and the caches of events and entities by dbId, kept in the `ConversionContext`, which T008 left for this task: shared across a species' pathways, they write a shared child once): components, PathwayStep with `stepProcess` (reactions, catalyses, controls, pathways) and `nextStep`; a shared child written once and referenced by each parent; no header pathway; no event outside a pathway (research R1).
 - [ ] T016 [US2] Literature and provenance: PublicationXref (PubMed, ISBN, URL) on the event; Evidence (IEA) for inferred events only; the single Provenance; curation comments, with HTML kept as the published files keep it.

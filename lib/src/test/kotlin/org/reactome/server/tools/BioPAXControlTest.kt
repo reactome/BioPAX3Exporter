@@ -110,6 +110,13 @@ class BioPAXControlTest {
         assertEquals(setOf("gene ontology term for cellular function"), function.relationshipType.term)
         val own = xrefs.single { it.db == "Reactome Database ID Release 98" }
         assertEquals("600", own.id)
+        assertEquals(
+            setOf(
+                "Database identifier. Use this URL to connect to the web page of this instance in Reactome: " +
+                    "http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&ID=600",
+            ),
+            own.comment,
+        )
         assertEquals(setOf("Same Catalyst Activity"), own.relationshipType.term)
         // The release gives "Same Catalyst Activity" no PSI-MI xref, and a catalyst activity no stable id
         assertTrue(own.relationshipType.xref.isEmpty())
@@ -140,6 +147,21 @@ class BioPAXControlTest {
             return ByteArrayOutputStream().also { SimpleIOHandler().convertToOWL(context.model, it) }.toString(Charsets.UTF_8)
         }
         assertEquals(written(listOf(21, 22, 23)), written(listOf(23, 21, 22)))
+        // And in dbId order: the lowest is numbered first, whatever order the set gives
+        val units = listOf(23L, 21L, 22L).map { entity<EntityWithAccessionedSequence>(it, "unit $it") }.toCollection(LinkedHashSet())
+        val event =
+            reaction<Reaction>(505, emptyList(), emptyList(), catalysts = listOf(activity(602, entity<SimpleEntity>(10, "enzyme"), units)))
+        BioPAXInteractionBuilder(event, context).addReactomeRLEvent()
+        val numbers =
+            (21..23).map { n ->
+                context.model.objects
+                    .filterIsInstance<org.biopax.paxtools.model.level3.Named>()
+                    .single { it.displayName == "unit $n" }
+                    .rdfId
+                    .takeLastWhile { it.isDigit() }
+                    .toInt()
+            }
+        assertEquals(numbers.sorted(), numbers)
     }
 
     @Test
@@ -220,9 +242,20 @@ class BioPAXControlTest {
         val second = BioPAXInteractionBuilder(other, context).addReactomeRLEvent()
 
         val controls = context.model.getObjects(Control::class.java).filter { it !is Catalysis }
+        assertEquals(2, controls.size)
         assertEquals(setOf(setOf(first), setOf(second)), controls.map { it.controlled.toSet() }.toSet())
         val catalyses = context.model.getObjects(Catalysis::class.java)
+        assertEquals(2, catalyses.size)
         assertEquals(setOf(setOf(first), setOf(second)), catalyses.map { it.controlled.toSet() }.toSet())
+        // One molecular-function xref for the term, shared
+        assertEquals(
+            1,
+            catalyses
+                .flatMap { it.xref }
+                .filter { it.db == "GENE ONTOLOGY" }
+                .toSet()
+                .size,
+        )
         // The two share the activity's xrefs, written once
         assertEquals(
             1,
@@ -232,5 +265,47 @@ class BioPAXControlTest {
                 .toSet()
                 .size,
         )
+    }
+
+    @Test
+    fun `a regulation listed twice on a reaction is one Control`() {
+        val required = entity<SimpleEntity>(50, "Mg2+")
+        // graph-core lists it twice where its link's stoichiometry is 2
+        val twice = regulation<Requirement>(705, required)
+        val event = reaction<Reaction>(503, emptyList(), emptyList(), regulations = listOf(twice, twice))
+
+        BioPAXInteractionBuilder(event, context).addReactomeRLEvent()
+
+        assertEquals(
+            1,
+            context.model
+                .getObjects(Control::class.java)
+                .filter { it !is Catalysis }
+                .size,
+        )
+    }
+
+    @Test
+    fun `a regulation's active units are numbered in its own order`() {
+        val later = entity<EntityWithAccessionedSequence>(61, "first in the list")
+        val earlier = entity<EntityWithAccessionedSequence>(60, "second in the list")
+        val event =
+            reaction<Reaction>(
+                504,
+                emptyList(),
+                emptyList(),
+                regulations = listOf(regulation<PositiveRegulation>(706, entity<SimpleEntity>(62, "cAMP"), listOf(later, earlier))),
+            )
+
+        BioPAXInteractionBuilder(event, context).addReactomeRLEvent()
+
+        fun number(name: String) =
+            context.model.objects
+                .filterIsInstance<org.biopax.paxtools.model.level3.Named>()
+                .single { it.displayName == name }
+                .rdfId
+                .takeLastWhile { it.isDigit() }
+                .toInt()
+        assertTrue(number("first in the list") < number("second in the list"))
     }
 }

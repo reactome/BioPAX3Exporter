@@ -113,8 +113,8 @@
 </bp:BiochemicalReaction>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction120">
- <bp:xref rdf:resource="#UnificationXref330" />
- <bp:xref rdf:resource="#UnificationXref329" />
+ <bp:xref rdf:resource="#UnificationXref328" />
+ <bp:xref rdf:resource="#UnificationXref327" />
  <bp:evidence rdf:resource="#Evidence202" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NOTCH1 PEST domain mutants stimulate HES1 transcription</bp:displayName>
  <bp:right rdf:resource="#Protein55" />
@@ -148,8 +148,8 @@
 </bp:Stoichiometry>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction122">
- <bp:xref rdf:resource="#UnificationXref344" />
- <bp:xref rdf:resource="#UnificationXref343" />
+ <bp:xref rdf:resource="#UnificationXref342" />
+ <bp:xref rdf:resource="#UnificationXref341" />
  <bp:evidence rdf:resource="#Evidence204" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NOTCH1 PEST domain mutants stimulate HES5 transcription</bp:displayName>
  <bp:right rdf:resource="#Protein56" />
@@ -183,8 +183,8 @@
 </bp:Stoichiometry>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction124">
- <bp:xref rdf:resource="#UnificationXref355" />
- <bp:xref rdf:resource="#UnificationXref356" />
+ <bp:xref rdf:resource="#UnificationXref353" />
+ <bp:xref rdf:resource="#UnificationXref354" />
  <bp:evidence rdf:resource="#Evidence206" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NOTCH1 PEST domain mutants stimulate HEY transcription</bp:displayName>
  <bp:right rdf:resource="#PhysicalEntity22" />
@@ -407,8 +407,8 @@
 </bp:Stoichiometry>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction126">
- <bp:xref rdf:resource="#UnificationXref370" />
- <bp:xref rdf:resource="#UnificationXref369" />
+ <bp:xref rdf:resource="#UnificationXref368" />
+ <bp:xref rdf:resource="#UnificationXref367" />
  <bp:evidence rdf:resource="#Evidence208" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NOTCH1 PEST domain mutants stimulate MYC transcription</bp:displayName>
  <bp:right rdf:resource="#Protein57" />
@@ -817,8 +817,8 @@
 </bp:Evidence>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction101">
- <bp:xref rdf:resource="#UnificationXref344" />
- <bp:xref rdf:resource="#UnificationXref343" />
+ <bp:xref rdf:resource="#UnificationXref342" />
+ <bp:xref rdf:resource="#UnificationXref341" />
  <bp:evidence rdf:resource="#Evidence180" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NOTCH1 PEST domain mutants stimulate HES5 transcription</bp:displayName>
  <bp:right rdf:resource="#Protein56" />
@@ -845,8 +845,8 @@
 </bp:Evidence>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction103">
- <bp:xref rdf:resource="#UnificationXref355" />
- <bp:xref rdf:resource="#UnificationXref356" />
+ <bp:xref rdf:resource="#UnificationXref353" />
+ <bp:xref rdf:resource="#UnificationXref354" />
  <bp:evidence rdf:resource="#Evidence182" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NOTCH1 PEST domain mutants stimulate HEY transcription</bp:displayName>
  <bp:right rdf:resource="#PhysicalEntity22" />
@@ -1030,8 +1030,8 @@
 </bp:Evidence>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction105">
- <bp:xref rdf:resource="#UnificationXref370" />
- <bp:xref rdf:resource="#UnificationXref369" />
+ <bp:xref rdf:resource="#UnificationXref368" />
+ <bp:xref rdf:resource="#UnificationXref367" />
  <bp:evidence rdf:resource="#Evidence184" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NOTCH1 PEST domain mutants stimulate MYC transcription</bp:displayName>
  <bp:right rdf:resource="#Protein57" />
@@ -1123,7 +1123,7 @@
 <bp:Control rdf:ID="Control2">
  <bp:controlled rdf:resource="#BiochemicalReaction6" />
  <bp:controller rdf:resource="#Complex2" />
- <bp:xref rdf:resource="#UnificationXref59" />
+ <bp:xref rdf:resource="#UnificationXref61" />
  <bp:controlType rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ACTIVATION</bp:controlType>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">activeUnit: #Protein3</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
@@ -1132,7 +1132,7 @@
 <bp:Control rdf:ID="Control1">
  <bp:controlled rdf:resource="#BiochemicalReaction3" />
  <bp:controller rdf:resource="#Complex2" />
- <bp:xref rdf:resource="#UnificationXref59" />
+ <bp:xref rdf:resource="#UnificationXref61" />
  <bp:controlType rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ACTIVATION</bp:controlType>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">activeUnit: #Protein3</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
@@ -1166,8 +1166,8 @@
 <bp:Control rdf:ID="Control6">
  <bp:controlled rdf:resource="#BiochemicalReaction24" />
  <bp:controller rdf:resource="#Complex39" />
- <bp:xref rdf:resource="#UnificationXref368" />
- <bp:xref rdf:resource="#UnificationXref367" />
+ <bp:xref rdf:resource="#UnificationXref370" />
+ <bp:xref rdf:resource="#UnificationXref369" />
  <bp:controlType rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ACTIVATION</bp:controlType>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">activeUnit: #Complex35</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
@@ -1176,8 +1176,8 @@
 <bp:Control rdf:ID="Control5">
  <bp:controlled rdf:resource="#BiochemicalReaction22" />
  <bp:controller rdf:resource="#Complex38" />
- <bp:xref rdf:resource="#UnificationXref353" />
- <bp:xref rdf:resource="#UnificationXref354" />
+ <bp:xref rdf:resource="#UnificationXref355" />
+ <bp:xref rdf:resource="#UnificationXref356" />
  <bp:controlType rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ACTIVATION</bp:controlType>
  <bp:dataSource rdf:resource="#Provenance1" />
 </bp:Control>
@@ -1190,8 +1190,8 @@
 <bp:Control rdf:ID="Control4">
  <bp:controlled rdf:resource="#BiochemicalReaction20" />
  <bp:controller rdf:resource="#Complex37" />
- <bp:xref rdf:resource="#UnificationXref342" />
- <bp:xref rdf:resource="#UnificationXref341" />
+ <bp:xref rdf:resource="#UnificationXref344" />
+ <bp:xref rdf:resource="#UnificationXref343" />
  <bp:controlType rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ACTIVATION</bp:controlType>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">activeUnit: #Complex35</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
@@ -1207,8 +1207,8 @@
 <bp:Control rdf:ID="Control3">
  <bp:controlled rdf:resource="#BiochemicalReaction18" />
  <bp:controller rdf:resource="#Complex36" />
- <bp:xref rdf:resource="#UnificationXref328" />
- <bp:xref rdf:resource="#UnificationXref327" />
+ <bp:xref rdf:resource="#UnificationXref330" />
+ <bp:xref rdf:resource="#UnificationXref329" />
  <bp:controlType rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ACTIVATION</bp:controlType>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">activeUnit: #Complex35</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
@@ -1220,8 +1220,8 @@
 <bp:Control rdf:ID="Control9">
  <bp:controlled rdf:resource="#BiochemicalReaction45" />
  <bp:controller rdf:resource="#Complex36" />
- <bp:xref rdf:resource="#UnificationXref328" />
- <bp:xref rdf:resource="#UnificationXref327" />
+ <bp:xref rdf:resource="#UnificationXref330" />
+ <bp:xref rdf:resource="#UnificationXref329" />
  <bp:controlType rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ACTIVATION</bp:controlType>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">activeUnit: #Complex35</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
@@ -1233,7 +1233,7 @@
 <bp:Control rdf:ID="Control8">
  <bp:controlled rdf:resource="#BiochemicalReaction32" />
  <bp:controller rdf:resource="#Complex2" />
- <bp:xref rdf:resource="#UnificationXref59" />
+ <bp:xref rdf:resource="#UnificationXref61" />
  <bp:controlType rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ACTIVATION</bp:controlType>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">activeUnit: #Protein3</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
@@ -1245,7 +1245,7 @@
 <bp:Control rdf:ID="Control7">
  <bp:controlled rdf:resource="#BiochemicalReaction29" />
  <bp:controller rdf:resource="#Complex2" />
- <bp:xref rdf:resource="#UnificationXref59" />
+ <bp:xref rdf:resource="#UnificationXref61" />
  <bp:controlType rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ACTIVATION</bp:controlType>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">activeUnit: #Protein3</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
@@ -1957,7 +1957,7 @@
 </bp:SequenceModificationVocabulary>
 
 <bp:SequenceModificationVocabulary rdf:ID="SequenceModificationVocabulary3">
- <bp:xref rdf:resource="#UnificationXref416" />
+ <bp:xref rdf:resource="#UnificationXref418" />
  <bp:term rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">O4&apos;-phospho-L-tyrosine</bp:term>
 </bp:SequenceModificationVocabulary>
 
@@ -3232,8 +3232,8 @@
 </bp:Protein>
 
 <bp:Protein rdf:ID="Protein64">
- <bp:xref rdf:resource="#UnificationXref418" />
- <bp:xref rdf:resource="#UnificationXref417" />
+ <bp:xref rdf:resource="#UnificationXref419" />
+ <bp:xref rdf:resource="#UnificationXref420" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">STAT3</bp:displayName>
  <bp:cellularLocation rdf:resource="#CellularLocationVocabulary2" />
  <bp:feature rdf:resource="#ModificationFeature3" />
@@ -3399,7 +3399,7 @@
 </bp:BiochemicalReaction>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction3">
- <bp:xref rdf:resource="#UnificationXref61" />
+ <bp:xref rdf:resource="#UnificationXref59" />
  <bp:xref rdf:resource="#UnificationXref60" />
  <bp:evidence rdf:resource="#Evidence7" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CDC6 association with ORC(1-6) at replication origins</bp:displayName>
@@ -3449,7 +3449,7 @@
 </bp:PathwayStep>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction6">
- <bp:xref rdf:resource="#UnificationXref61" />
+ <bp:xref rdf:resource="#UnificationXref59" />
  <bp:xref rdf:resource="#UnificationXref60" />
  <bp:evidence rdf:resource="#Evidence11" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CDC6 association with ORC(1-6) at replication origins</bp:displayName>
@@ -4986,8 +4986,8 @@
 </bp:Pathway>
 
 <bp:Complex rdf:ID="Complex44">
- <bp:xref rdf:resource="#UnificationXref419" />
- <bp:xref rdf:resource="#UnificationXref420" />
+ <bp:xref rdf:resource="#UnificationXref421" />
+ <bp:xref rdf:resource="#UnificationXref422" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">2x(p-Y705-STAT3)</bp:displayName>
  <bp:componentStoichiometry rdf:resource="#Stoichiometry116" />
  <bp:cellularLocation rdf:resource="#CellularLocationVocabulary2" />
@@ -5779,16 +5779,16 @@
 </bp:UnificationXref>
 
 <bp:UnificationXref rdf:ID="UnificationXref61">
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=9749210</bp:comment>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">9749210</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 98</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:ID="UnificationXref60">
  <bp:idVersion rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">4</bp:idVersion>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-68688.4</bp:comment>
  <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">R-HSA-68688</bp:id>
  <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
-</bp:UnificationXref>
-
-<bp:UnificationXref rdf:ID="UnificationXref60">
- <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=68688</bp:comment>
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">68688</bp:id>
- <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 98</bp:db>
 </bp:UnificationXref>
 
 <bp:UnificationXref rdf:ID="UnificationXref135">
@@ -5824,8 +5824,8 @@
 </bp:UnificationXref>
 
 <bp:UnificationXref rdf:ID="UnificationXref59">
- <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=9749210</bp:comment>
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">9749210</bp:id>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=68688</bp:comment>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">68688</bp:id>
  <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 98</bp:db>
 </bp:UnificationXref>
 
@@ -6007,7 +6007,7 @@
 </bp:UnificationXref>
 
 <bp:ProteinReference rdf:ID="ProteinReference64">
- <bp:xref rdf:resource="#UnificationXref415" />
+ <bp:xref rdf:resource="#UnificationXref417" />
  <bp:organism rdf:resource="#BioSource1" />
  <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">STAT3</bp:name>
  <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">UniProt:P40763 STAT3</bp:name>
@@ -6266,8 +6266,8 @@
 </bp:UnificationXref>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction22">
- <bp:xref rdf:resource="#UnificationXref355" />
- <bp:xref rdf:resource="#UnificationXref356" />
+ <bp:xref rdf:resource="#UnificationXref353" />
+ <bp:xref rdf:resource="#UnificationXref354" />
  <bp:evidence rdf:resource="#Evidence30" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NOTCH1 PEST domain mutants stimulate HEY transcription</bp:displayName>
  <bp:right rdf:resource="#PhysicalEntity22" />
@@ -6291,8 +6291,8 @@
 </bp:BiochemicalReaction>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction24">
- <bp:xref rdf:resource="#UnificationXref370" />
- <bp:xref rdf:resource="#UnificationXref369" />
+ <bp:xref rdf:resource="#UnificationXref368" />
+ <bp:xref rdf:resource="#UnificationXref367" />
  <bp:evidence rdf:resource="#Evidence32" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NOTCH1 PEST domain mutants stimulate MYC transcription</bp:displayName>
  <bp:right rdf:resource="#Protein57" />
@@ -6343,8 +6343,8 @@
 </bp:ProteinReference>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction20">
- <bp:xref rdf:resource="#UnificationXref344" />
- <bp:xref rdf:resource="#UnificationXref343" />
+ <bp:xref rdf:resource="#UnificationXref342" />
+ <bp:xref rdf:resource="#UnificationXref341" />
  <bp:evidence rdf:resource="#Evidence28" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NOTCH1 PEST domain mutants stimulate HES5 transcription</bp:displayName>
  <bp:right rdf:resource="#Protein56" />
@@ -6382,7 +6382,7 @@
 </bp:ProteinReference>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction29">
- <bp:xref rdf:resource="#UnificationXref61" />
+ <bp:xref rdf:resource="#UnificationXref59" />
  <bp:xref rdf:resource="#UnificationXref60" />
  <bp:evidence rdf:resource="#Evidence45" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CDC6 association with ORC(1-6) at replication origins</bp:displayName>
@@ -6653,8 +6653,8 @@
 </bp:ProteinReference>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction18">
- <bp:xref rdf:resource="#UnificationXref330" />
- <bp:xref rdf:resource="#UnificationXref329" />
+ <bp:xref rdf:resource="#UnificationXref328" />
+ <bp:xref rdf:resource="#UnificationXref327" />
  <bp:evidence rdf:resource="#Evidence26" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NOTCH1 PEST domain mutants stimulate HES1 transcription</bp:displayName>
  <bp:right rdf:resource="#Protein55" />
@@ -7749,8 +7749,8 @@
 </bp:UnificationXref>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction45">
- <bp:xref rdf:resource="#UnificationXref330" />
- <bp:xref rdf:resource="#UnificationXref329" />
+ <bp:xref rdf:resource="#UnificationXref328" />
+ <bp:xref rdf:resource="#UnificationXref327" />
  <bp:evidence rdf:resource="#Evidence69" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NOTCH1 PEST domain mutants stimulate HES1 transcription</bp:displayName>
  <bp:right rdf:resource="#Protein55" />
@@ -7843,8 +7843,8 @@
 </bp:BiochemicalReaction>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction49">
- <bp:xref rdf:resource="#UnificationXref355" />
- <bp:xref rdf:resource="#UnificationXref356" />
+ <bp:xref rdf:resource="#UnificationXref353" />
+ <bp:xref rdf:resource="#UnificationXref354" />
  <bp:evidence rdf:resource="#Evidence73" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NOTCH1 PEST domain mutants stimulate HEY transcription</bp:displayName>
  <bp:right rdf:resource="#PhysicalEntity22" />
@@ -7855,8 +7855,8 @@
 </bp:BiochemicalReaction>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction47">
- <bp:xref rdf:resource="#UnificationXref344" />
- <bp:xref rdf:resource="#UnificationXref343" />
+ <bp:xref rdf:resource="#UnificationXref342" />
+ <bp:xref rdf:resource="#UnificationXref341" />
  <bp:evidence rdf:resource="#Evidence71" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NOTCH1 PEST domain mutants stimulate HES5 transcription</bp:displayName>
  <bp:right rdf:resource="#Protein56" />
@@ -7906,7 +7906,7 @@
 </bp:BiochemicalReaction>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction32">
- <bp:xref rdf:resource="#UnificationXref61" />
+ <bp:xref rdf:resource="#UnificationXref59" />
  <bp:xref rdf:resource="#UnificationXref60" />
  <bp:evidence rdf:resource="#Evidence51" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CDC6 association with ORC(1-6) at replication origins</bp:displayName>
@@ -8131,8 +8131,8 @@
 </bp:BiochemicalReaction>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction69">
- <bp:xref rdf:resource="#UnificationXref330" />
- <bp:xref rdf:resource="#UnificationXref329" />
+ <bp:xref rdf:resource="#UnificationXref328" />
+ <bp:xref rdf:resource="#UnificationXref327" />
  <bp:evidence rdf:resource="#Evidence108" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NOTCH1 PEST domain mutants stimulate HES1 transcription</bp:displayName>
  <bp:right rdf:resource="#Protein55" />
@@ -8238,8 +8238,8 @@
 </bp:BiochemicalReaction>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction51">
- <bp:xref rdf:resource="#UnificationXref370" />
- <bp:xref rdf:resource="#UnificationXref369" />
+ <bp:xref rdf:resource="#UnificationXref368" />
+ <bp:xref rdf:resource="#UnificationXref367" />
  <bp:evidence rdf:resource="#Evidence75" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NOTCH1 PEST domain mutants stimulate MYC transcription</bp:displayName>
  <bp:right rdf:resource="#Protein57" />
@@ -8530,8 +8530,8 @@
 </bp:BiochemicalReaction>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction71">
- <bp:xref rdf:resource="#UnificationXref344" />
- <bp:xref rdf:resource="#UnificationXref343" />
+ <bp:xref rdf:resource="#UnificationXref342" />
+ <bp:xref rdf:resource="#UnificationXref341" />
  <bp:evidence rdf:resource="#Evidence110" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NOTCH1 PEST domain mutants stimulate HES5 transcription</bp:displayName>
  <bp:right rdf:resource="#Protein56" />
@@ -8613,8 +8613,8 @@
 </bp:BiochemicalReaction>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction75">
- <bp:xref rdf:resource="#UnificationXref370" />
- <bp:xref rdf:resource="#UnificationXref369" />
+ <bp:xref rdf:resource="#UnificationXref368" />
+ <bp:xref rdf:resource="#UnificationXref367" />
  <bp:evidence rdf:resource="#Evidence114" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NOTCH1 PEST domain mutants stimulate MYC transcription</bp:displayName>
  <bp:right rdf:resource="#Protein57" />
@@ -8638,8 +8638,8 @@
 </bp:BiochemicalReaction>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction73">
- <bp:xref rdf:resource="#UnificationXref355" />
- <bp:xref rdf:resource="#UnificationXref356" />
+ <bp:xref rdf:resource="#UnificationXref353" />
+ <bp:xref rdf:resource="#UnificationXref354" />
  <bp:evidence rdf:resource="#Evidence112" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NOTCH1 PEST domain mutants stimulate HEY transcription</bp:displayName>
  <bp:right rdf:resource="#PhysicalEntity22" />
@@ -8760,8 +8760,8 @@
 </bp:BiochemicalReaction>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction99">
- <bp:xref rdf:resource="#UnificationXref330" />
- <bp:xref rdf:resource="#UnificationXref329" />
+ <bp:xref rdf:resource="#UnificationXref328" />
+ <bp:xref rdf:resource="#UnificationXref327" />
  <bp:evidence rdf:resource="#Evidence178" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NOTCH1 PEST domain mutants stimulate HES1 transcription</bp:displayName>
  <bp:right rdf:resource="#Protein55" />
@@ -8950,8 +8950,8 @@
 
 <bp:TemplateReaction rdf:ID="TemplateReaction3">
  <bp:product rdf:resource="#Protein63" />
- <bp:xref rdf:resource="#UnificationXref421" />
- <bp:xref rdf:resource="#UnificationXref422" />
+ <bp:xref rdf:resource="#UnificationXref414" />
+ <bp:xref rdf:resource="#UnificationXref413" />
  <bp:evidence rdf:resource="#Evidence131" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Expression of HSP90B1</bp:displayName>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Placeholder summation 6793982</bp:comment>
@@ -8960,8 +8960,8 @@
 
 <bp:TemplateReaction rdf:ID="TemplateReaction4">
  <bp:product rdf:resource="#Protein63" />
- <bp:xref rdf:resource="#UnificationXref421" />
- <bp:xref rdf:resource="#UnificationXref422" />
+ <bp:xref rdf:resource="#UnificationXref414" />
+ <bp:xref rdf:resource="#UnificationXref413" />
  <bp:evidence rdf:resource="#Evidence159" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Expression of HSP90B1</bp:displayName>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Placeholder summation 6793982</bp:comment>
@@ -8970,8 +8970,8 @@
 
 <bp:TemplateReaction rdf:ID="TemplateReaction1">
  <bp:product rdf:resource="#Protein63" />
- <bp:xref rdf:resource="#UnificationXref421" />
- <bp:xref rdf:resource="#UnificationXref422" />
+ <bp:xref rdf:resource="#UnificationXref414" />
+ <bp:xref rdf:resource="#UnificationXref413" />
  <bp:evidence rdf:resource="#Evidence39" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Expression of HSP90B1</bp:displayName>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Placeholder summation 6793982</bp:comment>
@@ -8980,8 +8980,8 @@
 
 <bp:TemplateReaction rdf:ID="TemplateReaction2">
  <bp:product rdf:resource="#Protein63" />
- <bp:xref rdf:resource="#UnificationXref421" />
- <bp:xref rdf:resource="#UnificationXref422" />
+ <bp:xref rdf:resource="#UnificationXref414" />
+ <bp:xref rdf:resource="#UnificationXref413" />
  <bp:evidence rdf:resource="#Evidence127" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Expression of HSP90B1</bp:displayName>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Placeholder summation 6793982</bp:comment>
@@ -9145,8 +9145,8 @@
 <bp:TemplateReactionRegulation rdf:ID="TemplateReactionRegulation1">
  <bp:controlled rdf:resource="#TemplateReaction1" />
  <bp:controller rdf:resource="#Complex44" />
- <bp:xref rdf:resource="#UnificationXref414" />
- <bp:xref rdf:resource="#UnificationXref413" />
+ <bp:xref rdf:resource="#UnificationXref416" />
+ <bp:xref rdf:resource="#UnificationXref415" />
  <bp:controlType rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ACTIVATION</bp:controlType>
  <bp:dataSource rdf:resource="#Provenance1" />
 </bp:TemplateReactionRegulation>
@@ -9176,8 +9176,8 @@
 <bp:TemplateReactionRegulation rdf:ID="TemplateReactionRegulation2">
  <bp:controlled rdf:resource="#TemplateReaction2" />
  <bp:controller rdf:resource="#Complex44" />
- <bp:xref rdf:resource="#UnificationXref414" />
- <bp:xref rdf:resource="#UnificationXref413" />
+ <bp:xref rdf:resource="#UnificationXref416" />
+ <bp:xref rdf:resource="#UnificationXref415" />
  <bp:controlType rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ACTIVATION</bp:controlType>
  <bp:dataSource rdf:resource="#Provenance1" />
 </bp:TemplateReactionRegulation>
@@ -9192,8 +9192,8 @@
 <bp:TemplateReactionRegulation rdf:ID="TemplateReactionRegulation3">
  <bp:controlled rdf:resource="#TemplateReaction3" />
  <bp:controller rdf:resource="#Complex44" />
- <bp:xref rdf:resource="#UnificationXref414" />
- <bp:xref rdf:resource="#UnificationXref413" />
+ <bp:xref rdf:resource="#UnificationXref416" />
+ <bp:xref rdf:resource="#UnificationXref415" />
  <bp:controlType rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ACTIVATION</bp:controlType>
  <bp:dataSource rdf:resource="#Provenance1" />
 </bp:TemplateReactionRegulation>
@@ -9207,8 +9207,8 @@
 <bp:TemplateReactionRegulation rdf:ID="TemplateReactionRegulation4">
  <bp:controlled rdf:resource="#TemplateReaction4" />
  <bp:controller rdf:resource="#Complex44" />
- <bp:xref rdf:resource="#UnificationXref414" />
- <bp:xref rdf:resource="#UnificationXref413" />
+ <bp:xref rdf:resource="#UnificationXref416" />
+ <bp:xref rdf:resource="#UnificationXref415" />
  <bp:controlType rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ACTIVATION</bp:controlType>
  <bp:dataSource rdf:resource="#Provenance1" />
 </bp:TemplateReactionRegulation>
@@ -9224,8 +9224,8 @@
 </bp:UnificationXref>
 
 <bp:UnificationXref rdf:ID="UnificationXref421">
- <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=6790038</bp:comment>
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">6790038</bp:id>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=1112525</bp:comment>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">1112525</bp:id>
  <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 98</bp:db>
 </bp:UnificationXref>
 
@@ -9234,9 +9234,9 @@
 </bp:PathwayStep>
 
 <bp:UnificationXref rdf:ID="UnificationXref420">
- <bp:idVersion rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">3</bp:idVersion>
- <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-1112525.3</bp:comment>
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">R-HSA-1112525</bp:id>
+ <bp:idVersion rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">1</bp:idVersion>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-1112554.1</bp:comment>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">R-HSA-1112554</bp:id>
  <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
 </bp:UnificationXref>
 
@@ -9246,9 +9246,9 @@
 </bp:UnificationXref>
 
 <bp:UnificationXref rdf:ID="UnificationXref422">
- <bp:idVersion rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">4</bp:idVersion>
- <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-6790038.4</bp:comment>
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">R-HSA-6790038</bp:id>
+ <bp:idVersion rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">3</bp:idVersion>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-1112525.3</bp:comment>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">R-HSA-1112525</bp:id>
  <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
 </bp:UnificationXref>
 
@@ -9517,16 +9517,13 @@
 </bp:PathwayStep>
 
 <bp:UnificationXref rdf:ID="UnificationXref418">
- <bp:idVersion rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">1</bp:idVersion>
- <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-1112554.1</bp:comment>
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">R-HSA-1112554</bp:id>
- <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MOD:00048</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MOD</bp:db>
 </bp:UnificationXref>
 
 <bp:UnificationXref rdf:ID="UnificationXref417">
- <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=1112554</bp:comment>
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">1112554</bp:id>
- <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 98</bp:db>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">P40763</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">UniProt</bp:db>
 </bp:UnificationXref>
 
 <bp:Stoichiometry rdf:ID="Stoichiometry2">
@@ -9540,15 +9537,15 @@
 </bp:Stoichiometry>
 
 <bp:UnificationXref rdf:ID="UnificationXref419">
- <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=1112525</bp:comment>
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">1112525</bp:id>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=1112554</bp:comment>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">1112554</bp:id>
  <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 98</bp:db>
 </bp:UnificationXref>
 
 <bp:UnificationXref rdf:ID="UnificationXref414">
- <bp:idVersion rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">1</bp:idVersion>
- <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-6797255.1</bp:comment>
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">R-HSA-6797255</bp:id>
+ <bp:idVersion rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">4</bp:idVersion>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-6790038.4</bp:comment>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">R-HSA-6790038</bp:id>
  <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
 </bp:UnificationXref>
 
@@ -9557,8 +9554,8 @@
 </bp:PathwayStep>
 
 <bp:UnificationXref rdf:ID="UnificationXref413">
- <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=6797255</bp:comment>
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">6797255</bp:id>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=6790038</bp:comment>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">6790038</bp:id>
  <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 98</bp:db>
 </bp:UnificationXref>
 
@@ -9567,13 +9564,16 @@
 </bp:PathwayStep>
 
 <bp:UnificationXref rdf:ID="UnificationXref416">
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MOD:00048</bp:id>
- <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MOD</bp:db>
+ <bp:idVersion rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">1</bp:idVersion>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-6797255.1</bp:comment>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">R-HSA-6797255</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
 </bp:UnificationXref>
 
 <bp:UnificationXref rdf:ID="UnificationXref415">
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">P40763</bp:id>
- <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">UniProt</bp:db>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=6797255</bp:comment>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">6797255</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 98</bp:db>
 </bp:UnificationXref>
 
 <bp:Stoichiometry rdf:ID="Stoichiometry8">
@@ -11103,15 +11103,15 @@
 </bp:UnificationXref>
 
 <bp:UnificationXref rdf:ID="UnificationXref355">
- <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=2220981</bp:comment>
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">2220981</bp:id>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=2220973</bp:comment>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">2220973</bp:id>
  <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 98</bp:db>
 </bp:UnificationXref>
 
 <bp:UnificationXref rdf:ID="UnificationXref354">
- <bp:idVersion rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">1</bp:idVersion>
- <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-2220973.1</bp:comment>
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">R-HSA-2220973</bp:id>
+ <bp:idVersion rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">4</bp:idVersion>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-2220981.4</bp:comment>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">R-HSA-2220981</bp:id>
  <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
 </bp:UnificationXref>
 
@@ -11121,9 +11121,9 @@
 </bp:UnificationXref>
 
 <bp:UnificationXref rdf:ID="UnificationXref356">
- <bp:idVersion rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">4</bp:idVersion>
- <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-2220981.4</bp:comment>
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">R-HSA-2220981</bp:id>
+ <bp:idVersion rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">1</bp:idVersion>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-2220973.1</bp:comment>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">R-HSA-2220973</bp:id>
  <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
 </bp:UnificationXref>
 
@@ -11141,8 +11141,8 @@
 </bp:UnificationXref>
 
 <bp:UnificationXref rdf:ID="UnificationXref353">
- <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=2220973</bp:comment>
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">2220973</bp:id>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=2220981</bp:comment>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">2220981</bp:id>
  <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 98</bp:db>
 </bp:UnificationXref>
 
@@ -11173,15 +11173,15 @@
 </bp:UnificationXref>
 
 <bp:UnificationXref rdf:ID="UnificationXref344">
- <bp:idVersion rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">4</bp:idVersion>
- <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-2220966.4</bp:comment>
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">R-HSA-2220966</bp:id>
+ <bp:idVersion rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">1</bp:idVersion>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-2220983.1</bp:comment>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">R-HSA-2220983</bp:id>
  <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
 </bp:UnificationXref>
 
 <bp:UnificationXref rdf:ID="UnificationXref343">
- <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=2220966</bp:comment>
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">2220966</bp:id>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=2220983</bp:comment>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">2220983</bp:id>
  <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 98</bp:db>
 </bp:UnificationXref>
 
@@ -11298,15 +11298,15 @@
 </bp:UnificationXref>
 
 <bp:UnificationXref rdf:ID="UnificationXref370">
- <bp:idVersion rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">4</bp:idVersion>
- <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-2220985.4</bp:comment>
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">R-HSA-2220985</bp:id>
+ <bp:idVersion rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">1</bp:idVersion>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-2220974.1</bp:comment>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">R-HSA-2220974</bp:id>
  <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
 </bp:UnificationXref>
 
 <bp:UnificationXref rdf:ID="UnificationXref369">
- <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=2220985</bp:comment>
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">2220985</bp:id>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=2220974</bp:comment>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">2220974</bp:id>
  <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 98</bp:db>
 </bp:UnificationXref>
 
@@ -11324,15 +11324,15 @@
 </bp:UnificationXref>
 
 <bp:UnificationXref rdf:ID="UnificationXref368">
- <bp:idVersion rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">1</bp:idVersion>
- <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-2220974.1</bp:comment>
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">R-HSA-2220974</bp:id>
+ <bp:idVersion rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">4</bp:idVersion>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-2220985.4</bp:comment>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">R-HSA-2220985</bp:id>
  <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
 </bp:UnificationXref>
 
 <bp:UnificationXref rdf:ID="UnificationXref367">
- <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=2220974</bp:comment>
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">2220974</bp:id>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=2220985</bp:comment>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">2220985</bp:id>
  <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 98</bp:db>
 </bp:UnificationXref>
 
@@ -11354,8 +11354,8 @@
 <bp:Control rdf:ID="Control11">
  <bp:controlled rdf:resource="#BiochemicalReaction49" />
  <bp:controller rdf:resource="#Complex38" />
- <bp:xref rdf:resource="#UnificationXref353" />
- <bp:xref rdf:resource="#UnificationXref354" />
+ <bp:xref rdf:resource="#UnificationXref355" />
+ <bp:xref rdf:resource="#UnificationXref356" />
  <bp:controlType rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ACTIVATION</bp:controlType>
  <bp:dataSource rdf:resource="#Provenance1" />
 </bp:Control>
@@ -11363,8 +11363,8 @@
 <bp:Control rdf:ID="Control10">
  <bp:controlled rdf:resource="#BiochemicalReaction47" />
  <bp:controller rdf:resource="#Complex37" />
- <bp:xref rdf:resource="#UnificationXref342" />
- <bp:xref rdf:resource="#UnificationXref341" />
+ <bp:xref rdf:resource="#UnificationXref344" />
+ <bp:xref rdf:resource="#UnificationXref343" />
  <bp:controlType rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ACTIVATION</bp:controlType>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">activeUnit: #Complex35</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
@@ -11373,8 +11373,8 @@
 <bp:Control rdf:ID="Control17">
  <bp:controlled rdf:resource="#BiochemicalReaction99" />
  <bp:controller rdf:resource="#Complex36" />
- <bp:xref rdf:resource="#UnificationXref328" />
- <bp:xref rdf:resource="#UnificationXref327" />
+ <bp:xref rdf:resource="#UnificationXref330" />
+ <bp:xref rdf:resource="#UnificationXref329" />
  <bp:controlType rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ACTIVATION</bp:controlType>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">activeUnit: #Complex35</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
@@ -11383,8 +11383,8 @@
 <bp:Control rdf:ID="Control16">
  <bp:controlled rdf:resource="#BiochemicalReaction75" />
  <bp:controller rdf:resource="#Complex39" />
- <bp:xref rdf:resource="#UnificationXref368" />
- <bp:xref rdf:resource="#UnificationXref367" />
+ <bp:xref rdf:resource="#UnificationXref370" />
+ <bp:xref rdf:resource="#UnificationXref369" />
  <bp:controlType rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ACTIVATION</bp:controlType>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">activeUnit: #Complex35</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
@@ -11393,8 +11393,8 @@
 <bp:Control rdf:ID="Control19">
  <bp:controlled rdf:resource="#BiochemicalReaction103" />
  <bp:controller rdf:resource="#Complex38" />
- <bp:xref rdf:resource="#UnificationXref353" />
- <bp:xref rdf:resource="#UnificationXref354" />
+ <bp:xref rdf:resource="#UnificationXref355" />
+ <bp:xref rdf:resource="#UnificationXref356" />
  <bp:controlType rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ACTIVATION</bp:controlType>
  <bp:dataSource rdf:resource="#Provenance1" />
 </bp:Control>
@@ -11402,8 +11402,8 @@
 <bp:Control rdf:ID="Control18">
  <bp:controlled rdf:resource="#BiochemicalReaction101" />
  <bp:controller rdf:resource="#Complex37" />
- <bp:xref rdf:resource="#UnificationXref342" />
- <bp:xref rdf:resource="#UnificationXref341" />
+ <bp:xref rdf:resource="#UnificationXref344" />
+ <bp:xref rdf:resource="#UnificationXref343" />
  <bp:controlType rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ACTIVATION</bp:controlType>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">activeUnit: #Complex35</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
@@ -11419,8 +11419,8 @@
 <bp:Control rdf:ID="Control13">
  <bp:controlled rdf:resource="#BiochemicalReaction69" />
  <bp:controller rdf:resource="#Complex36" />
- <bp:xref rdf:resource="#UnificationXref328" />
- <bp:xref rdf:resource="#UnificationXref327" />
+ <bp:xref rdf:resource="#UnificationXref330" />
+ <bp:xref rdf:resource="#UnificationXref329" />
  <bp:controlType rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ACTIVATION</bp:controlType>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">activeUnit: #Complex35</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
@@ -11435,8 +11435,8 @@
 <bp:Control rdf:ID="Control12">
  <bp:controlled rdf:resource="#BiochemicalReaction51" />
  <bp:controller rdf:resource="#Complex39" />
- <bp:xref rdf:resource="#UnificationXref368" />
- <bp:xref rdf:resource="#UnificationXref367" />
+ <bp:xref rdf:resource="#UnificationXref370" />
+ <bp:xref rdf:resource="#UnificationXref369" />
  <bp:controlType rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ACTIVATION</bp:controlType>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">activeUnit: #Complex35</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
@@ -11445,8 +11445,8 @@
 <bp:Control rdf:ID="Control15">
  <bp:controlled rdf:resource="#BiochemicalReaction73" />
  <bp:controller rdf:resource="#Complex38" />
- <bp:xref rdf:resource="#UnificationXref353" />
- <bp:xref rdf:resource="#UnificationXref354" />
+ <bp:xref rdf:resource="#UnificationXref355" />
+ <bp:xref rdf:resource="#UnificationXref356" />
  <bp:controlType rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ACTIVATION</bp:controlType>
  <bp:dataSource rdf:resource="#Provenance1" />
 </bp:Control>
@@ -11454,8 +11454,8 @@
 <bp:Control rdf:ID="Control14">
  <bp:controlled rdf:resource="#BiochemicalReaction71" />
  <bp:controller rdf:resource="#Complex37" />
- <bp:xref rdf:resource="#UnificationXref342" />
- <bp:xref rdf:resource="#UnificationXref341" />
+ <bp:xref rdf:resource="#UnificationXref344" />
+ <bp:xref rdf:resource="#UnificationXref343" />
  <bp:controlType rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ACTIVATION</bp:controlType>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">activeUnit: #Complex35</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
@@ -11546,8 +11546,8 @@
 <bp:Control rdf:ID="Control20">
  <bp:controlled rdf:resource="#BiochemicalReaction105" />
  <bp:controller rdf:resource="#Complex39" />
- <bp:xref rdf:resource="#UnificationXref368" />
- <bp:xref rdf:resource="#UnificationXref367" />
+ <bp:xref rdf:resource="#UnificationXref370" />
+ <bp:xref rdf:resource="#UnificationXref369" />
  <bp:controlType rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ACTIVATION</bp:controlType>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">activeUnit: #Complex35</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
@@ -11556,8 +11556,8 @@
 <bp:Control rdf:ID="Control22">
  <bp:controlled rdf:resource="#BiochemicalReaction122" />
  <bp:controller rdf:resource="#Complex37" />
- <bp:xref rdf:resource="#UnificationXref342" />
- <bp:xref rdf:resource="#UnificationXref341" />
+ <bp:xref rdf:resource="#UnificationXref344" />
+ <bp:xref rdf:resource="#UnificationXref343" />
  <bp:controlType rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ACTIVATION</bp:controlType>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">activeUnit: #Complex35</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
@@ -11566,8 +11566,8 @@
 <bp:Control rdf:ID="Control21">
  <bp:controlled rdf:resource="#BiochemicalReaction120" />
  <bp:controller rdf:resource="#Complex36" />
- <bp:xref rdf:resource="#UnificationXref328" />
- <bp:xref rdf:resource="#UnificationXref327" />
+ <bp:xref rdf:resource="#UnificationXref330" />
+ <bp:xref rdf:resource="#UnificationXref329" />
  <bp:controlType rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ACTIVATION</bp:controlType>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">activeUnit: #Complex35</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
@@ -11582,8 +11582,8 @@
 <bp:Control rdf:ID="Control24">
  <bp:controlled rdf:resource="#BiochemicalReaction126" />
  <bp:controller rdf:resource="#Complex39" />
- <bp:xref rdf:resource="#UnificationXref368" />
- <bp:xref rdf:resource="#UnificationXref367" />
+ <bp:xref rdf:resource="#UnificationXref370" />
+ <bp:xref rdf:resource="#UnificationXref369" />
  <bp:controlType rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ACTIVATION</bp:controlType>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">activeUnit: #Complex35</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
@@ -11597,8 +11597,8 @@
 <bp:Control rdf:ID="Control23">
  <bp:controlled rdf:resource="#BiochemicalReaction124" />
  <bp:controller rdf:resource="#Complex38" />
- <bp:xref rdf:resource="#UnificationXref353" />
- <bp:xref rdf:resource="#UnificationXref354" />
+ <bp:xref rdf:resource="#UnificationXref355" />
+ <bp:xref rdf:resource="#UnificationXref356" />
  <bp:controlType rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ACTIVATION</bp:controlType>
  <bp:dataSource rdf:resource="#Provenance1" />
 </bp:Control>
@@ -11673,15 +11673,15 @@
 </bp:UnificationXref>
 
 <bp:UnificationXref rdf:ID="UnificationXref342">
- <bp:idVersion rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">1</bp:idVersion>
- <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-2220983.1</bp:comment>
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">R-HSA-2220983</bp:id>
+ <bp:idVersion rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">4</bp:idVersion>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-2220966.4</bp:comment>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">R-HSA-2220966</bp:id>
  <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
 </bp:UnificationXref>
 
 <bp:UnificationXref rdf:ID="UnificationXref341">
- <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=2220983</bp:comment>
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">2220983</bp:id>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=2220966</bp:comment>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">2220966</bp:id>
  <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 98</bp:db>
 </bp:UnificationXref>
 
@@ -11741,15 +11741,15 @@
 </bp:UnificationXref>
 
 <bp:UnificationXref rdf:ID="UnificationXref330">
- <bp:idVersion rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">4</bp:idVersion>
- <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-2220979.4</bp:comment>
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">R-HSA-2220979</bp:id>
+ <bp:idVersion rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">1</bp:idVersion>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-2220991.1</bp:comment>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">R-HSA-2220991</bp:id>
  <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
 </bp:UnificationXref>
 
 <bp:UnificationXref rdf:ID="UnificationXref329">
- <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=2220979</bp:comment>
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">2220979</bp:id>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=2220991</bp:comment>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">2220991</bp:id>
  <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 98</bp:db>
 </bp:UnificationXref>
 
@@ -11767,15 +11767,15 @@
 </bp:UnificationXref>
 
 <bp:UnificationXref rdf:ID="UnificationXref328">
- <bp:idVersion rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">1</bp:idVersion>
- <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-2220991.1</bp:comment>
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">R-HSA-2220991</bp:id>
+ <bp:idVersion rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">4</bp:idVersion>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-HSA-2220979.4</bp:comment>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">R-HSA-2220979</bp:id>
  <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
 </bp:UnificationXref>
 
 <bp:UnificationXref rdf:ID="UnificationXref327">
- <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=2220991</bp:comment>
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">2220991</bp:id>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=2220979</bp:comment>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">2220979</bp:id>
  <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 98</bp:db>
 </bp:UnificationXref>
 

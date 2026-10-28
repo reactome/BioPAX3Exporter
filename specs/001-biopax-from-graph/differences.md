@@ -62,10 +62,13 @@ Measured 28 Oct 2026 on _P. falciparum_ from a private copy of release 98's grap
   | Control: `controller`                                             | 67       | 4     |
 
 - **What remains are sets** (T017): each remaining controller or active unit is a set, which the release writes as the class its members share (a Protein, a Complex) and this exporter still writes as a PhysicalEntity; or the catalysis names one, so its key, made from its content, differs.
-- **The converted side has more:** 2,242 catalyses against 691, because a reaction is still written once for each pathway that reaches it, its catalyses with it (T015).
+- **The converted side has more:** 2,933 catalyses against 691, because a reaction is still written once for each pathway that reaches it, its catalyses with it (T015).
+- **A regulation listed twice on a reaction is written once.** graph-core lists a related object once for each count of its relationship's stoichiometry, and at release 98 eleven `regulatedBy` links have a stoichiometry of 2 (the one Requirement of R-xxx-6814559, inferred into eleven species, none of them human or _P. falciparum_). The release's converter gathers a reaction's regulations into a set, so each is one Control; the exporter takes them once each too (from #57's review).
 - **A pathway is never regulated in the graph:** graph-core's `Regulation` regulates reactions only. The release's converter would put a pathway's regulations in its step; there are none to put.
 - **A catalyst activity regulated as an entity** (the converter's Modulation, "not supported in the new data model after release 63"): the graph has no such link, so none is written, as none is published.
 - **The active unit's comment names an rdf:ID** (`activeUnit: #Protein12`), numbered as each file is written. `ci/compare.py` now reads it as a reference to the entity it names, so the comparison sees the entity, not the number.
+
+## The validator's baseline
 
 The BioPAX validator 6.0.0 (`--profile=notstrict`), read by `ci/validate.py`, on the published files of release 97. A written file may have no ERROR its published counterpart lacks (SC-003); warnings are recorded, not held.
 

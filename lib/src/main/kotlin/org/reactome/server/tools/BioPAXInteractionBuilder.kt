@@ -73,10 +73,12 @@ class BioPAXInteractionBuilder(
             }
             event.catalystActivity?.forEach { addCatalysis(it, bpReaction) }
         }
-        // Every kind of reaction, a TemplateReaction too, has its regulations.
-        event.regulatedBy?.forEach { addControl(it, bpReaction) }
         BioPAXXrefBuilder(context).addReactomeIds(event, bpReaction)
         BioPAX3BasicElementsBuilder(event, context, bpReaction).addReactomeDataSource()
+        // Every kind of reaction, a TemplateReaction too, has its regulations, each once:
+        // graph-core lists one twice where its link's stoichiometry is 2, and the release's
+        // converter gathers them into a set.
+        event.regulatedBy?.distinct()?.forEach { addControl(it, bpReaction) }
 
         // Evidence / datasource etc.
         BioPAX3BasicElementsBuilder(event, context, bpReaction).addEvidence()
