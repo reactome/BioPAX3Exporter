@@ -8,6 +8,7 @@ import org.biopax.paxtools.model.level3.XReferrable
 import org.reactome.server.graph.domain.model.DatabaseIdentifier
 import org.reactome.server.graph.domain.model.DatabaseObject
 import org.reactome.server.graph.domain.model.ExternalOntology
+import org.reactome.server.graph.domain.model.GO_Term
 import org.reactome.server.graph.domain.model.ReferenceEntity
 import org.reactome.server.graph.domain.model.ReferenceIsoform
 import org.reactome.server.graph.domain.model.Taxon
@@ -34,16 +35,56 @@ class BioPAXXrefBuilder(
         stableIdXref(instance)?.let { bpElement.addXref(it) }
     }
 
+    /**
+     * A catalyst activity's ids (T013): its database id as a RelationshipXref of type
+     * "Same Catalyst Activity", as the release writes it, and its stable id where it has one.
+     */
+    fun addCatalystActivityIds(
+        activity: DatabaseObject,
+        bpElement: XReferrable,
+    ) {
+        val dbId = activity.dbId
+        bpElement.addXref(
+            context.once("databaseIdRelationship:$dbId") {
+                model.addNew(RelationshipXref::class.java, context.nextId("RelationshipXref")).apply {
+                    db = "Reactome Database ID Release ${context.release}"
+                    id = dbId.toString()
+                    addComment(databaseIdComment(dbId))
+                    relationshipType = relationshipType(SAME_CATALYST_ACTIVITY)
+                }
+            },
+        )
+        stableIdXref(activity)?.let { bpElement.addXref(it) }
+    }
+
+    /**
+     * A GO term as a RelationshipXref, once per term: its accession with "GO:", under
+     * "GENE ONTOLOGY", of the given type (a catalysis's molecular function, T013; an
+     * event's biological process, T014).
+     */
+    fun goTerm(
+        term: GO_Term,
+        type: String,
+    ): RelationshipXref =
+        context.once("goTerm:${term.dbId}") {
+            model.addNew(RelationshipXref::class.java, context.nextId("RelationshipXref")).apply {
+                db = "GENE ONTOLOGY"
+                term.accession?.let { id = if (it.startsWith("GO:")) it else "GO:$it" }
+                relationshipType = relationshipType(type)
+            }
+        }
+
+    private fun databaseIdComment(dbId: Long) =
+        "Database identifier. Use this URL to connect to the web page of this instance in Reactome: " +
+            "http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&ID=$dbId"
+
     private fun databaseIdXref(instance: DatabaseObject): UnificationXref {
         val dbId = instance.dbId
         return context.once("databaseId:$dbId") {
             model.addNew(UnificationXref::class.java, context.nextId("UnificationXref")).apply {
                 db = "Reactome Database ID Release ${context.release}"
                 id = dbId.toString()
-                addComment(
-                    "Database identifier. Use this URL to connect to the web page of this instance in Reactome: " +
-                        "http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&ID=$dbId",
-                )
+                addComment(databaseIdComment(dbId))
             }
         }
     }
@@ -159,6 +200,7 @@ class BioPAXXrefBuilder(
         const val ADDITIONAL_INFORMATION = "additional information"
         const val GO_BIOLOGICAL_PROCESS = "gene ontology term for cellular process"
         const val GO_MOLECULAR_FUNCTION = "gene ontology term for cellular function"
+        const val SAME_CATALYST_ACTIVITY = "Same Catalyst Activity"
 
         // The release's converter's PSI-MI terms for its relationship types.
         private val MI_TERMS =

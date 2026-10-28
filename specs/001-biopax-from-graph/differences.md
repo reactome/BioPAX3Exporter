@@ -45,6 +45,29 @@ Measured 28 Oct 2026 on _P. falciparum_ from a private copy of release 98's grap
 - **A TemplateReaction's product is not also a participant.** Paxtools 4.3.1 adds a product to an interaction's participants and writes both, though `product` is itself a participant by BioPAX's definition. The release writes the product alone, so the exporter removes the extra participant.
 - **EC numbers in release 98.** Release 98's published human file has 3,594 `eCNumber` values, against release 97's 20,384 (research R1). The graph gives exactly those, by this task's rule (from #42's review): 3,597 distinct reaction and EC number pairs in human reactions a pathway reaches, less 4 on Degradations, which take none, plus one value the release writes twice (R-HSA-9698988's two catalysts share 3.4.21.1; the same triple, written once here). The data's difference in EC numbers (reactome/graph-importer#9), the largest at release 97, is gone at release 98; the full run (T020) confirms it on every species.
 
+## Catalyses and regulations (T013)
+
+Measured 28 Oct 2026 on _P. falciparum_ from a private copy of release 98's graph, against release 98's published file.
+
+- **The published file's catalyses and controls are matched.** At the root, before and after this task, the published side's triples that the converted file lacks:
+
+  | Triples                                                           | Before   | After |
+  | ----------------------------------------------------------------- | -------- | ----- |
+  | Catalysis: `controlType`, `dataSource`                            | 691 each | 0     |
+  | Catalysis: `xref` (molecular function, and the activity's own id) | 1,382    | 0     |
+  | Catalysis: `controller`                                           | 691      | 156   |
+  | Catalysis: active units                                           | 134      | 28    |
+  | Control: `controlType`, `controlled`, `dataSource`                | 67 each  | 0     |
+  | Control: `xref`                                                   | 106      | 0     |
+  | Control: `controller`                                             | 67       | 4     |
+
+- **What remains are sets** (T017): each remaining controller or active unit is a set, which the release writes as the class its members share (a Protein, a Complex) and this exporter still writes as a PhysicalEntity; or the catalysis names one, so its key, made from its content, differs.
+- **The converted side has more:** 2,933 catalyses against 691, because a reaction is still written once for each pathway that reaches it, its catalyses with it (T015).
+- **A regulation listed twice on a reaction is written once.** graph-core lists a related object once for each count of its relationship's stoichiometry, and at release 98 eleven `regulatedBy` links have a stoichiometry of 2 (the one Requirement of R-xxx-6814559, inferred into eleven species, none of them human or _P. falciparum_). The release's converter gathers a reaction's regulations into a set, so each is one Control; the exporter takes them once each too (from #57's review).
+- **A pathway is never regulated in the graph:** graph-core's `Regulation` regulates reactions only. The release's converter would put a pathway's regulations in its step; there are none to put.
+- **A catalyst activity regulated as an entity** (the converter's Modulation, "not supported in the new data model after release 63"): the graph has no such link, so none is written, as none is published.
+- **The active unit's comment names an rdf:ID** (`activeUnit: #Protein12`), numbered as each file is written. `ci/compare.py` now reads it as a reference to the entity it names, so the comparison sees the entity, not the number.
+
 ## The validator's baseline
 
 The BioPAX validator 6.0.0 (`--profile=notstrict`), read by `ci/validate.py`, on the published files of release 97. A written file may have no ERROR its published counterpart lacks (SC-003); warnings are recorded, not held.

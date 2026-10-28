@@ -148,6 +148,23 @@ class CompareTest(unittest.TestCase):
         )
         return sum(only_one.values()), sum(only_other.values())
 
+    def test_an_active_unit_is_compared_by_the_entity_it_names(self):
+        def catalysis(unit):
+            return (
+                '<bp:Catalysis rdf:ID="K3"><bp:controlled rdf:resource="#R1" />'
+                f'<bp:controller rdf:resource="#C1" /><bp:comment>activeUnit: #{unit}</bp:comment></bp:Catalysis>'
+            )
+
+        one = BASE + [catalysis("P1")]
+        # The same entity under another rdf:ID, as another writer numbers it
+        renamed = [
+            part.replace('rdf:ID="P1"', 'rdf:ID="Q1"').replace('"#P1"', '"#Q1"') for part in BASE
+        ] + [catalysis("Q1")]
+        self.assertEqual(self.counts(one, renamed), (0, 0))
+        # Another entity named: a difference. A catalysis has no database-id UnificationXref,
+        # so it is keyed by its content, and all three of its triples differ.
+        self.assertEqual(self.counts(one, BASE + [catalysis("P2")]), (3, 3))
+
     def test_every_person_prefix_is_hashed(self):
         for comment in (
             "Authored: N",
