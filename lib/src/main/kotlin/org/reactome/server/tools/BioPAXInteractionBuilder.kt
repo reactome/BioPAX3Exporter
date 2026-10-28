@@ -3,13 +3,8 @@
 package org.reactome.server.tools
 
 import org.biopax.paxtools.model.level3.*
-import org.reactome.server.graph.domain.model.EntityWithAccessionedSequence
 import org.reactome.server.graph.domain.model.ReactionLikeEvent
-import org.reactome.server.graph.domain.model.SimpleEntity
 import org.reactome.server.tools.BioPAX3ReferenceUtils
-import java.util.HashMap
-import org.reactome.server.graph.domain.model.Complex as RComplex
-import org.reactome.server.graph.domain.model.PhysicalEntity as RPhysicalEntity
 
 /**
  * Builds a BioPAX BiochemicalReaction for a given Reactome ReactionLikeEvent,
@@ -22,8 +17,8 @@ class BioPAXInteractionBuilder(
 ) {
     private val thisModel = context?.model
 
-    /** cache so that identical PhysicalEntities are reused within a reaction tree */
-    private val peCache: MutableMap<Long, org.biopax.paxtools.model.level3.PhysicalEntity> = HashMap()
+    // Each entity once per file, as the release writes it (T011).
+    private val entities = context?.let { BioPAXPhysicalEntityBuilder(it) }
 
     // ─────────────────────────────────────────────────────────────────────────────
     //  Public entry point
@@ -70,47 +65,13 @@ class BioPAXInteractionBuilder(
     ) {
         // LEFT = input
         event.input?.forEach { pe ->
-            val bpPe = getOrCreatePhysicalEntity(pe)
-            rxn.addLeft(bpPe)
+            rxn.addLeft(entities!!.physicalEntity(pe))
         }
 
         // RIGHT = output
         event.output?.forEach { pe ->
-            val bpPe = getOrCreatePhysicalEntity(pe)
-            rxn.addRight(bpPe)
+            rxn.addRight(entities!!.physicalEntity(pe))
         }
-    }
-
-    /** create/reuse BioPAX PhysicalEntity corresponding to a Reactome PhysicalEntity */
-    private fun getOrCreatePhysicalEntity(pe: RPhysicalEntity): org.biopax.paxtools.model.level3.PhysicalEntity {
-        peCache[pe.dbId]?.let { return it }
-
-        val bpPe: org.biopax.paxtools.model.level3.PhysicalEntity =
-            when (pe) {
-                is SimpleEntity ->
-                    thisModel!!.addNew(
-                        SmallMolecule::class.java,
-                        context!!.nextId("SmallMolecule"),
-                    )
-                is EntityWithAccessionedSequence ->
-                    thisModel!!.addNew(
-                        Protein::class.java,
-                        context!!.nextId("Protein"),
-                    )
-                is RComplex ->
-                    thisModel!!.addNew(
-                        org.biopax.paxtools.model.level3.Complex::class.java,
-                        context!!.nextId("Complex"),
-                    )
-                else ->
-                    thisModel!!.addNew(
-                        org.biopax.paxtools.model.level3.PhysicalEntity::class.java,
-                        context!!.nextId("PhysicalEntity"),
-                    )
-            }
-        bpPe.displayName = pe.displayName
-        peCache[pe.dbId] = bpPe
-        return bpPe
     }
 
     private fun addBPCatalyst(): Catalysis? =

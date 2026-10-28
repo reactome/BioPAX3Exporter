@@ -127,7 +127,9 @@ for number, line in enumerate(open(sys.argv[1], encoding="utf-8"), 1):
             problems.append(f"line {number}: a summation's {key} that is not a placeholder")
     if PUBLICATIONS & labels and not re.fullmatch(r"Placeholder publication \d+", str(props.get("displayName"))):
         problems.append(f"line {number}: a publication's display name that is not a placeholder")
-    if props.get("comment", "Placeholder comment") != "Placeholder comment":
+    comment = props.get("comment", "Placeholder comment")
+    if comment != "Placeholder comment" and not (
+            isinstance(comment, list) and comment and set(comment) == {"Placeholder comment"}):
         problems.append(f"line {number}: a comment that is not a placeholder")
 if not people:
     problems.append("no people to check")

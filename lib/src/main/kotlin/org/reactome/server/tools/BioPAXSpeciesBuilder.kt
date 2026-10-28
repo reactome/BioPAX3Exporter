@@ -1,6 +1,5 @@
 package org.reactome.server.tools
 
-import org.biopax.paxtools.model.level3.BioSource
 import org.reactome.server.graph.domain.model.Pathway
 import org.reactome.server.graph.domain.model.Species
 
@@ -15,12 +14,8 @@ class BioPAXSpeciesBuilder(
 
     fun addReactomeSpecies() {
         // 1. BioSource *****************************************************
-        val bioSource =
-            model.addNew(
-                BioSource::class.java,
-                context.nextId("BioSource"),
-            )
-        bioSource.name = setOf(species.displayName)
+        // The one BioSource per taxon, which pathways and entity references share (T011)
+        BioPAXXrefBuilder(context).bioSource(species)
         val sp = species
 
         // 2. Reactome dataSource *******************************************

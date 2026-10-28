@@ -17,9 +17,11 @@ classes read, in their direction, each node with its full label set and every pr
 - Entities are taken with their components, members, candidates, repeated units,
   modifications and reference entities, and those with their cross-references.
 - Some nodes are read only for themselves and taken as leaves, without their own
-  relationships: species, compartments, GO terms, diseases, PSI-MOD terms, reference
-  databases, people, and events outside the fixture that a taken one names (a
-  preceding event, a normal reaction, a source of an inference).
+  relationships: compartments, GO terms, diseases, reference databases, people, and
+  events outside the fixture that a taken one names (a preceding event, a normal
+  reaction, a source of an inference). Species and PSI-MOD terms are taken with their
+  cross-references and databases, which a BioSource and a modification type write
+  (T011); nothing else of theirs is followed.
 - The `DBInfo` node is taken as it is.
 
 People's names never leave the graph (constitution VI): every `Person` keeps only its
@@ -62,8 +64,7 @@ INCOMING = {
     "inferredTo": ("Event", "PhysicalEntity"),
 }
 # Read only for themselves: taken as leaves.
-LEAVES = {"Person", "Species", "Taxon", "GO_Term", "Disease", "ReferenceDatabase", "Compartment",
-          "PsiMod", "ExternalOntology"}
+LEAVES = {"Person", "GO_Term", "Disease", "ReferenceDatabase", "Compartment"}
 # Relationships whose far end is taken as a leaf whatever it is: an event or entity
 # outside the fixture that a taken one names.
 TO_LEAF = {"precedingEvent", "normalReaction", "inferredTo"}
@@ -130,8 +131,11 @@ def anonymise(labels, props, people):
                 props[key] = f"Placeholder summation {props['dbId']}"
     if "Publication" in labels:
         props["displayName"] = f"Placeholder publication {props['dbId']}"
+    # Its shape kept: a reference sequence's comment is a list, which graph-core reads
+    # as one (a string there failed every read of the reference, spec 001 T011).
     if "comment" in props:
-        props["comment"] = "Placeholder comment"
+        comment = props["comment"]
+        props["comment"] = ["Placeholder comment"] * len(comment) if isinstance(comment, list) else "Placeholder comment"
     return props
 
 
