@@ -4,7 +4,7 @@ A small graph for CI: nine events of release 98 (chosen on release 97), their pa
 the exporter's classes read about them (T011–T019), with every person's name, and all
 free text that could cite one, replaced.
 
-- **`fixture.cypher`**: 2,373 nodes and 4,714 relationships, for
+- **`fixture.cypher`**: 2,379 nodes and 4,740 relationships (release 98), for
 
   | Event         | What it is here for                                                                                         |
   | ------------- | ----------------------------------------------------------------------------------------------------------- |
@@ -75,8 +75,8 @@ not from the service.
 
 ## How it was checked
 
-- **It loads:** into an empty Neo4j 4.4 (`graph.db`) with `cypher-shell -f`, in 67 s,
-  giving 2,373 nodes and 4,714 relationships.
+- **It loads:** into an empty Neo4j 4.4 (`graph.db`) with `cypher-shell -f`, in about 70 s,
+  giving 2,379 nodes and 4,740 relationships.
 - **No names, by allowlist (CI):** `check-placeholders.sh` passes on the fixture. It holds
   people, edits, summations, publications' display names and comments to placeholders;
   every line to the four shapes `extract.py` writes; every node's labels to the graph
@@ -105,7 +105,7 @@ not from the service.
   - `lastName`, or `Surname` capitalised, on another node;
   - a fixture with no people.
 - **No names, by search (at extraction):** `audit.py` compares every string in the
-  fixture (19,190, list items included) with the real surnames and first names (of three
+  fixture (20,085 on release 98, list items included) with the real surnames and first names (of three
   letters or more) of its 1,235 people in the private copy, and looks for emails and
   ORCIDs, counts only. One string matches: a UniProt keyword naming a disease after a
   person, one of whose names is also a fixture person's first name. It is judged a
