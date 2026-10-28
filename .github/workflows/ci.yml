@@ -53,6 +53,37 @@ jobs:
             - name: Formatted
               run: npx --yes prettier@3.9.10 --check .
 
+    # The scripts and the workflow: ShellCheck on the shell scripts (Spec Kit's own
+    # left alone), Ruff's lint and format on ci/'s Python (ruff.toml), and actionlint on
+    # this workflow, which also runs ShellCheck on its run: blocks. Each pinned.
+    scripts:
+        runs-on: ubuntu-latest
+        permissions:
+            contents: read
+        steps:
+            - uses: actions/checkout@v4
+
+            - name: ShellCheck
+              run: |
+                  git ls-files -z '*.sh' ':!:.specify' |
+                    xargs -0 docker run --rm --network none -v "$PWD:/mnt:ro" -w /mnt \
+                      koalaman/shellcheck@sha256:2097951f02e735b613f4a34de20c40f937a6c8f18ecb170612c88c34517221fb
+
+            - name: Ruff lint
+              # Runs even when a step before it fails, so one push shows every problem.
+              if: success() || failure()
+              run: pipx run ruff==0.16.7 check ci
+
+            - name: Ruff format
+              if: success() || failure()
+              run: pipx run ruff==0.16.7 format --check ci
+
+            - name: actionlint
+              if: success() || failure()
+              run: |
+                  docker run --rm --network none -v "$PWD:/repo:ro" -w /repo \
+                    rhysd/actionlint@sha256:887a259a5a534f3c4f36cb02dca341673c6089431057242cdc931e9f133147e9 -color
+
     docker-build:
         runs-on: ubuntu-latest
         steps:
@@ -124,7 +155,7 @@ jobs:
                     echo "== $(basename "$expected")"
                     python3 -I ci/compare.py --examples 5 "$expected" "out/$(basename "$expected")" || status=1
                   done
-                  [ "$(ls out | sort)" = "$(ls ci/fixture/expected | sort)" ] || { echo "the files written are not the files expected"; status=1; }
+                  [ "$(find out -maxdepth 1 -type f -printf '%f\n' | sort)" = "$(find ci/fixture/expected -maxdepth 1 -type f -printf '%f\n' | sort)" ] || { echo "the files written are not the files expected"; status=1; }
                   exit $status
 
             - name: The same bytes on a second run (FR-006)
@@ -159,8 +190,9 @@ jobs:
                   cd ..
                   # One report per file written: a validator that stopped part way must not pass
                   # on the reports it did write. (Its log echoes display names, so it is not shown.)
-                  reports=$(ls reports/*.validation.xml 2>/dev/null | wc -l)
-                  [ "$reports" = "$(ls out | wc -l)" ] || { echo "$reports reports for $(ls out | wc -l) files"; exit 1; }
+                  reports=$(find reports -maxdepth 1 -name '*.validation.xml' | wc -l)
+                  files=$(find out -maxdepth 1 -type f | wc -l)
+                  [ "$reports" = "$files" ] || { echo "$reports reports for $files files"; exit 1; }
                   python3 -I ci/validate.py reports/*.xml
 
     docker-push:
@@ -176,7 +208,7 @@ jobs:
             - id: get-hash
               run: |
                   FULL_SHA=${{ github.sha }}
-                  echo "SHORT_SHA=${FULL_SHA:0:7}" >> $GITHUB_OUTPUT
+                  echo "SHORT_SHA=${FULL_SHA:0:7}" >> "$GITHUB_OUTPUT"
 
             - env:
                   AWS_REGION: us-east-1
@@ -197,7 +229,7 @@ jobs:
                   IMG_TAG: ${{ steps.get-hash.outputs.SHORT_SHA }}
               run: |
                   docker load --input /tmp/image.tar
-                  docker image tag tmp-tag $AWS_REGISTRY/$AWS_REGISTRY_ALIAS/$AWS_REPO:latest
-                  docker image tag tmp-tag $AWS_REGISTRY/$AWS_REGISTRY_ALIAS/$AWS_REPO:$IMG_TAG
-                  docker push $AWS_REGISTRY/$AWS_REGISTRY_ALIAS/$AWS_REPO:latest
-                  docker push $AWS_REGISTRY/$AWS_REGISTRY_ALIAS/$AWS_REPO:$IMG_TAG
+                  docker image tag tmp-tag "$AWS_REGISTRY/$AWS_REGISTRY_ALIAS/$AWS_REPO:latest"
+                  docker image tag tmp-tag "$AWS_REGISTRY/$AWS_REGISTRY_ALIAS/$AWS_REPO:$IMG_TAG"
+                  docker push "$AWS_REGISTRY/$AWS_REGISTRY_ALIAS/$AWS_REPO:latest"
+                  docker push "$AWS_REGISTRY/$AWS_REGISTRY_ALIAS/$AWS_REPO:$IMG_TAG"

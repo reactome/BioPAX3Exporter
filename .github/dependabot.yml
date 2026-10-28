@@ -1,0 +1,33 @@
+# Version updates, weekly.
+# graph-core is a snapshot pinned by checksum (ci/snapshots.sh), as are the
+# reactome-parent and reactome-bom it brings, so it moves only by hand.
+version: 2
+updates:
+    - package-ecosystem: maven
+      directory: /
+      schedule:
+          interval: weekly
+      ignore:
+          - dependency-name: org.reactome.server.graph:graph-core
+      groups:
+          maven:
+              patterns: ['*']
+    - package-ecosystem: github-actions
+      directory: /
+      schedule:
+          interval: weekly
+      groups:
+          actions:
+              patterns: ['*']
+    - package-ecosystem: docker
+      directory: /
+      schedule:
+          interval: weekly
+      ignore:
+          # The Java version is a decision, not an update. eclipse-temurin's tag leads with it
+          # (17-jre-focal), so its major updates are held. maven's tag leads with Maven's own
+          # version (3.9.6-eclipse-temurin-17-focal), where Java is not a major, so maven
+          # moves only by hand.
+          - dependency-name: eclipse-temurin
+            update-types: ['version-update:semver-major']
+          - dependency-name: maven

@@ -51,6 +51,15 @@ Feature-sized work goes through Spec Kit before any code, and the specs live in
 - **The validator.** The jar carries none. CI runs the standalone BioPAX
   validator 6.0.0 over the fixture's output. It exits 0 whatever it finds, so
   CI reads its reports.
+- **`scripts`**: the scripts and the workflow, each tool pinned: ShellCheck on the
+  shell scripts (Spec Kit's own aside), Ruff's lint and format on `ci/`'s Python
+  (`ruff.toml`; fix with `pipx run ruff==0.16.7 format ci`), and actionlint on the
+  workflow. Each step runs even when one before it fails.
+- **Dependabot** opens weekly updates for Maven, the workflow's actions and the
+  `Dockerfile`'s images (`.github/dependabot.yml`). graph-core is a snapshot pinned
+  by checksum (`ci/snapshots.sh`), with the reactome-parent and reactome-bom it
+  brings, and moves only by hand, as do the pinned tools, the build image (`maven`)
+  and the Java version of the runtime image.
 - **`format`**: Markdown, YAML and JSON as Prettier 3.9.10 writes them
   (`.prettierrc`, `.prettierignore`; WebsiteAngular's settings). Fix with
   `npx prettier@3.9.10 --write .`, which a Spec Kit run needs afterwards: Spec Kit
