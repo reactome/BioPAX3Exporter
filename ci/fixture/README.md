@@ -1,6 +1,6 @@
 # The fixture graph (spec 001, T006)
 
-A small graph for CI: nine events of release 97, their parent pathways, and everything
+A small graph for CI: nine events of release 98 (chosen on release 97), their parent pathways, and everything
 the exporter's classes read about them (T011–T019), with every person's name, and all
 free text that could cite one, replaced.
 
@@ -18,7 +18,7 @@ free text that could cite one, replaced.
   | R-HSA-5660013 | the first of research R3's greedy cover: a disease reaction (a FailedReaction), with catalysis and controls |
   | R-PFA-68947   | an inferred event, for Evidence (IEA)                                                                       |
 
-  each with its parent pathways up to the top, and release 97's `DBInfo` node.
+  each with its parent pathways up to the top, and the release's `DBInfo` node.
   The shapes were chosen as the smallest human events with each (by the published human
   file); no human event is inferred, so that one is _P. falciparum_'s.
 
@@ -35,7 +35,8 @@ free text that could cite one, replaced.
 
 ## How it was made
 
-From a private copy of release 97's graph (Neo4j 4.4, database `graph.db`, on the
+From a private copy of the release's graph: release 98 since 28 Oct 2026, release 97
+before, each made with the same command (Neo4j 4.x, database `graph.db`, on the
 loopback interface; never a shared or production graph):
 
 ```

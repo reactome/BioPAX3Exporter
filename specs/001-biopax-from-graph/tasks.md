@@ -142,6 +142,8 @@ description: 'Tasks for spec 001: BioPAX Level 3 from the graph, as the release 
 
 **Goal**: each class written as release 97 writes it. Each task changes the fixture's expected output for its class only, and compares _P. falciparum_ from the private copy before and after, its differences falling.
 
+**From 28 Oct 2026, release 98.** The release published its `biopax.zip` for 98, so the tasks from T012 on generate from a private copy of release 98's graph and compare with release 98's published files. The fixture was regenerated from release 98 by `extract.py`, its events unchanged (#40). T011's measurements, made on release 97, stand as recorded.
+
 - [x] T011 [US2] Physical entities: their entity references (ProteinReference, SmallMoleculeReference, DnaReference, RnaReference) with cross-references; the "Reactome DB_ID" comment and the two UnificationXrefs (database id of the release, stable id with version); cellular location; complexes with `component` and `componentStoichiometry`; features (modifications, fragments). — #38, replacing #37 after its review.
   - **The rules** are Pathway-Exchange's `ReactomeToBioPAX3XMLConverter.createPhysicalEntity` and `BioPAX3FeatureHandler`, read from the graph:
     - the class from the reference entity's;
