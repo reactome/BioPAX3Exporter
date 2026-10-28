@@ -43,6 +43,16 @@ jobs:
             - name: The library depends on graph-core and Paxtools alone (T009)
               run: ci/lib-dependencies.sh
 
+    # Markdown, YAML and JSON as Prettier writes them (.prettierrc, .prettierignore),
+    # pinned to WebsiteAngular's version. Fix with: npx prettier@3.9.10 --write .
+    format:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+
+            - name: Formatted
+              run: npx --yes prettier@3.9.10 --check .
+
     docker-build:
         runs-on: ubuntu-latest
         steps:

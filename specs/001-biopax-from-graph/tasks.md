@@ -187,7 +187,7 @@ description: 'Tasks for spec 001: BioPAX Level 3 from the graph, as the release 
       - no description in place of a missing comment;
       - what a residue is modified by ahead of its PSI-MOD term.
 
-    A 17th, sets typed by their reference, was equivalent, and the clause it changed is removed. `ParallelConversionTest`'s pathways now have a species, so their organisms are still exercised.
+    One more, sets typed by their reference, was equivalent, and the clause it changed is removed. `ParallelConversionTest`'s pathways now have a species, so their organisms are still exercised.
 - [ ] T012 [US2] Reactions: BiochemicalReaction, Degradation (`left` only) and TemplateReaction (`product` only) as the event's kind; `conversionDirection`; `participantStoichiometry`; `eCNumber`; their literature.
 - [ ] T013 [US2] Catalysis with its controller and its two RelationshipXrefs and the `activeUnit:` comment; Control (ACTIVATION, INHIBITION) and TemplateReactionRegulation from regulation, one per controlled reaction, with the regulation's UnificationXrefs (database id, and stable id where the published file has one).
 - [ ] T014 [US2] Events' own cross-references: RelationshipXrefs for GO biological process, disease and the rest, all of them where the old converter returned early on a repeat (an obvious bug fixed; recorded in `differences.md`).
