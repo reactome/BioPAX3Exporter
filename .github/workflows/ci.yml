@@ -1,11 +1,11 @@
 name: biopax3 exporter ci
 
 on:
-    workflow_dispatch:   
+    workflow_dispatch:
     pull_request:
         types:
             - opened
-            - synchronize  
+            - synchronize
     push:
         branches:
             - main
@@ -24,9 +24,9 @@ jobs:
 
             - uses: actions/setup-java@v4
               with:
-                distribution: temurin
-                java-version: '17'
-                cache: maven
+                  distribution: temurin
+                  java-version: '17'
+                  cache: maven
 
             - name: Tests and lint
               run: mvn -B verify
@@ -43,24 +43,34 @@ jobs:
             - name: The library depends on graph-core and Paxtools alone (T009)
               run: ci/lib-dependencies.sh
 
+    # Markdown, YAML and JSON as Prettier writes them (.prettierrc, .prettierignore),
+    # pinned to WebsiteAngular's version. Fix with: npx prettier@3.9.10 --write .
+    format:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+
+            - name: Formatted
+              run: npx --yes prettier@3.9.10 --check .
+
     docker-build:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v4
 
             - uses: docker/setup-buildx-action@v3
-            
+
             - uses: docker/build-push-action@v5
               with:
-                context: .
-                file: Dockerfile
-                tags: tmp-tag
-                outputs: type=docker,dest=/tmp/image.tar
+                  context: .
+                  file: Dockerfile
+                  tags: tmp-tag
+                  outputs: type=docker,dest=/tmp/image.tar
 
             - uses: actions/upload-artifact@v4
               with:
-                name: image-artifact
-                path: /tmp/image.tar
+                  name: image-artifact
+                  path: /tmp/image.tar
 
     # Spec 001 T007: the exporter over the fixture graph (ci/fixture), one file per
     # species as the release writes them. Each file must be what ci/fixture/expected
@@ -86,72 +96,72 @@ jobs:
 
             - name: Load the fixture graph
               run: |
-                docker cp ci/fixture/fixture.cypher ${{ job.services.neo4j.id }}:/fixture.cypher
-                docker exec ${{ job.services.neo4j.id }} cypher-shell -d graph.db -f /fixture.cypher
+                  docker cp ci/fixture/fixture.cypher ${{ job.services.neo4j.id }}:/fixture.cypher
+                  docker exec ${{ job.services.neo4j.id }} cypher-shell -d graph.db -f /fixture.cypher
 
             - uses: actions/download-artifact@v4
               with:
-                name: image-artifact
-                path: /tmp
+                  name: image-artifact
+                  path: /tmp
 
             - name: Convert each species, twice
               run: |
-                docker load --input /tmp/image.tar
-                for run in out out-again; do
-                  mkdir -m 777 "$run"
-                  # Homo sapiens and Plasmodium falciparum, by their dbIds
-                  for species in 48887 170928; do
-                    docker run --rm --network host -v "$PWD/$run:/out" tmp-tag \
-                      -h localhost -b 7687 -u neo4j -p none -o /out -s "$species"
+                  docker load --input /tmp/image.tar
+                  for run in out out-again; do
+                    mkdir -m 777 "$run"
+                    # Homo sapiens and Plasmodium falciparum, by their dbIds
+                    for species in 48887 170928; do
+                      docker run --rm --network host -v "$PWD/$run:/out" tmp-tag \
+                        -h localhost -b 7687 -u neo4j -p none -o /out -s "$species"
+                    done
                   done
-                done
-                ls -l out
+                  ls -l out
 
             - name: As expected
               run: |
-                status=0
-                for expected in ci/fixture/expected/*.owl; do
-                  echo "== $(basename "$expected")"
-                  python3 -I ci/compare.py --examples 5 "$expected" "out/$(basename "$expected")" || status=1
-                done
-                [ "$(ls out | sort)" = "$(ls ci/fixture/expected | sort)" ] || { echo "the files written are not the files expected"; status=1; }
-                exit $status
+                  status=0
+                  for expected in ci/fixture/expected/*.owl; do
+                    echo "== $(basename "$expected")"
+                    python3 -I ci/compare.py --examples 5 "$expected" "out/$(basename "$expected")" || status=1
+                  done
+                  [ "$(ls out | sort)" = "$(ls ci/fixture/expected | sort)" ] || { echo "the files written are not the files expected"; status=1; }
+                  exit $status
 
             - name: The same bytes on a second run (FR-006)
               run: diff -r out out-again && echo "identical"
 
             - uses: actions/setup-java@v4
               with:
-                distribution: temurin
-                java-version: '17'
+                  distribution: temurin
+                  java-version: '17'
 
             - name: The BioPAX validator 6.0.0, cached by its sha1
               id: validator
               uses: actions/cache@v4
               with:
-                path: validator
-                key: biopax-validator-6.0.0-d3c7e7402a3b11915cd8e75b5d7a1d682dfce01c
+                  path: validator
+                  key: biopax-validator-6.0.0-d3c7e7402a3b11915cd8e75b5d7a1d682dfce01c
 
             - name: Fetch the validator
               if: steps.validator.outputs.cache-hit != 'true'
               run: |
-                curl -fsSL -o distr.zip https://repo1.maven.org/maven2/org/biopax/validator/distr/6.0.0/distr-6.0.0-all.zip
-                echo "d3c7e7402a3b11915cd8e75b5d7a1d682dfce01c  distr.zip" | sha1sum -c -
-                mkdir validator && unzip -q distr.zip -d validator && rm distr.zip
+                  curl -fsSL -o distr.zip https://repo1.maven.org/maven2/org/biopax/validator/distr/6.0.0/distr-6.0.0-all.zip
+                  echo "d3c7e7402a3b11915cd8e75b5d7a1d682dfce01c  distr.zip" | sha1sum -c -
+                  mkdir validator && unzip -q distr.zip -d validator && rm distr.zip
 
             - name: Valid
               run: |
-                home=$(dirname "$(find "$PWD/validator" -name biopax-validator.jar | head -1)")
-                mkdir reports && cd reports
-                JDK_JAVA_OPTIONS="--add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.lang.reflect=ALL-UNNAMED" \
-                  java -javaagent:"$home/lib/spring-instrument-6.1.5.jar" -Xmx4g -jar "$home/biopax-validator.jar" \
-                  ../out --profile=notstrict --out-format=xml > ../validator.log 2>&1
-                cd ..
-                # One report per file written: a validator that stopped part way must not pass
-                # on the reports it did write. (Its log echoes display names, so it is not shown.)
-                reports=$(ls reports/*.validation.xml 2>/dev/null | wc -l)
-                [ "$reports" = "$(ls out | wc -l)" ] || { echo "$reports reports for $(ls out | wc -l) files"; exit 1; }
-                python3 -I ci/validate.py reports/*.xml
+                  home=$(dirname "$(find "$PWD/validator" -name biopax-validator.jar | head -1)")
+                  mkdir reports && cd reports
+                  JDK_JAVA_OPTIONS="--add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.lang.reflect=ALL-UNNAMED" \
+                    java -javaagent:"$home/lib/spring-instrument-6.1.5.jar" -Xmx4g -jar "$home/biopax-validator.jar" \
+                    ../out --profile=notstrict --out-format=xml > ../validator.log 2>&1
+                  cd ..
+                  # One report per file written: a validator that stopped part way must not pass
+                  # on the reports it did write. (Its log echoes display names, so it is not shown.)
+                  reports=$(ls reports/*.validation.xml 2>/dev/null | wc -l)
+                  [ "$reports" = "$(ls out | wc -l)" ] || { echo "$reports reports for $(ls out | wc -l) files"; exit 1; }
+                  python3 -I ci/validate.py reports/*.xml
 
     docker-push:
         if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
@@ -160,35 +170,34 @@ jobs:
         steps:
             - uses: actions/download-artifact@v4
               with:
-                name: image-artifact
-                path: /tmp
+                  name: image-artifact
+                  path: /tmp
 
             - id: get-hash
               run: |
-                FULL_SHA=${{ github.sha }}
-                echo "SHORT_SHA=${FULL_SHA:0:7}" >> $GITHUB_OUTPUT
-            
+                  FULL_SHA=${{ github.sha }}
+                  echo "SHORT_SHA=${FULL_SHA:0:7}" >> $GITHUB_OUTPUT
+
             - env:
-                AWS_REGION : us-east-1
+                  AWS_REGION: us-east-1
               uses: aws-actions/configure-aws-credentials@v4
               with:
-                role-to-assume: ${{ vars.AWS_ROLE }}
-                aws-region: ${{ env.AWS_REGION }}
-    
+                  role-to-assume: ${{ vars.AWS_ROLE }}
+                  aws-region: ${{ env.AWS_REGION }}
+
             - id: login-ecr
               uses: aws-actions/amazon-ecr-login@v2
               with:
-                registry-type: public
+                  registry-type: public
 
             - env:
-                AWS_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-                AWS_REGISTRY_ALIAS: reactome
-                AWS_REPO: biopax3-exporter
-                IMG_TAG: ${{ steps.get-hash.outputs.SHORT_SHA }}
+                  AWS_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+                  AWS_REGISTRY_ALIAS: reactome
+                  AWS_REPO: biopax3-exporter
+                  IMG_TAG: ${{ steps.get-hash.outputs.SHORT_SHA }}
               run: |
-                docker load --input /tmp/image.tar
-                docker image tag tmp-tag $AWS_REGISTRY/$AWS_REGISTRY_ALIAS/$AWS_REPO:latest
-                docker image tag tmp-tag $AWS_REGISTRY/$AWS_REGISTRY_ALIAS/$AWS_REPO:$IMG_TAG
-                docker push $AWS_REGISTRY/$AWS_REGISTRY_ALIAS/$AWS_REPO:latest
-                docker push $AWS_REGISTRY/$AWS_REGISTRY_ALIAS/$AWS_REPO:$IMG_TAG
-
+                  docker load --input /tmp/image.tar
+                  docker image tag tmp-tag $AWS_REGISTRY/$AWS_REGISTRY_ALIAS/$AWS_REPO:latest
+                  docker image tag tmp-tag $AWS_REGISTRY/$AWS_REGISTRY_ALIAS/$AWS_REPO:$IMG_TAG
+                  docker push $AWS_REGISTRY/$AWS_REGISTRY_ALIAS/$AWS_REPO:latest
+                  docker push $AWS_REGISTRY/$AWS_REGISTRY_ALIAS/$AWS_REPO:$IMG_TAG

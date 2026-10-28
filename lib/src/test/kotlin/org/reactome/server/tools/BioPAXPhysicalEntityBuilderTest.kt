@@ -494,6 +494,7 @@ class BioPAXPhysicalEntityBuilderTest {
     fun `a reference without a comment has its first description`() {
         val reference = geneProduct()
         whenever(reference.comment).thenReturn(null)
+        whenever(reference.description).thenReturn(listOf("a description", "another description"))
         val bp = builder.physicalEntity(protein(reference = reference)) as Protein
         assertEquals(setOf("a description"), bp.entityReference.comment)
     }

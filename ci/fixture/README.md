@@ -6,21 +6,22 @@ free text that could cite one, replaced.
 
 - **`fixture.cypher`**: 2,373 nodes and 4,714 relationships, for
 
-  | Event | What it is here for |
-  | --- | --- |
-  | R-HSA-68689 | a small pathway (two reactions), with its events |
-  | R-HSA-6790038 | a TemplateReaction with its regulation (TemplateReactionRegulation) |
-  | R-HSA-174731 | a Degradation |
-  | R-HSA-2894858 | a disease pathway (DOID cross-references) |
-  | R-HSA-9911234 | DNA and RNA |
-  | R-HSA-5696356 | sets within sets |
-  | R-HSA-68825 | a black-box event |
+  | Event         | What it is here for                                                                                         |
+  | ------------- | ----------------------------------------------------------------------------------------------------------- |
+  | R-HSA-68689   | a small pathway (two reactions), with its events                                                            |
+  | R-HSA-6790038 | a TemplateReaction with its regulation (TemplateReactionRegulation)                                         |
+  | R-HSA-174731  | a Degradation                                                                                               |
+  | R-HSA-2894858 | a disease pathway (DOID cross-references)                                                                   |
+  | R-HSA-9911234 | DNA and RNA                                                                                                 |
+  | R-HSA-5696356 | sets within sets                                                                                            |
+  | R-HSA-68825   | a black-box event                                                                                           |
   | R-HSA-5660013 | the first of research R3's greedy cover: a disease reaction (a FailedReaction), with catalysis and controls |
-  | R-PFA-68947 | an inferred event, for Evidence (IEA) |
+  | R-PFA-68947   | an inferred event, for Evidence (IEA)                                                                       |
 
   each with its parent pathways up to the top, and release 97's `DBInfo` node.
   The shapes were chosen as the smallest human events with each (by the published human
   file); no human event is inferred, so that one is _P. falciparum_'s.
+
 - **`expected/`**: the exporter's output from this graph, one file per species as the
   release writes them (`-s 48887`, Homo sapiens; `-s 170928`, _P. falciparum_). CI's
   `fixture` job converts both species, twice, and holds each file to its expected one by
@@ -56,6 +57,7 @@ are left out: the published files write a reference entity's own identifier, nev
 genes or its long cross-reference lists.
 
 What could name a person is replaced:
+
 - every `Person` keeps only its dbId and class and becomes `Placeholder` `PersonN`;
 - every `InstanceEdit`'s display name and note;
 - every summation's text, which cites authors ("X et al": 43 of the first draft's held a

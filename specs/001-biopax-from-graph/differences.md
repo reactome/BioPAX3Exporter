@@ -12,6 +12,7 @@ Every way this exporter's output differs from the release's published `biopax.zi
   - one PublicationXref title, 1 a side.
 
   What the reader does to names is not yet traced. A file written from the graph is compared in T020.
+
 - **Values repeated within one individual.** Release 97 writes some values twice on one individual: 13 in _P. falciparum_ and 2,421 in human, 2,292 of them a `Protein.feature` written twice. The comparer counts a repeat once, since Paxtools keeps values as sets. Two individuals of the same content, referred to twice, still count twice; human has 15 such references. Whether a protein's repeated modification should be one feature or two is decided in T011.
 
 ## Physical entities (T011)
@@ -33,8 +34,8 @@ Measured 28 Oct 2026 on _P. falciparum_, converted from a private copy of releas
 
 The BioPAX validator 6.0.0 (`--profile=notstrict`), read by `ci/validate.py`, on the published files of release 97. A written file may have no ERROR its published counterpart lacks (SC-003); warnings are recorded, not held.
 
-| Species | Errors | Warnings | Codes |
-| --- | --- | --- | --- |
-| _Plasmodium falciparum_ | 0 | 16,863 | 19 |
+| Species                 | Errors | Warnings | Codes |
+| ----------------------- | ------ | -------- | ----- |
+| _Plasmodium falciparum_ | 0      | 16,863   | 19    |
 
 Measured 27 Oct 2026. A run takes about four minutes by the shell's clock (249 s with the network off, 242 s with it on), most of it the validator's start-up. The other species' baselines are made in T020.

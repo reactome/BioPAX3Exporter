@@ -51,6 +51,10 @@ Feature-sized work goes through Spec Kit before any code, and the specs live in
 - **The validator.** The jar carries none. CI runs the standalone BioPAX
   validator 6.0.0 over the fixture's output. It exits 0 whatever it finds, so
   CI reads its reports.
+- **`format`**: Markdown, YAML and JSON as Prettier 3.9.10 writes them
+  (`.prettierrc`, `.prettierignore`; WebsiteAngular's settings). Fix with
+  `npx prettier@3.9.10 --write .`, which a Spec Kit run needs afterwards: Spec Kit
+  writes `[X]` and `*emphasis*`, which Prettier writes `[x]` and `_emphasis_`.
 
 ## Proving what is written
 
@@ -60,6 +64,7 @@ Feature-sized work goes through Spec Kit before any code, and the specs live in
   - keep it out of the repository, since it holds people's names.
 
   No other Reactome production service is used.
+
 - **Compare by meaning**, not bytes. Reduce each file to (class, property, target)
   triples, with each `rdf:ID` replaced by its content, and record every
   difference with its reason.
