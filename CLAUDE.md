@@ -58,7 +58,8 @@ Feature-sized work goes through Spec Kit before any code, and the specs live in
 - **Dependabot** opens weekly updates for Maven, the workflow's actions and the
   `Dockerfile`'s images (`.github/dependabot.yml`). graph-core is a snapshot pinned
   by checksum (`ci/snapshots.sh`), with the reactome-parent and reactome-bom it
-  brings, and moves only by hand, as do the pinned tools, the build image (`maven`)
+  brings, and moves only by hand, as do the logging binding it brings (`logback-classic`),
+  the pinned tools, the build image (`maven`)
   and the Java version of the runtime image.
 - **`format`**: Markdown, YAML and JSON as Prettier 3.9.10 writes them
   (`.prettierrc`, `.prettierignore`; WebsiteAngular's settings). Fix with

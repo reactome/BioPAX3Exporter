@@ -9,9 +9,14 @@ updates:
           interval: weekly
       ignore:
           - dependency-name: org.reactome.server.graph:graph-core
+          # The logging binding graph-core brings (pom.xml); 1.3 and later need SLF4J 2.
+          - dependency-name: ch.qos.logback:logback-classic
       groups:
+          # Minor and patch updates together; a major one (Paxtools 6, which changes what is
+          # written) comes on its own.
           maven:
               patterns: ['*']
+              update-types: ['minor', 'patch']
     - package-ecosystem: github-actions
       directory: /
       schedule:
