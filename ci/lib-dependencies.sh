@@ -44,5 +44,5 @@ if grep -iE '(jsap|biopax-validator|validator-core|logback-classic):' "$all"; th
   echo "a command-line or release dependency reaches the library, above"
   status=1
 fi
-[ $status = 0 ] && echo "the library depends on: $(echo $found | tr ' ' ',')"
+[ $status = 0 ] && echo "the library depends on: $(paste -sd, <<<"$found")"
 exit $status

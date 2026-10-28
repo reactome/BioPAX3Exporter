@@ -11,6 +11,7 @@ the number of not-fixed ERROR cases allowed (none given: none allowed).
 It prints codes and counts only. The validator's messages and its log echo
 display names, which can be people's names (constitution VI).
 """
+
 import json
 import sys
 from xml.etree import ElementTree
@@ -51,16 +52,22 @@ def check(paths, baseline):
         codes, not_fixed_errors = read(path)
         errors = {code: count for (kind, code), count in codes.items() if kind == "ERROR"}
         warnings = sum(count for (kind, _), count in codes.items() if kind == "WARNING")
-        lines.append(f"{path}: {sum(errors.values())} errors, {warnings} warnings, {len(codes)} codes")
+        lines.append(
+            f"{path}: {sum(errors.values())} errors, {warnings} warnings, {len(codes)} codes"
+        )
         for (kind, code), count in sorted(codes.items()):
             lines.append(f"  {kind} {code} {count}")
         over = {code: count for code, count in errors.items() if count > baseline.get(code, 0)}
         allowed = sum(min(count, baseline.get(code, 0)) for code, count in errors.items())
         for code, count in sorted(over.items()):
-            lines.append(f"  over the baseline: ERROR {code} {count} (allowed {baseline.get(code, 0)})")
+            lines.append(
+                f"  over the baseline: ERROR {code} {count} (allowed {baseline.get(code, 0)})"
+            )
         # notFixedErrors counts ERROR cases: a report saying more than its codes do fails too.
         if not_fixed_errors > allowed and not over:
-            lines.append(f"  over the baseline: {not_fixed_errors} errors by the report's own count")
+            lines.append(
+                f"  over the baseline: {not_fixed_errors} errors by the report's own count"
+            )
         failed = failed or bool(over) or not_fixed_errors > allowed
     return lines, failed
 

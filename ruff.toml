@@ -1,0 +1,8 @@
+# The CI tools under ci/ (comparison, validation, fixture extraction), checked and
+# formatted in CI by the pinned Ruff in .github/workflows/ci.yml.
+line-length = 100
+target-version = "py310"
+
+[lint]
+# Pyflakes and pycodestyle's errors (Ruff's defaults before 0.16) and bugbear's likely bugs.
+select = ["E4", "E7", "E9", "F", "B"]

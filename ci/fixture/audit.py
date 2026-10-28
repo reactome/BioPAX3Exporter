@@ -13,6 +13,7 @@ It prints counts by node class and property, never a name or a value, and exits 
 anything is found beyond KNOWN, the hits judged by hand to be coincidences. Run it
 whenever the events change, and judge any new hit before adding it there.
 """
+
 import collections
 import json
 import re
@@ -34,7 +35,7 @@ def values(text):
     while text[at:] != "}":
         key = re.compile(r"`(\w+)`: ").match(text, at)
         found[key[1]], at = decoder.raw_decode(text, key.end())
-        at += 2 if text[at:at + 2] == ", " else 0
+        at += 2 if text[at : at + 2] == ", " else 0
     return found
 
 
@@ -52,16 +53,28 @@ def main(argv):
         return 2
     url, path = argv[1], argv[2] if len(argv) == 3 else "ci/fixture/fixture.cypher"
     fixture = open(path, encoding="utf-8").read()
-    people = [int(m) for m in re.findall(r"^CREATE \(:[^{]*`Person`[^{]*\{`dbId`: (\d+)", fixture, re.M)]
-    body = json.dumps({"statements": [{
-        "statement": "MATCH (p:Person) WHERE p.dbId IN $ids RETURN p.surname, p.firstname",
-        "parameters": {"ids": people}}]}).encode()
-    request = urllib.request.Request(url.rstrip("/") + "/db/graph.db/tx/commit", body,
-                                     {"Content-Type": "application/json"})
+    people = [
+        int(m) for m in re.findall(r"^CREATE \(:[^{]*`Person`[^{]*\{`dbId`: (\d+)", fixture, re.M)
+    ]
+    body = json.dumps(
+        {
+            "statements": [
+                {
+                    "statement": "MATCH (p:Person) WHERE p.dbId IN $ids RETURN p.surname, p.firstname",
+                    "parameters": {"ids": people},
+                }
+            ]
+        }
+    ).encode()
+    request = urllib.request.Request(
+        url.rstrip("/") + "/db/graph.db/tx/commit", body, {"Content-Type": "application/json"}
+    )
     with urllib.request.urlopen(request) as response:
         rows = json.load(response)["results"][0]["data"]
     names = {n for row in rows for n in row["row"] if n and len(n) >= 3}
-    pattern = re.compile(r"\b(" + "|".join(re.escape(n) for n in sorted(names, key=len, reverse=True)) + r")\b")
+    pattern = re.compile(
+        r"\b(" + "|".join(re.escape(n) for n in sorted(names, key=len, reverse=True)) + r")\b"
+    )
     hits, count = collections.Counter(), 0
     for line in fixture.splitlines():
         node = re.match(r"CREATE \(:(.*?) \{(.*)\}\);$", line)
@@ -74,9 +87,18 @@ def main(argv):
                 if pattern.search(text) or EMAIL.search(text) or ORCID.search(text):
                     hits[(str(props.get("schemaClass")), key, props.get("dbId"))] += 1
     unknown = hits - collections.Counter(KNOWN)
-    print(f"{len(people)} people ({len(rows)} found), {len(names)} names of 3+ letters, {count} strings")
-    print(f"strings holding a name, an email or an ORCID: {sum(hits.values())}",
-          dict(sum((collections.Counter({f"{c}.{k}": n}) for (c, k, _), n in hits.items()), collections.Counter())))
+    print(
+        f"{len(people)} people ({len(rows)} found), {len(names)} names of 3+ letters, {count} strings"
+    )
+    print(
+        f"strings holding a name, an email or an ORCID: {sum(hits.values())}",
+        dict(
+            sum(
+                (collections.Counter({f"{c}.{k}": n}) for (c, k, _), n in hits.items()),
+                collections.Counter(),
+            )
+        ),
+    )
     print(f"beyond those known to be coincidences: {sum(unknown.values())}")
     return 1 if unknown or not people or len(rows) != len(people) else 0
 
