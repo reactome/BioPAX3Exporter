@@ -13,6 +13,24 @@ import java.util.*
 
 object BioPAX3Utils {
     /**
+     * Names as the release's converter writes an entity's or an event's (T011, T012): the
+     * shortest name (the first of the shortest) as the display name and the rest as names;
+     * the display name stands in when there is no name.
+     */
+    fun addNames(
+        names: List<String>?,
+        displayName: String?,
+        bpElement: org.biopax.paxtools.model.level3.Named,
+    ) {
+        val all = names?.toMutableList() ?: mutableListOf()
+        if (all.isEmpty() && displayName != null) all.add(displayName)
+        val shortest = all.minByOrNull { it.length } ?: return
+        bpElement.displayName = shortest
+        all.remove(shortest)
+        all.forEach { bpElement.addName(it) }
+    }
+
+    /**
      * Generic function to retrieve an object from a set based on its ID
      *
      * paxtools uses Sets to store the individual types of element added to the

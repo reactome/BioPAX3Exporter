@@ -158,7 +158,7 @@ class BioPAXPathwayBuilder(
     ) {
         bpPath.addPathwayComponent(childPath)
         step.addStepProcess(childPath)
-        if (childPath is org.biopax.paxtools.model.level3.BiochemicalReaction && childPath.controlledOf.isNotEmpty()) {
+        if (childPath is org.biopax.paxtools.model.level3.Interaction && childPath.controlledOf.isNotEmpty()) {
             childPath.controlledOf.forEach { p ->
                 step.addStepProcess(p)
             }

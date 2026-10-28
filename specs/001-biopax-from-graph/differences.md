@@ -30,6 +30,21 @@ Measured 28 Oct 2026 on _P. falciparum_, converted from a private copy of releas
 - **Read from the graph's `databaseName`.** An xref's `db` is the record's `databaseName`, the name of its reference database as the graph keeps it on the record, so the database itself is never read. In release 97 it equals the reference database's display name on every reference entity, cross-reference and ontology term that has one. The exceptions are two malformed ReferenceDNASequence nodes that no entity refers to, so they are never written.
 - **The organism.** One BioSource per taxon, with its NCBI Taxonomy UnificationXref, shared by pathways and entity references, as the release writes it.
 
+## Reactions (T012)
+
+Measured 28 Oct 2026 on _P. falciparum_ from a private copy of release 98's graph, against release 98's published file, and on the fixture's human reactions against release 98's human file.
+
+- **Reaction by reaction:** all 970 _P. falciparum_ reactions are in the published file under their database id. Their kind, names, participants (`left`, `right`), stoichiometries, EC numbers, Reactome's two ids and data source agree. What differs belongs to other tasks or to the writer:
+  - **`conversionDirection`** is written `LEFT_TO_RIGHT` where the release writes `LEFT-TO-RIGHT` (970). Paxtools 4.3.1's `ConversionDirectionType` has only the underscored form, and its reader takes either. It is a difference of the writer, settling the question above. The validator 6.0.0 reports no error on it: the fixture's output, every reaction written so, has none.
+  - **The summation comment** has its HTML stripped (970): T016 keeps it.
+  - **Evidence** is written for every reaction, empty, where the release writes it for inferred events with its evidence code (970): T016.
+  - **GO biological process RelationshipXrefs** are missing (60): T014.
+  - **`stoichiometricCoefficient`** is written `3.0` where the release writes `3`: the same `xsd:float`, so not a difference by `ci/compare.py`.
+- **The whole file** (`ci/compare.py`): T011's output against the published file, 197,744 triples only in the published file and 67,553 only in the converted one; T012's, 181,838 and 81,839. The converted side grows because each reaction is written once for every pathway that reaches it: 4,136 BiochemicalReactions against the release's 970, and each copy now carries its names, ids and direction. Writing a shared event once is T015's; until then the reaction-by-reaction comparison is the measure.
+- **The kinds**, on the fixture's human events: R-HSA-174731 is a Degradation (`left` only) and R-HSA-6790038 a TemplateReaction (`product` only), as release 98 writes them.
+- **A TemplateReaction's product is not also a participant.** Paxtools 4.3.1 adds a product to an interaction's participants and writes both, though `product` is itself a participant by BioPAX's definition. The release writes the product alone, so the exporter removes the extra participant.
+- **EC numbers in release 98.** Release 98's published human file has 3,594 `eCNumber` values, against release 97's 20,384 (research R1). The graph gives exactly those, by this task's rule (from #42's review): 3,597 distinct reaction and EC number pairs in human reactions a pathway reaches, less 4 on Degradations, which take none, plus one value the release writes twice (R-HSA-9698988's two catalysts share 3.4.21.1; the same triple, written once here). The data's difference in EC numbers (reactome/graph-importer#9), the largest at release 97, is gone at release 98; the full run (T020) confirms it on every species.
+
 ## The validator's baseline
 
 The BioPAX validator 6.0.0 (`--profile=notstrict`), read by `ci/validate.py`, on the published files of release 97. A written file may have no ERROR its published counterpart lacks (SC-003); warnings are recorded, not held.
