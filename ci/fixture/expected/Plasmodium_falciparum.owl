@@ -9,17 +9,78 @@
  <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
 </owl:Ontology>
 
+<bp:UnificationXref rdf:ID="UnificationXref11">
+ <bp:idVersion rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">1</bp:idVersion>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-PFA-9032195.1</bp:comment>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">R-PFA-9032195</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:ID="UnificationXref10">
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=11117064</bp:comment>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">11117064</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 97</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:ID="UnificationXref3">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Q8I615</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">UniProt</bp:db>
+</bp:UnificationXref>
+
 <bp:PathwayStep rdf:ID="PathwayStep24">
  <bp:stepProcess rdf:resource="#Pathway26" />
 </bp:PathwayStep>
+
+<bp:UnificationXref rdf:ID="UnificationXref4">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MOD:00046</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MOD</bp:db>
+</bp:UnificationXref>
 
 <bp:PathwayStep rdf:ID="PathwayStep23">
  <bp:stepProcess rdf:resource="#Pathway25" />
 </bp:PathwayStep>
 
+<bp:UnificationXref rdf:ID="UnificationXref1">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">5833</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">NCBI Taxonomy</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:ID="UnificationXref2">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GO:0005654</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GENE ONTOLOGY</bp:db>
+</bp:UnificationXref>
+
 <bp:PathwayStep rdf:ID="PathwayStep25">
  <bp:stepProcess rdf:resource="#BiochemicalReaction7" />
 </bp:PathwayStep>
+
+<bp:UnificationXref rdf:ID="UnificationXref7">
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=11117040</bp:comment>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">11117040</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 97</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:ID="UnificationXref8">
+ <bp:idVersion rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">1</bp:idVersion>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-PFA-9032189.1</bp:comment>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">R-PFA-9032189</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:ID="UnificationXref5">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MOD:00047</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MOD</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:ID="UnificationXref6">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MOD:01148</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MOD</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:ID="UnificationXref9">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GO:0005829</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GENE ONTOLOGY</bp:db>
+</bp:UnificationXref>
 
 <bp:PathwayStep rdf:ID="PathwayStep20">
  <bp:stepProcess rdf:resource="#BiochemicalReaction5" />
@@ -93,39 +154,62 @@
  <bp:dataSource rdf:resource="#Provenance1" />
 </bp:Pathway>
 
-<bp:Protein rdf:ID="Protein10">
- <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">phospho-PolyUb,p-S,T-ORC1 [cytosol]</bp:displayName>
-</bp:Protein>
+<bp:SequenceSite rdf:ID="SequenceSite3">
+ <bp:sequencePosition rdf:datatype = "http://www.w3.org/2001/XMLSchema#int">1</bp:sequencePosition>
+ <bp:positionStatus rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">EQUAL</bp:positionStatus>
+</bp:SequenceSite>
 
-<bp:Protein rdf:ID="Protein12">
- <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">phospho-PolyUb,p-S,T-ORC1 [cytosol]</bp:displayName>
-</bp:Protein>
+<bp:SequenceSite rdf:ID="SequenceSite4">
+ <bp:sequencePosition rdf:datatype = "http://www.w3.org/2001/XMLSchema#int">861</bp:sequencePosition>
+ <bp:positionStatus rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">EQUAL</bp:positionStatus>
+</bp:SequenceSite>
 
-<bp:Protein rdf:ID="Protein11">
- <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">phospho-PolyUb,p-S,T-ORC1 [nucleoplasm]</bp:displayName>
-</bp:Protein>
+<bp:SequenceSite rdf:ID="SequenceSite1">
+ <bp:sequencePosition rdf:datatype = "http://www.w3.org/2001/XMLSchema#int">1</bp:sequencePosition>
+ <bp:positionStatus rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">EQUAL</bp:positionStatus>
+</bp:SequenceSite>
 
-<bp:Protein rdf:ID="Protein14">
- <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">phospho-PolyUb,p-S,T-ORC1 [cytosol]</bp:displayName>
-</bp:Protein>
+<bp:SequenceSite rdf:ID="SequenceSite2">
+ <bp:sequencePosition rdf:datatype = "http://www.w3.org/2001/XMLSchema#int">861</bp:sequencePosition>
+ <bp:positionStatus rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">EQUAL</bp:positionStatus>
+</bp:SequenceSite>
 
-<bp:Protein rdf:ID="Protein13">
- <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">phospho-PolyUb,p-S,T-ORC1 [nucleoplasm]</bp:displayName>
-</bp:Protein>
+<bp:SequenceModificationVocabulary rdf:ID="SequenceModificationVocabulary1">
+ <bp:xref rdf:resource="#UnificationXref4" />
+ <bp:term rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">O-phospho-L-serine</bp:term>
+</bp:SequenceModificationVocabulary>
 
 <bp:Evidence rdf:ID="Evidence30">
 </bp:Evidence>
 
-<bp:Protein rdf:ID="Protein3">
- <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">phospho-PolyUb,p-S,T-ORC1 [nucleoplasm]</bp:displayName>
-</bp:Protein>
-
 <bp:Protein rdf:ID="Protein2">
- <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">phospho-PolyUb,p-S,T-ORC1 [cytosol]</bp:displayName>
+ <bp:xref rdf:resource="#UnificationXref11" />
+ <bp:xref rdf:resource="#UnificationXref10" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Q8I615</bp:displayName>
+ <bp:cellularLocation rdf:resource="#CellularLocationVocabulary2" />
+ <bp:feature rdf:resource="#ModificationFeature3" />
+ <bp:feature rdf:resource="#FragmentFeature2" />
+ <bp:feature rdf:resource="#ModificationFeature1" />
+ <bp:feature rdf:resource="#ModificationFeature2" />
+ <bp:entityReference rdf:resource="#ProteinReference1" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">phospho-PolyUb,p-S,T-ORC1</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome DB_ID: 11117064</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
 </bp:Protein>
 
 <bp:Protein rdf:ID="Protein1">
- <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">phospho-PolyUb,p-S,T-ORC1 [nucleoplasm]</bp:displayName>
+ <bp:xref rdf:resource="#UnificationXref7" />
+ <bp:xref rdf:resource="#UnificationXref8" />
+ <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Q8I615</bp:displayName>
+ <bp:cellularLocation rdf:resource="#CellularLocationVocabulary1" />
+ <bp:feature rdf:resource="#ModificationFeature3" />
+ <bp:feature rdf:resource="#FragmentFeature1" />
+ <bp:feature rdf:resource="#ModificationFeature1" />
+ <bp:feature rdf:resource="#ModificationFeature2" />
+ <bp:entityReference rdf:resource="#ProteinReference1" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">phospho-PolyUb,p-S,T-ORC1</bp:name>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome DB_ID: 11117040</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
 </bp:Protein>
 
 <bp:Evidence rdf:ID="Evidence32">
@@ -139,12 +223,21 @@
 </bp:PathwayStep>
 
 <bp:BioSource rdf:ID="BioSource1">
+ <bp:xref rdf:resource="#UnificationXref1" />
  <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Plasmodium falciparum</bp:name>
 </bp:BioSource>
+
+<bp:FragmentFeature rdf:ID="FragmentFeature2">
+ <bp:featureLocation rdf:resource="#SequenceInterval2" />
+</bp:FragmentFeature>
 
 <bp:PathwayStep rdf:ID="PathwayStep7">
  <bp:stepProcess rdf:resource="#Pathway9" />
 </bp:PathwayStep>
+
+<bp:FragmentFeature rdf:ID="FragmentFeature1">
+ <bp:featureLocation rdf:resource="#SequenceInterval1" />
+</bp:FragmentFeature>
 
 <bp:PathwayStep rdf:ID="PathwayStep8">
  <bp:stepProcess rdf:resource="#Pathway10" />
@@ -309,9 +402,19 @@
  <bp:stepProcess rdf:resource="#Pathway19" />
 </bp:PathwayStep>
 
+<bp:CellularLocationVocabulary rdf:ID="CellularLocationVocabulary1">
+ <bp:xref rdf:resource="#UnificationXref2" />
+ <bp:term rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">nucleoplasm</bp:term>
+</bp:CellularLocationVocabulary>
+
 <bp:PathwayStep rdf:ID="PathwayStep16">
  <bp:stepProcess rdf:resource="#BiochemicalReaction4" />
 </bp:PathwayStep>
+
+<bp:CellularLocationVocabulary rdf:ID="CellularLocationVocabulary2">
+ <bp:xref rdf:resource="#UnificationXref9" />
+ <bp:term rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">cytosol</bp:term>
+</bp:CellularLocationVocabulary>
 
 <bp:PathwayStep rdf:ID="PathwayStep19">
  <bp:stepProcess rdf:resource="#Pathway21" />
@@ -346,8 +449,8 @@
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction5">
  <bp:evidence rdf:resource="#Evidence25" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Ubiquitinated Orc1 enters the cytosol</bp:displayName>
- <bp:right rdf:resource="#Protein10" />
- <bp:left rdf:resource="#Protein9" />
+ <bp:right rdf:resource="#Protein2" />
+ <bp:left rdf:resource="#Protein1" />
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Placeholder summation 9990864</bp:comment>
 </bp:BiochemicalReaction>
 
@@ -364,8 +467,8 @@
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction4">
  <bp:evidence rdf:resource="#Evidence20" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Ubiquitinated Orc1 enters the cytosol</bp:displayName>
- <bp:right rdf:resource="#Protein8" />
- <bp:left rdf:resource="#Protein7" />
+ <bp:right rdf:resource="#Protein2" />
+ <bp:left rdf:resource="#Protein1" />
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Placeholder summation 9990864</bp:comment>
 </bp:BiochemicalReaction>
 
@@ -389,8 +492,8 @@
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction7">
  <bp:evidence rdf:resource="#Evidence32" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Ubiquitinated Orc1 enters the cytosol</bp:displayName>
- <bp:right rdf:resource="#Protein14" />
- <bp:left rdf:resource="#Protein13" />
+ <bp:right rdf:resource="#Protein2" />
+ <bp:left rdf:resource="#Protein1" />
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Placeholder summation 9990864</bp:comment>
 </bp:BiochemicalReaction>
 
@@ -411,8 +514,8 @@
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction6">
  <bp:evidence rdf:resource="#Evidence28" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Ubiquitinated Orc1 enters the cytosol</bp:displayName>
- <bp:right rdf:resource="#Protein12" />
- <bp:left rdf:resource="#Protein11" />
+ <bp:right rdf:resource="#Protein2" />
+ <bp:left rdf:resource="#Protein1" />
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Placeholder summation 9990864</bp:comment>
 </bp:BiochemicalReaction>
 
@@ -533,29 +636,31 @@
 <bp:Evidence rdf:ID="Evidence10">
 </bp:Evidence>
 
-<bp:Protein rdf:ID="Protein7">
- <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">phospho-PolyUb,p-S,T-ORC1 [nucleoplasm]</bp:displayName>
-</bp:Protein>
+<bp:ProteinReference rdf:ID="ProteinReference1">
+ <bp:xref rdf:resource="#UnificationXref3" />
+ <bp:organism rdf:resource="#BioSource1" />
+ <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">UniProt:Q8I615</bp:name>
+</bp:ProteinReference>
 
-<bp:Protein rdf:ID="Protein6">
- <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">phospho-PolyUb,p-S,T-ORC1 [cytosol]</bp:displayName>
-</bp:Protein>
+<bp:SequenceModificationVocabulary rdf:ID="SequenceModificationVocabulary3">
+ <bp:xref rdf:resource="#UnificationXref6" />
+ <bp:term rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ubiquitinylated lysine</bp:term>
+</bp:SequenceModificationVocabulary>
 
-<bp:Protein rdf:ID="Protein5">
- <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">phospho-PolyUb,p-S,T-ORC1 [nucleoplasm]</bp:displayName>
-</bp:Protein>
+<bp:SequenceInterval rdf:ID="SequenceInterval1">
+ <bp:sequenceIntervalEnd rdf:resource="#SequenceSite2" />
+ <bp:sequenceIntervalBegin rdf:resource="#SequenceSite1" />
+</bp:SequenceInterval>
 
-<bp:Protein rdf:ID="Protein4">
- <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">phospho-PolyUb,p-S,T-ORC1 [cytosol]</bp:displayName>
-</bp:Protein>
+<bp:SequenceModificationVocabulary rdf:ID="SequenceModificationVocabulary2">
+ <bp:xref rdf:resource="#UnificationXref5" />
+ <bp:term rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">O-phospho-L-threonine</bp:term>
+</bp:SequenceModificationVocabulary>
 
-<bp:Protein rdf:ID="Protein9">
- <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">phospho-PolyUb,p-S,T-ORC1 [nucleoplasm]</bp:displayName>
-</bp:Protein>
-
-<bp:Protein rdf:ID="Protein8">
- <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">phospho-PolyUb,p-S,T-ORC1 [cytosol]</bp:displayName>
-</bp:Protein>
+<bp:SequenceInterval rdf:ID="SequenceInterval2">
+ <bp:sequenceIntervalEnd rdf:resource="#SequenceSite4" />
+ <bp:sequenceIntervalBegin rdf:resource="#SequenceSite3" />
+</bp:SequenceInterval>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
  <bp:evidence rdf:resource="#Evidence7" />
@@ -565,19 +670,31 @@
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Placeholder summation 9990864</bp:comment>
 </bp:BiochemicalReaction>
 
+<bp:ModificationFeature rdf:ID="ModificationFeature3">
+ <bp:modificationType rdf:resource="#SequenceModificationVocabulary3" />
+</bp:ModificationFeature>
+
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction3">
  <bp:evidence rdf:resource="#Evidence18" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Ubiquitinated Orc1 enters the cytosol</bp:displayName>
- <bp:right rdf:resource="#Protein6" />
- <bp:left rdf:resource="#Protein5" />
+ <bp:right rdf:resource="#Protein2" />
+ <bp:left rdf:resource="#Protein1" />
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Placeholder summation 9990864</bp:comment>
 </bp:BiochemicalReaction>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
  <bp:evidence rdf:resource="#Evidence13" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Ubiquitinated Orc1 enters the cytosol</bp:displayName>
- <bp:right rdf:resource="#Protein4" />
- <bp:left rdf:resource="#Protein3" />
+ <bp:right rdf:resource="#Protein2" />
+ <bp:left rdf:resource="#Protein1" />
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Placeholder summation 9990864</bp:comment>
 </bp:BiochemicalReaction>
+
+<bp:ModificationFeature rdf:ID="ModificationFeature1">
+ <bp:modificationType rdf:resource="#SequenceModificationVocabulary1" />
+</bp:ModificationFeature>
+
+<bp:ModificationFeature rdf:ID="ModificationFeature2">
+ <bp:modificationType rdf:resource="#SequenceModificationVocabulary2" />
+</bp:ModificationFeature>
 </rdf:RDF>

@@ -24,7 +24,7 @@ class BioPAX3BasicElementsBuilder(
         if (thisReactomeEvent == null || thisBPElement !is org.biopax.paxtools.model.level3.Pathway) {
             return
         }
-        val src = getBPBioSource()
+        val src = getBPBioSource() ?: return
         (thisBPElement as org.biopax.paxtools.model.level3.Pathway).organism = src
     }
 
@@ -65,30 +65,10 @@ class BioPAX3BasicElementsBuilder(
      *
      * @return BioPAX BioSource element
      */
-    private fun getBPBioSource(): org.biopax.paxtools.model.level3.BioSource {
-        val species = thisReactomeEvent?.speciesName ?: ""
-        // if the BioSource is already in the model we want to use that one
-        val sources = thisBPModel?.getObjects(org.biopax.paxtools.model.level3.BioSource::class.java) ?: emptySet()
-        var src = BioPAX3Utils.getObjectFromSetByName(sources, species)
-        if (src == null) {
-            // we havent found it/ add a new one
-            src = addBioSource(species)
-        }
-        return src!!
-    }
-
-    /**
-     * Function to create a new BioPAX BioSource element within the global model using the species supplied
-     *
-     * @param species String representing the name of the biological species Reactome Species/BioPAX BioSource
-     *
-     * @return BioPAX BioSource element created
-     */
-    private fun addBioSource(species: String): org.biopax.paxtools.model.level3.BioSource {
-        val src = thisBPModel?.addNew(org.biopax.paxtools.model.level3.BioSource::class.java, context!!.nextId("BioSource"))!!
-        val name = TreeSet<String>()
-        name.add(species)
-        src.name = name
-        return src
+    private fun getBPBioSource(): org.biopax.paxtools.model.level3.BioSource? {
+        // The event's first species, the one BioSource per taxon that entity
+        // references share too (T011)
+        val species = thisReactomeEvent?.species?.firstOrNull() ?: return null
+        return BioPAXXrefBuilder(context!!).bioSource(species)
     }
 }

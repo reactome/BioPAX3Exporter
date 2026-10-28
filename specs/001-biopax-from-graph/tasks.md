@@ -141,7 +141,52 @@ description: 'Tasks for spec 001: BioPAX Level 3 from the graph, as the release 
 
 **Goal**: each class written as release 97 writes it. Each task changes the fixture's expected output for its class only, and compares _P. falciparum_ from the private copy before and after, its differences falling.
 
-- [ ] T011 [US2] Physical entities: their entity references (ProteinReference, SmallMoleculeReference, DnaReference, RnaReference) with cross-references; the "Reactome DB_ID" comment and the two UnificationXrefs (database id of the release, stable id with version); cellular location; complexes with `component` and `componentStoichiometry`; features (modifications, fragments).
+- [x] T011 [US2] Physical entities: their entity references (ProteinReference, SmallMoleculeReference, DnaReference, RnaReference) with cross-references; the "Reactome DB_ID" comment and the two UnificationXrefs (database id of the release, stable id with version); cellular location; complexes with `component` and `componentStoichiometry`; features (modifications, fragments). — #38, replacing #37 after its review.
+  - **The rules** are Pathway-Exchange's `ReactomeToBioPAX3XMLConverter.createPhysicalEntity` and `BioPAX3FeatureHandler`, read from the graph:
+    - the class from the reference entity's;
+    - the shortest name as the display name, the rest as names;
+    - the first compartment, with its GO term;
+    - modifications (the first PSI-MOD term, else what the residue is modified by, cut at "[ChEBI") and the fragment from the start and end coordinates;
+    - the reference with its organism, its names (display name, names, gene names), its own xref (with the `UniProt Isoform`, `MOD:`, `GO:` and `CHEBI:` rules) and its first comment, else its first description;
+    - the "Reactome DB_ID" comment and Reactome's two ids, with the release's exact comments;
+    - the data source;
+    - cross-references and diseases as "additional information" RelationshipXrefs;
+    - a drug's class and comment.
+  - **Each entity, reference, location, vocabulary and xref is written once per file.** They are kept in the `ConversionContext` by kind and dbId, as the release keeps them; the events' cache stays T015's. The context now carries the release, for the database-id xrefs. One BioSource per taxon, with its NCBI Taxonomy xref, is shared by pathways (their first species) and references.
+  - **New:** `BioPAXPhysicalEntityBuilder` and `BioPAXXrefBuilder`, the second shared with the events to come. Sets are written as PhysicalEntity with their own properties, and their class and members are left to T017.
+  - **Decided** (`differences.md`):
+    - every cross-reference and disease is written, where the old converter stopped at one it had written before (an obvious bug);
+    - the graph's Mondo cross-references, put there by `graph-add-links`, are written;
+    - a modification repeated on a protein is one feature.
+  - **The fixture:**
+    - **Comments as lists.** `extract.py` wrote a reference sequence's `comment` list as one string, which graph-core could not read, so every reference failed to load once it was read. It now keeps the list, and `check-placeholders.sh` accepts a list of placeholders (an empty one too).
+    - **Species and PSI-MOD terms** are taken with their cross-references and databases.
+    - **Regenerated** from the private copy: 2,378 nodes and 4,739 relationships, five nodes and 25 relationships more than before (the species' NCBI Taxonomy xrefs and three reference databases). With the comment fix alone, the file differed from the old one only in the 110 references' comments, now lists. `audit.py` finds only its known coincidence. `expected` is the new output.
+  - **Against the published _P. falciparum_:** before, 253,233 triples only in the published file and 80,413 only in the converted one; after, 196,639 and 67,333. Entity by entity, what remains is recorded in `differences.md`.
+  - **Tests:** `BioPAXPhysicalEntityBuilderTest`, 16 tests. Each of 22 mutants of the rules made one fail:
+    - an early return on a disease already written;
+    - no `UniProt Isoform`;
+    - the first name rather than the shortest;
+    - no `CHEBI:` prefix, or no `GO:` prefix (two mutants);
+    - a fragment for the default coordinates;
+    - nothing kept once;
+    - no "[ChEBI" cut;
+    - no gene names;
+    - the last comment;
+    - no taxonomy xref;
+    - a coefficient of 1;
+    - no drug comment;
+    - PSI-MOD's last name;
+    - no release in the database name;
+    - no version in the stable-id URL;
+    - from #37's review, which found a ModifiedNucleotide written as an empty feature (it is a transcriptional modification; 79 residues in release 97):
+      - no coordinate for a ModifiedNucleotide, or no modification for one (two mutants);
+      - no coordinate for a ReplacedResidue;
+      - no ProteinReference for a protein drug;
+      - no description in place of a missing comment;
+      - what a residue is modified by ahead of its PSI-MOD term.
+    
+    A 17th, sets typed by their reference, was equivalent, and the clause it changed is removed. `ParallelConversionTest`'s pathways now have a species, so their organisms are still exercised.
 - [ ] T012 [US2] Reactions: BiochemicalReaction, Degradation (`left` only) and TemplateReaction (`product` only) as the event's kind; `conversionDirection`; `participantStoichiometry`; `eCNumber`; their literature.
 - [ ] T013 [US2] Catalysis with its controller and its two RelationshipXrefs and the `activeUnit:` comment; Control (ACTIVATION, INHIBITION) and TemplateReactionRegulation from regulation, one per controlled reaction, with the regulation's UnificationXrefs (database id, and stable id where the published file has one).
 - [ ] T014 [US2] Events' own cross-references: RelationshipXrefs for GO biological process, disease and the rest, all of them where the old converter returned early on a repeat (an obvious bug fixed; recorded in `differences.md`).

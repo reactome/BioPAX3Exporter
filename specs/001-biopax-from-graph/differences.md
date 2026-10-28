@@ -14,6 +14,21 @@ Every way this exporter's output differs from the release's published `biopax.zi
   What the reader does to names is not yet traced. A file written from the graph is compared in T020.
 - **Values repeated within one individual.** Release 97 writes some values twice on one individual: 13 in _P. falciparum_ and 2,421 in human, 2,292 of them a `Protein.feature` written twice. The comparer counts a repeat once, since Paxtools keeps values as sets. Two individuals of the same content, referred to twice, still count twice; human has 15 such references. Whether a protein's repeated modification should be one feature or two is decided in T011.
 
+## Physical entities (T011)
+
+Measured 28 Oct 2026 on _P. falciparum_, converted from a private copy of release 97's graph before and after T011, each compared with the published file.
+
+- **The whole file** (`ci/compare.py`): before, 253,233 triples only in the published file and 80,413 only in the converted one; after, 196,639 and 67,333. Most of what remains is not T011's: the catalysts' entities (T013) and the sets' members (T017) are not written yet, so the entities only they reach are missing.
+- **Entity by entity:** the 2,619 entities the converted file writes are all in the published file. Compared one by one, with ids aside and other entities named by their database id, 1,498 agree as written, and 711 complexes more differ only in how a coefficient is spelled (below). The rest differ only in these ways:
+  - **Sets** (384): written as PhysicalEntity with no members or "Converted from EntitySet" comment yet. That is T017's.
+  - **Mondo cross-references** (14 xrefs). They are in the graph, put there by `reactome/graph-add-links` after the relational database the release's converter read. The published human file has no Mondo xref either. The exporter writes the graph's cross-references, so these are written: a difference of the data.
+  - **Cross-references and diseases the old converter skipped** (2 KEGG COMPOUND, 3 DOID). Its loop over an entity's cross-references, and its loop over its diseases, stopped at the first one it had already written for another entity. Every one is written here: an obvious bug, fixed. The release's events have the same bug, fixed in T014.
+  - **A name equal to the display name** (8 proteins, 2 small molecules). Where the graph lists a name twice, the release's converter took one copy as the display name and wrote the other as a name. Paxtools adds the display name to an individual's names and writes it only as `displayName`, so that name cannot be written apart. The same 8 and 2 appeared in the Paxtools round trip above: a difference of the writer.
+  - **A modification repeated on one protein** (2 proteins). The graph's `hasModifiedResidue` has a stoichiometry of 2, and the release wrote its one ModificationFeature twice. A BioPAX feature carries no count, and Paxtools keeps an individual's values as a set, so it is written once. `ci/compare.py` already counts a repeated value once. This settles the question left above.
+  - **`stoichiometricCoefficient`** is written `1.0` where the release wrote `1`. Both are the same `xsd:float`, and `ci/compare.py` compares them by value, so this is not a difference.
+- **Read from the graph's `databaseName`.** An xref's `db` is the record's `databaseName`, the name of its reference database as the graph keeps it on the record, so the database itself is never read. In release 97 it equals the reference database's display name on every reference entity, cross-reference and ontology term that has one. The exceptions are two malformed ReferenceDNASequence nodes that no entity refers to, so they are never written.
+- **The organism.** One BioSource per taxon, with its NCBI Taxonomy UnificationXref, shared by pathways and entity references, as the release writes it.
+
 ## The validator's baseline
 
 The BioPAX validator 6.0.0 (`--profile=notstrict`), read by `ci/validate.py`, on the published files of release 97. A written file may have no ERROR its published counterpart lacks (SC-003); warnings are recorded, not held.

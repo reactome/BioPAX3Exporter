@@ -49,6 +49,13 @@ class ParallelConversionTest {
         }
     }
 
+    // A pathway's organism is its first species, one BioSource per taxon (T011).
+    private val human =
+        mock(Species::class.java).also {
+            whenever(it.dbId).thenReturn(48887)
+            whenever(it.displayName).thenReturn("Homo sapiens")
+        }
+
     private fun pathway(
         dbId: Long,
         events: List<Event>,
@@ -57,6 +64,7 @@ class ParallelConversionTest {
             whenever(it.dbId).thenReturn(dbId)
             whenever(it.displayName).thenReturn("pathway $dbId")
             whenever(it.speciesName).thenReturn("Homo sapiens")
+            whenever(it.species).thenReturn(listOf(human))
             whenever(it.hasEvent).thenReturn(events)
         }
 

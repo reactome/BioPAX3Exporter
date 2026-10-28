@@ -29,7 +29,7 @@ class BioPAX3BasicElementsBuilderTest {
         val builder =
             BioPAX3BasicElementsBuilder(
                 thisReactomeEvent = null,
-                context = ConversionContext("http://www.reactome.org/biopax/97/1#", mockModel),
+                context = ConversionContext("http://www.reactome.org/biopax/97/1#", 97, mockModel),
                 thisBPElement = mockEntity,
             )
         builder.addReactomeDataSource()
@@ -47,7 +47,7 @@ class BioPAX3BasicElementsBuilderTest {
         val builder =
             BioPAX3BasicElementsBuilder(
                 thisReactomeEvent = null,
-                context = ConversionContext("", mock(Model::class.java)),
+                context = ConversionContext("", 97, mock(Model::class.java)),
                 thisBPElement = mockPathway,
             )
 
@@ -68,7 +68,7 @@ class BioPAX3BasicElementsBuilderTest {
         val builder =
             BioPAX3BasicElementsBuilder(
                 thisReactomeEvent = mockEvent,
-                context = ConversionContext("", mock(Model::class.java)),
+                context = ConversionContext("", 97, mock(Model::class.java)),
                 thisBPElement = mockEntity,
             )
 
@@ -96,7 +96,7 @@ class BioPAX3BasicElementsBuilderTest {
         val builder =
             BioPAX3BasicElementsBuilder(
                 thisReactomeEvent = null,
-                context = ConversionContext("", mockModel),
+                context = ConversionContext("", 97, mockModel),
                 thisBPElement = mockEntity,
             )
 
@@ -131,7 +131,7 @@ class BioPAX3BasicElementsBuilderTest {
         val builder =
             BioPAX3BasicElementsBuilder(
                 thisReactomeEvent = null,
-                context = ConversionContext("", mockModel),
+                context = ConversionContext("", 97, mockModel),
                 thisBPElement = mockEntity,
             )
 
