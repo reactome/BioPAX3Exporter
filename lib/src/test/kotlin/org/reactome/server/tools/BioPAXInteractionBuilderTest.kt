@@ -133,7 +133,8 @@ class BioPAXInteractionBuilderTest {
     @Test
     fun `a black box with one input, no output and degradation in its name is a Degradation`() {
         val apoB = entity<Complex>(4, "apoB-48")
-        val event = reaction<BlackBoxEvent>("apoB-48 degradation", listOf(apoB), emptyList(), listOf(catalyst("3.4.21.1")))
+        // Capitalised, as the release's names are ("Degradation of newly synthesized ApoB-48")
+        val event = reaction<BlackBoxEvent>("Degradation of apoB-48", listOf(apoB), emptyList(), listOf(catalyst("3.4.21.1")))
 
         val bp = BioPAXInteractionBuilder(event, context).addReactomeRLEvent()
 
@@ -143,6 +144,14 @@ class BioPAXInteractionBuilderTest {
         assertTrue(bp.right.isEmpty())
         // Neither a direction nor EC numbers, which are a BiochemicalReaction's
         assertNull(bp.conversionDirection)
+        // Its catalysis, as the release writes one for a Degradation's catalyst
+        assertEquals(
+            setOf(bp),
+            context.model
+                .getObjects(Catalysis::class.java)
+                .single()
+                .controlled,
+        )
     }
 
     @Test
@@ -158,6 +167,10 @@ class BioPAXInteractionBuilderTest {
         // Not written as a participant beside it, and no catalysis
         assertTrue(bp.participant.isEmpty())
         assertTrue(context.model.getObjects(Catalysis::class.java).isEmpty())
+        // Its names and ids, as every event has them
+        assertEquals("SOCS3 gene expression", bp.displayName)
+        assertEquals(setOf("a long name of the reaction"), bp.name - bp.displayName)
+        assertEquals(setOf("Reactome Database ID Release 98 500", "Reactome R-HSA-500"), bp.xref.map { "${it.db} ${it.id}" }.toSet())
     }
 
     @Test
@@ -168,7 +181,10 @@ class BioPAXInteractionBuilderTest {
         val twoOut = reaction<BlackBoxEvent>("A and B appear", emptyList(), listOf(one, other))
         val notBlackBox = reaction<Reaction>("B degradation", listOf(other), emptyList())
         val twoIn = reaction<BlackBoxEvent>("A and B degradation", listOf(one, other), emptyList())
-        for (event in listOf(notNamed, twoOut, notBlackBox, twoIn)) {
+        // A Degradation has no output, and a TemplateReaction no input
+        val inAndOut = reaction<BlackBoxEvent>("Degradation of A to B", listOf(one), listOf(other))
+        val fromInput = reaction<BlackBoxEvent>("B from A", listOf(one), listOf(other))
+        for (event in listOf(notNamed, twoOut, notBlackBox, twoIn, inAndOut, fromInput)) {
             val bp = BioPAXInteractionBuilder(event, ConversionContext("x#", 98)).addReactomeRLEvent()
             assertEquals(BiochemicalReaction::class.java, bp!!.modelInterface, event.displayName)
         }

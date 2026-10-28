@@ -56,8 +56,8 @@ class BioPAXInteractionBuilder(
             addParticipants(event, bpReaction as org.biopax.paxtools.model.level3.Conversion)
             if (bpReaction is BiochemicalReaction) {
                 bpReaction.conversionDirection = ConversionDirectionType.LEFT_TO_RIGHT
-                // Each catalyst's molecular function's EC number; the graph keeps one per
-                // function where the release had several (differences.md).
+                // Each catalyst's molecular function's EC number, once; at release 98 these are
+                // the release's own (differences.md).
                 event.catalystActivity?.forEach { ca -> ca.activity?.ecNumber?.let { bpReaction.addECNumber(it) } }
             }
             // Catalysts

@@ -105,4 +105,23 @@ class BioPAX3UtilsTest {
         // Test with null name
         assertFalse(BioPAX3Utils.containsName(set, null))
     }
+
+    // The names of an entity or an event as the release writes them (T011, T012).
+    @Test
+    fun `addNames takes the first of the shortest as the display name, and the rest as names`() {
+        val bp = protein("x#p")
+        // Two of the shortest length: the first is taken, as the release's strict < takes it
+        BioPAX3Utils.addNames(listOf("ATP hydrolysis", "ATPase", "ADPase"), "the graph's display name", bp)
+        assertEquals("ATPase", bp.displayName)
+        // The display name is not written again as a name
+        assertEquals(setOf("ATP hydrolysis", "ADPase"), bp.name - bp.displayName)
+    }
+
+    @Test
+    fun `addNames uses the display name when there is no name`() {
+        val bp = protein("x#p")
+        BioPAX3Utils.addNames(null, "RBX1 [cytosol]", bp)
+        assertEquals("RBX1 [cytosol]", bp.displayName)
+        assertEquals(setOf("RBX1 [cytosol]"), bp.name)
+    }
 }

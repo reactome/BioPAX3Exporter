@@ -43,7 +43,9 @@ Measured 28 Oct 2026 on _P. falciparum_ from a private copy of release 98's grap
 - **The whole file** (`ci/compare.py`): T011's output against the published file, 197,744 triples only in the published file and 67,553 only in the converted one; T012's, 181,838 and 81,839. The converted side grows because each reaction is written once for every pathway that reaches it: 4,136 BiochemicalReactions against the release's 970, and each copy now carries its names, ids and direction. Writing a shared event once is T015's; until then the reaction-by-reaction comparison is the measure.
 - **The kinds**, on the fixture's human events: R-HSA-174731 is a Degradation (`left` only) and R-HSA-6790038 a TemplateReaction (`product` only), as release 98 writes them.
 - **A TemplateReaction's product is not also a participant.** Paxtools 4.3.1 adds a product to an interaction's participants and writes both, though `product` is itself a participant by BioPAX's definition. The release writes the product alone, so the exporter removes the extra participant.
-- **EC numbers in release 98.** Release 98's published human file has 3,594 `eCNumber` values, against release 97's 20,384 (research R1). The full run (T020) measures what that changes in the data's difference (reactome/graph-importer#9).
+- **EC numbers in release 98.** Release 98's published human file has 3,594 `eCNumber` values, against release 97's 20,384 (research R1). The graph gives exactly those, by this task's rule (from #42's review): 3,597 distinct reaction and EC number pairs in human reactions a pathway reaches, less 4 on Degradations, which take none, plus one value the release writes twice (R-HSA-9698988's two catalysts share 3.4.21.1; the same triple, written once here). The data's difference in EC numbers (reactome/graph-importer#9), the largest at release 97, is gone at release 98; the full run (T020) confirms it on every species.
+
+## The validator's baseline
 
 The BioPAX validator 6.0.0 (`--profile=notstrict`), read by `ci/validate.py`, on the published files of release 97. A written file may have no ERROR its published counterpart lacks (SC-003); warnings are recorded, not held.
 
