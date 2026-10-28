@@ -27,7 +27,7 @@
         <jdk.version>17</jdk.version>
         
         <paxtools.version>4.3.1</paxtools.version>
-        <kotlin.version>1.7.10</kotlin.version>
+        <kotlin.version>2.4.21</kotlin.version>
     </properties>
 
     <developers>
