@@ -59,8 +59,8 @@ Feature-sized work goes through Spec Kit before any code, and the specs live in
   `Dockerfile`'s images (`.github/dependabot.yml`). These move only by hand:
   graph-core, a snapshot pinned by checksum (`ci/snapshots.sh`) with the
   reactome-parent and reactome-bom it brings; `logback-classic` beyond its 1.2
-  line; the pinned tools; the build image (`maven`); and the Java version of the
-  runtime image.
+  line; the pinned tools; the build image (`maven`); the Java version of the
+  runtime image; and CI's Neo4j image (`neo4j:4.4.48-community`).
 - **`format`**: Markdown, YAML and JSON as Prettier 3.9.10 writes them
   (`.prettierrc`, `.prettierignore`; WebsiteAngular's settings). Fix with
   `npx prettier@3.9.10 --write .`, which a Spec Kit run needs afterwards: Spec Kit
