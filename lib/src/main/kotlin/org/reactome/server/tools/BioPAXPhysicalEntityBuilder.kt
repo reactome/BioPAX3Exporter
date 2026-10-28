@@ -30,6 +30,7 @@ import org.reactome.server.graph.domain.model.EntityWithAccessionedSequence
 import org.reactome.server.graph.domain.model.FragmentInsertionModification
 import org.reactome.server.graph.domain.model.FragmentModification
 import org.reactome.server.graph.domain.model.GroupModifiedResidue
+import org.reactome.server.graph.domain.model.ModifiedNucleotide
 import org.reactome.server.graph.domain.model.ProteinDrug
 import org.reactome.server.graph.domain.model.PsiMod
 import org.reactome.server.graph.domain.model.RNADrug
@@ -228,6 +229,8 @@ class BioPAXPhysicalEntityBuilder(
                     is TranslationalModification -> residue.coordinate
                     is ReplacedResidue -> residue.coordinate
                     is FragmentInsertionModification -> residue.coordinate
+                    // A transcriptional one, not a translational one, though the converter read both alike
+                    is ModifiedNucleotide -> residue.coordinate
                     else -> null
                 }?.let { featureLocation = sequenceSite(it) }
                 // The first PSI-MOD term, else what the residue is modified by.
@@ -241,6 +244,7 @@ class BioPAXPhysicalEntityBuilder(
                     when (residue) {
                         is GroupModifiedResidue -> residue.modification
                         is CrosslinkedResidue -> residue.modification
+                        is ModifiedNucleotide -> residue.modification
                         else -> null
                     }
                 when {

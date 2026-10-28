@@ -141,7 +141,7 @@ description: 'Tasks for spec 001: BioPAX Level 3 from the graph, as the release 
 
 **Goal**: each class written as release 97 writes it. Each task changes the fixture's expected output for its class only, and compares _P. falciparum_ from the private copy before and after, its differences falling.
 
-- [x] T011 [US2] Physical entities: their entity references (ProteinReference, SmallMoleculeReference, DnaReference, RnaReference) with cross-references; the "Reactome DB_ID" comment and the two UnificationXrefs (database id of the release, stable id with version); cellular location; complexes with `component` and `componentStoichiometry`; features (modifications, fragments). — #37.
+- [x] T011 [US2] Physical entities: their entity references (ProteinReference, SmallMoleculeReference, DnaReference, RnaReference) with cross-references; the "Reactome DB_ID" comment and the two UnificationXrefs (database id of the release, stable id with version); cellular location; complexes with `component` and `componentStoichiometry`; features (modifications, fragments). — #38, replacing #37 after its review.
   - **The rules** are Pathway-Exchange's `ReactomeToBioPAX3XMLConverter.createPhysicalEntity` and `BioPAX3FeatureHandler`, read from the graph:
     - the class from the reference entity's;
     - the shortest name as the display name, the rest as names;
@@ -159,15 +159,15 @@ description: 'Tasks for spec 001: BioPAX Level 3 from the graph, as the release 
     - the graph's Mondo cross-references, put there by `graph-add-links`, are written;
     - a modification repeated on a protein is one feature.
   - **The fixture:**
-    - **Comments as lists.** `extract.py` wrote a reference sequence's `comment` list as one string, which graph-core could not read, so every reference failed to load once it was read. It now keeps the list, and `check-placeholders.sh` accepts a list of placeholders.
+    - **Comments as lists.** `extract.py` wrote a reference sequence's `comment` list as one string, which graph-core could not read, so every reference failed to load once it was read. It now keeps the list, and `check-placeholders.sh` accepts a list of placeholders (an empty one too).
     - **Species and PSI-MOD terms** are taken with their cross-references and databases.
-    - **Regenerated** from the private copy: 2,378 nodes and 4,739 relationships. The comment fix alone gave a file identical to the hand-patched one. `audit.py` finds only its known coincidence. `expected` is the new output.
+    - **Regenerated** from the private copy: 2,378 nodes and 4,739 relationships, five nodes and 25 relationships more than before (the species' NCBI Taxonomy xrefs and three reference databases). With the comment fix alone, the file differed from the old one only in the 110 references' comments, now lists. `audit.py` finds only its known coincidence. `expected` is the new output.
   - **Against the published _P. falciparum_:** before, 253,233 triples only in the published file and 80,413 only in the converted one; after, 196,639 and 67,333. Entity by entity, what remains is recorded in `differences.md`.
-  - **Tests:** `BioPAXPhysicalEntityBuilderTest`, 11 tests. Each of 16 mutants of the rules made one fail:
+  - **Tests:** `BioPAXPhysicalEntityBuilderTest`, 16 tests. Each of 22 mutants of the rules made one fail:
     - an early return on a disease already written;
     - no `UniProt Isoform`;
     - the first name rather than the shortest;
-    - no `CHEBI:` or `GO:` prefix;
+    - no `CHEBI:` prefix, or no `GO:` prefix (two mutants);
     - a fragment for the default coordinates;
     - nothing kept once;
     - no "[ChEBI" cut;
@@ -178,7 +178,13 @@ description: 'Tasks for spec 001: BioPAX Level 3 from the graph, as the release 
     - no drug comment;
     - PSI-MOD's last name;
     - no release in the database name;
-    - no version in the stable-id URL.
+    - no version in the stable-id URL;
+    - from #37's review, which found a ModifiedNucleotide written as an empty feature (it is a transcriptional modification; 79 residues in release 97):
+      - no coordinate for a ModifiedNucleotide, or no modification for one (two mutants);
+      - no coordinate for a ReplacedResidue;
+      - no ProteinReference for a protein drug;
+      - no description in place of a missing comment;
+      - what a residue is modified by ahead of its PSI-MOD term.
     
     A 17th, sets typed by their reference, was equivalent, and the clause it changed is removed. `ParallelConversionTest`'s pathways now have a species, so their organisms are still exercised.
 - [ ] T012 [US2] Reactions: BiochemicalReaction, Degradation (`left` only) and TemplateReaction (`product` only) as the event's kind; `conversionDirection`; `participantStoichiometry`; `eCNumber`; their literature.

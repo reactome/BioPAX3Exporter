@@ -19,9 +19,10 @@ classes read, in their direction, each node with its full label set and every pr
 - Some nodes are read only for themselves and taken as leaves, without their own
   relationships: compartments, GO terms, diseases, reference databases, people, and
   events outside the fixture that a taken one names (a preceding event, a normal
-  reaction, a source of an inference). Species and PSI-MOD terms are taken with their
-  cross-references and databases, which a BioSource and a modification type write
-  (T011); nothing else of theirs is followed.
+  reaction, a source of an inference). Taxa (species) and external ontology terms
+  (PSI-MOD, sequence ontology) are taken with their cross-references and databases,
+  which a BioSource and a modification type write (T011); nothing else of theirs is
+  followed, since none of their other relationships is in OUTGOING.
 - The `DBInfo` node is taken as it is.
 
 People's names never leave the graph (constitution VI): every `Person` keeps only its

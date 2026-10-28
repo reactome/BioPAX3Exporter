@@ -31,13 +31,16 @@ import org.reactome.server.graph.domain.model.EntityWithAccessionedSequence
 import org.reactome.server.graph.domain.model.FragmentReplacedModification
 import org.reactome.server.graph.domain.model.GenomeEncodedEntity
 import org.reactome.server.graph.domain.model.GroupModifiedResidue
+import org.reactome.server.graph.domain.model.ModifiedNucleotide
 import org.reactome.server.graph.domain.model.ModifiedResidue
+import org.reactome.server.graph.domain.model.ProteinDrug
 import org.reactome.server.graph.domain.model.PsiMod
 import org.reactome.server.graph.domain.model.ReferenceGeneProduct
 import org.reactome.server.graph.domain.model.ReferenceGroup
 import org.reactome.server.graph.domain.model.ReferenceIsoform
 import org.reactome.server.graph.domain.model.ReferenceMolecule
 import org.reactome.server.graph.domain.model.ReferenceTherapeutic
+import org.reactome.server.graph.domain.model.ReplacedResidue
 import org.reactome.server.graph.domain.model.SimpleEntity
 import org.reactome.server.graph.domain.model.Species
 import org.reactome.server.graph.domain.relationship.HasComponent
@@ -401,5 +404,120 @@ class BioPAXPhysicalEntityBuilderTest {
         val bp = builder.physicalEntity(drug) as SmallMolecule
         assertEquals(setOf("Converted from Drug in Reactome", "Reactome DB_ID: 900"), bp.comment)
         assertEquals(SmallMoleculeReference::class.java, bp.entityReference.modelInterface)
+    }
+
+    @Test
+    fun `a modified nucleotide - its coordinate and what it is modified by`() {
+        val polyA = mock(ReferenceGroup::class.java)
+        whenever(polyA.dbId).thenReturn(1000)
+        whenever(polyA.displayName).thenReturn("polyadenosine monophosphate [ChEBI:16000]")
+        whenever(polyA.identifier).thenReturn("16000")
+        whenever(polyA.databaseName).thenReturn("ChEBI")
+        val residue = mock(ModifiedNucleotide::class.java)
+        whenever(residue.dbId).thenReturn(1001)
+        whenever(residue.coordinate).thenReturn(1141)
+        whenever(residue.modification).thenReturn(polyA)
+        val entity = protein()
+        whenever(entity.hasModifiedResidue).thenReturn(listOf(residue))
+
+        val feature =
+            builder
+                .physicalEntity(entity)
+                .feature
+                .filterIsInstance<ModificationFeature>()
+                .single()
+        assertEquals(1141, (feature.featureLocation as SequenceSite).sequencePosition)
+        assertEquals(setOf("polyadenosine monophosphate"), feature.modificationType.term)
+        assertEquals(
+            setOf("ChEBI CHEBI:16000"),
+            feature.modificationType.xref
+                .map { it.dbAndId() }
+                .toSet(),
+        )
+    }
+
+    @Test
+    fun `a replaced residue - its coordinate and its first PSI-MOD term`() {
+        val removal = mock(PsiMod::class.java)
+        whenever(removal.dbId).thenReturn(1100)
+        whenever(removal.name).thenReturn(listOf("L-leucine removal"))
+        whenever(removal.identifier).thenReturn("01641")
+        whenever(removal.databaseName).thenReturn("MOD")
+        val proline = mock(PsiMod::class.java)
+        whenever(proline.dbId).thenReturn(1101)
+        whenever(proline.name).thenReturn(listOf("L-proline residue"))
+        val replaced = mock(ReplacedResidue::class.java)
+        whenever(replaced.dbId).thenReturn(1102)
+        whenever(replaced.coordinate).thenReturn(254)
+        whenever(replaced.psiMod).thenReturn(listOf(removal, proline))
+        val entity = protein()
+        whenever(entity.hasModifiedResidue).thenReturn(listOf(replaced))
+
+        val feature =
+            builder
+                .physicalEntity(entity)
+                .feature
+                .filterIsInstance<ModificationFeature>()
+                .single()
+        assertEquals(254, (feature.featureLocation as SequenceSite).sequencePosition)
+        assertEquals(setOf("L-leucine removal"), feature.modificationType.term)
+        assertEquals(
+            setOf("MOD MOD:01641"),
+            feature.modificationType.xref
+                .map { it.dbAndId() }
+                .toSet(),
+        )
+    }
+
+    @Test
+    fun `a protein drug is a Protein, its reference a ProteinReference`() {
+        val therapeutic = mock(ReferenceTherapeutic::class.java)
+        whenever(therapeutic.dbId).thenReturn(1201)
+        whenever(therapeutic.displayName).thenReturn("Guide to Pharmacology - Ligands:6780 trastuzumab")
+        whenever(therapeutic.identifier).thenReturn("6780")
+        whenever(therapeutic.databaseName).thenReturn("Guide to Pharmacology - Ligands")
+        val drug = mock(ProteinDrug::class.java)
+        whenever(drug.dbId).thenReturn(1200)
+        whenever(drug.displayName).thenReturn("trastuzumab [extracellular region]")
+        whenever(drug.referenceEntity).thenReturn(therapeutic)
+        val bp = builder.physicalEntity(drug) as Protein
+        assertEquals(ProteinReference::class.java, bp.entityReference.modelInterface)
+        assertEquals(
+            setOf("Guide to Pharmacology - Ligands 6780"),
+            bp.entityReference.xref
+                .map { it.dbAndId() }
+                .toSet(),
+        )
+    }
+
+    @Test
+    fun `a reference without a comment has its first description`() {
+        val reference = geneProduct()
+        whenever(reference.comment).thenReturn(null)
+        val bp = builder.physicalEntity(protein(reference = reference)) as Protein
+        assertEquals(setOf("a description"), bp.entityReference.comment)
+    }
+
+    @Test
+    fun `a PSI-MOD term wins over what the residue is modified by`() {
+        val psiMod = mock(PsiMod::class.java)
+        whenever(psiMod.dbId).thenReturn(1300)
+        whenever(psiMod.name).thenReturn(listOf("ubiquitinylated lysine"))
+        val chain = smallMolecule(1302)
+        val residue = mock(GroupModifiedResidue::class.java)
+        whenever(residue.dbId).thenReturn(1301)
+        whenever(residue.psiMod).thenReturn(psiMod)
+        whenever(residue.modification).thenReturn(chain)
+        whenever(residue.coordinate).thenReturn(null)
+        val entity = protein()
+        whenever(entity.hasModifiedResidue).thenReturn(listOf(residue))
+
+        val feature =
+            builder
+                .physicalEntity(entity)
+                .feature
+                .filterIsInstance<ModificationFeature>()
+                .single()
+        assertEquals(setOf("ubiquitinylated lysine"), feature.modificationType.term)
     }
 }
