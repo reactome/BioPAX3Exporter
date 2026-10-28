@@ -113,7 +113,7 @@ class BioPAX3UtilsTest {
         // Two of the shortest length: the first is taken, as the release's strict < takes it
         BioPAX3Utils.addNames(listOf("ATP hydrolysis", "ATPase", "ADPase"), "the graph's display name", bp)
         assertEquals("ATPase", bp.displayName)
-        // The display name is not written again as a name
+        // The rest are names; Paxtools keeps the display name among them, and its writer leaves it out
         assertEquals(setOf("ATP hydrolysis", "ADPase"), bp.name - bp.displayName)
     }
 

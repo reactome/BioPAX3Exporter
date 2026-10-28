@@ -48,6 +48,7 @@ anything is compared; and an example prints a free-text literal (a comment, a
 title, a citation's source, which can name authors and editors) only as its
 length and a salted hash.
 """
+
 import collections
 import hashlib
 import os
@@ -69,9 +70,21 @@ FLOATING = re.compile(r"[+-]?([0-9]+\.?[0-9]*|\.[0-9]+)([eE][+-]?[0-9]+)?|NaN|[+
 DECIMAL = re.compile(r"([+-]?)([0-9]*)\.?([0-9]*)")
 # Literals an example may print as they are: codes, ids and numbers, never free text.
 SHOWN = {
-    "db", "id", "idVersion", "term", "stoichiometricCoefficient", "conversionDirection", "controlType",
-    "catalysisDirection", "sequencePosition", "positionStatus", "year", "eCNumber", "dbVersion",
-    "templateDirection", "stepDirection",
+    "db",
+    "id",
+    "idVersion",
+    "term",
+    "stoichiometricCoefficient",
+    "conversionDirection",
+    "controlType",
+    "catalysisDirection",
+    "sequencePosition",
+    "positionStatus",
+    "year",
+    "eCNumber",
+    "dbVersion",
+    "templateDirection",
+    "stepDirection",
 }
 
 
@@ -192,7 +205,9 @@ def triples(path):
         if name not in nodes:
             return f"EXTERNAL|{name}"
         cls, props = nodes[name]
-        dbids = sorted(literals(nodes[v[1]][1]).get("id", "") for p, v in props if p == "xref" and is_dbid(v))
+        dbids = sorted(
+            literals(nodes[v[1]][1]).get("id", "") for p, v in props if p == "xref" and is_dbid(v)
+        )
         if dbids:
             found = f"{cls}|dbId:{','.join(dbids)}"
             controlled = sorted(key(v[1]) for p, v in props if p == "controlled" and v[0] == "r")
@@ -203,7 +218,9 @@ def triples(path):
                 raise Refused(f"{path}: a cycle through a {cls}")
             open_keys.add(name)
             parts = sorted(
-                f"{prop}>{key(value[1])}" if value[0] == "r" else f"{prop}={value[0]}:{value[1]}^^{value[2]}"
+                f"{prop}>{key(value[1])}"
+                if value[0] == "r"
+                else f"{prop}={value[0]}:{value[1]}^^{value[2]}"
                 for prop, value in props
                 if prop not in UNKEYED
             )
@@ -218,7 +235,7 @@ def triples(path):
     # thousand (about 5,000 here) whatever this says; a deeper one exits 2.
     sys.setrecursionlimit(max(sys.getrecursionlimit(), 10000))
     counted = collections.Counter()
-    for name, (cls, props) in nodes.items():
+    for name, (_cls, props) in nodes.items():
         subject = key(name)
         for prop, value in props:
             counted[(subject, prop, ("r", key(value[1])) if value[0] == "r" else value)] += 1
@@ -270,7 +287,11 @@ def shown(triple):
     prop, target = triple[1], triple[2]
     if target[0] == "r":
         return f"-> {target[1]}"
-    text = target[1] if target[0] == "n" or prop in SHOWN or target[1].startswith("<hashed ") else f"<{len(target[1])} chars {salted(target[1])}>"
+    text = (
+        target[1]
+        if target[0] == "n" or prop in SHOWN or target[1].startswith("<hashed ")
+        else f"<{len(target[1])} chars {salted(target[1])}>"
+    )
     return f"{text!r}^^{target[2]}" if target[2] else repr(text)
 
 
@@ -278,24 +299,39 @@ def report(reference, other, examples=0):
     """Lines describing the differences of two files' triples by kind and count, the changes at the root apart."""
     only = differences(reference, other)
     roots, blur = at_the_root(reference, other)
-    lines = [f"only in the reference: {sum(only[0].values())}", f"only in the file: {sum(only[1].values())}"]
+    lines = [
+        f"only in the reference: {sum(only[0].values())}",
+        f"only in the file: {sum(only[1].values())}",
+    ]
     root_kinds, all_kinds = collections.Counter(), collections.Counter()
-    for side, found, root in zip("-+", only, roots):
+    for side, found, root in zip("-+", only, roots, strict=True):
         for triple, count in root.items():
             root_kinds[(kind(triple), side)] += count
         for triple, count in found.items():
             all_kinds[(kind(triple), side)] += count
     carried_kinds = all_kinds - root_kinds
     if all_kinds and not root_kinds:
-        lines.append(" nothing differs at the root: what differs is swapped among individuals keyed by content")
+        lines.append(
+            " nothing differs at the root: what differs is swapped among individuals keyed by content"
+        )
     rest = "not at the root (carried by a rehashed key, or swapped among content keys)"
     for title, kinds in (("at the root", root_kinds), (rest, carried_kinds)):
         if kinds:
             lines.append(f" {title}: {sum(kinds.values())}")
-            lines.extend(f"  {side} {name} {count}" for (name, side), count in sorted(kinds.items()))
+            lines.extend(
+                f"  {side} {name} {count}" for (name, side), count in sorted(kinds.items())
+            )
     if examples:
-        for side, found, root in zip("-+", only, roots):
-            ordered = sorted(found.items(), key=lambda item: (blur(item[0]) not in root, item[0][0], item[0][1], repr(item[0][2])))
+        for side, found, root in zip("-+", only, roots, strict=True):
+            ordered = sorted(
+                found.items(),
+                key=lambda item: (
+                    blur(item[0]) not in root,
+                    item[0][0],
+                    item[0][1],
+                    repr(item[0][2]),
+                ),
+            )
             for triple, count in ordered[:examples]:
                 lines.append(f"    {side} {count} x {triple[0]} {triple[1]} {shown(triple)}")
     return lines

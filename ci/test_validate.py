@@ -1,4 +1,5 @@
 """Tests for ci/validate.py: python3 -I -m unittest discover -s ci"""
+
 import contextlib
 import io
 import json
@@ -69,7 +70,9 @@ class ValidateTest(unittest.TestCase):
 
     def test_adds_up_a_code_repeated_across_validations(self):
         one = report(("ERROR", "e", 1))
-        two = one.replace("</validatorResponse>", one.split("<validatorResponse")[1].split(">", 1)[1])
+        two = one.replace(
+            "</validatorResponse>", one.split("<validatorResponse")[1].split(">", 1)[1]
+        )
         lines, failed = validate.check([self.write(two)], {"e": 1})
         self.assertTrue(failed)
         self.assertIn("  ERROR e 2", lines)
