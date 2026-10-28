@@ -83,7 +83,7 @@
                 <version>${jasp.version}</version>
             </dependency>
 
-            <!-- Logging, for the command line: the version graph-core brings. -->
+            <!-- Logging, for the command line: the 1.2 line graph-core brings (SLF4J 1.7; 1.3 and later need SLF4J 2). -->
             <dependency>
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-classic</artifactId>
