@@ -220,8 +220,33 @@ description: 'Tasks for spec 001: BioPAX Level 3 from the graph, as the release 
       - no names on a TemplateReaction;
       - no ids on a TemplateReaction.
     - One more mutant, the display name kept among the names, is equivalent: Paxtools keeps the display name in the name set either way.
-    - Left for T013: the release's converter also puts a pathway's own regulations into its step.
-- [ ] T013 [US2] Catalysis with its controller and its two RelationshipXrefs and the `activeUnit:` comment; Control (ACTIVATION, INHIBITION) and TemplateReactionRegulation from regulation, one per controlled reaction, with the regulation's UnificationXrefs (database id, and stable id where the published file has one).
+    - Left for T013, which found none to write: the release's converter also puts a pathway's own regulations into its step.
+- [x] T013 [US2] Catalysis with its controller and its two RelationshipXrefs and the `activeUnit:` comment; Control (ACTIVATION, INHIBITION) and TemplateReactionRegulation from regulation, one per controlled reaction, with the regulation's UnificationXrefs (database id, and stable id where the published file has one). — #57.
+  - **The rules** are `handleCatalystActivity`, `handleActiveUnits`, `handleRegulation` and `createModulationFromRegulation` from Pathway-Exchange's converter.
+    - **A catalyst activity** is a new Catalysis for each reaction (none for a TemplateReaction, which returns before it), with:
+      - its catalyst as controller, ACTIVATION;
+      - its GO molecular function and its own database id ("Same Catalyst Activity", no PSI-MI xref) as RelationshipXrefs;
+      - the data source, and an `activeUnit:` comment for each active unit, the unit written.
+    - **A regulation** is a new Control for each reaction it regulates (a TemplateReactionRegulation for a TemplateReaction), with:
+      - ACTIVATION for a positive one (a Requirement too), INHIBITION for a negative one;
+      - Reactome's two ids, the data source, its regulator as controller, and its active units.
+  - **Active units** are taken in dbId order: graph-core gives a catalyst activity's as a set, and the ids they number must be the same on every run.
+  - **`ci/compare.py`** reads an `activeUnit: #id` comment as a reference to the entity it names. A test, which fails on the old comparer, holds it: the same entity under another id compares equal.
+  - **Measured on release 98** (`differences.md`): the published file's catalyses and controls are matched but for sets (T017) and repetition (T015). The validator reports 0 errors on the fixture's output.
+  - **Not written, as the graph has none:** a pathway's regulations (graph-core's `Regulation` regulates reactions only) and a catalyst activity's own regulation (the converter's Modulation).
+  - **Left to their tasks:** a regulation's literature (T016).
+  - **Tests:** `BioPAXControlTest`, 5 tests. Each of 20 mutants made one fail:
+    - no controller;
+    - no ACTIVATION;
+    - no molecular function, or the function typed as a biological process;
+    - no own id, or the own id as a UnificationXref;
+    - active units unsorted, missing, or named by their full URI;
+    - no regulations, or regulations only off a TemplateReaction;
+    - always a Control;
+    - INHIBITION for a positive regulation, or no INHIBITION;
+    - no regulation ids, regulator, active units or data source;
+    - "Same Catalyst Activity" with a PSI-MI xref;
+    - a GO id without its prefix.
 - [ ] T014 [US2] Events' own cross-references: RelationshipXrefs for GO biological process, disease and the rest, all of them where the old converter returned early on a repeat (an obvious bug fixed; recorded in `differences.md`).
 - [ ] T015 [US2] Pathways (and the caches of events and entities by dbId, kept in the `ConversionContext`, which T008 left for this task: shared across a species' pathways, they write a shared child once): components, PathwayStep with `stepProcess` (reactions, catalyses, controls, pathways) and `nextStep`; a shared child written once and referenced by each parent; no header pathway; no event outside a pathway (research R1).
 - [ ] T016 [US2] Literature and provenance: PublicationXref (PubMed, ISBN, URL) on the event; Evidence (IEA) for inferred events only; the single Provenance; curation comments, with HTML kept as the published files keep it.

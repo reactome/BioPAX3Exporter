@@ -63,6 +63,10 @@ XSD = "http://www.w3.org/2001/XMLSchema#"
 NAMED = re.compile(r"\s*(authored|reviewed|edited|created|revised|modified|curated)\s*:", re.I)
 UNKEYED = {"nextStep"}
 DBID = "Reactome Database ID"
+# A catalysis's or a control's active unit, which the release writes as a comment naming
+# the entity's rdf:ID ("activeUnit: #Protein12"); ids are numbered as written, so the
+# comment is read as a reference to the entity it names (spec 001 T013).
+ACTIVE_UNIT = re.compile(r"activeUnit: #(\S+)")
 SALT = os.urandom(16)
 # ASCII digits only: Python's own readers take any script's.
 INTEGER = re.compile(r"[+-]?0*[0-9]{1,40}")
@@ -175,8 +179,15 @@ def individuals(path):
             if set(child.keys()) - {RDF + "resource", RDF + "datatype"}:
                 raise Refused(f"{path}: a {cls}'s {prop} with an attribute this does not read")
             target = child.get(RDF + "resource")
+            unit = (
+                ACTIVE_UNIT.fullmatch(child.text or "")
+                if prop == "comment" and target is None
+                else None
+            )
             if target is not None:
                 props.append((prop, ("r", resolve(target))))
+            elif unit:
+                props.append(("comment:activeUnit", ("r", resolve("#" + unit[1]))))
             else:
                 props.append((prop, literal(prop, child.text or "", child.get(RDF + "datatype"))))
         if name in nodes:

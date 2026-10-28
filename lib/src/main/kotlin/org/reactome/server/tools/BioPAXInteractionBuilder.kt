@@ -2,13 +2,20 @@ package org.reactome.server.tools
 
 import org.biopax.paxtools.model.level3.BiochemicalReaction
 import org.biopax.paxtools.model.level3.Catalysis
+import org.biopax.paxtools.model.level3.Control
+import org.biopax.paxtools.model.level3.ControlType
 import org.biopax.paxtools.model.level3.ConversionDirectionType
 import org.biopax.paxtools.model.level3.Degradation
 import org.biopax.paxtools.model.level3.Interaction
 import org.biopax.paxtools.model.level3.Stoichiometry
 import org.biopax.paxtools.model.level3.TemplateReaction
+import org.biopax.paxtools.model.level3.TemplateReactionRegulation
 import org.reactome.server.graph.domain.model.BlackBoxEvent
+import org.reactome.server.graph.domain.model.CatalystActivity
+import org.reactome.server.graph.domain.model.NegativeRegulation
+import org.reactome.server.graph.domain.model.PositiveRegulation
 import org.reactome.server.graph.domain.model.ReactionLikeEvent
+import org.reactome.server.graph.domain.model.Regulation
 import org.biopax.paxtools.model.level3.PhysicalEntity as BpPhysicalEntity
 import org.reactome.server.graph.domain.model.PhysicalEntity as RPhysicalEntity
 
@@ -20,7 +27,10 @@ import org.reactome.server.graph.domain.model.PhysicalEntity as RPhysicalEntity
  *   Stoichiometry where it takes part more than once; and a BiochemicalReaction (not a
  *   Degradation) goes left to right and has its catalysts' EC numbers.
  *
- * Its catalyses are T013's, its literature and evidence T016's.
+ * Its catalyses and regulations as the release writes them (T013): a Catalysis for each
+ * catalyst activity (not a TemplateReaction's), and a Control, or a
+ * TemplateReactionRegulation, for each regulation, new for each reaction it controls.
+ * Its literature and evidence, and its regulations', are T016's.
  */
 class BioPAXInteractionBuilder(
     private val thisRLEvent: ReactionLikeEvent?,
@@ -30,6 +40,7 @@ class BioPAXInteractionBuilder(
 
     // Each entity once per file, as the release writes it (T011).
     private val entities = context?.let { BioPAXPhysicalEntityBuilder(it) }
+    private val xrefs = context?.let { BioPAXXrefBuilder(it) }
 
     fun addReactomeRLEvent(): Interaction? = addBPReaction(thisRLEvent)
 
@@ -60,12 +71,10 @@ class BioPAXInteractionBuilder(
                 // the release's own (differences.md).
                 event.catalystActivity?.forEach { ca -> ca.activity?.ecNumber?.let { bpReaction.addECNumber(it) } }
             }
-            // Catalysts
-            event.catalystActivity?.forEach { _ ->
-                val bpCatalysis = addBPCatalyst()
-                bpCatalysis?.addControlled(bpReaction)
-            }
+            event.catalystActivity?.forEach { addCatalysis(it, bpReaction) }
         }
+        // Every kind of reaction, a TemplateReaction too, has its regulations.
+        event.regulatedBy?.forEach { addControl(it, bpReaction) }
         BioPAXXrefBuilder(context).addReactomeIds(event, bpReaction)
         BioPAX3BasicElementsBuilder(event, context, bpReaction).addReactomeDataSource()
 
@@ -131,9 +140,57 @@ class BioPAXInteractionBuilder(
             physicalEntity = bpEntity
         }
 
-    private fun addBPCatalyst(): Catalysis? =
-        thisModel?.addNew(
-            Catalysis::class.java,
-            context!!.nextId("Catalysis"),
-        )
+    /**
+     * A catalyst activity as a Catalysis, a new one for each reaction: its catalyst as the
+     * controller, ACTIVATION, its molecular function and its own database id ("Same
+     * Catalyst Activity") as RelationshipXrefs, the data source, and its active units.
+     */
+    private fun addCatalysis(
+        activity: CatalystActivity,
+        controlled: Interaction,
+    ) {
+        val catalysis = thisModel!!.addNew(Catalysis::class.java, context!!.nextId("Catalysis"))
+        activity.physicalEntity?.let { catalysis.addController(entities!!.physicalEntity(it)) }
+        catalysis.addControlled(controlled)
+        catalysis.controlType = ControlType.ACTIVATION
+        activity.activity?.let { catalysis.addXref(xrefs!!.goTerm(it, BioPAXXrefBuilder.GO_MOLECULAR_FUNCTION)) }
+        xrefs!!.addCatalystActivityIds(activity, catalysis)
+        BioPAX3BasicElementsBuilder(null, context, catalysis).addReactomeDataSource()
+        // A set, so taken in dbId order: the ids it numbers are the same on every run.
+        addActiveUnits(activity.activeUnit?.sortedBy { it.dbId }, catalysis)
+    }
+
+    /**
+     * A regulation as a Control (a TemplateReactionRegulation for a TemplateReaction), a
+     * new one for each reaction it controls: ACTIVATION or INHIBITION by its class,
+     * Reactome's ids, the data source, its regulator as the controller, and its active units.
+     */
+    private fun addControl(
+        regulation: Regulation,
+        controlled: Interaction,
+    ) {
+        val type = if (controlled is TemplateReaction) TemplateReactionRegulation::class.java else Control::class.java
+        val control = thisModel!!.addNew(type, context!!.nextId(type.simpleName))
+        when (regulation) {
+            is PositiveRegulation -> control.controlType = ControlType.ACTIVATION
+            is NegativeRegulation -> control.controlType = ControlType.INHIBITION
+        }
+        xrefs!!.addReactomeIds(regulation, control)
+        BioPAX3BasicElementsBuilder(null, context, control).addReactomeDataSource()
+        regulation.regulator?.let { control.addController(entities!!.physicalEntity(it)) }
+        addActiveUnits(regulation.activeUnit, control)
+        control.addControlled(controlled)
+    }
+
+    // Each active unit written, and named in a comment by the id it is written under,
+    // as the release's converter records it.
+    private fun addActiveUnits(
+        units: List<RPhysicalEntity>?,
+        control: Control,
+    ) {
+        units?.forEach { unit ->
+            val bpUnit = entities!!.physicalEntity(unit)
+            control.addComment("activeUnit: #" + bpUnit.rdfId.substringAfterLast('#'))
+        }
+    }
 }
