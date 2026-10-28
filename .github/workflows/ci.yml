@@ -20,9 +20,9 @@ jobs:
     verify:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v4
+            - uses: actions/checkout@v7
 
-            - uses: actions/setup-java@v4
+            - uses: actions/setup-java@v6
               with:
                   distribution: temurin
                   java-version: '17'
@@ -48,7 +48,7 @@ jobs:
     format:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v4
+            - uses: actions/checkout@v7
 
             - name: Formatted
               run: npx --yes prettier@3.9.10 --check .
@@ -61,7 +61,7 @@ jobs:
         permissions:
             contents: read
         steps:
-            - uses: actions/checkout@v4
+            - uses: actions/checkout@v7
 
             - name: ShellCheck
               run: |
@@ -87,18 +87,18 @@ jobs:
     docker-build:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v4
+            - uses: actions/checkout@v7
 
-            - uses: docker/setup-buildx-action@v3
+            - uses: docker/setup-buildx-action@v4
 
-            - uses: docker/build-push-action@v5
+            - uses: docker/build-push-action@v7
               with:
                   context: .
                   file: Dockerfile
                   tags: tmp-tag
                   outputs: type=docker,dest=/tmp/image.tar
 
-            - uses: actions/upload-artifact@v4
+            - uses: actions/upload-artifact@v7
               with:
                   name: image-artifact
                   path: /tmp/image.tar
@@ -123,14 +123,14 @@ jobs:
                     --health-cmd "cypher-shell -d graph.db 'RETURN 1'"
                     --health-interval 5s --health-timeout 10s --health-retries 30
         steps:
-            - uses: actions/checkout@v4
+            - uses: actions/checkout@v7
 
             - name: Load the fixture graph
               run: |
                   docker cp ci/fixture/fixture.cypher ${{ job.services.neo4j.id }}:/fixture.cypher
                   docker exec ${{ job.services.neo4j.id }} cypher-shell -d graph.db -f /fixture.cypher
 
-            - uses: actions/download-artifact@v4
+            - uses: actions/download-artifact@v8
               with:
                   name: image-artifact
                   path: /tmp
@@ -161,14 +161,14 @@ jobs:
             - name: The same bytes on a second run (FR-006)
               run: diff -r out out-again && echo "identical"
 
-            - uses: actions/setup-java@v4
+            - uses: actions/setup-java@v6
               with:
                   distribution: temurin
                   java-version: '17'
 
             - name: The BioPAX validator 6.0.0, cached by its sha1
               id: validator
-              uses: actions/cache@v4
+              uses: actions/cache@v6
               with:
                   path: validator
                   key: biopax-validator-6.0.0-d3c7e7402a3b11915cd8e75b5d7a1d682dfce01c
@@ -200,7 +200,7 @@ jobs:
         needs: [docker-build, verify, fixture]
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/download-artifact@v4
+            - uses: actions/download-artifact@v8
               with:
                   name: image-artifact
                   path: /tmp
@@ -212,7 +212,7 @@ jobs:
 
             - env:
                   AWS_REGION: us-east-1
-              uses: aws-actions/configure-aws-credentials@v4
+              uses: aws-actions/configure-aws-credentials@v6
               with:
                   role-to-assume: ${{ vars.AWS_ROLE }}
                   aws-region: ${{ env.AWS_REGION }}

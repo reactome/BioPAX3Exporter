@@ -83,11 +83,11 @@
                 <version>${jasp.version}</version>
             </dependency>
 
-            <!-- Logging, for the command line: the version graph-core brings. -->
+            <!-- Logging, for the command line: the 1.2 line graph-core brings (SLF4J 1.7; 1.3 and later need SLF4J 2). -->
             <dependency>
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-classic</artifactId>
-                <version>1.2.11</version>
+                <version>1.2.13</version>
             </dependency>
 
             <!-- Kotlin Standard Library -->
@@ -118,7 +118,7 @@
             <dependency>
                 <groupId>org.mockito</groupId>
                 <artifactId>mockito-core</artifactId>
-                <version>4.5.1</version>
+                <version>5.24.0</version>
             </dependency>
             <dependency>
                 <groupId>org.mockito.kotlin</groupId>
@@ -190,7 +190,7 @@
             <plugin>
                 <groupId>com.github.gantsign.maven</groupId>
                 <artifactId>ktlint-maven-plugin</artifactId>
-                <version>3.5.0</version>
+                <version>3.7.1</version>
                 <executions>
                     <execution>
                         <id>ktlint-check</id>
@@ -204,7 +204,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0</version>
+                <version>3.6.1</version>
                 <configuration>
                     <includes>
                         <include>**/*Test.class</include>
