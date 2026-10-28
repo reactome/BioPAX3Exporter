@@ -190,7 +190,23 @@ description: 'Tasks for spec 001: BioPAX Level 3 from the graph, as the release 
       - what a residue is modified by ahead of its PSI-MOD term.
 
     One more, sets typed by their reference, was equivalent, and the clause it changed is removed. `ParallelConversionTest`'s pathways now have a species, so their organisms are still exercised.
-- [ ] T012 [US2] Reactions: BiochemicalReaction, Degradation (`left` only) and TemplateReaction (`product` only) as the event's kind; `conversionDirection`; `participantStoichiometry`; `eCNumber`; their literature.
+- [x] T012 [US2] Reactions: BiochemicalReaction, Degradation (`left` only) and TemplateReaction (`product` only) as the event's kind; `conversionDirection`; `participantStoichiometry`; `eCNumber`; their literature. — #42.
+  - **The rules** are `handleReaction` and `guessReactionType` from Pathway-Exchange's converter. A black box with one input, no output and "degradation" in its display name is a Degradation, with its inputs on the left. One with no input and one output is a TemplateReaction, with its products only and no catalysis. Any other reaction is a BiochemicalReaction, which goes left to right and has its catalysts' EC numbers. Inputs and outputs are each written once, with a new Stoichiometry where they take part more than once; graph-core's `getInput` and `getOutput` repeat a participant by its count, as the relational lists did.
+  - **Shared with every event**, and so written here for reactions: the names, by T011's rule (now `BioPAX3Utils.addNames`); Reactome's two ids; the data source. A pathway step lists the catalyses of any interaction, not only of a BiochemicalReaction.
+  - **Left to their tasks:** the reactions' literature and evidence (T016), with every event's; catalyses' content (T013); the GO and disease xrefs (T014); a shared reaction written once (T015).
+  - **Measured on release 98** (`differences.md`). All 970 _P. falciparum_ reactions agree with the published file in what this task writes. A TemplateReaction's product is not written again as a participant, which Paxtools would otherwise do.
+  - **Tests:** `BioPAXInteractionBuilderTest`. Its third test mocked the Paxtools model, which the reaction's xrefs could not use, so it is replaced by four tests on a real model. Each of 11 mutants made one fail:
+    - no check of the name for "degradation";
+    - a Degradation from any number of inputs;
+    - a TemplateReaction from any black box without inputs;
+    - no direction;
+    - no EC numbers;
+    - the participant kept;
+    - a stoichiometry for every participant;
+    - every count 1;
+    - no ids;
+    - no data source;
+    - the graph's display name, not the shortest name.
 - [ ] T013 [US2] Catalysis with its controller and its two RelationshipXrefs and the `activeUnit:` comment; Control (ACTIVATION, INHIBITION) and TemplateReactionRegulation from regulation, one per controlled reaction, with the regulation's UnificationXrefs (database id, and stable id where the published file has one).
 - [ ] T014 [US2] Events' own cross-references: RelationshipXrefs for GO biological process, disease and the rest, all of them where the old converter returned early on a repeat (an obvious bug fixed; recorded in `differences.md`).
 - [ ] T015 [US2] Pathways (and the caches of events and entities by dbId, kept in the `ConversionContext`, which T008 left for this task: shared across a species' pathways, they write a shared child once): components, PathwayStep with `stepProcess` (reactions, catalyses, controls, pathways) and `nextStep`; a shared child written once and referenced by each parent; no header pathway; no event outside a pathway (research R1).

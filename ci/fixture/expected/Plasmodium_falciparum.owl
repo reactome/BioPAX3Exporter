@@ -20,10 +20,23 @@
  <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Plasmodium falciparum</bp:name>
 </bp:BioSource>
 
+<bp:UnificationXref rdf:ID="UnificationXref12">
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=11151258</bp:comment>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">11151258</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 98</bp:db>
+</bp:UnificationXref>
+
 <bp:UnificationXref rdf:ID="UnificationXref11">
  <bp:idVersion rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">1</bp:idVersion>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-PFA-9032195.1</bp:comment>
  <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">R-PFA-9032195</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:ID="UnificationXref13">
+ <bp:idVersion rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">1</bp:idVersion>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-PFA-68947.1</bp:comment>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">R-PFA-68947</bp:id>
  <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
 </bp:UnificationXref>
 
@@ -312,11 +325,15 @@
 </bp:FragmentFeature>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
+ <bp:xref rdf:resource="#UnificationXref12" />
+ <bp:xref rdf:resource="#UnificationXref13" />
  <bp:evidence rdf:resource="#Evidence13" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Ubiquitinated Orc1 enters the cytosol</bp:displayName>
  <bp:right rdf:resource="#Protein2" />
  <bp:left rdf:resource="#Protein1" />
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Placeholder summation 10003415</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+ <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT_TO_RIGHT</bp:conversionDirection>
 </bp:BiochemicalReaction>
 
 <bp:Pathway rdf:ID="Pathway5">
@@ -330,11 +347,15 @@
 </bp:Pathway>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
+ <bp:xref rdf:resource="#UnificationXref12" />
+ <bp:xref rdf:resource="#UnificationXref13" />
  <bp:evidence rdf:resource="#Evidence7" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Ubiquitinated Orc1 enters the cytosol</bp:displayName>
  <bp:right rdf:resource="#Protein2" />
  <bp:left rdf:resource="#Protein1" />
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Placeholder summation 10003415</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+ <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT_TO_RIGHT</bp:conversionDirection>
 </bp:BiochemicalReaction>
 
 <bp:PathwayStep rdf:ID="PathwayStep4">
@@ -532,43 +553,63 @@
 </bp:Evidence>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction7">
+ <bp:xref rdf:resource="#UnificationXref12" />
+ <bp:xref rdf:resource="#UnificationXref13" />
  <bp:evidence rdf:resource="#Evidence32" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Ubiquitinated Orc1 enters the cytosol</bp:displayName>
  <bp:right rdf:resource="#Protein2" />
  <bp:left rdf:resource="#Protein1" />
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Placeholder summation 10003415</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+ <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT_TO_RIGHT</bp:conversionDirection>
 </bp:BiochemicalReaction>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction4">
+ <bp:xref rdf:resource="#UnificationXref12" />
+ <bp:xref rdf:resource="#UnificationXref13" />
  <bp:evidence rdf:resource="#Evidence20" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Ubiquitinated Orc1 enters the cytosol</bp:displayName>
  <bp:right rdf:resource="#Protein2" />
  <bp:left rdf:resource="#Protein1" />
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Placeholder summation 10003415</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+ <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT_TO_RIGHT</bp:conversionDirection>
 </bp:BiochemicalReaction>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction3">
+ <bp:xref rdf:resource="#UnificationXref12" />
+ <bp:xref rdf:resource="#UnificationXref13" />
  <bp:evidence rdf:resource="#Evidence18" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Ubiquitinated Orc1 enters the cytosol</bp:displayName>
  <bp:right rdf:resource="#Protein2" />
  <bp:left rdf:resource="#Protein1" />
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Placeholder summation 10003415</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+ <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT_TO_RIGHT</bp:conversionDirection>
 </bp:BiochemicalReaction>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction6">
+ <bp:xref rdf:resource="#UnificationXref12" />
+ <bp:xref rdf:resource="#UnificationXref13" />
  <bp:evidence rdf:resource="#Evidence28" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Ubiquitinated Orc1 enters the cytosol</bp:displayName>
  <bp:right rdf:resource="#Protein2" />
  <bp:left rdf:resource="#Protein1" />
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Placeholder summation 10003415</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+ <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT_TO_RIGHT</bp:conversionDirection>
 </bp:BiochemicalReaction>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction5">
+ <bp:xref rdf:resource="#UnificationXref12" />
+ <bp:xref rdf:resource="#UnificationXref13" />
  <bp:evidence rdf:resource="#Evidence25" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Ubiquitinated Orc1 enters the cytosol</bp:displayName>
  <bp:right rdf:resource="#Protein2" />
  <bp:left rdf:resource="#Protein1" />
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Placeholder summation 10003415</bp:comment>
+ <bp:dataSource rdf:resource="#Provenance1" />
+ <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT_TO_RIGHT</bp:conversionDirection>
 </bp:BiochemicalReaction>
 
 <bp:Pathway rdf:ID="Pathway15">

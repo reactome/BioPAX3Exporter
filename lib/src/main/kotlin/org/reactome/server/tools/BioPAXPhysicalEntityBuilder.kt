@@ -71,7 +71,7 @@ class BioPAXPhysicalEntityBuilder(
             val reference = referenceOf(entity)
             val bpEntity = model.addNew(classFor(entity, reference), context.nextId(classFor(entity, reference).simpleName))
             if (entity is Drug && reference != null) bpEntity.addComment("Converted from Drug in Reactome")
-            addNames(entity, bpEntity)
+            BioPAX3Utils.addNames(entity.name, entity.displayName, bpEntity)
             addCellularLocation(entity, bpEntity)
             if (entity is RComplex) {
                 addComponents(entity, bpEntity as BpComplex)
@@ -120,23 +120,6 @@ class BioPAXPhysicalEntityBuilder(
             reference is ReferenceRNASequence -> Rna::class.java
             else -> BpPhysicalEntity::class.java
         }
-
-    /**
-     * The shortest name as the display name and the rest as names; the display name
-     * stands in when there is no name.
-     */
-    private fun addNames(
-        entity: RPhysicalEntity,
-        bpEntity: BpPhysicalEntity,
-    ) {
-        val names = entity.name?.toMutableList() ?: mutableListOf()
-        if (names.isEmpty() && entity.displayName != null) names.add(entity.displayName)
-        // The first of the shortest, as the release's converter takes it.
-        val shortest = names.minByOrNull { it.length } ?: return
-        bpEntity.displayName = shortest
-        names.remove(shortest)
-        names.forEach { bpEntity.addName(it) }
-    }
 
     // The first compartment, with its GO term as a UnificationXref; none without an accession.
     private fun addCellularLocation(
