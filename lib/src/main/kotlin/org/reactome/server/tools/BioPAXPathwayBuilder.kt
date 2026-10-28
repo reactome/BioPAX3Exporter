@@ -57,12 +57,16 @@ class BioPAXPathwayBuilder(
         // 2d) Set all properties
         bpPath?.displayName = pathway.displayName
         bpPath?.addComment(BioPAX3ReferenceUtils.getComment(pathway.summation))
+        val xrefs = BioPAXXrefBuilder(context!!)
+        xrefs.addBiologicalProcess(pathway, bpPath!!)
 
         // Build the "basic elements" (organism, dataSource, etc.)
-        val elements = BioPAX3BasicElementsBuilder(pathway, context, bpPath!!)
+        val elements = BioPAX3BasicElementsBuilder(pathway, context, bpPath)
         elements.addBioSourceInformation()
         elements.addReactomeDataSource()
         elements.addEvidence()
+        // Its diseases, after its data source, in the converter's order (T014)
+        xrefs.addDiseases(pathway, bpPath)
 
         // 2e) Recurse over child "hasEvent" (subpathways or RLEs)
         addChildPathways(pathway, bpPath)

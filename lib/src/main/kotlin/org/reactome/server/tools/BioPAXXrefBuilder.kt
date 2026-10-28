@@ -7,6 +7,7 @@ import org.biopax.paxtools.model.level3.UnificationXref
 import org.biopax.paxtools.model.level3.XReferrable
 import org.reactome.server.graph.domain.model.DatabaseIdentifier
 import org.reactome.server.graph.domain.model.DatabaseObject
+import org.reactome.server.graph.domain.model.Event
 import org.reactome.server.graph.domain.model.ExternalOntology
 import org.reactome.server.graph.domain.model.GO_Term
 import org.reactome.server.graph.domain.model.ReferenceEntity
@@ -55,6 +56,26 @@ class BioPAXXrefBuilder(
             },
         )
         stableIdXref(activity)?.let { bpElement.addXref(it) }
+    }
+
+    /** An event's GO biological process, as the release writes it (T014). */
+    fun addBiologicalProcess(
+        event: Event,
+        bpElement: XReferrable,
+    ) {
+        event.goBiologicalProcess?.let { bpElement.addXref(goTerm(it, GO_BIOLOGICAL_PROCESS)) }
+    }
+
+    /**
+     * An event's diseases as "additional information" RelationshipXrefs, each disease's
+     * written once and shared with the entities that name it (T014). All of them: the
+     * release's converter stopped at the first it had already written (differences.md).
+     */
+    fun addDiseases(
+        event: Event,
+        bpElement: XReferrable,
+    ) {
+        event.disease?.distinct()?.forEach { bpElement.addXref(additionalInformation(it)) }
     }
 
     /**
