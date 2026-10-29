@@ -21,11 +21,11 @@ Measured 27 Oct 2026 on release 97's published `biopax.zip` (15 species files, 2
 - **EC numbers** are literal `eCNumber` values, several per reaction: up to 84 on one human reaction, 20,384 in all. The graph keeps one per molecular function (reactome/graph-importer#9): the largest of the data's differences.
 - **Sets** are written as the class their members share, else as PhysicalEntity, with "Converted from EntitySet in Reactome" and `memberPhysicalEntity`. Of the 136 single-class sets written as PhysicalEntity in _P. falciparum_, 103 have a set among their members, and every one of those also has a member with no entity reference: the two rules fit equally, and 33 more all-SmallMolecule sets are PhysicalEntity with neither nesting. The graph decides (R6, T016).
 - **No header pathway** named for the species (0 in both files). Top-level pathways: 26 (_P. falciparum_), 29 (human).
-- **No reaction outside a pathway** (0 of 966 in _P. falciparum_, none in human): events in no pathway are not written.
+- **No reaction outside a pathway** (0 of 966 in _P. falciparum_, none in human). The converter writes a species' top-level events, so a reaction no pathway holds would be written alone; release 98 has none (T015).
 - **A shared child event is written once** and referenced by each parent (in _P. falciparum_, 61 children have two parents, six have three to seven). A Control is the exception: one per controlled reaction (above).
 - **Individuals of identical content repeat** (SequenceSite 4,912 extra, Stoichiometry 1,077 in _P. falciparum_; far more in human), so files compare as multisets.
 
-**Decision:** these are what the exporter writes. Of spec 001's two edge cases left to measurement, one is settled (an event in no pathway is not written); the sets rule is left to the graph.
+**Decision:** these are what the exporter writes. Of spec 001's two edge cases left to measurement, one is settled (an event in no pathway is written only if it is top-level, and release 98 has none); the sets rule is left to the graph.
 
 ## R2. The comparison by meaning
 

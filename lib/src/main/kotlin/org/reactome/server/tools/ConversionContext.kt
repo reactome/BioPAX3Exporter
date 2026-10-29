@@ -62,4 +62,22 @@ class ConversionContext(
         written[key] = made
         return made
     }
+
+    /**
+     * The element written for [key], or a new one from [make], kept before [fill] gives it
+     * its contents: the release's converter keeps a pathway before handling its events, so
+     * an event that reaches the pathway again finds it there.
+     */
+    fun <T : BioPAXElement> onceKeptFirst(
+        key: String,
+        make: () -> T,
+        fill: (T) -> Unit,
+    ): T {
+        @Suppress("UNCHECKED_CAST")
+        written[key]?.let { return it as T }
+        val made = make()
+        written[key] = made
+        fill(made)
+        return made
+    }
 }

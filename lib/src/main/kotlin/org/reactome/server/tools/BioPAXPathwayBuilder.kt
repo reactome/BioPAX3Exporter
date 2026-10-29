@@ -8,6 +8,8 @@ import org.reactome.server.graph.domain.model.Pathway
 import org.reactome.server.graph.domain.model.ReactionLikeEvent
 
 /**
+ * @author Sarah Keating <skeating@ebi.ac.uk>
+ *
  * Events as the release's converter writes them into one file (spec 001 T015): each
  * event once, shared by every pathway that holds it, kept in the [ConversionContext].
  *
@@ -50,9 +52,11 @@ class BioPAXPathwayBuilder(
         }
 
     private fun addPathway(pathway: Pathway): org.biopax.paxtools.model.level3.Pathway =
-        context!!.once("event:${pathway.dbId}") {
-            // Made first, as the converter makes it, and its events next
-            val bpPath = thisModel!!.addNew(org.biopax.paxtools.model.level3.Pathway::class.java, context.nextId("Pathway"))
+        context!!.onceKeptFirst(
+            "event:${pathway.dbId}",
+            // Made and kept first, as the converter makes it, and its events next
+            { thisModel!!.addNew(org.biopax.paxtools.model.level3.Pathway::class.java, context.nextId("Pathway")) },
+        ) { bpPath ->
             pathway.hasEvent?.forEach { child ->
                 val bpChild = addEvent(child) ?: return@forEach
                 bpPath.addPathwayComponent(bpChild)
@@ -69,7 +73,6 @@ class BioPAXPathwayBuilder(
             elements.addEvidence()
             elements.addReactomeDataSource()
             xrefs.addDiseases(pathway, bpPath)
-            bpPath
         }
 
     // One step for each event, made the first time a pathway holds it; its process is the event.

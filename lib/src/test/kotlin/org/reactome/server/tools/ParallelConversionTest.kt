@@ -85,7 +85,7 @@ class ParallelConversionTest {
         pathways: List<Pathway>,
     ): String =
         WriteBioPAX3(species, 97).run {
-            createModelForSpecies(species, pathways)
+            createModelForSpecies(pathways)
             toString()
         }
 

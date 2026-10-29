@@ -9,7 +9,6 @@ import org.reactome.server.graph.domain.model.*
 import org.reactome.server.graph.service.AdvancedDatabaseObjectService
 import org.reactome.server.graph.service.DatabaseObjectService
 import org.reactome.server.graph.service.GeneralService
-import org.reactome.server.graph.service.SchemaService
 import org.reactome.server.graph.service.SpeciesService
 import org.reactome.server.graph.utils.ReactomeGraphCore
 // import org.reactome.server.tools.config.GraphQANeo4jConfig;
@@ -101,7 +100,6 @@ class BioPAX3ExporterLauncher {
                 val genericService = ReactomeGraphCore.getService(GeneralService::class.java)
                 val databaseObjectService = ReactomeGraphCore.getService(DatabaseObjectService::class.java)
                 val speciesService = ReactomeGraphCore.getService(SpeciesService::class.java)
-                val schemaService = ReactomeGraphCore.getService(SchemaService::class.java)
 
                 outputStatus = Status.SINGLE_PATH
                 parseAdditionalArguments(config)
@@ -218,13 +216,13 @@ class BioPAX3ExporterLauncher {
                     ReactomeGraphCore.getService(DatabaseObjectService::class.java),
                 )
             if (events.isEmpty()) {
-                println("No pathways found for species ${species.displayName}")
+                println("No events found for species ${species.displayName}")
                 return
             }
 
             // Create a single file for all pathways of this species
             val writer = WriteBioPAX3(species, dbVersion)
-            writer.createModelForSpecies(species, events)
+            writer.createModelForSpecies(events)
 
             // Create output directory if it doesn't exist
             val outputDir = File(outputdir)

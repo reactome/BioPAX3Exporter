@@ -134,6 +134,20 @@ class BioPAXPathwayBuilderTest {
     }
 
     @Test
+    fun `a pathway an event of its own holds again is the one already made`() {
+        val inner = mock(Pathway::class.java)
+        val outer = pathway(1, listOf(inner))
+        whenever(inner.dbId).thenReturn(2)
+        whenever(inner.displayName).thenReturn("pathway 2")
+        whenever(inner.hasEvent).thenReturn(listOf(outer))
+
+        BioPAXPathwayBuilder(outer, context).addReactomePathway()
+
+        assertEquals(2, context.model.getObjects(BPPathway::class.java).size)
+        assertSame(bpPathway(1), bpPathway(2).pathwayComponent.single())
+    }
+
+    @Test
     fun `a step lists its reaction's regulations`() {
         val regulator =
             mock(SimpleEntity::class.java).also {
@@ -169,7 +183,7 @@ class BioPAXPathwayBuilderTest {
 
         val model =
             WriteBioPAX3(human, 98).run {
-                createModelForSpecies(human, events)
+                createModelForSpecies(events)
                 getModel()!!
             }
 

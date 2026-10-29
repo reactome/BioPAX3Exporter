@@ -95,10 +95,7 @@ class WriteBioPAX3 {
      * Create the BioPAX model of a species: its top-level events (SpeciesEvents), each
      * written with all it holds, once in the file, and no header pathway (T015).
      */
-    fun createModelForSpecies(
-        species: Species,
-        events: List<Event>,
-    ) {
+    fun createModelForSpecies(events: List<Event>) {
         val context = ConversionContext(xmlBase, dbVersion)
         thisModel = context.model
         val builder = BioPAXPathwayBuilder(null, context)
