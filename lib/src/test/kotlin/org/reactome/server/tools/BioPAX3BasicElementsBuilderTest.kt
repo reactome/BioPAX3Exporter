@@ -113,35 +113,4 @@ class BioPAX3BasicElementsBuilderTest {
         // Verify that the Provenance was added to the entity
         verify(mockEntity).addDataSource(mockProvenance)
     }
-
-    @Test
-    fun `test addEvidence creates new Evidence if not exists`() {
-        // Create mocks
-        val mockModel = mock(Model::class.java)
-        val mockEntity = mock(Entity::class.java)
-        val mockEvidence = mock(Evidence::class.java)
-
-        // Set up the model to return empty set of Evidence objects
-        whenever(mockModel.getObjects(Evidence::class.java)).thenReturn(emptySet())
-
-        // Set up the model to create a new Evidence
-        whenever(mockModel.addNew(eq(Evidence::class.java), any())).thenReturn(mockEvidence)
-
-        // Create the builder
-        val builder =
-            BioPAX3BasicElementsBuilder(
-                thisReactomeEvent = null,
-                context = ConversionContext("", 97, mockModel),
-                thisBPElement = mockEntity,
-            )
-
-        // Call the method
-        builder.addEvidence()
-
-        // Verify that a new Evidence was created
-        verify(mockModel).addNew(eq(Evidence::class.java), any())
-
-        // Verify that the Evidence was added to the entity
-        verify(mockEntity).addEvidence(mockEvidence)
-    }
 }

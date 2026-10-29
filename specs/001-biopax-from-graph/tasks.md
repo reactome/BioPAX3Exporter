@@ -280,7 +280,19 @@ description: 'Tasks for spec 001: BioPAX Level 3 from the graph, as the release 
     - no controls on a step, or catalyses only;
     - a species' file without step links, with a header pathway, or without its top-level reactions.
   - `SpeciesEvents`' query is held by the fixture job, apart from its species filter; dropping that filter would start human from 345 events (checked on the private copy).
-- [ ] T016 [US2] Literature and provenance: PublicationXref (PubMed, ISBN, URL) on the event; Evidence (IEA) for inferred events only; the single Provenance; curation comments, with HTML kept as the published files keep it.
+- [x] T016 [US2] Literature and provenance: PublicationXref (PubMed, ISBN, URL) on the event; Evidence (IEA) for inferred events only; the single Provenance; curation comments, with HTML kept as the published files keep it. — #68.
+  - **What is written:** each summation as a comment with its HTML; the event's literature and its summations' as PublicationXrefs, each once per file (an article by PubMed id, a book by ISBN, a web page by address, as `ReactomeToBioPAXPublicationConverter` writes them); for an inferred event, an Evidence for each source, with that source's first summation, its literature and the evidence code; and the "Authored: ", "Reviewed: " and "Edited: " comments. All in `BioPAXLiteratureBuilder`, for reactions and pathways; the empty Evidence every event had, and `BioPAX3ReferenceUtils`, which stripped the HTML, are gone.
+  - **Measured on release 98** (`differences.md`): every _P. falciparum_ event, and every one of the fixture's human events, agrees with the published file in its literature ids, curation comments, summations and Evidence. What still differs at the root is the writer's trimming (T018) and, in 23 of 5,750 PublicationXrefs, the form of an author's name the release's database held.
+  - **Tests:** `BioPAXLiteratureTest`, 11 tests. Each of 28 mutants made one fail:
+    - the HTML stripped, or a blank summation kept;
+    - the summations' literature left out, or a publication not shared;
+    - "PubMed" for "Pubmed"; no year; a source without its colon;
+    - a book titled by its title, or its source without "(Book)"; no url; no authors;
+    - an Evidence shared between events; the source's last summation for its first; no Evidence comment, or no Evidence literature;
+    - the vocabulary not shared; Reactome's own name for the code kept; ECO for every type;
+    - no "Reviewed"; "Revised" for "Edited"; an unnamed edit kept;
+    - a reaction without its literature, evidence or curation;
+    - a pathway without its summations, literature, evidence or curation.
 - [ ] T017 [US2] Sets: typed by the class their members share, else PhysicalEntity; "Converted from EntitySet in Reactome" and `memberPhysicalEntity`. Which single-class sets are PhysicalEntity (a set among the members, or a member with no entity reference, or another reason: research R1, R6) decided against the graph over the whole of _P. falciparum_, and the rule that reproduces it written.
 - [ ] T018 [US2] `xml:base` as `http://www.reactome.org/biopax/{release}/{dbId}#` (the species' or the event's), ids `{Class}{n}` in a deterministic order, the same on every run; literals trimmed, as the release's writer trims them (T015 found six display names with a trailing space).
 

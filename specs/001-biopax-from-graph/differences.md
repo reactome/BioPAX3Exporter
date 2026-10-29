@@ -91,6 +91,24 @@ Measured 29 Oct 2026 on _P. falciparum_, from a private copy of release 98's gra
 - **What still differs at the root, for pathways:** the comment (660; HTML kept, T016) and the evidence (660, T016). Six display names also differ, by a trailing space the graph has and the published file does not. The release's writer trims every literal (no value in the published file starts or ends with white space), so that is the writer's, T018.
 - **The fixture:** its expected files had each pathway once per pathway above it, and a header: 217 event individuals for human, 33 for _P. falciparum_. They now have 57 (28 pathways, 29 reactions) and 8, with the same reactions. The validator gives 0 errors on both (558 and 32 warnings).
 
+## Literature, evidence and curation (T016)
+
+Measured 29 Oct 2026 on _P. falciparum_, from a private copy of release 98's graph, against release 98's published file; and on the fixture's human events against release 98's human file.
+
+- **What the release writes**, read from its converter (`handleEvent`, `handleInferredFrom`, `ReactomeToBioPAXPublicationConverter`):
+  - each summation's text as a comment, its HTML kept;
+  - the event's literature and its summations' as PublicationXrefs, each publication once per file;
+  - for an event with an evidence type, an Evidence for each event it was inferred from, new each time, with that event's first summation as its comment, its literature and that summation's, and the evidence type as an EvidenceCodeVocabulary ("inferred from electronic annotation", ECO:0000203);
+  - an "Authored: ", "Reviewed: " or "Edited: " comment for each of its curation records.
+    Regulations and catalyses carry none of these: release 98's graph has no literature on a regulation, and its files none on a Control.
+- **Every event agrees in shape:** each of _P. falciparum_'s 1,630 events has the published file's PubMed and ISBN ids, curation comments by kind, summation comments and Evidence count. Its 5,750 PublicationXrefs have the published file's properties: 5,689 by PubMed id, 42 by ISBN, 11 web pages and 8 with no id. The fixture's 57 human events agree in the same four respects with release 98's human file, where 15,712 of 16,159 reactions have literature of their own and none is inferred. There is one Provenance, as in the published files.
+- **What still differs at the root, here:**
+  - _Evidence comments (128):_ white space at either end, which the release's writer trims (T018), and in one also within.
+  - _Authors (60 values in 23 of 5,750 PublicationXrefs):_ the release's form of a person's name is fuller than the graph's display name. Each writes the name its own database holds; the data, not the code, differs, so it is recorded, not pursued.
+- **Repeated values:** the published file writes an author twice where two people share a name; Paxtools keeps each value once, which `ci/compare.py` counts once too.
+- **Counts:** triples only in the published file fall from 146,281 to 72,683, and only in the converted file from 9,842 to 7,959. The validator gives 0 errors on the fixture's output, with 501 warnings for human and 28 for _P. falciparum_ (558 and 32 at T015).
+- **The empty Evidence** every event had is gone, with `BioPAX3ReferenceUtils`, which stripped the HTML.
+
 ## Paxtools 6, Kotlin 2.4, JUnit 6 (#66)
 
 Measured 29 Oct 2026. The fixture's output is unchanged to the byte, and _P. falciparum_ from a private copy of release 98's graph is unchanged by `ci/compare.py`. Its bytes differ in one way only: Paxtools 4.3.1 wrote a character outside ASCII as a character reference (`&#8722;`, 8 in the file), and Paxtools 6.0.0 writes it as itself, as release 98's published file does (937 lines with such characters, no references). The two behaviours recorded above as Paxtools 4.3.1's, the underscored `conversionDirection` and a product added to the participants, are 6.0.0's too. `Control.controlled` is deprecated (in Paxtools 5.1's javadoc, and by annotation in 6.0) with no replacement yet; each control here has one process, as the release writes it. Paxtools 6 brings slf4j-api 2, which the library leaves out, as it does graph-core's logging binding: graph-core brings slf4j-api 1.7, and the command line's logback 1.2 binds to that.

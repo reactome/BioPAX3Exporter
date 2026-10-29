@@ -22,7 +22,6 @@ class BioPAXEventBuilder(
 
             val basicElements = BioPAX3BasicElementsBuilder(event, context, process)
             basicElements.addReactomeDataSource()
-            basicElements.addEvidence()
         }
     }
 }
