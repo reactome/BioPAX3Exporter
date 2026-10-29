@@ -109,11 +109,12 @@ class BioPAX3ExporterLauncher {
 
                 outputStatus = Status.SINGLE_PATH
                 parseAdditionalArguments(config)
-                // Every mode writes into it: made here, once
-                File(outputdir).mkdirs()
 
                 if (!singleArgumentSupplied()) {
                     fail("Too many arguments detected. Expected either no pathway arguments or one of -t, -s, -m, -l.")
+                } else if (!File(outputdir).isDirectory && !File(outputdir).mkdirs()) {
+                    // Every mode writes into it: made here, once, when the arguments are sound
+                    fail("$outputdir is not a directory, and cannot be made one")
                 } else {
                     dbVersion = genericService.dbInfo.version
 
@@ -148,6 +149,7 @@ class BioPAX3ExporterLauncher {
                 if (failed) System.exit(1)
             } catch (e: JSAPException) {
                 e.printStackTrace()
+                System.exit(1)
             }
         }
 

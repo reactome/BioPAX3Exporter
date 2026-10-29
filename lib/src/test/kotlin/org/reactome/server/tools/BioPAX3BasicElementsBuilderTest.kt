@@ -1,5 +1,6 @@
 package org.reactome.server.tools
 
+import org.biopax.paxtools.model.BioPAXElement
 import org.biopax.paxtools.model.Model
 import org.biopax.paxtools.model.level3.Entity
 import org.biopax.paxtools.model.level3.Pathway
@@ -7,6 +8,7 @@ import org.biopax.paxtools.model.level3.Provenance
 import org.junit.jupiter.api.Test
 import org.mockito.Mockito.mock
 import org.mockito.Mockito.never
+import org.mockito.Mockito.times
 import org.mockito.Mockito.verify
 import org.mockito.Mockito.verifyNoInteractions
 import org.mockito.kotlin.any
@@ -16,25 +18,24 @@ import org.reactome.server.graph.domain.model.Event
 
 class BioPAX3BasicElementsBuilderTest {
     @Test
-    fun `test addReactomeDataSource uses existing Provenance if exists`() {
-        // One Provenance per file, as the published files have (research R1):
-        // a second element asks for the one already in the model.
+    fun `one Provenance per file, shared, found without reading the model`() {
+        // One Provenance per file, as the published files have (research R1); kept in the
+        // context, since reading the model's objects for it made a species' conversion
+        // quadratic in its size.
         val mockModel = mock(Model::class.java)
-        val mockEntity = mock(Entity::class.java)
         val mockProvenance = mock(Provenance::class.java)
-        whenever(mockProvenance.uri).thenReturn("http://www.reactome.org/biopax/97/1#Provenance1")
-        whenever(mockModel.getObjects(Provenance::class.java)).thenReturn(setOf(mockProvenance))
+        whenever(mockModel.addNew(eq(Provenance::class.java), any())).thenReturn(mockProvenance)
+        val context = ConversionContext("http://www.reactome.org/biopax/97/1#", 97, mockModel)
+        val first = mock(Entity::class.java)
+        val second = mock(Entity::class.java)
 
-        val builder =
-            BioPAX3BasicElementsBuilder(
-                thisReactomeEvent = null,
-                context = ConversionContext("http://www.reactome.org/biopax/97/1#", 97, mockModel),
-                thisBPElement = mockEntity,
-            )
-        builder.addReactomeDataSource()
+        BioPAX3BasicElementsBuilder(null, context, first).addReactomeDataSource()
+        BioPAX3BasicElementsBuilder(null, context, second).addReactomeDataSource()
 
-        verify(mockModel, never()).addNew(eq(Provenance::class.java), any())
-        verify(mockEntity).addDataSource(mockProvenance)
+        verify(mockModel, times(1)).addNew(eq(Provenance::class.java), any())
+        verify(mockModel, never()).getObjects(any<Class<BioPAXElement>>())
+        verify(first).addDataSource(mockProvenance)
+        verify(second).addDataSource(mockProvenance)
     }
 
     @Test
@@ -84,9 +85,6 @@ class BioPAX3BasicElementsBuilderTest {
         val mockModel = mock(Model::class.java)
         val mockEntity = mock(Entity::class.java)
         val mockProvenance = mock(Provenance::class.java)
-
-        // Set up the model to return empty set of Provenance objects
-        whenever(mockModel.getObjects(Provenance::class.java)).thenReturn(emptySet())
 
         // Set up the model to create a new Provenance
         whenever(mockModel.addNew(eq(Provenance::class.java), any())).thenReturn(mockProvenance)

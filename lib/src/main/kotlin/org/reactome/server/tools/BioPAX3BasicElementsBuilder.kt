@@ -29,17 +29,19 @@ class BioPAX3BasicElementsBuilder(
     }
 
     /**
-     * Function to add the Reacome Database as a BioPAX Provenance element
+     * Reactome as the element's data source: one Provenance per file, as the release's
+     * converter wrote it, kept in the context (looking it up among the model's objects
+     * read every object in the file each time, and the conversion of a large species took
+     * hours).
      */
     fun addReactomeDataSource() {
-        val provs = thisBPModel?.getObjects(org.biopax.paxtools.model.level3.Provenance::class.java)
-        var src = BioPAX3Utils.getObjectFromSet(provs, context?.id("Provenance1"))
-        // // TODO: 30/01/2017 check that Provenance1 is the reactome data source
-        if (src == null) {
-            src = thisBPModel?.addNew(org.biopax.paxtools.model.level3.Provenance::class.java, context!!.nextId("Provenance"))
-            src?.addName("Reactome")
-            src?.addComment("http://www.reactome.org")
-        }
+        val src =
+            context!!.once("provenance") {
+                thisBPModel!!.addNew(org.biopax.paxtools.model.level3.Provenance::class.java, context.nextId("Provenance")).apply {
+                    addName("Reactome")
+                    addComment("http://www.reactome.org")
+                }
+            }
         thisBPElement?.addDataSource(src)
     }
 
