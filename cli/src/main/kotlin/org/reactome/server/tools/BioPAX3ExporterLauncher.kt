@@ -21,7 +21,7 @@ class BioPAX3ExporterLauncher {
     companion object {
         private var outputdir: String = "."
         private var singleId: Long = 0
-        private var speciesId: Long = 0
+        private var speciesIds: LongArray = LongArray(0)
         private var multipleIds: LongArray = LongArray(0)
         private var multipleEvents: LongArray = LongArray(0)
         private var outputStatus: Status = Status.SINGLE_PATH
@@ -57,7 +57,6 @@ class BioPAX3ExporterLauncher {
                                 "toplevelpath",
                                 "The id of an event, a pathway or a reaction, written to {id}.owl",
                             ),
-                            FlaggedOption("species", JSAP.LONG_PARSER, "0", JSAP.NOT_REQUIRED, 's', "species", "The id of a species"),
                         ),
                     )
 
@@ -74,6 +73,22 @@ class BioPAX3ExporterLauncher {
                 m.isList = true
                 m.listSeparator = ','
                 jsap.registerParameter(m)
+
+                // One species or several, each to its own file: the release names the ones it
+                // publishes (T023)
+                val sp =
+                    FlaggedOption(
+                        "species",
+                        JSAP.LONG_PARSER,
+                        null,
+                        JSAP.NOT_REQUIRED,
+                        's',
+                        "species",
+                        "A list of ids of species, each written to its own file",
+                    )
+                sp.isList = true
+                sp.listSeparator = ','
+                jsap.registerParameter(sp)
 
                 val loe =
                     FlaggedOption(
@@ -130,9 +145,11 @@ class BioPAX3ExporterLauncher {
                         }
 
                         Status.ALL_PATHWAYS_SPECIES -> {
-                            val species = databaseObjectService.findByIdNoRelations<DatabaseObject>(speciesId) as? Species
-                            if (species == null) fail("$speciesId is not the identifier of a Species")
-                            species?.let { outputPathsForSpecies(it) }
+                            speciesIds.forEach { id ->
+                                val species = databaseObjectService.findByIdNoRelations<DatabaseObject>(id) as? Species
+                                if (species == null) fail("$id is not the identifier of a Species")
+                                species?.let { outputPathsForSpecies(it) }
+                            }
                         }
 
                         Status.MULTIPLE_PATHS -> {
@@ -196,14 +213,14 @@ class BioPAX3ExporterLauncher {
         private fun parseAdditionalArguments(config: JSAPResult) {
             outputdir = config.getString("outdir")
             singleId = config.getLong("toplevelpath")
-            speciesId = config.getLong("species")
+            speciesIds = config.getLongArray("species")
             multipleIds = config.getLongArray("multiple")
             multipleEvents = config.getLongArray("listevents")
 
             outputStatus =
                 when {
                     singleId != 0L -> Status.SINGLE_PATH
-                    speciesId != 0L -> Status.ALL_PATHWAYS_SPECIES
+                    speciesIds.isNotEmpty() -> Status.ALL_PATHWAYS_SPECIES
                     multipleIds.isNotEmpty() -> Status.MULTIPLE_PATHS
                     multipleEvents.isNotEmpty() -> Status.MULTIPLE_EVENTS
                     else -> Status.ALL_PATHWAYS
@@ -213,7 +230,7 @@ class BioPAX3ExporterLauncher {
         private fun singleArgumentSupplied(): Boolean {
             var count = 0
             if (singleId != 0L) count++
-            if (speciesId != 0L) count++
+            if (speciesIds.isNotEmpty()) count++
             if (multipleIds.isNotEmpty()) count++
             if (multipleEvents.isNotEmpty()) count++
             return count <= 1

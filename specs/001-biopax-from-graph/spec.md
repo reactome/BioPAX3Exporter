@@ -92,7 +92,7 @@ The website asks for one pathway's or one reaction's BioPAX. A library module, w
 
 ### User Story 4 - The release step runs (Priority: P2)
 
-The release builds `biopax.zip` with this exporter in place of Pathway-Exchange's converter: the command line writes every species, the files carry the `xml:base` the release's check of the download directory requires, and the step's command runs as written.
+The release builds `biopax.zip` with this exporter in place of Pathway-Exchange's converter: the command line writes the species the release names (T023: the 15 it publishes; whether to add _Mycobacterium tuberculosis_ is issue #84), the files carry the `xml:base` the release's check of the download directory requires, and the step's command runs as written.
 
 **Why this priority**: it is the switch, which comes after the proof (User Stories 1–3) and needs the release's owners to agree on its timing.
 

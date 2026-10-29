@@ -330,7 +330,11 @@ description: 'Tasks for spec 001: BioPAX Level 3 from the graph, as the release 
 
 ## Phase 6: The release step (User Story 4, P2)
 
-- [ ] T023 [US4] The Jenkinsfile's command runs as written (its stray quote, its jar, its options); it writes `biopax.zip` with one file per species, the release's species and no others (the full run of T020 wrote a sixteenth, _M. tuberculosis_, which the release step's configuration leaves out); the release's own `xml:base` check passes on it.
+- [x] T023 [US4] The Jenkinsfile's command runs as written (its stray quote, its jar, its options); it writes `biopax.zip` with one file per species, the release's species and no others (the full run of T020 wrote a sixteenth, _M. tuberculosis_, which the release step's configuration leaves out); the release's own `xml:base` check passes on it. — #85.
+  - **The species:** `-s` takes a list of species ids, each written to its own file; the Jenkinsfile passes the 15 of release 98's published zip (human and the 14 it infers to), read from those files' own `xml:base`. Whether to add _M. tuberculosis_ is issue #84; if so, it is one more id there.
+  - **The command:** the stray quote at the end of the `docker run` line, which would have stopped the shell, is gone; the jar is the image's entry point and `-o ./output` lands in the mounted folder (the image's working directory is the container root the Jenkinsfile mounts under).
+  - **The release's check** is the DownloadDirectory step's (release-download-directory's Jenkinsfile): every `.owl` in `biopax.zip` must hold `xml:base="http://www.reactome.org/biopax/{release}`. CI's fixture job now runs the same grep on its output; it passes for 98 and fails for 97.
+  - **Run as written**, as far as this host allows: the image built from this branch, the command's own shape (`--network=host`, the mount, `-o ./output`, `-s` with two species the fixture graph holds) against the private fixture graph, then the Jenkinsfile's `zip -r` and the release's check on the unzipped files: two files, both with the release's base. The release server's own run, with its credentials and graph, is the release's; its time is T024.
 - [ ] T024 [US4] The full run's time recorded against today's step's, which the release's owners provide; the switch's timing agreed with them.
 
 ## Dependencies

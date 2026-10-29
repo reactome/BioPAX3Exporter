@@ -14,6 +14,10 @@ pipeline{
 		ECR_URL = 'public.ecr.aws/reactome/biopax3-exporter'
 		CONT_NAME = 'biopax3_exporter_container'
 		CONT_ROOT = '/opt/biopax3-exporter'
+		// The species the release publishes, by database id (spec 001 T023): human and the
+		// 14 it infers to, the files of release 98's biopax.zip. Mycobacterium tuberculosis
+		// (176806) has events of its own but is not published; whether to add it is issue #84.
+		SPECIES = '48887,48892,48895,48898,49591,49633,49646,56210,68320,68322,68323,68324,170928,170941,205621'
         }
     
 	stages{
@@ -44,7 +48,7 @@ pipeline{
 			    sh "rm -rf ${env.OUTPUT_FOLDER}/*"
 		            withCredentials([usernamePassword(credentialsId: 'neo4jUsernamePassword', passwordVariable: 'pass', usernameVariable: 'user')]){
 			        sh """\
-				    docker run --network=host -v \$(pwd)/${env.OUTPUT_FOLDER}:${CONT_ROOT}/${env.OUTPUT_FOLDER} --name ${CONT_NAME} ${ECR_URL}:latest -h 127.0.0.1 -b 7687 -u $user -p $pass -o ./${env.OUTPUT_FOLDER}'
+				    docker run --network=host -v \$(pwd)/${env.OUTPUT_FOLDER}:${CONT_ROOT}/${env.OUTPUT_FOLDER} --name ${CONT_NAME} ${ECR_URL}:latest -h 127.0.0.1 -b 7687 -u $user -p $pass -o ./${env.OUTPUT_FOLDER} -s ${env.SPECIES}
 	                        """
 	                        dir(env.OUTPUT_FOLDER) {
 	                            sh "zip -r biopax.zip ./*"
