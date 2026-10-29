@@ -167,6 +167,11 @@
                 <groupId>org.jetbrains.kotlin</groupId>
                 <artifactId>kotlin-maven-plugin</artifactId>
                 <version>${kotlin.version}</version>
+                <!-- Java 17, as the project and Paxtools 6 require; JUnit 6's inline
+                     functions need it too -->
+                <configuration>
+                    <jvmTarget>${jdk.version}</jvmTarget>
+                </configuration>
                 <executions>
                     <execution>
                         <id>compile</id>
