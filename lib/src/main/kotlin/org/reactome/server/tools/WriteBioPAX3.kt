@@ -92,25 +92,18 @@ class WriteBioPAX3 {
     }
 
     /**
-     * Create the BioPAX model using multiple pathways for a species
+     * Create the BioPAX model of a species: its top-level events (SpeciesEvents), each
+     * written with all it holds, once in the file, and no header pathway (T015).
      */
     fun createModelForSpecies(
         species: Species,
-        pathways: List<Pathway>,
+        events: List<Event>,
     ) {
         val context = ConversionContext(xmlBase, dbVersion)
         thisModel = context.model
-
-        // // Add species information first
-        BioPAXSpeciesBuilder(species, context).addReactomeSpecies()
-        // val speciesBuilder = BioPAXSpeciesBuilder(species, thisModel!!)
-        // speciesBuilder.addReactomeSpecies()
-
-        // Add each pathway
-        pathways.forEach { pathway ->
-            val thisBPPath = BioPAXPathwayBuilder(pathway, context)
-            thisBPPath.addReactomePathway()
-        }
+        val builder = BioPAXPathwayBuilder(null, context)
+        events.forEach { builder.addEvent(it) }
+        builder.addStepLinks()
     }
 
     // /////////////////////////////////////////////////////////////////////////////////

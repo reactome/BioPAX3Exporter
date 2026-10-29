@@ -6,6 +6,7 @@
 package org.reactome.server.tools
 import com.martiansoftware.jsap.*
 import org.reactome.server.graph.domain.model.*
+import org.reactome.server.graph.service.AdvancedDatabaseObjectService
 import org.reactome.server.graph.service.DatabaseObjectService
 import org.reactome.server.graph.service.GeneralService
 import org.reactome.server.graph.service.SchemaService
@@ -209,39 +210,22 @@ class BioPAX3ExporterLauncher {
         }
 
         private fun outputPathsForSpecies(species: Species) {
-            val pathways: List<Pathway> = getPathwaysForSpecies(species)
-            if (pathways.isEmpty()) {
+            // The species' top-level events, as the release chose them (T015)
+            val events =
+                SpeciesEvents.topLevel(
+                    species.dbId,
+                    ReactomeGraphCore.getService(AdvancedDatabaseObjectService::class.java),
+                    ReactomeGraphCore.getService(DatabaseObjectService::class.java),
+                )
+            if (events.isEmpty()) {
                 println("No pathways found for species ${species.displayName}")
                 return
             }
 
             // Create a single file for all pathways of this species
             val writer = WriteBioPAX3(species, dbVersion)
-            writer.createModelForSpecies(species, pathways)
+            writer.createModelForSpecies(species, events)
 
-            // --------- NEW : add events that are NOT in a pathway ---------
-
-            // 1. all events for this species
-            val allEvents =
-                ReactomeGraphCore
-                    .getService(SchemaService::class.java)
-                    .getByClass(Event::class.java, species)
-                    .toList()
-
-            // 2. collect every event that is part of any pathway
-            val eventsInPathways = mutableSetOf<Event>()
-
-            fun collect(evts: Collection<Event>) {
-                evts.forEach { ev ->
-                    eventsInPathways += ev
-                    if (ev is Pathway) collect(ev.hasEvent ?: emptyList())
-                }
-            }
-            pathways.forEach { collect(it.hasEvent ?: emptyList()) }
-
-            // 3. the “orphans” are those that never appeared in a pathway
-            val orphanEvents = allEvents.filterNot { eventsInPathways.contains(it) }
-            // --------------------------------------------------------------
             // Create output directory if it doesn't exist
             val outputDir = File(outputdir)
             if (!outputDir.exists()) {
@@ -267,11 +251,5 @@ class BioPAX3ExporterLauncher {
             bp.createModel()
             bp.toFile(outputFile)
         }
-
-        private fun getPathwaysForSpecies(species: Species): List<Pathway> =
-            ReactomeGraphCore
-                .getService(SchemaService::class.java)
-                .getByClass(Pathway::class.java, species)
-                .toList()
     }
 }

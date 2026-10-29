@@ -28,6 +28,13 @@ class ConversionContext(
     private val written = HashMap<String, BioPAXElement>()
 
     /**
+     * Each event's PathwayStep, one per event however many pathways hold it, in the order
+     * they were made: once every pathway is written, each step gets its next steps and its
+     * event's catalyses and controls (T015).
+     */
+    val steps = LinkedHashMap<Long, Pair<org.reactome.server.graph.domain.model.Event, org.biopax.paxtools.model.level3.PathwayStep>>()
+
+    /**
      * The id of the next individual of a class: the class's name and its count in
      * this conversion, from 1 (`Pathway1`, `Pathway2`, ...), on the xml:base.
      */

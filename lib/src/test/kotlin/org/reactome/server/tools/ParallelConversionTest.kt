@@ -98,7 +98,7 @@ class ParallelConversionTest {
     @Test
     fun `conversions at once write what each writes alone`() {
         val pathways = (1L..8L).map(::pathway)
-        // Two species, each with two pathways of their own: the species' BioSource and header too.
+        // Two species, each with two pathways of their own (T015: no header pathway).
         val species = (1L..2L).map { n -> species(n) to listOf(pathway(10 + 2 * n), pathway(11 + 2 * n)) }
         val conversions: List<() -> String> =
             pathways.map { { convert(it) } } + species.map { (s, ps) -> { convertSpecies(s, ps) } }
