@@ -158,6 +158,21 @@ jobs:
                   [ "$(find out -mindepth 1 -maxdepth 1 -printf '%f\n' | sort)" = "$(find ci/fixture/expected -mindepth 1 -maxdepth 1 -printf '%f\n' | sort)" ] || { echo "the files written are not the files expected"; status=1; }
                   exit $status
 
+            - name: One event, contained in its species' file; an id that names none fails (T019)
+              run: |
+                  mkdir -m 777 one
+                  # A Degradation, alone: everything in it is in the human file
+                  docker run --rm --network host -v "$PWD/one:/out" tmp-tag \
+                    -h localhost -b 7687 -u neo4j -p none -o /out -t 174731
+                  python3 -I ci/compare.py out/Homo_sapiens.owl one/174731.owl > one.txt || true
+                  grep -qx 'only in the file: 0' one.txt || { cat one.txt; echo "the event's file holds what its species' file does not"; exit 1; }
+                  # A species' id is not an event's: an error, and no file
+                  if docker run --rm --network host -v "$PWD/one:/out" tmp-tag \
+                    -h localhost -b 7687 -u neo4j -p none -o /out -l 174731,48887; then
+                    echo "an id that names no event was accepted"; exit 1
+                  fi
+                  [ ! -e one/events.owl ] || { echo "a list with an id that names no event was written"; exit 1; }
+
             - name: The same bytes on a second run (FR-006)
               run: diff -r out out-again && echo "identical"
 
