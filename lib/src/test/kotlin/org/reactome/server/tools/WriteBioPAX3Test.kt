@@ -4,9 +4,9 @@ import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertFalse
 import org.junit.jupiter.api.Assertions.assertNotNull
 import org.junit.jupiter.api.Assertions.assertNull
-import org.junit.jupiter.api.Assertions.assertThrows
 import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.assertThrows
 import org.junit.jupiter.api.io.TempDir
 import org.mockito.Mockito.mock
 import org.mockito.kotlin.whenever
@@ -200,7 +200,7 @@ class WriteBioPAX3Test {
         val pathway = mock(Pathway::class.java).also { whenever(it.dbId).thenReturn(123L) }
         val writer = WriteBioPAX3(pathway, 98).apply { createModel() }
 
-        assertThrows(java.io.IOException::class.java) { writer.toFile(File(dir, "missing/out.owl")) }
+        assertThrows<java.io.IOException> { writer.toFile(File(dir, "missing/out.owl")) }
     }
 
     @Test
@@ -224,7 +224,7 @@ class WriteBioPAX3Test {
         File(taken, "inside").writeText("x")
         val writer = WriteBioPAX3(pathway, 98).apply { createModel() }
 
-        assertThrows(java.io.IOException::class.java) { writer.toFile(taken) }
+        assertThrows<java.io.IOException> { writer.toFile(taken) }
         assertEquals(listOf("out.owl"), dir.list()!!.toList())
     }
 
@@ -287,7 +287,7 @@ class WriteBioPAX3Test {
 
     @Test
     fun `a writer for no event has nothing to convert alone`() {
-        assertThrows(IllegalStateException::class.java) { WriteBioPAX3(98).createModel() }
+        assertThrows<IllegalStateException> { WriteBioPAX3(98).createModel() }
     }
 
     @Test
