@@ -23,7 +23,7 @@ class BioPAX3BasicElementsBuilderTest {
         val mockModel = mock(Model::class.java)
         val mockEntity = mock(Entity::class.java)
         val mockProvenance = mock(Provenance::class.java)
-        whenever(mockProvenance.rdfId).thenReturn("http://www.reactome.org/biopax/97/1#Provenance1")
+        whenever(mockProvenance.uri).thenReturn("http://www.reactome.org/biopax/97/1#Provenance1")
         whenever(mockModel.getObjects(Provenance::class.java)).thenReturn(setOf(mockProvenance))
 
         val builder =

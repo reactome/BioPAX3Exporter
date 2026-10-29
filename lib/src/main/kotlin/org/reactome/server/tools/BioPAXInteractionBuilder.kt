@@ -156,6 +156,8 @@ class BioPAXInteractionBuilder(
     ) {
         val catalysis = thisModel!!.addNew(Catalysis::class.java, context!!.nextId("Catalysis"))
         activity.physicalEntity?.let { catalysis.addController(entities!!.physicalEntity(it)) }
+        // Deprecated in Paxtools 6, with no replacement yet: each control has one process.
+        @Suppress("DEPRECATION")
         catalysis.addControlled(controlled)
         catalysis.controlType = ControlType.ACTIVATION
         activity.activity?.let { catalysis.addXref(xrefs!!.goTerm(it, BioPAXXrefBuilder.GO_MOLECULAR_FUNCTION)) }
@@ -184,6 +186,7 @@ class BioPAXInteractionBuilder(
         BioPAX3BasicElementsBuilder(null, context, control).addReactomeDataSource()
         regulation.regulator?.let { control.addController(entities!!.physicalEntity(it)) }
         addActiveUnits(regulation.activeUnit, control)
+        @Suppress("DEPRECATION") // as for a catalysis
         control.addControlled(controlled)
     }
 
@@ -195,7 +198,7 @@ class BioPAXInteractionBuilder(
     ) {
         units?.forEach { unit ->
             val bpUnit = entities!!.physicalEntity(unit)
-            control.addComment("activeUnit: #" + bpUnit.rdfId.substringAfterLast('#'))
+            control.addComment("activeUnit: #" + bpUnit.uri.substringAfterLast('#'))
         }
     }
 }

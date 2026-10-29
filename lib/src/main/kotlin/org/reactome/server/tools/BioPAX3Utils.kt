@@ -49,7 +49,7 @@ object BioPAX3Utils {
         if (setObjects.isNullOrEmpty() || id.isNullOrEmpty()) {
             return null
         }
-        return setObjects.find { it.rdfId == id }
+        return setObjects.find { it.uri == id }
     }
 
     /**
@@ -89,7 +89,7 @@ object BioPAX3Utils {
         if (setObjects.isNullOrEmpty() || id.isNullOrEmpty()) {
             return false
         }
-        return setObjects.any { it.rdfId == id }
+        return setObjects.any { it.uri == id }
     }
 
     /**
