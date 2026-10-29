@@ -104,7 +104,8 @@ class BioPAXPhysicalEntityBuilder(
      * as another class: a member with no reference counts for nothing in the kind, but is a
      * PhysicalEntity, and Paxtools allows a Protein (or any class) only members of its own
      * class. The release, writing XML itself, would have written such a set invalid; its
-     * _P. falciparum_ file of release 98 has none, and the set is a PhysicalEntity here (differences.md).
+     * _P. falciparum_ file of release 98 has none, and the set is a PhysicalEntity here
+     * (differences.md).
      */
     private fun classOf(entity: RPhysicalEntity): Class<out BpPhysicalEntity> {
         if (entity !is EntitySet) return classFor(entity, referenceOf(entity))
