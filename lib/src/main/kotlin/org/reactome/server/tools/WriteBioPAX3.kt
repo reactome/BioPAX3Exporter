@@ -126,7 +126,7 @@ class WriteBioPAX3 {
      */
     fun toStdOut() {
         writeOwl(System.out)
-        System.out.flush()
+        println()
     }
 
     /**
@@ -173,7 +173,7 @@ class WriteBioPAX3 {
 
     // Each carriage return byte written as `&#xD;`: in UTF-8 no other character has the byte
     // 0x0D in it, so this changes the character and nothing else.
-    private class CarriageReturnEscaping(
+    internal class CarriageReturnEscaping(
         out: OutputStream,
     ) : FilterOutputStream(out) {
         override fun write(b: Int) {

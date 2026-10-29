@@ -322,7 +322,7 @@ class WriteBioPAX3Test {
     }
 
     @Test
-    fun `carriage returns are escaped however the bytes are written`() {
+    fun `carriage returns within a value are escaped, at its ends trimmed`() {
         val summations =
             listOf(
                 mock(org.reactome.server.graph.domain.model.Summation::class.java).also {
@@ -341,5 +341,20 @@ class WriteBioPAX3Test {
         // Trimmed at the ends, as Java's trim takes a carriage return; escaped within
         assertTrue(owl.contains(">A&#xD;&#xD;B</bp:comment>"))
         assertFalse(owl.contains("\r"))
+    }
+
+    @Test
+    fun `the escaping stream escapes a carriage return written alone or within part of an array`() {
+        val out = java.io.ByteArrayOutputStream()
+        val escaping = WriteBioPAX3.CarriageReturnEscaping(out)
+        val bytes = "xx\rA\r\rByy".toByteArray()
+
+        escaping.write('\r'.code)
+        escaping.write('C'.code)
+        // From offset 2 for all but the last two bytes: "\rA\r\rB"
+        escaping.write(bytes, 2, bytes.size - 4)
+        escaping.flush()
+
+        assertEquals("&#xD;C&#xD;A&#xD;&#xD;B", out.toString(Charsets.US_ASCII))
     }
 }

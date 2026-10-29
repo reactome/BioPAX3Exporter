@@ -144,6 +144,41 @@ Measured 29 Oct 2026 on the fixture graph.
 - **Not written, by choice:** the release's one-event files had a comment on the ontology header, `BioPAX pathway converted from "…" in the Reactome database.` A Paxtools model has no place for it, and the comparison reads individuals only; it could be added to the written text, but it says nothing a reader of the file needs, so it is recorded here and not written.
 - **Removed:** `BioPAXEventBuilder`, which asked for an abstract `Process` and was never called.
 
+## The full run (T020)
+
+Measured 29 Oct 2026: every species converted from a private copy of release 98's graph by the exporter's default mode, and each file compared with release 98's published one by `ci/compare.py` and validated by the BioPAX validator 6.0.0 (`--profile=notstrict`).
+
+- **The run:** 1 h 55 min for all species, at most 2.9 GB resident with a 4 GB heap. Human alone takes about 16 minutes. Two faults the first runs found are fixed (#76, #77): a lookup that read the whole model for every individual, and graph objects and copies of the file kept in memory.
+- **The files:** the 15 of the published zip, by the same names, and a sixteenth, _Mycobacterium tuberculosis_, whose own top-level pathway (56 events of that species alone) the release's rule takes too. The release step names its species from its species configuration (`FileGeneration.getSpeciesNames`): human and the 14 it infers to, so that file is not published. Which species the release command writes is T023's.
+- **By species:**
+
+| Species                     | Only in the published file | Only in the converted file | Published: errors, warnings | Converted: errors, warnings |
+| --------------------------- | -------------------------: | -------------------------: | --------------------------: | --------------------------: |
+| _Plasmodium falciparum_     |                      1,128 |                      2,347 |                   0, 16,892 |                   0, 16,892 |
+| _Schizosaccharomyces pombe_ |                      1,724 |                      2,677 |                   0, 24,918 |                   0, 24,918 |
+| _Saccharomyces cerevisiae_  |                      2,064 |                      2,467 |                   0, 26,546 |                   0, 26,546 |
+| _Dictyostelium discoideum_  |                      2,741 |                      3,939 |                   0, 46,593 |                   0, 46,593 |
+| _Caenorhabditis elegans_    |                      4,214 |                      5,974 |                   0, 73,368 |                   0, 73,368 |
+| _Drosophila melanogaster_   |                      5,282 |                      7,269 |                   0, 80,159 |                   0, 80,159 |
+| _Xenopus tropicalis_        |                      5,928 |                      8,334 |                   0, 80,442 |                   0, 80,442 |
+| _Danio rerio_               |                      6,412 |                      9,002 |                   0, 92,910 |                   0, 92,910 |
+| _Gallus gallus_             |                     13,558 |                     10,274 |                  3, 103,988 |                  3, 103,988 |
+| _Canis familiaris_          |                     15,778 |                     10,991 |                  0, 111,014 |                  0, 111,014 |
+| _Sus scrofa_                |                     15,784 |                     11,218 |                  0, 115,163 |                  0, 115,163 |
+| _Bos taurus_                |                     15,256 |                     11,660 |                  0, 120,651 |                  0, 120,651 |
+| _Rattus norvegicus_         |                      9,204 |                     11,987 |                  0, 124,073 |                  0, 124,073 |
+| _Mus musculus_              |                     10,948 |                     13,361 |                  0, 143,890 |                  0, 143,890 |
+| _Homo sapiens_              |                     16,607 |                     37,197 |                207, 213,784 |                207, 213,785 |
+
+- **What differs at the root, all species together**, and nothing else:
+  - `conversionDirection`, written as Paxtools writes it (95,355; T012's decision).
+  - A name equal to the display name (28,270, nearly all on proteins of inferred species, whose graph name lists repeat a name): the published files list it among the names too, Paxtools writes it only as the display name (T011). In _Gallus gallus_ all 5,921 are this.
+  - Cross-references the published files lack (entities 36,717, events 379; their RelationshipXrefs 4,427): the graph's later data (Mondo, COSMIC and ClinGen, added after the relational database the release read: T011), and those the release's converter skipped after the first one it had already written (DOID, SYMP, ChEBI, COMPOUND, EMBL: T011, T014). In human, 269 on reactions and 110 on pathways, T014's 379.
+  - The form of an author's name (872 values; T016).
+  - An empty comment on a ProteinReference (38), which the release wrote as an empty element and Paxtools does not write.
+  - No EC numbers: the difference reactome/graph-importer#9 records is not in release 98 (T012).
+- **The validator:** no file has an error its published one lacks (SC-003). The errors are the same, `multi.organism.pathway` (3 in _Gallus gallus_, 207 in human), and so are the warnings, rule by rule, but one more `unknown.db` in human.
+
 ## Paxtools 6, Kotlin 2.4, JUnit 6 (#66)
 
 Measured 29 Oct 2026. The fixture's output is unchanged to the byte, and _P. falciparum_ from a private copy of release 98's graph is unchanged by `ci/compare.py`. Its bytes differ in one way only: Paxtools 4.3.1 wrote a character outside ASCII as a character reference (`&#8722;`, 8 in the file), and Paxtools 6.0.0 writes it as itself, as release 98's published file does (937 lines with such characters, no references). The two behaviours recorded above as Paxtools 4.3.1's, the underscored `conversionDirection` and a product added to the participants, are 6.0.0's too. `Control.controlled` is deprecated (in Paxtools 5.1's javadoc, and by annotation in 6.0) with no replacement yet; each control here has one process, as the release writes it. Paxtools 6 brings slf4j-api 2, which the library leaves out, as it does graph-core's logging binding: graph-core brings slf4j-api 1.7, and the command line's logback 1.2 binds to that.
@@ -156,4 +191,4 @@ The BioPAX validator 6.0.0 (`--profile=notstrict`), read by `ci/validate.py`, on
 | ----------------------- | ------ | -------- | ----- |
 | _Plasmodium falciparum_ | 0      | 16,863   | 19    |
 
-Measured 27 Oct 2026. A run takes about four minutes by the shell's clock (249 s with the network off, 242 s with it on), most of it the validator's start-up. The other species' baselines are made in T020.
+Measured 27 Oct 2026. A run takes about four minutes by the shell's clock (249 s with the network off, 242 s with it on), most of it the validator's start-up. Release 98's baselines for all 15, and the converted files', are in the full run's table above (T020).

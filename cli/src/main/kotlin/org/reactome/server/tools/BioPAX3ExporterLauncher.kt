@@ -228,13 +228,9 @@ class BioPAX3ExporterLauncher {
 
         private fun outputPathsForSpecies(species: Species) {
             // The species' top-level events, as the release chose them (T015)
-            val events =
-                SpeciesEvents.topLevel(
-                    species.dbId,
-                    ReactomeGraphCore.getService(AdvancedDatabaseObjectService::class.java),
-                    ReactomeGraphCore.getService(DatabaseObjectService::class.java),
-                )
-            if (events.none()) {
+            val ids = SpeciesEvents.topLevelIds(species.dbId, ReactomeGraphCore.getService(AdvancedDatabaseObjectService::class.java))
+            val events = SpeciesEvents.loaded(ids, ReactomeGraphCore.getService(DatabaseObjectService::class.java))
+            if (ids.isEmpty()) {
                 println("No events found for species ${species.displayName}")
                 return
             }

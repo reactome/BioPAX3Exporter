@@ -40,8 +40,11 @@ object SpeciesEvents {
         speciesDbId: Long,
         ads: AdvancedDatabaseObjectService,
         dbs: DatabaseObjectService,
-    ): Iterable<Event> {
-        val ids = topLevelIds(speciesDbId, ads)
-        return Iterable { ids.asSequence().map { dbs.findByIdNoRelations<Event>(it) }.iterator() }
-    }
+    ): Iterable<Event> = loaded(topLevelIds(speciesDbId, ads), dbs)
+
+    /** The events of the ids given, each loaded as it is reached and held by nothing here after. */
+    fun loaded(
+        ids: List<Long>,
+        dbs: DatabaseObjectService,
+    ): Iterable<Event> = Iterable { ids.asSequence().map { dbs.findByIdNoRelations<Event>(it) }.iterator() }
 }
