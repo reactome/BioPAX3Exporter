@@ -319,6 +319,7 @@ description: 'Tasks for spec 001: BioPAX Level 3 from the graph, as the release 
 ## Phase 5: Proof (User Stories 2 and 3)
 
 - [ ] T020 [US2] The full run: every species from a private copy of release 98's graph, the same 15 file names as the published zip, each compared by T005. `differences.md` records each remaining difference by kind, count and reason (order and ids; the data's, with its ticket, the EC numbers first, reactome/graph-importer#9; an obvious bug fixed), and nothing else. Validated by T004 against each published file's own baseline, made in this task for all 15 (human with enough memory for its size, measured). The private copy removed after.
+  - **Found on the way (#76):** the first full run spent its time reading every object of the model for the one Provenance each individual names (`getObjects` filters the whole model), quadratic in a species' size; the Provenance is now made once per file and kept in the context, and the helpers that scanned are removed. Also, from #75's review: an output directory that is a file, or cannot be made, is said so; it is made only when the arguments are sound; a parsing failure exits 1.
 - [ ] T021 [US3] One event through the library: the 30-event sample (pathways of several sizes, reactions, a black box, a disease event, an inferred one) each contained in its species file by meaning but for recorded differences.
 - [ ] T022 Tickets: each issue found on the way, and each improvement, opened on the repository that owns it and linked from `differences.md` (spec FR-003).
 
