@@ -31,17 +31,9 @@ object SpeciesEvents {
         ads: AdvancedDatabaseObjectService,
     ): List<Long> = ads.getCustomQueryResults(Long::class.javaObjectType, TOP_LEVEL, mapOf<String, Any>("species" to speciesDbId)).toList()
 
-    /**
-     * The top-level events, each loaded as it is reached and held by nothing here after:
-     * a species' events, with all a conversion loads beneath them, do not fit in memory at
-     * once (T020).
-     */
-    fun topLevel(
-        speciesDbId: Long,
-        ads: AdvancedDatabaseObjectService,
+    /** The events of the ids given, each loaded as it is reached and held by nothing here after. */
+    fun loaded(
+        ids: List<Long>,
         dbs: DatabaseObjectService,
-    ): Iterable<Event> {
-        val ids = topLevelIds(speciesDbId, ads)
-        return Iterable { ids.asSequence().map { dbs.findByIdNoRelations<Event>(it) }.iterator() }
-    }
+    ): Iterable<Event> = Iterable { ids.asSequence().map { dbs.findByIdNoRelations<Event>(it) }.iterator() }
 }
