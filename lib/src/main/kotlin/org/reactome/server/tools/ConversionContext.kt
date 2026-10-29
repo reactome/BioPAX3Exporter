@@ -66,7 +66,8 @@ class ConversionContext(
     /**
      * The element written for [key], or a new one from [make], kept before [fill] gives it
      * its contents: the release's converter keeps a pathway before handling its events, so
-     * an event that reaches the pathway again finds it there.
+     * an event that reaches the pathway again finds it there. If [fill] throws, the element
+     * stays kept; nothing catches that, so the run ends.
      */
     fun <T : BioPAXElement> onceKeptFirst(
         key: String,
