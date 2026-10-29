@@ -220,7 +220,7 @@ class BioPAX3ExporterLauncher {
                 return
             }
 
-            // Create a single file for all pathways of this species
+            // One file for all of this species' events
             val writer = WriteBioPAX3(species, dbVersion)
             writer.createModelForSpecies(events)
 

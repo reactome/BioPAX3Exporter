@@ -145,6 +145,8 @@ class BioPAXPathwayBuilderTest {
 
         assertEquals(2, context.model.getObjects(BPPathway::class.java).size)
         assertSame(bpPathway(1), bpPathway(2).pathwayComponent.single())
+        // As the converter: the pathway met again gets a step in the pathway that holds it
+        assertEquals(setOf(bpPathway(1)), bpPathway(2).pathwayOrder.single().stepProcess)
     }
 
     @Test

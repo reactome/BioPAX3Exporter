@@ -8,8 +8,9 @@ import org.reactome.server.graph.service.DatabaseObjectService
  * The events a species' file is written from, as the release chose them (spec 001 T015;
  * Pathway-Exchange's SpeciesAllPathwaysConverter): the species' events whose species are
  * this one alone, less those another such event holds (InstanceUtilities.grepTopLevelEvents).
- * Everything else is written as part of one of them. A reaction no pathway holds is one
- * of them, written alone with no step, as the release would write it; release 98 has none.
+ * Everything else is written as part of one of them. A reaction that no event of this
+ * species alone holds is one of them, written alone with no step, as the release would
+ * write it; release 98 has none.
  */
 object SpeciesEvents {
     // In dbId order, so a file numbers its ids the same on every run.
