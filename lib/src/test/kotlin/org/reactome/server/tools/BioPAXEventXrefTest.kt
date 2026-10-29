@@ -1,13 +1,18 @@
 package org.reactome.server.tools
 
 import org.biopax.paxtools.model.level3.BiochemicalReaction
+import org.biopax.paxtools.model.level3.Degradation
+import org.biopax.paxtools.model.level3.Protein
 import org.biopax.paxtools.model.level3.RelationshipXref
+import org.biopax.paxtools.model.level3.TemplateReaction
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertSame
 import org.junit.jupiter.api.Test
 import org.mockito.Mockito.mock
 import org.mockito.kotlin.whenever
+import org.reactome.server.graph.domain.model.BlackBoxEvent
 import org.reactome.server.graph.domain.model.Disease
+import org.reactome.server.graph.domain.model.EntityWithAccessionedSequence
 import org.reactome.server.graph.domain.model.GO_BiologicalProcess
 import org.reactome.server.graph.domain.model.Pathway
 import org.reactome.server.graph.domain.model.Reaction
@@ -111,6 +116,79 @@ class BioPAXEventXrefTest {
         // Each term's xref written once, shared
         bpPathway.xref.filterIsInstance<RelationshipXref>().forEach { xref ->
             assertSame(xref, bpReaction.xref.single { it.db == xref.db })
+        }
+    }
+
+    @Test
+    fun `an event's disease xref is the one its entities name`() {
+        val cancer = disease(901, "162")
+        val mutant =
+            mock(EntityWithAccessionedSequence::class.java).also {
+                whenever(it.dbId).thenReturn(910)
+                whenever(it.displayName).thenReturn("NOTCH1 mutant")
+                whenever(it.disease).thenReturn(listOf(cancer))
+            }
+        val event = reaction(504, null, listOf(cancer))
+        whenever(event.input).thenReturn(listOf(mutant))
+
+        val bp = BioPAXInteractionBuilder(event, context).addReactomeRLEvent() as BiochemicalReaction
+
+        val entity =
+            context.model
+                .getObjects(Protein::class.java)
+                .ifEmpty {
+                    context.model.getObjects(org.biopax.paxtools.model.level3.PhysicalEntity::class.java)
+                }.single {
+                    it.displayName ==
+                        "NOTCH1 mutant"
+                }
+        assertSame(
+            entity.xref.filterIsInstance<RelationshipXref>().single(),
+            bp.xref.filterIsInstance<RelationshipXref>().single(),
+        )
+    }
+
+    @Test
+    fun `a TemplateReaction and a Degradation have their GO term and diseases too`() {
+        val go = process()
+        val cancer = disease(901, "162")
+        val gene = mock(EntityWithAccessionedSequence::class.java).also { whenever(it.dbId).thenReturn(920) }
+
+        fun blackBox(
+            dbId: Long,
+            name: String,
+            inputs: List<EntityWithAccessionedSequence>,
+            outputs: List<EntityWithAccessionedSequence>,
+        ): BlackBoxEvent =
+            mock(BlackBoxEvent::class.java).also {
+                whenever(it.dbId).thenReturn(dbId)
+                whenever(it.displayName).thenReturn(name)
+                whenever(it.input).thenReturn(inputs)
+                whenever(it.output).thenReturn(outputs)
+                whenever(it.goBiologicalProcess).thenReturn(go)
+                whenever(it.disease).thenReturn(listOf(cancer))
+            }
+        val template =
+            BioPAXInteractionBuilder(
+                blackBox(505, "SOCS3 gene expression", emptyList(), listOf(gene)),
+                context,
+            ).addReactomeRLEvent()
+        val degradation =
+            BioPAXInteractionBuilder(
+                blackBox(506, "Degradation of SOCS3", listOf(gene), emptyList()),
+                context,
+            ).addReactomeRLEvent()
+
+        assertEquals(TemplateReaction::class.java, template!!.modelInterface)
+        assertEquals(Degradation::class.java, degradation!!.modelInterface)
+        for (bp in listOf(template, degradation)) {
+            assertEquals(
+                setOf("GENE ONTOLOGY GO:0006298 gene ontology term for cellular process", "DOID 162 additional information"),
+                bp.xref
+                    .filterIsInstance<RelationshipXref>()
+                    .map { it.described() }
+                    .toSet(),
+            )
         }
     }
 }

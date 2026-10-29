@@ -252,16 +252,20 @@ description: 'Tasks for spec 001: BioPAX Level 3 from the graph, as the release 
     - "Same Catalyst Activity" with a PSI-MI xref;
     - a GO id without its prefix;
     - from #57's review: regulations not taken once each; the GO xref not shared; the "Same Catalyst Activity" comment changed; a catalysis's units numbered in descending dbId order; a regulation's units out of their order.
-- [x] T014 [US2] Events' own cross-references: RelationshipXrefs for GO biological process, disease and the rest, all of them where the old converter returned early on a repeat (an obvious bug fixed; recorded in `differences.md`). — #59.
+- [x] T014 [US2] Events' own cross-references: RelationshipXrefs for GO biological process, disease and the rest, all of them where the old converter returned early on a repeat (an obvious bug fixed; recorded in `differences.md`). — #60, replacing #59 after its review.
   - **What is written:** the event's GO biological process, as a RelationshipXref of type "gene ontology term for cellular process" (PSI-MI MI:0359), and each of its diseases, as an "additional information" RelationshipXref shared with the entities that name it. This covers reactions and pathways, as the release's `handleEventGOBP` and `handleDisease` write them. Release 98's files carry no other RelationshipXref on events.
-  - **Order:** the GO term before the regulations and the diseases after the data source, as in the converter, so the numbering follows its order; literature (T016) goes before the regulations too.
-  - **Measured on release 98** (`differences.md`): _P. falciparum_'s 60 reaction GO xrefs are matched. Its pathways' are written but await their ids (T015). The fixture's human reactions gain 21 disease xrefs the old converter skipped (19 DOID 162, 2 DOID 5603).
-  - **Tests:** `BioPAXEventXrefTest`, 3 tests. Each of 7 mutants made one fail:
+  - **Order:** for a reaction, the GO term before the regulations and the diseases after the data source, as in the converter; literature (T016) goes before the regulations too. A pathway's own xrefs still come before its children's, where the converter writes them after: ids only, left to T015.
+  - **Measured on release 98** (`differences.md`): _P. falciparum_'s 60 reaction GO xrefs are matched. Its pathways' are written but await their ids (T015). The fixture gains 23 disease xrefs the old converter skipped (on reactions, 19 DOID 162 and 2 DOID 5603; on pathways, 2 DOID 162); across release 98's human file there are 379.
+  - **From #59's review:** the order claim made true (reactions only), the pathways' skipped diseases recorded, and two behaviours tested: an event's disease xref is the entity's own, and a TemplateReaction and a Degradation have their GO term and diseases.
+  - **Tests:** `BioPAXEventXrefTest`, 5 tests. Each of 11 mutants made one fail:
     - no GO term, or no diseases, on a reaction;
     - no GO term, or no diseases, on a pathway;
     - the process typed as a function;
     - only the first disease;
-    - a disease's xref not shared.
+    - a disease's xref not shared;
+    - an event's diseases keyed apart from an entity's;
+    - no GO term, or no diseases, on a TemplateReaction;
+    - no GO term on a Degradation.
 - [ ] T015 [US2] Pathways (and the caches of events and entities by dbId, kept in the `ConversionContext`, which T008 left for this task: shared across a species' pathways, they write a shared child once): components, PathwayStep with `stepProcess` (reactions, catalyses, controls, pathways) and `nextStep`; a shared child written once and referenced by each parent; no header pathway; no event outside a pathway (research R1).
 - [ ] T016 [US2] Literature and provenance: PublicationXref (PubMed, ISBN, URL) on the event; Evidence (IEA) for inferred events only; the single Provenance; curation comments, with HTML kept as the published files keep it.
 - [ ] T017 [US2] Sets: typed by the class their members share, else PhysicalEntity; "Converted from EntitySet in Reactome" and `memberPhysicalEntity`. Which single-class sets are PhysicalEntity (a set among the members, or a member with no entity reference, or another reason: research R1, R6) decided against the graph over the whole of _P. falciparum_, and the rule that reproduces it written.
