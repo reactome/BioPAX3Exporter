@@ -166,6 +166,8 @@ jobs:
                     -h localhost -b 7687 -u neo4j -p none -o /out -t 174731
                   python3 -I ci/compare.py out/Homo_sapiens.owl one/174731.owl > one.txt || true
                   grep -qx 'only in the file: 0' one.txt || { cat one.txt; echo "the event's file holds what its species' file does not"; exit 1; }
+                  # and is not empty: an empty file is contained in any other
+                  grep -q '<bp:Degradation rdf:ID=' one/174731.owl || { echo "the event's file has no Degradation"; exit 1; }
                   # A species' id is not an event's: an error, and no file
                   if docker run --rm --network host -v "$PWD/one:/out" tmp-tag \
                     -h localhost -b 7687 -u neo4j -p none -o /out -l 174731,48887; then

@@ -40,8 +40,8 @@ class WriteBioPAX3 {
      */
     constructor(version: Int) {
         thisEvent = null
-        xmlBase = base(null)
         dbVersion = version
+        xmlBase = "http://www.reactome.org/biopax#"
     }
 
     /**

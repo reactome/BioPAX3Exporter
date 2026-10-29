@@ -11,11 +11,8 @@ import org.reactome.server.graph.service.DatabaseObjectService
 import org.reactome.server.graph.service.GeneralService
 import org.reactome.server.graph.service.SpeciesService
 import org.reactome.server.graph.utils.ReactomeGraphCore
-// import org.reactome.server.tools.config.GraphQANeo4jConfig;
 
 import java.io.File
-import java.util.ArrayList
-// import java.util.List;
 
 /**
  * @author Sarah Keating <skeating@ebi.ac.uk>
@@ -112,9 +109,11 @@ class BioPAX3ExporterLauncher {
 
                 outputStatus = Status.SINGLE_PATH
                 parseAdditionalArguments(config)
+                // Every mode writes into it: made here, once
+                File(outputdir).mkdirs()
 
                 if (!singleArgumentSupplied()) {
-                    System.err.println("Too many arguments detected. Expected either no pathway arguments or one of -t, -s, -m, -l.")
+                    fail("Too many arguments detected. Expected either no pathway arguments or one of -t, -s, -m, -l.")
                 } else {
                     dbVersion = genericService.dbInfo.version
 
@@ -130,12 +129,7 @@ class BioPAX3ExporterLauncher {
                         }
 
                         Status.ALL_PATHWAYS_SPECIES -> {
-                            val species =
-                                runCatching {
-                                    databaseObjectService.findByIdNoRelations<DatabaseObject>(
-                                        speciesId,
-                                    )
-                                }.getOrNull() as? Species
+                            val species = databaseObjectService.findByIdNoRelations<DatabaseObject>(speciesId) as? Species
                             if (species == null) fail("$speciesId is not the identifier of a Species")
                             species?.let { outputPathsForSpecies(it) }
                         }
@@ -165,15 +159,36 @@ class BioPAX3ExporterLauncher {
             failed = true
         }
 
-        /** The event an id names, of any kind (T019), or none, said so. */
+        /**
+         * The event an id names, of a kind the release converts (a pathway or a reaction,
+         * T019), or none, said so; an error reading it is reported as itself.
+         */
         private fun eventOf(
             service: DatabaseObjectService,
             id: Long,
         ): Event? {
-            // graph-core answers null for an id it has not, or throws for one it cannot read
-            val event = runCatching { service.findByIdNoRelations<DatabaseObject>(id) }.getOrNull() as? Event
-            if (event == null) fail("$id is not the identifier of an Event")
-            return event
+            val found =
+                try {
+                    service.findByIdNoRelations<DatabaseObject>(id)
+                } catch (e: org.springframework.dao.DataAccessException) {
+                    fail("$id could not be read: ${e.message}")
+                    return null
+                }
+            return when (found) {
+                is Pathway, is ReactionLikeEvent -> {
+                    found as Event
+                }
+
+                is Event -> {
+                    fail("$id is an event of a kind not converted (${found.schemaClass})")
+                    null
+                }
+
+                else -> {
+                    fail("$id is not the identifier of an Event")
+                    null
+                }
+            }
         }
 
         private fun parseAdditionalArguments(config: JSAPResult) {
@@ -226,11 +241,7 @@ class BioPAX3ExporterLauncher {
             val writer = WriteBioPAX3(species, dbVersion)
             writer.createModelForSpecies(events)
 
-            // Create output directory if it doesn't exist
             val outputDir = File(outputdir)
-            if (!outputDir.exists()) {
-                outputDir.mkdirs()
-            }
 
             val outputFile = File(outputDir, "${species.displayName.replace(" ", "_")}.owl")
             writer.toFile(outputFile)

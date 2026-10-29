@@ -289,4 +289,17 @@ class WriteBioPAX3Test {
     fun `a writer for no event has nothing to convert alone`() {
         assertThrows(IllegalStateException::class.java) { WriteBioPAX3(98).createModel() }
     }
+
+    @Test
+    fun `a file written again replaces the one there`(
+        @TempDir dir: File,
+    ) {
+        val out = File(dir, "out.owl").apply { writeText("an older file") }
+        val pathway = mock(Pathway::class.java).also { whenever(it.dbId).thenReturn(123L) }
+
+        WriteBioPAX3(pathway, 98).apply { createModel() }.toFile(out)
+
+        assertTrue(out.readText().contains("xml:base=\"http://www.reactome.org/biopax/98/123#\""))
+        assertEquals(listOf("out.owl"), dir.list()!!.toList())
+    }
 }
