@@ -31,6 +31,14 @@
         <dependency>
             <groupId>org.biopax.paxtools</groupId>
             <artifactId>paxtools-core</artifactId>
+            <!-- Paxtools 6 brings slf4j-api 2, which would win here over graph-core's 1.7
+                 and leave a logback 1.2 binding unused: graph-core's is the one kept. -->
+            <exclusions>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-api</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>

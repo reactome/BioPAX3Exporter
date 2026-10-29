@@ -156,7 +156,8 @@ class BioPAXInteractionBuilder(
     ) {
         val catalysis = thisModel!!.addNew(Catalysis::class.java, context!!.nextId("Catalysis"))
         activity.physicalEntity?.let { catalysis.addController(entities!!.physicalEntity(it)) }
-        // Deprecated in Paxtools 6, with no replacement yet: each control has one process.
+        // Deprecated (Paxtools 5.1's javadoc, 6.0's annotation) with no replacement yet; each
+        // control has one process.
         @Suppress("DEPRECATION")
         catalysis.addControlled(controlled)
         catalysis.controlType = ControlType.ACTIVATION

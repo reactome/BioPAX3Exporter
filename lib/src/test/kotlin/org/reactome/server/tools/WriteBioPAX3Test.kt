@@ -124,4 +124,23 @@ class WriteBioPAX3Test {
         assertTrue(result.isNotEmpty())
         assertFalse(result.equals("failed to write"))
     }
+
+    @Test
+    fun `a character outside ASCII is written as itself, as the published files write it`(
+        @TempDir dir: File,
+    ) {
+        // A name as release 98 has it, with U+2212 MINUS SIGN
+        val pathway = mock(Pathway::class.java)
+        whenever(pathway.dbId).thenReturn(123L)
+        whenever(pathway.displayName).thenReturn("erythro-4-hydroxy-L-glutamate(1\u2212)")
+        val writer = WriteBioPAX3(pathway)
+        writer.createModel()
+        val file = File(dir, "out.owl")
+
+        writer.toFile(file)
+
+        val written = file.readText(Charsets.UTF_8)
+        assertTrue(written.contains("glutamate(1\u2212)"))
+        assertFalse(written.contains("&#8722;"))
+    }
 }
