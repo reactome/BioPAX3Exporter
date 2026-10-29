@@ -74,6 +74,6 @@ Release 97's converter writes with JDOM (CRLF, its own indent); Paxtools writes 
 
 ## R6. Unresolved, carried into the tasks
 
-- Why 33 all-SmallMolecule sets are PhysicalEntity: measured against the graph in the comparison task.
+- Why 33 all-SmallMolecule sets are PhysicalEntity: answered in T017 (`differences.md`, Sets): they hold chemical drugs, whose reference's kind is written as PhysicalEntity.
 - That Evidence is written only for inferred events in the other inferred species: checked in the full run.
 - The graph-core version to pin: sbml-exporter's, unless WebsiteAngular spec 015's T029 settles another first.

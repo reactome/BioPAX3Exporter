@@ -61,7 +61,8 @@ import org.reactome.server.graph.domain.model.PhysicalEntity as RPhysicalEntity
  *
  * A set (T017) is written as the class every entity it holds shares, else as a
  * PhysicalEntity, with the comment "Converted from EntitySet in Reactome" and its members
- * and candidates as `memberPhysicalEntity`, each written first, as the converter did.
+ * and candidates as `memberPhysicalEntity`, each written after the set is made, as the
+ * converter did.
  */
 class BioPAXPhysicalEntityBuilder(
     private val context: ConversionContext,
@@ -102,8 +103,8 @@ class BioPAXPhysicalEntityBuilder(
      * The class an entity is written as. A set's is its kind's, unless a member is written
      * as another class: a member with no reference counts for nothing in the kind, but is a
      * PhysicalEntity, and Paxtools allows a Protein (or any class) only members of its own
-     * class. The release, writing XML itself, would have written such a set invalid; none
-     * of its files has one, and the set is a PhysicalEntity here (differences.md).
+     * class. The release, writing XML itself, would have written such a set invalid; its
+     * _P. falciparum_ file of release 98 has none, and the set is a PhysicalEntity here (differences.md).
      */
     private fun classOf(entity: RPhysicalEntity): Class<out BpPhysicalEntity> {
         if (entity !is EntitySet) return classFor(entity, referenceOf(entity))
@@ -141,11 +142,19 @@ class BioPAXPhysicalEntityBuilder(
     private fun kindOf(reference: ReferenceEntity): String =
         when (reference) {
             is ReferenceGeneProduct -> "ReferenceGeneProduct"
+
             is ReferenceDNASequence -> "ReferenceDNASequence"
+
             is ReferenceRNASequence -> "ReferenceRNASequence"
+
             is ReferenceMolecule -> "ReferenceMolecule"
+
+            // Graph-core types a simple entity's reference as a ReferenceMolecule, so no member
+            // has a ReferenceGroup; kept apart as the converter compared the classes.
             is ReferenceGroup -> "ReferenceGroup"
+
             is ReferenceTherapeutic -> "ReferenceTherapeutic"
+
             else -> reference.javaClass.simpleName
         }
 

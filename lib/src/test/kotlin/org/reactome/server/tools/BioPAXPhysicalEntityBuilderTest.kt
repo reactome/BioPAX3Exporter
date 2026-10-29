@@ -444,6 +444,26 @@ class BioPAXPhysicalEntityBuilderTest {
     }
 
     @Test
+    fun `a candidate counts in the kind, though it is written as the same class`() {
+        val therapeutic = mock(ReferenceTherapeutic::class.java)
+        whenever(therapeutic.dbId).thenReturn(9101)
+        whenever(therapeutic.displayName).thenReturn("a protein drug")
+        val drug =
+            mock(ProteinDrug::class.java).also {
+                whenever(it.dbId).thenReturn(104)
+                whenever(it.displayName).thenReturn("drug 104")
+                whenever(it.referenceEntity).thenReturn(therapeutic)
+            }
+        assertEquals(Protein::class.java, builder.physicalEntity(drug).modelInterface)
+
+        // A gene product and a therapeutic are two kinds: the converter made the set a PhysicalEntity
+        val bp = builder.physicalEntity(set(700, listOf(protein(101)), candidates = listOf(drug)))
+
+        assertEquals(PhysicalEntity::class.java, bp.modelInterface)
+        assertEquals(2, bp.memberPhysicalEntity.size)
+    }
+
+    @Test
     fun `a set of complexes is a Complex with no components, and a polymer among members makes it a PhysicalEntity`() {
         val complex = mock(RComplex::class.java)
         whenever(complex.dbId).thenReturn(300)
