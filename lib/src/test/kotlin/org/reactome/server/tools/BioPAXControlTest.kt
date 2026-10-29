@@ -28,7 +28,7 @@ import org.reactome.server.graph.domain.model.SimpleEntity
 import java.io.ByteArrayOutputStream
 import org.reactome.server.graph.domain.model.PhysicalEntity as RPhysicalEntity
 
-// What a control controls. Control.processes is deprecated (Paxtools 5.1's javadoc,
+// What a control controls. Control.controlled is deprecated (Paxtools 5.1's javadoc,
 // 6.0's annotation) with no replacement yet; each control here has one process.
 @Suppress("DEPRECATION")
 internal val Control.processes: Set<org.biopax.paxtools.model.level3.Process> get() = controlled

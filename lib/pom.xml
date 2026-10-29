@@ -31,8 +31,9 @@
         <dependency>
             <groupId>org.biopax.paxtools</groupId>
             <artifactId>paxtools-core</artifactId>
-            <!-- Paxtools 6 brings slf4j-api 2, which would win here over graph-core's 1.7
-                 and leave a logback 1.2 binding unused: graph-core's is the one kept. -->
+            <!-- Paxtools 6 brings slf4j-api 2, which would win here, and in whatever uses
+                 this library, over graph-core's 1.7, and so leave a logback 1.2 binding
+                 unused. Paxtools uses only the API both have; graph-core's is kept. -->
             <exclusions>
                 <exclusion>
                     <groupId>org.slf4j</groupId>
