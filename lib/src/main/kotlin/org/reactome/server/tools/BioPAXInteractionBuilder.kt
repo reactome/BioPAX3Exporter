@@ -74,11 +74,14 @@ class BioPAXInteractionBuilder(
             event.catalystActivity?.forEach { addCatalysis(it, bpReaction) }
         }
         BioPAXXrefBuilder(context).addReactomeIds(event, bpReaction)
+        // The converter's order: the GO term, then the regulations, then the diseases
+        xrefs!!.addBiologicalProcess(event, bpReaction)
         BioPAX3BasicElementsBuilder(event, context, bpReaction).addReactomeDataSource()
         // Every kind of reaction, a TemplateReaction too, has its regulations, each once:
         // graph-core lists one twice where its link's stoichiometry is 2, and the release's
         // converter gathers them into a set.
         event.regulatedBy?.distinct()?.forEach { addControl(it, bpReaction) }
+        xrefs.addDiseases(event, bpReaction)
 
         // Evidence / datasource etc.
         BioPAX3BasicElementsBuilder(event, context, bpReaction).addEvidence()

@@ -10,9 +10,8 @@
 </owl:Ontology>
 
 <bp:UnificationXref rdf:ID="UnificationXref10">
- <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=11151256</bp:comment>
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">11151256</bp:id>
- <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 98</bp:db>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GO:0005829</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GENE ONTOLOGY</bp:db>
 </bp:UnificationXref>
 
 <bp:BioSource rdf:ID="BioSource1">
@@ -21,24 +20,42 @@
 </bp:BioSource>
 
 <bp:UnificationXref rdf:ID="UnificationXref12">
- <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=11151258</bp:comment>
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">11151258</bp:id>
- <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 98</bp:db>
-</bp:UnificationXref>
-
-<bp:UnificationXref rdf:ID="UnificationXref11">
  <bp:idVersion rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">1</bp:idVersion>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-PFA-9032195.1</bp:comment>
  <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">R-PFA-9032195</bp:id>
  <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
 </bp:UnificationXref>
 
-<bp:UnificationXref rdf:ID="UnificationXref13">
+<bp:UnificationXref rdf:ID="UnificationXref11">
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=11151256</bp:comment>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">11151256</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 98</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:ID="UnificationXref14">
  <bp:idVersion rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">1</bp:idVersion>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-PFA-68947.1</bp:comment>
  <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">R-PFA-68947</bp:id>
  <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
 </bp:UnificationXref>
+
+<bp:UnificationXref rdf:ID="UnificationXref13">
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=11151258</bp:comment>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">11151258</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 98</bp:db>
+</bp:UnificationXref>
+
+<bp:RelationshipXref rdf:ID="RelationshipXref4">
+ <bp:relationshipType rdf:resource="#RelationshipTypeVocabulary1" />
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GO:0006261</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GENE ONTOLOGY</bp:db>
+</bp:RelationshipXref>
+
+<bp:RelationshipXref rdf:ID="RelationshipXref3">
+ <bp:relationshipType rdf:resource="#RelationshipTypeVocabulary1" />
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GO:0006260</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GENE ONTOLOGY</bp:db>
+</bp:RelationshipXref>
 
 <bp:SequenceSite rdf:ID="SequenceSite1">
  <bp:sequencePosition rdf:datatype = "http://www.w3.org/2001/XMLSchema#int">1</bp:sequencePosition>
@@ -69,6 +86,18 @@
  <bp:sequencePosition rdf:datatype = "http://www.w3.org/2001/XMLSchema#int">861</bp:sequencePosition>
  <bp:positionStatus rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">EQUAL</bp:positionStatus>
 </bp:SequenceSite>
+
+<bp:RelationshipXref rdf:ID="RelationshipXref2">
+ <bp:relationshipType rdf:resource="#RelationshipTypeVocabulary1" />
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GO:0000278</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GENE ONTOLOGY</bp:db>
+</bp:RelationshipXref>
+
+<bp:RelationshipXref rdf:ID="RelationshipXref1">
+ <bp:relationshipType rdf:resource="#RelationshipTypeVocabulary1" />
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GO:0007049</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GENE ONTOLOGY</bp:db>
+</bp:RelationshipXref>
 
 <bp:Evidence rdf:ID="Evidence27">
 </bp:Evidence>
@@ -122,7 +151,7 @@
 </bp:PathwayStep>
 
 <bp:SequenceModificationVocabulary rdf:ID="SequenceModificationVocabulary3">
- <bp:xref rdf:resource="#UnificationXref6" />
+ <bp:xref rdf:resource="#UnificationXref7" />
  <bp:term rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ubiquitinylated lysine</bp:term>
 </bp:SequenceModificationVocabulary>
 
@@ -151,12 +180,12 @@
 </bp:PathwayStep>
 
 <bp:SequenceModificationVocabulary rdf:ID="SequenceModificationVocabulary2">
- <bp:xref rdf:resource="#UnificationXref5" />
+ <bp:xref rdf:resource="#UnificationXref6" />
  <bp:term rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">O-phospho-L-threonine</bp:term>
 </bp:SequenceModificationVocabulary>
 
 <bp:SequenceModificationVocabulary rdf:ID="SequenceModificationVocabulary1">
- <bp:xref rdf:resource="#UnificationXref4" />
+ <bp:xref rdf:resource="#UnificationXref5" />
  <bp:term rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">O-phospho-L-serine</bp:term>
 </bp:SequenceModificationVocabulary>
 
@@ -178,10 +207,9 @@
 </bp:PathwayStep>
 
 <bp:UnificationXref rdf:ID="UnificationXref8">
- <bp:idVersion rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">1</bp:idVersion>
- <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-PFA-9032189.1</bp:comment>
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">R-PFA-9032189</bp:id>
- <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=11151232</bp:comment>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">11151232</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 98</bp:db>
 </bp:UnificationXref>
 
 <bp:PathwayStep rdf:ID="PathwayStep20">
@@ -189,31 +217,33 @@
 </bp:PathwayStep>
 
 <bp:UnificationXref rdf:ID="UnificationXref9">
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GO:0005829</bp:id>
- <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GENE ONTOLOGY</bp:db>
+ <bp:idVersion rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">1</bp:idVersion>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-PFA-9032189.1</bp:comment>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">R-PFA-9032189</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
 </bp:UnificationXref>
 
 <bp:PathwayStep rdf:ID="PathwayStep21">
  <bp:stepProcess rdf:resource="#Pathway23" />
 </bp:PathwayStep>
 
+<bp:UnificationXref rdf:ID="UnificationXref2">
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MI:0359</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MI</bp:db>
+</bp:UnificationXref>
+
 <bp:CellularLocationVocabulary rdf:ID="CellularLocationVocabulary1">
- <bp:xref rdf:resource="#UnificationXref2" />
+ <bp:xref rdf:resource="#UnificationXref3" />
  <bp:term rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">nucleoplasm</bp:term>
 </bp:CellularLocationVocabulary>
 
-<bp:UnificationXref rdf:ID="UnificationXref2">
+<bp:UnificationXref rdf:ID="UnificationXref3">
  <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GO:0005654</bp:id>
  <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GENE ONTOLOGY</bp:db>
 </bp:UnificationXref>
 
-<bp:UnificationXref rdf:ID="UnificationXref3">
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Q8I615</bp:id>
- <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">UniProt</bp:db>
-</bp:UnificationXref>
-
 <bp:CellularLocationVocabulary rdf:ID="CellularLocationVocabulary2">
- <bp:xref rdf:resource="#UnificationXref9" />
+ <bp:xref rdf:resource="#UnificationXref10" />
  <bp:term rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">cytosol</bp:term>
 </bp:CellularLocationVocabulary>
 
@@ -223,19 +253,18 @@
 </bp:UnificationXref>
 
 <bp:UnificationXref rdf:ID="UnificationXref6">
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MOD:01148</bp:id>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MOD:00047</bp:id>
  <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MOD</bp:db>
 </bp:UnificationXref>
 
 <bp:UnificationXref rdf:ID="UnificationXref7">
- <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=11151232</bp:comment>
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">11151232</bp:id>
- <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 98</bp:db>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MOD:01148</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MOD</bp:db>
 </bp:UnificationXref>
 
 <bp:UnificationXref rdf:ID="UnificationXref4">
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MOD:00046</bp:id>
- <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MOD</bp:db>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Q8I615</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">UniProt</bp:db>
 </bp:UnificationXref>
 
 <bp:PathwayStep rdf:ID="PathwayStep24">
@@ -243,7 +272,7 @@
 </bp:PathwayStep>
 
 <bp:UnificationXref rdf:ID="UnificationXref5">
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MOD:00047</bp:id>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MOD:00046</bp:id>
  <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MOD</bp:db>
 </bp:UnificationXref>
 
@@ -254,6 +283,7 @@
 <bp:Pathway rdf:ID="Pathway19">
  <bp:pathwayOrder rdf:resource="#PathwayStep18" />
  <bp:pathwayComponent rdf:resource="#Pathway20" />
+ <bp:xref rdf:resource="#RelationshipXref3" />
  <bp:organism rdf:resource="#BioSource1" />
  <bp:evidence rdf:resource="#Evidence22" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Synthesis of DNA</bp:displayName>
@@ -289,6 +319,7 @@
 <bp:Pathway rdf:ID="Pathway2">
  <bp:pathwayOrder rdf:resource="#PathwayStep1" />
  <bp:pathwayComponent rdf:resource="#Pathway3" />
+ <bp:xref rdf:resource="#RelationshipXref1" />
  <bp:organism rdf:resource="#BioSource1" />
  <bp:evidence rdf:resource="#Evidence1" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Cell Cycle</bp:displayName>
@@ -303,6 +334,7 @@
 <bp:Pathway rdf:ID="Pathway3">
  <bp:pathwayOrder rdf:resource="#PathwayStep2" />
  <bp:pathwayComponent rdf:resource="#Pathway4" />
+ <bp:xref rdf:resource="#RelationshipXref2" />
  <bp:organism rdf:resource="#BioSource1" />
  <bp:evidence rdf:resource="#Evidence2" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Cell Cycle, Mitotic</bp:displayName>
@@ -325,7 +357,7 @@
 </bp:FragmentFeature>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
- <bp:xref rdf:resource="#UnificationXref12" />
+ <bp:xref rdf:resource="#UnificationXref14" />
  <bp:xref rdf:resource="#UnificationXref13" />
  <bp:evidence rdf:resource="#Evidence13" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Ubiquitinated Orc1 enters the cytosol</bp:displayName>
@@ -339,6 +371,7 @@
 <bp:Pathway rdf:ID="Pathway5">
  <bp:pathwayOrder rdf:resource="#PathwayStep4" />
  <bp:pathwayComponent rdf:resource="#Pathway6" />
+ <bp:xref rdf:resource="#RelationshipXref3" />
  <bp:organism rdf:resource="#BioSource1" />
  <bp:evidence rdf:resource="#Evidence4" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Synthesis of DNA</bp:displayName>
@@ -347,7 +380,7 @@
 </bp:Pathway>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction1">
- <bp:xref rdf:resource="#UnificationXref12" />
+ <bp:xref rdf:resource="#UnificationXref14" />
  <bp:xref rdf:resource="#UnificationXref13" />
  <bp:evidence rdf:resource="#Evidence7" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Ubiquitinated Orc1 enters the cytosol</bp:displayName>
@@ -397,6 +430,7 @@
 <bp:Pathway rdf:ID="Pathway8">
  <bp:pathwayOrder rdf:resource="#PathwayStep7" />
  <bp:pathwayComponent rdf:resource="#Pathway9" />
+ <bp:xref rdf:resource="#RelationshipXref2" />
  <bp:organism rdf:resource="#BioSource1" />
  <bp:evidence rdf:resource="#Evidence8" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Cell Cycle, Mitotic</bp:displayName>
@@ -447,6 +481,7 @@
 <bp:Pathway rdf:ID="Pathway24">
  <bp:pathwayOrder rdf:resource="#PathwayStep23" />
  <bp:pathwayComponent rdf:resource="#Pathway25" />
+ <bp:xref rdf:resource="#RelationshipXref3" />
  <bp:organism rdf:resource="#BioSource1" />
  <bp:evidence rdf:resource="#Evidence29" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Synthesis of DNA</bp:displayName>
@@ -505,7 +540,7 @@
 </bp:Pathway>
 
 <bp:ProteinReference rdf:ID="ProteinReference1">
- <bp:xref rdf:resource="#UnificationXref3" />
+ <bp:xref rdf:resource="#UnificationXref4" />
  <bp:organism rdf:resource="#BioSource1" />
  <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">UniProt:Q8I615</bp:name>
 </bp:ProteinReference>
@@ -552,8 +587,13 @@
 <bp:Evidence rdf:ID="Evidence11">
 </bp:Evidence>
 
+<bp:RelationshipTypeVocabulary rdf:ID="RelationshipTypeVocabulary1">
+ <bp:xref rdf:resource="#UnificationXref2" />
+ <bp:term rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">gene ontology term for cellular process</bp:term>
+</bp:RelationshipTypeVocabulary>
+
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction7">
- <bp:xref rdf:resource="#UnificationXref12" />
+ <bp:xref rdf:resource="#UnificationXref14" />
  <bp:xref rdf:resource="#UnificationXref13" />
  <bp:evidence rdf:resource="#Evidence32" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Ubiquitinated Orc1 enters the cytosol</bp:displayName>
@@ -565,7 +605,7 @@
 </bp:BiochemicalReaction>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction4">
- <bp:xref rdf:resource="#UnificationXref12" />
+ <bp:xref rdf:resource="#UnificationXref14" />
  <bp:xref rdf:resource="#UnificationXref13" />
  <bp:evidence rdf:resource="#Evidence20" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Ubiquitinated Orc1 enters the cytosol</bp:displayName>
@@ -577,7 +617,7 @@
 </bp:BiochemicalReaction>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction3">
- <bp:xref rdf:resource="#UnificationXref12" />
+ <bp:xref rdf:resource="#UnificationXref14" />
  <bp:xref rdf:resource="#UnificationXref13" />
  <bp:evidence rdf:resource="#Evidence18" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Ubiquitinated Orc1 enters the cytosol</bp:displayName>
@@ -589,7 +629,7 @@
 </bp:BiochemicalReaction>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction6">
- <bp:xref rdf:resource="#UnificationXref12" />
+ <bp:xref rdf:resource="#UnificationXref14" />
  <bp:xref rdf:resource="#UnificationXref13" />
  <bp:evidence rdf:resource="#Evidence28" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Ubiquitinated Orc1 enters the cytosol</bp:displayName>
@@ -601,7 +641,7 @@
 </bp:BiochemicalReaction>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction5">
- <bp:xref rdf:resource="#UnificationXref12" />
+ <bp:xref rdf:resource="#UnificationXref14" />
  <bp:xref rdf:resource="#UnificationXref13" />
  <bp:evidence rdf:resource="#Evidence25" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Ubiquitinated Orc1 enters the cytosol</bp:displayName>
@@ -635,6 +675,7 @@
 <bp:Pathway rdf:ID="Pathway13">
  <bp:pathwayOrder rdf:resource="#PathwayStep12" />
  <bp:pathwayComponent rdf:resource="#Pathway14" />
+ <bp:xref rdf:resource="#RelationshipXref4" />
  <bp:organism rdf:resource="#BioSource1" />
  <bp:evidence rdf:resource="#Evidence14" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">DNA Replication</bp:displayName>
@@ -645,6 +686,7 @@
 <bp:Pathway rdf:ID="Pathway14">
  <bp:pathwayOrder rdf:resource="#PathwayStep13" />
  <bp:pathwayComponent rdf:resource="#Pathway15" />
+ <bp:xref rdf:resource="#RelationshipXref3" />
  <bp:organism rdf:resource="#BioSource1" />
  <bp:evidence rdf:resource="#Evidence15" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Synthesis of DNA</bp:displayName>
@@ -675,6 +717,7 @@
 <bp:Pathway rdf:ID="Pathway10">
  <bp:pathwayOrder rdf:resource="#PathwayStep9" />
  <bp:pathwayComponent rdf:resource="#Pathway11" />
+ <bp:xref rdf:resource="#RelationshipXref3" />
  <bp:organism rdf:resource="#BioSource1" />
  <bp:evidence rdf:resource="#Evidence10" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Synthesis of DNA</bp:displayName>
@@ -683,7 +726,7 @@
 </bp:Pathway>
 
 <bp:Protein rdf:ID="Protein2">
- <bp:xref rdf:resource="#UnificationXref10" />
+ <bp:xref rdf:resource="#UnificationXref12" />
  <bp:xref rdf:resource="#UnificationXref11" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Q8I615</bp:displayName>
  <bp:cellularLocation rdf:resource="#CellularLocationVocabulary2" />
@@ -702,7 +745,7 @@
 
 <bp:Protein rdf:ID="Protein1">
  <bp:xref rdf:resource="#UnificationXref8" />
- <bp:xref rdf:resource="#UnificationXref7" />
+ <bp:xref rdf:resource="#UnificationXref9" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Q8I615</bp:displayName>
  <bp:cellularLocation rdf:resource="#CellularLocationVocabulary1" />
  <bp:feature rdf:resource="#ModificationFeature1" />

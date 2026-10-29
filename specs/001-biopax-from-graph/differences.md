@@ -68,6 +68,17 @@ Measured 28 Oct 2026 on _P. falciparum_ from a private copy of release 98's grap
 - **A catalyst activity regulated as an entity** (the converter's Modulation, "not supported in the new data model after release 63"): the graph has no such link, so none is written, as none is published.
 - **The active unit's comment names an rdf:ID** (`activeUnit: #Protein12`), numbered as each file is written. `ci/compare.py` now reads it as a reference to the entity it names, so the comparison sees the entity, not the number.
 
+## Events' own cross-references (T014)
+
+Measured 28 Oct 2026 on _P. falciparum_ from a private copy of release 98's graph, against release 98's published file, and on the fixture's human reactions against release 98's human file.
+
+- **What events carry:** in release 98's files, an event's only RelationshipXrefs are its GO biological process ("gene ontology term for cellular process") and its diseases (DOID, "additional information"): human has 2,294 and 2,846 of them, _P. falciparum_ 506 GO terms and no disease. These are what the release's converter writes (`handleEventGOBP`, `handleDisease`), and what this exporter writes, for reactions and pathways alike. "The rest" in the task's wording turned out to be nothing more.
+- **Reactions:** the published file's 60 GO xrefs on _P. falciparum_ reactions are all matched. The converted file has more (159 at the root), because a reaction is still written once for each pathway that reaches it (T015).
+- **Pathways:** their 446 GO xrefs are written. The comparison cannot key a pathway by its database id until it carries one (T015); matched by name, the GO terms of 628 _P. falciparum_ pathways are identical (#59's review).
+- **Order:** for a reaction, the GO term comes before its regulations and the diseases after the data source, as in the converter. For a pathway the converter writes its children first and then its own xrefs, while this exporter still writes the pathway's own first. Only ids are numbered differently, which `ci/compare.py` does not see; a pathway's order is T015's.
+- **Diseases the old converter skipped:** as for an entity's (T011), its loop over an event's diseases stopped at the first one it had already written. Every one is written here: an obvious bug, fixed. In the fixture, 23 disease xrefs the release left out are written: on reactions, DOID 162 (cancer) on 19 and DOID 5603 on 2 where 162 came first; on pathways, DOID 162 on 2. Across release 98's human file, the graph gives 379 such xrefs (269 on reactions, 110 on pathways): for each of 280 events, the published diseases are an ordered prefix of the graph's list, and for no event do they differ otherwise (#59's review, against the private copy).
+- **A GO term's xref is written once** and shared by everything that names it; no term is both a molecular function and a biological process in release 98.
+
 ## The validator's baseline
 
 The BioPAX validator 6.0.0 (`--profile=notstrict`), read by `ci/validate.py`, on the published files of release 97. A written file may have no ERROR its published counterpart lacks (SC-003); warnings are recorded, not held.
