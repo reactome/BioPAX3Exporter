@@ -28,6 +28,11 @@ import org.reactome.server.graph.domain.model.SimpleEntity
 import java.io.ByteArrayOutputStream
 import org.reactome.server.graph.domain.model.PhysicalEntity as RPhysicalEntity
 
+// What a control controls. Control.processes is deprecated (Paxtools 5.1's javadoc,
+// 6.0's annotation) with no replacement yet; each control here has one process.
+@Suppress("DEPRECATION")
+internal val Control.processes: Set<org.biopax.paxtools.model.level3.Process> get() = controlled
+
 /**
  * Catalyses and regulations as the release's converter writes them (spec 001 T013), on a
  * real Paxtools model. Graph-core's objects are mocks, each made before the next is stubbed.
@@ -102,7 +107,7 @@ class BioPAXControlTest {
         val catalysis = context.model.getObjects(Catalysis::class.java).single()
 
         assertEquals(setOf("MLH1"), catalysis.controller.map { (it as org.biopax.paxtools.model.level3.Named).displayName }.toSet())
-        assertEquals(setOf(reaction), catalysis.controlled)
+        assertEquals(setOf(reaction), catalysis.processes)
         assertEquals(ControlType.ACTIVATION, catalysis.controlType)
         val xrefs = catalysis.xref.filterIsInstance<RelationshipXref>()
         val function = xrefs.single { it.db == "GENE ONTOLOGY" }
@@ -133,7 +138,7 @@ class BioPAXControlTest {
             context.model.objects
                 .filterIsInstance<org.biopax.paxtools.model.level3.Named>()
                 .single { it.displayName == "PMS2" }
-        assertEquals(setOf("activeUnit: #" + written.rdfId.substringAfterLast('#')), catalysis.comment)
+        assertEquals(setOf("activeUnit: #" + written.uri.substringAfterLast('#')), catalysis.comment)
     }
 
     @Test
@@ -157,7 +162,7 @@ class BioPAXControlTest {
                 context.model.objects
                     .filterIsInstance<org.biopax.paxtools.model.level3.Named>()
                     .single { it.displayName == "unit $n" }
-                    .rdfId
+                    .uri
                     .takeLastWhile { it.isDigit() }
                     .toInt()
             }
@@ -186,7 +191,7 @@ class BioPAXControlTest {
         assertEquals(setOf("Reactome Database ID Release 98 700", "Reactome R-HSA-700"), of("700").xref.map { it.dbAndId() }.toSet())
         controls.forEach {
             assertEquals(Control::class.java, it.modelInterface)
-            assertEquals(setOf(reaction), it.controlled)
+            assertEquals(setOf(reaction), it.processes)
             assertEquals(
                 "Reactome",
                 it.dataSource
@@ -203,7 +208,7 @@ class BioPAXControlTest {
             context.model.objects
                 .filterIsInstance<org.biopax.paxtools.model.level3.Named>()
                 .single { it.displayName == "PKA" }
-        assertEquals(setOf("activeUnit: #" + pka.rdfId.substringAfterLast('#')), of("701").comment)
+        assertEquals(setOf("activeUnit: #" + pka.uri.substringAfterLast('#')), of("701").comment)
     }
 
     @Test
@@ -223,7 +228,7 @@ class BioPAXControlTest {
         val template = BioPAXInteractionBuilder(event, context).addReactomeRLEvent() as TemplateReaction
         val regulation = context.model.getObjects(TemplateReactionRegulation::class.java).single()
 
-        assertEquals(setOf(template), regulation.controlled)
+        assertEquals(setOf(template), regulation.processes)
         assertEquals(ControlType.ACTIVATION, regulation.controlType)
         assertTrue(context.model.getObjects(Catalysis::class.java).isEmpty())
     }
@@ -243,10 +248,10 @@ class BioPAXControlTest {
 
         val controls = context.model.getObjects(Control::class.java).filter { it !is Catalysis }
         assertEquals(2, controls.size)
-        assertEquals(setOf(setOf(first), setOf(second)), controls.map { it.controlled.toSet() }.toSet())
+        assertEquals(setOf(setOf(first), setOf(second)), controls.map { it.processes.toSet() }.toSet())
         val catalyses = context.model.getObjects(Catalysis::class.java)
         assertEquals(2, catalyses.size)
-        assertEquals(setOf(setOf(first), setOf(second)), catalyses.map { it.controlled.toSet() }.toSet())
+        assertEquals(setOf(setOf(first), setOf(second)), catalyses.map { it.processes.toSet() }.toSet())
         // One molecular-function xref for the term, shared
         assertEquals(
             1,
@@ -303,7 +308,7 @@ class BioPAXControlTest {
             context.model.objects
                 .filterIsInstance<org.biopax.paxtools.model.level3.Named>()
                 .single { it.displayName == name }
-                .rdfId
+                .uri
                 .takeLastWhile { it.isDigit() }
                 .toInt()
         assertTrue(number("first in the list") < number("second in the list"))

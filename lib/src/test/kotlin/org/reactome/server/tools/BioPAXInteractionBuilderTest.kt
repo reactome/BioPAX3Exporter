@@ -150,7 +150,7 @@ class BioPAXInteractionBuilderTest {
             context.model
                 .getObjects(Catalysis::class.java)
                 .single()
-                .controlled,
+                .processes,
         )
     }
 
