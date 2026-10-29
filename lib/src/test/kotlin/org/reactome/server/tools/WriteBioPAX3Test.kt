@@ -304,7 +304,7 @@ class WriteBioPAX3Test {
     }
 
     @Test
-    fun `standard output stays open after the model is written to it`() {
+    fun `standard output ends the model with a newline and stays open after it`() {
         val pathway = mock(Pathway::class.java).also { whenever(it.dbId).thenReturn(123L) }
         val captured = java.io.ByteArrayOutputStream()
         val before = System.out

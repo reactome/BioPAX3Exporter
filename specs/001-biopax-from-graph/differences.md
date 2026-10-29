@@ -144,12 +144,21 @@ Measured 29 Oct 2026 on the fixture graph.
 - **Not written, by choice:** the release's one-event files had a comment on the ontology header, `BioPAX pathway converted from "…" in the Reactome database.` A Paxtools model has no place for it, and the comparison reads individuals only; it could be added to the written text, but it says nothing a reader of the file needs, so it is recorded here and not written.
 - **Removed:** `BioPAXEventBuilder`, which asked for an abstract `Process` and was never called.
 
+## One event through the library (T021)
+
+Measured 29 Oct 2026 on a private copy of release 98's graph: 30 events, each converted alone (`-m`, `WriteBioPAX3` one event at a time), each compared with its species' file from the full run (T020) by `ci/contained.py`, which reads the species' file once as `ci/compare.py` reduces it to triples.
+
+- **The sample**, the first by database id of each kind: ten human pathways of five sizes (up to 3 events, 20, 100, 500, and more); nine human reactions (three reactions, three black boxes, a polymerisation, a depolymerisation, a cell development step); six human disease events (a black box, a pathway, two reactions, a failed reaction, a top-level pathway); five inferred mouse events (a reaction, a black box, a polymerisation, a pathway, a top-level pathway). By database id: human 68689, 68881, 68616, 68884, 68867, 68875, 15869, 68886, 73857, 74160; 68595, 68603, 68610, 68712, 68825, 68948, 450358, 5229194, 9725621; 112333, 162585, 162590, 162914, 1225956, 1643685; mouse 9633481, 10003583, 10037081, 10117288, 10117294.
+- **Each is contained in its species' file, and whole:** of the 30 files, from 123 triples to 657,560, not one triple is missing from the human or the mouse file; and each individual a file holds with a database id has every triple the species' file gives it, so no event was converted short. No recorded difference was needed to hold this.
+- **Inferred events** carry their Evidence (1 to 74 in the four with an evidence type); one inferred reaction has no evidence type, and so none, as the release's rule gives.
+- **Time:** 7 min 14 s for the 30, at most 1.3 GB resident.
+
 ## The full run (T020)
 
 Measured 29 Oct 2026: every species converted from a private copy of release 98's graph by the exporter's default mode, and each file compared with release 98's published one by `ci/compare.py` and validated by the BioPAX validator 6.0.0 (`--profile=notstrict`).
 
 - **The run:** 1 h 55 min for all species, at most 2.9 GB resident with a 4 GB heap. Human alone takes about 16 minutes. Two faults the first runs found are fixed (#76, #77): a lookup that read the whole model for every individual, and graph objects and copies of the file kept in memory.
-- **The files:** the 15 of the published zip, by the same names, and a sixteenth, _Mycobacterium tuberculosis_: in the graph it has a top-level pathway of its own and 56 events beneath it, all of that species alone, which the converter's rule (`SpeciesAllPathwaysConverter`) would take. The release step names the species it converts from its species configuration (`FileGeneration.getSpeciesNames`), which the published files show not to include it. Which species the release command writes is T023's.
+- **The files:** the 15 of the published zip, by the same names, and a sixteenth, _Mycobacterium tuberculosis_: in the graph it has a top-level pathway of its own and 56 events beneath it, all of that species alone, which the converter's rule (`SpeciesAllPathwaysConverter`) would take. The release step names the species it converts from its species configuration (`FileGeneration.getSpeciesNames`); the published zip has no file for it. Which species the release command writes is T023's.
 - **By species:**
 
 | Species                     | Only in the published file | Only in the converted file | Published: errors, warnings | Converted: errors, warnings |
