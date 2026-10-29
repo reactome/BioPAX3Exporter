@@ -60,6 +60,27 @@ pipeline{
 		    }
 		}
 
+		// The files checked before they are published: one for each species named, each with
+		// this release's xml:base (the release number ended by its slash, so release 9 cannot
+		// pass 98's files). The DownloadDirectory step checked this before; it is the exporter's
+		// now (spec 001 T023).
+		stage('Check: one file per species, each of this release'){
+		    steps{
+		        script{
+		            def releaseVersion = utils.getReleaseVersion()
+		            dir(env.OUTPUT_FOLDER) {
+		                sh """
+		                    species=\$(echo ${env.SPECIES} | tr ',' '\\n' | grep -c .)
+		                    files=\$(ls -1 *.owl | wc -l)
+		                    based=\$(grep -l "xml:base=\\"http://www.reactome.org/biopax/${releaseVersion}/" *.owl | wc -l)
+		                    echo "\$species species named, \$files OWL files, \$based with release ${releaseVersion}'s base"
+		                    [ "\$files" -eq "\$species" ] && [ "\$based" -eq "\$files" ]
+		                """
+		            }
+		        }
+		    }
+		}
+
 		stage('Post: Move biopax file to download folder') {
 		    steps{
 		        script{
