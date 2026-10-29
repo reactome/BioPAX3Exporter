@@ -177,11 +177,11 @@ jobs:
                   [ ! -e one/events.owl ] || { echo "a list with an id that names no event was written"; exit 1; }
 
             - name: The release's xml:base check (T023)
-              # As the release's DownloadDirectory step checks biopax.zip: every file's base
-              # names the release (the fixture's, 98)
+              # As the Jenkinsfile's check stage checks the release's files: every file's base
+              # names the release (the fixture's, 98), its number ended by its slash
               run: |
                   files=$(find out -maxdepth 1 -name '*.owl' | wc -l)
-                  based=$(grep -l 'xml:base="http://www.reactome.org/biopax/98' out/*.owl | wc -l)
+                  based=$(grep -l 'xml:base="http://www.reactome.org/biopax/98/' out/*.owl | wc -l)
                   echo "$files files, $based with the release's base"
                   [ "$files" -gt 0 ] && [ "$files" = "$based" ]
 
