@@ -87,10 +87,11 @@ class BioPAXPathwayBuilder(
         context!!
             .steps
             .getOrPut(event.dbId) {
-                event to
+                val step =
                     thisModel!!.addNew(PathwayStep::class.java, context.nextId("PathwayStep")).apply {
                         addStepProcess(bpEvent)
                     }
+                (event.precedingEvent?.map { it.dbId } ?: emptyList()) to step
             }.second
 
     /**
@@ -101,8 +102,8 @@ class BioPAXPathwayBuilder(
      */
     fun addStepLinks() {
         val steps = context!!.steps
-        steps.values.forEach { (event, step) ->
-            event.precedingEvent?.forEach { preceding -> steps[preceding.dbId]?.second?.addNextStep(step) }
+        steps.values.forEach { (preceding, step) ->
+            preceding.forEach { steps[it]?.second?.addNextStep(step) }
             step.stepProcess
                 .filterIsInstance<Interaction>()
                 .flatMap { it.controlledOf }

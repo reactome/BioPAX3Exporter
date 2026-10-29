@@ -30,9 +30,11 @@ class ConversionContext(
     /**
      * Each event's PathwayStep, one per event however many pathways hold it, in the order
      * they were made: once every pathway is written, each step gets its next steps and its
-     * event's catalyses and controls (T015).
+     * event's catalyses and controls (T015). A step is kept with the database ids of the
+     * events that precede its event, not the event: an event held here would keep all that
+     * was loaded beneath it until the file is written, and a large species ran out of memory.
      */
-    val steps = LinkedHashMap<Long, Pair<org.reactome.server.graph.domain.model.Event, org.biopax.paxtools.model.level3.PathwayStep>>()
+    val steps = LinkedHashMap<Long, Pair<List<Long>, org.biopax.paxtools.model.level3.PathwayStep>>()
 
     /**
      * The id of the next individual of a class: the class's name and its count in

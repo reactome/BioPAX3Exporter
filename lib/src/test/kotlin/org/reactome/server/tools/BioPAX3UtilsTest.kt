@@ -1,14 +1,8 @@
 package org.reactome.server.tools
 
-import org.biopax.paxtools.model.BioPAXElement
 import org.biopax.paxtools.model.BioPAXLevel
-import org.biopax.paxtools.model.level3.Named
 import org.biopax.paxtools.model.level3.Protein
 import org.junit.jupiter.api.Assertions.assertEquals
-import org.junit.jupiter.api.Assertions.assertFalse
-import org.junit.jupiter.api.Assertions.assertNotNull
-import org.junit.jupiter.api.Assertions.assertNull
-import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Test
 
 class BioPAX3UtilsTest {
