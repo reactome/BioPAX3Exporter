@@ -102,13 +102,14 @@ class WriteBioPAX3 {
      * The BioPAX model of a species: its top-level events (SpeciesEvents), each written
      * with all it holds, once in the file, and no header pathway (T015).
      */
-    fun createModelForSpecies(events: List<Event>) = createModelForEvents(events)
+    fun createModelForSpecies(events: Iterable<Event>) = createModelForEvents(events)
 
     /**
      * The BioPAX model of the events given, each written with all it holds, once in the
-     * file, and their steps linked.
+     * file, and their steps linked. Each is let go once written (an Iterable that loads
+     * each in turn holds no more than one): what was loaded beneath it is then free.
      */
-    fun createModelForEvents(events: List<Event>) {
+    fun createModelForEvents(events: Iterable<Event>) {
         val context = ConversionContext(xmlBase, dbVersion)
         thisModel = context.model
         val builder = BioPAXPathwayBuilder(null, context)
@@ -124,7 +125,8 @@ class WriteBioPAX3 {
      * Write the Biopax Model to std output.
      */
     fun toStdOut() {
-        println(String(owl(), Charsets.UTF_8))
+        writeOwl(System.out)
+        System.out.flush()
     }
 
     /**
@@ -138,7 +140,7 @@ class WriteBioPAX3 {
         // written, and the file there before stays until the new one is whole
         val partial = File(output.absoluteFile.parentFile, ".${output.name}.partial")
         try {
-            partial.writeBytes(owl())
+            partial.outputStream().buffered().use { writeOwl(it) }
             java.nio.file.Files
                 .move(partial.toPath(), output.toPath(), java.nio.file.StandardCopyOption.ATOMIC_MOVE)
         } finally {
@@ -151,20 +153,56 @@ class WriteBioPAX3 {
      *
      * @return String representing the BioPAX Model.
      */
-    override fun toString(): String = String(owl(), Charsets.UTF_8)
+    override fun toString(): String = ByteArrayOutputStream().also { writeOwl(it) }.toString(Charsets.UTF_8)
 
     /**
      * The model as OWL, as the release's writer wrote its literals (T018): each trimmed at
      * both ends, and a carriage return kept as a character reference, `&#xD;` as the release
-     * wrote it, which an XML parser would otherwise read as a line feed. A failure to write
-     * is not caught: a file half written is not one to publish.
+     * wrote it, which an XML parser would otherwise read as a line feed. Written as it is
+     * made, never held whole: a large species' file is hundreds of megabytes, and copies
+     * of it in memory ran a full run out of it (T020). A failure to write is not caught: a
+     * file half written is not one to publish.
      */
-    private fun owl(): ByteArray {
+    private fun writeOwl(out: OutputStream) {
         val model = thisModel!!
         BioPAX3Utils.trimLiterals(model)
-        val os = ByteArrayOutputStream()
-        SimpleIOHandler().convertToOWL(model, os)
-        return String(os.toByteArray(), Charsets.UTF_8).replace("\r", "&#xD;").toByteArray(Charsets.UTF_8)
+        val escaping = CarriageReturnEscaping(out)
+        SimpleIOHandler().convertToOWL(model, escaping)
+        escaping.flush()
+    }
+
+    // Each carriage return byte written as `&#xD;`: in UTF-8 no other character has the byte
+    // 0x0D in it, so this changes the character and nothing else.
+    private class CarriageReturnEscaping(
+        out: OutputStream,
+    ) : FilterOutputStream(out) {
+        override fun write(b: Int) {
+            if (b == CR) out.write(ESCAPED) else out.write(b)
+        }
+
+        override fun write(
+            b: ByteArray,
+            off: Int,
+            len: Int,
+        ) {
+            var start = off
+            for (i in off until off + len) {
+                if (b[i].toInt() == CR) {
+                    out.write(b, start, i - start)
+                    out.write(ESCAPED)
+                    start = i + 1
+                }
+            }
+            out.write(b, start, off + len - start)
+        }
+
+        // Paxtools closes the stream it writes to; the caller closes it here
+        override fun close() = flush()
+
+        companion object {
+            const val CR = 0x0D
+            val ESCAPED = "&#xD;".toByteArray(Charsets.US_ASCII)
+        }
     }
 
     // ////////////////////////////////////////////////////////////////////////////////

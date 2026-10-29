@@ -7,7 +7,6 @@ package org.reactome.server.tools
 import org.biopax.paxtools.controller.PropertyEditor
 import org.biopax.paxtools.controller.SimpleEditorMap
 import org.biopax.paxtools.model.BioPAXElement
-import java.util.*
 
 /**
  * @author Sarah Keating <skeating@ebi.ac.uk>

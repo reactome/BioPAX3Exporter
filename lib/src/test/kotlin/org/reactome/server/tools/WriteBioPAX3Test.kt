@@ -302,4 +302,44 @@ class WriteBioPAX3Test {
         assertTrue(out.readText().contains("xml:base=\"http://www.reactome.org/biopax/98/123#\""))
         assertEquals(listOf("out.owl"), dir.list()!!.toList())
     }
+
+    @Test
+    fun `standard output stays open after the model is written to it`() {
+        val pathway = mock(Pathway::class.java).also { whenever(it.dbId).thenReturn(123L) }
+        val captured = java.io.ByteArrayOutputStream()
+        val before = System.out
+        val out = java.io.PrintStream(captured, true, "UTF-8")
+        System.setOut(out)
+        try {
+            WriteBioPAX3(pathway, 98).apply { createModel() }.toStdOut()
+            println("after")
+        } finally {
+            System.setOut(before)
+        }
+
+        assertFalse(out.checkError())
+        assertTrue(captured.toString(Charsets.UTF_8).trimEnd().endsWith("after"))
+    }
+
+    @Test
+    fun `carriage returns are escaped however the bytes are written`() {
+        val summations =
+            listOf(
+                mock(org.reactome.server.graph.domain.model.Summation::class.java).also {
+                    whenever(it.text).thenReturn("\rA\r\rB\r")
+                },
+            )
+        val pathway =
+            mock(Pathway::class.java).also {
+                whenever(it.dbId).thenReturn(123L)
+                whenever(it.displayName).thenReturn("pathway")
+                whenever(it.summation).thenReturn(summations)
+            }
+
+        val owl = WriteBioPAX3(pathway, 98).apply { createModel() }.toString()
+
+        // Trimmed at the ends, as Java's trim takes a carriage return; escaped within
+        assertTrue(owl.contains(">A&#xD;&#xD;B</bp:comment>"))
+        assertFalse(owl.contains("\r"))
+    }
 }

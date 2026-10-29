@@ -25,12 +25,23 @@ object SpeciesEvents {
             "  } " +
             "RETURN e.dbId ORDER BY e.dbId"
 
+    /** The top-level events' database ids, in order. */
+    fun topLevelIds(
+        speciesDbId: Long,
+        ads: AdvancedDatabaseObjectService,
+    ): List<Long> = ads.getCustomQueryResults(Long::class.javaObjectType, TOP_LEVEL, mapOf<String, Any>("species" to speciesDbId)).toList()
+
+    /**
+     * The top-level events, each loaded as it is reached and held by nothing here after:
+     * a species' events, with all a conversion loads beneath them, do not fit in memory at
+     * once (T020).
+     */
     fun topLevel(
         speciesDbId: Long,
         ads: AdvancedDatabaseObjectService,
         dbs: DatabaseObjectService,
-    ): List<Event> =
-        ads
-            .getCustomQueryResults(Long::class.javaObjectType, TOP_LEVEL, mapOf<String, Any>("species" to speciesDbId))
-            .map { dbs.findByIdNoRelations<Event>(it) }
+    ): Iterable<Event> {
+        val ids = topLevelIds(speciesDbId, ads)
+        return Iterable { ids.asSequence().map { dbs.findByIdNoRelations<Event>(it) }.iterator() }
+    }
 }

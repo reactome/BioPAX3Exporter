@@ -234,7 +234,7 @@ class BioPAX3ExporterLauncher {
                     ReactomeGraphCore.getService(AdvancedDatabaseObjectService::class.java),
                     ReactomeGraphCore.getService(DatabaseObjectService::class.java),
                 )
-            if (events.isEmpty()) {
+            if (events.none()) {
                 println("No events found for species ${species.displayName}")
                 return
             }
