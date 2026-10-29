@@ -48,7 +48,7 @@ pipeline{
 			    sh "rm -rf ${env.OUTPUT_FOLDER}/*"
 		            withCredentials([usernamePassword(credentialsId: 'neo4jUsernamePassword', passwordVariable: 'pass', usernameVariable: 'user')]){
 			        sh """\
-				    docker run --network=host -v \$(pwd)/${env.OUTPUT_FOLDER}:${CONT_ROOT}/${env.OUTPUT_FOLDER} --name ${CONT_NAME} ${ECR_URL}:latest -h 127.0.0.1 -b 7687 -u \$user -p \$pass -o ./${env.OUTPUT_FOLDER} -s ${env.SPECIES}
+				    docker run --network=host -v \$(pwd)/${env.OUTPUT_FOLDER}:${CONT_ROOT}/${env.OUTPUT_FOLDER} --name ${CONT_NAME} ${ECR_URL}:latest -h 127.0.0.1 -b 7687 -u "\$user" -p "\$pass" -o ./${env.OUTPUT_FOLDER} -s ${env.SPECIES}
 	                        """
 	                        dir(env.OUTPUT_FOLDER) {
 	                            sh "zip -r biopax.zip ./*"
