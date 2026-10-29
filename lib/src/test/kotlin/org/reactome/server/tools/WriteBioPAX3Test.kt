@@ -318,7 +318,7 @@ class WriteBioPAX3Test {
         }
 
         assertFalse(out.checkError())
-        assertTrue(captured.toString(Charsets.UTF_8).trimEnd().endsWith("after"))
+        assertTrue(captured.toString(Charsets.UTF_8).replace("\r\n", "\n").endsWith("</rdf:RDF>\nafter\n"))
     }
 
     @Test

@@ -149,7 +149,7 @@ Measured 29 Oct 2026 on the fixture graph.
 Measured 29 Oct 2026: every species converted from a private copy of release 98's graph by the exporter's default mode, and each file compared with release 98's published one by `ci/compare.py` and validated by the BioPAX validator 6.0.0 (`--profile=notstrict`).
 
 - **The run:** 1 h 55 min for all species, at most 2.9 GB resident with a 4 GB heap. Human alone takes about 16 minutes. Two faults the first runs found are fixed (#76, #77): a lookup that read the whole model for every individual, and graph objects and copies of the file kept in memory.
-- **The files:** the 15 of the published zip, by the same names, and a sixteenth, _Mycobacterium tuberculosis_, whose own top-level pathway (56 events of that species alone) the release's rule takes too. The release step names its species from its species configuration (`FileGeneration.getSpeciesNames`): human and the 14 it infers to, so that file is not published. Which species the release command writes is T023's.
+- **The files:** the 15 of the published zip, by the same names, and a sixteenth, _Mycobacterium tuberculosis_: in the graph it has a top-level pathway of its own and 56 events beneath it, all of that species alone, which the converter's rule (`SpeciesAllPathwaysConverter`) would take. The release step names the species it converts from its species configuration (`FileGeneration.getSpeciesNames`), which the published files show not to include it. Which species the release command writes is T023's.
 - **By species:**
 
 | Species                     | Only in the published file | Only in the converted file | Published: errors, warnings | Converted: errors, warnings |
@@ -172,11 +172,11 @@ Measured 29 Oct 2026: every species converted from a private copy of release 98'
 
 - **What differs at the root, all species together**, and nothing else:
   - `conversionDirection`, written as Paxtools writes it (95,355; T012's decision).
-  - A name equal to the display name (28,270, nearly all on proteins of inferred species, whose graph name lists repeat a name): the published files list it among the names too, Paxtools writes it only as the display name (T011). In _Gallus gallus_ all 5,921 are this.
-  - Cross-references the published files lack (entities 36,717, events 379; their RelationshipXrefs 4,427): the graph's later data (Mondo, COSMIC and ClinGen, added after the relational database the release read: T011), and those the release's converter skipped after the first one it had already written (DOID, SYMP, ChEBI, COMPOUND, EMBL: T011, T014). In human, 269 on reactions and 110 on pathways, T014's 379.
+  - A name equal to the display name (28,267, nearly all on proteins of inferred species, whose graph name lists repeat a name): the published files list it among the names too, Paxtools writes it only as the display name (T011). In _Gallus gallus_ all 5,921 are this.
+  - Cross-references the published files lack (entities 36,717, events 379; their RelationshipXrefs 4,427), nearly all of two causes: the graph's later data (Mondo, COSMIC and ClinGen, added after the relational database the release read: T011), and those the release's converter skipped after the first one it had already written (DOID, SYMP, ChEBI, COMPOUND, EMBL: T011, T014). In human, 269 on reactions and 110 on pathways, T014's 379. A few more of other databases, whose cause was not traced one by one: PubChem Substance (24, in 14 species), and in human NCBI Nucleotide (3), RNAcentral (2), ENSEMBL, NCBI Gene and EC (1 each). Every published cross-reference is among the converted ones.
   - The form of an author's name (872 values; T016).
-  - An empty comment on a ProteinReference (38), which the release wrote as an empty element and Paxtools does not write.
-  - No EC numbers: the difference reactome/graph-importer#9 records is not in release 98 (T012).
+  - An empty value the release wrote as an empty element, which Paxtools does not write: a ProteinReference's comment (38), a DNA or RNA reference's name (3, in human).
+  - No `eCNumber` difference: the one reactome/graph-importer#9 records is not in release 98 (T012).
 - **The validator:** no file has an error its published one lacks (SC-003). The errors are the same, `multi.organism.pathway` (3 in _Gallus gallus_, 207 in human), and so are the warnings, rule by rule, but one more `unknown.db` in human.
 
 ## Paxtools 6, Kotlin 2.4, JUnit 6 (#66)
