@@ -11,11 +11,8 @@ import org.reactome.server.graph.service.DatabaseObjectService
 import org.reactome.server.graph.service.GeneralService
 import org.reactome.server.graph.service.SpeciesService
 import org.reactome.server.graph.utils.ReactomeGraphCore
-// import org.reactome.server.tools.config.GraphQANeo4jConfig;
 
 import java.io.File
-import java.util.ArrayList
-// import java.util.List;
 
 /**
  * @author Sarah Keating <skeating@ebi.ac.uk>
@@ -58,13 +55,22 @@ class BioPAX3ExporterLauncher {
                                 JSAP.NOT_REQUIRED,
                                 't',
                                 "toplevelpath",
-                                "A single id of a pathway",
+                                "The id of an event, a pathway or a reaction, written to {id}.owl",
                             ),
                             FlaggedOption("species", JSAP.LONG_PARSER, "0", JSAP.NOT_REQUIRED, 's', "species", "The id of a species"),
                         ),
                     )
 
-                val m = FlaggedOption("multiple", JSAP.LONG_PARSER, null, JSAP.NOT_REQUIRED, 'm', "multiple", "A list of ids of Pathways")
+                val m =
+                    FlaggedOption(
+                        "multiple",
+                        JSAP.LONG_PARSER,
+                        null,
+                        JSAP.NOT_REQUIRED,
+                        'm',
+                        "multiple",
+                        "A list of ids of events, each written to {id}.owl",
+                    )
                 m.isList = true
                 m.listSeparator = ','
                 jsap.registerParameter(m)
@@ -77,7 +83,7 @@ class BioPAX3ExporterLauncher {
                         JSAP.NOT_REQUIRED,
                         'l',
                         "listevents",
-                        "A list of ids of Events to be output as a single model",
+                        "A list of ids of events, written together as one model to events.owl",
                     )
                 loe.isList = true
                 loe.listSeparator = ','
@@ -103,21 +109,17 @@ class BioPAX3ExporterLauncher {
 
                 outputStatus = Status.SINGLE_PATH
                 parseAdditionalArguments(config)
+                // Every mode writes into it: made here, once
+                File(outputdir).mkdirs()
 
                 if (!singleArgumentSupplied()) {
-                    System.err.println("Too many arguments detected. Expected either no pathway arguments or one of -t, -s, -m, -l.")
+                    fail("Too many arguments detected. Expected either no pathway arguments or one of -t, -s, -m, -l.")
                 } else {
                     dbVersion = genericService.dbInfo.version
 
                     when (outputStatus) {
                         Status.SINGLE_PATH -> {
-                            var pathway: Pathway? = null
-                            try {
-                                pathway = databaseObjectService.findByIdNoRelations(singleId) as? Pathway
-                            } catch (e: Exception) {
-                                System.err.println("$singleId is not the identifier of a valid Pathway object")
-                            }
-                            pathway?.let { outputPath(it) }
+                            eventOf(databaseObjectService, singleId)?.let { outputEvent(it) }
                         }
 
                         Status.ALL_PATHWAYS -> {
@@ -127,49 +129,65 @@ class BioPAX3ExporterLauncher {
                         }
 
                         Status.ALL_PATHWAYS_SPECIES -> {
-                            var species: Species? = null
-                            try {
-                                species = databaseObjectService.findByIdNoRelations(speciesId) as? Species
-                            } catch (e: Exception) {
-                                System.err.println("$speciesId is not the identifier of a valid Species object")
-                            }
+                            val species = databaseObjectService.findByIdNoRelations<DatabaseObject>(speciesId) as? Species
+                            if (species == null) fail("$speciesId is not the identifier of a Species")
                             species?.let { outputPathsForSpecies(it) }
                         }
 
                         Status.MULTIPLE_PATHS -> {
-                            multipleIds.forEach { id ->
-                                var pathway: Pathway? = null
-                                try {
-                                    pathway = databaseObjectService.findByIdNoRelations(id) as? Pathway
-                                } catch (e: Exception) {
-                                    System.err.println("$id is not the identifier of a valid Pathway object")
-                                }
-                                pathway?.let { outputPath(it) }
-                            }
+                            multipleIds.forEach { id -> eventOf(databaseObjectService, id)?.let { outputEvent(it) } }
                         }
 
                         Status.MULTIPLE_EVENTS -> {
-                            // Declare eventList explicitly as a java.util.ArrayList
-                            val eventList: java.util.ArrayList<Event> = java.util.ArrayList()
-                            var valid = true
-                            multipleEvents.forEach { id ->
-                                try {
-                                    val event = databaseObjectService.findByIdNoRelations(id) as? Event
-                                    event?.let { eventList.add(it) }
-                                } catch (e: Exception) {
-                                    valid = false
-                                    System.err.println("$id is not the identifier of a valid Event object")
-                                }
-                            }
-                            if (valid && eventList.isNotEmpty()) {
-                                // Pass eventList directly; it is already a java.util.ArrayList<Event>
-                                outputEvents(eventList as java.util.List<Event>)
-                            }
+                            // One model of all the events listed, or none if any is not an event (T019)
+                            val events = multipleEvents.map { eventOf(databaseObjectService, it) }
+                            if (events.all { it != null }) outputEvents(events.filterNotNull())
                         }
                     }
                 }
+                if (failed) System.exit(1)
             } catch (e: JSAPException) {
                 e.printStackTrace()
+            }
+        }
+
+        // Set when an id names nothing to convert: the run says which, and ends in failure.
+        private var failed = false
+
+        private fun fail(message: String) {
+            System.err.println(message)
+            failed = true
+        }
+
+        /**
+         * The event an id names, of a kind the release converts (a pathway or a reaction,
+         * T019), or none, said so; an error reading it is reported as itself.
+         */
+        private fun eventOf(
+            service: DatabaseObjectService,
+            id: Long,
+        ): Event? {
+            val found =
+                try {
+                    service.findByIdNoRelations<DatabaseObject>(id)
+                } catch (e: org.springframework.dao.DataAccessException) {
+                    fail("$id could not be read: ${e.message}")
+                    return null
+                }
+            return when (found) {
+                is Pathway, is ReactionLikeEvent -> {
+                    found as Event
+                }
+
+                is Event -> {
+                    fail("$id is an event of a kind not converted (${found.schemaClass})")
+                    null
+                }
+
+                else -> {
+                    fail("$id is not the identifier of an Event")
+                    null
+                }
             }
         }
 
@@ -199,12 +217,11 @@ class BioPAX3ExporterLauncher {
             return count <= 1
         }
 
-        private fun outputPath(pathway: Pathway) {
-            val filename = "${pathway.getDbId()}.owl"
-            val outputFile = File(outputdir, filename)
-            val bp = WriteBioPAX3(pathway, dbVersion)
+        // One event, of any kind, to {dbId}.owl
+        private fun outputEvent(event: Event) {
+            val bp = WriteBioPAX3(event, dbVersion)
             bp.createModel()
-            bp.toFile(outputFile)
+            bp.toFile(File(outputdir, "${event.dbId}.owl"))
         }
 
         private fun outputPathsForSpecies(species: Species) {
@@ -224,30 +241,18 @@ class BioPAX3ExporterLauncher {
             val writer = WriteBioPAX3(species, dbVersion)
             writer.createModelForSpecies(events)
 
-            // Create output directory if it doesn't exist
             val outputDir = File(outputdir)
-            if (!outputDir.exists()) {
-                outputDir.mkdirs()
-            }
 
             val outputFile = File(outputDir, "${species.displayName.replace(" ", "_")}.owl")
             writer.toFile(outputFile)
             println("Generated BioPAX file for species ${species.displayName}: ${outputFile.absolutePath}")
         }
 
-        private fun outputEvents(events: java.util.List<Event>) {
-            val filename = "events.owl"
-            val outputFile = File(outputdir, filename)
-            // Create a dummy pathway for the events
-            val dummyPathway =
-                object : Pathway() {
-                    override fun getDisplayName(): String = "Events"
-
-                    override fun getDbId(): Long = 0L
-                }
-            val bp = WriteBioPAX3(dummyPathway, dbVersion)
-            bp.createModel()
-            bp.toFile(outputFile)
+        // The events listed (-l), each with all it holds, as one model in events.owl
+        private fun outputEvents(events: List<Event>) {
+            val bp = WriteBioPAX3(dbVersion)
+            bp.createModelForEvents(events)
+            bp.toFile(File(outputdir, "events.owl"))
         }
     }
 }

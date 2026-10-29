@@ -10,7 +10,11 @@ import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.io.TempDir
 import org.mockito.Mockito.mock
 import org.mockito.kotlin.whenever
+import org.reactome.server.graph.domain.model.BlackBoxEvent
+import org.reactome.server.graph.domain.model.Event
 import org.reactome.server.graph.domain.model.Pathway
+import org.reactome.server.graph.domain.model.Reaction
+import org.reactome.server.graph.domain.model.SimpleEntity
 import org.reactome.server.graph.domain.model.Species
 import org.reactome.server.graph.domain.model.Summation
 import java.io.File
@@ -221,6 +225,81 @@ class WriteBioPAX3Test {
         val writer = WriteBioPAX3(pathway, 98).apply { createModel() }
 
         assertThrows(java.io.IOException::class.java) { writer.toFile(taken) }
+        assertEquals(listOf("out.owl"), dir.list()!!.toList())
+    }
+
+    private fun entity(dbId: Long): SimpleEntity =
+        mock(SimpleEntity::class.java).also {
+            whenever(it.dbId).thenReturn(dbId)
+            whenever(it.displayName).thenReturn("entity $dbId")
+        }
+
+    private fun classesOf(event: Event): Set<String> =
+        WriteBioPAX3(event, 98).run {
+            createModel()
+            getModel()!!.objects.map { it.modelInterface.simpleName }.toSet()
+        }
+
+    @Test
+    fun `one reaction, of each kind, is converted alone, with its own base (T019)`() {
+        val reaction = mock(Reaction::class.java)
+        whenever(reaction.dbId).thenReturn(5696356L)
+        whenever(reaction.displayName).thenReturn("a reaction")
+        val inputs = listOf(entity(1))
+        whenever(reaction.input).thenReturn(inputs)
+        val degradation = mock(BlackBoxEvent::class.java)
+        whenever(degradation.dbId).thenReturn(174731L)
+        whenever(degradation.displayName).thenReturn("Degradation of something")
+        val degraded = listOf(entity(2))
+        whenever(degradation.input).thenReturn(degraded)
+        whenever(degradation.output).thenReturn(emptyList())
+        val template = mock(BlackBoxEvent::class.java)
+        whenever(template.dbId).thenReturn(6790038L)
+        whenever(template.displayName).thenReturn("gene expression")
+        whenever(template.input).thenReturn(emptyList())
+        val made = listOf(entity(3))
+        whenever(template.output).thenReturn(made)
+
+        assertTrue("BiochemicalReaction" in classesOf(reaction))
+        assertTrue("Degradation" in classesOf(degradation))
+        assertTrue("TemplateReaction" in classesOf(template))
+        // No pathway, and so no step, for a reaction alone
+        assertFalse("Pathway" in classesOf(reaction) || "PathwayStep" in classesOf(reaction))
+        assertEquals("http://www.reactome.org/biopax/98/5696356#", WriteBioPAX3(reaction, 98).xmlBase)
+    }
+
+    @Test
+    fun `events listed together are one model, its base naming no release, its xrefs the release`() {
+        val first = mock(Reaction::class.java)
+        whenever(first.dbId).thenReturn(1L)
+        whenever(first.displayName).thenReturn("first")
+        val second = mock(Reaction::class.java)
+        whenever(second.dbId).thenReturn(2L)
+        whenever(second.displayName).thenReturn("second")
+
+        val writer = WriteBioPAX3(98).apply { createModelForEvents(listOf(first, second)) }
+
+        assertEquals("http://www.reactome.org/biopax#", writer.xmlBase)
+        val owl = writer.toString()
+        assertTrue(owl.contains(">first</bp:displayName>") && owl.contains(">second</bp:displayName>"))
+        assertTrue(owl.contains(">Reactome Database ID Release 98</bp:db>"))
+    }
+
+    @Test
+    fun `a writer for no event has nothing to convert alone`() {
+        assertThrows(IllegalStateException::class.java) { WriteBioPAX3(98).createModel() }
+    }
+
+    @Test
+    fun `a file written again replaces the one there`(
+        @TempDir dir: File,
+    ) {
+        val out = File(dir, "out.owl").apply { writeText("an older file") }
+        val pathway = mock(Pathway::class.java).also { whenever(it.dbId).thenReturn(123L) }
+
+        WriteBioPAX3(pathway, 98).apply { createModel() }.toFile(out)
+
+        assertTrue(out.readText().contains("xml:base=\"http://www.reactome.org/biopax/98/123#\""))
         assertEquals(listOf("out.owl"), dir.list()!!.toList())
     }
 }

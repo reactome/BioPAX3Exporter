@@ -11,14 +11,8 @@ import java.io.*
  * @author Sarah Keating <skeating@ebi.ac.uk>
  */
 class WriteBioPAX3 {
-    private val thisPathway: Pathway?
-    private val thisListEvents: List<Event>?
-    private var parentPathway: Pathway? = null
-    private var stepNum: Int = 0
-    private var pathwayNum: Int = 0
-    private var biornNum: Int = 0
-    private var catNum: Int = 0
-    private var useEventOf: Boolean = true
+    // The one event this writer converts, if it converts one (T019)
+    private val thisEvent: Event?
     private var thisModel: Model? = null
 
     /** The release, as the ids' base names it. */
@@ -30,53 +24,56 @@ class WriteBioPAX3 {
         private set
 
     /**
-     * Construct an instance of the WriteBioPAX3
+     * A writer for events not of one species or event (`-l`): its base names neither, as
+     * the release's converter wrote it, `http://www.reactome.org/biopax#`.
      */
     constructor() {
-        thisPathway = null
-        thisListEvents = null
-        parentPathway = null
+        thisEvent = null
         xmlBase = base(null)
     }
 
     /**
-     * Construct an instance of the WriteBioPAX3 for the specified
-     * Pathway.
+     * A writer for events not of one species or event, with the release they are of: its
+     * xrefs name the release, and its base, as the converter's did, does not.
      *
-     * @param pathway  Pathway from ReactomeDB
-     */
-    constructor(pathway: Pathway) {
-        thisPathway = pathway
-        thisListEvents = null
-        parentPathway = null
-        xmlBase = base(pathway.dbId)
-    }
-
-    /**
-     * Construct an instance of the WriteBioPAX3 for the specified
-     * Pathway.
-     *
-     * @param pathway Pathway from ReactomeDB
      * @param version Integer - version number of the database
      */
-    constructor(pathway: Pathway, version: Int) {
-        thisPathway = pathway
-        thisListEvents = null
-        parentPathway = null
+    constructor(version: Int) {
+        thisEvent = null
         dbVersion = version
-        xmlBase = base(pathway.dbId)
+        xmlBase = "http://www.reactome.org/biopax#"
     }
 
     /**
-     * Construct an instance of the WriteBioPAX3 for multiple pathways of a species
+     * A writer for one event, of any kind: a pathway with all it holds, or a reaction.
+     *
+     * @param event Event from ReactomeDB
+     */
+    constructor(event: Event) {
+        thisEvent = event
+        xmlBase = base(event.dbId)
+    }
+
+    /**
+     * A writer for one event, of any kind, with the release it is of.
+     *
+     * @param event Event from ReactomeDB
+     * @param version Integer - version number of the database
+     */
+    constructor(event: Event, version: Int) {
+        thisEvent = event
+        dbVersion = version
+        xmlBase = base(event.dbId)
+    }
+
+    /**
+     * A writer for a species' file.
      *
      * @param species Species from ReactomeDB
      * @param version Integer - version number of the database
      */
     constructor(species: Species, version: Int) {
-        thisPathway = null
-        thisListEvents = null
-        parentPathway = null
+        thisEvent = null
         dbVersion = version
         xmlBase = base(species.dbId)
     }
@@ -92,20 +89,26 @@ class WriteBioPAX3 {
     }
 
     /**
-     * Create the BioPAX model using the Reactome Pathway specified in the constructor.
+     * The BioPAX model of the event given (T019): a pathway with all it holds and its
+     * steps, or a reaction (a BiochemicalReaction, Degradation or TemplateReaction, as its
+     * kind is) with its entities, catalyses and controls, as the release's converter wrote
+     * one event.
      */
     fun createModel() {
-        val context = ConversionContext(xmlBase, dbVersion)
-        thisModel = context.model
-        val thisBPPath = BioPAXPathwayBuilder(thisPathway!!, context)
-        thisBPPath.addReactomePathway()
+        createModelForEvents(listOf(thisEvent ?: error("no event to convert")))
     }
 
     /**
-     * Create the BioPAX model of a species: its top-level events (SpeciesEvents), each
-     * written with all it holds, once in the file, and no header pathway (T015).
+     * The BioPAX model of a species: its top-level events (SpeciesEvents), each written
+     * with all it holds, once in the file, and no header pathway (T015).
      */
-    fun createModelForSpecies(events: List<Event>) {
+    fun createModelForSpecies(events: List<Event>) = createModelForEvents(events)
+
+    /**
+     * The BioPAX model of the events given, each written with all it holds, once in the
+     * file, and their steps linked.
+     */
+    fun createModelForEvents(events: List<Event>) {
         val context = ConversionContext(xmlBase, dbVersion)
         thisModel = context.model
         val builder = BioPAXPathwayBuilder(null, context)
@@ -130,12 +133,14 @@ class WriteBioPAX3 {
      * @param output File to use.
      */
     fun toFile(output: File) {
-        // Written beside it, then moved into place: a failure leaves no file half written
+        // Written beside it, then renamed into place in one step (an atomic move replaces a
+        // file where REPLACE_EXISTING deletes it first): a failure leaves no file half
+        // written, and the file there before stays until the new one is whole
         val partial = File(output.absoluteFile.parentFile, ".${output.name}.partial")
         try {
             partial.writeBytes(owl())
             java.nio.file.Files
-                .move(partial.toPath(), output.toPath(), java.nio.file.StandardCopyOption.REPLACE_EXISTING)
+                .move(partial.toPath(), output.toPath(), java.nio.file.StandardCopyOption.ATOMIC_MOVE)
         } finally {
             partial.delete()
         }
