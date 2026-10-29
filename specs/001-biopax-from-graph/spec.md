@@ -111,7 +111,7 @@ The release builds `biopax.zip` with this exporter in place of Pathway-Exchange'
 - **The old converter's early return** on a repeated cross-reference or disease: an obvious bug. The exporter writes all of them, and the difference is recorded.
 - **`Book.chapterAuthors`:** not in the graph; recorded as the data's.
 - **People's names** in literature and curation comments: in the output, but never in a fixture, a test log or a comparison's printout (constitution VI).
-- **An event in no pathway:** written alone, with no step, when it is one of the species' top-level events, as the release's converter writes it; release 98's species files have none (research R1, T015).
+- **An event no pathway of its species holds:** written alone, with no step, when it is one of the species' top-level events, as the release's converter writes it; release 98's species files have none (research R1, T015).
 - **A species with no pathways:** whether a file is written for it is whatever release 97 published.
 
 ## Requirements _(mandatory)_
