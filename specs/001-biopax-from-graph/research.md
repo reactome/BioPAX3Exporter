@@ -58,7 +58,7 @@ A greedy cover over the published files finds that 29 human events cover every c
 - **Tests:** `mvn test` runs none ("No tests to run"): the Kotlin plugin binds only `compile`, there is no `testSourceDirectory`, and surefire's `**/*Test.kt` matches no class. Bound and compiled, the tests show 82 compile errors in five of seven files.
 - **Single events and `-l`:** `BioPAXEventBuilder` asks for an abstract `Process` and is never called; `-l` builds an empty pathway.
 - **Lint:** `ktlint:format` at `process-sources` rewrites files on every build; `mvn ktlint:check` alone finds five violations in two files; the Dockerfile's lint stage formats first, so it can never fail. CI only builds and pushes the image.
-- **Versions:** graph-core 2.0.9, Paxtools 4.3.1, validator 5.1.0, Kotlin 1.7.10. sbml-exporter and the deployed content service use graph-core 3.0.0-SNAPSHOT pinned by commit (sbml-exporter: by the resolved files' sha1, since T010 here too).
+- **Versions:** graph-core 2.0.9, Paxtools 4.3.1, validator 5.1.0, Kotlin 1.7.10, when measured. Since then: Paxtools 6.0.0, Kotlin 2.4.21 and JUnit 6.1.3 (#65), with the fixture's output unchanged to the byte. sbml-exporter and the deployed content service use graph-core 3.0.0-SNAPSHOT pinned by commit (sbml-exporter: by the resolved files' sha1, since T010 here too).
 
 **Decisions:**
 

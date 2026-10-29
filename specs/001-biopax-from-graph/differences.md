@@ -35,14 +35,14 @@ Measured 28 Oct 2026 on _P. falciparum_, converted from a private copy of releas
 Measured 28 Oct 2026 on _P. falciparum_ from a private copy of release 98's graph, against release 98's published file, and on the fixture's human events against release 98's human file.
 
 - **Reaction by reaction:** all 970 _P. falciparum_ reactions are in the published file under their database id. Their kind, names, participants (`left`, `right`), stoichiometries, EC numbers, Reactome's two ids and data source agree. What differs belongs to other tasks or to the writer:
-  - **`conversionDirection`** is written `LEFT_TO_RIGHT` where the release writes `LEFT-TO-RIGHT` (970). Paxtools 4.3.1's `ConversionDirectionType` has only the underscored form, and its reader takes either. It is a difference of the writer, settling the question above. The validator 6.0.0 reports no error on it: the fixture's output, every reaction written so, has none.
+  - **`conversionDirection`** is written `LEFT_TO_RIGHT` where the release writes `LEFT-TO-RIGHT` (970). Paxtools' `ConversionDirectionType` has only the underscored form (4.3.1, and 6.0.0 still), and its reader takes either. It is a difference of the writer, settling the question above. The validator 6.0.0 reports no error on it: the fixture's output, every reaction written so, has none.
   - **The summation comment** has its HTML stripped (970): T016 keeps it.
   - **Evidence** is written for every reaction, empty, where the release writes it for inferred events with its evidence code (970): T016.
   - **GO biological process RelationshipXrefs** are missing (60): T014.
   - **`stoichiometricCoefficient`** is written `3.0` where the release writes `3`: the same `xsd:float`, so not a difference by `ci/compare.py`.
 - **The whole file** (`ci/compare.py`): T011's output against the published file, 197,744 triples only in the published file and 67,553 only in the converted one; T012's, 181,838 and 81,839. The converted side grows because each reaction is written once for every pathway that reaches it: 4,136 BiochemicalReactions against the release's 970, and each copy now carries its names, ids and direction. Writing a shared event once is T015's; until then the reaction-by-reaction comparison is the measure.
 - **The kinds**, on the fixture's human events: R-HSA-174731 is a Degradation (`left` only) and R-HSA-6790038 a TemplateReaction (`product` only), as release 98 writes them.
-- **A TemplateReaction's product is not also a participant.** Paxtools 4.3.1 adds a product to an interaction's participants and writes both, though `product` is itself a participant by BioPAX's definition. The release writes the product alone, so the exporter removes the extra participant.
+- **A TemplateReaction's product is not also a participant.** Paxtools (4.3.1, and 6.0.0 still) adds a product to an interaction's participants and writes both, though `product` is itself a participant by BioPAX's definition. The release writes the product alone, so the exporter removes the extra participant.
 - **EC numbers in release 98.** Release 98's published human file has 3,594 `eCNumber` values, against release 97's 20,384 (research R1). The graph gives exactly those, by this task's rule (from #42's review): 3,597 distinct reaction and EC number pairs in human reactions a pathway reaches, less 4 on Degradations, which take none, plus one value the release writes twice (R-HSA-9698988's two catalysts share 3.4.21.1; the same triple, written once here). The data's difference in EC numbers (reactome/graph-importer#9), the largest at release 97, is gone at release 98; the full run (T020) confirms it on every species.
 
 ## Catalyses and regulations (T013)
@@ -90,6 +90,10 @@ Measured 29 Oct 2026 on _P. falciparum_, from a private copy of release 98's gra
 - **A reaction no pathway holds:** the release's converter writes every top-level event of the species, a reaction too, alone and with no step, and so does this exporter. Release 98 has none, so its files have no event outside a pathway (research R1).
 - **What still differs at the root, for pathways:** the comment (660; HTML kept, T016) and the evidence (660, T016). Six display names also differ, by a trailing space the graph has and the published file does not. The release's writer trims every literal (no value in the published file starts or ends with white space), so that is the writer's, T018.
 - **The fixture:** its expected files had each pathway once per pathway above it, and a header: 217 event individuals for human, 33 for _P. falciparum_. They now have 57 (28 pathways, 29 reactions) and 8, with the same reactions. The validator gives 0 errors on both (558 and 32 warnings).
+
+## Paxtools 6, Kotlin 2.4, JUnit 6 (#65)
+
+Measured 29 Oct 2026. The fixture's output is unchanged to the byte, and _P. falciparum_ from a private copy of release 98's graph is unchanged by `ci/compare.py`. Its bytes differ in one way only: Paxtools 4.3.1 wrote a character outside ASCII as a character reference (`&#8722;`, 8 in the file), and Paxtools 6.0.0 writes it as itself, as release 98's published file does (937 lines with such characters, no references). The two behaviours recorded above as Paxtools 4.3.1's, the underscored `conversionDirection` and a product added to the participants, are 6.0.0's too. Paxtools 6 deprecates `Control.controlled` with no replacement yet; each control here has one process, as the release writes it.
 
 ## The validator's baseline
 

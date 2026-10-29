@@ -1,3 +1,6 @@
+// Control.controlled is deprecated in Paxtools 6, with no replacement yet.
+@file:Suppress("DEPRECATION")
+
 package org.reactome.server.tools
 
 import org.biopax.paxtools.model.Model

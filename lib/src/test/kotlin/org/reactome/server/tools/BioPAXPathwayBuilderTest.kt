@@ -104,8 +104,8 @@ class BioPAXPathwayBuilderTest {
     fun `a pathway is made before what it holds, and its step's process is the pathway`() {
         BioPAXPathwayBuilder(pathway(1, listOf(pathway(2, listOf(reaction(20))))), context).addReactomePathway()
 
-        assertEquals("http://www.reactome.org/biopax/98/1#Pathway1", bpPathway(1).rdfId)
-        assertEquals("http://www.reactome.org/biopax/98/1#Pathway2", bpPathway(2).rdfId)
+        assertEquals("http://www.reactome.org/biopax/98/1#Pathway1", bpPathway(1).uri)
+        assertEquals("http://www.reactome.org/biopax/98/1#Pathway2", bpPathway(2).uri)
         assertEquals(setOf(bpPathway(2)), stepOf(2).stepProcess.toSet())
     }
 

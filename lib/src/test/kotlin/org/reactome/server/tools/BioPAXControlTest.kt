@@ -1,3 +1,6 @@
+// Control.controlled is deprecated in Paxtools 6, with no replacement yet.
+@file:Suppress("DEPRECATION")
+
 package org.reactome.server.tools
 
 import org.biopax.paxtools.io.SimpleIOHandler
@@ -133,7 +136,7 @@ class BioPAXControlTest {
             context.model.objects
                 .filterIsInstance<org.biopax.paxtools.model.level3.Named>()
                 .single { it.displayName == "PMS2" }
-        assertEquals(setOf("activeUnit: #" + written.rdfId.substringAfterLast('#')), catalysis.comment)
+        assertEquals(setOf("activeUnit: #" + written.uri.substringAfterLast('#')), catalysis.comment)
     }
 
     @Test
@@ -157,7 +160,7 @@ class BioPAXControlTest {
                 context.model.objects
                     .filterIsInstance<org.biopax.paxtools.model.level3.Named>()
                     .single { it.displayName == "unit $n" }
-                    .rdfId
+                    .uri
                     .takeLastWhile { it.isDigit() }
                     .toInt()
             }
@@ -203,7 +206,7 @@ class BioPAXControlTest {
             context.model.objects
                 .filterIsInstance<org.biopax.paxtools.model.level3.Named>()
                 .single { it.displayName == "PKA" }
-        assertEquals(setOf("activeUnit: #" + pka.rdfId.substringAfterLast('#')), of("701").comment)
+        assertEquals(setOf("activeUnit: #" + pka.uri.substringAfterLast('#')), of("701").comment)
     }
 
     @Test
@@ -303,7 +306,7 @@ class BioPAXControlTest {
             context.model.objects
                 .filterIsInstance<org.biopax.paxtools.model.level3.Named>()
                 .single { it.displayName == name }
-                .rdfId
+                .uri
                 .takeLastWhile { it.isDigit() }
                 .toInt()
         assertTrue(number("first in the list") < number("second in the list"))
