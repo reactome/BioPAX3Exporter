@@ -6,7 +6,9 @@ Reads SPECIES once, as ci/compare.py reduces a file to triples, and then each
 EVENT file: an event converted alone should hold nothing its species' file
 does not, and should be whole: each individual it holds with a database id has
 all the triples the species' file gives it (a file missing a reaction's
-participant, or a pathway's components, is contained but not whole). A
+participant, or a pathway's components, is contained but not whole). An
+individual keyed by its content (a PathwayStep, a Stoichiometry) is checked
+only as contained, so a step's missing nextStep goes unseen. A
 triple held more often than in the species' file counts as not in it.
 Prints, for each EVENT, its triples, how many are not in the species' file and
 how many of its own individuals' triples it lacks, with their kinds (class and
