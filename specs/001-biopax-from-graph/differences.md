@@ -105,7 +105,7 @@ Measured 29 Oct 2026 on _P. falciparum_, from a private copy of release 98's gra
 - **Every event agrees in shape:** each of _P. falciparum_'s 1,630 events has the published file's PubMed and ISBN ids, curation comments by kind, summation comments and Evidence count. Its 5,750 PublicationXrefs have the published file's properties: 5,689 by PubMed id, 42 by ISBN, 11 web pages and 8 with no id. The fixture's 57 human events agree in the same four respects with release 98's human file, where 15,712 of 16,159 reactions have literature of their own and none is inferred. There is one Provenance, as in the published files.
 - **What still differs at the root, here:**
   - _Evidence comments (128):_ white space at either end, which the release's writer trims (T018). One of them also differs within, which trimming does not explain: T018 looks at it with the writer.
-  - _Authors (60 values in 23 of 5,750 PublicationXrefs):_ the release's form of a person's name is fuller than the graph's display name. Each writes the name its own database holds; the data, not the code, differs, so it is recorded, not pursued.
+  - _Authors (60 values, in 4 of 5,750 PublicationXrefs):_ the release's form of a person's name is fuller than the graph's display name: the release wrote the relational `_displayName`, and the graph importer rebuilds a Person's display name from its surname and initials ("Authors' names", below). The 23 PublicationXrefs first recorded here (T016, #69, before T017 and T018) are not what `ci/compare.py` reports now: 4, each with its own db, id, year, title and source.
 - **Repeated values:** the published file writes an author value twice in some lists (two people of one name, its converter's comment says); Paxtools keeps each value once, which `ci/compare.py` counts once too.
 - **Counts:** triples only in the published file fall from 146,281 to 72,683, and only in the converted file from 9,842 to 7,959. The validator gives 0 errors on the fixture's output, with 501 warnings for human and 28 for _P. falciparum_ (558 and 32 at T015).
 - **The empty Evidence** every event had is gone, with `BioPAX3ReferenceUtils`, which stripped the HTML.
@@ -183,10 +183,22 @@ Measured 29 Oct 2026: every species converted from a private copy of release 98'
   - `conversionDirection`, written as Paxtools writes it (95,355; T012's decision).
   - A name equal to the display name (28,267, nearly all on proteins of inferred species, whose graph name lists repeat a name): the published files list it among the names too, Paxtools writes it only as the display name (T011). In _Gallus gallus_ all 5,921 are this.
   - Cross-references the published files lack (entities 36,717, events 379; their RelationshipXrefs 4,427), nearly all of two causes: the graph's later data (Mondo, COSMIC and ClinGen, added after the relational database the release read: T011), and those the release's converter skipped after the first one it had already written (DOID, SYMP, ChEBI, COMPOUND, EMBL: T011, T014). In human, 269 on reactions and 110 on pathways, T014's 379. A few more of other databases, whose cause was not traced one by one: PubChem Substance (24, in 14 species), and in human NCBI Nucleotide (3), RNAcentral (2), ENSEMBL, NCBI Gene and EC (1 each). Every published cross-reference is among the converted ones.
-  - The form of an author's name (872 values; T016).
+  - The form of an author's name (872 values, all of one kind: "Authors' names", below).
   - An empty value the release wrote as an empty element, which Paxtools does not write: a ProteinReference's comment (38), a DNA or RNA reference's name (3, in human).
   - No `eCNumber` difference: the one reactome/graph-importer#9 records is not in release 98 (T012).
 - **The validator:** no file has an error its published one lacks (SC-003). The errors are the same, `multi.organism.pathway` (3 in _Gallus gallus_, 207 in human), and so are the warnings, rule by rule, but one more `unknown.db` in human.
+
+## Authors' names
+
+Measured 29 Oct 2026 on all 15 species, from a private copy of release 98's graph, against release 98's published files: each PublicationXref matched to its graph publication (by PubMed id, else ISBN, else title) and its authors compared in order with that publication's, Person by Person. Names were read only to classify them; none is recorded here.
+
+- **One kind, 872 values:** in every one, the published value is the Person's surname and first name, and the graph's display name its surname and initials, both of the same Person, whose own `firstname` and `initial` hold each form. No other kind: no accent, order, missing initial or different person.
+- **Few people:** 62 Persons, authors of 10 publications. The values repeat because those publications are in many species' files: 60 in _P. falciparum_, 67 in human, 20 in _Danio rerio_, 53 in _Caenorhabditis elegans_, 60 or 63 in each of the rest. The other authors of those publications agree. Most of the 10 were created in release 98's curation.
+- **Why they differ:** the two writers take a Person's name from different rules.
+  - The release's converter wrote the relational `_displayName`. The curator tool's rule for it (`InstanceDisplayNameGenerator.generatePersonName`) puts the first name first, and the initials only when there is none.
+  - The graph importer does not copy a Person's `_displayName`, as it does every other class's: `ReactomeBatchImporter` rebuilds it as `surname, initial`, the first name only when there is no initial, "to fix different styles in Person display name". It has done so since its first commit (2016), so whichever commit built release 98's graph.
+  - So every Person in the graph has the initials form (all but one, a script's, whose display name is its own), whatever the relational database holds; it says nothing of the data. The published files do: there, every other author has the initials form too, so in release 98's relational database these 62 alone held the curator tool's first-name form.
+- **Which form is meant:** the importer normalises on purpose, and the exporter writes the graph's display name, as it should; neither is a fault here. Whether a Person's display name is meant to be the importer's `surname, initial` or the curator tool's `surname, firstname` is a question for those two tools' owners (T022). Until it is settled, the files written from the graph give these authors their initials.
 
 ## Paxtools 6, Kotlin 2.4, JUnit 6 (#66)
 
