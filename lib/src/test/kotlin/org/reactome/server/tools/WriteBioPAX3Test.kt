@@ -186,7 +186,7 @@ class WriteBioPAX3Test {
                 whenever(it.summation).thenReturn(summations)
             }
 
-        assertTrue(written(pathway).contains(">One.&#13;Two.</bp:comment>"))
+        assertTrue(written(pathway).contains(">One.&#xD;Two.</bp:comment>"))
     }
 
     @Test
@@ -197,5 +197,30 @@ class WriteBioPAX3Test {
         val writer = WriteBioPAX3(pathway, 98).apply { createModel() }
 
         assertThrows(java.io.IOException::class.java) { writer.toFile(File(dir, "missing/out.owl")) }
+    }
+
+    @Test
+    fun `only what Java's trim takes off is trimmed, a no-break space kept`() {
+        val pathway =
+            mock(Pathway::class.java).also {
+                whenever(it.dbId).thenReturn(123L)
+                whenever(it.displayName).thenReturn("Kept\u00a0\t")
+            }
+
+        assertTrue(written(pathway).contains(">Kept\u00a0</bp:displayName>"))
+    }
+
+    @Test
+    fun `a file that cannot be put in place leaves nothing behind`(
+        @TempDir dir: File,
+    ) {
+        val pathway = mock(Pathway::class.java).also { whenever(it.dbId).thenReturn(123L) }
+        // A directory, not empty, where the file should go: the move cannot replace it
+        val taken = File(dir, "out.owl").apply { mkdir() }
+        File(taken, "inside").writeText("x")
+        val writer = WriteBioPAX3(pathway, 98).apply { createModel() }
+
+        assertThrows(java.io.IOException::class.java) { writer.toFile(taken) }
+        assertEquals(listOf("out.owl"), dir.list()!!.toList())
     }
 }

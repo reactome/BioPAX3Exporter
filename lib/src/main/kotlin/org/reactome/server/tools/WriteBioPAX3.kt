@@ -130,7 +130,15 @@ class WriteBioPAX3 {
      * @param output File to use.
      */
     fun toFile(output: File) {
-        output.writeBytes(owl())
+        // Written beside it, then moved into place: a failure leaves no file half written
+        val partial = File(output.absoluteFile.parentFile, ".${output.name}.partial")
+        try {
+            partial.writeBytes(owl())
+            java.nio.file.Files
+                .move(partial.toPath(), output.toPath(), java.nio.file.StandardCopyOption.REPLACE_EXISTING)
+        } finally {
+            partial.delete()
+        }
     }
 
     /**
@@ -142,16 +150,16 @@ class WriteBioPAX3 {
 
     /**
      * The model as OWL, as the release's writer wrote its literals (T018): each trimmed at
-     * both ends, and a carriage return kept as a character reference, which an XML reader
-     * would otherwise read as a line feed. A failure to write is not caught: a file half
-     * written is not one to publish.
+     * both ends, and a carriage return kept as a character reference, `&#xD;` as the release
+     * wrote it, which an XML parser would otherwise read as a line feed. A failure to write
+     * is not caught: a file half written is not one to publish.
      */
     private fun owl(): ByteArray {
         val model = thisModel!!
         BioPAX3Utils.trimLiterals(model)
         val os = ByteArrayOutputStream()
         SimpleIOHandler().convertToOWL(model, os)
-        return String(os.toByteArray(), Charsets.UTF_8).replace("\r", "&#13;").toByteArray(Charsets.UTF_8)
+        return String(os.toByteArray(), Charsets.UTF_8).replace("\r", "&#xD;").toByteArray(Charsets.UTF_8)
     }
 
     // ////////////////////////////////////////////////////////////////////////////////
