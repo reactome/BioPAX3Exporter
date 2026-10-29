@@ -1,5 +1,6 @@
 package org.reactome.server.tools
 
+import org.biopax.paxtools.model.level3.Control
 import org.biopax.paxtools.model.level3.Entity
 import org.biopax.paxtools.model.level3.Evidence
 import org.biopax.paxtools.model.level3.EvidenceCodeVocabulary
@@ -11,6 +12,7 @@ import org.reactome.server.graph.domain.model.EvidenceType
 import org.reactome.server.graph.domain.model.InstanceEdit
 import org.reactome.server.graph.domain.model.LiteratureReference
 import org.reactome.server.graph.domain.model.Publication
+import org.reactome.server.graph.domain.model.Regulation
 import org.reactome.server.graph.domain.model.Summation
 import org.reactome.server.graph.domain.model.URL
 
@@ -19,7 +21,7 @@ import org.reactome.server.graph.domain.model.URL
  * T016): its summations as comments, their HTML kept; its literature and its summations'
  * as PublicationXrefs, each written once per file; for an inferred event, an Evidence for
  * each event it was inferred from; and its curation as "Authored: ", "Reviewed: " and
- * "Edited: " comments.
+ * "Edited: " comments. A regulation's Control has its literature too.
  */
 class BioPAXLiteratureBuilder(
     private val context: ConversionContext,
@@ -42,6 +44,18 @@ class BioPAXLiteratureBuilder(
         bpEvent: Entity,
     ) {
         literatureOf(event.literatureReference, event.summation).forEach { bpEvent.addXref(it) }
+    }
+
+    /**
+     * A regulation's literature and its summations' on the Control written for it, as the
+     * release's converter wrote them (`createModulationFromRegulation`); not the summations'
+     * text. Release 98's graph has none.
+     */
+    fun addLiterature(
+        regulation: Regulation,
+        control: Control,
+    ) {
+        literatureOf(regulation.literatureReference, regulation.summation).forEach { control.addXref(it) }
     }
 
     /**

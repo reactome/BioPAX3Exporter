@@ -2,7 +2,6 @@ package org.reactome.server.tools
 
 import org.biopax.paxtools.model.Model
 import org.biopax.paxtools.model.level3.Entity
-import org.biopax.paxtools.model.level3.Evidence
 import org.biopax.paxtools.model.level3.Pathway
 import org.biopax.paxtools.model.level3.Provenance
 import org.junit.jupiter.api.Test

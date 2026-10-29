@@ -1,6 +1,7 @@
 package org.reactome.server.tools
 
 import org.biopax.paxtools.model.level3.BiochemicalReaction
+import org.biopax.paxtools.model.level3.Control
 import org.biopax.paxtools.model.level3.EvidenceCodeVocabulary
 import org.biopax.paxtools.model.level3.PublicationXref
 import org.biopax.paxtools.model.level3.UnificationXref
@@ -15,10 +16,12 @@ import org.reactome.server.graph.domain.model.Event
 import org.reactome.server.graph.domain.model.EvidenceType
 import org.reactome.server.graph.domain.model.InstanceEdit
 import org.reactome.server.graph.domain.model.LiteratureReference
+import org.reactome.server.graph.domain.model.NegativeRegulation
 import org.reactome.server.graph.domain.model.Pathway
 import org.reactome.server.graph.domain.model.Person
 import org.reactome.server.graph.domain.model.Publication
 import org.reactome.server.graph.domain.model.Reaction
+import org.reactome.server.graph.domain.model.SimpleEntity
 import org.reactome.server.graph.domain.model.Summation
 import org.reactome.server.graph.domain.model.URL
 import org.biopax.paxtools.model.level3.Pathway as BPPathway
@@ -293,5 +296,92 @@ class BioPAXLiteratureTest {
                 .id,
         )
         assertEquals(1, bp.evidence.size)
+    }
+
+    @Test
+    fun `a book with no chapter title is titled by its own`() {
+        val book =
+            mock(Book::class.java).also {
+                whenever(it.dbId).thenReturn(20)
+                whenever(it.isbn).thenReturn("0-00-000000-0")
+                whenever(it.title).thenReturn("A book")
+            }
+        val event = reaction(1)
+        whenever(event.literatureReference).thenReturn(listOf(book))
+
+        assertEquals("A book", write(event).publications().single().title)
+    }
+
+    @Test
+    fun `an evidence keeps its source's summation text however blank, as the release did`() {
+        val source = reaction(100)
+        val summations = listOf(summation(" "))
+        whenever(source.summation).thenReturn(summations)
+        val type = electronic()
+        val inferred = reaction(1)
+        whenever(inferred.inferredFrom).thenReturn(setOf<Event>(source))
+        whenever(inferred.evidenceType).thenReturn(type)
+
+        assertEquals(setOf(" "), write(inferred).evidence.single().comment)
+    }
+
+    @Test
+    fun `evidence is written in the order of its sources' database ids`() {
+        val later = reaction(101)
+        val laterSummation = listOf(summation("later"))
+        whenever(later.summation).thenReturn(laterSummation)
+        val earlier = reaction(100)
+        val earlierSummation = listOf(summation("earlier"))
+        whenever(earlier.summation).thenReturn(earlierSummation)
+        val type = electronic()
+        val inferred = reaction(1)
+        whenever(inferred.inferredFrom).thenReturn(linkedSetOf<Event>(later, earlier))
+        whenever(inferred.evidenceType).thenReturn(type)
+
+        val evidence = write(inferred).evidence.associate { it.uri.substringAfter('#') to it.comment.single() }
+
+        assertEquals(mapOf("Evidence1" to "earlier", "Evidence2" to "later"), evidence)
+    }
+
+    @Test
+    fun `a revision is no comment, as the release wrote none`() {
+        val event = reaction(1)
+        val revised = listOf(edit("Placeholder edit 4"))
+        whenever(event.revised).thenReturn(revised)
+
+        assertEquals(emptySet<String>(), write(event).comment)
+    }
+
+    @Test
+    fun `a regulation's literature and its summations' are on its Control, not their text`() {
+        val regulator =
+            mock(SimpleEntity::class.java).also {
+                whenever(it.dbId).thenReturn(600)
+                whenever(it.displayName).thenReturn("inhibitor")
+            }
+        val literature = listOf<Publication>(article(10, 111))
+        val summations = listOf(summation("Regulation text", listOf(article(11, 222))))
+        val regulation =
+            mock(NegativeRegulation::class.java).also {
+                whenever(it.dbId).thenReturn(601)
+                whenever(it.regulator).thenReturn(regulator)
+                whenever(it.activeUnit).thenReturn(emptyList())
+                whenever(it.literatureReference).thenReturn(literature)
+                whenever(it.summation).thenReturn(summations)
+            }
+        val event = reaction(1)
+        whenever(event.regulatedBy).thenReturn(listOf(regulation))
+
+        write(event)
+
+        val control = context.model.getObjects(Control::class.java).single()
+        assertEquals(
+            setOf("111", "222"),
+            control.xref
+                .filterIsInstance<PublicationXref>()
+                .map { it.id }
+                .toSet(),
+        )
+        assertEquals(emptySet<String>(), control.comment)
     }
 }

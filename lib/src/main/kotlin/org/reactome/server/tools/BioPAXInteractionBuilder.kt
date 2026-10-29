@@ -172,7 +172,8 @@ class BioPAXInteractionBuilder(
     /**
      * A regulation as a Control (a TemplateReactionRegulation for a TemplateReaction), a
      * new one for each reaction it controls: ACTIVATION or INHIBITION by its class,
-     * Reactome's ids, the data source, its regulator as the controller, and its active units.
+     * Reactome's ids, the data source, its literature (T016), its regulator as the controller,
+     * and its active units.
      */
     private fun addControl(
         regulation: Regulation,
@@ -186,6 +187,7 @@ class BioPAXInteractionBuilder(
         }
         xrefs!!.addReactomeIds(regulation, control)
         BioPAX3BasicElementsBuilder(null, context, control).addReactomeDataSource()
+        literature!!.addLiterature(regulation, control)
         regulation.regulator?.let { control.addController(entities!!.physicalEntity(it)) }
         addActiveUnits(regulation.activeUnit, control)
         @Suppress("DEPRECATION") // as for a catalysis

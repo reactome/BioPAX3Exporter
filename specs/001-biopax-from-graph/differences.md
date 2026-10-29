@@ -99,13 +99,14 @@ Measured 29 Oct 2026 on _P. falciparum_, from a private copy of release 98's gra
   - each summation's text as a comment, its HTML kept;
   - the event's literature and its summations' as PublicationXrefs, each publication once per file;
   - for an event with an evidence type, an Evidence for each event it was inferred from, new each time, with that event's first summation as its comment, its literature and that summation's, and the evidence type as an EvidenceCodeVocabulary ("inferred from electronic annotation", ECO:0000203);
-  - an "Authored: ", "Reviewed: " or "Edited: " comment for each of its curation records.
-    Regulations and catalyses carry none of these: release 98's graph has no literature on a regulation, and its files none on a Control.
+  - an "Authored: ", "Reviewed: " or "Edited: " comment for each of its curation records (not its revisions);
+  - on a regulation's Control, the regulation's literature and its summations' (`createModulationFromRegulation`), but not their text.
+- **Regulations:** written as the converter wrote them, though none of release 98's 7,996 regulations has literature, directly or through a summation, and its files have none on a Control. Catalyses carry none of these.
 - **Every event agrees in shape:** each of _P. falciparum_'s 1,630 events has the published file's PubMed and ISBN ids, curation comments by kind, summation comments and Evidence count. Its 5,750 PublicationXrefs have the published file's properties: 5,689 by PubMed id, 42 by ISBN, 11 web pages and 8 with no id. The fixture's 57 human events agree in the same four respects with release 98's human file, where 15,712 of 16,159 reactions have literature of their own and none is inferred. There is one Provenance, as in the published files.
 - **What still differs at the root, here:**
-  - _Evidence comments (128):_ white space at either end, which the release's writer trims (T018), and in one also within.
+  - _Evidence comments (128):_ white space at either end, which the release's writer trims (T018). One of them also differs within, which trimming does not explain: T018 looks at it with the writer.
   - _Authors (60 values in 23 of 5,750 PublicationXrefs):_ the release's form of a person's name is fuller than the graph's display name. Each writes the name its own database holds; the data, not the code, differs, so it is recorded, not pursued.
-- **Repeated values:** the published file writes an author twice where two people share a name; Paxtools keeps each value once, which `ci/compare.py` counts once too.
+- **Repeated values:** the published file writes an author value twice in some lists (two people of one name, its converter's comment says); Paxtools keeps each value once, which `ci/compare.py` counts once too.
 - **Counts:** triples only in the published file fall from 146,281 to 72,683, and only in the converted file from 9,842 to 7,959. The validator gives 0 errors on the fixture's output, with 501 warnings for human and 28 for _P. falciparum_ (558 and 32 at T015).
 - **The empty Evidence** every event had is gone, with `BioPAX3ReferenceUtils`, which stripped the HTML.
 
