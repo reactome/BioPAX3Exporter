@@ -36,7 +36,7 @@ class WriteBioPAX3 {
         thisPathway = null
         thisListEvents = null
         parentPathway = null
-        xmlBase = "https://www.reactome.org/biopax/#"
+        xmlBase = base(null)
     }
 
     /**
@@ -49,7 +49,7 @@ class WriteBioPAX3 {
         thisPathway = pathway
         thisListEvents = null
         parentPathway = null
-        xmlBase = "https://www.reactome.org/biopax/$dbVersion/${pathway.dbId}#"
+        xmlBase = base(pathway.dbId)
     }
 
     /**
@@ -64,7 +64,7 @@ class WriteBioPAX3 {
         thisListEvents = null
         parentPathway = null
         dbVersion = version
-        xmlBase = "https://www.reactome.org/biopax/$dbVersion/${pathway.dbId}#"
+        xmlBase = base(pathway.dbId)
     }
 
     /**
@@ -78,7 +78,17 @@ class WriteBioPAX3 {
         thisListEvents = null
         parentPathway = null
         dbVersion = version
-        xmlBase = "https://www.reactome.org/biopax/$dbVersion/species/${species.dbId}#"
+        xmlBase = base(species.dbId)
+    }
+
+    /**
+     * The release's base for a file's ids (T018): Reactome's BioPAX namespace, the release
+     * where it is known, and the database id of the species or event the file is of, as
+     * `http://www.reactome.org/biopax/98/170928#`.
+     */
+    private fun base(dbId: Long?): String {
+        val parts = listOfNotNull("http://www.reactome.org/biopax", dbVersion.takeIf { it > 0 }, dbId)
+        return parts.joinToString("/") + "#"
     }
 
     /**
@@ -111,16 +121,7 @@ class WriteBioPAX3 {
      * Write the Biopax Model to std output.
      */
     fun toStdOut() {
-        val os = ByteArrayOutputStream()
-        val out = SimpleIOHandler()
-        out.convertToOWL(thisModel, os)
-        val output =
-            try {
-                String(os.toByteArray(), Charsets.UTF_8)
-            } catch (e: Exception) {
-                "failed to write"
-            }
-        println(output)
+        println(String(owl(), Charsets.UTF_8))
     }
 
     /**
@@ -129,19 +130,14 @@ class WriteBioPAX3 {
      * @param output File to use.
      */
     fun toFile(output: File) {
-        val os = ByteArrayOutputStream()
-        val out = SimpleIOHandler()
-        out.convertToOWL(thisModel, os)
+        // Written beside it, then moved into place: a failure leaves no file half written
+        val partial = File(output.absoluteFile.parentFile, ".${output.name}.partial")
         try {
-            if (!output.exists()) {
-                output.createNewFile()
-            }
-            FileOutputStream(output).use { fop ->
-                fop.write(os.toByteArray())
-                fop.flush()
-            }
-        } catch (e: Exception) {
-            println("failed to write ${output.name}")
+            partial.writeBytes(owl())
+            java.nio.file.Files
+                .move(partial.toPath(), output.toPath(), java.nio.file.StandardCopyOption.REPLACE_EXISTING)
+        } finally {
+            partial.delete()
         }
     }
 
@@ -150,15 +146,20 @@ class WriteBioPAX3 {
      *
      * @return String representing the BioPAX Model.
      */
-    override fun toString(): String {
+    override fun toString(): String = String(owl(), Charsets.UTF_8)
+
+    /**
+     * The model as OWL, as the release's writer wrote its literals (T018): each trimmed at
+     * both ends, and a carriage return kept as a character reference, `&#xD;` as the release
+     * wrote it, which an XML parser would otherwise read as a line feed. A failure to write
+     * is not caught: a file half written is not one to publish.
+     */
+    private fun owl(): ByteArray {
+        val model = thisModel!!
+        BioPAX3Utils.trimLiterals(model)
         val os = ByteArrayOutputStream()
-        val out = SimpleIOHandler()
-        out.convertToOWL(thisModel, os)
-        return try {
-            String(os.toByteArray(), Charsets.UTF_8)
-        } catch (e: Exception) {
-            "failed to write"
-        }
+        SimpleIOHandler().convertToOWL(model, os)
+        return String(os.toByteArray(), Charsets.UTF_8).replace("\r", "&#xD;").toByteArray(Charsets.UTF_8)
     }
 
     // ////////////////////////////////////////////////////////////////////////////////

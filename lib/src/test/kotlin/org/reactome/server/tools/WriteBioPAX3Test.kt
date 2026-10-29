@@ -4,18 +4,20 @@ import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertFalse
 import org.junit.jupiter.api.Assertions.assertNotNull
 import org.junit.jupiter.api.Assertions.assertNull
+import org.junit.jupiter.api.Assertions.assertThrows
 import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.io.TempDir
 import org.mockito.Mockito.mock
 import org.mockito.kotlin.whenever
 import org.reactome.server.graph.domain.model.Pathway
+import org.reactome.server.graph.domain.model.Species
+import org.reactome.server.graph.domain.model.Summation
 import java.io.File
 
 class WriteBioPAX3Test {
-    // The bases asserted here are today's, which no published file uses
-    // (http://www.reactome.org/biopax/{release}/{dbId}#): T018 changes them
-    // together with the code.
+    // The bases are the release's (T018): http://www.reactome.org/biopax/{release}/{dbId}#,
+    // without the release where none is given.
 
     @Test
     fun `test default constructor initializes correctly`() {
@@ -23,7 +25,7 @@ class WriteBioPAX3Test {
         val writer = WriteBioPAX3()
 
         // Verify that the xmlBase is set correctly
-        assertEquals("https://www.reactome.org/biopax/#", writer.xmlBase)
+        assertEquals("http://www.reactome.org/biopax#", writer.xmlBase)
 
         // Verify that the model is null initially
         assertNull(writer.getModel())
@@ -39,7 +41,7 @@ class WriteBioPAX3Test {
         val writer = WriteBioPAX3(mockPathway)
 
         // Verify that the xmlBase is set correctly
-        assertEquals("https://www.reactome.org/biopax/0/123#", writer.xmlBase)
+        assertEquals("http://www.reactome.org/biopax/123#", writer.xmlBase)
 
         // Verify that the model is null initially
         assertNull(writer.getModel())
@@ -58,7 +60,7 @@ class WriteBioPAX3Test {
         assertEquals(42, writer.dbVersion)
 
         // Verify that the xmlBase is set correctly
-        assertEquals("https://www.reactome.org/biopax/42/123#", writer.xmlBase)
+        assertEquals("http://www.reactome.org/biopax/42/123#", writer.xmlBase)
 
         // Verify that the model is null initially
         assertNull(writer.getModel())
@@ -142,5 +144,83 @@ class WriteBioPAX3Test {
         val written = file.readText(Charsets.UTF_8)
         assertTrue(written.contains("glutamate(1\u2212)"))
         assertFalse(written.contains("&#8722;"))
+    }
+
+    @Test
+    fun `a species' file has the species' base, as the published files do`() {
+        val species = mock(Species::class.java).also { whenever(it.dbId).thenReturn(170928) }
+
+        assertEquals("http://www.reactome.org/biopax/98/170928#", WriteBioPAX3(species, 98).xmlBase)
+    }
+
+    private fun written(pathway: Pathway): String =
+        WriteBioPAX3(pathway, 98).run {
+            createModel()
+            toString()
+        }
+
+    @Test
+    fun `literals are written trimmed, a display name and a comment alike`() {
+        val summations = listOf(mock(Summation::class.java).also { whenever(it.text).thenReturn("  About it.\n") })
+        val pathway =
+            mock(Pathway::class.java).also {
+                whenever(it.dbId).thenReturn(123L)
+                whenever(it.displayName).thenReturn("Platelet degranulation ")
+                whenever(it.summation).thenReturn(summations)
+            }
+
+        val owl = written(pathway)
+
+        assertTrue(owl.contains(">Platelet degranulation</bp:displayName>"))
+        assertTrue(owl.contains(">About it.</bp:comment>"))
+        assertFalse(owl.contains("degranulation </"))
+    }
+
+    @Test
+    fun `a carriage return is kept, as a character reference`() {
+        val summations = listOf(mock(Summation::class.java).also { whenever(it.text).thenReturn("One.\rTwo.") })
+        val pathway =
+            mock(Pathway::class.java).also {
+                whenever(it.dbId).thenReturn(123L)
+                whenever(it.displayName).thenReturn("pathway")
+                whenever(it.summation).thenReturn(summations)
+            }
+
+        assertTrue(written(pathway).contains(">One.&#xD;Two.</bp:comment>"))
+    }
+
+    @Test
+    fun `a file that cannot be written is an error, not a message`(
+        @TempDir dir: File,
+    ) {
+        val pathway = mock(Pathway::class.java).also { whenever(it.dbId).thenReturn(123L) }
+        val writer = WriteBioPAX3(pathway, 98).apply { createModel() }
+
+        assertThrows(java.io.IOException::class.java) { writer.toFile(File(dir, "missing/out.owl")) }
+    }
+
+    @Test
+    fun `only what Java's trim takes off is trimmed, a no-break space kept`() {
+        val pathway =
+            mock(Pathway::class.java).also {
+                whenever(it.dbId).thenReturn(123L)
+                whenever(it.displayName).thenReturn("Kept\u00a0\t")
+            }
+
+        assertTrue(written(pathway).contains(">Kept\u00a0</bp:displayName>"))
+    }
+
+    @Test
+    fun `a file that cannot be put in place leaves nothing behind`(
+        @TempDir dir: File,
+    ) {
+        val pathway = mock(Pathway::class.java).also { whenever(it.dbId).thenReturn(123L) }
+        // A directory, not empty, where the file should go: the move cannot replace it
+        val taken = File(dir, "out.owl").apply { mkdir() }
+        File(taken, "inside").writeText("x")
+        val writer = WriteBioPAX3(pathway, 98).apply { createModel() }
+
+        assertThrows(java.io.IOException::class.java) { writer.toFile(taken) }
+        assertEquals(listOf("out.owl"), dir.list()!!.toList())
     }
 }
