@@ -2,7 +2,6 @@ package org.reactome.server.tools
 
 import org.biopax.paxtools.model.level3.BiochemicalReaction
 import org.biopax.paxtools.model.level3.Degradation
-import org.biopax.paxtools.model.level3.Protein
 import org.biopax.paxtools.model.level3.RelationshipXref
 import org.biopax.paxtools.model.level3.TemplateReaction
 import org.junit.jupiter.api.Assertions.assertEquals
@@ -133,15 +132,7 @@ class BioPAXEventXrefTest {
 
         val bp = BioPAXInteractionBuilder(event, context).addReactomeRLEvent() as BiochemicalReaction
 
-        val entity =
-            context.model
-                .getObjects(Protein::class.java)
-                .ifEmpty {
-                    context.model.getObjects(org.biopax.paxtools.model.level3.PhysicalEntity::class.java)
-                }.single {
-                    it.displayName ==
-                        "NOTCH1 mutant"
-                }
+        val entity = bp.left.single()
         assertSame(
             entity.xref.filterIsInstance<RelationshipXref>().single(),
             bp.xref.filterIsInstance<RelationshipXref>().single(),

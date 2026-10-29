@@ -266,10 +266,22 @@ description: 'Tasks for spec 001: BioPAX Level 3 from the graph, as the release 
     - an event's diseases keyed apart from an entity's;
     - no GO term, or no diseases, on a TemplateReaction;
     - no GO term on a Degradation.
-- [ ] T015 [US2] Pathways (and the caches of events and entities by dbId, kept in the `ConversionContext`, which T008 left for this task: shared across a species' pathways, they write a shared child once): components, PathwayStep with `stepProcess` (reactions, catalyses, controls, pathways) and `nextStep`; a shared child written once and referenced by each parent; no header pathway; no event outside a pathway (research R1).
+- [x] T015 [US2] Pathways (and the caches of events and entities by dbId, kept in the `ConversionContext`, which T008 left for this task: shared across a species' pathways, they write a shared child once): components, PathwayStep with `stepProcess` (reactions, catalyses, controls, pathways) and `nextStep`; a shared child written once and referenced by each parent; no header pathway; no event outside a pathway (research R1). — #62, replacing #61 after its review.
+  - **What is written:** a species' file starts from the events of that species alone that no other such event holds (`SpeciesEvents`, as the release chose them: 26 for _P. falciparum_, 29 for human). Each event is written once and shared by every pathway that holds it, with one PathwayStep per event; there is no header pathway. A step's processes are its event and that event's catalyses and controls, and its next steps come from the events it precedes. A reaction no pathway holds would be written alone, with no step, as the release would write it; release 98 has none, hence "no event outside a pathway". The launcher's unused orphan code and `BioPAXSpeciesBuilder` are gone.
+  - **Measured on release 98** (`differences.md`): _P. falciparum_'s pathways, reactions, steps and catalyses number the published file's. What still differs for pathways is T016's (comments, evidence) and the writer's (six display names with a trailing space, T018). The fixture's expected files are regenerated; the validator gives 0 errors.
+  - **From #61's review:** a pathway is kept before its events, as the converter keeps it, so a `hasEvent` cycle ends rather than overflowing the stack (the new test failed with a StackOverflowError before); the wording on events outside a pathway corrected here, in research R1 and in `SpeciesEvents`; stale "still" lines in the T014 section; the unused `species` parameter, `schemaService` and import removed.
+  - **Tests:** `BioPAXPathwayBuilderTest`, 7 new tests. Each of 13 mutants made one fail:
+    - a shared pathway, or a shared reaction, written once per parent;
+    - a step per parent;
+    - no `pathwayOrder`, or no `pathwayComponent`;
+    - children made before their pathway;
+    - `nextStep` reversed, or none;
+    - no controls on a step, or catalyses only;
+    - a species' file without step links, with a header pathway, or without its top-level reactions.
+  - `SpeciesEvents`' query is held by the fixture job, apart from its species filter; dropping that filter would start human from 345 events (checked on the private copy).
 - [ ] T016 [US2] Literature and provenance: PublicationXref (PubMed, ISBN, URL) on the event; Evidence (IEA) for inferred events only; the single Provenance; curation comments, with HTML kept as the published files keep it.
 - [ ] T017 [US2] Sets: typed by the class their members share, else PhysicalEntity; "Converted from EntitySet in Reactome" and `memberPhysicalEntity`. Which single-class sets are PhysicalEntity (a set among the members, or a member with no entity reference, or another reason: research R1, R6) decided against the graph over the whole of _P. falciparum_, and the rule that reproduces it written.
-- [ ] T018 [US2] `xml:base` as `http://www.reactome.org/biopax/{release}/{dbId}#` (the species' or the event's), ids `{Class}{n}` in a deterministic order, the same on every run.
+- [ ] T018 [US2] `xml:base` as `http://www.reactome.org/biopax/{release}/{dbId}#` (the species' or the event's), ids `{Class}{n}` in a deterministic order, the same on every run; literals trimmed, as the release's writer trims them (T015 found six display names with a trailing space).
 
 - [ ] T019 [US3] One event: `convert(event)` for a pathway, a reaction, a black box, a degradation and a template reaction (the event builder today asks for an abstract `Process` and is never called); `-l` either converts each listed event or goes, saying which.
 

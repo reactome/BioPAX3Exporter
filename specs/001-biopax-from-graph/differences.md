@@ -32,7 +32,7 @@ Measured 28 Oct 2026 on _P. falciparum_, converted from a private copy of releas
 
 ## Reactions (T012)
 
-Measured 28 Oct 2026 on _P. falciparum_ from a private copy of release 98's graph, against release 98's published file, and on the fixture's human reactions against release 98's human file.
+Measured 28 Oct 2026 on _P. falciparum_ from a private copy of release 98's graph, against release 98's published file, and on the fixture's human events against release 98's human file.
 
 - **Reaction by reaction:** all 970 _P. falciparum_ reactions are in the published file under their database id. Their kind, names, participants (`left`, `right`), stoichiometries, EC numbers, Reactome's two ids and data source agree. What differs belongs to other tasks or to the writer:
   - **`conversionDirection`** is written `LEFT_TO_RIGHT` where the release writes `LEFT-TO-RIGHT` (970). Paxtools 4.3.1's `ConversionDirectionType` has only the underscored form, and its reader takes either. It is a difference of the writer, settling the question above. The validator 6.0.0 reports no error on it: the fixture's output, every reaction written so, has none.
@@ -70,14 +70,26 @@ Measured 28 Oct 2026 on _P. falciparum_ from a private copy of release 98's grap
 
 ## Events' own cross-references (T014)
 
-Measured 28 Oct 2026 on _P. falciparum_ from a private copy of release 98's graph, against release 98's published file, and on the fixture's human reactions against release 98's human file.
+Measured 28 Oct 2026 on _P. falciparum_ from a private copy of release 98's graph, against release 98's published file, and on the fixture's human events against release 98's human file.
 
 - **What events carry:** in release 98's files, an event's only RelationshipXrefs are its GO biological process ("gene ontology term for cellular process") and its diseases (DOID, "additional information"): human has 2,294 and 2,846 of them, _P. falciparum_ 506 GO terms and no disease. These are what the release's converter writes (`handleEventGOBP`, `handleDisease`), and what this exporter writes, for reactions and pathways alike. "The rest" in the task's wording turned out to be nothing more.
-- **Reactions:** the published file's 60 GO xrefs on _P. falciparum_ reactions are all matched. The converted file has more (159 at the root), because a reaction is still written once for each pathway that reaches it (T015).
-- **Pathways:** their 446 GO xrefs are written. The comparison cannot key a pathway by its database id until it carries one (T015); matched by name, the GO terms of 628 _P. falciparum_ pathways are identical (#59's review).
-- **Order:** for a reaction, the GO term comes before its regulations and the diseases after the data source, as in the converter. For a pathway the converter writes its children first and then its own xrefs, while this exporter still writes the pathway's own first. Only ids are numbered differently, which `ci/compare.py` does not see; a pathway's order is T015's.
-- **Diseases the old converter skipped:** as for an entity's (T011), its loop over an event's diseases stopped at the first one it had already written. Every one is written here: an obvious bug, fixed. In the fixture, 23 disease xrefs the release left out are written: on reactions, DOID 162 (cancer) on 19 and DOID 5603 on 2 where 162 came first; on pathways, DOID 162 on 2. Across release 98's human file, the graph gives 379 such xrefs (269 on reactions, 110 on pathways): for each of 280 events, the published diseases are an ordered prefix of the graph's list, and for no event do they differ otherwise (#59's review, against the private copy).
+- **Reactions:** the published file's 60 GO xrefs on _P. falciparum_ reactions are all matched. The converted file has more (159 at the root), because a reaction was then written once for each pathway that reaches it (T015 writes it once).
+- **Pathways:** their 446 GO xrefs are written. The comparison could not key a pathway by its database id before T015 gave it one; matched by name, the GO terms are identical for each of the 628 _P. falciparum_ pathways whose name is unique in the file (#59's review).
+- **Order:** for a reaction, the GO term comes before its regulations and the diseases after the data source, as in the converter. For a pathway the converter writes its children first and then its own xrefs, while this exporter then wrote the pathway's own first. Only ids were numbered differently, which `ci/compare.py` does not see; T015 writes them in the converter's order.
+- **Diseases the old converter skipped:** as for an entity's (T011), its loop over an event's diseases stopped at the first one it had already written. Every one is written here: an obvious bug, fixed. In the fixture, 23 disease xrefs the release left out are written: on reactions, DOID 162 (cancer) on 19 and DOID 5603 on 2 where 162 came first; on pathways, DOID 162 on 2. For the events of release 98's human file, the graph gives 379 such xrefs (269 on reactions, 110 on pathways): for each of 280 events, the published diseases are an ordered prefix of the graph's list, and for no event do they differ otherwise (#59's review, against the private copy).
 - **A GO term's xref is written once** and shared by everything that names it; no term is both a molecular function and a biological process in release 98.
+
+## Pathways and steps (T015)
+
+Measured 29 Oct 2026 on _P. falciparum_, from a private copy of release 98's graph, against release 98's published file.
+
+- **Which events a file is written from:** those of the species alone, less those another such event holds, as the release's `SpeciesAllPathwaysConverter` chose them (`filterEventsForSpecies`, then `grepTopLevelEvents`). That gives 26 events for _P. falciparum_ and 29 for human, the top-level events of the published files. Without the species filter, human would start from 345. The fixture has no event of two species, so CI does not hold that filter; it was checked here, on the private copy.
+- **Each event once:** a pathway or reaction that several pathways hold is written once and is a component of each. The species' file has no header pathway. _P. falciparum_'s pathways (660), reactions (970), steps (1,604) and catalyses (691) number what the published file's do. Triples only in the published file fall from 160,049 to 146,281, and only in the converted file from 95,201 to 9,842.
+- **Steps:** one for each event however many pathways hold it, in the order of each. Its processes are its event, and for a reaction its catalyses and controls. Its next steps are those of the events the event precedes, where they are in the file. Every Pathway, PathwayStep, `pathwayOrder`, `stepProcess` and `nextStep` difference left is carried by the reactions' differences, which are T016's and the writer's.
+- **Order:** a pathway is made and kept before its events, and its own properties and xrefs come after them, as in the converter. Ids are now numbered in that order, and an event that holds the pathway again (a cycle, which release 98 does not have) finds it there rather than making it again.
+- **A reaction no pathway holds:** the release's converter writes every top-level event of the species, a reaction too, alone and with no step, and so does this exporter. Release 98 has none, so its files have no event outside a pathway (research R1).
+- **What still differs at the root, for pathways:** the comment (660; HTML kept, T016) and the evidence (660, T016). Six display names also differ, by a trailing space the graph has and the published file does not. The release's writer trims every literal (no value in the published file starts or ends with white space), so that is the writer's, T018.
+- **The fixture:** its expected files had each pathway once per pathway above it, and a header: 217 event individuals for human, 33 for _P. falciparum_. They now have 57 (28 pathways, 29 reactions) and 8, with the same reactions. The validator gives 0 errors on both (558 and 32 warnings).
 
 ## The validator's baseline
 

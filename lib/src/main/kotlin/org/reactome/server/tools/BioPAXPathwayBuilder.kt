@@ -1,15 +1,23 @@
-@file:Suppress("ktlint:standard:no-wildcard-imports")
-
 package org.reactome.server.tools
 
-import org.biopax.paxtools.model.level3.*
+import org.biopax.paxtools.model.level3.Interaction
+import org.biopax.paxtools.model.level3.PathwayStep
 import org.biopax.paxtools.model.level3.Process
-import org.reactome.server.graph.domain.model.*
+import org.reactome.server.graph.domain.model.Event
 import org.reactome.server.graph.domain.model.Pathway
-import java.util.HashMap
+import org.reactome.server.graph.domain.model.ReactionLikeEvent
 
 /**
  * @author Sarah Keating <skeating@ebi.ac.uk>
+ *
+ * Events as the release's converter writes them into one file (spec 001 T015): each
+ * event once, shared by every pathway that holds it, kept in the [ConversionContext].
+ *
+ * A pathway is made, then each of its events (its components, each with its own
+ * PathwayStep, one per event however many pathways hold it), then its organism and its
+ * own properties: names, Reactome's ids, its summation, GO biological process, data
+ * source and diseases. Once every event is written, [addStepLinks] gives each step its
+ * next steps and its event's catalyses and controls, as the converter's last pass does.
  */
 class BioPAXPathwayBuilder(
     private val thisPathway: Pathway?,
@@ -17,184 +25,84 @@ class BioPAXPathwayBuilder(
 ) {
     private val thisModel = context?.model
 
-    // 1) Add a cache (map) for storing Pathway objects you've already built
-    private val visitedPathways = HashMap<Long, org.biopax.paxtools.model.level3.Pathway>()
-
-    /**
-     * Function to add the Reactome Pathway to the BioPAX model
-     */
+    /** The pathway given, all it holds, and its steps' links. */
     fun addReactomePathway() {
-        addReactomePathway(thisPathway)
-    }
-    // ////////////////////////////////////////////////////////////////////////////////
-
-    // Private functions
-
-    /**
-     * Function to create a BioPAX pathway from the Reactome pathway given. This will recurse through
-     * any child elements.
-     *
-     * @param pathway the Reactome pathway to be created in BioPAX
-     *
-     * @return the created BioPAX pathway
-     */
-    private fun addReactomePathway(pathway: Pathway?): org.biopax.paxtools.model.level3.Pathway? {
-        if (pathway == null) return null
-
-        // 2a) Check the cache
-        val dbId = pathway.dbId
-        if (visitedPathways.containsKey(dbId)) {
-            // Already created this Pathway. Reuse the same BioPAX object
-            return visitedPathways[dbId]
-        }
-
-        // 2b) Create a new BioPAX Pathway
-        val bpPath = thisModel?.addNew(org.biopax.paxtools.model.level3.Pathway::class.java, context!!.nextId("Pathway"))
-
-        // 2c) Store it in the cache so we don't recreate it again
-        bpPath?.let { visitedPathways[dbId] = it }
-
-        // 2d) Set all properties
-        bpPath?.displayName = pathway.displayName
-        bpPath?.addComment(BioPAX3ReferenceUtils.getComment(pathway.summation))
-        val xrefs = BioPAXXrefBuilder(context!!)
-        xrefs.addBiologicalProcess(pathway, bpPath!!)
-
-        // Build the "basic elements" (organism, dataSource, etc.)
-        val elements = BioPAX3BasicElementsBuilder(pathway, context, bpPath)
-        elements.addBioSourceInformation()
-        elements.addReactomeDataSource()
-        elements.addEvidence()
-        // Its diseases, after its data source, in the converter's order (T014)
-        xrefs.addDiseases(pathway, bpPath)
-
-        // 2e) Recurse over child "hasEvent" (subpathways or RLEs)
-        addChildPathways(pathway, bpPath)
-
-        return bpPath
+        if (thisPathway == null || context == null) return
+        addEvent(thisPathway)
+        addStepLinks()
     }
 
     /**
-     * Function to recurse through all the Reactome events associate with the given
-     * Reactome Pathway and add information about these to the BioPAX model and the corresponding
-     * BioPAX pathway
-     *
-     * @param pathway the Reactome pathway to be created in BioPAX
-     * @param bpPath the BioPAX pathway to which the information is added
+     * An event as it is written into this file, once: a pathway with all it holds, or a
+     * reaction. Nothing for any other kind of event.
      */
-    private fun addChildPathways(
-        pathway: Pathway,
-        bpPath: org.biopax.paxtools.model.level3.Pathway,
-    ) {
-        pathway.hasEvent?.forEach { event ->
-            addReactomeEvent(event, bpPath)
-        }
-    }
-
-    /**
-     * Function to add information from a Reactome Event to the BioPAX model and
-     * correponding BioPAX pathway
-     *
-     * @param event the Reactome event to be created in BioPAX
-     * @param bpPath the BioPAX pathway to which the information is added
-     */
-    private fun addReactomeEvent(
-        event: Event,
-        bpPath: org.biopax.paxtools.model.level3.Pathway,
-    ) {
-        val step = addBPStep(bpPath)
-        step?.let { bpPath.addPathwayOrder(it) }
-        var childPath: org.biopax.paxtools.model.level3.Process? = null
+    fun addEvent(event: Event): Process? =
         when (event) {
             is Pathway -> {
-                childPath = addReactomePathway(event)
+                addPathway(event)
             }
 
             is ReactionLikeEvent -> {
-                val thisBPInteract = BioPAXInteractionBuilder(event, context)
-                childPath = thisBPInteract.addReactomeRLEvent()
+                context!!.once("event:${event.dbId}") { BioPAXInteractionBuilder(event, context).addReactomeRLEvent()!! }
             }
 
-            else -> {} // Handle other event types if needed
+            else -> {
+                null
+            }
         }
 
-        childPath?.let { addComponentInformation(bpPath, it, step!!) }
-    }
-
-    /**
-     * Function to create an individual BioPAX pathway
-     *
-     * @param pathway the Reactome pathway to be created in BioPAX
-     *
-     * @return the BioPAX pathway created
-     */
-    private fun addBPPathway(pathway: Pathway?): org.biopax.paxtools.model.level3.Pathway? {
-        if (pathway == null) return null
-        val bpPath = thisModel?.addNew(org.biopax.paxtools.model.level3.Pathway::class.java, context!!.nextId("Pathway"))
-        bpPath?.let {
-            val elements = BioPAX3BasicElementsBuilder(pathway, context, it)
+    private fun addPathway(pathway: Pathway): org.biopax.paxtools.model.level3.Pathway =
+        context!!.onceKeptFirst(
+            "event:${pathway.dbId}",
+            // Made and kept first, as the converter makes it, and its events next
+            { thisModel!!.addNew(org.biopax.paxtools.model.level3.Pathway::class.java, context.nextId("Pathway")) },
+        ) { bpPath ->
+            pathway.hasEvent?.forEach { child ->
+                val bpChild = addEvent(child) ?: return@forEach
+                bpPath.addPathwayComponent(bpChild)
+                bpPath.addPathwayOrder(stepFor(child, bpChild))
+            }
+            val elements = BioPAX3BasicElementsBuilder(pathway, context, bpPath)
             elements.addBioSourceInformation()
-            elements.addReactomeDataSource()
+            // Then what every event has, in the converter's order
+            BioPAX3Utils.addNames(pathway.name, pathway.displayName, bpPath)
+            val xrefs = BioPAXXrefBuilder(context)
+            xrefs.addReactomeIds(pathway, bpPath)
+            bpPath.addComment(BioPAX3ReferenceUtils.getComment(pathway.summation))
+            xrefs.addBiologicalProcess(pathway, bpPath)
             elements.addEvidence()
-            it.displayName = pathway.displayName
-            it.addComment(BioPAX3ReferenceUtils.getComment(pathway.summation))
+            elements.addReactomeDataSource()
+            xrefs.addDiseases(pathway, bpPath)
         }
-        return bpPath
-    }
 
-    // ///////////////////////////////////////////////////////////////////////////////////////////////
-
-    // add other information to Pathway
-
-    // pathwayComponent
+    // One step for each event, made the first time a pathway holds it; its process is the event.
+    private fun stepFor(
+        event: Event,
+        bpEvent: Process,
+    ): PathwayStep =
+        context!!
+            .steps
+            .getOrPut(event.dbId) {
+                event to
+                    thisModel!!.addNew(PathwayStep::class.java, context.nextId("PathwayStep")).apply {
+                        addStepProcess(bpEvent)
+                    }
+            }.second
 
     /**
-     * Function to associate a BioPAX Pathway with it's pathwayComponent elements
-     *
-     * BioPAX creates links between Pathways and the steps taken when the process
-     * is activated by adding pathwayComponent and pathwayOrder to the Pathway.
-     * The pathwayOrder referneces a PathwayStep which refers back to the pathwayComponent
-     *
-     * @param bpPath the parent BioPAX pathway to which the information should be added
-     * @param childPath the child BioPAX Pathway that is the pathwayComponent
-     * @param step the BioPAX PathwayStep associated with this component
+     * Each step's links, once every event is written: the step of each event that precedes
+     * its event gets it as a next step, and it gets its event's catalyses and controls as
+     * processes. An event with no step here (none of this file's pathways holds it) is
+     * linked to nothing, as the converter left it.
      */
-    private fun addComponentInformation(
-        bpPath: org.biopax.paxtools.model.level3.Pathway,
-        childPath: org.biopax.paxtools.model.level3.Process,
-        step: PathwayStep,
-    ) {
-        bpPath.addPathwayComponent(childPath)
-        step.addStepProcess(childPath)
-        if (childPath is org.biopax.paxtools.model.level3.Interaction && childPath.controlledOf.isNotEmpty()) {
-            childPath.controlledOf.forEach { p ->
-                step.addStepProcess(p)
-            }
+    fun addStepLinks() {
+        val steps = context!!.steps
+        steps.values.forEach { (event, step) ->
+            event.precedingEvent?.forEach { preceding -> steps[preceding.dbId]?.second?.addNextStep(step) }
+            step.stepProcess
+                .filterIsInstance<Interaction>()
+                .flatMap { it.controlledOf }
+                .forEach { step.addStepProcess(it) }
         }
-    }
-
-    // pathwayOrder
-    // this is added in the addReactomeEvent function as it needs to enter the PathwayStep information as well
-
-    // //////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-    // add related Biopax classes
-
-    // these are small classes so do not need separate code files
-
-    // PathwayStep
-
-    /**
-     * Function to create a PathwayStep to be associated with the BioPAX pathway
-     *
-     * @param bpPath the BioPAX pathway corresponding to the PathwayStep
-     *
-     * @return the PathwayStep created
-     *
-     * NOTE: The argument is unused but I suspect I will need it as in the BioSource creation below
-     */
-    private fun addBPStep(bpPath: org.biopax.paxtools.model.level3.Pathway?): PathwayStep? {
-        if (bpPath == null) return null
-        return thisModel?.addNew(org.biopax.paxtools.model.level3.PathwayStep::class.java, context!!.nextId("PathwayStep"))
     }
 }
