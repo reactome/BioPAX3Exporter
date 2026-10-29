@@ -15,9 +15,10 @@ import org.reactome.server.graph.domain.model.ReactionLikeEvent
  *
  * A pathway is made, then each of its events (its components, each with its own
  * PathwayStep, one per event however many pathways hold it), then its organism and its
- * own properties: names, Reactome's ids, its summation, GO biological process, data
- * source and diseases. Once every event is written, [addStepLinks] gives each step its
- * next steps and its event's catalyses and controls, as the converter's last pass does.
+ * own properties: names, Reactome's ids, its summations and literature, GO biological
+ * process, its evidence if inferred, data source, curation and diseases (T016). Once
+ * every event is written, [addStepLinks] gives each step its next steps and its event's
+ * catalyses and controls, as the converter's last pass does.
  */
 class BioPAXPathwayBuilder(
     private val thisPathway: Pathway?,
@@ -67,11 +68,14 @@ class BioPAXPathwayBuilder(
             // Then what every event has, in the converter's order
             BioPAX3Utils.addNames(pathway.name, pathway.displayName, bpPath)
             val xrefs = BioPAXXrefBuilder(context)
+            val literature = BioPAXLiteratureBuilder(context)
             xrefs.addReactomeIds(pathway, bpPath)
-            bpPath.addComment(BioPAX3ReferenceUtils.getComment(pathway.summation))
+            literature.addSummations(pathway, bpPath)
+            literature.addLiterature(pathway, bpPath)
             xrefs.addBiologicalProcess(pathway, bpPath)
-            elements.addEvidence()
+            literature.addEvidence(pathway, bpPath)
             elements.addReactomeDataSource()
+            literature.addCuration(pathway, bpPath)
             xrefs.addDiseases(pathway, bpPath)
         }
 

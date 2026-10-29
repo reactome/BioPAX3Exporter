@@ -30,7 +30,7 @@ import org.reactome.server.graph.domain.model.PhysicalEntity as RPhysicalEntity
  * Its catalyses and regulations as the release writes them (T013): a Catalysis for each
  * catalyst activity (not a TemplateReaction's), and a Control, or a
  * TemplateReactionRegulation, for each regulation, new for each reaction it controls.
- * Its literature and evidence, and its regulations', are T016's.
+ * Its summations, literature, evidence and curation as the release writes them (T016).
  */
 class BioPAXInteractionBuilder(
     private val thisRLEvent: ReactionLikeEvent?,
@@ -41,6 +41,7 @@ class BioPAXInteractionBuilder(
     // Each entity once per file, as the release writes it (T011).
     private val entities = context?.let { BioPAXPhysicalEntityBuilder(it) }
     private val xrefs = context?.let { BioPAXXrefBuilder(it) }
+    private val literature = context?.let { BioPAXLiteratureBuilder(it) }
 
     fun addReactomeRLEvent(): Interaction? = addBPReaction(thisRLEvent)
 
@@ -50,8 +51,7 @@ class BioPAXInteractionBuilder(
         val type = kindOf(event)
         val bpReaction = thisModel.addNew(type, context!!.nextId(type.simpleName))
         BioPAX3Utils.addNames(event.name, event.displayName, bpReaction)
-        // Add functional notes from Reactome Summation as BioPAX comment
-        bpReaction.addComment(BioPAX3ReferenceUtils.getComment(event.summation))
+        literature!!.addSummations(event, bpReaction)
 
         if (bpReaction is TemplateReaction) {
             // Its products only, and no catalysis: the release's converter returned here.
@@ -74,17 +74,18 @@ class BioPAXInteractionBuilder(
             event.catalystActivity?.forEach { addCatalysis(it, bpReaction) }
         }
         BioPAXXrefBuilder(context).addReactomeIds(event, bpReaction)
-        // The converter's order: the GO term, then the regulations, then the diseases
+        // The converter's order: the literature, the GO term, the evidence, then the
+        // regulations, then the diseases
+        literature.addLiterature(event, bpReaction)
         xrefs!!.addBiologicalProcess(event, bpReaction)
+        literature.addEvidence(event, bpReaction)
         BioPAX3BasicElementsBuilder(event, context, bpReaction).addReactomeDataSource()
+        literature.addCuration(event, bpReaction)
         // Every kind of reaction, a TemplateReaction too, has its regulations, each once:
         // graph-core lists one twice where its link's stoichiometry is 2, and the release's
         // converter gathers them into a set.
         event.regulatedBy?.distinct()?.forEach { addControl(it, bpReaction) }
         xrefs.addDiseases(event, bpReaction)
-
-        // Evidence / datasource etc.
-        BioPAX3BasicElementsBuilder(event, context, bpReaction).addEvidence()
         return bpReaction
     }
 
@@ -171,7 +172,8 @@ class BioPAXInteractionBuilder(
     /**
      * A regulation as a Control (a TemplateReactionRegulation for a TemplateReaction), a
      * new one for each reaction it controls: ACTIVATION or INHIBITION by its class,
-     * Reactome's ids, the data source, its regulator as the controller, and its active units.
+     * Reactome's ids, the data source, its literature (T016), its regulator as the controller,
+     * and its active units.
      */
     private fun addControl(
         regulation: Regulation,
@@ -185,6 +187,7 @@ class BioPAXInteractionBuilder(
         }
         xrefs!!.addReactomeIds(regulation, control)
         BioPAX3BasicElementsBuilder(null, context, control).addReactomeDataSource()
+        literature!!.addLiterature(regulation, control)
         regulation.regulator?.let { control.addController(entities!!.physicalEntity(it)) }
         addActiveUnits(regulation.activeUnit, control)
         @Suppress("DEPRECATION") // as for a catalysis

@@ -19,8 +19,8 @@
  <bp:pathwayOrder rdf:resource="#PathwayStep6" />
  <bp:pathwayComponent rdf:resource="#Pathway2" />
  <bp:xref rdf:resource="#RelationshipXref3" />
+ <bp:xref rdf:resource="#UnificationXref27" />
  <bp:xref rdf:resource="#UnificationXref26" />
- <bp:xref rdf:resource="#UnificationXref25" />
  <bp:organism rdf:resource="#BioSource1" />
  <bp:evidence rdf:resource="#Evidence7" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Cell Cycle</bp:displayName>
@@ -31,7 +31,7 @@
 <bp:Pathway rdf:ID="Pathway2">
  <bp:pathwayOrder rdf:resource="#PathwayStep5" />
  <bp:pathwayComponent rdf:resource="#Pathway3" />
- <bp:xref rdf:resource="#UnificationXref23" />
+ <bp:xref rdf:resource="#UnificationXref25" />
  <bp:xref rdf:resource="#RelationshipXref2" />
  <bp:xref rdf:resource="#UnificationXref24" />
  <bp:organism rdf:resource="#BioSource1" />
@@ -44,7 +44,7 @@
 <bp:Pathway rdf:ID="Pathway3">
  <bp:pathwayOrder rdf:resource="#PathwayStep4" />
  <bp:pathwayComponent rdf:resource="#Pathway4" />
- <bp:xref rdf:resource="#UnificationXref21" />
+ <bp:xref rdf:resource="#UnificationXref23" />
  <bp:xref rdf:resource="#UnificationXref22" />
  <bp:organism rdf:resource="#BioSource1" />
  <bp:evidence rdf:resource="#Evidence5" />
@@ -60,8 +60,8 @@
 <bp:Pathway rdf:ID="Pathway4">
  <bp:pathwayOrder rdf:resource="#PathwayStep3" />
  <bp:pathwayComponent rdf:resource="#Pathway5" />
+ <bp:xref rdf:resource="#UnificationXref20" />
  <bp:xref rdf:resource="#UnificationXref19" />
- <bp:xref rdf:resource="#UnificationXref18" />
  <bp:xref rdf:resource="#RelationshipXref1" />
  <bp:organism rdf:resource="#BioSource1" />
  <bp:evidence rdf:resource="#Evidence4" />
@@ -77,7 +77,7 @@
 <bp:Pathway rdf:ID="Pathway5">
  <bp:pathwayOrder rdf:resource="#PathwayStep2" />
  <bp:pathwayComponent rdf:resource="#Pathway6" />
- <bp:xref rdf:resource="#UnificationXref16" />
+ <bp:xref rdf:resource="#UnificationXref18" />
  <bp:xref rdf:resource="#UnificationXref17" />
  <bp:organism rdf:resource="#BioSource1" />
  <bp:evidence rdf:resource="#Evidence3" />
@@ -101,8 +101,8 @@
 <bp:Pathway rdf:ID="Pathway6">
  <bp:pathwayOrder rdf:resource="#PathwayStep1" />
  <bp:pathwayComponent rdf:resource="#BiochemicalReaction1" />
+ <bp:xref rdf:resource="#UnificationXref16" />
  <bp:xref rdf:resource="#UnificationXref15" />
- <bp:xref rdf:resource="#UnificationXref14" />
  <bp:organism rdf:resource="#BioSource1" />
  <bp:evidence rdf:resource="#Evidence2" />
  <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Orc1 removal from chromatin</bp:displayName>
@@ -126,7 +126,7 @@
  <bp:pathwayOrder rdf:resource="#PathwayStep4" />
  <bp:pathwayComponent rdf:resource="#Pathway4" />
  <bp:xref rdf:resource="#RelationshipXref4" />
- <bp:xref rdf:resource="#UnificationXref27" />
+ <bp:xref rdf:resource="#UnificationXref29" />
  <bp:xref rdf:resource="#UnificationXref28" />
  <bp:organism rdf:resource="#BioSource1" />
  <bp:evidence rdf:resource="#Evidence8" />
@@ -153,36 +153,35 @@
 </bp:BioSource>
 
 <bp:UnificationXref rdf:ID="UnificationXref19">
- <bp:idVersion rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">1</bp:idVersion>
- <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-PFA-69239.1</bp:comment>
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">R-PFA-69239</bp:id>
- <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
-</bp:UnificationXref>
-
-<bp:UnificationXref rdf:ID="UnificationXref16">
- <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=11170634</bp:comment>
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">11170634</bp:id>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=11170614</bp:comment>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">11170614</bp:id>
  <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 98</bp:db>
 </bp:UnificationXref>
 
-<bp:UnificationXref rdf:ID="UnificationXref15">
+<bp:UnificationXref rdf:ID="UnificationXref16">
  <bp:idVersion rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">1</bp:idVersion>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-PFA-68949.1</bp:comment>
  <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">R-PFA-68949</bp:id>
  <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
 </bp:UnificationXref>
 
-<bp:UnificationXref rdf:ID="UnificationXref18">
- <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=11170614</bp:comment>
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">11170614</bp:id>
+<bp:UnificationXref rdf:ID="UnificationXref15">
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=11170632</bp:comment>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">11170632</bp:id>
  <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 98</bp:db>
 </bp:UnificationXref>
 
-<bp:UnificationXref rdf:ID="UnificationXref17">
+<bp:UnificationXref rdf:ID="UnificationXref18">
  <bp:idVersion rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">1</bp:idVersion>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-PFA-69052.1</bp:comment>
  <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">R-PFA-69052</bp:id>
  <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
+</bp:UnificationXref>
+
+<bp:UnificationXref rdf:ID="UnificationXref17">
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=11170634</bp:comment>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">11170634</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 98</bp:db>
 </bp:UnificationXref>
 
 <bp:UnificationXref rdf:ID="UnificationXref12">
@@ -199,9 +198,8 @@
 </bp:UnificationXref>
 
 <bp:UnificationXref rdf:ID="UnificationXref14">
- <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=11170632</bp:comment>
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">11170632</bp:id>
- <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 98</bp:db>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ECO:0000203</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">EVIDENCE CODE</bp:db>
 </bp:UnificationXref>
 
 <bp:UnificationXref rdf:ID="UnificationXref13">
@@ -230,14 +228,15 @@
 </bp:RelationshipXref>
 
 <bp:UnificationXref rdf:ID="UnificationXref21">
- <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=11170616</bp:comment>
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">11170616</bp:id>
- <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 98</bp:db>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MI:0359</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MI</bp:db>
 </bp:UnificationXref>
 
 <bp:UnificationXref rdf:ID="UnificationXref20">
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MI:0359</bp:id>
- <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MI</bp:db>
+ <bp:idVersion rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">1</bp:idVersion>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-PFA-69239.1</bp:comment>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">R-PFA-69239</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
 </bp:UnificationXref>
 
 <bp:ModificationFeature rdf:ID="ModificationFeature1">
@@ -283,40 +282,93 @@
 </bp:SequenceSite>
 
 <bp:RelationshipTypeVocabulary rdf:ID="RelationshipTypeVocabulary1">
- <bp:xref rdf:resource="#UnificationXref20" />
+ <bp:xref rdf:resource="#UnificationXref21" />
  <bp:term rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">gene ontology term for cellular process</bp:term>
 </bp:RelationshipTypeVocabulary>
 
 <bp:UnificationXref rdf:ID="UnificationXref27">
- <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=11170622</bp:comment>
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">11170622</bp:id>
- <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 98</bp:db>
-</bp:UnificationXref>
-
-<bp:UnificationXref rdf:ID="UnificationXref26">
  <bp:idVersion rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">1</bp:idVersion>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-PFA-1640170.1</bp:comment>
  <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">R-PFA-1640170</bp:id>
  <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
 </bp:UnificationXref>
 
-<bp:UnificationXref rdf:ID="UnificationXref28">
+<bp:PublicationXref rdf:ID="PublicationXref1">
+ <bp:year rdf:datatype = "http://www.w3.org/2001/XMLSchema#int">1992</bp:year>
+ <bp:author rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Person112, P</bp:author>
+ <bp:author rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Person7, P</bp:author>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">1536007</bp:id>
+ <bp:source rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Science 255:817-23</bp:source>
+ <bp:title rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">A yeast chromosomal origin of DNA replication defined by multiple functional elements.</bp:title>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Pubmed</bp:db>
+</bp:PublicationXref>
+
+<bp:UnificationXref rdf:ID="UnificationXref26">
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=11170620</bp:comment>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">11170620</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 98</bp:db>
+</bp:UnificationXref>
+
+<bp:PublicationXref rdf:ID="PublicationXref2">
+ <bp:year rdf:datatype = "http://www.w3.org/2001/XMLSchema#int">1993</bp:year>
+ <bp:author rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Person70, P</bp:author>
+ <bp:author rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Person110, P</bp:author>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">8223461</bp:id>
+ <bp:source rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">EMBO J 12:4511-20</bp:source>
+ <bp:title rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Chromosomal replication initiates and terminates at random sequences but at regular intervals in the ribosomal DNA of Xenopus early embryos.</bp:title>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Pubmed</bp:db>
+</bp:PublicationXref>
+
+<bp:UnificationXref rdf:ID="UnificationXref29">
  <bp:idVersion rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">1</bp:idVersion>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-PFA-69306.1</bp:comment>
  <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">R-PFA-69306</bp:id>
  <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
 </bp:UnificationXref>
 
-<bp:UnificationXref rdf:ID="UnificationXref23">
- <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=11170618</bp:comment>
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">11170618</bp:id>
+<bp:UnificationXref rdf:ID="UnificationXref28">
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=11170622</bp:comment>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">11170622</bp:id>
  <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 98</bp:db>
 </bp:UnificationXref>
 
-<bp:UnificationXref rdf:ID="UnificationXref22">
+<bp:UnificationXref rdf:ID="UnificationXref23">
  <bp:idVersion rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">1</bp:idVersion>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-PFA-69242.1</bp:comment>
  <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">R-PFA-69242</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
+</bp:UnificationXref>
+
+<bp:PublicationXref rdf:ID="PublicationXref5">
+ <bp:year rdf:datatype = "http://www.w3.org/2001/XMLSchema#int">2000</bp:year>
+ <bp:author rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Person64, P</bp:author>
+ <bp:author rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Person8, P</bp:author>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">10966477</bp:id>
+ <bp:source rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Annu Rev Biochem 69:829-80</bp:source>
+ <bp:title rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Regulation of chromosome replication.</bp:title>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Pubmed</bp:db>
+</bp:PublicationXref>
+
+<bp:UnificationXref rdf:ID="UnificationXref22">
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=11170616</bp:comment>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">11170616</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 98</bp:db>
+</bp:UnificationXref>
+
+<bp:PublicationXref rdf:ID="PublicationXref6">
+ <bp:year rdf:datatype = "http://www.w3.org/2001/XMLSchema#int">2001</bp:year>
+ <bp:author rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Person65, P</bp:author>
+ <bp:author rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Person66, P</bp:author>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">11257218</bp:id>
+ <bp:source rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Cell 104:643-6</bp:source>
+ <bp:title rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The control of mammalian DNA replication: a brief history of space and timing.</bp:title>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Pubmed</bp:db>
+</bp:PublicationXref>
+
+<bp:UnificationXref rdf:ID="UnificationXref25">
+ <bp:idVersion rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">1</bp:idVersion>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-PFA-69278.1</bp:comment>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">R-PFA-69278</bp:id>
  <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
 </bp:UnificationXref>
 
@@ -326,11 +378,15 @@
  <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GENE ONTOLOGY</bp:db>
 </bp:RelationshipXref>
 
-<bp:UnificationXref rdf:ID="UnificationXref25">
- <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=11170620</bp:comment>
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">11170620</bp:id>
- <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 98</bp:db>
-</bp:UnificationXref>
+<bp:PublicationXref rdf:ID="PublicationXref3">
+ <bp:year rdf:datatype = "http://www.w3.org/2001/XMLSchema#int">2002</bp:year>
+ <bp:author rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Person21, P</bp:author>
+ <bp:author rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Person5, P</bp:author>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">12045100</bp:id>
+ <bp:source rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Annu Rev Biochem 71:333-74</bp:source>
+ <bp:title rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">DNA replication in eukaryotic cells.</bp:title>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Pubmed</bp:db>
+</bp:PublicationXref>
 
 <bp:RelationshipXref rdf:ID="RelationshipXref1">
  <bp:relationshipType rdf:resource="#RelationshipTypeVocabulary1" />
@@ -339,11 +395,22 @@
 </bp:RelationshipXref>
 
 <bp:UnificationXref rdf:ID="UnificationXref24">
- <bp:idVersion rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">1</bp:idVersion>
- <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome stable identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=R-PFA-69278.1</bp:comment>
- <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">R-PFA-69278</bp:id>
- <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:db>
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Database identifier. Use this URL to connect to the web page of this instance in Reactome: http://www.reactome.org/cgi-bin/eventbrowser?DB=gk_current&amp;ID=11170618</bp:comment>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">11170618</bp:id>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome Database ID Release 98</bp:db>
 </bp:UnificationXref>
+
+<bp:PublicationXref rdf:ID="PublicationXref4">
+ <bp:year rdf:datatype = "http://www.w3.org/2001/XMLSchema#int">1992</bp:year>
+ <bp:author rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Person47, P</bp:author>
+ <bp:author rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Person68, P</bp:author>
+ <bp:author rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Person69, P</bp:author>
+ <bp:author rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Person67, P</bp:author>
+ <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">1579437</bp:id>
+ <bp:source rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Nucleic Acids Res 20:1457-62</bp:source>
+ <bp:title rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">DNA replication initiates at multiple sites on plasmid DNA in Xenopus egg extracts.</bp:title>
+ <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Pubmed</bp:db>
+</bp:PublicationXref>
 
 <bp:Provenance rdf:ID="Provenance1">
  <bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome</bp:name>
@@ -354,6 +421,11 @@
  <bp:xref rdf:resource="#UnificationXref6" />
  <bp:term rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ubiquitinylated lysine</bp:term>
 </bp:SequenceModificationVocabulary>
+
+<bp:EvidenceCodeVocabulary rdf:ID="EvidenceCodeVocabulary1">
+ <bp:xref rdf:resource="#UnificationXref14" />
+ <bp:term rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">inferred from electronic annotation</bp:term>
+</bp:EvidenceCodeVocabulary>
 
 <bp:SequenceModificationVocabulary rdf:ID="SequenceModificationVocabulary2">
  <bp:xref rdf:resource="#UnificationXref5" />
@@ -396,15 +468,26 @@
 </bp:Protein>
 
 <bp:Evidence rdf:ID="Evidence7">
+ <bp:evidenceCode rdf:resource="#EvidenceCodeVocabulary1" />
 </bp:Evidence>
 
 <bp:Evidence rdf:ID="Evidence8">
+ <bp:xref rdf:resource="#PublicationXref1" />
+ <bp:xref rdf:resource="#PublicationXref2" />
+ <bp:xref rdf:resource="#PublicationXref5" />
+ <bp:xref rdf:resource="#PublicationXref6" />
+ <bp:xref rdf:resource="#PublicationXref3" />
+ <bp:xref rdf:resource="#PublicationXref4" />
+ <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Placeholder summation 69307</bp:comment>
+ <bp:evidenceCode rdf:resource="#EvidenceCodeVocabulary1" />
 </bp:Evidence>
 
 <bp:Evidence rdf:ID="Evidence5">
+ <bp:evidenceCode rdf:resource="#EvidenceCodeVocabulary1" />
 </bp:Evidence>
 
 <bp:Evidence rdf:ID="Evidence6">
+ <bp:evidenceCode rdf:resource="#EvidenceCodeVocabulary1" />
 </bp:Evidence>
 
 <bp:UnificationXref rdf:ID="UnificationXref8">
@@ -415,6 +498,7 @@
 </bp:UnificationXref>
 
 <bp:Evidence rdf:ID="Evidence3">
+ <bp:evidenceCode rdf:resource="#EvidenceCodeVocabulary1" />
 </bp:Evidence>
 
 <bp:UnificationXref rdf:ID="UnificationXref9">
@@ -423,12 +507,15 @@
 </bp:UnificationXref>
 
 <bp:Evidence rdf:ID="Evidence4">
+ <bp:evidenceCode rdf:resource="#EvidenceCodeVocabulary1" />
 </bp:Evidence>
 
 <bp:Evidence rdf:ID="Evidence1">
+ <bp:evidenceCode rdf:resource="#EvidenceCodeVocabulary1" />
 </bp:Evidence>
 
 <bp:Evidence rdf:ID="Evidence2">
+ <bp:evidenceCode rdf:resource="#EvidenceCodeVocabulary1" />
 </bp:Evidence>
 
 <bp:CellularLocationVocabulary rdf:ID="CellularLocationVocabulary1">

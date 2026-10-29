@@ -43,20 +43,6 @@ class BioPAX3BasicElementsBuilder(
         thisBPElement?.addDataSource(src)
     }
 
-    /**
-     * Function to add a BioPAX Evidence element (creating it if necessary)
-     * and linking it to the BioPAX Entity supplied
-     */
-    fun addEvidence() {
-        val evids = thisBPModel?.getObjects(org.biopax.paxtools.model.level3.Evidence::class.java)
-        var src: Evidence? = null; // todo do we already have this
-
-        if (src == null) {
-            src = thisBPModel?.addNew(org.biopax.paxtools.model.level3.Evidence::class.java, context!!.nextId("Evidence"))
-        }
-        thisBPElement?.addEvidence(src)
-    }
-
     // private functions
 
     /**
