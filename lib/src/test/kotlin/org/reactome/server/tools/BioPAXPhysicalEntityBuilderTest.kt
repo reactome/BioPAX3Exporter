@@ -22,17 +22,20 @@ import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Test
 import org.mockito.Mockito.mock
 import org.mockito.kotlin.whenever
+import org.reactome.server.graph.domain.model.CandidateSet
 import org.reactome.server.graph.domain.model.ChemicalDrug
 import org.reactome.server.graph.domain.model.Compartment
 import org.reactome.server.graph.domain.model.DatabaseIdentifier
 import org.reactome.server.graph.domain.model.DefinedSet
 import org.reactome.server.graph.domain.model.Disease
+import org.reactome.server.graph.domain.model.EntitySet
 import org.reactome.server.graph.domain.model.EntityWithAccessionedSequence
 import org.reactome.server.graph.domain.model.FragmentReplacedModification
 import org.reactome.server.graph.domain.model.GenomeEncodedEntity
 import org.reactome.server.graph.domain.model.GroupModifiedResidue
 import org.reactome.server.graph.domain.model.ModifiedNucleotide
 import org.reactome.server.graph.domain.model.ModifiedResidue
+import org.reactome.server.graph.domain.model.Polymer
 import org.reactome.server.graph.domain.model.ProteinDrug
 import org.reactome.server.graph.domain.model.PsiMod
 import org.reactome.server.graph.domain.model.ReferenceGeneProduct
@@ -46,6 +49,7 @@ import org.reactome.server.graph.domain.model.Species
 import org.reactome.server.graph.domain.relationship.HasComponent
 import java.util.TreeSet
 import org.reactome.server.graph.domain.model.Complex as RComplex
+import org.reactome.server.graph.domain.model.PhysicalEntity as RPhysicalEntity
 
 /**
  * Physical entities as release 97's converter writes them (spec 001 T011), on a real
@@ -371,15 +375,122 @@ class BioPAXPhysicalEntityBuilderTest {
         }
     }
 
+    // A DefinedSet, or a CandidateSet with candidates too, of the entities given (T017).
+    private fun set(
+        dbId: Long,
+        members: List<RPhysicalEntity>,
+        candidates: List<RPhysicalEntity>? = null,
+    ): EntitySet {
+        val set = if (candidates == null) mock(DefinedSet::class.java) else mock(CandidateSet::class.java)
+        whenever(set.dbId).thenReturn(dbId)
+        whenever(set.displayName).thenReturn("set $dbId")
+        whenever(set.hasMember).thenReturn(members)
+        if (set is CandidateSet) whenever(set.hasCandidate).thenReturn(candidates)
+        return set
+    }
+
+    private fun chemicalDrug(dbId: Long): ChemicalDrug {
+        val reference = mock(ReferenceTherapeutic::class.java)
+        whenever(reference.dbId).thenReturn(dbId + 1)
+        whenever(reference.displayName).thenReturn("a ligand")
+        return mock(ChemicalDrug::class.java).also {
+            whenever(it.dbId).thenReturn(dbId)
+            whenever(it.displayName).thenReturn("drug $dbId")
+            whenever(it.referenceEntity).thenReturn(reference)
+        }
+    }
+
     @Test
-    fun `a set is a PhysicalEntity, with no members yet (T017)`() {
-        val set = mock(DefinedSet::class.java)
-        whenever(set.dbId).thenReturn(700)
-        whenever(set.displayName).thenReturn("RBX1, CUL1")
-        val bp = builder.physicalEntity(set)
+    fun `a set of one kind is that kind, said to be converted from a set, with its members`() {
+        val members = listOf(protein(101, geneProduct(9001)), protein(102, geneProduct(9002, isoform = true)))
+
+        val bp = builder.physicalEntity(set(700, members))
+
+        assertEquals(Protein::class.java, bp.modelInterface)
+        assertEquals(setOf("Converted from EntitySet in Reactome", "Reactome DB_ID: 700"), bp.comment)
+        assertEquals(members.map { builder.physicalEntity(it) }.toSet(), bp.memberPhysicalEntity)
+        // No reference of its own: the converter wrote none for a set
+        assertNull((bp as Protein).entityReference)
+        // Made before its members, which are written as it is
+        assertTrue(bp.uri.endsWith("#Protein1"))
+    }
+
+    @Test
+    fun `a set of chemical drugs, or of a drug and a molecule, each a SmallMolecule, is a PhysicalEntity`() {
+        val drug = chemicalDrug(203)
+        assertEquals(SmallMolecule::class.java, builder.physicalEntity(drug).modelInterface)
+        assertEquals(SmallMolecule::class.java, builder.physicalEntity(set(700, listOf(smallMolecule(201)))).modelInterface)
+        // Their references differ in class, which is what the converter compared
+        assertEquals(PhysicalEntity::class.java, builder.physicalEntity(set(701, listOf(smallMolecule(202), drug))).modelInterface)
+        // And a set of drugs alone: their kind is written as PhysicalEntity
+        assertEquals(PhysicalEntity::class.java, builder.physicalEntity(set(702, listOf(drug, chemicalDrug(205)))).modelInterface)
+    }
+
+    @Test
+    fun `a set holding a set is a PhysicalEntity, the set it holds its own kind`() {
+        val inner = set(710, listOf(protein(101, geneProduct(9001))), candidates = listOf(protein(102, geneProduct(9002))))
+
+        val bp = builder.physicalEntity(set(700, listOf(inner)))
+
         assertEquals(PhysicalEntity::class.java, bp.modelInterface)
-        assertEquals("RBX1, CUL1", bp.displayName)
-        assertEquals(setOf("Reactome DB_ID: 700"), bp.comment)
+        val bpInner = bp.memberPhysicalEntity.single()
+        assertEquals(Protein::class.java, bpInner.modelInterface)
+        assertEquals(2, bpInner.memberPhysicalEntity.size)
+        // Beside a protein too: a set has no kind of its own, though this one is a Protein
+        assertEquals(
+            PhysicalEntity::class.java,
+            builder.physicalEntity(set(701, listOf(protein(103, geneProduct(9003)), inner))).modelInterface,
+        )
+    }
+
+    @Test
+    fun `a candidate counts in the kind, though it is written as the same class`() {
+        val therapeutic = mock(ReferenceTherapeutic::class.java)
+        whenever(therapeutic.dbId).thenReturn(9101)
+        whenever(therapeutic.displayName).thenReturn("a protein drug")
+        val drug =
+            mock(ProteinDrug::class.java).also {
+                whenever(it.dbId).thenReturn(104)
+                whenever(it.displayName).thenReturn("drug 104")
+                whenever(it.referenceEntity).thenReturn(therapeutic)
+            }
+        assertEquals(Protein::class.java, builder.physicalEntity(drug).modelInterface)
+
+        // A gene product and a therapeutic are two kinds: the converter made the set a PhysicalEntity
+        val bp = builder.physicalEntity(set(700, listOf(protein(101)), candidates = listOf(drug)))
+
+        assertEquals(PhysicalEntity::class.java, bp.modelInterface)
+        assertEquals(2, bp.memberPhysicalEntity.size)
+    }
+
+    @Test
+    fun `a set of complexes is a Complex with no components, and a polymer among members makes it a PhysicalEntity`() {
+        val complex = mock(RComplex::class.java)
+        whenever(complex.dbId).thenReturn(300)
+        whenever(complex.displayName).thenReturn("a complex")
+        val polymer = mock(Polymer::class.java)
+        whenever(polymer.dbId).thenReturn(301)
+        whenever(polymer.displayName).thenReturn("a polymer")
+
+        val bpSet = builder.physicalEntity(set(700, listOf(complex)))
+        assertEquals(Complex::class.java, bpSet.modelInterface)
+        assertEquals(emptySet<Any>(), (bpSet as Complex).component)
+        assertEquals(PhysicalEntity::class.java, builder.physicalEntity(set(701, listOf(complex, polymer))).modelInterface)
+    }
+
+    @Test
+    fun `a member missing its reference makes a set a PhysicalEntity, which Paxtools requires`() {
+        val bare = mock(EntityWithAccessionedSequence::class.java)
+        whenever(bare.dbId).thenReturn(103)
+        whenever(bare.displayName).thenReturn("no reference")
+        val members = listOf(protein(101), bare)
+
+        val bp = builder.physicalEntity(set(700, members))
+
+        // Its kind is still Protein's, as the converter counted it; but the member is a
+        // PhysicalEntity, and a Protein may have only Proteins as members
+        assertEquals(PhysicalEntity::class.java, bp.modelInterface)
+        assertEquals(2, bp.memberPhysicalEntity.size)
     }
 
     @Test

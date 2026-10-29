@@ -22,10 +22,12 @@ import org.biopax.paxtools.model.level3.SmallMoleculeReference
 import org.biopax.paxtools.model.level3.Stoichiometry
 import org.biopax.paxtools.model.level3.UnificationXref
 import org.reactome.server.graph.domain.model.AbstractModifiedResidue
+import org.reactome.server.graph.domain.model.CandidateSet
 import org.reactome.server.graph.domain.model.ChemicalDrug
 import org.reactome.server.graph.domain.model.CrosslinkedResidue
 import org.reactome.server.graph.domain.model.DatabaseObject
 import org.reactome.server.graph.domain.model.Drug
+import org.reactome.server.graph.domain.model.EntitySet
 import org.reactome.server.graph.domain.model.EntityWithAccessionedSequence
 import org.reactome.server.graph.domain.model.FragmentInsertionModification
 import org.reactome.server.graph.domain.model.FragmentModification
@@ -57,8 +59,10 @@ import org.reactome.server.graph.domain.model.PhysicalEntity as RPhysicalEntity
  * data source, and its cross-references and diseases. A complex has its components,
  * each with its stoichiometry.
  *
- * A set is written as a PhysicalEntity with these properties and no members: its
- * class and members are T017's.
+ * A set (T017) is written as the class every entity it holds shares, else as a
+ * PhysicalEntity, with the comment "Converted from EntitySet in Reactome" and its members
+ * and candidates as `memberPhysicalEntity`, each written after the set is made, as the
+ * converter did.
  */
 class BioPAXPhysicalEntityBuilder(
     private val context: ConversionContext,
@@ -69,7 +73,12 @@ class BioPAXPhysicalEntityBuilder(
     fun physicalEntity(entity: RPhysicalEntity): BpPhysicalEntity =
         context.once("entity:${entity.dbId}") {
             val reference = referenceOf(entity)
-            val bpEntity = model.addNew(classFor(entity, reference), context.nextId(classFor(entity, reference).simpleName))
+            val type = classOf(entity)
+            val bpEntity = model.addNew(type, context.nextId(type.simpleName))
+            if (entity is EntitySet) {
+                bpEntity.addComment("Converted from EntitySet in Reactome")
+                membersOf(entity).forEach { bpEntity.addMemberPhysicalEntity(physicalEntity(it)) }
+            }
             if (entity is Drug && reference != null) bpEntity.addComment("Converted from Drug in Reactome")
             BioPAX3Utils.addNames(entity.name, entity.displayName, bpEntity)
             addCellularLocation(entity, bpEntity)
@@ -90,7 +99,77 @@ class BioPAXPhysicalEntityBuilder(
             bpEntity
         }
 
-    // The reference entity that types an entity; a set's is T017's.
+    /**
+     * The class an entity is written as. A set's is its kind's, unless a member is written
+     * as another class: a member with no reference counts for nothing in the kind, but is a
+     * PhysicalEntity, and Paxtools allows a Protein (or any class) only members of its own
+     * class. The release, writing XML itself, would have written such a set invalid; its
+     * _P. falciparum_ file of release 98 has none, and the set is a PhysicalEntity here (differences.md).
+     */
+    private fun classOf(entity: RPhysicalEntity): Class<out BpPhysicalEntity> {
+        if (entity !is EntitySet) return classFor(entity, referenceOf(entity))
+        val type = classFor(setKind(entity))
+        if (type != BpPhysicalEntity::class.java && membersOf(entity).any { classOf(it) != type }) return BpPhysicalEntity::class.java
+        return type
+    }
+
+    // A set's members, then its candidates, as the converter lists them.
+    private fun membersOf(set: EntitySet): List<RPhysicalEntity> =
+        (set.hasMember ?: emptyList()) + ((set as? CandidateSet)?.hasCandidate ?: emptyList())
+
+    /**
+     * A set's kind, as the release's converter chose it (`getReactomeEntityType`): the one
+     * kind every entity it holds shares. A complex is a Complex, and an entity with a
+     * reference entity is its reference's kind (an isoform its gene product's); one that
+     * cannot have a reference entity, a set or a polymer, has none, and makes the set a
+     * PhysicalEntity, as does a mixture. One whose reference is missing counts for nothing.
+     * The converter looked at every depth (`InstanceUtilities.getContainedInstances`), but
+     * a set among the members already settles it, so the members are enough.
+     */
+    private fun setKind(set: EntitySet): String? {
+        val kinds = HashSet<String?>()
+        membersOf(set).forEach { member ->
+            when (member) {
+                is RComplex -> kinds.add("Complex")
+                is EntityWithAccessionedSequence, is SimpleEntity, is Drug -> referenceOf(member)?.let { kinds.add(kindOf(it)) }
+                else -> kinds.add(null)
+            }
+        }
+        return if (kinds.size == 1) kinds.single() else null
+    }
+
+    // A reference entity's schema class, as the converter compared them.
+    private fun kindOf(reference: ReferenceEntity): String =
+        when (reference) {
+            is ReferenceGeneProduct -> "ReferenceGeneProduct"
+
+            is ReferenceDNASequence -> "ReferenceDNASequence"
+
+            is ReferenceRNASequence -> "ReferenceRNASequence"
+
+            is ReferenceMolecule -> "ReferenceMolecule"
+
+            // Graph-core types a simple entity's reference as a ReferenceMolecule, so no member
+            // has a ReferenceGroup; kept apart as the converter compared the classes.
+            is ReferenceGroup -> "ReferenceGroup"
+
+            is ReferenceTherapeutic -> "ReferenceTherapeutic"
+
+            else -> reference.javaClass.simpleName
+        }
+
+    // The class a set of one kind is written as, as for any entity of that kind.
+    private fun classFor(kind: String?): Class<out BpPhysicalEntity> =
+        when (kind) {
+            "Complex" -> BpComplex::class.java
+            "ReferenceGeneProduct" -> Protein::class.java
+            "ReferenceMolecule", "ReferenceGroup" -> SmallMolecule::class.java
+            "ReferenceDNASequence" -> Dna::class.java
+            "ReferenceRNASequence" -> Rna::class.java
+            else -> BpPhysicalEntity::class.java
+        }
+
+    // The reference entity that types an entity; a set has none.
     private fun referenceOf(entity: RPhysicalEntity): ReferenceEntity? =
         when (entity) {
             is EntityWithAccessionedSequence -> entity.referenceEntity
@@ -108,7 +187,6 @@ class BioPAXPhysicalEntityBuilder(
                 BpComplex::class.java
             }
 
-            // A set has no reference here (T017 types it), so it is a PhysicalEntity too.
             reference == null -> {
                 BpPhysicalEntity::class.java
             }
