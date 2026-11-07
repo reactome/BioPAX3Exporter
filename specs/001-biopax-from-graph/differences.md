@@ -153,6 +153,14 @@ Measured 29 Oct 2026 on a private copy of release 98's graph: 30 events, each co
 - **Inferred events** carry their Evidence (1 to 74 in the four with an evidence type); one inferred reaction has no evidence type, and so none, as the release's rule gives.
 - **Time:** 7 min 14 s for the 30, at most 1.3 GB resident.
 
+## One event against the legacy service (the website's spec 015, T049)
+
+Measured 7 Nov 2026 on the website's beta host, when the legacy RESTful service's relational database had moved to release 98: the 30 events of the website's spec 015 sample, each the legacy service's one-event answer (`biopaxExporter/Level3/{dbId}`) against this library's, from the website's library service (pinned at `64c716a`) on that host's release-98 graph, compared by `ci/compare.py` with the legacy answer as the reference ([reactome/WebsiteAngular#883](https://github.com/reactome/WebsiteAngular/pull/883)).
+
+- **What differs is recorded above,** but for one difference: `conversionDirection` (7,931 a side, T012); cross-references the legacy file lacks (42,474: DOID, Mondo, SYMP; T011, T014, T020), and none the legacy file gives an entity is missing here; a name equal to the display name (102, T011); the authors' names (6 values, below); empty values the legacy file writes (15 ProteinReference comments, 2 RnaReference names, T020). One event is the same.
+- **A cross-reference written twice on one entity** (1,822 over the 30): the legacy file gives some entities one of their cross-references twice, as two individuals of the same db and id (COSMIC 881, ChEBI 615, KEGG COMPOUND 226, ClinGen 97, ClinVar 2, PubChem Compound 1), where the graph holds it once (for example, COMPOUND C01673 on 8963912, ChEBI 74429 on 9684539, COMPOUND C00001 on 113518). Each is written once here: an obvious bug of the old converter. The published species files have few such repeats (15 references in human, "Values repeated within one individual" above); the one-event converter writes them far more often. `ci/compare.py` counts two individuals of the same content twice, so it reports each repeat as a cross-reference only in the legacy file.
+- **The validator** (6.0.0, `--profile=notstrict`): no file of the library has an error its legacy file lacks. `multi.organism.pathway` is the same on both sides, event by event (175); the legacy files have one `unknown.class` each, the ontology header's comment, which is not written here (T019).
+
 ## The full run (T020)
 
 Measured 29 Oct 2026: every species converted from a private copy of release 98's graph by the exporter's default mode, and each file compared with release 98's published one by `ci/compare.py` and validated by the BioPAX validator 6.0.0 (`--profile=notstrict`).
