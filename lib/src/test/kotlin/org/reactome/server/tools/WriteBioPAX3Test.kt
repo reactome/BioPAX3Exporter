@@ -357,4 +357,46 @@ class WriteBioPAX3Test {
 
         assertEquals("&#xD;C&#xD;A&#xD;&#xD;B", out.toString(Charsets.US_ASCII))
     }
+
+    @Test
+    fun `a reaction's direction is written in the ontology's form, as the release wrote it (#99)`() {
+        val reaction = mock(Reaction::class.java)
+        whenever(reaction.dbId).thenReturn(5696356L)
+        whenever(reaction.displayName).thenReturn("a reaction")
+        val inputs = listOf(entity(1))
+        whenever(reaction.input).thenReturn(inputs)
+
+        val owl =
+            WriteBioPAX3(reaction, 98).run {
+                createModel()
+                toString()
+            }
+
+        assertTrue(Regex("<bp:conversionDirection[^>]*>LEFT-TO-RIGHT</bp:conversionDirection>").containsMatchIn(owl))
+        assertFalse("LEFT_TO_RIGHT" in owl)
+    }
+
+    @Test
+    fun `the direction stream rewrites a direction's value alone, across writes, to the last line`() {
+        val out = java.io.ByteArrayOutputStream()
+        val directions = WriteBioPAX3.OntologyDirections(out)
+        val text =
+            " <bp:comment>LEFT_TO_RIGHT, as Paxtools names it</bp:comment>\n" +
+                " <bp:conversionDirection rdf:datatype=\"x\">LEFT_TO_RIGHT</bp:conversionDirection>\n" +
+                " <bp:conversionDirection>RIGHT_TO_LEFT</bp:conversionDirection>\n" +
+                " <bp:conversionDirection>REVERSIBLE</bp:conversionDirection>\n" +
+                " <bp:displayName>é, and no line feed at the end</bp:displayName>"
+        val bytes = text.toByteArray(Charsets.UTF_8)
+
+        // A byte alone, then the rest in two parts split within the second line
+        directions.write(bytes[0].toInt())
+        directions.write(bytes, 1, 80)
+        directions.write(bytes, 81, bytes.size - 81)
+        directions.flush()
+
+        assertEquals(
+            text.replace(">LEFT_TO_RIGHT</bp:conv", ">LEFT-TO-RIGHT</bp:conv").replace(">RIGHT_TO_LEFT<", ">RIGHT-TO-LEFT<"),
+            out.toString(Charsets.UTF_8),
+        )
+    }
 }

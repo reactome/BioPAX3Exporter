@@ -793,7 +793,7 @@
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Placeholder summation 2851297</bp:comment>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reviewed: Placeholder edit 3110296</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
- <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT_TO_RIGHT</bp:conversionDirection>
+ <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</bp:conversionDirection>
 </bp:BiochemicalReaction>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction16">
@@ -811,7 +811,7 @@
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Placeholder summation 4396406</bp:comment>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reviewed: Placeholder edit 3110296</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
- <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT_TO_RIGHT</bp:conversionDirection>
+ <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</bp:conversionDirection>
 </bp:BiochemicalReaction>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction19">
@@ -828,7 +828,7 @@
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reviewed: Placeholder edit 3110296</bp:comment>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Placeholder summation 2851295</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
- <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT_TO_RIGHT</bp:conversionDirection>
+ <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</bp:conversionDirection>
 </bp:BiochemicalReaction>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction18">
@@ -846,7 +846,7 @@
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Placeholder summation 4396390</bp:comment>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reviewed: Placeholder edit 3110296</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
- <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT_TO_RIGHT</bp:conversionDirection>
+ <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</bp:conversionDirection>
 </bp:BiochemicalReaction>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction13">
@@ -864,7 +864,7 @@
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Authored: Placeholder edit 2958607</bp:comment>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reviewed: Placeholder edit 3110296</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
- <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT_TO_RIGHT</bp:conversionDirection>
+ <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</bp:conversionDirection>
 </bp:BiochemicalReaction>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction12">
@@ -887,7 +887,7 @@
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Authored: Placeholder edit 2958607</bp:comment>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reviewed: Placeholder edit 3110296</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
- <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT_TO_RIGHT</bp:conversionDirection>
+ <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</bp:conversionDirection>
 </bp:BiochemicalReaction>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction15">
@@ -910,7 +910,7 @@
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Placeholder summation 2851302</bp:comment>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reviewed: Placeholder edit 3110296</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
- <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT_TO_RIGHT</bp:conversionDirection>
+ <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</bp:conversionDirection>
 </bp:BiochemicalReaction>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction14">
@@ -933,7 +933,7 @@
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Authored: Placeholder edit 2958607</bp:comment>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reviewed: Placeholder edit 3110296</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
- <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT_TO_RIGHT</bp:conversionDirection>
+ <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</bp:conversionDirection>
 </bp:BiochemicalReaction>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction11">
@@ -951,7 +951,7 @@
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reviewed: Placeholder edit 3110296</bp:comment>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Placeholder summation 2902226</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
- <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT_TO_RIGHT</bp:conversionDirection>
+ <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</bp:conversionDirection>
 </bp:BiochemicalReaction>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction10">
@@ -977,7 +977,7 @@
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reviewed: Placeholder edit 3110296</bp:comment>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Placeholder summation 2900762</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
- <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT_TO_RIGHT</bp:conversionDirection>
+ <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</bp:conversionDirection>
 </bp:BiochemicalReaction>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction27">
@@ -993,7 +993,7 @@
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Authored: Placeholder edit 5678586</bp:comment>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Edited: Placeholder edit 5678586</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
- <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT_TO_RIGHT</bp:conversionDirection>
+ <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</bp:conversionDirection>
 </bp:BiochemicalReaction>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction24">
@@ -1011,7 +1011,7 @@
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Placeholder summation 2851298</bp:comment>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reviewed: Placeholder edit 3110296</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
- <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT_TO_RIGHT</bp:conversionDirection>
+ <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</bp:conversionDirection>
 </bp:BiochemicalReaction>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction23">
@@ -1028,7 +1028,7 @@
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Placeholder summation 2851301</bp:comment>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reviewed: Placeholder edit 3110296</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
- <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT_TO_RIGHT</bp:conversionDirection>
+ <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</bp:conversionDirection>
 </bp:BiochemicalReaction>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction26">
@@ -1046,7 +1046,7 @@
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Authored: Placeholder edit 2958607</bp:comment>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reviewed: Placeholder edit 3110296</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
- <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT_TO_RIGHT</bp:conversionDirection>
+ <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</bp:conversionDirection>
 </bp:BiochemicalReaction>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction25">
@@ -1072,7 +1072,7 @@
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reviewed: Placeholder edit 3110296</bp:comment>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Placeholder summation 2851296</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
- <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT_TO_RIGHT</bp:conversionDirection>
+ <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</bp:conversionDirection>
 </bp:BiochemicalReaction>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction20">
@@ -1091,7 +1091,7 @@
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Authored: Placeholder edit 2958607</bp:comment>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reviewed: Placeholder edit 3110296</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
- <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT_TO_RIGHT</bp:conversionDirection>
+ <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</bp:conversionDirection>
 </bp:BiochemicalReaction>
 
 <bp:BioSource rdf:ID="BioSource1">
@@ -1114,7 +1114,7 @@
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Authored: Placeholder edit 2958607</bp:comment>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reviewed: Placeholder edit 3110296</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
- <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT_TO_RIGHT</bp:conversionDirection>
+ <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</bp:conversionDirection>
 </bp:BiochemicalReaction>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction21">
@@ -1134,7 +1134,7 @@
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Placeholder summation 2851299</bp:comment>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reviewed: Placeholder edit 3110296</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
- <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT_TO_RIGHT</bp:conversionDirection>
+ <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</bp:conversionDirection>
 </bp:BiochemicalReaction>
 
 <bp:Stoichiometry rdf:ID="Stoichiometry121">
@@ -17834,7 +17834,7 @@
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Placeholder summation 9749231</bp:comment>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Authored: Placeholder edit 9757623</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
- <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT_TO_RIGHT</bp:conversionDirection>
+ <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</bp:conversionDirection>
 </bp:BiochemicalReaction>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction2">
@@ -17858,7 +17858,7 @@
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Placeholder summation 9749234</bp:comment>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reviewed: Placeholder edit 9758287</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
- <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT_TO_RIGHT</bp:conversionDirection>
+ <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</bp:conversionDirection>
 </bp:BiochemicalReaction>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction7">
@@ -17876,7 +17876,7 @@
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Placeholder summation 2900749</bp:comment>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reviewed: Placeholder edit 3110296</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
- <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT_TO_RIGHT</bp:conversionDirection>
+ <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</bp:conversionDirection>
 </bp:BiochemicalReaction>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction8">
@@ -17894,7 +17894,7 @@
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reviewed: Placeholder edit 3110296</bp:comment>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Placeholder summation 2900752</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
- <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT_TO_RIGHT</bp:conversionDirection>
+ <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</bp:conversionDirection>
 </bp:BiochemicalReaction>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction9">
@@ -17912,7 +17912,7 @@
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Authored: Placeholder edit 2958607</bp:comment>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reviewed: Placeholder edit 3110296</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
- <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT_TO_RIGHT</bp:conversionDirection>
+ <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</bp:conversionDirection>
 </bp:BiochemicalReaction>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction3">
@@ -17928,7 +17928,7 @@
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Placeholder summation 179279</bp:comment>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reviewed: Placeholder edit 9758287</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
- <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT_TO_RIGHT</bp:conversionDirection>
+ <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</bp:conversionDirection>
 </bp:BiochemicalReaction>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction4">
@@ -17944,7 +17944,7 @@
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reviewed: Placeholder edit 9925739</bp:comment>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Placeholder summation 9911458</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
- <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT_TO_RIGHT</bp:conversionDirection>
+ <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</bp:conversionDirection>
 </bp:BiochemicalReaction>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction5">
@@ -17964,7 +17964,7 @@
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Authored: Placeholder edit 5696355</bp:comment>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Edited: Placeholder edit 5696355</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
- <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT_TO_RIGHT</bp:conversionDirection>
+ <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</bp:conversionDirection>
 </bp:BiochemicalReaction>
 
 <bp:BiochemicalReaction rdf:ID="BiochemicalReaction6">
@@ -17982,7 +17982,7 @@
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Placeholder summation 2900753</bp:comment>
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reviewed: Placeholder edit 3110296</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
- <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT_TO_RIGHT</bp:conversionDirection>
+ <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</bp:conversionDirection>
 </bp:BiochemicalReaction>
 
 <bp:UnificationXref rdf:ID="UnificationXref194">

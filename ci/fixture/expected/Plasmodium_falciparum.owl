@@ -310,7 +310,7 @@
  <bp:left rdf:resource="#Protein1" />
  <bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Placeholder summation 10003415</bp:comment>
  <bp:dataSource rdf:resource="#Provenance1" />
- <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT_TO_RIGHT</bp:conversionDirection>
+ <bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</bp:conversionDirection>
 </bp:BiochemicalReaction>
 
 <bp:Evidence rdf:ID="Evidence7">
