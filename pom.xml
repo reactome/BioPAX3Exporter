@@ -123,7 +123,7 @@
             <dependency>
                 <groupId>org.mockito.kotlin</groupId>
                 <artifactId>mockito-kotlin</artifactId>
-                <version>4.0.0</version>
+                <version>6.4.0</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
