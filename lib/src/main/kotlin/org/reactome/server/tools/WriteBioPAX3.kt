@@ -161,14 +161,75 @@ class WriteBioPAX3 {
      * wrote it, which an XML parser would otherwise read as a line feed. Written as it is
      * made, never held whole: a large species' file is hundreds of megabytes, and copies
      * of it in memory ran a full run out of it (T020). A failure to write is not caught: a
-     * file half written is not one to publish.
+     * file half written is not one to publish. A conversion's direction is written in the
+     * ontology's form, `LEFT-TO-RIGHT`, as the release wrote it (#99).
      */
     private fun writeOwl(out: OutputStream) {
         val model = thisModel!!
         BioPAX3Utils.trimLiterals(model)
         val escaping = CarriageReturnEscaping(out)
-        SimpleIOHandler().convertToOWL(model, escaping)
+        val directions = OntologyDirections(escaping)
+        SimpleIOHandler().convertToOWL(model, directions)
+        directions.flush()
         escaping.flush()
+    }
+
+    // A conversion's direction in the BioPAX Level 3 ontology's form (#99): Paxtools writes its
+    // enum's name, `LEFT_TO_RIGHT`, where the ontology's values, and the release's files, have
+    // `LEFT-TO-RIGHT`. Paxtools writes each property on a line of its own, so each line is
+    // held until its end, and only a `conversionDirection` element's value is rewritten: the
+    // same length, `_` for `-`, nothing else in the file touched.
+    internal class OntologyDirections(
+        out: OutputStream,
+    ) : FilterOutputStream(out) {
+        private val line = ByteArrayOutputStream()
+
+        override fun write(b: Int) {
+            line.write(b)
+            if (b == LF) writeLine()
+        }
+
+        override fun write(
+            b: ByteArray,
+            off: Int,
+            len: Int,
+        ) {
+            var start = off
+            for (i in off until off + len) {
+                if (b[i].toInt() == LF) {
+                    line.write(b, start, i + 1 - start)
+                    writeLine()
+                    start = i + 1
+                }
+            }
+            line.write(b, start, off + len - start)
+        }
+
+        override fun flush() {
+            writeLine()
+            out.flush()
+        }
+
+        // Paxtools closes the stream it writes to; the caller closes it here
+        override fun close() = flush()
+
+        private fun writeLine() {
+            if (line.size() == 0) return
+            val bytes = line.toByteArray()
+            line.reset()
+            val text = String(bytes, Charsets.UTF_8)
+            if (MARK in text) {
+                out.write(DIRECTION.replace(text) { it.value.replace('_', '-') }.toByteArray(Charsets.UTF_8))
+            } else {
+                out.write(bytes)
+            }
+        }
+
+        companion object {
+            const val LF = 0x0A
+            const val MARK = "<bp:conversionDirection"
+            private val DIRECTION = Regex(">(LEFT|RIGHT)_TO_(LEFT|RIGHT)</bp:conversionDirection>")
+        }
     }
 
     // Each carriage return byte written as `&#xD;`: in UTF-8 no other character has the byte
