@@ -146,9 +146,7 @@ class BioPAX3ExporterLauncher {
 
                         Status.ALL_PATHWAYS_SPECIES -> {
                             speciesIds.forEach { id ->
-                                val species = databaseObjectService.findByIdNoRelations<DatabaseObject>(id) as? Species
-                                if (species == null) fail("$id is not the identifier of a Species")
-                                species?.let { outputPathsForSpecies(it, named = true) }
+                                speciesOf(databaseObjectService, id)?.let { outputPathsForSpecies(it, named = true) }
                             }
                         }
 
@@ -177,6 +175,28 @@ class BioPAX3ExporterLauncher {
             System.err.println(message)
             failed = true
         }
+
+        /**
+         * The species an id names, or none, said so; an error reading it is reported as
+         * itself, as an event's is (#103), rather than ending the run with a stack trace.
+         */
+        internal fun speciesOf(
+            service: DatabaseObjectService,
+            id: Long,
+        ): Species? {
+            val found =
+                try {
+                    service.findByIdNoRelations<DatabaseObject>(id)
+                } catch (e: org.springframework.dao.DataAccessException) {
+                    fail("$id could not be read: ${e.message}")
+                    return null
+                }
+            if (found !is Species) fail("$id is not the identifier of a Species")
+            return found as? Species
+        }
+
+        /** Whether an id given so far named nothing to convert (for tests). */
+        internal fun hasFailed(): Boolean = failed
 
         /**
          * The event an id names, of a kind the release converts (a pathway or a reaction,
