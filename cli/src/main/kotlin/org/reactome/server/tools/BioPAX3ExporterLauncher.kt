@@ -198,6 +198,11 @@ class BioPAX3ExporterLauncher {
         /** Whether an id given so far named nothing to convert (for tests). */
         internal fun hasFailed(): Boolean = failed
 
+        /** Forgets a failure, so that each test starts from none. */
+        internal fun resetFailed() {
+            failed = false
+        }
+
         /**
          * The event an id names, of a kind the release converts (a pathway or a reaction,
          * T019), or none, said so; an error reading it is reported as itself.
